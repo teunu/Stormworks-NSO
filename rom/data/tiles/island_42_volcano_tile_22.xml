@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition is_island="true" is_volcanic="true" tile_type="0" is_purchasable="false" purchase_cost="0" sea_floor_height="-6">
+	<meshes>
+		<mesh id="island_mesh" parent_id="" purchase_interactable_id="" seasonal_flags="0" file_name="meshes/island_42_volcano_tile_22.mesh" is_volcanic_additive="false">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="0" 31="0" 32="0" 33="1"/>
+		</mesh>
+		<mesh id="lava_mesh_flow" parent_id="" purchase_interactable_id="" seasonal_flags="0" file_name="meshes/lava_flow.mesh" is_volcanic_additive="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="0" 31="0" 32="0" 33="1"/>
+		</mesh>
+		<mesh id="lava_mesh_pool" parent_id="" purchase_interactable_id="" seasonal_flags="0" file_name="meshes/lava_level.mesh" is_volcanic_additive="false">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="0" 31="0" 32="0" 33="1"/>
+		</mesh>
+	</meshes>
+	<physics_objects/>
+	<physics_meshes>
+		<physics_mesh id="island_phys" parent_id="" purchase_interactable_id="" seasonal_flags="0" file_name="meshes/island_42_volcano_tile_22_phys.phys" physics_material_type="0" is_volcanic="false">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="0" 31="0" 32="0" 33="1"/>
+		</physics_mesh>
+		<physics_mesh id="rock_phys_edge" parent_id="" purchase_interactable_id="" seasonal_flags="0" file_name="meshes/lava_phys_edge_rock.phys" physics_material_type="0" is_volcanic="false">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="0" 31="0" 32="0" 33="1"/>
+		</physics_mesh>
+		<physics_mesh id="rock_phys_underneath" parent_id="" purchase_interactable_id="" seasonal_flags="0" file_name="meshes/lava_phys_underneath_rock.phys" physics_material_type="0" is_volcanic="false">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="0" 31="0" 32="0" 33="1"/>
+		</physics_mesh>
+		<physics_mesh id="lava_phys" parent_id="" purchase_interactable_id="" seasonal_flags="0" file_name="meshes/lava_phys_underneath_rock.phys" physics_material_type="1" is_volcanic="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="0" 31="0" 32="0" 33="1"/>
+		</physics_mesh>
+		<physics_mesh id="lava_phys_level" parent_id="" purchase_interactable_id="" seasonal_flags="0" file_name="meshes/lava_level_phys.phys" physics_material_type="1" is_volcanic="false">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="0" 31="0" 32="0" 33="1"/>
+		</physics_mesh>
+		<physics_mesh id="rock_phys_level" parent_id="" purchase_interactable_id="" seasonal_flags="0" file_name="meshes/lava_level_phys.phys" physics_material_type="0" is_volcanic="false">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="0" 31="-0.05" 32="0" 33="1"/>
+		</physics_mesh>
+	</physics_meshes>
+	<physics_dynamics/>
+	<lights_omni/>
+	<lights_spot/>
+	<lights_tube/>
+	<screens/>
+	<edit_areas/>
+	<interactables/>
+	<door_logic_nodes/>
+	<light_logic_nodes/>
+	<rotation_logic_nodes/>
+	<hangar_door_logic_nodes/>
+	<audio_logic_nodes/>
+	<tile_markers>
+		<markers id="tile_marker0" parent_id="" purchase_interactable_id="" seasonal_flags="0" marker_type="13" is_in_ocean="false" string_data="Mount Paradize" icon="5">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-253.255707" 31="292.207764" 32="-372.455719" 33="1"/>
+		</markers>
+	</tile_markers>
+	<mission_zones/>
+	<dynamic_markers/>
+	<ladders/>
+	<perches/>
+	<fires/>
+	<train_tracks/>
+	<iceberg_markers/>
+	<volcano_markers>
+		<volcano id="volcano0" parent_id="" purchase_interactable_id="" seasonal_flags="0" radius="90" height="50" heightmap_filename="graphics/effects/volcano_heightmap.txtr" eruption_radius="4000">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-236" 31="288" 32="-370" 33="1"/>
+			<heightmap_size x="3000" y="400" z="3000"/>
+		</volcano>
+	</volcano_markers>
+</definition>
+

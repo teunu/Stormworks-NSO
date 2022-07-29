@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition>
+	<meshes>
+		<mesh id="mesh0" file_name="meshes/track_pieces/track_bridge_right_diagonal.mesh">
+			<transform/>
+		</mesh>
+	</meshes>
+	<physics_objects/>
+	<physics_meshes>
+		<physics_mesh id="l24" file_name="meshes/track_pieces/track_bridge_right_diagonal_phys.phys">
+			<transform/>
+		</physics_mesh>
+	</physics_meshes>
+	<physics_dynamics/>
+	<lights_omni/>
+	<lights_spot/>
+	<lights_tube/>
+	<screens/>
+	<edit_areas/>
+	<interactables/>
+	<door_logic_nodes/>
+	<light_logic_nodes/>
+	<rotation_logic_nodes/>
+	<hangar_door_logic_nodes/>
+	<audio_logic_nodes/>
+	<tile_markers/>
+	<mission_zones/>
+	<dynamic_markers/>
+	<ladders/>
+	<perches/>
+	<fires/>
+	<train_tracks>
+		<track id="r0">
+			<transform 30="501.5" 31="16" 32="498.5"/>
+			<links>
+				<link id="r1"/>
+			</links>
+		</track>
+		<track id="r1">
+			<transform 30="451.5" 31="16.000675" 32="448.5"/>
+			<links>
+				<link id="r0"/>
+				<link id="r2"/>
+			</links>
+		</track>
+		<track id="r2">
+			<transform 30="401.5" 31="16" 32="398.5"/>
+			<links>
+				<link id="r1"/>
+				<link id="train_45"/>
+			</links>
+		</track>
+		<track id="r4">
+			<transform 30="322.729401" 31="16.290474" 32="319.74176"/>
+			<links>
+				<link id="r4"/>
+				<link id="train_47"/>
+			</links>
+		</track>
+		<track id="r4">
+			<transform 30="301.5" 31="17.115107" 32="298.5"/>
+			<links>
+				<link id="r4"/>
+				<link id="r5"/>
+			</links>
+		</track>
+		<track id="r5">
+			<transform 30="251.5" 31="19.638706" 32="248.5"/>
+			<links>
+				<link id="r4"/>
+				<link id="r6"/>
+			</links>
+		</track>
+		<track id="r6">
+			<transform 30="201.5" 31="22.378431" 32="198.5"/>
+			<links>
+				<link id="r5"/>
+				<link id="r7"/>
+			</links>
+		</track>
+		<track id="r7">
+			<transform 30="151.5" 31="24.943459" 32="148.5"/>
+			<links>
+				<link id="r6"/>
+				<link id="r8"/>
+			</links>
+		</track>
+		<track id="r8">
+			<transform 30="101.5" 31="27.142035" 32="98.5"/>
+			<links>
+				<link id="r7"/>
+				<link id="r10"/>
+			</links>
+		</track>
+		<track id="r11">
+			<transform 30="71.273994" 31="28.311481" 32="68.283737"/>
+			<links>
+				<link id="r10"/>
+				<link id="r12"/>
+			</links>
+		</track>
+		<track id="r14">
+			<transform 30="15.611251" 31="28.65802" 32="12.505721"/>
+			<links>
+				<link id="r13"/>
+				<link id="r15"/>
+			</links>
+		</track>
+		<track id="r17">
+			<transform 30="-67.340912" 31="28.535772" 32="-70.375717"/>
+			<links>
+				<link id="r16"/>
+				<link id="r18"/>
+			</links>
+		</track>
+		<track id="r19">
+			<transform 30="-95.965935" 31="27.75" 32="-99.092865"/>
+			<links>
+				<link id="r20"/>
+				<link id="r18"/>
+			</links>
+		</track>
+		<track id="r20">
+			<transform 30="-148.5" 31="25.518167" 32="-151.5"/>
+			<links>
+				<link id="r19"/>
+				<link id="r21"/>
+			</links>
+		</track>
+		<track id="r22">
+			<transform 30="-198.458939" 31="23.021687" 32="-201.5"/>
+			<links>
+				<link id="r23"/>
+				<link id="r21"/>
+			</links>
+		</track>
+		<track id="r23">
+			<transform 30="-248.5" 31="20.289469" 32="-251.5"/>
+			<links>
+				<link id="r22"/>
+				<link id="r25"/>
+			</links>
+		</track>
+		<track id="r25">
+			<transform 30="-298.5" 31="17.658699" 32="-301.5"/>
+			<links>
+				<link id="r23"/>
+				<link id="r26"/>
+			</links>
+		</track>
+		<track id="r28">
+			<transform 30="-344.844025" 31="16.050867" 32="-347.821747"/>
+			<links>
+				<link id="r29"/>
+				<link id="r27"/>
+			</links>
+		</track>
+		<track id="r29">
+			<transform 30="-398.5" 31="15.96712" 32="-401.5"/>
+			<links>
+				<link id="r28"/>
+				<link id="r30"/>
+			</links>
+		</track>
+		<track id="r30">
+			<transform 30="-448.5" 31="15.982019" 32="-451.5"/>
+			<links>
+				<link id="r29"/>
+				<link id="r31"/>
+			</links>
+		</track>
+		<track id="r31">
+			<transform 30="-498.5" 31="16" 32="-501.5"/>
+			<links>
+				<link id="r30"/>
+			</links>
+		</track>
+		<track id="l0">
+			<transform 30="-501.5" 31="16" 32="-498.5"/>
+			<links>
+				<link id="l1"/>
+			</links>
+		</track>
+		<track id="l1">
+			<transform 30="-451.5" 31="15.988695" 32="-448.5"/>
+			<links>
+				<link id="l0"/>
+				<link id="l2"/>
+			</links>
+		</track>
+		<track id="l2">
+			<transform 30="-401.5" 31="15.997637" 32="-398.5"/>
+			<links>
+				<link id="l1"/>
+				<link id="l4"/>
+			</links>
+		</track>
+		<track id="l4">
+			<transform 30="-347.78894" 31="16.049999" 32="-344.685669"/>
+			<links>
+				<link id="l2"/>
+				<link id="l5"/>
+			</links>
+		</track>
+		<track id="l7">
+			<transform 30="-301.5" 31="17.655186" 32="-298.5"/>
+			<links>
+				<link id="l8"/>
+				<link id="l6"/>
+			</links>
+		</track>
+		<track id="l8">
+			<transform 30="-251.5" 31="20.269798" 32="-248.5"/>
+			<links>
+				<link id="l7"/>
+				<link id="l9"/>
+			</links>
+		</track>
+		<track id="l9">
+			<transform 30="-201.5" 31="23.079382" 32="-198.5"/>
+			<links>
+				<link id="l8"/>
+				<link id="l10"/>
+			</links>
+		</track>
+		<track id="l11">
+			<transform 30="-151.5" 31="25.493788" 32="-148.5"/>
+			<links>
+				<link id="l13"/>
+				<link id="l10"/>
+			</links>
+		</track>
+		<track id="l13">
+			<transform 30="-98.933723" 31="27.746128" 32="-95.880432"/>
+			<links>
+				<link id="l11"/>
+				<link id="l14"/>
+			</links>
+		</track>
+		<track id="l15">
+			<transform 30="-70.473114" 31="28.540001" 32="-67.34848"/>
+			<links>
+				<link id="l14"/>
+				<link id="l16"/>
+			</links>
+		</track>
+		<track id="l18">
+			<transform 30="-30.062952" 31="28.65802" 32="-26.886541"/>
+			<links>
+				<link id="l16"/>
+				<link id="l19"/>
+			</links>
+		</track>
+		<track id="l20">
+			<transform 30="39.569073" 31="28.65802" 32="42.690109"/>
+			<links>
+				<link id="l19"/>
+				<link id="l21"/>
+			</links>
+		</track>
+		<track id="l25">
+			<transform 30="98.5" 31="27.152943" 32="101.5"/>
+			<links>
+				<link id="l26"/>
+				<link id="train_69"/>
+			</links>
+		</track>
+		<track id="l26">
+			<transform 30="148.5" 31="24.922062" 32="151.5"/>
+			<links>
+				<link id="l25"/>
+				<link id="l27"/>
+			</links>
+		</track>
+		<track id="l27">
+			<transform 30="198.5" 31="22.4077" 32="201.5"/>
+			<links>
+				<link id="l26"/>
+				<link id="l28"/>
+			</links>
+		</track>
+		<track id="l28">
+			<transform 30="248.5" 31="19.621838" 32="251.5"/>
+			<links>
+				<link id="l27"/>
+				<link id="l29"/>
+			</links>
+		</track>
+		<track id="l29">
+			<transform 30="298.5" 31="17.027367" 32="301.5"/>
+			<links>
+				<link id="l28"/>
+				<link id="l30"/>
+			</links>
+		</track>
+		<track id="l32">
+			<transform 30="348.39975" 31="16.016235" 32="351.5"/>
+			<links>
+				<link id="l33"/>
+				<link id="l31"/>
+			</links>
+		</track>
+		<track id="l33">
+			<transform 30="398.5" 31="16" 32="401.5"/>
+			<links>
+				<link id="l32"/>
+				<link id="l34"/>
+			</links>
+		</track>
+		<track id="l34">
+			<transform 30="448.5" 31="16.022551" 32="451.5"/>
+			<links>
+				<link id="l33"/>
+				<link id="l35"/>
+			</links>
+		</track>
+		<track id="l35">
+			<transform 30="498.5" 31="16" 32="501.5"/>
+			<links>
+				<link id="l34"/>
+			</links>
+		</track>
+		<track id="train_45">
+			<transform 30="351.263092" 31="16.016235" 32="348.235687"/>
+			<links>
+				<link id="r2"/>
+				<link id="train_47"/>
+			</links>
+		</track>
+		<track id="l31">
+			<transform 30="332.111023" 31="16.09074" 32="335.300354"/>
+			<links>
+				<link id="l32"/>
+				<link id="l30"/>
+			</links>
+		</track>
+		<track id="train_47">
+			<transform 30="334.998688" 31="16.09074" 32="331.901886"/>
+			<links>
+				<link id="r4"/>
+				<link id="train_45"/>
+			</links>
+		</track>
+		<track id="l30">
+			<transform 30="319.620911" 31="16.290474" 32="322.776123"/>
+			<links>
+				<link id="l31"/>
+				<link id="l29"/>
+			</links>
+		</track>
+		<track id="r13">
+			<transform 30="42.801727" 31="28.65802" 32="39.7066"/>
+			<links>
+				<link id="r12"/>
+				<link id="r14"/>
+			</links>
+		</track>
+		<track id="r12">
+			<transform 30="57.066967" 31="28.591024" 32="54.01857"/>
+			<links>
+				<link id="r11"/>
+				<link id="r13"/>
+			</links>
+		</track>
+		<track id="r10">
+			<transform 30="83.771294" 31="27.89222" 32="80.701767"/>
+			<links>
+				<link id="r8"/>
+				<link id="r11"/>
+			</links>
+		</track>
+		<track id="r15">
+			<transform 30="-26.84919" 31="28.65802" 32="-29.990931"/>
+			<links>
+				<link id="r14"/>
+				<link id="r16"/>
+			</links>
+		</track>
+		<track id="r16">
+			<transform 30="-53.636292" 31="28.65802" 32="-56.713627"/>
+			<links>
+				<link id="r15"/>
+				<link id="r17"/>
+			</links>
+		</track>
+		<track id="r18">
+			<transform 30="-79.070847" 31="28.347778" 32="-82.144096"/>
+			<links>
+				<link id="r17"/>
+				<link id="r19"/>
+			</links>
+		</track>
+		<track id="r21">
+			<transform 30="-168.78894" 31="24.54232" 32="-171.878296"/>
+			<links>
+				<link id="r20"/>
+				<link id="r22"/>
+			</links>
+		</track>
+		<track id="r27">
+			<transform 30="-330.490936" 31="16.332678" 32="-333.536469"/>
+			<links>
+				<link id="r28"/>
+				<link id="r26"/>
+			</links>
+		</track>
+		<track id="r26">
+			<transform 30="-316.903046" 31="16.772678" 32="-320.025146"/>
+			<links>
+				<link id="r27"/>
+				<link id="r25"/>
+			</links>
+		</track>
+		<track id="l5">
+			<transform 30="-333.608215" 31="16.332678" 32="-330.503448"/>
+			<links>
+				<link id="l4"/>
+				<link id="l6"/>
+			</links>
+		</track>
+		<track id="l6">
+			<transform 30="-320.053802" 31="16.772678" 32="-316.903748"/>
+			<links>
+				<link id="l5"/>
+				<link id="l7"/>
+			</links>
+		</track>
+		<track id="l10">
+			<transform 30="-171.859467" 31="24.54232" 32="-168.711807"/>
+			<links>
+				<link id="l9"/>
+				<link id="l11"/>
+			</links>
+		</track>
+		<track id="l14">
+			<transform 30="-82.177864" 31="28.347778" 32="-79.051445"/>
+			<links>
+				<link id="l13"/>
+				<link id="l15"/>
+			</links>
+		</track>
+		<track id="l16">
+			<transform 30="-56.952217" 31="28.65802" 32="-53.803551"/>
+			<links>
+				<link id="l15"/>
+				<link id="l18"/>
+			</links>
+		</track>
+		<track id="l19">
+			<transform 30="12.337406" 31="28.65802" 32="15.454244"/>
+			<links>
+				<link id="l18"/>
+				<link id="l20"/>
+			</links>
+		</track>
+		<track id="l21">
+			<transform 30="54.038692" 31="28.591024" 32="57.125343"/>
+			<links>
+				<link id="l20"/>
+				<link id="l23"/>
+			</links>
+		</track>
+		<track id="l23">
+			<transform 30="68.139206" 31="28.311481" 32="71.195244"/>
+			<links>
+				<link id="l21"/>
+				<link id="train_69"/>
+			</links>
+		</track>
+		<track id="train_69">
+			<transform 30="80.552521" 31="27.89222" 32="83.624901"/>
+			<links>
+				<link id="l23"/>
+				<link id="l25"/>
+			</links>
+		</track>
+	</train_tracks>
+	<iceberg_markers/>
+	<volcano_markers/>
+</definition>
+

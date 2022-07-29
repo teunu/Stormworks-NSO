@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition name="Foghorn" category="4" type="21" mass="5" value="200" flags="0" tags="boat,sound,audio" audio_filename_start="audio/fx3/stormworks_foghorn_start.ogg" audio_filename_loop="audio/fx3/stormworks_foghorn_loop.ogg" audio_filename_end="audio/fx3/stormworks_foghorn_end.ogg" audio_gain="1.0" mesh_data_name="meshes/component_foghorn.mesh" mesh_0_name="" mesh_1_name="" mesh_editor_only_name="" block_type="0" child_name="" extender_name="" constraint_type="0" constraint_axis="1" constraint_range_of_motion="0" max_motor_force="100" max_motor_speed="10" cable_radius="0.02" seat_type="0" buoy_radius="1" buoy_factor="1" buoy_force="100" force_emitter_max_force="1000" force_emitter_max_vector="1" engine_max_force="1000" trans_conn_type="0" trans_type="0" wheel_radius="0.25" button_type="1" light_intensity="1" light_range="1" light_ies_map="graphics/ies/ies_default.txtr" light_fov="1" light_type="0" door_lower_limit="-1" door_upper_limit="1" door_flipped="false" dynamic_min_rotation="0" dynamic_max_rotation="3.141593" logic_gate_type="0" indicator_type="7" connector_type="0" magnet_force="1" gyro_type="0" rudder_surface_area="1" m_pump_pressure="0.01">
+	<sfx_datas>
+		<sfx_data sfx_name="horn" sfx_range_inner="100.0" sfx_range_outer="1500.0" sfx_priority="1.0" sfx_is_underwater_affected="true">
+			<sfx_layers>
+				<sfx_layer sfx_filename_start="audio/fx3/stormworks_foghorn_start.ogg" sfx_filename_loop="audio/fx3/stormworks_foghorn_loop.ogg" sfx_filename_end="audio/fx3/stormworks_foghorn_end.ogg" sfx_gain="1.0" sfx_loop_start_time="0.5" sfx_loop_blend_duration="3.0" sfx_volume_fade_speed="1.0" sfx_pitch_fade_speed="1.0"/>
+			</sfx_layers>
+		</sfx_data>
+	</sfx_datas>
+	<surfaces>
+		<surface orientation="3" rotation="0" shape="0" trans_type="0" flags="0">
+			<position x="-1" y="0" z="-1"/>
+		</surface>
+		<surface orientation="3" rotation="0" shape="0" trans_type="0" flags="0">
+			<position x="0" y="0" z="-1"/>
+		</surface>
+		<surface orientation="3" rotation="0" shape="0" trans_type="0" flags="0">
+			<position x="1" y="0" z="-1"/>
+		</surface>
+		<surface orientation="3" rotation="0" shape="0" trans_type="0" flags="0">
+			<position x="2" y="0" z="-1"/>
+		</surface>
+		<surface orientation="3" rotation="0" shape="0" trans_type="0" flags="0">
+			<position x="2" y="0" z="0"/>
+		</surface>
+		<surface orientation="3" rotation="0" shape="0" trans_type="0" flags="0">
+			<position x="1" y="0" z="0"/>
+		</surface>
+		<surface orientation="3" rotation="0" shape="0" trans_type="0" flags="0">
+			<position x="0" y="0" z="0"/>
+		</surface>
+		<surface orientation="3" rotation="0" shape="0" trans_type="0" flags="0">
+			<position x="-1" y="0" z="0"/>
+		</surface>
+		<surface orientation="3" rotation="0" shape="0" trans_type="0" flags="0">
+			<position x="-1" y="0" z="1"/>
+		</surface>
+		<surface orientation="3" rotation="0" shape="0" trans_type="0" flags="0">
+			<position x="0" y="0" z="1"/>
+		</surface>
+		<surface orientation="3" rotation="0" shape="0" trans_type="0" flags="0">
+			<position x="1" y="0" z="1"/>
+		</surface>
+		<surface orientation="3" rotation="0" shape="0" trans_type="0" flags="0">
+			<position x="2" y="0" z="1"/>
+		</surface>
+		<surface orientation="1" rotation="0" shape="0" trans_type="0" flags="0">
+			<position x="-1" y="0" z="0"/>
+		</surface>
+		<surface orientation="1" rotation="0" shape="0" trans_type="0" flags="0">
+			<position x="-1" y="1" z="0"/>
+		</surface>
+		<surface orientation="0" rotation="0" shape="0" trans_type="0" flags="0">
+			<position x="2" y="0" z="1"/>
+		</surface>
+		<surface orientation="0" rotation="0" shape="0" trans_type="0" flags="0">
+			<position x="2" y="0" z="0"/>
+		</surface>
+		<surface orientation="0" rotation="0" shape="0" trans_type="0" flags="0">
+			<position x="2" y="0" z="-1"/>
+		</surface>
+		<surface orientation="0" rotation="0" shape="0" trans_type="0" flags="0">
+			<position x="2" y="1" z="-1"/>
+		</surface>
+		<surface orientation="0" rotation="0" shape="0" trans_type="0" flags="0">
+			<position x="2" y="1" z="0"/>
+		</surface>
+		<surface orientation="0" rotation="0" shape="0" trans_type="0" flags="0">
+			<position x="2" y="1" z="1"/>
+		</surface>
+		<surface orientation="0" rotation="0" shape="0" trans_type="0" flags="0">
+			<position x="2" y="2" z="1"/>
+		</surface>
+		<surface orientation="0" rotation="0" shape="0" trans_type="0" flags="0">
+			<position x="2" y="2" z="0"/>
+		</surface>
+		<surface orientation="0" rotation="0" shape="0" trans_type="0" flags="0">
+			<position x="2" y="2" z="-1"/>
+		</surface>
+	</surfaces>
+	<buoyancy_surfaces/>
+	<logic_nodes>
+		<logic_node label="Horn" mode="1" type="0" description="Sounds the horn when recieving an on signal.">
+			<position x="-1" y="1" z="0"/>
+		</logic_node>
+		<logic_node label="Electric" mode="1" type="4" description="Electrical power connection." flags="0">
+			<position x="0" y="0" z="0"/>
+		</logic_node>
+	</logic_nodes>
+	<voxels>
+		<voxel flags="1" physics_shape="0">
+			<position x="0" y="0" z="0"/>
+			<physics_shape_rotation 00="1" 01="0" 02="0" 10="0" 11="1" 12="0" 20="0" 21="0" 22="1"/>
+		</voxel>
+		<voxel flags="1" physics_shape="0">
+			<position x="0" y="0" z="1"/>
+			<physics_shape_rotation 00="1" 01="0" 02="0" 10="0" 11="1" 12="0" 20="0" 21="0" 22="1"/>
+		</voxel>
+		<voxel flags="1" physics_shape="0">
+			<position x="-1" y="0" z="1"/>
+			<physics_shape_rotation 00="1" 01="0" 02="0" 10="0" 11="1" 12="0" 20="0" 21="0" 22="1"/>
+		</voxel>
+		<voxel flags="1" physics_shape="0">
+			<position x="-1" y="0" z="0"/>
+			<physics_shape_rotation 00="1" 01="0" 02="0" 10="0" 11="1" 12="0" 20="0" 21="0" 22="1"/>
+		</voxel>
+		<voxel flags="1" physics_shape="0">
+			<position x="-1" y="0" z="-1"/>
+			<physics_shape_rotation 00="1" 01="0" 02="0" 10="0" 11="1" 12="0" 20="0" 21="0" 22="1"/>
+		</voxel>
+		<voxel flags="1" physics_shape="0">
+			<position x="0" y="0" z="-1"/>
+			<physics_shape_rotation 00="1" 01="0" 02="0" 10="0" 11="1" 12="0" 20="0" 21="0" 22="1"/>
+		</voxel>
+		<voxel flags="1" physics_shape="0">
+			<position x="1" y="0" z="-1"/>
+			<physics_shape_rotation 00="1" 01="0" 02="0" 10="0" 11="1" 12="0" 20="0" 21="0" 22="1"/>
+		</voxel>
+		<voxel flags="1" physics_shape="0">
+			<position x="1" y="0" z="0"/>
+			<physics_shape_rotation 00="1" 01="0" 02="0" 10="0" 11="1" 12="0" 20="0" 21="0" 22="1"/>
+		</voxel>
+		<voxel flags="1" physics_shape="0">
+			<position x="1" y="0" z="1"/>
+			<physics_shape_rotation 00="1" 01="0" 02="0" 10="0" 11="1" 12="0" 20="0" 21="0" 22="1"/>
+		</voxel>
+		<voxel flags="1" physics_shape="0">
+			<position x="2" y="0" z="1"/>
+			<physics_shape_rotation 00="1" 01="0" 02="0" 10="0" 11="1" 12="0" 20="0" 21="0" 22="1"/>
+		</voxel>
+		<voxel flags="1" physics_shape="0">
+			<position x="2" y="0" z="0"/>
+			<physics_shape_rotation 00="1" 01="0" 02="0" 10="0" 11="1" 12="0" 20="0" 21="0" 22="1"/>
+		</voxel>
+		<voxel flags="1" physics_shape="0">
+			<position x="2" y="0" z="-1"/>
+			<physics_shape_rotation 00="1" 01="0" 02="0" 10="0" 11="1" 12="0" 20="0" 21="0" 22="1"/>
+		</voxel>
+		<voxel flags="1" physics_shape="0">
+			<position x="2" y="1" z="-1"/>
+			<physics_shape_rotation 00="1" 01="0" 02="0" 10="0" 11="1" 12="0" 20="0" 21="0" 22="1"/>
+		</voxel>
+		<voxel flags="1" physics_shape="3">
+			<position x="1" y="1" z="-1"/>
+			<physics_shape_rotation 00="1" 01="0" 02="0" 10="0" 11="1" 12="0" 20="0" 21="0" 22="1"/>
+		</voxel>
+		<voxel flags="1" physics_shape="1">
+			<position x="0" y="1" z="-1"/>
+			<physics_shape_rotation 00="1" 01="0" 02="0" 10="0" 11="1" 12="0" 20="0" 21="0" 22="1"/>
+		</voxel>
+		<voxel flags="1" physics_shape="1">
+			<position x="-1" y="1" z="-1"/>
+			<physics_shape_rotation 00="1" 01="0" 02="0" 10="0" 11="1" 12="0" 20="0" 21="0" 22="1"/>
+		</voxel>
+		<voxel flags="1" physics_shape="0">
+			<position x="-1" y="1" z="0"/>
+			<physics_shape_rotation 00="1" 01="0" 02="0" 10="0" 11="1" 12="0" 20="0" 21="0" 22="1"/>
+		</voxel>
+		<voxel flags="1" physics_shape="1">
+			<position x="-1" y="1" z="1"/>
+			<physics_shape_rotation 00="-1" 01="0" 02="0" 10="0" 11="1" 12="0" 20="0" 21="0" 22="-1"/>
+		</voxel>
+		<voxel flags="1" physics_shape="1">
+			<position x="0" y="1" z="1"/>
+			<physics_shape_rotation 00="-1" 01="0" 02="0" 10="0" 11="1" 12="0" 20="0" 21="0" 22="-1"/>
+		</voxel>
+		<voxel flags="1" physics_shape="3">
+			<position x="1" y="1" z="1"/>
+			<physics_shape_rotation 00="0" 01="0" 02="-1" 10="0" 11="1" 12="0" 20="1" 21="0" 22="0"/>
+		</voxel>
+		<voxel flags="1" physics_shape="0">
+			<position x="2" y="1" z="1"/>
+			<physics_shape_rotation 00="1" 01="0" 02="0" 10="0" 11="1" 12="0" 20="0" 21="0" 22="1"/>
+		</voxel>
+		<voxel flags="1" physics_shape="0">
+			<position x="2" y="1" z="0"/>
+			<physics_shape_rotation 00="1" 01="0" 02="0" 10="0" 11="1" 12="0" 20="0" 21="0" 22="1"/>
+		</voxel>
+		<voxel flags="1" physics_shape="0">
+			<position x="1" y="1" z="0"/>
+			<physics_shape_rotation 00="1" 01="0" 02="0" 10="0" 11="1" 12="0" 20="0" 21="0" 22="1"/>
+		</voxel>
+		<voxel flags="1" physics_shape="0">
+			<position x="0" y="1" z="0"/>
+			<physics_shape_rotation 00="1" 01="0" 02="0" 10="0" 11="1" 12="0" 20="0" 21="0" 22="1"/>
+		</voxel>
+		<voxel flags="1" physics_shape="2">
+			<position x="1" y="2" z="-1"/>
+			<physics_shape_rotation 00="1" 01="0" 02="0" 10="0" 11="1" 12="0" 20="0" 21="0" 22="1"/>
+		</voxel>
+		<voxel flags="1" physics_shape="3">
+			<position x="2" y="2" z="-1"/>
+			<physics_shape_rotation 00="1" 01="0" 02="0" 10="0" 11="1" 12="0" 20="0" 21="0" 22="1"/>
+		</voxel>
+		<voxel flags="1" physics_shape="0">
+			<position x="2" y="2" z="0"/>
+			<physics_shape_rotation 00="1" 01="0" 02="0" 10="0" 11="1" 12="0" 20="0" 21="0" 22="1"/>
+		</voxel>
+		<voxel flags="1" physics_shape="1">
+			<position x="1" y="2" z="0"/>
+			<physics_shape_rotation 00="0" 01="0" 02="1" 10="-1" 11="0" 12="0" 20="0" 21="-1" 22="0"/>
+		</voxel>
+		<voxel flags="1" physics_shape="3">
+			<position x="2" y="2" z="1"/>
+			<physics_shape_rotation 00="0" 01="0" 02="-1" 10="0" 11="1" 12="0" 20="1" 21="0" 22="0"/>
+		</voxel>
+		<voxel flags="1" physics_shape="2">
+			<position x="1" y="2" z="1"/>
+			<physics_shape_rotation 00="1" 01="0" 02="0" 10="0" 11="0" 12="1" 20="0" 21="-1" 22="0"/>
+		</voxel>
+	</voxels>
+	<voxel_min x="-1" y="0" z="-1"/>
+	<voxel_max x="2" y="2" z="1"/>
+	<voxel_physics_min x="-1" y="0" z="-1"/>
+	<voxel_physics_max x="2" y="2" z="1"/>
+	<bb_physics_min x="0" y="0" z="0"/>
+	<bb_physics_max x="0" y="0" z="0"/>
+	<constraint_pos_parent x="0" y="0" z="0"/>
+	<constraint_pos_child x="0" y="0" z="0"/>
+	<voxel_location_child x="0" y="0" z="0"/>
+	<force_dir x="0" y="0" z="0"/>
+	<light_position x="0" y="0" z="0"/>
+	<light_color x="1" y="1" z="1"/>
+	<door_size x="1" y="1" z="1"/>
+	<dynamic_body_position x="0" y="0" z="0"/>
+	<dynamic_rotation_axes x="0" y="1" z="0"/>
+	<dynamic_side_axis x="1" y="0" z="0"/>
+	<magnet_offset x="0" y="0" z="0"/>
+	<tooltip_properties description="It has an audible range of 1500m." short_description="A ship's foghorn that will sound when receiving an on signal."/>
+	<reward_properties number_rewarded="2"/>
+	<seat_exit_position x="0" y="0" z="0"/>
+</definition>
+

@@ -1,0 +1,11 @@
+vec3 sky_color(vec3 normal, vec3 sky_color_horizon, vec3 sky_color_zenith)
+{
+    float angle_factor = dot(normal, vec3(0, 1, 0)) * 0.5 + 0.5;
+    return mix(sky_color_horizon, sky_color_zenith, angle_factor).rgb;
+}
+
+vec3 ambient_color(vec3 normal, vec3 ambient_color_low, vec3 ambient_color_high)
+{
+    float angle_factor = dot(normal, vec3(0, 1, 0)) * 0.5 + 0.5;
+    return mix(ambient_color_low, ambient_color_high, angle_factor).rgb;
+}

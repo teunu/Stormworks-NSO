@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition name="Tank Wheel (Small)" category="1" type="41" mass="20" value="100" flags="8388609" tags="steerable,steering" phys_collision_dampen="2000" audio_filename_loop="audio/fx3/stormworks_skid_loop.ogg" audio_gain="1" mesh_data_name="meshes/component_tank_wheel_base.mesh" mesh_0_name="meshes/component_tank_regular_wheel.mesh" mesh_editor_only_name="meshes/arrow_tank_wheel.mesh" constraint_axis="1" max_motor_force="100" cable_length="16" seat_health_per_sec="1" buoy_radius="1" buoy_factor="1" buoy_force="100" force_emitter_max_force="1000" force_emitter_max_vector="1" engine_max_force="1000" wheel_radius="0.4" wheel_wishbone_length="0.28" wheel_suspension_height="0.75" wheel_type="1" button_type="1" light_range="1" light_ies_map="graphics/ies/ies_default.txtr" light_fov="1" door_lower_limit="-1" door_upper_limit="1" dynamic_max_rotation="3.141593" rudder_surface_area="0">
+	<sfx_datas>
+		<sfx_data sfx_name="wheel" sfx_range_inner="2" sfx_range_outer="30">
+			<sfx_layers>
+				<sfx_layer sfx_filename_loop="audio/fx3/stormworks_skid_loop.ogg" sfx_pitch_fade_speed="0.016"/>
+			</sfx_layers>
+		</sfx_data>
+	</sfx_datas>
+	<surfaces>
+		<surface orientation="3" shape="1">
+			<position/>
+		</surface>
+	</surfaces>
+	<buoyancy_surfaces>
+		<surface orientation="3" shape="1">
+			<position/>
+		</surface>
+	</buoyancy_surfaces>
+	<logic_nodes>
+		<logic_node label="Brake" mode="1" description="Locks the wheel into place when receiving an on signal.">
+			<position/>
+		</logic_node>
+	</logic_nodes>
+	<couplings/>
+	<voxels>
+		<voxel flags="1">
+			<position/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="2">
+			<position x="1" y="1" z="-1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="2">
+			<position y="1" z="-1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="2">
+			<position x="-1" y="1" z="-1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="2">
+			<position x="-1" y="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="2">
+			<position x="-1" y="1" z="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="2">
+			<position y="1" z="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="2">
+			<position x="1" y="1" z="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="2">
+			<position x="1" y="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="2">
+			<position y="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+	</voxels>
+	<voxel_min x="-1" z="-1"/>
+	<voxel_max x="1" y="1" z="1"/>
+	<voxel_physics_min/>
+	<voxel_physics_max/>
+	<bb_physics_min/>
+	<bb_physics_max/>
+	<compartment_sample_pos/>
+	<constraint_pos_parent y="0.25"/>
+	<constraint_pos_child/>
+	<voxel_location_child/>
+	<seat_offset/>
+	<seat_front/>
+	<seat_up/>
+	<seat_camera/>
+	<seat_render/>
+	<force_dir/>
+	<light_position/>
+	<light_color x="1" y="1" z="1"/>
+	<light_forward/>
+	<door_size x="1" y="1" z="1"/>
+	<door_normal/>
+	<door_side/>
+	<door_up/>
+	<door_base_pos/>
+	<dynamic_body_position/>
+	<dynamic_rotation_axes y="1"/>
+	<dynamic_side_axis x="1"/>
+	<magnet_offset/>
+	<connector_axis/>
+	<connector_up/>
+	<tooltip_properties description="A drive wheel is required to rotate the connected track. The wheel will form a track with other wheels of the same size and orientation that are placed in line and on the same body." short_description="Small wheel for tracked vehicles."/>
+	<jet_engine_connections_prev/>
+	<jet_engine_connections_next/>
+	<particle_direction/>
+	<particle_offset/>
+	<particle_bounds/>
+	<rope_hook_offset/>
+</definition>
+

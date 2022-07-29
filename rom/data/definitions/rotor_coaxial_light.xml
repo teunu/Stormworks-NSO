@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition name="Rotor (Light)" category="3" type="2" mass="4" value="150" flags="1073741825" tags="rotor,helicopter,basic" audio_filename_loop="audio/fx2/stormworks_propeller_medium_loop.ogg" audio_gain="1" mesh_0_name="meshes/component_coaxial_rotor_light.mesh" mesh_1_name="meshes/component_coaxial_rotor_light_blade.mesh" mesh_editor_only_name="meshes/arrow_large_rotor.mesh" cable_length="16" seat_health_per_sec="1" buoy_radius="1" buoy_factor="1" buoy_force="100" force_emitter_max_force="10000" force_emitter_default_pitch="1" force_emitter_blade_physics_length="1.25" force_emitter_efficiency="1.25" engine_max_force="1000" rudder_surface_area="0">
+	<sfx_datas>
+		<sfx_data sfx_name="force_emitter" sfx_range_inner="20" sfx_range_outer="80" sfx_priority="1">
+			<sfx_layers>
+				<sfx_layer sfx_filename_loop="audio/fx2/stormworks_propeller_medium_loop.ogg"/>
+			</sfx_layers>
+		</sfx_data>
+	</sfx_datas>
+	<surfaces>
+		<surface orientation="3" rotation="2" shape="3" trans_type="1">
+			<position/>
+		</surface>
+		<surface orientation="2" shape="3" trans_type="1">
+			<position/>
+		</surface>
+	</surfaces>
+	<buoyancy_surfaces/>
+	<logic_nodes>
+		<logic_node label="Roll" mode="1" type="1" description="Standard value between -1 and 1 representing the desired roll amount.">
+			<position x="1"/>
+		</logic_node>
+		<logic_node label="Pitch" mode="1" type="1" description="Standard value between -1 and 1 representing the desired pitch amount.">
+			<position x="-1"/>
+		</logic_node>
+		<logic_node orientation="3" label="RPS" mode="1" type="2" description="Power Connection A.">
+			<position/>
+		</logic_node>
+		<logic_node label="Collective" mode="1" type="1" description="Standard value between -1 and 1 representing the desired pitch amount.">
+			<position/>
+		</logic_node>
+		<logic_node orientation="2" label="RPS" type="2" description="Power Connection B.">
+			<position/>
+		</logic_node>
+	</logic_nodes>
+	<couplings/>
+	<voxels>
+		<voxel flags="1" buoy_pipes="18">
+			<position/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="2">
+			<position x="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="2">
+			<position x="2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="2">
+			<position x="3"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="2">
+			<position x="4"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="2">
+			<position x="-4"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="2">
+			<position x="-3"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="2">
+			<position x="-2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="2">
+			<position x="-1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="2">
+			<position z="-4"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="2">
+			<position z="-3"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="2">
+			<position z="-2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="2">
+			<position z="-1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="2">
+			<position z="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="2">
+			<position z="2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="2">
+			<position z="3"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="2">
+			<position z="4"/>
+			<physics_shape_rotation/>
+		</voxel>
+	</voxels>
+	<voxel_min x="-4" z="-4"/>
+	<voxel_max x="4" z="4"/>
+	<voxel_physics_min/>
+	<voxel_physics_max/>
+	<bb_physics_min/>
+	<bb_physics_max/>
+	<compartment_sample_pos y="2"/>
+	<constraint_pos_parent/>
+	<constraint_pos_child/>
+	<voxel_location_child/>
+	<seat_offset/>
+	<seat_front/>
+	<seat_up/>
+	<seat_camera/>
+	<seat_render/>
+	<force_dir y="1"/>
+	<light_position/>
+	<light_color x="1" y="1" z="1"/>
+	<light_forward/>
+	<door_size x="1" y="1" z="1"/>
+	<door_normal/>
+	<door_side/>
+	<door_up/>
+	<door_base_pos/>
+	<dynamic_body_position/>
+	<dynamic_rotation_axes y="1"/>
+	<dynamic_side_axis x="1"/>
+	<magnet_offset/>
+	<connector_axis/>
+	<connector_up/>
+	<tooltip_properties description="Two standard number inputs control the rotor's swashplate, allowing you to affect the its pitch and roll. Power received from an engine affects the amount of up and down force that the rotor will generate. The output force of this rotor is decreased when underwater." short_description="A helicopter rotor with controllable pitch and roll."/>
+	<jet_engine_connections_prev/>
+	<jet_engine_connections_next/>
+	<particle_direction/>
+	<particle_offset/>
+	<particle_bounds/>
+	<rope_hook_offset/>
+</definition>
+

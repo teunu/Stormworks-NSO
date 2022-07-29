@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition is_island="true" tile_type="2" is_purchasable="false" purchase_cost="0" sea_floor_height="-6">
+	<meshes>
+		<mesh id="mesh0" parent_id="" purchase_interactable_id="" seasonal_flags="0" file_name="meshes/mainland/mega_island_5_9.mesh">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="0" 31="0" 32="0" 33="1"/>
+		</mesh>
+		<mesh id="lighthouse_mesh" parent_id="" purchase_interactable_id="" seasonal_flags="0" file_name="meshes/arctic_lighthouse.mesh">
+			<transform 00="0.984808" 01="0" 02="-0.173648" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.173648" 21="0" 22="0.984808" 23="0" 30="-48.122017" 31="16.299286" 32="78.491035" 33="1"/>
+		</mesh>
+		<mesh id="bulb_mesh" parent_id="" purchase_interactable_id="" seasonal_flags="0" file_name="meshes/lighthouse_light_small.mesh">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-48.15134" 31="27.975628" 32="78.444221" 33="1"/>
+		</mesh>
+	</meshes>
+	<physics_objects/>
+	<physics_meshes>
+		<physics_mesh id="physics_mesh0" parent_id="" purchase_interactable_id="" seasonal_flags="0" file_name="meshes/mainland/mega_island_5_9.phys">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="0" 31="0" 32="0" 33="1"/>
+		</physics_mesh>
+		<physics_mesh id="lighthouse_phys" parent_id="" purchase_interactable_id="" seasonal_flags="0" file_name="meshes/arctic_lighthouse_phys.phys">
+			<transform 00="0.984808" 01="0" 02="-0.173648" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.173648" 21="0" 22="0.984808" 23="0" 30="-48.122017" 31="16.299286" 32="78.491035" 33="1"/>
+		</physics_mesh>
+	</physics_meshes>
+	<physics_dynamics/>
+	<lights_omni>
+		<light id="omni0" parent_id="" purchase_interactable_id="" seasonal_flags="0" radius="1" is_render_halo="true">
+			<transform 00="0.984808" 01="0" 02="-0.173648" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.173648" 21="0" 22="0.984808" 23="0" 30="-50.201191" 31="28.625975" 32="78.863037" 33="1"/>
+			<color x="5" y="0" z="0"/>
+		</light>
+		<light id="omni1" parent_id="" purchase_interactable_id="" seasonal_flags="0" radius="1" is_render_halo="true">
+			<transform 00="0.984808" 01="0" 02="-0.173648" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.173648" 21="0" 22="0.984808" 23="0" 30="-46.036869" 31="28.627941" 32="78.127907" 33="1"/>
+			<color x="5" y="0" z="0"/>
+		</light>
+		<light id="bulb_omni" parent_id="bulb_mesh" purchase_interactable_id="" seasonal_flags="0" radius="0.5" is_render_halo="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-48.629925" 31="28.970608" 32="78.446167" 33="1"/>
+			<color x="8" y="8" z="4"/>
+		</light>
+		<light id="omni3" parent_id="" purchase_interactable_id="" seasonal_flags="0" radius="1" is_render_halo="true">
+			<transform 00="0.984808" 01="0" 02="-0.173648" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.173648" 21="0" 22="0.984808" 23="0" 30="-50.850086" 31="16.108105" 32="71.57505" 33="1"/>
+			<color x="1" y="1" z="1"/>
+		</light>
+		<light id="omni4" parent_id="" purchase_interactable_id="" seasonal_flags="0" radius="1" is_render_halo="true">
+			<transform 00="0.984808" 01="0" 02="-0.173648" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.173648" 21="0" 22="0.984808" 23="0" 30="-47.901421" 31="16.108105" 32="71.055122" 33="1"/>
+			<color x="1" y="1" z="1"/>
+		</light>
+	</lights_omni>
+	<lights_spot>
+		<light id="spot0" parent_id="bulb_mesh" purchase_interactable_id="" seasonal_flags="0" range="1024" fov="0.1" texture="graphics/ies/ies_default.txtr">
+			<transform 00="0" 01="0" 02="1" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-1" 21="0" 22="0" 23="0" 30="-48.629925" 31="28.970608" 32="78.446167" 33="1"/>
+			<color x="20" y="20" z="15"/>
+		</light>
+	</lights_spot>
+	<lights_tube/>
+	<screens/>
+	<edit_areas/>
+	<interactables/>
+	<door_logic_nodes/>
+	<light_logic_nodes>
+		<logic id="light_switch0" parent_id="" purchase_interactable_id="" seasonal_flags="0" target="omni0" is_on="true" is_flashing="true" flicker_duration="0" flash_on_duration="50" flash_off_duration="50">
+			<transform 00="0.229209" 01="0" 02="0.973377" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.973377" 21="0" 22="0.229209" 23="0" 30="-50.317223" 31="28.088223" 32="78.877052" 33="1"/>
+		</logic>
+		<logic id="light_switch1" parent_id="" purchase_interactable_id="" seasonal_flags="0" target="omni1" is_on="true" is_flashing="true" flicker_duration="0" flash_on_duration="50" flash_off_duration="50">
+			<transform 00="-0.190768" 01="0" 02="-0.981635" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.981635" 21="0" 22="-0.190768" 23="0" 30="-45.889889" 31="28.088223" 32="78.091263" 33="1"/>
+		</logic>
+	</light_logic_nodes>
+	<rotation_logic_nodes>
+		<logic id="rotation0" parent_id="" purchase_interactable_id="" seasonal_flags="0" target="bulb_mesh" is_on="true" is_use_wind_speed="false">
+			<transform 00="-0.336472" 01="0" 02="0.941694" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.941694" 21="0" 22="-0.336472" 23="0" 30="-49.320263" 31="27.975628" 32="78.486519" 33="1"/>
+			<delta_rotation x="0" y="0.01" z="0"/>
+		</logic>
+	</rotation_logic_nodes>
+	<hangar_door_logic_nodes/>
+	<audio_logic_nodes/>
+	<tile_markers>
+		<markers id="tile_marker0" parent_id="" purchase_interactable_id="" seasonal_flags="0" marker_type="9" is_in_ocean="false" string_data="" icon="0" loot_type="0">
+			<transform 00="-0.40978" 01="0" 02="0.912184" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.912184" 21="0" 22="-0.40978" 23="0" 30="-33.319912" 31="9.097286" 32="61.781418" 33="1"/>
+		</markers>
+		<markers id="tile_marker1" parent_id="" purchase_interactable_id="" seasonal_flags="0" marker_type="9" is_in_ocean="false" string_data="" icon="0" loot_type="0">
+			<transform 00="-0.985941" 01="0" 02="0.167093" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.167093" 21="0" 22="-0.985941" 23="0" 30="-47.638233" 31="18.697807" 32="83.092819" 33="1"/>
+		</markers>
+	</tile_markers>
+	<mission_zones/>
+	<dynamic_markers/>
+	<ladders>
+		<ladder id="ladder_0" parent_id="" purchase_interactable_id="" seasonal_flags="0" height="10">
+			<transform 00="-0.984808" 01="0" 02="0.173648" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.173648" 21="0" 22="-0.984808" 23="0" 30="-48.317947" 31="16.915867" 32="77.343277" 33="1"/>
+		</ladder>
+		<ladder id="ladder_1" parent_id="" purchase_interactable_id="" seasonal_flags="0" height="11">
+			<transform 00="-0.984808" 01="0" 02="0.173648" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.173648" 21="0" 22="-0.984808" 23="0" 30="-49.37635" 31="5.2811" 32="71.398094" 33="1"/>
+		</ladder>
+	</ladders>
+	<perches/>
+	<fires/>
+	<train_tracks/>
+	<iceberg_markers/>
+</definition>
+

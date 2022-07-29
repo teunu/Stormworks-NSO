@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<meta type="1" max_spawned="5" is_repeatable="true"/>
+<definition_data vehicle_filename="test_npc_boat3.xml" vehicle_name="tugboat" map_travel_speed="0.2" character_outfit_category="2">
+
+	<delivery_mission 
+		desc_long="Collect fuel from a nearby oil rig and deliver to the stranded tugboat." 
+		desc_short="Stranded tugboat requires fuel." 
+		title="Deliver fuel barrel" 
+		obj_1_text="Deliver fuel barrel" 
+		obj_2_text="Deliver fuel barrel" 
+		obj_3_text="Deliver fuel barrel"/>
+	
+	<runaway_boat_mission 
+		desc_long="Shut the tugboat's engine down and deliver it back to its owner." 
+		desc_short="Stop the runaway tugboat." 
+		title="Runaway Tugboat" 
+		difficulty="2"/>
+	
+	<sinking_boat_mission 
+		desc_long="Rescue the stranded fisherman and transport him to the nearby hospital for emergency medical care." 
+		desc_short="Rescue the fisherman from his sinking tugboat." 
+		title="Sinking Tugboat" 
+		obj_1_text="Rescue fisherman" 
+		obj_2_text="Rescue fisherman" 
+		obj_3_text="Rescue fisherman" 
+		difficulty="1"/>
+</definition_data>

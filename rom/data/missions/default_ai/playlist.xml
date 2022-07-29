@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<playlist path_id="app_data/data/missions/default_ai" folder_path="data/missions/default_ai" file_store="4" name="Default AI">
+	<locations location_id_counter="13" component_id_counter="67">
+		<locations>
+			<l id="3" name="Biba - Hinckley" env_mod_spawn_num="1">
+				<components>
+					<c component_type="2" id="13" name="captain" display_name="Captain" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="0.061751" 31="3.300001" 32="-3.662663"/>
+						<spawn_bounds>
+							<min x="-0.11" y="-0.8" z="-0.11"/>
+							<max x="0.11" y="0.8" z="0.11"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="3" id="31" name="type=ai_boat,size=small" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_31.xml" vehicle_file_store="4">
+						<spawn_transform 30="-0.189323" 31="2.664222" 32="-0.008296"/>
+						<spawn_bounds>
+							<min x="-2.375" y="-2.875" z="-6.375"/>
+							<max x="2.375" y="3.375" z="7.375"/>
+						</spawn_bounds>
+						<spawn_local_offset y="-0.25" z="-0.5"/>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="4" name="FJwarner - Cape" env_mod_spawn_num="1">
+				<components>
+					<c component_type="2" id="14" name="captain" display_name="Captain" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="-0.004637" 31="4.000178" 32="12.004848"/>
+						<spawn_bounds>
+							<min x="-0.11" y="-0.8" z="-0.11"/>
+							<max x="0.11" y="0.8" z="0.11"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="3" id="32" name="type=ai_boat,size=medium" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_32.xml" vehicle_file_store="4">
+						<spawn_transform 30="0.000918" 31="5.000659" 32="0.909538"/>
+						<spawn_bounds>
+							<min x="-4.875" y="-7.875" z="-13.125"/>
+							<max x="4.875" y="5.875" z="15.125"/>
+						</spawn_bounds>
+						<spawn_local_offset y="1" z="-1"/>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="5" name="FJwarner - Welland" env_mod_spawn_num="1">
+				<components>
+					<c component_type="2" id="15" name="captain" display_name="Captain" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="-5.267599" 31="6.505481" 32="-7.653818"/>
+						<spawn_bounds>
+							<min x="-0.11" y="-0.8" z="-0.11"/>
+							<max x="0.11" y="0.8" z="0.11"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="3" id="33" name="type=ai_boat,size=medium" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_33.xml" vehicle_file_store="4">
+						<spawn_transform 30="-2.306369" 31="7.087724" 32="-2.530416"/>
+						<spawn_bounds>
+							<min x="-4.625" y="-0.125" z="-5.375"/>
+							<max x="4.625" y="16.375" z="31.625"/>
+						</spawn_bounds>
+						<spawn_local_offset y="-8.125" z="-13.125"/>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="6" name="FJwarner - Carol" env_mod_spawn_num="1">
+				<components>
+					<c component_type="2" id="16" name="captain" display_name="Captain" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="-5.484682" 31="5.505481" 32="-9.243508"/>
+						<spawn_bounds>
+							<min x="-0.11" y="-0.8" z="-0.11"/>
+							<max x="0.11" y="0.8" z="0.11"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="3" id="34" name="type=ai_boat,size=medium" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_34.xml" vehicle_file_store="4">
+						<spawn_transform 30="-2.851152" 31="5.957345" 32="-2.793417"/>
+						<spawn_bounds>
+							<min x="-4.625" y="-0.375" z="0.875"/>
+							<max x="4.875" y="12.875" z="24.625"/>
+						</spawn_bounds>
+						<spawn_local_offset x="-0.125" y="-6.25" z="-12.75"/>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="49" vehicle_parent_id="34" cargo_zone_import_cargo_type="type=mission_zone,zone_type=destination_crab_boat" display_name="Captain Bones's lobster trawler" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="-2.980063" 31="6.847391" 32="-9.494442"/>
+						<spawn_bounds>
+							<min x="-5" y="-5" z="-5"/>
+							<max x="5" y="5" z="5"/>
+						</spawn_bounds>
+						<vehicle_parent_transform 30="-0.128911" 31="0.890046" 32="-6.701025"/>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="7" name="FJwarner - Erie" env_mod_spawn_num="1">
+				<components>
+					<c component_type="2" id="17" name="captain" display_name="Captain" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="-4.495016" 31="5.744937" 32="-9.545721"/>
+						<spawn_bounds>
+							<min x="-0.11" y="-0.8" z="-0.11"/>
+							<max x="0.11" y="0.8" z="0.11"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="3" id="35" name="type=ai_boat,size=medium" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_35.xml" vehicle_file_store="4">
+						<spawn_transform 30="-3.499432" 31="3.263757" 32="-3.168417"/>
+						<spawn_bounds>
+							<min x="-3.625" y="-2.625" z="-19.875"/>
+							<max x="3.625" y="4.125" z="5.625"/>
+						</spawn_bounds>
+						<spawn_local_offset y="-0.75" z="7.125"/>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="8" name="FJwarner - Barnes" env_mod_spawn_num="1">
+				<components>
+					<c component_type="2" id="18" name="captain" display_name="Captain" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="-9.455791" 31="0.8" 32="-2.821617"/>
+						<spawn_bounds>
+							<min x="-0.11" y="-0.8" z="-0.11"/>
+							<max x="0.11" y="0.8" z="0.11"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="3" id="36" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_36.xml" vehicle_file_store="4">
+						<spawn_transform 30="1.895441" 31="2.687584" 32="-1.918417"/>
+						<spawn_bounds>
+							<min x="-5.625" y="-0.125" z="-33.375"/>
+							<max x="5.625" y="8.625" z="14.625"/>
+						</spawn_bounds>
+						<spawn_local_offset y="-4.25" z="9.375"/>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="9" name="Campbell - Wooden" env_mod_spawn_num="1">
+				<components>
+					<c component_type="2" id="19" name="captain" display_name="Captain" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="-4.549494" 31="5.618777" 32="-3.396156"/>
+						<spawn_bounds>
+							<min x="-0.11" y="-0.8" z="-0.11"/>
+							<max x="0.11" y="0.8" z="0.11"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="3" id="37" name="type=ai_boat,size=small" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_37.xml" vehicle_file_store="4">
+						<spawn_transform 30="-0.837538" 31="2.148883" 32="-2.386472"/>
+						<spawn_bounds>
+							<min x="-1.875" y="-2.125" z="-0.875"/>
+							<max x="1.875" y="3.625" z="11.625"/>
+						</spawn_bounds>
+						<spawn_local_offset y="-0.75" z="-5.375"/>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="10" name="FJwarner - Crab" env_mod_spawn_num="1">
+				<components>
+					<c component_type="2" id="20" name="captain" display_name="Captain" dynamic_object_type="2" character_outfit_category="2" character_type="2" vehicle_file_store="1">
+						<spawn_transform 30="-0.863607" 31="5.755481" 32="-5.932373"/>
+						<spawn_bounds>
+							<min x="-0.11" y="-0.8" z="-0.11"/>
+							<max x="0.11" y="0.8" z="0.11"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="3" id="38" name="type=ai_boat,size=medium" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_38.xml" vehicle_file_store="4">
+						<spawn_transform 30="-1.027817" 31="5.324815" 32="-3.374732"/>
+						<spawn_bounds>
+							<min x="-3.875" y="0.375" z="-10.625"/>
+							<max x="3.875" y="11.625" z="8.625"/>
+						</spawn_bounds>
+						<spawn_local_offset y="-6" z="1"/>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="50" vehicle_parent_id="38" cargo_zone_import_cargo_type="type=mission_zone,zone_type=destination_fishing_boat" display_name="Captain Ghostly's fishing vessel" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="-0.772184" 31="5.864403" 32="-8.187436"/>
+						<spawn_bounds>
+							<min x="-5" y="-5" z="-5"/>
+							<max x="5" y="5" z="5"/>
+						</spawn_bounds>
+						<vehicle_parent_transform 30="0.255633" 31="0.539588" 32="-4.812704"/>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="11" name="Spider - Condor - Hosiptal Main" env_mod_spawn_num="1">
+				<components>
+					<c component_type="3" id="39" name="type=ai_boat,size=large,capability=hospital,unique,x_min=-15000,z_min=-15000,x_max=15000,z_max=15000" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_39.xml" vehicle_file_store="4">
+						<spawn_transform 31="5"/>
+						<spawn_bounds>
+							<min x="-6.375" y="-4.625" z="-38.125"/>
+							<max x="6.375" y="13.625" z="18.375"/>
+						</spawn_bounds>
+						<spawn_local_offset y="-4.5" z="9.875"/>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="40" vehicle_parent_id="39" cargo_zone_import_cargo_type="type=hospital,hospital" display_name="Hospital Boat" show_zone_on_map="true" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 31="3.871253" 32="-3.433483"/>
+						<spawn_bounds>
+							<min x="-4.5" y="-1.080425" z="-3.017395"/>
+							<max x="4.5" y="1.080425" z="3.017395"/>
+						</spawn_bounds>
+						<vehicle_parent_transform 31="-1.128747" 32="-3.433483"/>
+						<graph_links/>
+					</c>
+					<c component_type="2" id="41" name="captain" display_name="Captain" dynamic_object_type="2" character_outfit_category="11" character_type="2" vehicle_file_store="1">
+						<spawn_transform 30="0.012036" 31="3.675" 32="-3.063021"/>
+						<spawn_bounds>
+							<min x="-0.11" y="-0.8" z="-0.11"/>
+							<max x="0.11" y="0.8" z="0.11"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="2" id="42" display_name="Doctor 1" dynamic_object_type="2" character_outfit_category="9" character_type="2" vehicle_file_store="1">
+						<spawn_transform 00="-0.148048" 02="-0.98898" 20="0.98898" 22="-0.148048" 30="-2.264929" 31="3.675" 32="-5.151536"/>
+						<spawn_bounds>
+							<min x="-0.11" y="-0.8" z="-0.11"/>
+							<max x="0.11" y="0.8" z="0.11"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="2" id="43" display_name="Doctor 2" dynamic_object_type="2" character_outfit_category="9" character_type="2" vehicle_file_store="1">
+						<spawn_transform 00="-0.990327" 02="-0.138757" 20="0.138757" 22="-0.990327" 30="3.382195" 31="3.675" 32="-0.9684"/>
+						<spawn_bounds>
+							<min x="-0.11" y="-0.8" z="-0.11"/>
+							<max x="0.11" y="0.8" z="0.11"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="2" id="44" name="patient_1" display_name="Patient 1" dynamic_object_type="2" character_outfit_category="11" character_type="2" vehicle_file_store="1">
+						<spawn_transform 30="-2.984793" 31="3.749815" 32="-8.080709"/>
+						<spawn_bounds>
+							<min x="-0.11" y="-0.8" z="-0.11"/>
+							<max x="0.11" y="0.8" z="0.11"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="2" id="45" name="patient_2" display_name="Patient 2" dynamic_object_type="2" character_outfit_category="11" character_type="2" vehicle_file_store="1">
+						<spawn_transform 30="3.476748" 31="3.675" 32="-7.346334"/>
+						<spawn_bounds>
+							<min x="-0.11" y="-0.8" z="-0.11"/>
+							<max x="0.11" y="0.8" z="0.11"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="2" id="46" name="patient_3" display_name="Patient 3" dynamic_object_type="2" character_outfit_category="11" character_type="2" vehicle_file_store="1">
+						<spawn_transform 30="-3.018904" 31="3.749815" 32="-8.892574"/>
+						<spawn_bounds>
+							<min x="-0.11" y="-0.8" z="-0.11"/>
+							<max x="0.11" y="0.8" z="0.11"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="2" id="47" name="patient_4" display_name="Patient 4" dynamic_object_type="2" character_outfit_category="11" character_type="2" vehicle_file_store="1">
+						<spawn_transform 30="3.24033" 31="3.675" 32="-8.61482"/>
+						<spawn_bounds>
+							<min x="-0.11" y="-0.8" z="-0.11"/>
+							<max x="0.11" y="0.8" z="0.11"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="12" name="Spider - Condor - Hosiptal Arctic" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="49" vehicle_parent_id="66" cargo_zone_import_cargo_type="type=hospital,hospital" display_name="Hospital Boat" show_zone_on_map="true" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 31="3.871253" 32="-3.433483"/>
+						<spawn_bounds>
+							<min x="-4.5" y="-1.080425" z="-3.017395"/>
+							<max x="4.5" y="1.080425" z="3.017395"/>
+						</spawn_bounds>
+						<vehicle_parent_transform 30="-0.018018" 31="-1.121204" 32="-3.397544"/>
+						<graph_links/>
+					</c>
+					<c component_type="2" id="50" name="captain" display_name="Captain" dynamic_object_type="2" character_outfit_category="11" character_type="2" vehicle_file_store="1">
+						<spawn_transform 30="0.012036" 31="3.675" 32="-3.063021"/>
+						<spawn_bounds>
+							<min x="-0.11" y="-0.8" z="-0.11"/>
+							<max x="0.11" y="0.8" z="0.11"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="2" id="51" display_name="Doctor 1" dynamic_object_type="2" character_outfit_category="9" character_type="2" vehicle_file_store="1">
+						<spawn_transform 00="-0.148048" 02="-0.98898" 20="0.98898" 22="-0.148048" 30="-2.264929" 31="3.675" 32="-5.151536"/>
+						<spawn_bounds>
+							<min x="-0.11" y="-0.8" z="-0.11"/>
+							<max x="0.11" y="0.8" z="0.11"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="2" id="52" display_name="Doctor 2" dynamic_object_type="2" character_outfit_category="9" character_type="2" vehicle_file_store="1">
+						<spawn_transform 00="-0.990327" 02="-0.138757" 20="0.138757" 22="-0.990327" 30="3.382195" 31="3.675" 32="-0.9684"/>
+						<spawn_bounds>
+							<min x="-0.11" y="-0.8" z="-0.11"/>
+							<max x="0.11" y="0.8" z="0.11"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="2" id="53" name="patient_1" display_name="Patient 1" dynamic_object_type="2" character_outfit_category="11" character_type="2" vehicle_file_store="1">
+						<spawn_transform 30="-2.984793" 31="3.749815" 32="-8.080709"/>
+						<spawn_bounds>
+							<min x="-0.11" y="-0.8" z="-0.11"/>
+							<max x="0.11" y="0.8" z="0.11"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="2" id="54" name="patient_2" display_name="Patient 2" dynamic_object_type="2" character_outfit_category="11" character_type="2" vehicle_file_store="1">
+						<spawn_transform 30="3.476748" 31="3.675" 32="-7.346334"/>
+						<spawn_bounds>
+							<min x="-0.11" y="-0.8" z="-0.11"/>
+							<max x="0.11" y="0.8" z="0.11"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="2" id="55" name="patient_3" display_name="Patient 3" dynamic_object_type="2" character_outfit_category="11" character_type="2" vehicle_file_store="1">
+						<spawn_transform 30="-3.018904" 31="3.749815" 32="-8.892574"/>
+						<spawn_bounds>
+							<min x="-0.11" y="-0.8" z="-0.11"/>
+							<max x="0.11" y="0.8" z="0.11"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="2" id="56" name="patient_4" display_name="Patient 4" dynamic_object_type="2" character_outfit_category="11" character_type="2" vehicle_file_store="1">
+						<spawn_transform 30="3.24033" 31="3.675" 32="-8.61482"/>
+						<spawn_bounds>
+							<min x="-0.11" y="-0.8" z="-0.11"/>
+							<max x="0.11" y="0.8" z="0.11"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="3" id="66" name="type=ai_boat,size=large,capability=hospital,unique,x_min=-40000,z_min=70000,x_max=5000,z_max=100000" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_66.xml" vehicle_file_store="4">
+						<spawn_transform 30="0.018018" 31="4.992457" 32="-0.035939"/>
+						<spawn_bounds>
+							<min x="-6.375" y="-4.625" z="-38.125"/>
+							<max x="6.375" y="13.625" z="18.375"/>
+						</spawn_bounds>
+						<spawn_local_offset y="-4.5" z="9.875"/>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="13" name="Spider - Condor - Hosiptal Volcanic" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="58" vehicle_parent_id="67" cargo_zone_import_cargo_type="type=hospital,hospital" display_name="Hospital Boat" show_zone_on_map="true" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 31="3.871253" 32="-3.433483"/>
+						<spawn_bounds>
+							<min x="-4.5" y="-1.080425" z="-3.017395"/>
+							<max x="4.5" y="1.080425" z="3.017395"/>
+						</spawn_bounds>
+						<vehicle_parent_transform 30="0.001907" 31="-1.215067" 32="-3.487877"/>
+						<graph_links/>
+					</c>
+					<c component_type="2" id="59" name="captain" display_name="Captain" dynamic_object_type="2" character_outfit_category="11" character_type="2" vehicle_file_store="1">
+						<spawn_transform 30="0.012036" 31="3.675" 32="-3.063021"/>
+						<spawn_bounds>
+							<min x="-0.11" y="-0.8" z="-0.11"/>
+							<max x="0.11" y="0.8" z="0.11"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="2" id="60" display_name="Doctor 1" dynamic_object_type="2" character_outfit_category="9" character_type="2" vehicle_file_store="1">
+						<spawn_transform 00="-0.148048" 02="-0.98898" 20="0.98898" 22="-0.148048" 30="-2.264929" 31="3.675" 32="-5.151536"/>
+						<spawn_bounds>
+							<min x="-0.11" y="-0.8" z="-0.11"/>
+							<max x="0.11" y="0.8" z="0.11"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="2" id="61" display_name="Doctor 2" dynamic_object_type="2" character_outfit_category="9" character_type="2" vehicle_file_store="1">
+						<spawn_transform 00="-0.990327" 02="-0.138757" 20="0.138757" 22="-0.990327" 30="3.382195" 31="3.675" 32="-0.9684"/>
+						<spawn_bounds>
+							<min x="-0.11" y="-0.8" z="-0.11"/>
+							<max x="0.11" y="0.8" z="0.11"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="2" id="62" name="patient_1" display_name="Patient 1" dynamic_object_type="2" character_outfit_category="11" character_type="2" vehicle_file_store="1">
+						<spawn_transform 30="-2.984793" 31="3.749815" 32="-8.080709"/>
+						<spawn_bounds>
+							<min x="-0.11" y="-0.8" z="-0.11"/>
+							<max x="0.11" y="0.8" z="0.11"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="2" id="63" name="patient_2" display_name="Patient 2" dynamic_object_type="2" character_outfit_category="11" character_type="2" vehicle_file_store="1">
+						<spawn_transform 30="3.476748" 31="3.675" 32="-7.346334"/>
+						<spawn_bounds>
+							<min x="-0.11" y="-0.8" z="-0.11"/>
+							<max x="0.11" y="0.8" z="0.11"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="2" id="64" name="patient_3" display_name="Patient 3" dynamic_object_type="2" character_outfit_category="11" character_type="2" vehicle_file_store="1">
+						<spawn_transform 30="-3.018904" 31="3.749815" 32="-8.892574"/>
+						<spawn_bounds>
+							<min x="-0.11" y="-0.8" z="-0.11"/>
+							<max x="0.11" y="0.8" z="0.11"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="2" id="65" name="patient_4" display_name="Patient 4" dynamic_object_type="2" character_outfit_category="11" character_type="2" vehicle_file_store="1">
+						<spawn_transform 30="3.24033" 31="3.675" 32="-8.61482"/>
+						<spawn_bounds>
+							<min x="-0.11" y="-0.8" z="-0.11"/>
+							<max x="0.11" y="0.8" z="0.11"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="3" id="67" name="type=ai_boat,size=large,capability=hospital,unique,x_min=-30000,z_min=-22000,x_max=-15000,z_max=-15000" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_67.xml" vehicle_file_store="4">
+						<spawn_transform 30="-0.001907" 31="5.08632" 32="0.054394"/>
+						<spawn_bounds>
+							<min x="-6.375" y="-4.625" z="-38.125"/>
+							<max x="6.375" y="13.625" z="18.375"/>
+						</spawn_bounds>
+						<spawn_local_offset y="-4.5" z="9.875"/>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+		</locations>
+	</locations>
+</playlist>
+

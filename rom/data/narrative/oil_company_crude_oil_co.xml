@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<meta type="2" max_spawned="1" is_repeatable="true"/>
+<definition_data vehicle_filename="oil_tanker.xml" vehicle_delivery_filename="rig_instrument.xml" rig_team_size="5" tanker_team_size="3" >
+	
+	<rig_evacuation 
+		desc_long="A fire has broken out on the Crude Oil Co. rig. A full evacuation is necessary. Get the workers to the nearby hospital as quickly as possible." 
+		desc_short="Evacuate rig workers to safety." 
+		title="Crude Oil Co. Evacuation" 
+		obj_1_text="Evacuate 3 workers" 
+		obj_2_text="Evacuate all 5 workers" 
+		obj_3_text="Evacuate all workers efficiently"
+		obj_1_count="3"
+		difficulty="5"
+		obj_1_time_mins="20"
+		obj_2_time_mins="15"
+		obj_3_time_mins="10"/>
+	
+	<rig_inspection 
+		desc_long="Collect the safety inspectors from the airport and transport them to the Crude Oil Co. rig." 
+		desc_short="Transport safety inspectors to the Crude Oil Co. rig." 
+		title="Crude Oil Co. Rig Inspection" 
+		obj_1_text="Transport safety inspectors" 
+		obj_2_text="Transport safety inspectors" 
+		obj_3_text="Transport safety inspectors"/>
+	
+	<rig_inspection_alt 
+		desc_long="The inspectors have finished on the Crude Oil Co. tanker. Get them to the rig for inspection phase 2." 
+		desc_short="Transport safety inspectors to the Crude Oil Co. rig." 
+		title="Crude Oil Co. Inspection Phase 2" 
+		obj_1_text="Transport safety inspectors" 
+		obj_2_text="Transport safety inspectors" 
+		obj_3_text="Transport safety inspectors"/>
+	
+	<rig_med_evac 
+		desc_long="Evacuate the injured Crude Oil Co. rig worker to the nearest hospital." 
+		desc_short="Evacuate Crude Oil Co. rig worker." 
+		title="Rig Worker Medevac" 
+		obj_1_text="Evacuate casualty" 
+		obj_2_text="Evacuate casualty" 
+		obj_3_text="Evacuate casualty"
+		obj_1_time_mins="20"
+		obj_2_time_mins="15"
+		obj_3_time_mins="10"/>
+	
+	<rig_deliver_parts 
+		desc_long="Collect the rig instruments from the nearby research base and deliver them to the Crude Oil Co. rig." 
+		desc_short="Deliver equipment to the Crude Oil Co. rig" 
+		title="Crude Oil Co. Equipment Delivery"
+		obj_1_text="Deliver 1 rig instrument" 
+		obj_2_text="Deliver 2 rig instruments" 
+		obj_3_text="Deliver 3 rig instruments" 
+		obj_1_count="1" 
+		obj_2_count="2" 
+		obj_3_count="3"
+		obj_1_time_mins="120" 
+        obj_2_time_mins="120" 
+        obj_3_time_mins="120"
+		difficulty="2"/>
+	
+	<tanker_inspection 
+		desc_long="Collect the safety inspectors from the airport and transport them to the Crude Oil Co. tanker." 
+		desc_short="Transport safety inspectors to the Crude Oil Co. tanker." 
+		title="Crude Oil Co. Tanker Inspection" 
+		obj_1_text="Transport safety inspectors" 
+		obj_2_text="Transport safety inspectors" 
+		obj_3_text="Transport safety inspectors"/>
+	
+	<tanker_inspection_alt 
+		desc_long="The inspectors have finished on the Crude Oil Co. rig. Get them to the tanker for inspection phase 2." 
+		desc_short="Transport safety inspectors to the Crude Oil Co. tanker." 
+		title="Crude Oil Co. Inspection Phase 2" 
+		obj_1_text="Transport safety inspectors" 
+		obj_2_text="Transport safety inspectors" 
+		obj_3_text="Transport safety inspectors"/>
+	
+	<tanker_evacuation 
+		desc_long="Evacuate the Crude Oil Co. tanker crew and get them to the nearby hospital." 
+		desc_short="Evacuate tanker workers to safety." 
+		title="Crude Oil Co. Tanker Evacuation" 
+		obj_1_text="Evacuate 1 worker" 
+		obj_2_text="Evacuate all 3 workers" 
+		obj_3_text="Evacuate all workers efficiently" 
+		obj_1_count="1"
+		difficulty="2"/>
+	
+	<tanker_tow 
+		desc_long="The Crude Oil Co. tanker has broken down. Tow it back to their rig for a reward." 
+		desc_short="Tow the Crude Oil Co. tanker to their rig." 
+		title="Tanker Tow" 
+		obj_1_text="Tow tanker to rig" 
+		obj_2_text="Tow tanker to rig" 
+		obj_3_text="Tow tanker to rig"
+		obj_1_time_mins="150" 
+        obj_2_time_mins="150" 
+        obj_3_time_mins="150"
+		difficulty="3"/>
+</definition_data>
+

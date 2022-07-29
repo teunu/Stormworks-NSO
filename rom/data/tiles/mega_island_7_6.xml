@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition is_island="true" tile_type="2" is_purchasable="false" purchase_cost="0" sea_floor_height="-6">
+	<meshes>
+		<mesh id="mesh0" parent_id="" purchase_interactable_id="" seasonal_flags="0" file_name="meshes/mainland/mega_island_7_6.mesh">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="0" 31="0" 32="0" 33="1"/>
+		</mesh>
+		<mesh id="quarry_assets_mesh" parent_id="" purchase_interactable_id="" seasonal_flags="0" file_name="meshes/island_33_quarry.mesh">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="145.765396" 31="30.938189" 32="-38.812351" 33="1"/>
+		</mesh>
+		<mesh id="door_0" parent_id="" purchase_interactable_id="" seasonal_flags="0" file_name="meshes/door_exterior.mesh">
+			<transform 00="-0" 01="0" 02="-1" 03="0" 10="0" 11="1" 12="0" 13="0" 20="1" 21="0" 22="-0" 23="0" 30="147.888321" 31="31.830589" 32="-34.858894" 33="1"/>
+		</mesh>
+	</meshes>
+	<physics_objects/>
+	<physics_meshes>
+		<physics_mesh id="physics_mesh0" parent_id="" purchase_interactable_id="" seasonal_flags="0" file_name="meshes/mainland/mega_island_7_6.phys">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="0" 31="0" 32="0" 33="1"/>
+		</physics_mesh>
+		<physics_mesh id="door_0_phys" parent_id="door_0" purchase_interactable_id="" seasonal_flags="0" file_name="meshes/door_hospital_phys.phys">
+			<transform 00="-0" 01="0" 02="-1" 03="0" 10="0" 11="1" 12="0" 13="0" 20="1" 21="0" 22="-0" 23="0" 30="147.888321" 31="31.830589" 32="-34.858894" 33="1"/>
+		</physics_mesh>
+		<physics_mesh id="quarry_assets_phys" parent_id="" purchase_interactable_id="" seasonal_flags="0" file_name="meshes/island_33_quarry_phys.phys">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="145.765396" 31="30.938189" 32="-38.812351" 33="1"/>
+		</physics_mesh>
+	</physics_meshes>
+	<physics_dynamics/>
+	<lights_omni>
+		<light id="omni0" parent_id="" purchase_interactable_id="" seasonal_flags="0" radius="0.25" is_render_halo="true">
+			<transform 00="0.959846" 01="0" 02="-0.280527" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.280527" 21="0" 22="0.959846" 23="0" 30="150.9552" 31="44.416954" 32="-20.51206" 33="1"/>
+			<color x="10" y="10" z="6"/>
+		</light>
+		<light id="omni1" parent_id="" purchase_interactable_id="" seasonal_flags="0" radius="0.25" is_render_halo="true">
+			<transform 00="0.959846" 01="0" 02="-0.280527" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.280527" 21="0" 22="0.959846" 23="0" 30="150.767059" 31="44.416954" 32="-21.15583" 33="1"/>
+			<color x="10" y="10" z="6"/>
+		</light>
+		<light id="omni2" parent_id="" purchase_interactable_id="" seasonal_flags="0" radius="0.25" is_render_halo="true">
+			<transform 00="0.959846" 01="0" 02="-0.280527" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.280527" 21="0" 22="0.959846" 23="0" 30="150.509537" 31="44.416954" 32="-22.036942" 33="1"/>
+			<color x="10" y="10" z="4"/>
+		</light>
+		<light id="omni3" parent_id="" purchase_interactable_id="" seasonal_flags="0" radius="0.25" is_render_halo="true">
+			<transform 00="0.959846" 01="0" 02="-0.280527" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.280527" 21="0" 22="0.959846" 23="0" 30="150.322617" 31="44.416954" 32="-22.676506" 33="1"/>
+			<color x="10" y="10" z="6"/>
+		</light>
+		<light id="omni4" parent_id="" purchase_interactable_id="" seasonal_flags="0" radius="0.25" is_render_halo="true">
+			<transform 00="0.959846" 01="0" 02="-0.280527" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.280527" 21="0" 22="0.959846" 23="0" 30="151.079651" 31="43.753551" 32="-20.548437" 33="1"/>
+			<color x="10" y="10" z="6"/>
+		</light>
+		<light id="omni5" parent_id="" purchase_interactable_id="" seasonal_flags="0" radius="0.25" is_render_halo="true">
+			<transform 00="0.959846" 01="0" 02="-0.280527" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.280527" 21="0" 22="0.959846" 23="0" 30="150.889328" 31="43.753551" 32="-21.199644" 33="1"/>
+			<color x="10" y="10" z="6"/>
+		</light>
+		<light id="omni6" parent_id="" purchase_interactable_id="" seasonal_flags="0" radius="0.25" is_render_halo="true">
+			<transform 00="0.959846" 01="0" 02="-0.280527" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.280527" 21="0" 22="0.959846" 23="0" 30="150.635422" 31="43.753551" 32="-22.068398" 33="1"/>
+			<color x="10" y="10" z="6"/>
+		</light>
+		<light id="omni7" parent_id="" purchase_interactable_id="" seasonal_flags="0" radius="0.25" is_render_halo="true">
+			<transform 00="0.959846" 01="0" 02="-0.280527" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.280527" 21="0" 22="0.959846" 23="0" 30="150.447067" 31="43.753551" 32="-22.712826" 33="1"/>
+			<color x="10" y="10" z="6"/>
+		</light>
+		<light id="omni_office" parent_id="" purchase_interactable_id="" seasonal_flags="0" radius="4" is_render_halo="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="148.985443" 31="33.917049" 32="-35.250435" 33="1"/>
+			<color x="1" y="1" z="0.6"/>
+		</light>
+		<light id="omni9" parent_id="" purchase_interactable_id="" seasonal_flags="0" radius="8" is_render_halo="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="165.542664" 31="24.649679" 32="346.483673" 33="1"/>
+			<color x="3" y="3" z="2.2"/>
+		</light>
+		<light id="omni10" parent_id="" purchase_interactable_id="" seasonal_flags="0" radius="8" is_render_halo="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="156.429092" 31="23.954748" 32="346.918274" 33="1"/>
+			<color x="3" y="3" z="2.2"/>
+		</light>
+		<light id="omni11" parent_id="" purchase_interactable_id="" seasonal_flags="0" radius="8" is_render_halo="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="150.983963" 31="33.051041" 32="253.904205" 33="1"/>
+			<color x="1" y="1" z="0.8"/>
+		</light>
+		<light id="omni12" parent_id="" purchase_interactable_id="" seasonal_flags="0" radius="8" is_render_halo="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="167.932373" 31="31.616594" 32="257.45459" 33="1"/>
+			<color x="1" y="1" z="0.8"/>
+		</light>
+		<light id="omni13" parent_id="" purchase_interactable_id="" seasonal_flags="0" radius="8" is_render_halo="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="194.918365" 31="33.220825" 32="187.870468" 33="1"/>
+			<color x="1" y="1" z="0.8"/>
+		</light>
+		<light id="omni14" parent_id="" purchase_interactable_id="" seasonal_flags="0" radius="8" is_render_halo="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="177.782288" 31="33.068954" 32="189.577133" 33="1"/>
+			<color x="1" y="1" z="0.8"/>
+		</light>
+		<light id="omni15" parent_id="" purchase_interactable_id="" seasonal_flags="0" radius="8" is_render_halo="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="141.748352" 31="50.327595" 32="113.777519" 33="1"/>
+			<color x="1" y="1" z="0.8"/>
+		</light>
+		<light id="omni16" parent_id="" purchase_interactable_id="" seasonal_flags="0" radius="8" is_render_halo="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="122.492424" 31="50.851727" 32="111.417343" 33="1"/>
+			<color x="1" y="1" z="0.8"/>
+		</light>
+		<light id="omni17" parent_id="" purchase_interactable_id="" seasonal_flags="0" radius="8" is_render_halo="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="114.406151" 31="31.651072" 32="35.677753" 33="1"/>
+			<color x="1" y="1" z="0.8"/>
+		</light>
+		<light id="omni18" parent_id="" purchase_interactable_id="" seasonal_flags="0" radius="8" is_render_halo="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="132.698715" 31="31.840973" 32="22.293591" 33="1"/>
+			<color x="1" y="1" z="0.8"/>
+		</light>
+	</lights_omni>
+	<lights_spot>
+		<light id="spot0" parent_id="" purchase_interactable_id="" seasonal_flags="0" range="50" fov="0.523599" texture="graphics/ies/ies_default.txtr">
+			<transform 00="0.250113" 01="0" 02="0.968217" 03="0" 10="-0.636136" 11="0.753875" 12="0.164329" 13="0" 20="-0.729914" 21="-0.657018" 22="0.188554" 23="0" 30="150.502701" 31="44.410805" 32="-22.035177" 33="1"/>
+			<color x="10" y="10" z="6"/>
+		</light>
+	</lights_spot>
+	<lights_tube>
+		<light id="tube0" parent_id="" purchase_interactable_id="" seasonal_flags="0" length="5" radius="4">
+			<transform 00="0.476451" 01="0.875579" 02="0.079722" 03="0" 10="-0.038163" 11="-0.069994" 12="0.996817" 13="0" 20="0.878372" 21="-0.477977" 22="0.000066" 23="0" 30="147.502731" 31="34.781731" 32="-41.032177" 33="1"/>
+			<color x="1" y="1" z="1"/>
+		</light>
+	</lights_tube>
+	<screens/>
+	<edit_areas/>
+	<interactables>
+		<interactable id="floodlight_interact" parent_id="" purchase_interactable_id="" seasonal_flags="0" target_object_id="floodlight_logic" label="Floodlight" use_case="0" interact_type="0" is_purchased="false" is_ignore_purchased="false">
+			<transform 00="0.954032" 01="0" 02="-0.299704" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.299704" 21="0" 22="0.954032" 23="0" 30="151.927216" 31="32.345554" 32="-21.981705" 33="1"/>
+			<size x="1.456465" y="1.82072" z="2.013"/>
+		</interactable>
+		<interactable id="door_0_interact" parent_id="door_0" purchase_interactable_id="" seasonal_flags="0" target_object_id="door_0_logic" label="Door" use_case="0" interact_type="0" is_purchased="false" is_ignore_purchased="false">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="147.932373" 31="32.925556" 32="-35.369373" 33="1"/>
+			<size x="0.441766" y="1.923538" z="0.834024"/>
+		</interactable>
+		<interactable id="office_light_interact" parent_id="" purchase_interactable_id="" seasonal_flags="0" target_object_id="office_light_logic" label="Light" use_case="0" interact_type="0" is_purchased="false" is_ignore_purchased="false">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="148.060028" 31="33.094147" 32="-36.027081" 33="1"/>
+			<size x="0.135309" y="0.316597" z="0.313199"/>
+		</interactable>
+	</interactables>
+	<door_logic_nodes>
+		<logic id="door_0_logic" parent_id="" purchase_interactable_id="" seasonal_flags="0" target_a="door_0_closed" target_b="door_0_open" target_movable="door_0" target_triggered="" pos_index="0" pos_factor="0" anim_duration="50" anim_delay="0" anim_delay_back="0" is_on="false" behavior="0">
+			<transform 00="-0" 01="0" 02="1" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-1" 21="0" 22="-0" 23="0" 30="147.809952" 31="33.424984" 32="-36.166462" 33="1"/>
+		</logic>
+	</door_logic_nodes>
+	<light_logic_nodes>
+		<logic id="light_switch0" parent_id="" purchase_interactable_id="" seasonal_flags="0" target="omni7" is_on="true" is_flashing="false" flicker_duration="0" flash_on_duration="30" flash_off_duration="30">
+			<transform 00="-0.284897" 01="0" 02="-0.958558" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.958558" 21="0" 22="-0.284897" 23="0" 30="151.248566" 31="33.601929" 32="-21.774279" 33="1"/>
+		</logic>
+		<logic id="light_switch1" parent_id="" purchase_interactable_id="" seasonal_flags="0" target="omni6" is_on="true" is_flashing="false" flicker_duration="0" flash_on_duration="30" flash_off_duration="30">
+			<transform 00="-0.284897" 01="0" 02="-0.958558" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.958558" 21="0" 22="-0.284897" 23="0" 30="151.248566" 31="34.158337" 32="-21.774279" 33="1"/>
+		</logic>
+		<logic id="light_switch2" parent_id="" purchase_interactable_id="" seasonal_flags="0" target="omni5" is_on="true" is_flashing="false" flicker_duration="0" flash_on_duration="30" flash_off_duration="30">
+			<transform 00="-0.284897" 01="0" 02="-0.958558" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.958558" 21="0" 22="-0.284897" 23="0" 30="151.248566" 31="34.808205" 32="-21.774279" 33="1"/>
+		</logic>
+		<logic id="light_switch3" parent_id="" purchase_interactable_id="" seasonal_flags="0" target="omni4" is_on="true" is_flashing="false" flicker_duration="0" flash_on_duration="30" flash_off_duration="30">
+			<transform 00="-0.284897" 01="0" 02="-0.958558" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.958558" 21="0" 22="-0.284897" 23="0" 30="151.248566" 31="35.422607" 32="-21.774279" 33="1"/>
+		</logic>
+		<logic id="light_switch4" parent_id="" purchase_interactable_id="" seasonal_flags="0" target="omni3" is_on="true" is_flashing="false" flicker_duration="0" flash_on_duration="30" flash_off_duration="30">
+			<transform 00="-0.284897" 01="0" 02="-0.958558" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.958558" 21="0" 22="-0.284897" 23="0" 30="151.248566" 31="36.030098" 32="-21.774279" 33="1"/>
+		</logic>
+		<logic id="light_switch5" parent_id="" purchase_interactable_id="" seasonal_flags="0" target="omni2" is_on="true" is_flashing="false" flicker_duration="0" flash_on_duration="30" flash_off_duration="30">
+			<transform 00="-0.284897" 01="0" 02="-0.958558" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.958558" 21="0" 22="-0.284897" 23="0" 30="151.248566" 31="36.73534" 32="-21.774279" 33="1"/>
+		</logic>
+		<logic id="light_switch6" parent_id="" purchase_interactable_id="" seasonal_flags="0" target="omni1" is_on="true" is_flashing="false" flicker_duration="0" flash_on_duration="30" flash_off_duration="30">
+			<transform 00="-0.284897" 01="0" 02="-0.958558" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.958558" 21="0" 22="-0.284897" 23="0" 30="151.248566" 31="37.311836" 32="-21.774279" 33="1"/>
+		</logic>
+		<logic id="light_switch7" parent_id="" purchase_interactable_id="" seasonal_flags="0" target="omni0" is_on="true" is_flashing="false" flicker_duration="0" flash_on_duration="30" flash_off_duration="30">
+			<transform 00="-0.284897" 01="0" 02="-0.958558" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.958558" 21="0" 22="-0.284897" 23="0" 30="151.248566" 31="37.895424" 32="-21.774279" 33="1"/>
+		</logic>
+		<logic id="office_light_logic" parent_id="" purchase_interactable_id="" seasonal_flags="0" target="omni_office" is_on="true" is_flashing="false" flicker_duration="0" flash_on_duration="30" flash_off_duration="30">
+			<transform 00="-0.030288" 01="0" 02="-0.999541" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.999541" 21="0" 22="-0.030288" 23="0" 30="148.020477" 31="33.548126" 32="-36.11071" 33="1"/>
+		</logic>
+	</light_logic_nodes>
+	<rotation_logic_nodes/>
+	<hangar_door_logic_nodes>
+		<logic id="floodlight_omnis_logic" parent_id="" purchase_interactable_id="" seasonal_flags="0" target_id_0="light_switch7" target_id_1="light_switch6" target_id_2="light_switch5" target_id_3="light_switch4" target_id_4="light_switch3" target_id_5="light_switch2" target_id_6="light_switch1" target_id_7="light_switch0" trigger_on_delay="0" cooldown_time="0">
+			<transform 00="-0.287845" 01="0" 02="-0.957677" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.957677" 21="0" 22="-0.287845" 23="0" 30="151.248566" 31="38.605614" 32="-21.774279" 33="1"/>
+		</logic>
+		<logic id="floodlight_logic" parent_id="" purchase_interactable_id="" seasonal_flags="0" target_id_0="floodlight_omnis_logic" target_id_1="spot0" target_id_2="" target_id_3="" target_id_4="" target_id_5="" target_id_6="" target_id_7="" trigger_on_delay="0" cooldown_time="0">
+			<transform 00="-0.287845" 01="0" 02="-0.957677" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.957677" 21="0" 22="-0.287845" 23="0" 30="151.248566" 31="39.338451" 32="-21.774279" 33="1"/>
+		</logic>
+	</hangar_door_logic_nodes>
+	<audio_logic_nodes/>
+	<tile_markers>
+		<markers id="door_0_closed" parent_id="" purchase_interactable_id="" seasonal_flags="0" marker_type="8" is_in_ocean="false" string_data="" icon="1">
+			<transform 00="-0" 01="0" 02="-1" 03="0" 10="0" 11="1" 12="0" 13="0" 20="1" 21="0" 22="-0" 23="0" 30="147.888321" 31="31.830589" 32="-34.858894" 33="1"/>
+		</markers>
+		<markers id="door_0_open" parent_id="" purchase_interactable_id="" seasonal_flags="0" marker_type="8" is_in_ocean="false" string_data="" icon="1">
+			<transform 00="0.993489" 01="0" 02="-0.113925" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.113925" 21="0" 22="0.993489" 23="0" 30="147.888321" 31="31.830589" 32="-34.858894" 33="1"/>
+		</markers>
+		<markers id="tile_marker2" parent_id="" purchase_interactable_id="" seasonal_flags="0" marker_type="11" is_in_ocean="false" string_data="" icon="1">
+			<transform 00="0.427901" 01="0" 02="0.903826" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.903826" 21="0" 22="0.427901" 23="0" 30="126.805458" 31="32.309395" 32="-16.216766" 33="1"/>
+		</markers>
+		<markers id="tile_marker3" parent_id="" purchase_interactable_id="" seasonal_flags="0" marker_type="11" is_in_ocean="false" string_data="" icon="1">
+			<transform 00="0.850021" 01="0" 02="0.526749" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.526749" 21="0" 22="0.850021" 23="0" 30="125.652374" 31="32.299736" 32="-17.744289" 33="1"/>
+		</markers>
+		<markers id="dean hall mining company" parent_id="" purchase_interactable_id="" seasonal_flags="0" marker_type="13" is_in_ocean="false" string_data="Dean Hall Mining Company" icon="7">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="115.086296" 31="42.379501" 32="-74.602974" 33="1"/>
+		</markers>
+	</tile_markers>
+	<mission_zones/>
+	<dynamic_markers>
+		<dynamic_marker id="dynamic_marker_item0" parent_id="" purchase_interactable_id="" seasonal_flags="0" item_type="25">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="151.373734" 31="31.507393" 32="-30.540901" 33="1"/>
+		</dynamic_marker>
+		<dynamic_marker id="dynamic_marker_item1" parent_id="" purchase_interactable_id="" seasonal_flags="0" item_type="25">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="151.126968" 31="31.507393" 32="-29.505926" 33="1"/>
+		</dynamic_marker>
+		<dynamic_marker id="dynamic_marker_item2" parent_id="" purchase_interactable_id="" seasonal_flags="0" item_type="25">
+			<transform 00="0.723493" 01="0" 02="0.690332" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.690332" 21="0" 22="0.723493" 23="0" 30="150.230286" 31="31.507393" 32="-30.650158" 33="1"/>
+		</dynamic_marker>
+		<dynamic_marker id="dynamic_marker_item3" parent_id="" purchase_interactable_id="" seasonal_flags="0" item_type="27">
+			<transform 00="0.939259" 01="0" 02="0.34321" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.34321" 21="0" 22="0.939259" 23="0" 30="154.850937" 31="31.704147" 32="-14.584679" 33="1"/>
+		</dynamic_marker>
+		<dynamic_marker id="dynamic_marker_item4" parent_id="" purchase_interactable_id="" seasonal_flags="0" item_type="27">
+			<transform 00="0.989644" 01="0" 02="0.143545" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.143545" 21="0" 22="0.989644" 23="0" 30="154.426849" 31="31.725069" 32="-12.643654" 33="1"/>
+		</dynamic_marker>
+		<dynamic_marker id="dynamic_marker_item5" parent_id="" purchase_interactable_id="" seasonal_flags="0" item_type="27">
+			<transform 00="-0.73215" 01="0" 02="0.681143" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.681143" 21="0" 22="-0.73215" 23="0" 30="154.936401" 31="32.034241" 32="-17.271597" 33="1"/>
+		</dynamic_marker>
+		<dynamic_marker id="dynamic_marker_item6" parent_id="" purchase_interactable_id="" seasonal_flags="0" item_type="29">
+			<transform 00="0.990312" 01="0" 02="-0.138861" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.138861" 21="0" 22="0.990312" 23="0" 30="154.850937" 31="31.186661" 32="-19.61537" 33="1"/>
+		</dynamic_marker>
+		<dynamic_marker id="dynamic_marker_item7" parent_id="" purchase_interactable_id="" seasonal_flags="0" item_type="29">
+			<transform 00="0.996566" 01="0" 02="0.082798" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.082798" 21="0" 22="0.996566" 23="0" 30="154.850937" 31="31.489334" 32="-19.61537" 33="1"/>
+		</dynamic_marker>
+		<dynamic_marker id="dynamic_marker_item8" parent_id="" purchase_interactable_id="" seasonal_flags="0" item_type="29">
+			<transform 00="0.999368" 01="0" 02="-0.035532" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.035532" 21="0" 22="0.999368" 23="0" 30="154.850937" 31="31.780384" 32="-19.61537" 33="1"/>
+		</dynamic_marker>
+		<dynamic_marker id="dynamic_marker_item9" parent_id="" purchase_interactable_id="" seasonal_flags="0" item_type="29">
+			<transform 00="0.733555" 01="0" 02="-0.67963" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.67963" 21="0" 22="0.733555" 23="0" 30="154.850937" 31="31.186661" 32="-17.28751" 33="1"/>
+		</dynamic_marker>
+		<dynamic_marker id="dynamic_marker_item10" parent_id="" purchase_interactable_id="" seasonal_flags="0" item_type="30">
+			<transform 00="0.909945" 01="0" 02="0.41473" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.41473" 21="0" 22="0.909945" 23="0" 30="147.984268" 31="31.431873" 32="-10.500507" 33="1"/>
+		</dynamic_marker>
+	</dynamic_markers>
+	<ladders/>
+	<perches/>
+	<fires/>
+	<train_tracks/>
+	<iceberg_markers/>
+</definition>
+

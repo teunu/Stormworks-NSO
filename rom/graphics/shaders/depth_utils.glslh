@@ -1,0 +1,93 @@
+
+//log2() uses less ops than log(), but produces the same curve 
+#define USE_LOG2
+
+//Overwrite gl_FragDepth in FS with log of linearly interpolated view space W component. This disables early-z culling, unfortunately.
+//If the log were written in the VS only and linearly interpolated, large triangles would have inconsistent depth.
+//This issue is most severe up close, where vertices behind the camera with negative view space depth contribute significant error from their mapping to the log curve.
+#define DEPTH_LOG_IN_FRAGMENT
+
+
+
+const float near = 0.025;
+const float far = 20100.0;
+const float C = 0.01f;
+const float Inv_C = 1.0 / C;
+const float E = 2.718281828459045;
+#ifdef USE_LOG2
+    const float FC = log2(far*C + 1.0);
+    const float Inv_FC = 1.0 / FC;
+#else
+    const float FC = log(far*C + 1.0);
+    const float Inv_FC = 1.0 / FC;
+#endif
+
+
+
+float LinearizeDepthNew(float depth)
+{
+    float z = depth * 2.0 - 1.0;
+    return (2.0 * near * far) / (far + near - z * (far - near));
+}
+
+float DeLinearizeDepth(float linear_depth)
+{
+    float nonLinearDepth = (far + near - 2.0 * near * far / linear_depth) / (far - near);
+    nonLinearDepth = (nonLinearDepth + 1.0) / 2.0;
+    return nonLinearDepth;
+}
+
+void encode_depth(vec4 pos, out float log_z_out)
+{
+#ifdef DEPTH_LOG_IN_FRAGMENT
+        log_z_out = pos.w*C + 1.0;
+#else
+    #ifdef USE_LOG2
+        log_z_out = log2(pos.w*C + 1.0) * Inv_FC;
+    #else
+        log_z_out = log(max(1e-6, pos.w)*C + 1.0) * Inv_FC;
+    #endif
+#endif
+}
+
+//Convert a logarithmic depth sample into a linear depth in meters
+float decode_depth_linear(float depth)
+{
+#ifdef USE_LOG2
+    float exponent = depth * FC;
+    return (pow(2.0, exponent) - 1.0) / C;
+#else
+    float exponent = depth * FC;
+    return (pow(E, exponent) - 1.0) / C;
+#endif
+}
+
+//Convert a logarithmic depth sample to a nonlinear depth mapping for near/far plane (ie. default depth buffer value)
+float decode_depth_delinear(float depth)
+{
+#ifdef USE_LOG2
+    float exponent = depth * FC;
+    float d = (pow(2.0, exponent) - 1.0) * Inv_C;
+    return DeLinearizeDepth(d);
+#else
+    float exponent = depth * FC;
+    float d = (pow(E, exponent) - 1.0) * Inv_C;
+    return DeLinearizeDepth(d);
+#endif
+}
+
+//Convert linearly interpolated value from VS into FS fragment depth. (This disables the early-z optimization if written to gl_FragDepth)
+float log_z_to_frag_depth(float log_z)
+{
+#ifdef DEPTH_LOG_IN_FRAGMENT
+    #ifdef USE_LOG2
+        return log2(log_z) * Inv_FC;
+    #else
+        return log(log_z) * Inv_FC;
+    #endif
+#else
+    return log_z;
+#endif
+}
+
+

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition name="Gauge Display" category="6" type="21" mass="2.000000" value="20" flags="8192" audio_filename_start="" audio_filename_loop="" audio_filename_end="" audio_gain="0.000000" mesh_data_name="meshes/component_gauge_static.mesh" mesh_0_name="meshes/component_gauge_dynamic.mesh" mesh_1_name="meshes/component_gauge_dynamic_2.mesh" mesh_editor_only_name="" block_type="0" child_name="" extender_name="" constraint_type="0" constraint_axis="1" constraint_range_of_motion="0.000000" max_motor_force="100.000000" seat_type="0" buoy_radius="1.000000" buoy_factor="1.000000" buoy_force="100.000000" force_emitter_max_force="1000.000000" force_emitter_max_vector="1.000000" engine_max_force="1000.000000" trans_conn_type="0" trans_type="0" wheel_radius="0.250000" button_type="1" light_intensity="0.000000" light_range="1.000000" light_ies_map="graphics/ies/ies_default.txtr" light_fov="1.000000" light_type="0" door_lower_limit="-1.000000" door_upper_limit="1.000000" door_flipped="false" dynamic_min_rotation="0.000000" dynamic_max_rotation="3.141593" logic_gate_type="0" indicator_type="5" connector_type="0" magnet_force="1.000000" gyro_type="0" rudder_surface_area="0.000000">
+	<surfaces>
+		<surface orientation="0" rotation="0" shape="1" trans_type="0" is_reverse_normals="false" is_two_sided="false">
+			<position x="0" y="0" z="0"/>
+		</surface>
+		<surface orientation="3" rotation="0" shape="1" trans_type="0" is_reverse_normals="false" is_two_sided="false">
+			<position x="0" y="0" z="0"/>
+		</surface>
+		<surface orientation="1" rotation="0" shape="1" trans_type="0" is_reverse_normals="false" is_two_sided="false">
+			<position x="0" y="0" z="0"/>
+		</surface>
+		<surface orientation="0" rotation="0" shape="1" trans_type="0" is_reverse_normals="false" is_two_sided="false">
+			<position x="0" y="0" z="1"/>
+		</surface>
+		<surface orientation="4" rotation="0" shape="1" trans_type="0" is_reverse_normals="false" is_two_sided="false">
+			<position x="0" y="0" z="1"/>
+		</surface>
+		<surface orientation="1" rotation="0" shape="1" trans_type="0" is_reverse_normals="false" is_two_sided="false">
+			<position x="0" y="0" z="1"/>
+		</surface>
+		<surface orientation="3" rotation="0" shape="1" trans_type="0" is_reverse_normals="false" is_two_sided="false">
+			<position x="0" y="0" z="1"/>
+		</surface>
+		<surface orientation="5" rotation="0" shape="1" trans_type="0" is_reverse_normals="false" is_two_sided="false">
+			<position x="0" y="0" z="0"/>
+		</surface>
+	</surfaces>
+	<buoyancy_surfaces>
+		<surface orientation="0" rotation="0" shape="1" trans_type="0" is_reverse_normals="false" is_two_sided="false">
+			<position x="0" y="0" z="0"/>
+		</surface>
+		<surface orientation="0" rotation="0" shape="1" trans_type="0" is_reverse_normals="false" is_two_sided="false">
+			<position x="0" y="0" z="1"/>
+		</surface>
+		<surface orientation="4" rotation="0" shape="1" trans_type="0" is_reverse_normals="false" is_two_sided="false">
+			<position x="0" y="0" z="1"/>
+		</surface>
+		<surface orientation="1" rotation="0" shape="1" trans_type="0" is_reverse_normals="false" is_two_sided="false">
+			<position x="0" y="0" z="1"/>
+		</surface>
+		<surface orientation="1" rotation="0" shape="1" trans_type="0" is_reverse_normals="false" is_two_sided="false">
+			<position x="0" y="0" z="0"/>
+		</surface>
+		<surface orientation="5" rotation="0" shape="1" trans_type="0" is_reverse_normals="false" is_two_sided="false">
+			<position x="0" y="0" z="0"/>
+		</surface>
+		<surface orientation="3" rotation="0" shape="1" trans_type="0" is_reverse_normals="false" is_two_sided="false">
+			<position x="0" y="0" z="0"/>
+		</surface>
+		<surface orientation="3" rotation="0" shape="1" trans_type="0" is_reverse_normals="false" is_two_sided="false">
+			<position x="0" y="0" z="1"/>
+		</surface>
+		<surface orientation="2" rotation="0" shape="1" trans_type="0" is_reverse_normals="false" is_two_sided="false">
+			<position x="0" y="0" z="1"/>
+		</surface>
+		<surface orientation="2" rotation="0" shape="1" trans_type="0" is_reverse_normals="false" is_two_sided="false">
+			<position x="0" y="0" z="0"/>
+		</surface>
+	</buoyancy_surfaces>
+	<logic_nodes>
+		<logic_node label="Primary Display Value" mode="1" type="1" description="The numerical value that sets the position of the white needle.">
+			<position x="0" y="0" z="0"/>
+		</logic_node>
+		<logic_node label="Secondary Display Value" mode="1" type="1" description="The numerical value that sets the position of the red needle.">
+			<position x="0" y="0" z="1"/>
+		</logic_node>
+		<logic_node label="Backlight" mode="1" type="0" description="Enables the backlight when receiving an on signal.">
+			<position x="0" y="1" z="0"/>
+		</logic_node>
+		<logic_node label="Electric" mode="1" type="4" description="Electrical power connection." flags="0">
+			<position x="0" y="0" z="0"/>
+		</logic_node>
+	</logic_nodes>
+	<voxels>
+		<voxel flags="1" physics_shape="0">
+			<position x="0" y="0" z="0"/>
+			<physics_shape_rotation 00="1" 01="0" 02="0" 10="0" 11="1" 12="0" 20="0" 21="0" 22="1"/>
+		</voxel>
+		<voxel flags="1" physics_shape="0">
+			<position x="0" y="0" z="1"/>
+			<physics_shape_rotation 00="1" 01="0" 02="0" 10="0" 11="1" 12="0" 20="0" 21="0" 22="1"/>
+		</voxel>
+		<voxel flags="0" physics_shape="0">
+			<position x="0" y="1" z="1"/>
+			<physics_shape_rotation 00="1" 01="0" 02="0" 10="0" 11="1" 12="0" 20="0" 21="0" 22="1"/>
+		</voxel>
+		<voxel flags="0" physics_shape="0">
+			<position x="0" y="1" z="0"/>
+			<physics_shape_rotation 00="1" 01="0" 02="0" 10="0" 11="1" 12="0" 20="0" 21="0" 22="1"/>
+		</voxel>
+	</voxels>
+	<voxel_min x="0" y="0" z="0"/>
+	<voxel_max x="0" y="1" z="1"/>
+	<voxel_physics_min x="0" y="0" z="0"/>
+	<voxel_physics_max x="0" y="0" z="1"/>
+	<bb_physics_min x="0.000000" y="0.000000" z="0.000000"/>
+	<bb_physics_max x="0.000000" y="0.000000" z="0.000000"/>
+	<constraint_pos_parent x="0.000000" y="0.000000" z="0.000000"/>
+	<constraint_pos_child x="0.000000" y="0.000000" z="0.000000"/>
+	<voxel_location_child x="0" y="0" z="0"/>
+	<force_dir x="0.000000" y="0.000000" z="0.000000"/>
+	<light_position x="0" y="0" z="0"/>
+	<light_color x="1.000000" y="1.000000" z="1.000000"/>
+	<door_size x="1.000000" y="1.000000" z="1.000000"/>
+	<dynamic_body_position x="0" y="0" z="0"/>
+	<dynamic_rotation_axes x="0.000000" y="1.000000" z="0.000000"/>
+	<dynamic_side_axis x="1.000000" y="0.000000" z="0.000000"/>
+	<magnet_offset x="0.000000" y="0.000000" z="0.000000"/>
+	<tooltip_properties description="The primary needle is white and the secondary needle is red. The positions of the needles represent values ranging from -1 to 1 by default. This range can be configured by selecting the display with the select tool." short_description="A display with two needles that can be positioned independently."/>
+	<reward_properties number_rewarded="5"/>
+</definition>
+

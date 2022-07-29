@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition name="Velocity Pivot" category="2" type="7" mass="9.000000" value="25" flags="832" audio_filename_start="" audio_filename_loop="audio/fx/servo_small_loop.ogg" audio_filename_end="" audio_gain="1.00000" mesh_data_name="meshes/component_velocity_pivot_a.mesh" mesh_0_name="" mesh_1_name="" mesh_editor_only_name="meshes/arrow_robotic_pivot.mesh" block_type="0" child_name="multibody_velocity_pivot_b" extender_name="" constraint_type="0" constraint_axis="1" constraint_range_of_motion="0.000000" max_motor_force="1000.000000" seat_type="0" buoy_radius="1.000000" buoy_factor="1.000000" buoy_force="100.000000" force_emitter_max_force="1000.000000" force_emitter_max_vector="1.000000" engine_max_force="1000.000000" trans_conn_type="0" trans_type="0" wheel_radius="0.000000" button_type="0" light_intensity="0.000000" light_range="0.000000" light_ies_map="" light_fov="0.000000" light_type="0" door_lower_limit="0.000000" door_upper_limit="0.000000" dynamic_min_rotation="0.000000" dynamic_max_rotation="0.000000" logic_gate_type="0" indicator_type="0" connector_type="0" magnet_force="0.000000" gyro_type="0" rudder_surface_area="0.000000">
+	<sfx_datas>
+		<sfx_data sfx_name="multibody" sfx_range_inner="2.0" sfx_range_outer="10.0" sfx_priority="0.2" sfx_is_underwater_affected="true">
+			<sfx_layers>
+				<sfx_layer sfx_filename_start="" sfx_filename_loop="audio/fx/servo_small_loop.ogg" sfx_filename_end="" sfx_gain="1.0" sfx_loop_start_time="0.75" sfx_loop_blend_duration="10.0" sfx_volume_fade_speed="0.008" sfx_pitch_fade_speed="0.008"/>
+			</sfx_layers>
+		</sfx_data>
+	</sfx_datas>
+	<surfaces>
+		<surface orientation="4" rotation="0" shape="1" trans_type="0" is_reverse_normals="false">
+			<position x="1" y="0" z="1"/>
+		</surface>
+		<surface orientation="4" rotation="0" shape="1" trans_type="0" is_reverse_normals="false">
+			<position x="0" y="0" z="1"/>
+		</surface>
+		<surface orientation="4" rotation="0" shape="1" trans_type="0" is_reverse_normals="false">
+			<position x="-1" y="0" z="1"/>
+		</surface>
+		<surface orientation="1" rotation="0" shape="1" trans_type="0" is_reverse_normals="false">
+			<position x="-1" y="0" z="1"/>
+		</surface>
+		<surface orientation="1" rotation="0" shape="1" trans_type="0" is_reverse_normals="false">
+			<position x="-1" y="0" z="0"/>
+		</surface>
+		<surface orientation="1" rotation="0" shape="1" trans_type="0" is_reverse_normals="false">
+			<position x="-1" y="0" z="-1"/>
+		</surface>
+		<surface orientation="5" rotation="0" shape="1" trans_type="0" is_reverse_normals="false">
+			<position x="-1" y="0" z="-1"/>
+		</surface>
+		<surface orientation="5" rotation="0" shape="1" trans_type="0" is_reverse_normals="false">
+			<position x="0" y="0" z="-1"/>
+		</surface>
+		<surface orientation="5" rotation="0" shape="1" trans_type="0" is_reverse_normals="false">
+			<position x="1" y="0" z="-1"/>
+		</surface>
+		<surface orientation="0" rotation="0" shape="1" trans_type="0" is_reverse_normals="false">
+			<position x="1" y="0" z="-1"/>
+		</surface>
+		<surface orientation="0" rotation="0" shape="1" trans_type="0" is_reverse_normals="false">
+			<position x="1" y="0" z="0"/>
+		</surface>
+		<surface orientation="0" rotation="0" shape="1" trans_type="0" is_reverse_normals="false">
+			<position x="1" y="0" z="1"/>
+		</surface>
+		<surface orientation="3" rotation="0" shape="1" trans_type="0" is_reverse_normals="false">
+			<position x="1" y="0" z="1"/>
+		</surface>
+		<surface orientation="3" rotation="0" shape="1" trans_type="0" is_reverse_normals="false">
+			<position x="0" y="0" z="1"/>
+		</surface>
+		<surface orientation="3" rotation="0" shape="1" trans_type="0" is_reverse_normals="false">
+			<position x="-1" y="0" z="1"/>
+		</surface>
+		<surface orientation="3" rotation="0" shape="1" trans_type="0" is_reverse_normals="false">
+			<position x="1" y="0" z="0"/>
+		</surface>
+		<surface orientation="3" rotation="0" shape="1" trans_type="0" is_reverse_normals="false">
+			<position x="0" y="0" z="0"/>
+		</surface>
+		<surface orientation="3" rotation="0" shape="1" trans_type="0" is_reverse_normals="false">
+			<position x="-1" y="0" z="0"/>
+		</surface>
+		<surface orientation="3" rotation="0" shape="1" trans_type="0" is_reverse_normals="false">
+			<position x="1" y="0" z="-1"/>
+		</surface>
+		<surface orientation="3" rotation="0" shape="1" trans_type="0" is_reverse_normals="false">
+			<position x="0" y="0" z="-1"/>
+		</surface>
+		<surface orientation="3" rotation="0" shape="1" trans_type="0" is_reverse_normals="false">
+			<position x="-1" y="0" z="-1"/>
+		</surface>
+	</surfaces>
+	<buoyancy_surfaces>
+		<surface orientation="1" rotation="0" shape="1" trans_type="0" is_reverse_normals="false">
+			<position x="-1" y="0" z="-1"/>
+		</surface>
+		<surface orientation="1" rotation="0" shape="1" trans_type="0" is_reverse_normals="false">
+			<position x="-1" y="0" z="0"/>
+		</surface>
+		<surface orientation="1" rotation="0" shape="1" trans_type="0" is_reverse_normals="false">
+			<position x="-1" y="0" z="1"/>
+		</surface>
+		<surface orientation="5" rotation="0" shape="1" trans_type="0" is_reverse_normals="false">
+			<position x="-1" y="0" z="-1"/>
+		</surface>
+		<surface orientation="5" rotation="0" shape="1" trans_type="0" is_reverse_normals="false">
+			<position x="0" y="0" z="-1"/>
+		</surface>
+		<surface orientation="5" rotation="0" shape="1" trans_type="0" is_reverse_normals="false">
+			<position x="1" y="0" z="-1"/>
+		</surface>
+		<surface orientation="2" rotation="0" shape="1" trans_type="0" is_reverse_normals="false">
+			<position x="1" y="0" z="0"/>
+		</surface>
+		<surface orientation="2" rotation="0" shape="1" trans_type="0" is_reverse_normals="false">
+			<position x="0" y="0" z="-1"/>
+		</surface>
+		<surface orientation="2" rotation="0" shape="1" trans_type="0" is_reverse_normals="false">
+			<position x="-1" y="0" z="-1"/>
+		</surface>
+		<surface orientation="2" rotation="0" shape="1" trans_type="0" is_reverse_normals="false">
+			<position x="0" y="0" z="0"/>
+		</surface>
+		<surface orientation="2" rotation="0" shape="1" trans_type="0" is_reverse_normals="false">
+			<position x="0" y="0" z="1"/>
+		</surface>
+		<surface orientation="2" rotation="0" shape="1" trans_type="0" is_reverse_normals="false">
+			<position x="1" y="0" z="1"/>
+		</surface>
+		<surface orientation="2" rotation="0" shape="1" trans_type="0" is_reverse_normals="false">
+			<position x="-1" y="0" z="1"/>
+		</surface>
+		<surface orientation="2" rotation="0" shape="1" trans_type="0" is_reverse_normals="false">
+			<position x="-1" y="0" z="0"/>
+		</surface>
+		<surface orientation="2" rotation="0" shape="1" trans_type="0" is_reverse_normals="false">
+			<position x="1" y="0" z="-1"/>
+		</surface>
+		<surface orientation="0" rotation="0" shape="1" trans_type="0" is_reverse_normals="false">
+			<position x="1" y="0" z="-1"/>
+		</surface>
+		<surface orientation="0" rotation="0" shape="1" trans_type="0" is_reverse_normals="false">
+			<position x="1" y="0" z="1"/>
+		</surface>
+		<surface orientation="0" rotation="0" shape="1" trans_type="0" is_reverse_normals="false">
+			<position x="1" y="0" z="0"/>
+		</surface>
+		<surface orientation="4" rotation="0" shape="1" trans_type="0" is_reverse_normals="false">
+			<position x="0" y="0" z="1"/>
+		</surface>
+		<surface orientation="4" rotation="0" shape="1" trans_type="0" is_reverse_normals="false">
+			<position x="1" y="0" z="1"/>
+		</surface>
+		<surface orientation="4" rotation="0" shape="1" trans_type="0" is_reverse_normals="false">
+			<position x="-1" y="0" z="1"/>
+		</surface>
+		<surface orientation="3" rotation="0" shape="1" trans_type="0" is_reverse_normals="false">
+			<position x="1" y="0" z="1"/>
+		</surface>
+		<surface orientation="3" rotation="0" shape="1" trans_type="0" is_reverse_normals="false">
+			<position x="1" y="0" z="0"/>
+		</surface>
+		<surface orientation="3" rotation="0" shape="1" trans_type="0" is_reverse_normals="false">
+			<position x="1" y="0" z="-1"/>
+		</surface>
+		<surface orientation="3" rotation="0" shape="1" trans_type="0" is_reverse_normals="false">
+			<position x="0" y="0" z="-1"/>
+		</surface>
+		<surface orientation="3" rotation="0" shape="1" trans_type="0" is_reverse_normals="false">
+			<position x="0" y="0" z="0"/>
+		</surface>
+		<surface orientation="3" rotation="0" shape="1" trans_type="0" is_reverse_normals="false">
+			<position x="0" y="0" z="1"/>
+		</surface>
+		<surface orientation="3" rotation="0" shape="1" trans_type="0" is_reverse_normals="false">
+			<position x="-1" y="0" z="1"/>
+		</surface>
+		<surface orientation="3" rotation="0" shape="1" trans_type="0" is_reverse_normals="false">
+			<position x="-1" y="0" z="0"/>
+		</surface>
+		<surface orientation="3" rotation="0" shape="1" trans_type="0" is_reverse_normals="false">
+			<position x="-1" y="0" z="-1"/>
+		</surface>
+	</buoyancy_surfaces>
+	<logic_nodes>
+		<logic_node label="Rotational Speed" mode="1" type="1" description="The speed at which the pivot should rotate.">
+			<position x="0" y="0" z="0"/>
+		</logic_node>
+		<logic_node label="Current Rotation" mode="0" type="1" description="The pivot's measured rotation expressed in fractions of full turns.">
+			<position x="-1" y="0" z="0"/>
+		</logic_node>
+		<logic_node label="Electric" mode="1" type="4" description="Electrical power connection." flags="0">
+			<position x="0" y="0" z="0"/>
+		</logic_node>
+	</logic_nodes>
+	<voxels>
+		<voxel flags="1">
+			<position x="0" y="0" z="0"/>
+		</voxel>
+		<voxel flags="1">
+			<position x="0" y="0" z="-1"/>
+		</voxel>
+		<voxel flags="1">
+			<position x="0" y="0" z="1"/>
+		</voxel>
+		<voxel flags="1">
+			<position x="1" y="0" z="-1"/>
+		</voxel>
+		<voxel flags="1">
+			<position x="1" y="0" z="0"/>
+		</voxel>
+		<voxel flags="1">
+			<position x="1" y="0" z="1"/>
+		</voxel>
+		<voxel flags="1">
+			<position x="-1" y="0" z="1"/>
+		</voxel>
+		<voxel flags="1">
+			<position x="-1" y="0" z="0"/>
+		</voxel>
+		<voxel flags="1">
+			<position x="-1" y="0" z="-1"/>
+		</voxel>
+	</voxels>
+	<voxel_min x="-1" y="0" z="-1"/>
+	<voxel_max x="1" y="0" z="1"/>
+	<voxel_physics_min x="-1" y="0" z="-1"/>
+	<voxel_physics_max x="1" y="0" z="1"/>
+	<bb_physics_min x="0.000000" y="0.000000" z="0.000000"/>
+	<bb_physics_max x="0.000000" y="0.000000" z="0.000000"/>
+	<constraint_pos_parent x="0.000000" y="0.250000" z="0.000000"/>
+	<constraint_pos_child x="0.000000" y="0.000000" z="0.000000"/>
+	<voxel_location_child x="0" y="1" z="0"/>
+	<force_dir x="0.000000" y="0.000000" z="0.000000"/>
+	<light_position x="0" y="0" z="0"/>
+	<light_color x="1.000000" y="1.000000" z="1.000000"/>
+	<door_size x="1.000000" y="1.000000" z="1.000000"/>
+	<dynamic_body_position x="0" y="0" z="0"/>
+	<dynamic_rotation_axes x="0.000000" y="1.000000" z="0.000000"/>
+	<dynamic_side_axis x="1.000000" y="0.000000" z="0.000000"/>
+	<magnet_offset x="0.000000" y="0.000000" z="0.000000"/>
+	<tooltip_properties description="Inputting a value of 0 will cause it to stop. The pivot's current rotation can be read from its output. An output of 1 corresponds to one full turn, and -1 to a full turn in the opposite direction." short_description="A pivot that will continuously rotate at a set input speed."/>
+	<reward_properties tier="7" number_rewarded="1"/>
+</definition>
+

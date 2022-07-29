@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition name="Wind Sensor" category="7" type="16" mass="1" value="200" flags="0" tags="" audio_filename_start="" audio_filename_loop="" audio_filename_end="" audio_gain="0" mesh_data_name="meshes/component_wind_vane_base.mesh" mesh_0_name="meshes/component_wind_vane_tail.mesh" mesh_1_name="meshes/component_wind_vane_fan.mesh" mesh_editor_only_name="" block_type="0" child_name="" extender_name="" constraint_type="0" constraint_axis="1" constraint_range_of_motion="0" max_motor_force="100" max_motor_speed="5" cable_radius="0" seat_type="0" buoy_radius="1" buoy_factor="1" buoy_force="100" force_emitter_max_force="1000" force_emitter_max_vector="1" engine_max_force="1000" trans_conn_type="0" trans_type="0" wheel_radius="0.25" button_type="1" light_intensity="0" light_range="1" light_ies_map="graphics/ies/ies_default.txtr" light_fov="1" light_type="0" door_lower_limit="-1" door_upper_limit="1" door_flipped="false" dynamic_min_rotation="0" dynamic_max_rotation="3.141593" logic_gate_type="41" indicator_type="0" connector_type="0" magnet_force="0" gyro_type="0" rudder_surface_area="0" m_pump_pressure="0" particle_speed="0.05">
+	<surfaces>
+		<surface orientation="3" rotation="0" shape="1" trans_type="0" flags="0">
+			<position x="0" y="0" z="0"/>
+		</surface>
+		<surface orientation="5" rotation="0" shape="1" trans_type="0" flags="0">
+			<position x="0" y="0" z="0"/>
+		</surface>
+		<surface orientation="1" rotation="0" shape="1" trans_type="0" flags="0">
+			<position x="0" y="0" z="0"/>
+		</surface>
+		<surface orientation="4" rotation="0" shape="1" trans_type="0" flags="0">
+			<position x="0" y="0" z="0"/>
+		</surface>
+		<surface orientation="0" rotation="0" shape="1" trans_type="0" flags="0">
+			<position x="0" y="0" z="0"/>
+		</surface>
+	</surfaces>
+	<buoyancy_surfaces>
+		<surface orientation="2" rotation="0" shape="1" trans_type="0" flags="0">
+			<position x="0" y="0" z="0"/>
+		</surface>
+		<surface orientation="5" rotation="0" shape="1" trans_type="0" flags="0">
+			<position x="0" y="0" z="0"/>
+		</surface>
+		<surface orientation="0" rotation="0" shape="1" trans_type="0" flags="0">
+			<position x="0" y="0" z="0"/>
+		</surface>
+		<surface orientation="4" rotation="0" shape="1" trans_type="0" flags="0">
+			<position x="0" y="0" z="0"/>
+		</surface>
+		<surface orientation="1" rotation="0" shape="1" trans_type="0" flags="0">
+			<position x="0" y="0" z="0"/>
+		</surface>
+		<surface orientation="3" rotation="0" shape="1" trans_type="0" flags="0">
+			<position x="0" y="0" z="0"/>
+		</surface>
+	</buoyancy_surfaces>
+	<logic_nodes>
+		<logic_node label="Wind Speed" mode="0" type="1" description="The relative wind velocity.">
+			<position x="0" y="0" z="0"/>
+		</logic_node>
+		<logic_node label="Wind Direction" mode="0" type="1" description="The direction of the wind relative to the component.">
+			<position x="0" y="1" z="0"/>
+		</logic_node>
+	</logic_nodes>
+	<voxels>
+		<voxel flags="1" physics_shape="0">
+			<position x="0" y="0" z="0"/>
+			<physics_shape_rotation 00="1" 01="0" 02="0" 10="0" 11="1" 12="0" 20="0" 21="0" 22="1"/>
+		</voxel>
+		<voxel flags="0" physics_shape="0">
+			<position x="0" y="1" z="0"/>
+			<physics_shape_rotation 00="1" 01="0" 02="0" 10="0" 11="1" 12="0" 20="0" 21="0" 22="1"/>
+		</voxel>
+	</voxels>
+	<voxel_min x="0" y="0" z="0"/>
+	<voxel_max x="0" y="1" z="0"/>
+	<voxel_physics_min x="0" y="0" z="0"/>
+	<voxel_physics_max x="0" y="0" z="0"/>
+	<bb_physics_min x="0" y="0" z="0"/>
+	<bb_physics_max x="0" y="0" z="0"/>
+	<constraint_pos_parent x="0" y="0" z="0"/>
+	<constraint_pos_child x="0" y="0" z="0"/>
+	<voxel_location_child x="0" y="0" z="0"/>
+	<force_dir x="0" y="0" z="0"/>
+	<light_position x="0" y="0" z="0"/>
+	<light_color x="1" y="1" z="1"/>
+	<door_size x="1" y="1" z="1"/>
+	<dynamic_body_position x="0" y="0" z="0"/>
+	<dynamic_rotation_axes x="0" y="1" z="0"/>
+	<dynamic_side_axis x="1" y="0" z="0"/>
+	<magnet_offset x="0" y="0" z="0"/>
+	<tooltip_properties description="The sensor outputs the wind direction relative to the orientation of the base of the sensor (in number of turns from -0.5 to 0.5) and the wind speed in m/s. Wind data is relative to the speed of the sensor and only measures wind in the plane of the sensor." short_description="A wind sensor for measuring relative wind speed and direction."/>
+	<reward_properties number_rewarded="6"/>
+	<seat_exit_position x="0" y="0" z="0"/>
+	<particle_direction x="0" y="1" z="0"/>
+	<particle_offset x="0" y="0" z="0"/>
+	<particle_bounds x="0.2" y="0.2" z="0.2"/>
+</definition>
+
