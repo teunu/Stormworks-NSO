@@ -4,37 +4,41 @@
 		<mesh id="mesh0" parent_id="" purchase_interactable_id="" seasonal_flags="0" file_name="nso_mod/meshes/mainland/7_7_main.mesh">
 			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="0" 31="0" 32="0" 33="1"/>
 		</mesh>
+		<mesh id="StaticObject_1" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true" file_name="nso_mod\meshes\structures\suspension_bridge.mesh">
+			<transform 00="0.8568552" 01="-1.15323346E-05" 02="-0.5155571" 03="0" 10="-0.00491900649" 11="0.9999543" 12="-0.008197752" 13="0" 20="0.5155336" 21="0.009560316" 22="0.856816" 23="0" 30="348.40918" 31="14.143836" 32="-17.2294922" 33="1"/>
+		</mesh>
+		<mesh id="StaticObject_0" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true" file_name="nso_mod\meshes\structures\suspension_bridge.mesh">
+			<transform 00="0.856855154" 01="-1.15336152E-05" 02="-0.5155572" 03="0" 10="0.00372112915" 11="0.9999741" 12="0.00616214" 13="0" 20="0.515543759" 21="-0.00719851675" 22="0.856833" 23="0" 30="394.5005" 31="14.2248755" 32="59.37451" 33="1"/>
+		</mesh>
 	</meshes>
 	<physics_objects/>
 	<physics_meshes>
+		<physics_mesh id="StaticObject_1_phys" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true" file_name="meshes/generated_object_geom/tiles/mega_island_7_7/nso_mod\structures\suspension_bridge__StaticObject_1_phys.phys">
+			<transform 00="0.8568552" 01="-1.15323346E-05" 02="-0.5155571" 03="0" 10="-0.00491900649" 11="0.9999543" 12="-0.008197752" 13="0" 20="0.5155336" 21="0.009560316" 22="0.856816" 23="0" 30="348.40918" 31="14.143836" 32="-17.2294922" 33="1"/>
+		</physics_mesh>
 		<physics_mesh id="physics_mesh0" parent_id="" purchase_interactable_id="" seasonal_flags="0" file_name="nso_mod/meshes/mainland/7_7_main.phys">
 			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="0" 31="0" 32="0" 33="1"/>
 		</physics_mesh>
+		<physics_mesh id="StaticObject_0_phys" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true" file_name="meshes/generated_object_geom/tiles/mega_island_7_7/nso_mod\structures\suspension_bridge__StaticObject_0_phys.phys">
+			<transform 00="0.856855154" 01="-1.15336152E-05" 02="-0.5155572" 03="0" 10="0.00372112915" 11="0.9999741" 12="0.00616214" 13="0" 20="0.515543759" 21="-0.00719851675" 22="0.856833" 23="0" 30="394.5005" 31="14.2248755" 32="59.37451" 33="1"/>
+		</physics_mesh>
 	</physics_meshes>
 	<physics_dynamics/>
-	<lights_omni>
-	</lights_omni>
-	<lights_spot>
-	</lights_spot>
-	<lights_tube>
-	</lights_tube>
+	<lights_omni></lights_omni>
+	<lights_spot></lights_spot>
+	<lights_tube></lights_tube>
 	<screens/>
 	<edit_areas/>
-	<interactables>
-	</interactables>
-	<door_logic_nodes>
-	</door_logic_nodes>
+	<interactables/>
+	<door_logic_nodes></door_logic_nodes>
 	<light_logic_nodes/>
 	<rotation_logic_nodes/>
-	<hangar_door_logic_nodes>
-	</hangar_door_logic_nodes>
+	<hangar_door_logic_nodes></hangar_door_logic_nodes>
 	<audio_logic_nodes/>
-	<tile_markers>
-	</tile_markers>
+	<tile_markers></tile_markers>
 	<mission_zones/>
 	<dynamic_markers/>
-	<ladders>
-	</ladders>
+	<ladders></ladders>
 	<perches/>
 	<fires/>
 	<train_tracks/>
