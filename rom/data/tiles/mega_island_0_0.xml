@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<definition is_island="true" tile_type="2" is_purchasable="false" purchase_cost="0" sea_floor_height="-6">
+<definition is_island="True" tile_type="2" is_purchasable="False" purchase_cost="0" sea_floor_height="-6">
 	<meshes>
 		<mesh id="mesh0" parent_id="" purchase_interactable_id="" seasonal_flags="0" file_name="meshes/mainland/mega_island_0_0.mesh">
 			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="0" 31="0" 32="0" 33="1"/>
+		</mesh>
+		<mesh id="ExtrudedTrackMesh_Curve_652" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true" file_name="meshes/extruded_track_pieces/mega_island_0_0_ExtrudedTrackMesh_Curve_652.mesh">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-500" 31="0" 32="-500" 33="1"/>
 		</mesh>
 	</meshes>
 	<physics_objects/>
 	<physics_meshes>
 		<physics_mesh id="physics_mesh0" parent_id="" purchase_interactable_id="" seasonal_flags="0" file_name="meshes/mainland/mega_island_0_0.phys">
 			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="0" 31="0" 32="0" 33="1"/>
+		</physics_mesh>
+		<physics_mesh id="ExtrudedTrackMesh_Curve_phys_652" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true" file_name="meshes/extruded_track_pieces/mega_island_0_0_ExtrudedTrackMesh_Curve_phys_652.phys">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-500" 31="0" 32="-500" 33="1"/>
 		</physics_mesh>
 	</physics_meshes>
 	<physics_dynamics/>
@@ -42,7 +48,20 @@
 	<ladders/>
 	<perches/>
 	<fires/>
-	<train_tracks/>
+	<train_tracks>
+		<track id="Curve#652_Track#1_#1" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="0" 31="0" 32="0" 33="1"/>
+			<links>
+				<link id="Curve#652_Track#1_#0"/>
+			</links>
+		</track>
+		<track id="Curve#652_Track#1_#0" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="0" 31="0" 32="0" 33="1"/>
+			<links>
+				<link id="Curve#652_Track#1_#1"/>
+			</links>
+		</track>
+	</train_tracks>
 	<iceberg_markers/>
 </definition>
 

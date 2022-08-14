@@ -9,10 +9,12 @@ function lib.Embankment(Settings, ISet)
 	Settings = Settings or {}
 
 	local Colour		= Settings.Colour		or Color255(54, 64, 7, 255)
+	local TopColour		= Settings.TopColour	or Colour
 	local TopWidth		= (Settings.TopWidth	or 6)	* 0.5
 	local BottomWidth	= (Settings.BottomWidth	or 20)	* 0.5
 	local Height		= Settings.Height 		or 3
 	local YOffset		= Settings.YOffset 		or -0.65
+	local closedBottom  = Settings.ClosedBottom or false
 
 	local extrusion	= Extrusion()
 	local set = LoopSet()
@@ -42,17 +44,32 @@ function lib.Embankment(Settings, ISet)
 	v.position	= Vector3(-TopWidth, YOffset - AntiZGlitch, 0)
 	loop.Vertices:Add(v)
 
+	v.color		= TopColour
+
 	v.position	= Vector3(-TopWidth, YOffset - AntiZGlitch, 0)
 	loop.Vertices:Add(v)
 
 	v.position	= Vector3(TopWidth, YOffset, 0)
 	loop.Vertices:Add(v)
 
+	v.color		= Colour
+	
 	v.position	= Vector3(TopWidth, YOffset, 0)
 	loop.Vertices:Add(v)
 
 	v.position	= Vector3(BottomWidth, -Height, 0)
 	loop.Vertices:Add(v)
+
+	if closedBottom then
+		v.position	= Vector3(BottomWidth, -Height, 0)
+		loop.Vertices:Add(v)
+
+		v.position	= Vector3(-BottomWidth, -Height, 0)
+		loop.Vertices:Add(v)
+
+		set.LineIndices:Add(6)
+		set.LineIndices:Add(7)
+	end
 
 	set:ComputeNormals()
 

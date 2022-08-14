@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CrossSectionSpecification>
+	<GlobalOffset x="0" y="-0.01" />
+	<GlobalScale x="1" y="1" z="1" />
+	<GlobalRollOffset>0</GlobalRollOffset>
+	<InterpolationSettings>
+		<MinInterpolationDistance>2</MinInterpolationDistance>
+		<MaxInterpolationDistance>50</MaxInterpolationDistance>
+		<MaxAngleBetweenInterpolations>1</MaxAngleBetweenInterpolations>
+		<MaxSegmentOffset>0.1</MaxSegmentOffset>
+	</InterpolationSettings>
+	<CrossSections>
+		<CItem>
+			<xmlFilePath>CSSpecSub/Standard/GeneratedRails</xmlFilePath>
+			<Offset x="0" y="0.03" />
+			<Scale x="1" y="1" />
+			<Roll>0</Roll>
+			<LockRoll>true</LockRoll>
+		</CItem>
+		<CItem>
+			<xmlFilePath>CSSpecSub/Standard/GravelBed</xmlFilePath>
+			<Offset x="0" y="-0.26" />
+			<Scale x="1" y="1" />
+			<Roll>0</Roll>
+			<LockRoll>true</LockRoll>
+		</CItem>
+		<CItem>
+			<xmlFilePath>CSSpecSub/Standard/Embankment</xmlFilePath>
+			<Offset x="0" y="0.04" />
+			<Scale x="1" y="1" />
+			<Roll>0</Roll>
+			<LockRoll>true</LockRoll>
+		</CItem>
+	</CrossSections>
+	<PeriodicItems>
+		<PeriodicItem>
+			<MeshPath>meshes/unit_cube.mesh</MeshPath>
+			<PaintColor x="0.3529412" y="0.168627456" z="0.105882354" w="0" />
+			<ForcePaint>true</ForcePaint>
+			<Offset x="0" y="-0.375" z="0" />
+			<Scale x="2.81" y="0.13" z="0.19" />
+			<Rotation x="0" y="0" z="0" />
+			<LockRotationX>false</LockRotationX>
+			<LockRotationY>false</LockRotationY>
+			<LockRotationZ>true</LockRotationZ>
+			<InterpolationSettings>
+				<MinInterpolationDistance>1</MinInterpolationDistance>
+				<MaxInterpolationDistance>1</MaxInterpolationDistance>
+				<MaxAngleBetweenInterpolations>3.40282347E+38</MaxAngleBetweenInterpolations>
+				<MaxSegmentOffset>3.40282347E+38</MaxSegmentOffset>
+				<InitialOffset>0.5</InitialOffset>
+				<Smudge>true</Smudge>
+				<Interval>1</Interval>
+			</InterpolationSettings>
+		</PeriodicItem>
+	</PeriodicItems>
+</CrossSectionSpecification>
