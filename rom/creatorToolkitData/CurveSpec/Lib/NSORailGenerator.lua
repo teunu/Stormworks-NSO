@@ -127,12 +127,12 @@ lib.presets =
 
 		--- Color of the driving/contact surfaces.
 		--- Typically the contact of the wheels keep this rust-free.
-		SurfaceColor    = Color255(92, 80, 84, 255),
+		SurfaceColor    = Color255(90, 70, 70, 255),
 		--- Color of the infrequent contact surfaces.
 		--- Infrequent contact of the wheels keeps this somewhat rust-free.
-		MediumRustColor = Color255(92, 80, 84, 255),
+		MediumRustColor = Color255(90, 70, 70, 255),
 		--- Color of the remaining parts of the rail that are not kept rust-free.
-		FullRustColor   = Color255(92, 80, 84, 255),
+		FullRustColor   = Color255(90, 70, 70, 255),
 	},
 }
 

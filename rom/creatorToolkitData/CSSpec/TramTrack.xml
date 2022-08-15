@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CrossSectionSpecification>
+	<GlobalOffset x="0" y="-0.01" />
+	<GlobalScale x="1" y="1" z="1" />
+	<GlobalRollOffset>0</GlobalRollOffset>
+	<InterpolationSettings>
+		<MinInterpolationDistance>2</MinInterpolationDistance>
+		<MaxInterpolationDistance>50</MaxInterpolationDistance>
+		<MaxAngleBetweenInterpolations>0.5</MaxAngleBetweenInterpolations>
+		<MaxSegmentOffset>0.5</MaxSegmentOffset>
+	</InterpolationSettings>
+	<CrossSections>
+		<CItem>
+			<xmlFilePath>CSSpecSub/TramTrack/Body</xmlFilePath>
+			<Offset x="0" y="0" />
+			<Scale x="1" y="1" />
+			<Roll>0</Roll>
+			<LockRoll>true</LockRoll>
+		</CItem>
+		<CItem>
+			<xmlFilePath>CSSpecSub/TramTrack/Groove</xmlFilePath>
+			<Offset x="-0.92" y="0" />
+			<Scale x="1" y="1" />
+			<Roll>0</Roll>
+			<LockRoll>true</LockRoll>
+		</CItem>
+		<CItem>
+			<xmlFilePath>CSSpecSub/TramTrack/Groove</xmlFilePath>
+			<Offset x="0.92" y="0" />
+			<Scale x="1" y="1" />
+			<Roll>0</Roll>
+			<LockRoll>true</LockRoll>
+		</CItem>
+	</CrossSections>
+	<PeriodicItems />
+</CrossSectionSpecification>
