@@ -179,12 +179,16 @@ function lib.Generate(settings, ISet)
 	local makeSingleLine = true
 
 	-- For physics
-	local mkPhys = true
+	local mkPhys = false
 
 
 	local extrusion = Extrusion()
 	local set = LoopSet()
 	extrusion.LoopSets:Add(set)
+
+	if mkPhys == false then
+		extrusion.PhysSharing = nil
+	end
 
 	-- Enable manually simplified physics.
 	set.PhysFromVisual = false
@@ -353,7 +357,6 @@ function lib.Generate(settings, ISet)
 
 	local pointsPerRail      = loop.Vertices.Count
 	local indicesPerRail     = set.LineIndices.Count
-	local physIndicesPerRail = set.PhysLineIndices.Count
 
 	for i = 0, pointsPerRail - 1, 1 do
 		-- Copy the record at position i

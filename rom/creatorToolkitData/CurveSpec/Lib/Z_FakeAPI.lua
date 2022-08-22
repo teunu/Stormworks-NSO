@@ -39,7 +39,9 @@ end
 ---@class CurveSpec
 local curveSpecAPI = {}
 
-
+function Vector3(x, y, z)
+-- funky
+end
 
 
 ---@class Extrusion
