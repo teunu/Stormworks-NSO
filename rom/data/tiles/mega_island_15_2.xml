@@ -94,6 +94,9 @@
 		<mesh id="door_shore_06" parent_id="" purchase_interactable_id="" seasonal_flags="0" file_name="meshes/door_cottages.mesh">
 			<transform 00="-0.258819" 01="0" 02="-0.965926" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.965926" 21="0" 22="-0.258819" 23="0" 30="-86.82636" 31="8.213934" 32="154.871063" 33="1"/>
 		</mesh>
+		<mesh id="StaticObject_0" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true" file_name="meshes/train_buffer.mesh">
+			<transform 00="-0.7482347" 01="0" 02="0.663434148" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.663434148" 21="0" 22="-0.7482347" 23="0" 30="267.981445" 31="19.9321518" 32="459.260742" 33="1"/>
+		</mesh>
 	</meshes>
 	<physics_objects/>
 	<physics_meshes>
@@ -186,6 +189,9 @@
 		</physics_mesh>
 		<physics_mesh id="door_shore_06_phys" parent_id="door_shore_06" purchase_interactable_id="" seasonal_flags="0" file_name="meshes/door_hospital_phys.phys">
 			<transform 00="-0.258819" 01="0" 02="-0.965926" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.965926" 21="0" 22="-0.258819" 23="0" 30="-86.82636" 31="8.213934" 32="154.871063" 33="1"/>
+		</physics_mesh>
+		<physics_mesh id="StaticObject_0_phys" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true" file_name="meshes/train_buffer_phys.phys">
+			<transform 00="-0.7482347" 01="0" 02="0.663434148" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.663434148" 21="0" 22="-0.7482347" 23="0" 30="267.981445" 31="19.9321518" 32="459.260742" 33="1"/>
 		</physics_mesh>
 	</physics_meshes>
 	<physics_dynamics/>
@@ -425,63 +431,63 @@
 	<screens/>
 	<edit_areas>
 		<edit_area id="dock_edit" parent_id="" purchase_interactable_id="" seasonal_flags="0" grid_size="2" is_static="false" default_vehicle="" spawned_static_vehicle_id="0" is_invisible_vehicle="false">
-			<transform 00="-0.486331" 01="0" 02="0.873774" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.873774" 21="0" 22="-0.486331" 23="0" 30="168.406937" 31="2.159357" 32="-423.5948" 33="1"/>
+			<transform 00="-0.486331254" 01="0" 02="0.8737745" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.8737745" 21="0" 22="-0.486331254" 23="0" 30="168.406937" 31="2.159357" 32="-423.5948" 33="1"/>
 			<size x="22.5" y="20.5" z="57.25"/>
 		</edit_area>
 		<edit_area id="edit15" parent_id="" purchase_interactable_id="" seasonal_flags="0" grid_size="5" is_static="true" default_vehicle="bed" spawned_static_vehicle_id="0" is_invisible_vehicle="true">
-			<transform 00="0.907392" 01="0" 02="-0.420286" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.420286" 21="0" 22="0.907392" 23="0" 30="113.69899" 31="7.056055" 32="204.418655" 33="1"/>
+			<transform 00="0.907391965" 01="0" 02="-0.420285463" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.420285463" 21="0" 22="0.907391965" 23="0" 30="113.69899" 31="7.056055" 32="204.418655" 33="1"/>
 			<size x="0.75" y="0.25" z="1.75"/>
 		</edit_area>
 		<edit_area id="edit2" parent_id="" purchase_interactable_id="" seasonal_flags="0" grid_size="5" is_static="true" default_vehicle="bed" spawned_static_vehicle_id="0" is_invisible_vehicle="true">
-			<transform 00="0" 01="0" 02="1" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-1" 21="0" 22="0" 23="0" 30="-123.5774" 31="8.462992" 32="157.675156" 33="1"/>
+			<transform 00="7.54979E-08" 01="0" 02="1" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-1" 21="0" 22="7.54979E-08" 23="0" 30="-123.5774" 31="8.462992" 32="157.675156" 33="1"/>
 			<size x="0.75" y="0.25" z="1.75"/>
 		</edit_area>
 		<edit_area id="edit3" parent_id="" purchase_interactable_id="" seasonal_flags="0" grid_size="5" is_static="true" default_vehicle="bed" spawned_static_vehicle_id="0" is_invisible_vehicle="true">
-			<transform 00="0" 01="0" 02="1" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-1" 21="0" 22="0" 23="0" 30="-123.5774" 31="8.462992" 32="158.806458" 33="1"/>
+			<transform 00="7.54979E-08" 01="0" 02="1" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-1" 21="0" 22="7.54979E-08" 23="0" 30="-123.5774" 31="8.462992" 32="158.806458" 33="1"/>
 			<size x="0.75" y="0.25" z="1.75"/>
 		</edit_area>
 		<edit_area id="edit4" parent_id="" purchase_interactable_id="" seasonal_flags="0" grid_size="5" is_static="true" default_vehicle="bed" spawned_static_vehicle_id="0" is_invisible_vehicle="true">
-			<transform 00="-1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="-1" 23="0" 30="-105.778229" 31="8.642103" 32="159.616608" 33="1"/>
+			<transform 00="-1" 01="0" 02="8.742278E-08" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-8.742278E-08" 21="0" 22="-1" 23="0" 30="-105.778229" 31="8.642103" 32="159.616608" 33="1"/>
 			<size x="0.75" y="0.25" z="1.75"/>
 		</edit_area>
 		<edit_area id="edit5" parent_id="" purchase_interactable_id="" seasonal_flags="0" grid_size="5" is_static="true" default_vehicle="bed" spawned_static_vehicle_id="0" is_invisible_vehicle="true">
-			<transform 00="-0.966324" 01="0" 02="0.25733" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.25733" 21="0" 22="-0.966324" 23="0" 30="-85.25675" 31="8.562233" 32="156.269272" 33="1"/>
+			<transform 00="-0.9663236" 01="0" 02="0.257329971" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.257329971" 21="0" 22="-0.9663236" 23="0" 30="-85.25675" 31="8.562233" 32="156.269272" 33="1"/>
 			<size x="0.75" y="0.25" z="1.75"/>
 		</edit_area>
 		<edit_area id="edit6" parent_id="" purchase_interactable_id="" seasonal_flags="0" grid_size="5" is_static="true" default_vehicle="bed" spawned_static_vehicle_id="0" is_invisible_vehicle="true">
-			<transform 00="-0.966324" 01="0" 02="0.25733" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.25733" 21="0" 22="-0.966324" 23="0" 30="-83.7453156" 31="8.562233" 32="155.868744" 33="1"/>
+			<transform 00="-0.9663236" 01="0" 02="0.257329971" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.257329971" 21="0" 22="-0.9663236" 23="0" 30="-83.7453156" 31="8.562233" 32="155.868744" 33="1"/>
 			<size x="0.75" y="0.25" z="1.75"/>
 		</edit_area>
 		<edit_area id="edit7" parent_id="" purchase_interactable_id="" seasonal_flags="0" grid_size="5" is_static="true" default_vehicle="bed" spawned_static_vehicle_id="0" is_invisible_vehicle="true">
-			<transform 00="-0.934125" 01="0" 02="0.356947" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.356947" 21="0" 22="-0.934125" 23="0" 30="-4.004702" 31="7.174668" 32="251.669937" 33="1"/>
+			<transform 00="-0.934124649" 01="0" 02="0.356947" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.356947" 21="0" 22="-0.934124649" 23="0" 30="-4.004702" 31="7.174668" 32="251.669937" 33="1"/>
 			<size x="0.75" y="0.25" z="1.75"/>
 		</edit_area>
 		<edit_area id="edit8" parent_id="" purchase_interactable_id="" seasonal_flags="0" grid_size="5" is_static="true" default_vehicle="bed" spawned_static_vehicle_id="0" is_invisible_vehicle="true">
-			<transform 00="-0.326369" 01="0" 02="-0.945242" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.945242" 21="0" 22="-0.326369" 23="0" 30="3.287354" 31="7.047114" 32="219.257248" 33="1"/>
+			<transform 00="-0.326369166" 01="0" 02="-0.9452424" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.9452424" 21="0" 22="-0.326369166" 23="0" 30="3.287354" 31="7.047114" 32="219.257248" 33="1"/>
 			<size x="0.75" y="0.25" z="1.75"/>
 		</edit_area>
 		<edit_area id="edit9" parent_id="" purchase_interactable_id="" seasonal_flags="0" grid_size="5" is_static="true" default_vehicle="bed" spawned_static_vehicle_id="0" is_invisible_vehicle="true">
-			<transform 00="0.945242" 01="0" 02="-0.326369" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.326369" 21="0" 22="0.945242" 23="0" 30="25.0375385" 31="7.02655" 32="239.637985" 33="1"/>
+			<transform 00="0.9452424" 01="0" 02="-0.326369166" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.326369166" 21="0" 22="0.9452424" 23="0" 30="25.0375385" 31="7.02655" 32="239.637985" 33="1"/>
 			<size x="0.75" y="0.25" z="1.75"/>
 		</edit_area>
 		<edit_area id="edit10" parent_id="" purchase_interactable_id="" seasonal_flags="0" grid_size="5" is_static="true" default_vehicle="bed" spawned_static_vehicle_id="0" is_invisible_vehicle="true">
-			<transform 00="0.93718" 01="0" 02="-0.348845" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.348845" 21="0" 22="0.93718" 23="0" 30="22.8956833" 31="7.195351" 32="211.6778" 33="1"/>
+			<transform 00="0.9371806" 01="0" 02="-0.348844677" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.348844677" 21="0" 22="0.9371806" 23="0" 30="22.8956833" 31="7.195351" 32="211.6778" 33="1"/>
 			<size x="0.75" y="0.25" z="1.75"/>
 		</edit_area>
 		<edit_area id="edit11" parent_id="" purchase_interactable_id="" seasonal_flags="0" grid_size="5" is_static="true" default_vehicle="bed" spawned_static_vehicle_id="0" is_invisible_vehicle="true">
-			<transform 00="-0.93718" 01="0" 02="0.348845" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.348845" 21="0" 22="-0.93718" 23="0" 30="60.743515" 31="7.189092" 32="228.804123" 33="1"/>
+			<transform 00="-0.9371804" 01="0" 02="0.348845" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.348845" 21="0" 22="-0.9371804" 23="0" 30="60.743515" 31="7.189092" 32="228.804123" 33="1"/>
 			<size x="0.75" y="0.25" z="1.75"/>
 		</edit_area>
 		<edit_area id="edit12" parent_id="" purchase_interactable_id="" seasonal_flags="0" grid_size="5" is_static="true" default_vehicle="bed" spawned_static_vehicle_id="0" is_invisible_vehicle="true">
-			<transform 00="-0.348845" 01="0" 02="-0.93718" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.93718" 21="0" 22="-0.348845" 23="0" 30="53.9948845" 31="7.050452" 32="200.565" 33="1"/>
+			<transform 00="-0.348845243" 01="0" 02="-0.93718034" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.93718034" 21="0" 22="-0.348845243" 23="0" 30="53.9948845" 31="7.050452" 32="200.565" 33="1"/>
 			<size x="0.75" y="0.25" z="1.75"/>
 		</edit_area>
 		<edit_area id="edit13" parent_id="" purchase_interactable_id="" seasonal_flags="0" grid_size="5" is_static="true" default_vehicle="bed" spawned_static_vehicle_id="0" is_invisible_vehicle="true">
-			<transform 00="-0.907392" 01="0" 02="0.420286" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.420286" 21="0" 22="-0.907392" 23="0" 30="85.81277" 31="7.204709" 32="218.9753" 33="1"/>
+			<transform 00="-0.907391667" 01="0" 02="0.420286059" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.420286059" 21="0" 22="-0.907391667" 23="0" 30="85.81277" 31="7.204709" 32="218.9753" 33="1"/>
 			<size x="0.75" y="0.25" z="1.75"/>
 		</edit_area>
 		<edit_area id="edit14" parent_id="" purchase_interactable_id="" seasonal_flags="0" grid_size="5" is_static="true" default_vehicle="bed" spawned_static_vehicle_id="0" is_invisible_vehicle="true">
-			<transform 00="-0.420286" 01="0" 02="-0.907392" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.907392" 21="0" 22="-0.420286" 23="0" 30="90.2337" 31="7.061002" 32="186.015213" 33="1"/>
+			<transform 00="-0.420285851" 01="0" 02="-0.9073917" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.9073917" 21="0" 22="-0.420285851" 23="0" 30="90.2337" 31="7.061002" 32="186.015213" 33="1"/>
 			<size x="0.75" y="0.25" z="1.75"/>
 		</edit_area>
 	</edit_areas>
