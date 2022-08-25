@@ -163,6 +163,12 @@
 		<physics_mesh id="StaticObject_3_phys" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true" file_name="meshes/generated_object_geom/tiles/mega_island_12_6/nso_mod/structures/buildings/hangar_big__StaticObject_3_phys.phys">
 			<transform 00="0.788011134" 01="0" 02="0.615661" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.615661" 21="0" 22="0.788011134" 23="0" 30="221.605469" 31="16.5109558" 32="-11.1796875" 33="1"/>
 		</physics_mesh>
+		<physics_mesh id="physics_mesh0" parent_id="" purchase_interactable_id="" seasonal_flags="0" file_name="nso_mod/meshes/mainland/12_6_main.phys">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="0" 31="0" 32="0" 33="1"/>
+		</physics_mesh>
+		<physics_mesh id="sale_sign_phys" parent_id="sale_sign_interact" purchase_interactable_id="" seasonal_flags="0" file_name="meshes/for_sale_sign_phys.phys">
+			<transform 00="-0.8182218" 01="0" 02="1.818632" 03="0" 10="0" 11="1.994219" 12="0" 13="0" 20="-1.818632" 21="0" 22="-0.8182218" 23="0" 30="17.84375" 31="16.8064766" 32="-36.921875" 33="1"/>
+		</physics_mesh>
 		<physics_mesh id="StaticObject_2_phys" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true" file_name="meshes/generated_object_geom/tiles/mega_island_12_6/nso_mod/decoration/workbenches/blueprints_boat__StaticObject_2_phys.phys">
 			<transform 00="-0.406317472" 01="0" 02="0.913732" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.913732" 21="0" 22="-0.406317472" 23="0" 30="161.678711" 31="17.82787" 32="26.2109375" 33="1"/>
 		</physics_mesh>
@@ -184,12 +190,6 @@
 		<physics_mesh id="ExtrudedTrackMesh_Curve_phys_7" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true" file_name="meshes/extruded_track_pieces/mega_island_12_6_ExtrudedTrackMesh_Curve_phys_7.phys">
 			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-195.070313" 31="11.7767544" 32="385.35498" 33="1"/>
 		</physics_mesh>
-		<physics_mesh id="physics_mesh0" parent_id="" purchase_interactable_id="" seasonal_flags="0" file_name="nso_mod/meshes/mainland/12_6_main.phys">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="0" 31="0" 32="0" 33="1"/>
-		</physics_mesh>
-		<physics_mesh id="sale_sign_phys" parent_id="sale_sign_interact" purchase_interactable_id="" seasonal_flags="0" file_name="meshes/for_sale_sign_phys.phys">
-			<transform 00="-0.8182218" 01="0" 02="1.818632" 03="0" 10="0" 11="1.994219" 12="0" 13="0" 20="-1.818632" 21="0" 22="-0.8182218" 23="0" 30="17.84375" 31="16.8064766" 32="-36.921875" 33="1"/>
-		</physics_mesh>
 	</physics_meshes>
 	<physics_dynamics/>
 	<lights_omni/>
@@ -202,7 +202,7 @@
 			<size x="17.2614975" y="7.128552" z="30.2518864"/>
 		</edit_area>
 		<edit_area id="ftc_elevator" parent_id="" purchase_interactable_id="" seasonal_flags="0" grid_size="0" is_static="true" default_vehicle="nso/elevator_ftc_12_6" spawned_static_vehicle_id="0" is_invisible_vehicle="false">
-			<transform 00="0.924287736" 01="0" 02="0.3816964" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.3816964" 21="0" 22="0.924287736" 23="0" 30="-14.15" 31="26.646" 32="-53.701" 33="1"/>
+			<transform 00="0.924288" 01="0" 02="0.381695926" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.381695926" 21="0" 22="0.924288" 23="0" 30="-14.15" 31="26.646" 32="-53.701" 33="1"/>
 			<size x="6" y="21" z="6"/>
 		</edit_area>
 		<edit_area id="large_edit" parent_id="" purchase_interactable_id="" seasonal_flags="0" grid_size="0" is_static="false" default_vehicle="" spawned_static_vehicle_id="0" is_invisible_vehicle="false">

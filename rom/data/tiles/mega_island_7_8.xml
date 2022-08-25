@@ -5,7 +5,7 @@
 			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="0" 31="0" 32="0" 33="1"/>
 		</mesh>
 		<mesh id="StaticObject_11" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true" file_name="meshes/island_26_church.mesh">
-			<transform 00="-0.8766355" 01="0.01028198" 02="0.481045127" 03="0" 10="0.0117280893" 11="0.9999474" 12="-3.77657472E-07" 13="0" 20="-0.481012046" 21="0.00564131746" 22="-0.8766958" 23="0" 30="98.05859" 31="9.577723" 32="-314.151367" 33="1"/>
+			<transform 00="-0.8766355" 01="0.0102819912" 02="0.481045127" 03="0" 10="0.0117281005" 11="0.999949336" 12="-4.211983E-07" 13="0" 20="-0.481012046" 21="0.005641274" 22="-0.8766958" 23="0" 30="98.05859" 31="9.577723" 32="-314.151367" 33="1"/>
 		</mesh>
 		<mesh id="StaticObject_10" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true" file_name="nso_mod/meshes/rocks/rock_small_4.mesh">
 			<transform 00="0.5058742" 01="-0.280960679" 02="-0.8155691" 03="0" 10="0.148096" 11="0.9597193" 12="-0.2387602" 13="0" 20="0.8497989" 21="1.11758645E-07" 22="0.5271059" 23="0" 30="245.861328" 31="25.56664" 32="479.40332" 33="1"/>
@@ -104,7 +104,7 @@
 	<physics_objects/>
 	<physics_meshes>
 		<physics_mesh id="StaticObject_11_phys" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true" file_name="meshes/island_26_church_phys.phys">
-			<transform 00="-0.8766355" 01="0.01028198" 02="0.481045127" 03="0" 10="0.0117280893" 11="0.9999474" 12="-3.77657472E-07" 13="0" 20="-0.481012046" 21="0.00564131746" 22="-0.8766958" 23="0" 30="98.05859" 31="9.577723" 32="-314.151367" 33="1"/>
+			<transform 00="-0.8766355" 01="0.0102819912" 02="0.481045127" 03="0" 10="0.0117281005" 11="0.999949336" 12="-4.211983E-07" 13="0" 20="-0.481012046" 21="0.005641274" 22="-0.8766958" 23="0" 30="98.05859" 31="9.577723" 32="-314.151367" 33="1"/>
 		</physics_mesh>
 		<physics_mesh id="StaticObject_10_phys" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true" file_name="nso_mod/meshes/rocks/rock_small_4.phys">
 			<transform 00="0.5058742" 01="-0.280960679" 02="-0.8155691" 03="0" 10="0.148096" 11="0.9597193" 12="-0.2387602" 13="0" 20="0.8497989" 21="1.11758645E-07" 22="0.5271059" 23="0" 30="245.861328" 31="25.56664" 32="479.40332" 33="1"/>
@@ -175,6 +175,9 @@
 		<physics_mesh id="ExtrudedTrackMesh_Curve_phys_17" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true" file_name="meshes/extruded_track_pieces/mega_island_7_8_ExtrudedTrackMesh_Curve_phys_17.phys">
 			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="44.38379" 31="19.04741" 32="169.089844" 33="1"/>
 		</physics_mesh>
+		<physics_mesh id="physics_mesh0" parent_id="" purchase_interactable_id="" seasonal_flags="0" file_name="nso_mod/meshes/mainland/7_8_main.phys">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="0" 31="0" 32="0" 33="1"/>
+		</physics_mesh>
 		<physics_mesh id="ExtrudedTrackMesh_Curve_phys_16" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true" file_name="meshes/extruded_track_pieces/mega_island_7_8_ExtrudedTrackMesh_Curve_phys_16.phys">
 			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="15.4257813" 31="18.3653259" 32="107.995117" 33="1"/>
 		</physics_mesh>
@@ -198,9 +201,6 @@
 		</physics_mesh>
 		<physics_mesh id="ExtrudedTrackMesh_Curve_phys_9" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true" file_name="meshes/extruded_track_pieces/mega_island_7_8_ExtrudedTrackMesh_Curve_phys_9.phys">
 			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="321.4795" 31="17.3630848" 32="-105.1543" 33="1"/>
-		</physics_mesh>
-		<physics_mesh id="physics_mesh0" parent_id="" purchase_interactable_id="" seasonal_flags="0" file_name="nso_mod/meshes/mainland/7_8_main.phys">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="0" 31="0" 32="0" 33="1"/>
 		</physics_mesh>
 	</physics_meshes>
 	<physics_dynamics/>
