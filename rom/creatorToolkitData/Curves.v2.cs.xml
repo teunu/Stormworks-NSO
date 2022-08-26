@@ -246,6 +246,8 @@
 		<CurveGraph.CurveNode ref_id="50" />
 		<CurveGraph.CurveNode ref_id="476" />
 		<CurveGraph.CurveNode ref_id="378" />
+		<CurveGraph.CurveNode ref_id="478" />
+		<CurveGraph.CurveNode ref_id="479" />
 	</Content>
 	<References>
 		<References_to_CurveGraph.CurveNode>
@@ -3155,8 +3157,8 @@
 				<CustomData isNull="true" />
 			</CurveNode>
 			<CurveNode ref_id="337" Roll="0" Curvature="0.75" AutoSmooth="false">
-				<Position X="13566.46" Y="6.500005" Z="8313.295" />
-				<Direction X="24.62732" Y="0.0000025034" Z="-28.89258" />
+				<Position X="13566.46" Y="6.4" Z="8313.295" />
+				<Direction X="24.62731" Y="0.0000025034" Z="-28.89259" />
 				<Up X="0" Y="1" Z="0" />
 				<Scale X="1" Y="1" />
 				<Connections>
@@ -4313,6 +4315,32 @@
 					<KeyValuePair>
 						<Key ref_id="475" />
 						<Value ref_id="477" />
+					</KeyValuePair>
+				</Connections>
+				<CustomData isNull="true" />
+			</CurveNode>
+			<CurveNode ref_id="478" Roll="0" Curvature="0.75" AutoSmooth="false">
+				<Position X="9133.078" Y="13.92044" Z="8453.521" />
+				<Direction X="57.65238" Y="-0.4415201" Z="43.59077" />
+				<Up X="0" Y="1" Z="0" />
+				<Scale X="1" Y="1" />
+				<Connections>
+					<KeyValuePair>
+						<Key ref_id="479" />
+						<Value ref_id="480" />
+					</KeyValuePair>
+				</Connections>
+				<CustomData isNull="true" />
+			</CurveNode>
+			<CurveNode ref_id="479" Roll="0" Curvature="0.75" AutoSmooth="false">
+				<Position X="9281.941" Y="12.04201" Z="8571.739" />
+				<Direction X="57.64872" Y="-0.4414902" Z="43.58751" />
+				<Up X="0" Y="1" Z="0" />
+				<Scale X="1" Y="1" />
+				<Connections>
+					<KeyValuePair>
+						<Key ref_id="478" />
+						<Value ref_id="480" />
 					</KeyValuePair>
 				</Connections>
 				<CustomData isNull="true" />
@@ -6702,8 +6730,8 @@
 				<Curve>
 					<StartNode ref_id="301" />
 					<EndNode ref_id="335" />
-					<StartMagnitudeOverride type="System.Single" value="0.1" />
-					<EndMagnitudeOverride type="System.Single" value="17" />
+					<StartMagnitudeOverride type="System.Single" value="16" />
+					<EndMagnitudeOverride type="System.Single" value="7" />
 				</Curve>
 				<StartNodeSettings SmoothingWeight="1" />
 				<EndNodeSettings SmoothingWeight="1" />
@@ -7354,6 +7382,19 @@
 					<EndNode ref_id="476" />
 					<StartMagnitudeOverride type="System.Single" value="30" />
 					<EndMagnitudeOverride type="System.Single" value="30" />
+				</Curve>
+				<StartNodeSettings SmoothingWeight="1" />
+				<EndNodeSettings SmoothingWeight="1" />
+				<CustomData type="CurveGraph.ConnectionCustomData">
+					<CurveSpecFilePath value="NSO/Conc/Def" />
+				</CustomData>
+			</Connection>
+			<Connection ref_id="480">
+				<Curve>
+					<StartNode ref_id="478" />
+					<EndNode ref_id="479" />
+					<StartMagnitudeOverride type="System.Single" value="80" />
+					<EndMagnitudeOverride type="System.Single" value="80" />
 				</Curve>
 				<StartNodeSettings SmoothingWeight="1" />
 				<EndNodeSettings SmoothingWeight="1" />
