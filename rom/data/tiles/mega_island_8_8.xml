@@ -31,14 +31,17 @@
 		<mesh id="door_06" parent_id="" purchase_interactable_id="" seasonal_flags="0" file_name="meshes/door_cottage_boathouse.mesh">
 			<transform 00="-1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="-1" 23="0" 30="23.13246" 31="12.9871712" 32="-437.561981" 33="1"/>
 		</mesh>
+		<mesh id="StaticObject_34" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true" file_name="meshes/train_buffer.mesh">
+			<transform 00="0.905380547" 01="0" 02="-0.424601018" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.424601018" 21="0" 22="0.905380547" 23="0" 30="-351.205078" 31="16.3922863" 32="-354.299316" 33="1"/>
+		</mesh>
 		<mesh id="StaticObject_33" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true" file_name="nso_mod/meshes/rocks/rock_big_4.mesh">
-			<transform 00="-0.223360538" 01="0.8128466" 02="0.5379505" 03="0" 10="0.311698675" 11="0.5824779" 12="-0.7507089" 13="0" 20="-0.923555434" 21="-2.08616356E-07" 22="-0.383465827" 23="0" 30="497.094727" 31="13.5754442" 32="-192.28418" 33="1"/>
+			<transform 00="-0.223360479" 01="0.8128464" 02="0.5379502" 03="0" 10="0.311698735" 11="0.58247757" 12="-0.750708461" 13="0" 20="-0.9235554" 21="-1.78813991E-07" 22="-0.383465976" 23="0" 30="497.094727" 31="13.5754442" 32="-192.28418" 33="1"/>
 		</mesh>
 		<mesh id="StaticObject_32" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true" file_name="meshes/generated_object_geom/tiles/mega_island_8_8/nso_mod/decoration/wood/log_stump_02__StaticObject_32.mesh">
 			<transform 00="0.819313645" 01="0" 02="0.573345542" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.573345542" 21="0" 22="0.819313645" 23="0" 30="417.6455" 31="29.6675243" 32="-211.481445" 33="1"/>
 		</mesh>
 		<mesh id="StaticObject_31" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true" file_name="meshes/train_buffer.mesh">
-			<transform 00="0.9017762" 01="0" 02="-0.432203323" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.432203323" 21="0" 22="0.9017762" 23="0" 30="-353.501465" 31="16.7481422" 32="-348.355957" 33="1"/>
+			<transform 00="0.9017762" 01="0" 02="-0.432203323" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.432203323" 21="0" 22="0.9017762" 23="0" 30="-353.310059" 31="16.4264641" 32="-348.465332" 33="1"/>
 		</mesh>
 		<mesh id="StaticObject_30" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true" file_name="nso_mod/meshes/decoration/workbenches/blueprints_rolled.mesh">
 			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="11.0878906" 31="41.2361" 32="141.197266" 33="1"/>
@@ -178,14 +181,17 @@
 	</meshes>
 	<physics_objects/>
 	<physics_meshes>
+		<physics_mesh id="StaticObject_34_phys" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true" file_name="meshes/train_buffer_phys.phys">
+			<transform 00="0.905380547" 01="0" 02="-0.424601018" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.424601018" 21="0" 22="0.905380547" 23="0" 30="-351.205078" 31="16.3922863" 32="-354.299316" 33="1"/>
+		</physics_mesh>
 		<physics_mesh id="StaticObject_33_phys" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true" file_name="nso_mod/meshes/rocks/rock_big_4.phys">
-			<transform 00="-0.223360538" 01="0.8128466" 02="0.5379505" 03="0" 10="0.311698675" 11="0.5824779" 12="-0.7507089" 13="0" 20="-0.923555434" 21="-2.08616356E-07" 22="-0.383465827" 23="0" 30="497.094727" 31="13.5754442" 32="-192.28418" 33="1"/>
+			<transform 00="-0.223360479" 01="0.8128464" 02="0.5379502" 03="0" 10="0.311698735" 11="0.58247757" 12="-0.750708461" 13="0" 20="-0.9235554" 21="-1.78813991E-07" 22="-0.383465976" 23="0" 30="497.094727" 31="13.5754442" 32="-192.28418" 33="1"/>
 		</physics_mesh>
 		<physics_mesh id="StaticObject_32_phys" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true" file_name="meshes/generated_object_geom/tiles/mega_island_8_8/nso_mod/decoration/wood/log_stump_02__StaticObject_32_phys.phys">
 			<transform 00="0.819313645" 01="0" 02="0.573345542" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.573345542" 21="0" 22="0.819313645" 23="0" 30="417.6455" 31="29.6675243" 32="-211.481445" 33="1"/>
 		</physics_mesh>
 		<physics_mesh id="StaticObject_31_phys" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true" file_name="meshes/train_buffer_phys.phys">
-			<transform 00="0.9017762" 01="0" 02="-0.432203323" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.432203323" 21="0" 22="0.9017762" 23="0" 30="-353.501465" 31="16.7481422" 32="-348.355957" 33="1"/>
+			<transform 00="0.9017762" 01="0" 02="-0.432203323" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.432203323" 21="0" 22="0.9017762" 23="0" 30="-353.310059" 31="16.4264641" 32="-348.465332" 33="1"/>
 		</physics_mesh>
 		<physics_mesh id="StaticObject_30_phys" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true" file_name="meshes/generated_object_geom/tiles/mega_island_8_8/nso_mod/decoration/workbenches/blueprints_rolled__StaticObject_30_phys.phys">
 			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="11.0878906" 31="41.2361" 32="141.197266" 33="1"/>
@@ -274,18 +280,6 @@
 		<physics_mesh id="StaticObject_2_phys" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true" file_name="meshes/generated_object_geom/tiles/mega_island_8_8/nso_mod/nature/rock_mount_02__StaticObject_2_phys.phys">
 			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="42.0292969" 31="169.299652" 32="109.923828" 33="1"/>
 		</physics_mesh>
-		<physics_mesh id="StaticObject_1_phys" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true" file_name="nso_mod/meshes/rocks/rock_small_4.phys">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="439.576172" 31="32.7127151" 32="368.8037" 33="1"/>
-		</physics_mesh>
-		<physics_mesh id="StaticObject_0_phys" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true" file_name="nso_mod/meshes/rocks/rock_big_4.phys">
-			<transform 00="0.7695163" 01="0" 02="-0.6386272" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.6386272" 21="0" 22="0.7695163" 23="0" 30="446.8789" 31="33.30981" 32="377.348633" 33="1"/>
-		</physics_mesh>
-		<physics_mesh id="ExtrudedTrackMesh_Curve_phys_190" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true" file_name="meshes/extruded_track_pieces/mega_island_8_8_ExtrudedTrackMesh_Curve_phys_190.phys">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-230.742188" 31="15.5" 32="-351.094727" 33="1"/>
-		</physics_mesh>
-		<physics_mesh id="ExtrudedTrackMesh_Curve_phys_189" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true" file_name="meshes/extruded_track_pieces/mega_island_8_8_ExtrudedTrackMesh_Curve_phys_189.phys">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="179.257813" 31="14" 32="-316.094727" 33="1"/>
-		</physics_mesh>
 		<physics_mesh id="physics_mesh0" parent_id="" purchase_interactable_id="" seasonal_flags="0" file_name="nso_mod/meshes/mainland/8_8_main.phys">
 			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="0" 31="0" 32="0" 33="1"/>
 		</physics_mesh>
@@ -315,6 +309,18 @@
 		</physics_mesh>
 		<physics_mesh id="door_06_phys" parent_id="door_06" purchase_interactable_id="" seasonal_flags="0" file_name="meshes/door_cottage_boathouse_phys.phys">
 			<transform 00="-1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="-1" 23="0" 30="23.13246" 31="12.9871712" 32="-437.561981" 33="1"/>
+		</physics_mesh>
+		<physics_mesh id="StaticObject_1_phys" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true" file_name="nso_mod/meshes/rocks/rock_small_4.phys">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="439.576172" 31="32.7127151" 32="368.8037" 33="1"/>
+		</physics_mesh>
+		<physics_mesh id="StaticObject_0_phys" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true" file_name="nso_mod/meshes/rocks/rock_big_4.phys">
+			<transform 00="0.7695163" 01="0" 02="-0.6386272" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.6386272" 21="0" 22="0.7695163" 23="0" 30="446.8789" 31="33.30981" 32="377.348633" 33="1"/>
+		</physics_mesh>
+		<physics_mesh id="ExtrudedTrackMesh_Curve_phys_190" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true" file_name="meshes/extruded_track_pieces/mega_island_8_8_ExtrudedTrackMesh_Curve_phys_190.phys">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-230.742188" 31="15.5" 32="-351.094727" 33="1"/>
+		</physics_mesh>
+		<physics_mesh id="ExtrudedTrackMesh_Curve_phys_189" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true" file_name="meshes/extruded_track_pieces/mega_island_8_8_ExtrudedTrackMesh_Curve_phys_189.phys">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="179.257813" 31="14" 32="-316.094727" 33="1"/>
 		</physics_mesh>
 		<physics_mesh id="ExtrudedTrackMesh_Curve_phys_178" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true" file_name="meshes/extruded_track_pieces/mega_island_8_8_ExtrudedTrackMesh_Curve_phys_178.phys">
 			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="483.494141" 31="14" 32="-298.994141" 33="1"/>
