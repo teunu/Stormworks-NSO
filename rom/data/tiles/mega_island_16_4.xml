@@ -4,11 +4,11 @@
 		<mesh id="mesh0" parent_id="" purchase_interactable_id="" seasonal_flags="0" file_name="nso_mod/meshes/mainland/16_4_main.mesh">
 			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="0" 31="0" 32="0" 33="1"/>
 		</mesh>
-		<mesh id="ExtrudedTrackMesh_Curve_174" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true" file_name="meshes/extruded_track_pieces/mega_island_16_4_ExtrudedTrackMesh_Curve_174.mesh">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-120" 31="10" 32="-270" 33="1"/>
-		</mesh>
 		<mesh id="ExtrudedTrackMesh_Curve_175" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true" file_name="meshes/extruded_track_pieces/mega_island_16_4_ExtrudedTrackMesh_Curve_175.mesh">
 			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-65" 31="8.8562" 32="282.5" 33="1"/>
+		</mesh>
+		<mesh id="ExtrudedTrackMesh_Curve_174" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true" file_name="meshes/extruded_track_pieces/mega_island_16_4_ExtrudedTrackMesh_Curve_174.mesh">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-120" 31="10" 32="-270" 33="1"/>
 		</mesh>
 	</meshes>
 	<physics_objects/>
@@ -16,11 +16,11 @@
 		<physics_mesh id="physics_mesh0" parent_id="" purchase_interactable_id="" seasonal_flags="0" file_name="nso_mod/meshes/mainland/16_4_main.phys">
 			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="0" 31="0" 32="0" 33="1"/>
 		</physics_mesh>
-		<physics_mesh id="ExtrudedTrackMesh_Curve_phys_174" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true" file_name="meshes/extruded_track_pieces/mega_island_16_4_ExtrudedTrackMesh_Curve_phys_174.phys">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-120" 31="10" 32="-270" 33="1"/>
-		</physics_mesh>
 		<physics_mesh id="ExtrudedTrackMesh_Curve_phys_175" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true" file_name="meshes/extruded_track_pieces/mega_island_16_4_ExtrudedTrackMesh_Curve_phys_175.phys">
 			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-65" 31="8.8562" 32="282.5" 33="1"/>
+		</physics_mesh>
+		<physics_mesh id="ExtrudedTrackMesh_Curve_phys_174" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true" file_name="meshes/extruded_track_pieces/mega_island_16_4_ExtrudedTrackMesh_Curve_phys_174.phys">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-120" 31="10" 32="-270" 33="1"/>
 		</physics_mesh>
 	</physics_meshes>
 	<physics_dynamics/>
@@ -42,856 +42,16 @@
 	<perches/>
 	<fires/>
 	<train_tracks>
-		<track id="Curve#174_Track#1_#0" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-120" 31="10" 32="75" 33="1"/>
-			<links>
-				<link id="Curve#174_Track#1_#1"/>
-				<link id="Curve#175_Track#1_#107"/>
-			</links>
-		</track>
-		<track id="Curve#174_Track#1_#1" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-119.999023" 31="10.000001" 32="71" 33="1"/>
-			<links>
-				<link id="Curve#174_Track#1_#0"/>
-				<link id="Curve#174_Track#1_#2"/>
-			</links>
-		</track>
-		<track id="Curve#174_Track#1_#10" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-120" 31="10" 32="-321.5" 33="1"/>
-			<links>
-				<link id="Curve#174_Track#1_#11"/>
-				<link id="Curve#174_Track#1_#9"/>
-			</links>
-		</track>
-		<track id="Curve#174_Track#1_#11" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-120" 31="10" 32="-371.5" 33="1"/>
-			<links>
-				<link id="Curve#174_Track#1_#10"/>
-				<link id="Curve#174_Track#1_#12"/>
-			</links>
-		</track>
-		<track id="Curve#174_Track#1_#12" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-120" 31="10" 32="-421.5" 33="1"/>
-			<links>
-				<link id="Curve#174_Track#1_#11"/>
-				<link id="Curve#174_Track#1_#13"/>
-			</links>
-		</track>
-		<track id="Curve#174_Track#1_#13" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-120" 31="10" 32="-471.5" 33="1"/>
-			<links>
-				<link id="Curve#174_Track#1_#12"/>
-				<link id="Curve#174_Track#1_#14"/>
-			</links>
-		</track>
-		<track id="Curve#174_Track#1_#14" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-120" 31="10" 32="-521.5" 33="1"/>
-			<links>
-				<link id="Curve#174_Track#1_#13"/>
-				<link id="Curve#174_Track#1_#15"/>
-			</links>
-		</track>
-		<track id="Curve#174_Track#1_#15" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-120" 31="10" 32="-571.5" 33="1"/>
-			<links>
-				<link id="Curve#174_Track#1_#14"/>
-			</links>
-		</track>
-		<track id="Curve#174_Track#1_#2" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-120" 31="10" 32="32.5" 33="1"/>
-			<links>
-				<link id="Curve#174_Track#1_#1"/>
-				<link id="Curve#174_Track#1_#3"/>
-			</links>
-		</track>
-		<track id="Curve#174_Track#1_#3" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-120" 31="10" 32="-11.75" 33="1"/>
-			<links>
-				<link id="Curve#174_Track#1_#2"/>
-				<link id="Curve#174_Track#1_#4"/>
-			</links>
-		</track>
-		<track id="Curve#174_Track#1_#4" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-119.999023" 31="10.000001" 32="-38.75" 33="1"/>
-			<links>
-				<link id="Curve#174_Track#1_#3"/>
-				<link id="Curve#174_Track#1_#5"/>
-			</links>
-		</track>
-		<track id="Curve#174_Track#1_#5" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-120" 31="10.000001" 32="-83" 33="1"/>
-			<links>
-				<link id="Curve#174_Track#1_#4"/>
-				<link id="Curve#174_Track#1_#6"/>
-			</links>
-		</track>
-		<track id="Curve#174_Track#1_#6" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-120.000977" 31="9.999999" 32="-133" 33="1"/>
-			<links>
-				<link id="Curve#174_Track#1_#5"/>
-				<link id="Curve#174_Track#1_#7"/>
-			</links>
-		</track>
-		<track id="Curve#174_Track#1_#7" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-120.000977" 31="9.999999" 32="-171.5" 33="1"/>
-			<links>
-				<link id="Curve#174_Track#1_#6"/>
-				<link id="Curve#174_Track#1_#8"/>
-			</links>
-		</track>
-		<track id="Curve#174_Track#1_#8" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-120.000977" 31="9.999998" 32="-221.5" 33="1"/>
-			<links>
-				<link id="Curve#174_Track#1_#7"/>
-				<link id="Curve#174_Track#1_#9"/>
-			</links>
-		</track>
-		<track id="Curve#174_Track#1_#9" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-120" 31="10" 32="-271.5" 33="1"/>
-			<links>
-				<link id="Curve#174_Track#1_#10"/>
-				<link id="Curve#174_Track#1_#8"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#0" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-10" 31="7.7124" 32="490" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#1"/>
-				<link id="Curve#221_Track#1_#373_TileBorderCrossing"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#1" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-11.828125" 31="7.713072" 32="486.4419" 33="1"/>
+		<track id="Curve#221_Track#1_#373_TileBorderCrossing" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-7.341797" 31="7.7124" 32="495.231445" 33="1"/>
 			<links>
 				<link id="Curve#175_Track#1_#0"/>
-				<link id="Curve#175_Track#1_#2"/>
 			</links>
 		</track>
-		<track id="Curve#175_Track#1_#10" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-27.6738281" 31="7.76973248" 32="454.119629" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#11"/>
-				<link id="Curve#175_Track#1_#9"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#100" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-119.162109" 31="9.959695" 32="108.206543" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#101"/>
-				<link id="Curve#175_Track#1_#99"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#101" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-119.350586" 31="9.968565" 32="104.210938" 33="1"/>
+		<track id="Curve#175_Track#1_#99" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-118.953125" 31="9.949824" 32="112.200684" 33="1"/>
 			<links>
 				<link id="Curve#175_Track#1_#100"/>
-				<link id="Curve#175_Track#1_#102"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#102" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-119.514648" 31="9.976408" 32="100.214355" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#101"/>
-				<link id="Curve#175_Track#1_#103"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#103" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-119.655273" 31="9.98319149" 32="96.2168" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#102"/>
-				<link id="Curve#175_Track#1_#104"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#104" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-119.771484" 31="9.988794" 32="92.21826" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#103"/>
-				<link id="Curve#175_Track#1_#105"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#105" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-119.863281" 31="9.993286" 32="88.21973" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#104"/>
-				<link id="Curve#175_Track#1_#106"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#106" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-119.931641" 31="9.996641" 32="84.2202148" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#105"/>
-				<link id="Curve#175_Track#1_#107"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#107" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-119.976563" 31="9.998833" 32="80.2202148" 33="1"/>
-			<links>
-				<link id="Curve#174_Track#1_#0"/>
-				<link id="Curve#175_Track#1_#106"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#11" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-29.3652344" 31="7.781202" 32="450.494629" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#10"/>
-				<link id="Curve#175_Track#1_#12"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#12" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-31.0449219" 31="7.793588" 32="446.86377" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#11"/>
-				<link id="Curve#175_Track#1_#13"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#13" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-32.7089844" 31="7.80687428" 32="443.227051" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#12"/>
-				<link id="Curve#175_Track#1_#14"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#14" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-34.36133" 31="7.821032" 32="439.583984" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#13"/>
-				<link id="Curve#175_Track#1_#15"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#15" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-35.9980469" 31="7.83604" 32="435.934082" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#14"/>
-				<link id="Curve#175_Track#1_#16"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#16" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-37.6230469" 31="7.85186434" 32="432.2798" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#15"/>
-				<link id="Curve#175_Track#1_#17"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#17" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-39.234375" 31="7.8685" 32="428.618164" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#16"/>
-				<link id="Curve#175_Track#1_#18"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#18" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-40.828125" 31="7.885962" 32="424.9497" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#17"/>
-				<link id="Curve#175_Track#1_#19"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#19" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-42.4101563" 31="7.90418339" 32="421.275879" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#18"/>
-				<link id="Curve#175_Track#1_#20"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#2" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-13.6425781" 31="7.714938" 32="482.87793" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#1"/>
-				<link id="Curve#175_Track#1_#3"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#20" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-43.9785156" 31="7.92313528" 32="417.5962" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#19"/>
-				<link id="Curve#175_Track#1_#21"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#21" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-45.5332031" 31="7.942786" 32="413.910645" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#20"/>
-				<link id="Curve#175_Track#1_#22"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#22" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-47.07422" 31="7.963122" 32="410.219238" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#21"/>
-				<link id="Curve#175_Track#1_#23"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#23" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-48.6015625" 31="7.984118" 32="406.522461" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#22"/>
-				<link id="Curve#175_Track#1_#24"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#24" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-50.1152344" 31="8.005751" 32="402.819824" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#23"/>
-				<link id="Curve#175_Track#1_#25"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#25" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-51.6152344" 31="8.027998" 32="399.111816" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#24"/>
-				<link id="Curve#175_Track#1_#26"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#26" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-53.1015625" 31="8.050843" 32="395.398438" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#25"/>
-				<link id="Curve#175_Track#1_#27"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#27" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-54.5722656" 31="8.074262" 32="391.6787" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#26"/>
-				<link id="Curve#175_Track#1_#28"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#28" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-56.0332031" 31="8.098231" 32="387.955078" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#27"/>
-				<link id="Curve#175_Track#1_#29"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#29" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-57.4707031" 31="8.122788" 32="384.222656" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#28"/>
-				<link id="Curve#175_Track#1_#30"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#3" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-15.4453125" 31="7.717972" 32="479.306641" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#2"/>
-				<link id="Curve#175_Track#1_#4"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#30" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-58.9023438" 31="8.147818" 32="380.4878" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#29"/>
-				<link id="Curve#175_Track#1_#31"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#31" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-60.3164063" 31="8.173352" 32="376.7461" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#30"/>
-				<link id="Curve#175_Track#1_#32"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#32" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-61.7167969" 31="8.1993475" 32="372.9995" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#31"/>
-				<link id="Curve#175_Track#1_#33"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#33" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-63.10547" 31="8.225787" 32="369.247559" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#32"/>
-				<link id="Curve#175_Track#1_#34"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#34" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-64.47656" 31="8.252648" 32="365.490723" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#33"/>
-				<link id="Curve#175_Track#1_#35"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#35" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-65.83594" 31="8.279911" 32="361.728516" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#34"/>
-				<link id="Curve#175_Track#1_#36"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#36" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-67.17969" 31="8.307569" 32="357.960938" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#35"/>
-				<link id="Curve#175_Track#1_#37"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#37" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-68.5097656" 31="8.335577" 32="354.188965" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#36"/>
-				<link id="Curve#175_Track#1_#38"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#38" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-69.8222656" 31="8.363944" 32="350.410645" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#37"/>
-				<link id="Curve#175_Track#1_#39"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#39" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-71.125" 31="8.392614" 32="346.6289" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#38"/>
-				<link id="Curve#175_Track#1_#40"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#4" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-17.2324219" 31="7.722144" 32="475.728516" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#3"/>
-				<link id="Curve#175_Track#1_#5"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#40" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-72.41016" 31="8.421635" 32="342.84082" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#39"/>
-				<link id="Curve#175_Track#1_#41"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#41" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-73.68164" 31="8.450911" 32="339.04834" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#40"/>
-				<link id="Curve#175_Track#1_#42"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#42" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-74.93555" 31="8.480474" 32="335.2505" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#41"/>
-				<link id="Curve#175_Track#1_#43"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#43" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-76.17969" 31="8.510262" 32="331.44873" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#42"/>
-				<link id="Curve#175_Track#1_#44"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#44" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-77.4043" 31="8.540288" 32="327.640625" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#43"/>
-				<link id="Curve#175_Track#1_#45"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#45" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-78.6152344" 31="8.570507" 32="323.8286" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#44"/>
-				<link id="Curve#175_Track#1_#46"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#46" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-79.8125" 31="8.600908" 32="320.0122" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#45"/>
-				<link id="Curve#175_Track#1_#47"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#47" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-80.99414" 31="8.631483" 32="316.190918" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#46"/>
-				<link id="Curve#175_Track#1_#48"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#48" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-82.16211" 31="8.662191" 32="312.365234" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#47"/>
-				<link id="Curve#175_Track#1_#49"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#49" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-83.3125" 31="8.693042" 32="308.53418" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#48"/>
-				<link id="Curve#175_Track#1_#50"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#5" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-19.0078125" 31="7.727426" 32="472.143555" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#4"/>
-				<link id="Curve#175_Track#1_#6"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#50" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-84.44922" 31="8.723981" 32="304.6997" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#49"/>
-				<link id="Curve#175_Track#1_#51"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#51" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-85.56641" 31="8.755035" 32="300.8589" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#50"/>
-				<link id="Curve#175_Track#1_#52"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#52" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-86.67578" 31="8.786126" 32="297.0161" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#51"/>
-				<link id="Curve#175_Track#1_#53"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#53" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-87.76172" 31="8.817294" 32="293.166016" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#52"/>
-				<link id="Curve#175_Track#1_#54"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#54" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-88.83594" 31="8.848469" 32="289.313477" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#53"/>
-				<link id="Curve#175_Track#1_#55"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#55" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-89.89258" 31="8.879665" 32="285.455566" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#54"/>
-				<link id="Curve#175_Track#1_#56"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#56" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-90.93555" 31="8.910847" 32="281.59375" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#55"/>
-				<link id="Curve#175_Track#1_#57"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#57" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-91.96094" 31="8.941995" 32="277.728027" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#56"/>
-				<link id="Curve#175_Track#1_#58"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#58" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-92.9707" 31="8.973097" 32="273.857422" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#57"/>
-				<link id="Curve#175_Track#1_#59"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#59" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-93.96484" 31="9.004125" 32="269.9834" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#58"/>
-				<link id="Curve#175_Track#1_#60"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#6" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-20.7675781" 31="7.733793" 32="468.551758" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#5"/>
-				<link id="Curve#175_Track#1_#7"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#60" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-94.94141" 31="9.035065" 32="266.1045" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#59"/>
-				<link id="Curve#175_Track#1_#61"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#61" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-95.9043" 31="9.065898" 32="262.222168" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#60"/>
-				<link id="Curve#175_Track#1_#62"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#62" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-96.84766" 31="9.096601" 32="258.335449" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#61"/>
-				<link id="Curve#175_Track#1_#63"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#63" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-97.77539" 31="9.12716" 32="254.444336" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#62"/>
-				<link id="Curve#175_Track#1_#64"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#64" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-98.6875" 31="9.157538" 32="250.5498" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#63"/>
-				<link id="Curve#175_Track#1_#65"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#65" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-99.58203" 31="9.187726" 32="246.650879" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#64"/>
-				<link id="Curve#175_Track#1_#66"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#66" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-100.458984" 31="9.217702" 32="242.748535" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#65"/>
-				<link id="Curve#175_Track#1_#67"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#67" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-101.318359" 31="9.247449" 32="238.842285" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#66"/>
-				<link id="Curve#175_Track#1_#68"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#68" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-102.160156" 31="9.276947" 32="234.932129" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#67"/>
-				<link id="Curve#175_Track#1_#69"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#69" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-102.988281" 31="9.306175" 32="231.018555" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#68"/>
-				<link id="Curve#175_Track#1_#70"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#7" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-22.5175781" 31="7.741214" 32="464.9546" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#6"/>
-				<link id="Curve#175_Track#1_#8"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#70" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-103.796875" 31="9.335114" 32="227.101074" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#69"/>
-				<link id="Curve#175_Track#1_#71"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#71" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-104.585938" 31="9.363745" 32="223.180176" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#70"/>
-				<link id="Curve#175_Track#1_#72"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#72" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-105.359375" 31="9.392044" 32="219.255859" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#71"/>
-				<link id="Curve#175_Track#1_#73"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#73" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-106.115234" 31="9.419992" 32="215.328125" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#72"/>
-				<link id="Curve#175_Track#1_#74"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#74" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-106.851563" 31="9.447571" 32="211.396484" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#73"/>
-				<link id="Curve#175_Track#1_#75"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#75" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-107.572266" 31="9.474743" 32="207.461914" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#74"/>
-				<link id="Curve#175_Track#1_#76"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#76" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-108.271484" 31="9.501479" 32="203.523438" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#75"/>
-				<link id="Curve#175_Track#1_#77"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#77" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-108.953125" 31="9.527779" 32="199.58252" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#76"/>
-				<link id="Curve#175_Track#1_#78"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#78" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-109.617188" 31="9.553619" 32="195.6377" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#77"/>
-				<link id="Curve#175_Track#1_#79"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#79" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-110.261719" 31="9.578984" 32="191.689941" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#78"/>
-				<link id="Curve#175_Track#1_#80"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#8" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-24.25" 31="7.749666" 32="461.3496" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#7"/>
-				<link id="Curve#175_Track#1_#9"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#80" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-110.886719" 31="9.603848" 32="187.739258" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#79"/>
-				<link id="Curve#175_Track#1_#81"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#81" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-111.494141" 31="9.628185" 32="183.785645" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#80"/>
-				<link id="Curve#175_Track#1_#82"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#82" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-112.082031" 31="9.651979" 32="179.8291" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#81"/>
-				<link id="Curve#175_Track#1_#83"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#83" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-112.650391" 31="9.675208" 32="175.869629" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#82"/>
-				<link id="Curve#175_Track#1_#84"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#84" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-113.199219" 31="9.697848" 32="171.907715" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#83"/>
-				<link id="Curve#175_Track#1_#85"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#85" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-113.728516" 31="9.71988" 32="167.942871" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#84"/>
-				<link id="Curve#175_Track#1_#86"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#86" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-114.238281" 31="9.741228" 32="163.975586" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#85"/>
-				<link id="Curve#175_Track#1_#87"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#87" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-114.724609" 31="9.761915" 32="160.005371" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#86"/>
-				<link id="Curve#175_Track#1_#88"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#88" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-115.193359" 31="9.781914" 32="156.0332" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#87"/>
-				<link id="Curve#175_Track#1_#89"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#89" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-115.640625" 31="9.80121" 32="152.0581" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#88"/>
-				<link id="Curve#175_Track#1_#90"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#9" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-25.9667969" 31="7.75921535" 32="457.736816" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#10"/>
-				<link id="Curve#175_Track#1_#8"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#90" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-116.068359" 31="9.819779" 32="148.081055" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#89"/>
-				<link id="Curve#175_Track#1_#91"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#91" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-116.475586" 31="9.837598" 32="144.102051" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#90"/>
-				<link id="Curve#175_Track#1_#92"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#92" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-116.861328" 31="9.85464" 32="140.1206" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#91"/>
-				<link id="Curve#175_Track#1_#93"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#93" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-117.225586" 31="9.870885" 32="136.1372" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#92"/>
-				<link id="Curve#175_Track#1_#94"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#94" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-117.569336" 31="9.886307" 32="132.152344" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#93"/>
-				<link id="Curve#175_Track#1_#95"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#95" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-117.889648" 31="9.90084" 32="128.165039" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#94"/>
-				<link id="Curve#175_Track#1_#96"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#96" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-118.188477" 31="9.914463" 32="124.17627" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#95"/>
-				<link id="Curve#175_Track#1_#97"/>
-			</links>
-		</track>
-		<track id="Curve#175_Track#1_#97" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-118.46582" 31="9.927182" 32="120.186035" 33="1"/>
-			<links>
-				<link id="Curve#175_Track#1_#96"/>
 				<link id="Curve#175_Track#1_#98"/>
 			</links>
 		</track>
@@ -902,17 +62,843 @@
 				<link id="Curve#175_Track#1_#99"/>
 			</links>
 		</track>
-		<track id="Curve#175_Track#1_#99" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-118.953125" 31="9.949824" 32="112.200684" 33="1"/>
+		<track id="Curve#175_Track#1_#97" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-118.46582" 31="9.927182" 32="120.186035" 33="1"/>
 			<links>
-				<link id="Curve#175_Track#1_#100"/>
+				<link id="Curve#175_Track#1_#96"/>
 				<link id="Curve#175_Track#1_#98"/>
 			</links>
 		</track>
-		<track id="Curve#221_Track#1_#373_TileBorderCrossing" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-7.341797" 31="7.7124" 32="495.231445" 33="1"/>
+		<track id="Curve#175_Track#1_#96" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-118.188477" 31="9.914463" 32="124.17627" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#95"/>
+				<link id="Curve#175_Track#1_#97"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#95" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-117.889648" 31="9.90084" 32="128.165039" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#94"/>
+				<link id="Curve#175_Track#1_#96"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#94" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-117.569336" 31="9.886307" 32="132.152344" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#93"/>
+				<link id="Curve#175_Track#1_#95"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#93" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-117.225586" 31="9.870885" 32="136.1372" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#92"/>
+				<link id="Curve#175_Track#1_#94"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#92" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-116.861328" 31="9.85464" 32="140.1206" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#91"/>
+				<link id="Curve#175_Track#1_#93"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#91" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-116.475586" 31="9.837598" 32="144.102051" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#90"/>
+				<link id="Curve#175_Track#1_#92"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#90" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-116.068359" 31="9.819779" 32="148.081055" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#89"/>
+				<link id="Curve#175_Track#1_#91"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#9" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-25.9667969" 31="7.75921535" 32="457.736816" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#10"/>
+				<link id="Curve#175_Track#1_#8"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#89" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-115.640625" 31="9.80121" 32="152.0581" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#88"/>
+				<link id="Curve#175_Track#1_#90"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#88" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-115.193359" 31="9.781914" 32="156.0332" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#87"/>
+				<link id="Curve#175_Track#1_#89"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#87" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-114.724609" 31="9.761915" 32="160.005371" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#86"/>
+				<link id="Curve#175_Track#1_#88"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#86" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-114.238281" 31="9.741228" 32="163.975586" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#85"/>
+				<link id="Curve#175_Track#1_#87"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#85" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-113.728516" 31="9.71988" 32="167.942871" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#84"/>
+				<link id="Curve#175_Track#1_#86"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#84" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-113.199219" 31="9.697848" 32="171.907715" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#83"/>
+				<link id="Curve#175_Track#1_#85"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#83" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-112.650391" 31="9.675208" 32="175.869629" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#82"/>
+				<link id="Curve#175_Track#1_#84"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#82" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-112.082031" 31="9.651979" 32="179.8291" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#81"/>
+				<link id="Curve#175_Track#1_#83"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#81" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-111.494141" 31="9.628185" 32="183.785645" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#80"/>
+				<link id="Curve#175_Track#1_#82"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#80" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-110.886719" 31="9.603848" 32="187.739258" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#79"/>
+				<link id="Curve#175_Track#1_#81"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#8" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-24.25" 31="7.749666" 32="461.3496" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#7"/>
+				<link id="Curve#175_Track#1_#9"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#79" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-110.261719" 31="9.578984" 32="191.689941" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#78"/>
+				<link id="Curve#175_Track#1_#80"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#78" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-109.617188" 31="9.553619" 32="195.6377" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#77"/>
+				<link id="Curve#175_Track#1_#79"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#77" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-108.953125" 31="9.527779" 32="199.58252" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#76"/>
+				<link id="Curve#175_Track#1_#78"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#76" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-108.271484" 31="9.501479" 32="203.523438" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#75"/>
+				<link id="Curve#175_Track#1_#77"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#75" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-107.572266" 31="9.474743" 32="207.461914" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#74"/>
+				<link id="Curve#175_Track#1_#76"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#74" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-106.851563" 31="9.447571" 32="211.396484" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#73"/>
+				<link id="Curve#175_Track#1_#75"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#73" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-106.115234" 31="9.419992" 32="215.328125" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#72"/>
+				<link id="Curve#175_Track#1_#74"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#72" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-105.359375" 31="9.392044" 32="219.255859" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#71"/>
+				<link id="Curve#175_Track#1_#73"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#71" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-104.585938" 31="9.363745" 32="223.180176" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#70"/>
+				<link id="Curve#175_Track#1_#72"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#70" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-103.796875" 31="9.335114" 32="227.101074" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#69"/>
+				<link id="Curve#175_Track#1_#71"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#7" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-22.5175781" 31="7.741214" 32="464.9546" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#6"/>
+				<link id="Curve#175_Track#1_#8"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#69" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-102.988281" 31="9.306175" 32="231.018555" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#68"/>
+				<link id="Curve#175_Track#1_#70"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#68" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-102.160156" 31="9.276947" 32="234.932129" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#67"/>
+				<link id="Curve#175_Track#1_#69"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#67" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-101.318359" 31="9.247449" 32="238.842285" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#66"/>
+				<link id="Curve#175_Track#1_#68"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#66" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-100.458984" 31="9.217702" 32="242.748535" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#65"/>
+				<link id="Curve#175_Track#1_#67"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#65" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-99.58203" 31="9.187726" 32="246.650879" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#64"/>
+				<link id="Curve#175_Track#1_#66"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#64" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-98.6875" 31="9.157538" 32="250.5498" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#63"/>
+				<link id="Curve#175_Track#1_#65"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#63" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-97.77539" 31="9.12716" 32="254.444336" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#62"/>
+				<link id="Curve#175_Track#1_#64"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#62" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-96.84766" 31="9.096601" 32="258.335449" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#61"/>
+				<link id="Curve#175_Track#1_#63"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#61" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-95.9043" 31="9.065898" 32="262.222168" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#60"/>
+				<link id="Curve#175_Track#1_#62"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#60" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-94.94141" 31="9.035065" 32="266.1045" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#59"/>
+				<link id="Curve#175_Track#1_#61"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#6" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-20.7675781" 31="7.733793" 32="468.551758" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#5"/>
+				<link id="Curve#175_Track#1_#7"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#59" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-93.96484" 31="9.004125" 32="269.9834" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#58"/>
+				<link id="Curve#175_Track#1_#60"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#58" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-92.9707" 31="8.973097" 32="273.857422" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#57"/>
+				<link id="Curve#175_Track#1_#59"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#57" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-91.96094" 31="8.941995" 32="277.728027" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#56"/>
+				<link id="Curve#175_Track#1_#58"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#56" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-90.93555" 31="8.910847" 32="281.59375" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#55"/>
+				<link id="Curve#175_Track#1_#57"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#55" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-89.89258" 31="8.879665" 32="285.455566" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#54"/>
+				<link id="Curve#175_Track#1_#56"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#54" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-88.83594" 31="8.848469" 32="289.313477" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#53"/>
+				<link id="Curve#175_Track#1_#55"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#53" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-87.76172" 31="8.817294" 32="293.166016" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#52"/>
+				<link id="Curve#175_Track#1_#54"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#52" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-86.67578" 31="8.786126" 32="297.0161" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#51"/>
+				<link id="Curve#175_Track#1_#53"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#51" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-85.56641" 31="8.755035" 32="300.8589" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#50"/>
+				<link id="Curve#175_Track#1_#52"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#50" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-84.44922" 31="8.723981" 32="304.6997" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#49"/>
+				<link id="Curve#175_Track#1_#51"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#5" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-19.0078125" 31="7.727426" 32="472.143555" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#4"/>
+				<link id="Curve#175_Track#1_#6"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#49" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-83.3125" 31="8.693042" 32="308.53418" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#48"/>
+				<link id="Curve#175_Track#1_#50"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#48" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-82.16211" 31="8.662191" 32="312.365234" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#47"/>
+				<link id="Curve#175_Track#1_#49"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#47" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-80.99414" 31="8.631483" 32="316.190918" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#46"/>
+				<link id="Curve#175_Track#1_#48"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#46" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-79.8125" 31="8.600908" 32="320.0122" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#45"/>
+				<link id="Curve#175_Track#1_#47"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#45" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-78.6152344" 31="8.570507" 32="323.8286" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#44"/>
+				<link id="Curve#175_Track#1_#46"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#44" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-77.4043" 31="8.540288" 32="327.640625" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#43"/>
+				<link id="Curve#175_Track#1_#45"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#43" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-76.17969" 31="8.510262" 32="331.44873" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#42"/>
+				<link id="Curve#175_Track#1_#44"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#42" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-74.93555" 31="8.480474" 32="335.2505" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#41"/>
+				<link id="Curve#175_Track#1_#43"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#41" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-73.68164" 31="8.450911" 32="339.04834" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#40"/>
+				<link id="Curve#175_Track#1_#42"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#40" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-72.41016" 31="8.421635" 32="342.84082" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#39"/>
+				<link id="Curve#175_Track#1_#41"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#4" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-17.2324219" 31="7.722144" 32="475.728516" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#3"/>
+				<link id="Curve#175_Track#1_#5"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#39" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-71.125" 31="8.392614" 32="346.6289" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#38"/>
+				<link id="Curve#175_Track#1_#40"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#38" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-69.8222656" 31="8.363944" 32="350.410645" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#37"/>
+				<link id="Curve#175_Track#1_#39"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#37" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-68.5097656" 31="8.335577" 32="354.188965" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#36"/>
+				<link id="Curve#175_Track#1_#38"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#36" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-67.17969" 31="8.307569" 32="357.960938" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#35"/>
+				<link id="Curve#175_Track#1_#37"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#35" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-65.83594" 31="8.279911" 32="361.728516" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#34"/>
+				<link id="Curve#175_Track#1_#36"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#34" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-64.47656" 31="8.252648" 32="365.490723" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#33"/>
+				<link id="Curve#175_Track#1_#35"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#33" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-63.10547" 31="8.225787" 32="369.247559" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#32"/>
+				<link id="Curve#175_Track#1_#34"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#32" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-61.7167969" 31="8.1993475" 32="372.9995" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#31"/>
+				<link id="Curve#175_Track#1_#33"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#31" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-60.3164063" 31="8.173352" 32="376.7461" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#30"/>
+				<link id="Curve#175_Track#1_#32"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#30" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-58.9023438" 31="8.147818" 32="380.4878" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#29"/>
+				<link id="Curve#175_Track#1_#31"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#3" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-15.4453125" 31="7.717972" 32="479.306641" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#2"/>
+				<link id="Curve#175_Track#1_#4"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#29" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-57.4707031" 31="8.122788" 32="384.222656" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#28"/>
+				<link id="Curve#175_Track#1_#30"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#28" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-56.0332031" 31="8.098231" 32="387.955078" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#27"/>
+				<link id="Curve#175_Track#1_#29"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#27" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-54.5722656" 31="8.074262" 32="391.6787" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#26"/>
+				<link id="Curve#175_Track#1_#28"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#26" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-53.1015625" 31="8.050843" 32="395.398438" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#25"/>
+				<link id="Curve#175_Track#1_#27"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#25" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-51.6152344" 31="8.027998" 32="399.111816" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#24"/>
+				<link id="Curve#175_Track#1_#26"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#24" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-50.1152344" 31="8.005751" 32="402.819824" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#23"/>
+				<link id="Curve#175_Track#1_#25"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#23" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-48.6015625" 31="7.984118" 32="406.522461" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#22"/>
+				<link id="Curve#175_Track#1_#24"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#22" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-47.07422" 31="7.963122" 32="410.219238" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#21"/>
+				<link id="Curve#175_Track#1_#23"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#21" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-45.5332031" 31="7.942786" 32="413.910645" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#20"/>
+				<link id="Curve#175_Track#1_#22"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#20" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-43.9785156" 31="7.92313528" 32="417.5962" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#19"/>
+				<link id="Curve#175_Track#1_#21"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#2" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-13.6425781" 31="7.714938" 32="482.87793" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#1"/>
+				<link id="Curve#175_Track#1_#3"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#19" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-42.4101563" 31="7.90418339" 32="421.275879" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#18"/>
+				<link id="Curve#175_Track#1_#20"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#18" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-40.828125" 31="7.885962" 32="424.9497" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#17"/>
+				<link id="Curve#175_Track#1_#19"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#17" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-39.234375" 31="7.8685" 32="428.618164" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#16"/>
+				<link id="Curve#175_Track#1_#18"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#16" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-37.6230469" 31="7.85186434" 32="432.2798" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#15"/>
+				<link id="Curve#175_Track#1_#17"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#15" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-35.9980469" 31="7.83604" 32="435.934082" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#14"/>
+				<link id="Curve#175_Track#1_#16"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#14" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-34.36133" 31="7.821032" 32="439.583984" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#13"/>
+				<link id="Curve#175_Track#1_#15"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#13" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-32.7089844" 31="7.80687428" 32="443.227051" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#12"/>
+				<link id="Curve#175_Track#1_#14"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#12" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-31.0449219" 31="7.793588" 32="446.86377" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#11"/>
+				<link id="Curve#175_Track#1_#13"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#11" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-29.3652344" 31="7.781202" 32="450.494629" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#10"/>
+				<link id="Curve#175_Track#1_#12"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#107" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-119.976563" 31="9.998833" 32="80.2202148" 33="1"/>
+			<links>
+				<link id="Curve#174_Track#1_#0"/>
+				<link id="Curve#175_Track#1_#106"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#106" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-119.931641" 31="9.996641" 32="84.2202148" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#105"/>
+				<link id="Curve#175_Track#1_#107"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#105" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-119.863281" 31="9.993286" 32="88.21973" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#104"/>
+				<link id="Curve#175_Track#1_#106"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#104" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-119.771484" 31="9.988794" 32="92.21826" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#103"/>
+				<link id="Curve#175_Track#1_#105"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#103" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-119.655273" 31="9.98319149" 32="96.2168" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#102"/>
+				<link id="Curve#175_Track#1_#104"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#102" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-119.514648" 31="9.976408" 32="100.214355" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#101"/>
+				<link id="Curve#175_Track#1_#103"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#101" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-119.350586" 31="9.968565" 32="104.210938" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#100"/>
+				<link id="Curve#175_Track#1_#102"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#100" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-119.162109" 31="9.959695" 32="108.206543" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#101"/>
+				<link id="Curve#175_Track#1_#99"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#10" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-27.6738281" 31="7.76973248" 32="454.119629" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#11"/>
+				<link id="Curve#175_Track#1_#9"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#1" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-11.828125" 31="7.713072" 32="486.4419" 33="1"/>
 			<links>
 				<link id="Curve#175_Track#1_#0"/>
+				<link id="Curve#175_Track#1_#2"/>
+			</links>
+		</track>
+		<track id="Curve#175_Track#1_#0" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-10" 31="7.7124" 32="490" 33="1"/>
+			<links>
+				<link id="Curve#175_Track#1_#1"/>
+				<link id="Curve#221_Track#1_#373_TileBorderCrossing"/>
+			</links>
+		</track>
+		<track id="Curve#174_Track#1_#9" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-120" 31="10" 32="-375" 33="1"/>
+			<links>
+				<link id="Curve#174_Track#1_#10"/>
+				<link id="Curve#174_Track#1_#8"/>
+			</links>
+		</track>
+		<track id="Curve#174_Track#1_#8" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-120" 31="10" 32="-325" 33="1"/>
+			<links>
+				<link id="Curve#174_Track#1_#7"/>
+				<link id="Curve#174_Track#1_#9"/>
+			</links>
+		</track>
+		<track id="Curve#174_Track#1_#7" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-120.000977" 31="10" 32="-275" 33="1"/>
+			<links>
+				<link id="Curve#174_Track#1_#6"/>
+				<link id="Curve#174_Track#1_#8"/>
+			</links>
+		</track>
+		<track id="Curve#174_Track#1_#6" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-119.999023" 31="10" 32="-225" 33="1"/>
+			<links>
+				<link id="Curve#174_Track#1_#5"/>
+				<link id="Curve#174_Track#1_#7"/>
+			</links>
+		</track>
+		<track id="Curve#174_Track#1_#5" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-119.999023" 31="10" 32="-175" 33="1"/>
+			<links>
+				<link id="Curve#174_Track#1_#4"/>
+				<link id="Curve#174_Track#1_#6"/>
+			</links>
+		</track>
+		<track id="Curve#174_Track#1_#4" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-120" 31="10" 32="-125" 33="1"/>
+			<links>
+				<link id="Curve#174_Track#1_#3"/>
+				<link id="Curve#174_Track#1_#5"/>
+			</links>
+		</track>
+		<track id="Curve#174_Track#1_#3" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-119.999023" 31="10.000001" 32="-75" 33="1"/>
+			<links>
+				<link id="Curve#174_Track#1_#2"/>
+				<link id="Curve#174_Track#1_#4"/>
+			</links>
+		</track>
+		<track id="Curve#174_Track#1_#2" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-119.999023" 31="10" 32="-25" 33="1"/>
+			<links>
+				<link id="Curve#174_Track#1_#1"/>
+				<link id="Curve#174_Track#1_#3"/>
+			</links>
+		</track>
+		<track id="Curve#174_Track#1_#13" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-120" 31="10" 32="-575" 33="1"/>
+			<links>
+				<link id="Curve#174_Track#1_#12"/>
+			</links>
+		</track>
+		<track id="Curve#174_Track#1_#12" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-120" 31="10" 32="-525" 33="1"/>
+			<links>
+				<link id="Curve#174_Track#1_#11"/>
+				<link id="Curve#174_Track#1_#13"/>
+			</links>
+		</track>
+		<track id="Curve#174_Track#1_#11" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-120" 31="10" 32="-475" 33="1"/>
+			<links>
+				<link id="Curve#174_Track#1_#10"/>
+				<link id="Curve#174_Track#1_#12"/>
+			</links>
+		</track>
+		<track id="Curve#174_Track#1_#10" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-120" 31="10" 32="-425" 33="1"/>
+			<links>
+				<link id="Curve#174_Track#1_#11"/>
+				<link id="Curve#174_Track#1_#9"/>
+			</links>
+		</track>
+		<track id="Curve#174_Track#1_#1" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-119.999023" 31="10" 32="25" 33="1"/>
+			<links>
+				<link id="Curve#174_Track#1_#0"/>
+				<link id="Curve#174_Track#1_#2"/>
+			</links>
+		</track>
+		<track id="Curve#174_Track#1_#0" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-120" 31="10" 32="75" 33="1"/>
+			<links>
+				<link id="Curve#174_Track#1_#1"/>
+				<link id="Curve#175_Track#1_#107"/>
 			</links>
 		</track>
 	</train_tracks>
