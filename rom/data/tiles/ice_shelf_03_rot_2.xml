@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<definition is_island="false" is_volcanic="false" tile_type="0" is_purchasable="false" purchase_cost="0" sea_floor_height="-6">
+<definition>
 	<meshes>
-		<mesh id="ice_shelf_03_mesh" parent_id="" purchase_interactable_id="" seasonal_flags="0" file_name="meshes/arctic_ice_shelf_03.mesh" is_volcanic_additive="false">
-			<transform 00="-1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0" 21="0" 22="-1" 23="0" 30="42.583279" 31="-7.157207" 32="-0.736202" 33="1"/>
+		<mesh id="ice_shelf_03_mesh" file_name="meshes/arctic_ice_shelf_03.mesh">
+			<transform 00="-1" 22="-1" 30="42.583279" 31="-7.157207" 32="-0.736202"/>
 		</mesh>
 	</meshes>
 	<physics_objects/>
 	<physics_meshes>
-		<physics_mesh id="ice_shelf_03_phys" parent_id="" purchase_interactable_id="" seasonal_flags="0" file_name="meshes/arctic_ice_shelf_03_phys.phys" physics_material_type="0" is_volcanic="false">
-			<transform 00="-1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0" 21="0" 22="-1" 23="0" 30="42.583279" 31="-7.157207" 32="-0.736202" 33="1"/>
+		<physics_mesh id="ice_shelf_03_phys" file_name="meshes/arctic_ice_shelf_03_phys.phys">
+			<transform 00="-1" 22="-1" 30="42.583279" 31="-7.157207" 32="-0.736202"/>
 		</physics_mesh>
 	</physics_meshes>
 	<physics_dynamics/>
@@ -30,35 +30,7 @@
 	<perches/>
 	<fires/>
 	<train_tracks/>
-	<iceberg_markers>
-		<iceberg id="iceberg_marker_item0" parent_id="" purchase_interactable_id="" seasonal_flags="0" item_type="0" size="5">
-			<transform 00="-0.991709" 01="0" 02="0.128502" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.128502" 21="0" 22="-0.991709" 23="0" 30="-322.960685" 31="0" 32="89.176908" 33="1"/>
-		</iceberg>
-		<iceberg id="iceberg_marker_item1" parent_id="" purchase_interactable_id="" seasonal_flags="0" item_type="1" size="10">
-			<transform 00="0.342892" 01="0" 02="-0.939375" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.939375" 21="0" 22="0.342892" 23="0" 30="-224.17889" 31="1.87857" 32="48.427144" 33="1"/>
-		</iceberg>
-		<iceberg id="iceberg_marker_item2" parent_id="" purchase_interactable_id="" seasonal_flags="0" item_type="2" size="15">
-			<transform 00="-0.68914" 01="0" 02="0.724628" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.724628" 21="0" 22="-0.68914" 23="0" 30="267.010494" 31="3.696167" 32="298.355019" 33="1"/>
-		</iceberg>
-		<iceberg id="iceberg_marker_item3" parent_id="" purchase_interactable_id="" seasonal_flags="0" item_type="3" size="8">
-			<transform 00="0.978258" 01="0" 02="-0.207389" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.207389" 21="0" 22="0.978258" 23="0" 30="-12.947373" 31="8.737701" 32="-179.939727" 33="1"/>
-		</iceberg>
-		<iceberg id="iceberg_marker_item4" parent_id="" purchase_interactable_id="" seasonal_flags="0" item_type="2" size="4">
-			<transform 00="0.250735" 01="0" 02="-0.968055" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.968055" 21="0" 22="0.250735" 23="0" 30="-101.98232" 31="0" 32="-228.346884" 33="1"/>
-		</iceberg>
-		<iceberg id="iceberg_marker_item5" parent_id="" purchase_interactable_id="" seasonal_flags="0" item_type="4" size="10">
-			<transform 00="0.931275" 01="0" 02="0.364318" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.364318" 21="0" 22="0.931275" 23="0" 30="-386.068416" 31="0" 32="397.175815" 33="1"/>
-		</iceberg>
-		<iceberg id="iceberg_marker_item6" parent_id="" purchase_interactable_id="" seasonal_flags="0" item_type="1" size="7">
-			<transform 00="0.907471" 01="0" 02="-0.420114" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.420114" 21="0" 22="0.907471" 23="0" 30="372.154119" 31="0" 32="409.292692" 33="1"/>
-		</iceberg>
-		<iceberg id="iceberg_marker_item7" parent_id="" purchase_interactable_id="" seasonal_flags="0" item_type="1" size="7">
-			<transform 00="0.607838" 01="0" 02="0.79406" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.79406" 21="0" 22="0.607838" 23="0" 30="380.852435" 31="0" 32="-152.258883" 33="1"/>
-		</iceberg>
-		<iceberg id="iceberg_marker_item8" parent_id="" purchase_interactable_id="" seasonal_flags="0" item_type="2" size="6">
-			<transform 00="0.701257" 01="0" 02="-0.712908" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.712908" 21="0" 22="0.701257" 23="0" 30="-300.223541" 31="0" 32="4.707362" 33="1"/>
-		</iceberg>
-	</iceberg_markers>
 	<volcano_markers/>
+	<mineral_rocks/>
 </definition>
 

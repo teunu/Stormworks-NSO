@@ -45,7 +45,7 @@
 		</surface>
 	</buoyancy_surfaces>
 	<logic_nodes>
-		<logic_node label="Toggled" mode="0" type="0" description="Outputs an on/off signal that can be toggled by pressing [e] on the button when unlocked.">
+		<logic_node label="Toggled" mode="0" type="0" description="Outputs an on/off signal that can be toggled by interacting with [$[action_interact_left]]/[$[action_interact_right]] when unlocked.">
 			<position x="0" y="0" z="0"/>
 		</logic_node>
 		<logic_node label="Unlock" mode="1" type="0" description="Allows the button to be interacted with when receiving an on signal.">

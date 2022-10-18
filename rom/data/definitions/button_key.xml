@@ -45,7 +45,7 @@
 		</surface>
 	</buoyancy_surfaces>
 	<logic_nodes>
-		<logic_node label="Activated" mode="0" type="0" description="Outputs an on signal when [e] has been held on the button for the set duration.">
+		<logic_node label="Activated" mode="0" type="0" description="Outputs an on signal when interacting with the button for the set duration.">
 			<position x="0" y="0" z="0"/>
 		</logic_node>
 		<logic_node label="External Input" mode="1" type="0" description="Allows an external on/off signal to hold the button down.">
@@ -82,7 +82,7 @@
 	<dynamic_rotation_axes x="0.000000" y="1.000000" z="0.000000"/>
 	<dynamic_side_axis x="1.000000" y="0.000000" z="0.000000"/>
 	<magnet_offset x="0.000000" y="0.000000" z="0.000000"/>
-	<tooltip_properties description="Once activated, pressing the button again will deactivate it instantly. The hold duration can be customised by selecting this component with the select tool. The external input can be used to simulate holding the button down using the output of another component. The button's default state can be configured by selecting it with the select component." short_description="A button that must be held down for a set duration before activating."/>
+	<tooltip_properties description="Once activated, interacting with the button again will deactivate it instantly. The hold duration can be customised by selecting this component with the select tool. The external input can be used to simulate interacting with the button down using the output of another component. The button's default state can be configured by selecting it with the select component." short_description="A button that must be held down for a set duration before activating."/>
 	<reward_properties number_rewarded="5"/>
 </definition>
 

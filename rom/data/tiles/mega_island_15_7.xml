@@ -1,20 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<definition is_island="True" tile_type="2" is_purchasable="False" purchase_cost="0" sea_floor_height="-6">
+<definition is_island="true" tile_type="2">
 	<meshes>
-		<mesh id="mesh0" parent_id="" purchase_interactable_id="" seasonal_flags="0" file_name="nso_mod/meshes/mainland/15_7_main.mesh">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="0" 31="0" 32="0" 33="1"/>
+		<mesh id="mesh0" file_name="nso_mod/meshes/mainland/15_7_main.mesh">
+			<transform/>
 		</mesh>
-		<mesh id="mesh1" parent_id="" purchase_interactable_id="" seasonal_flags="0" file_name="nso_mod/meshes/mainland/15_7_port.mesh">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="0" 31="0" 32="0" 33="1"/>
+		<mesh id="mesh1" file_name="nso_mod/meshes/mainland/15_7_port.mesh">
+			<transform/>
+		</mesh>
+		<mesh id="mesh2" file_name="meshes/arid_mainland_assets/shipwreck_b.mesh">
+			<transform 00="0.645033" 01="0.764155" 10="-0.762091" 11="0.643291" 12="0.073448" 20="0.056125" 21="-0.047376" 22="0.997299" 30="39.809769" 31="-11.420784" 32="384.055389"/>
+		</mesh>
+		<mesh id="mesh4" file_name="meshes/workbench.mesh">
+			<transform 00="0.452332" 02="0.89185" 20="-0.89185" 22="0.452332" 30="184.047668" 31="4.046229" 32="230.905899"/>
 		</mesh>
 	</meshes>
 	<physics_objects/>
 	<physics_meshes>
-		<physics_mesh id="physics_mesh0" parent_id="" purchase_interactable_id="" seasonal_flags="0" file_name="nso_mod/meshes/mainland/15_7_main.phys">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="0" 31="0" 32="0" 33="1"/>
+		<physics_mesh id="physics_mesh0" file_name="nso_mod/meshes/mainland/15_7_main.phys">
+			<transform/>
 		</physics_mesh>
-		<physics_mesh id="physics_mesh1" parent_id="" purchase_interactable_id="" seasonal_flags="0" file_name="nso_mod/meshes/mainland/15_7_port.phys">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="0" 31="0" 32="0" 33="1"/>
+		<physics_mesh id="physics_mesh1" file_name="nso_mod/meshes/mainland/15_7_port.phys">
+			<transform/>
 		</physics_mesh>
 	</physics_meshes>
 	<physics_dynamics/>
@@ -22,8 +28,18 @@
 	<lights_spot/>
 	<lights_tube/>
 	<screens/>
-	<edit_areas/>
-	<interactables/>
+	<edit_areas>
+		<edit_area id="edit0" grid_size="2">
+			<transform 00="0.49482" 02="0.868995" 20="-0.868995" 22="0.49482" 30="152.851273" 31="0.666107" 32="227.989883"/>
+			<size x="22.5" y="20.5" z="57.25"/>
+		</edit_area>
+	</edit_areas>
+	<interactables>
+		<interactable id="interact0" target_object_id="edit0" label="Edit Ship" interact_type="2">
+			<transform 00="0.477943" 02="0.878391" 20="-0.878391" 22="0.477943" 30="183.960876" 31="3.838028" 32="230.810547"/>
+			<size x="1.355982" y="1.54475" z="1.325107"/>
+		</interactable>
+	</interactables>
 	<door_logic_nodes/>
 	<light_logic_nodes/>
 	<rotation_logic_nodes/>
@@ -32,10 +48,28 @@
 	<tile_markers/>
 	<mission_zones/>
 	<dynamic_markers/>
-	<ladders/>
-	<perches/>
+	<ladders>
+		<ladder id="ladder_0" height="2">
+			<transform 00="0.864299" 02="-0.502978" 20="0.502978" 22="0.864299" 30="-40.968258" 31="1.166735" 32="379.811737"/>
+		</ladder>
+	</ladders>
+	<perches>
+		<perch id="perch0">
+			<transform 00="0.853282" 02="0.52145" 20="-0.52145" 22="0.853282" 30="-46.343891" 31="4.20648" 32="384.138062"/>
+		</perch>
+		<perch id="perch1">
+			<transform 30="-46.993046" 31="4.20648" 32="385.952484"/>
+		</perch>
+		<perch id="perch2">
+			<transform 00="-0.634712" 02="0.772749" 20="-0.772749" 22="-0.634712" 30="-42.848347" 31="4.20648" 32="392.782318"/>
+		</perch>
+		<perch id="perch3">
+			<transform 00="0.52634" 02="0.850274" 20="-0.850274" 22="0.52634" 30="0.041279" 31="3.198983" 32="356.870361"/>
+		</perch>
+	</perches>
 	<fires/>
 	<train_tracks/>
-	<iceberg_markers/>
+	<volcano_markers/>
+	<mineral_rocks/>
 </definition>
 

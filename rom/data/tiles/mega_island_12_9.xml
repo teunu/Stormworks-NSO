@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<definition is_island="True" tile_type="2" is_purchasable="False" purchase_cost="0" sea_floor_height="-24">
+<definition tile_type="2" sea_floor_height="-24">
 	<meshes>
-		<mesh id="mesh0" parent_id="" purchase_interactable_id="" seasonal_flags="0" file_name="nso_mod/meshes/mainland/12_9_main.mesh">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="0" 31="0" 32="0" 33="1"/>
+		<mesh id="mesh0" file_name="nso_mod/meshes/mainland/12_9_main.mesh">
+			<transform/>
 		</mesh>
-		<mesh id="StaticObject_0" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true" file_name="nso_mod/meshes/decoration/workbenches/blueprints_boat.mesh">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-107.623047" 31="-19.6053715" 32="148.839844" 33="1"/>
+		<mesh id="StaticObject_1" file_name="nso_mod/meshes/decoration/workbenches/workbench_clean.mesh">
+			<transform 30="-107.69043" 31="-21.424896" 32="149.038086"/>
 		</mesh>
-		<mesh id="StaticObject_1" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true" file_name="nso_mod/meshes/decoration/workbenches/workbench_clean.mesh">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-107.69043" 31="-21.4248962" 32="149.038086" 33="1"/>
+		<mesh id="StaticObject_0" file_name="nso_mod/meshes/decoration/workbenches/blueprints_boat.mesh">
+			<transform 30="-107.623047" 31="-19.605372" 32="148.839844"/>
 		</mesh>
 	</meshes>
 	<physics_objects/>
 	<physics_meshes>
-		<physics_mesh id="physics_mesh0" parent_id="" purchase_interactable_id="" seasonal_flags="0" file_name="nso_mod/meshes/mainland/12_9_main.phys">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="0" 31="0" 32="0" 33="1"/>
+		<physics_mesh id="StaticObject_1_phys" file_name="nso_mod/meshes/decoration/workbenches/workbench_clean.phys">
+			<transform 30="-107.69043" 31="-21.424896" 32="149.038086"/>
 		</physics_mesh>
-		<physics_mesh id="StaticObject_0_phys" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true" file_name="meshes/generated_object_geom/tiles/mega_island_12_9/nso_mod/decoration/workbenches/blueprints_boat__StaticObject_0_phys.phys">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-107.623047" 31="-19.6053715" 32="148.839844" 33="1"/>
+		<physics_mesh id="StaticObject_0_phys" file_name="meshes/generated_object_geom/tiles/mega_island_12_9/nso_mod/decoration/workbenches/blueprints_boat__StaticObject_0_phys.phys">
+			<transform 30="-107.623047" 31="-19.605372" 32="148.839844"/>
 		</physics_mesh>
-		<physics_mesh id="StaticObject_1_phys" parent_id="" purchase_interactable_id="" seasonal_flags="0" _CT_loadIgnore="true" file_name="nso_mod/meshes/decoration/workbenches/workbench_clean.phys">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-107.69043" 31="-21.4248962" 32="149.038086" 33="1"/>
+		<physics_mesh id="physics_mesh0" file_name="nso_mod/meshes/mainland/12_9_main.phys">
+			<transform/>
 		</physics_mesh>
 	</physics_meshes>
 	<physics_dynamics/>
@@ -29,14 +29,14 @@
 	<lights_tube/>
 	<screens/>
 	<edit_areas>
-		<edit_area id="underwater_base" parent_id="" purchase_interactable_id="" seasonal_flags="0" grid_size="0" is_static="false" default_vehicle="" spawned_static_vehicle_id="0" is_invisible_vehicle="false">
-			<transform 00="7.90753631E-07" 01="4.32103321E-14" 02="-1" 03="0" 10="-2.71050543E-20" 11="1" 12="4.32103321E-14" 13="0" 20="1" 21="-6.77626358E-21" 22="7.90753631E-07" 23="0" 30="-76.43555" 31="-11.813138" 32="158.540039" 33="1"/>
+		<edit_area id="underwater_base">
+			<transform 00="0.000001" 01="0" 02="-1" 10="-0" 12="0" 20="1" 21="-0" 22="0.000001" 30="-76.43555" 31="-11.813138" 32="158.540039"/>
 			<size x="48" y="16" z="48"/>
 		</edit_area>
 	</edit_areas>
 	<interactables>
-		<interactable id="underwater_base_interact" parent_id="" purchase_interactable_id="" seasonal_flags="0" target_object_id="underwater_base" label="Underwater Structure" use_case="0" interact_type="2" is_purchased="false" is_ignore_purchased="false">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-107.604492" 31="-18.7830582" 32="148.679688" 33="1"/>
+		<interactable id="underwater_base_interact" target_object_id="underwater_base" label="Underwater Structure" interact_type="2">
+			<transform 30="-107.604492" 31="-18.783058" 32="148.679688"/>
 			<size x="2.211229" y="1.861132" z="3.403433"/>
 		</interactable>
 	</interactables>
@@ -52,6 +52,7 @@
 	<perches/>
 	<fires/>
 	<train_tracks/>
-	<iceberg_markers/>
+	<volcano_markers/>
+	<mineral_rocks/>
 </definition>
 

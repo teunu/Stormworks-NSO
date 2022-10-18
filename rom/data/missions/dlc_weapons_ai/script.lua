@@ -1672,9 +1672,8 @@ function tickVision()
 
 			if player_vehicle.death_pos ~= nil then
 				if matrix.distance(player_vehicle.death_pos, player_vehicle_transform) > 500 then
-					local player_vehicle_data = server.getVehicleData(player_vehicle_id)
 					player_vehicle.death_pos = nil
-					player_vehicle.damage_threshold = player_vehicle.damage_threshold + player_vehicle_data.voxels / 10
+					player_vehicle.damage_threshold = player_vehicle.damage_threshold * 1.25
 				end
 			end
 
@@ -2123,6 +2122,7 @@ end
 -- spawn an individual object descriptor from a playlist location
 function spawnObjectType(spawn_transform, playlist_index, location_index, object_descriptor, parent_vehicle_id)
 	local component = server.spawnAddonComponent(spawn_transform, playlist_index, location_index, object_descriptor.index, parent_vehicle_id)
+	if component == nil then return nil end
 	return component.id
 end
 

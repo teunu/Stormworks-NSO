@@ -45,7 +45,7 @@
 		</surface>
 	</buoyancy_surfaces>
 	<logic_nodes>
-		<logic_node label="Toggled" mode="0" type="0" description="Outputs an on/off signal that can be toggled by pressing [e] on the button.">
+		<logic_node label="Toggled" mode="0" type="0" description="Outputs an on/off signal that can be toggled by interacting with [$[action_interact_left]]/[$[action_interact_right]].">
 			<position x="0" y="0" z="0"/>
 		</logic_node>
 		<logic_node label="External Input" mode="1" type="0" description="Allows an external on/off signal to control whether or not the button is pressed.">
@@ -80,7 +80,7 @@
 	<dynamic_rotation_axes x="0.000000" y="1.000000" z="0.000000"/>
 	<dynamic_side_axis x="1.000000" y="0.000000" z="0.000000"/>
 	<magnet_offset x="0.000000" y="0.000000" z="0.000000"/>
-	<tooltip_properties description="An external on/off signal can also be used to control whether or not the button is pressed, allowing you to chain multiple buttons together to unify their outputs. The button's default state can be configured by selecting it with the select component." short_description="A button that toggles between sending an on or off signal when you press [e] on it."/>
+	<tooltip_properties description="An external on/off signal can also be used to control whether or not the button is pressed, allowing you to chain multiple buttons together to unify their outputs. The button's default state can be configured by selecting it with the select component." short_description="A button that toggles between sending an on or off signal when you press [$[action_interact_left]]/[$[action_interact_right]] on it."/>
 	<reward_properties tier="0" number_rewarded="10"/>
 </definition>
 

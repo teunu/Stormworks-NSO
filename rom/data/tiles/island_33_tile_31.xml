@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<definition is_island="true" tile_type="0" is_purchasable="false" purchase_cost="0" sea_floor_height="-6">
+<definition is_island="true">
 	<meshes>
-		<mesh id="tile_31_mesh" parent_id="" purchase_interactable_id="" seasonal_flags="0" file_name="meshes/island_33_tile_31.mesh">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="1000" 31="0" 32="1000" 33="1"/>
+		<mesh id="tile_31_mesh" file_name="meshes/island_33_tile_31.mesh">
+			<transform 30="1000" 32="1000"/>
 		</mesh>
 	</meshes>
 	<physics_objects/>
 	<physics_meshes>
-		<physics_mesh id="tile_31_phys" parent_id="" purchase_interactable_id="" seasonal_flags="0" file_name="meshes/island_33_tile_31_phys.phys">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="1000" 31="0" 32="1000" 33="1"/>
+		<physics_mesh id="tile_31_phys" file_name="meshes/island_33_tile_31_phys.phys">
+			<transform 30="1000" 32="1000"/>
 		</physics_mesh>
 	</physics_meshes>
 	<physics_dynamics/>
@@ -30,59 +30,60 @@
 	<perches/>
 	<fires/>
 	<train_tracks>
-		<track id="train_track_0" parent_id="" purchase_interactable_id="" seasonal_flags="0">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="499.997925" 31="15.998636" 32="472.835999" 33="1"/>
+		<track id="train_track_0">
+			<transform 30="499.997925" 31="15.998636" 32="472.835999"/>
 			<links>
 				<link id="train_track_1"/>
 			</links>
 		</track>
-		<track id="train_track_1" parent_id="" purchase_interactable_id="" seasonal_flags="0">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="488.887329" 31="15.998636" 32="481.100739" 33="1"/>
+		<track id="train_track_1">
+			<transform 30="488.887329" 31="15.998636" 32="481.100739"/>
 			<links>
 				<link id="train_track_0"/>
 				<link id="train_track_2"/>
 			</links>
 		</track>
-		<track id="train_track_2" parent_id="" purchase_interactable_id="" seasonal_flags="0">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="478.034302" 31="15.998636" 32="489.549713" 33="1"/>
+		<track id="train_track_2">
+			<transform 30="478.034302" 31="15.998636" 32="489.549713"/>
 			<links>
 				<link id="train_track_1"/>
 				<link id="train_track_3"/>
 			</links>
 		</track>
-		<track id="train_track_3" parent_id="" purchase_interactable_id="" seasonal_flags="0">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="465.243591" 31="15.998636" 32="499.981537" 33="1"/>
+		<track id="train_track_3">
+			<transform 30="465.243591" 31="15.998636" 32="499.981537"/>
 			<links>
 				<link id="train_track_2"/>
 			</links>
 		</track>
-		<track id="train_track_4" parent_id="" purchase_interactable_id="" seasonal_flags="0">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="499.997925" 31="15.998636" 32="478.275024" 33="1"/>
+		<track id="train_track_4">
+			<transform 30="499.997925" 31="15.998636" 32="478.275024"/>
 			<links>
 				<link id="train_track_5"/>
 			</links>
 		</track>
-		<track id="train_track_5" parent_id="" purchase_interactable_id="" seasonal_flags="0">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="490.762268" 31="15.998636" 32="485.12027" 33="1"/>
+		<track id="train_track_5">
+			<transform 30="490.762268" 31="15.998636" 32="485.12027"/>
 			<links>
 				<link id="train_track_4"/>
 				<link id="train_track_6"/>
 			</links>
 		</track>
-		<track id="train_track_6" parent_id="" purchase_interactable_id="" seasonal_flags="0">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="481.314575" 31="15.998636" 32="492.476593" 33="1"/>
+		<track id="train_track_6">
+			<transform 30="481.314575" 31="15.998636" 32="492.476593"/>
 			<links>
 				<link id="train_track_7"/>
 				<link id="train_track_5"/>
 			</links>
 		</track>
-		<track id="train_track_7" parent_id="" purchase_interactable_id="" seasonal_flags="0">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="472.046936" 31="15.998636" 32="499.996582" 33="1"/>
+		<track id="train_track_7">
+			<transform 30="472.046936" 31="15.998636" 32="499.996582"/>
 			<links>
 				<link id="train_track_6"/>
 			</links>
 		</track>
 	</train_tracks>
-	<iceberg_markers/>
+	<volcano_markers/>
+	<mineral_rocks/>
 </definition>
 

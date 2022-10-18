@@ -38,13 +38,12 @@ g_savedata =
 	display_rewards = property.checkbox("Display Reward", false),
 	damage_tracker = {}
 }
-g_zones = {}
-g_zones_hospital = {}
-g_output_log = {}
-g_objective_update_counter = 0
-
-
+local g_zones = {}
+local g_zones_hospital = {}
+local g_output_log = {}
+local g_objective_update_counter = 0
 local map_update_cooldown = 0
+local hospital_zones_update_cooldown = 0
 
 g_objective_types =
 {
@@ -85,6 +84,15 @@ g_objective_types =
 	rescue_casualty =
 	{
 		update = function(self, mission, objective, delta_worldtime)
+
+			-- update hospital zones so we can track moving zones
+			if hospital_zones_update_cooldown > 60 then
+				hospital_zones_update_cooldown = 0
+				g_zones_hospital = server.getZones("hospital")
+			else
+				hospital_zones_update_cooldown = hospital_zones_update_cooldown + 1
+			end
+
 			-- there is only one survivor per objective but iterate table to follow objective pattern
 			for k, obj in pairs(objective.objects) do
 				local c = server.getCharacterData(obj.id)
@@ -398,6 +406,7 @@ g_mission_types =
 				local is_scuttle = hasTag(location.parameters.capabilities, "scuttle") and (math.random(1, 2) == 1)
 				local search_radius = 4000 * (math.random(25, math.floor(50 + (difficulty_factor*50))) / 100)
 				local is_locate = math.random(1, 2) == 1 or is_transponder
+				local is_predator = server.dlcArid() and math.random(1, 2) == 1
 
 				-- spawn objects from selected location using zone's world transform
 				local spawn_transform = matrix.multiply(zone.transform, matrix.translation(0, -zone.size.y * 0.5, 0))
@@ -447,7 +456,7 @@ g_mission_types =
 
 				local incoming_disaster = getIncomingDisaster(spawn_transform)
 
-				mission.desc = is_locate and "Search the area and locate the emergency" or ""
+				mission.desc = is_locate and "Search the area and locate the emergency." or ""
 
 				if is_repair then
 					table.insert(mission.objectives, createObjectiveRepairVehicle(main_vehicle.id))
@@ -470,7 +479,7 @@ g_mission_types =
 				local titles = {
 					" has an emergency",
 					" in distress is requesting assistance",
-					is_locate and (is_static and " is experiencing system failure" or " has gone missing") or " radioed for help",
+					is_locate and (is_static and " is experiencing mechanical failure" or " has gone missing") or " radioed for help",
 				}
 				mission.title = location.objects.display_name..titles[math.random(1, #titles)]
 
@@ -492,6 +501,7 @@ g_mission_types =
 				mission.data.is_transponder = is_transponder
 				mission.data.is_flare = is_flare
 				mission.data.is_repair = is_repair
+				mission.data.is_predator = is_predator
 				mission.data.flare_timer = 60 * 30
 				mission.data.is_scuttle = is_scuttle
 				mission.data.incoming_disaster = incoming_disaster
@@ -499,6 +509,31 @@ g_mission_types =
 
 				-- Natural disasters
 				spawnDisaster(mission.data)
+
+				-- Predators
+				if location.parameters.theme == "theme=camp" or location.parameters.theme == "theme=forest" then
+					if is_predator then
+						local x = zone.transform[13] - (zone.size.x) + (2 * zone.size.x * math.random())
+						local y = zone.transform[14] + 2
+						local z = zone.transform[15] - (zone.size.z) + (2 * zone.size.z * math.random())
+						local transform = matrix.translation(x, y, z)
+						local scale = 0.75 + (math.random() * 0.25)
+						server.spawnCreature(transform, 1, scale)
+						mission.desc = mission.desc.." A grizzly bear was spotted nearby, exercise extreme caution."
+					end
+				elseif hasTag(zone.tags, "biome=arctic") then
+					if is_predator then
+						local x = zone.transform[13] - (zone.size.x) + (2 * zone.size.x * math.random())
+						local y = zone.transform[14] + 2
+						local z = zone.transform[15] - (zone.size.z) + (2 * zone.size.z * math.random())
+						local transform = matrix.translation(x, y, z)
+						local scale = 0.75 + (math.random() * 0.25)
+						server.spawnCreature(transform, 3, scale)
+						mission.desc = mission.desc.." A polar bear was spotted nearby, exercise extreme caution."
+					end
+				else
+					is_predator = false
+				end
 
 				if is_locate then
 					mission.data.state = "locate zone"
@@ -628,6 +663,14 @@ g_mission_types =
 
 			if mission.data.is_repair then
 				mission.desc = mission.desc.." Repair critical damage to the vehicle to prevent the emergency from escalating. "
+			end
+
+			if mission.data.is_predator then
+				if hasTag(mission.data.zone.tags, "biome=arctic") then
+					mission.desc = mission.desc.." A polar bear was spotted nearby, exercise extreme caution."
+				else
+					mission.desc = mission.desc.." A grizzly bear was spotted nearby, exercise extreme caution."
+				end
 			end
 
 			removeMissionMarkers(mission)
@@ -1458,8 +1501,6 @@ function onTick(delta_worldtime)
 
 	tickDisasters()
 
-	g_zones_hospital = server.getZones("hospital")
-
 	for char_id, timer in pairs(g_savedata.rescued_characters) do
 		if timer <= 180 then
 			g_savedata.rescued_characters[char_id] = timer + 1
@@ -1643,6 +1684,14 @@ function onCustomCommand(message, user_id, admin, auth, command, one, two, three
 			else
 				server.announce("[Server]", "Usage: ?mtest {building, tow_vehicle, crashed_vehicle, transport} {difficulty:0-1} {location_name}")
 			end
+		end
+
+		if command == "?mtestdisaster" and admin == true then
+			local data = {
+				incoming_disaster = one,
+				zone_transform = server.getPlayerPos(0)
+			}
+			spawnDisaster(data)
 		end
 
 		if command == "?log" and admin == true then

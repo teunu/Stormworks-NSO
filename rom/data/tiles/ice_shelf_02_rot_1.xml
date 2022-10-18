@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<definition is_island="false" is_volcanic="false" tile_type="0" is_purchasable="false" purchase_cost="0" sea_floor_height="-6">
+<definition>
 	<meshes>
-		<mesh id="ice_shelf_02_mesh" parent_id="" purchase_interactable_id="" seasonal_flags="0" file_name="meshes/arctic_ice_shelf_02.mesh" is_volcanic_additive="false">
-			<transform 00="-0" 01="0" 02="-1" 03="0" 10="0" 11="1" 12="0" 13="0" 20="1" 21="0" 22="-0" 23="0" 30="0" 31="-13.215759" 32="2.748169" 33="1"/>
+		<mesh id="ice_shelf_02_mesh" file_name="meshes/arctic_ice_shelf_02.mesh">
+			<transform 00="-0" 02="-1" 20="1" 22="-0" 31="-13.215759" 32="2.748169"/>
 		</mesh>
 	</meshes>
 	<physics_objects/>
 	<physics_meshes>
-		<physics_mesh id="ice_shelf_02_phys" parent_id="" purchase_interactable_id="" seasonal_flags="0" file_name="meshes/arctic_ice_shelf_02_phys.phys" physics_material_type="0" is_volcanic="false">
-			<transform 00="-0" 01="0" 02="-1" 03="0" 10="0" 11="1" 12="0" 13="0" 20="1" 21="0" 22="-0" 23="0" 30="0" 31="-13.215759" 32="2.748169" 33="1"/>
+		<physics_mesh id="ice_shelf_02_phys" file_name="meshes/arctic_ice_shelf_02_phys.phys">
+			<transform 00="-0" 02="-1" 20="1" 22="-0" 31="-13.215759" 32="2.748169"/>
 		</physics_mesh>
 	</physics_meshes>
 	<physics_dynamics/>
@@ -30,26 +30,7 @@
 	<perches/>
 	<fires/>
 	<train_tracks/>
-	<iceberg_markers>
-		<iceberg id="iceberg_marker_item0" parent_id="" purchase_interactable_id="" seasonal_flags="0" item_type="1" size="7.390051">
-			<transform 00="0.814498" 01="0" 02="-0.580166" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.580166" 21="0" 22="0.814498" 23="0" 30="368.677797" 31="12.750618" 32="56.206538" 33="1"/>
-		</iceberg>
-		<iceberg id="iceberg_marker_item1" parent_id="" purchase_interactable_id="" seasonal_flags="0" item_type="2" size="6">
-			<transform 00="0.814498" 01="0" 02="-0.580166" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.580166" 21="0" 22="0.814498" 23="0" 30="-102.807524" 31="12.750618" 32="56.206558" 33="1"/>
-		</iceberg>
-		<iceberg id="iceberg_marker_item2" parent_id="" purchase_interactable_id="" seasonal_flags="0" item_type="3" size="8">
-			<transform 00="0.814498" 01="0" 02="-0.580166" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.580166" 21="0" 22="0.814498" 23="0" 30="3.419934" 31="12.750618" 32="-410.950836" 33="1"/>
-		</iceberg>
-		<iceberg id="iceberg_marker_item3" parent_id="" purchase_interactable_id="" seasonal_flags="0" item_type="0" size="6">
-			<transform 00="0.814498" 01="0" 02="-0.580166" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.580166" 21="0" 22="0.814498" 23="0" 30="-307.528458" 31="12.750618" 32="334.986097" 33="1"/>
-		</iceberg>
-		<iceberg id="iceberg_marker_item4" parent_id="" purchase_interactable_id="" seasonal_flags="0" item_type="2" size="9">
-			<transform 00="0.814498" 01="0" 02="-0.580166" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.580166" 21="0" 22="0.814498" 23="0" 30="371.658222" 31="12.750618" 32="429.672347" 33="1"/>
-		</iceberg>
-		<iceberg id="iceberg_marker_item5" parent_id="" purchase_interactable_id="" seasonal_flags="0" item_type="2" size="5">
-			<transform 00="0.814498" 01="0" 02="-0.580166" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.580166" 21="0" 22="0.814498" 23="0" 30="425.44788" 31="12.750618" 32="96.345821" 33="1"/>
-		</iceberg>
-	</iceberg_markers>
 	<volcano_markers/>
+	<mineral_rocks/>
 </definition>
 

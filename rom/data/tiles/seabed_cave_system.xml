@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<definition is_island="true" tile_type="0" is_purchasable="false" purchase_cost="0" sea_floor_height="-100">
+<definition is_island="true" sea_floor_height="-100">
 	<meshes>
-		<mesh id="cave_system_mesh" parent_id="" purchase_interactable_id="" seasonal_flags="0" file_name="meshes/seabed_cave_system.mesh">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="0" 31="-76.173004" 32="0" 33="1"/>
+		<mesh id="cave_system_mesh" file_name="meshes/seabed_cave_system.mesh">
+			<transform 31="-76.173004"/>
 		</mesh>
 	</meshes>
 	<physics_objects/>
 	<physics_meshes>
-		<physics_mesh id="cave_system_phys" parent_id="" purchase_interactable_id="" seasonal_flags="0" file_name="meshes/seabed_cave_system_phys.phys">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="0" 31="-76.173004" 32="0" 33="1"/>
+		<physics_mesh id="cave_system_phys" file_name="meshes/seabed_cave_system_phys.phys">
+			<transform 31="-76.173004"/>
 		</physics_mesh>
 	</physics_meshes>
 	<physics_dynamics/>
@@ -24,29 +24,29 @@
 	<hangar_door_logic_nodes/>
 	<audio_logic_nodes/>
 	<tile_markers>
-		<markers id="tile_marker0" parent_id="" purchase_interactable_id="" seasonal_flags="0" marker_type="9" is_in_ocean="false" string_data="" icon="1" loot_type="1">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="38.062492" 31="-88.133484" 32="17.036144" 33="1"/>
+		<markers id="tile_marker0" marker_type="9" icon="1" loot_type="1">
+			<transform 30="38.062492" 31="-88.133484" 32="17.036144"/>
 		</markers>
-		<markers id="tile_marker1" parent_id="" purchase_interactable_id="" seasonal_flags="0" marker_type="9" is_in_ocean="false" string_data="" icon="1" loot_type="1">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="55.390251" 31="-88.133484" 32="-57.733021" 33="1"/>
+		<markers id="tile_marker1" marker_type="9" icon="1" loot_type="1">
+			<transform 30="55.390251" 31="-88.133484" 32="-57.733021"/>
 		</markers>
-		<markers id="tile_marker2" parent_id="" purchase_interactable_id="" seasonal_flags="0" marker_type="9" is_in_ocean="false" string_data="" icon="1" loot_type="1">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-67.028633" 31="-92.200836" 32="-118.858109" 33="1"/>
+		<markers id="tile_marker2" marker_type="9" icon="1" loot_type="1">
+			<transform 30="-67.028633" 31="-92.200836" 32="-118.858109"/>
 		</markers>
-		<markers id="tile_marker3" parent_id="" purchase_interactable_id="" seasonal_flags="0" marker_type="9" is_in_ocean="false" string_data="" icon="1" loot_type="1">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="117.766991" 31="-92.200836" 32="100.047287" 33="1"/>
+		<markers id="tile_marker3" marker_type="9" icon="1" loot_type="1">
+			<transform 30="117.766991" 31="-92.200836" 32="100.047287"/>
 		</markers>
-		<markers id="tile_marker4" parent_id="" purchase_interactable_id="" seasonal_flags="0" marker_type="9" is_in_ocean="false" string_data="" icon="1" loot_type="1">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="111.985161" 31="-92.200836" 32="97.336899" 33="1"/>
+		<markers id="tile_marker4" marker_type="9" icon="1" loot_type="1">
+			<transform 30="111.985161" 31="-92.200836" 32="97.336899"/>
 		</markers>
-		<markers id="tile_marker5" parent_id="" purchase_interactable_id="" seasonal_flags="0" marker_type="9" is_in_ocean="false" string_data="" icon="1" loot_type="1">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="39.954338" 31="-88.133484" 32="20.909863" 33="1"/>
+		<markers id="tile_marker5" marker_type="9" icon="1" loot_type="1">
+			<transform 30="39.954338" 31="-88.133484" 32="20.909863"/>
 		</markers>
-		<markers id="tile_marker6" parent_id="" purchase_interactable_id="" seasonal_flags="0" marker_type="9" is_in_ocean="false" string_data="" icon="1" loot_type="1">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-31.704659" 31="-92.688873" 32="-6.276081" 33="1"/>
+		<markers id="tile_marker6" marker_type="9" icon="1" loot_type="1">
+			<transform 30="-31.704659" 31="-92.688873" 32="-6.276081"/>
 		</markers>
-		<markers id="tile_marker7" parent_id="" purchase_interactable_id="" seasonal_flags="0" marker_type="13" is_in_ocean="false" string_data="Dagon Cavern" icon="1">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-0.155067" 31="26.634766" 32="10.389904" 33="1"/>
+		<markers id="tile_marker7" marker_type="13" string_data="Dagon Cavern" icon="1">
+			<transform 30="-0.155067" 31="26.634766" 32="10.389904"/>
 		</markers>
 	</tile_markers>
 	<mission_zones/>
@@ -55,6 +55,7 @@
 	<perches/>
 	<fires/>
 	<train_tracks/>
-	<iceberg_markers/>
+	<volcano_markers/>
+	<mineral_rocks/>
 </definition>
 

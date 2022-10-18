@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<definition is_island="true" tile_type="2" is_purchasable="false" purchase_cost="0" sea_floor_height="-6">
+<definition is_island="true" tile_type="2">
 	<meshes>
-		<mesh id="mesh0" parent_id="" purchase_interactable_id="" seasonal_flags="0" file_name="meshes/mainland/mega_island_11_2.mesh">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="0" 31="0" 32="0" 33="1"/>
+		<mesh id="mesh0" file_name="meshes/mainland/mega_island_11_2.mesh">
+			<transform/>
 		</mesh>
 	</meshes>
 	<physics_objects/>
 	<physics_meshes>
-		<physics_mesh id="physics_mesh0" parent_id="" purchase_interactable_id="" seasonal_flags="0" file_name="meshes/mainland/mega_island_11_2.phys">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="0" 31="0" 32="0" 33="1"/>
+		<physics_mesh id="physics_mesh0" file_name="meshes/mainland/mega_island_11_2.phys">
+			<transform/>
 		</physics_mesh>
 	</physics_meshes>
 	<physics_dynamics/>
@@ -24,17 +24,17 @@
 	<hangar_door_logic_nodes/>
 	<audio_logic_nodes/>
 	<tile_markers>
-		<markers id="tile_marker0" parent_id="" purchase_interactable_id="" seasonal_flags="0" marker_type="8" is_in_ocean="false" string_data="" icon="1">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="491.992798" 31="24.529068" 32="373.329437" 33="1"/>
+		<markers id="tile_marker0" marker_type="8" icon="1">
+			<transform 30="491.992798" 31="24.529068" 32="373.329437"/>
 		</markers>
-		<markers id="tile_marker1" parent_id="" purchase_interactable_id="" seasonal_flags="0" marker_type="8" is_in_ocean="false" string_data="" icon="1">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="294.24234" 31="63.111603" 32="-36.507557" 33="1"/>
+		<markers id="tile_marker1" marker_type="8" icon="1">
+			<transform 30="294.24234" 31="63.111603" 32="-36.507557"/>
 		</markers>
-		<markers id="tile_marker2" parent_id="" purchase_interactable_id="" seasonal_flags="0" marker_type="8" is_in_ocean="false" string_data="" icon="1">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="181.249313" 31="36.780235" 32="84.475471" 33="1"/>
+		<markers id="tile_marker2" marker_type="8" icon="1">
+			<transform 30="181.249313" 31="36.780235" 32="84.475471"/>
 		</markers>
-		<markers id="tile_marker3" parent_id="" purchase_interactable_id="" seasonal_flags="0" marker_type="8" is_in_ocean="false" string_data="" icon="1">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="248.267715" 31="61.330582" 32="-105.051559" 33="1"/>
+		<markers id="tile_marker3" marker_type="8" icon="1">
+			<transform 30="248.267715" 31="61.330582" 32="-105.051559"/>
 		</markers>
 	</tile_markers>
 	<mission_zones/>
@@ -43,6 +43,7 @@
 	<perches/>
 	<fires/>
 	<train_tracks/>
-	<iceberg_markers/>
+	<volcano_markers/>
+	<mineral_rocks/>
 </definition>
 

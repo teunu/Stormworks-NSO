@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<definition is_island="true" tile_type="2" is_purchasable="false" purchase_cost="0" sea_floor_height="-6">
+<definition is_island="true" tile_type="2">
 	<meshes>
-		<mesh id="mesh0" parent_id="" purchase_interactable_id="" seasonal_flags="0" file_name="meshes/mainland/mega_island_3_1.mesh">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="0" 31="0" 32="0" 33="1"/>
+		<mesh id="mesh0" file_name="meshes/mainland/mega_island_3_1.mesh">
+			<transform/>
 		</mesh>
-		<mesh id="bridge_mesh" parent_id="" purchase_interactable_id="" seasonal_flags="0" file_name="meshes/arctic_island_playerbase_bridge.mesh">
-			<transform 00="0" 01="0" 02="-1" 03="0" 10="0" 11="1" 12="0" 13="0" 20="1" 21="0" 22="0" 23="0" 30="489.213928" 31="12.775476" 32="460.67038" 33="1"/>
+		<mesh id="bridge_mesh" file_name="meshes/arctic_island_playerbase_bridge.mesh">
+			<transform 00="0" 02="-1" 20="1" 22="0" 30="489.213928" 31="12.775476" 32="460.67038"/>
 		</mesh>
 	</meshes>
 	<physics_objects/>
 	<physics_meshes>
-		<physics_mesh id="physics_mesh0" parent_id="" purchase_interactable_id="" seasonal_flags="0" file_name="meshes/mainland/mega_island_3_1.phys">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="0" 31="0" 32="0" 33="1"/>
+		<physics_mesh id="physics_mesh0" file_name="meshes/mainland/mega_island_3_1.phys">
+			<transform/>
 		</physics_mesh>
-		<physics_mesh id="bridge_phys" parent_id="" purchase_interactable_id="" seasonal_flags="0" file_name="meshes/arctic_island_playerbase_bridge_phys.phys">
-			<transform 00="-0" 01="0" 02="-1" 03="0" 10="0" 11="1" 12="0" 13="0" 20="1" 21="0" 22="-0" 23="0" 30="489.213928" 31="12.775476" 32="460.67038" 33="1"/>
+		<physics_mesh id="bridge_phys" file_name="meshes/arctic_island_playerbase_bridge_phys.phys">
+			<transform 00="-0" 02="-1" 20="1" 22="-0" 30="489.213928" 31="12.775476" 32="460.67038"/>
 		</physics_mesh>
 	</physics_meshes>
 	<physics_dynamics/>
@@ -30,11 +30,11 @@
 	<hangar_door_logic_nodes/>
 	<audio_logic_nodes/>
 	<tile_markers>
-		<markers id="tile1" parent_id="" purchase_interactable_id="" seasonal_flags="0" marker_type="9" is_in_ocean="false" string_data="" icon="0" loot_type="0">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="344.339813" 31="3.728642" 32="465.733704" 33="1"/>
+		<markers id="tile1" marker_type="9">
+			<transform 30="344.339813" 31="3.728642" 32="465.733704"/>
 		</markers>
-		<markers id="tile_marker1" parent_id="" purchase_interactable_id="" seasonal_flags="0" marker_type="9" is_in_ocean="false" string_data="" icon="0" loot_type="0">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="444.145996" 31="3.728642" 32="465.733704" 33="1"/>
+		<markers id="tile_marker1" marker_type="9">
+			<transform 30="444.145996" 31="3.728642" 32="465.733704"/>
 		</markers>
 	</tile_markers>
 	<mission_zones/>
@@ -43,6 +43,7 @@
 	<perches/>
 	<fires/>
 	<train_tracks/>
-	<iceberg_markers/>
+	<volcano_markers/>
+	<mineral_rocks/>
 </definition>
 

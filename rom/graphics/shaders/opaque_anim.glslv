@@ -33,10 +33,8 @@ uniform float bone_clip_weight;
 
 void main()
 {
-
-	vec3 override_color_difference = vertex_color_in.rgb - vec3(1.0, 0.494, 0.0);
 	vec3 preview_color_difference = vertex_color_in.rgb - vec3(1.0, 1.0, 1.0);
-	if(dot(override_color_difference, override_color_difference) < 0.01 || ( is_preview == 1 && dot(preview_color_difference, preview_color_difference) < 0.01 ))
+	if((is_preview == 1 && dot(preview_color_difference, preview_color_difference) < 0.01 ))
 	{
 		vertex_color_out = vec4(override_color.rgb, 1);
 	}

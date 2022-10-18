@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<definition is_island="true" tile_type="2" is_purchasable="false" purchase_cost="0" sea_floor_height="-6">
+<definition is_island="true" tile_type="2">
 	<meshes>
-		<mesh id="mesh0" parent_id="" purchase_interactable_id="" seasonal_flags="0" file_name="meshes/mainland/mega_island_10_2.mesh">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="0" 31="0" 32="0" 33="1"/>
+		<mesh id="mesh0" file_name="meshes/mainland/mega_island_10_2.mesh">
+			<transform/>
 		</mesh>
 	</meshes>
 	<physics_objects/>
 	<physics_meshes>
-		<physics_mesh id="physics_mesh0" parent_id="" purchase_interactable_id="" seasonal_flags="0" file_name="meshes/mainland/mega_island_10_2.phys">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="0" 31="0" 32="0" 33="1"/>
+		<physics_mesh id="physics_mesh0" file_name="meshes/mainland/mega_island_10_2.phys">
+			<transform/>
 		</physics_mesh>
 	</physics_meshes>
 	<physics_dynamics/>
@@ -24,77 +24,78 @@
 	<hangar_door_logic_nodes/>
 	<audio_logic_nodes/>
 	<tile_markers>
-		<markers id="tile_marker0" parent_id="" purchase_interactable_id="" seasonal_flags="0" marker_type="8" is_in_ocean="false" string_data="" icon="1">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="252.1875" 31="51.078278" 32="465.311432" 33="1"/>
+		<markers id="tile_marker0" marker_type="8" icon="1">
+			<transform 30="252.1875" 31="51.078278" 32="465.311432"/>
 		</markers>
-		<markers id="tile_marker1" parent_id="" purchase_interactable_id="" seasonal_flags="0" marker_type="8" is_in_ocean="false" string_data="" icon="1">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="303.820099" 31="50.533348" 32="12.523048" 33="1"/>
+		<markers id="tile_marker1" marker_type="8" icon="1">
+			<transform 30="303.820099" 31="50.533348" 32="12.523048"/>
 		</markers>
 	</tile_markers>
 	<mission_zones/>
 	<dynamic_markers/>
 	<ladders/>
 	<perches>
-		<perch id="perch0" parent_id="" purchase_interactable_id="" seasonal_flags="0" type="0">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-323.431152" 31="79.369591" 32="161.304977" 33="1"/>
+		<perch id="perch0">
+			<transform 30="-323.431152" 31="79.369591" 32="161.304977"/>
 		</perch>
-		<perch id="perch1" parent_id="" purchase_interactable_id="" seasonal_flags="0" type="0">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-328.21402" 31="79.991745" 32="150.940399" 33="1"/>
+		<perch id="perch1">
+			<transform 30="-328.21402" 31="79.991745" 32="150.940399"/>
 		</perch>
-		<perch id="perch2" parent_id="" purchase_interactable_id="" seasonal_flags="0" type="0">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-256.884979" 31="52.467186" 32="250.008926" 33="1"/>
+		<perch id="perch2">
+			<transform 30="-256.884979" 31="52.467186" 32="250.008926"/>
 		</perch>
-		<perch id="perch3" parent_id="" purchase_interactable_id="" seasonal_flags="0" type="0">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-274.816833" 31="54.422581" 32="252.055862" 33="1"/>
+		<perch id="perch3">
+			<transform 30="-274.816833" 31="54.422581" 32="252.055862"/>
 		</perch>
-		<perch id="perch4" parent_id="" purchase_interactable_id="" seasonal_flags="0" type="0">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-262.390167" 31="53.527439" 32="265.161591" 33="1"/>
+		<perch id="perch4">
+			<transform 30="-262.390167" 31="53.527439" 32="265.161591"/>
 		</perch>
-		<perch id="perch5" parent_id="" purchase_interactable_id="" seasonal_flags="0" type="0">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-293.436401" 31="58.896595" 32="279.644043" 33="1"/>
+		<perch id="perch5">
+			<transform 30="-293.436401" 31="58.896595" 32="279.644043"/>
 		</perch>
-		<perch id="perch6" parent_id="" purchase_interactable_id="" seasonal_flags="0" type="0">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-485.351105" 31="111.932716" 32="476.270416" 33="1"/>
+		<perch id="perch6">
+			<transform 30="-485.351105" 31="111.932716" 32="476.270416"/>
 		</perch>
-		<perch id="perch7" parent_id="" purchase_interactable_id="" seasonal_flags="0" type="0">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="198.365005" 31="54.720417" 32="491.086823" 33="1"/>
+		<perch id="perch7">
+			<transform 30="198.365005" 31="54.720417" 32="491.086823"/>
 		</perch>
-		<perch id="perch8" parent_id="" purchase_interactable_id="" seasonal_flags="0" type="0">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="219.086319" 31="53.794102" 32="487.60965" 33="1"/>
+		<perch id="perch8">
+			<transform 30="219.086319" 31="53.794102" 32="487.60965"/>
 		</perch>
-		<perch id="perch9" parent_id="" purchase_interactable_id="" seasonal_flags="0" type="0">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="237.901459" 31="53.670067" 32="472.603119" 33="1"/>
+		<perch id="perch9">
+			<transform 30="237.901459" 31="53.670067" 32="472.603119"/>
 		</perch>
-		<perch id="perch10" parent_id="" purchase_interactable_id="" seasonal_flags="0" type="0">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="322.304596" 31="66.999786" 32="486.190216" 33="1"/>
+		<perch id="perch10">
+			<transform 30="322.304596" 31="66.999786" 32="486.190216"/>
 		</perch>
-		<perch id="perch11" parent_id="" purchase_interactable_id="" seasonal_flags="0" type="0">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="303.893799" 31="61.160141" 32="435.837067" 33="1"/>
+		<perch id="perch11">
+			<transform 30="303.893799" 31="61.160141" 32="435.837067"/>
 		</perch>
-		<perch id="perch12" parent_id="" purchase_interactable_id="" seasonal_flags="0" type="0">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="369.772064" 31="59.533588" 32="466.524109" 33="1"/>
+		<perch id="perch12">
+			<transform 30="369.772064" 31="59.533588" 32="466.524109"/>
 		</perch>
-		<perch id="perch13" parent_id="" purchase_interactable_id="" seasonal_flags="0" type="0">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="303.857208" 31="43.504169" 32="98.056427" 33="1"/>
+		<perch id="perch13">
+			<transform 30="303.857208" 31="43.504169" 32="98.056427"/>
 		</perch>
-		<perch id="perch14" parent_id="" purchase_interactable_id="" seasonal_flags="0" type="0">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="290.678619" 31="46.785973" 32="98.056847" 33="1"/>
+		<perch id="perch14">
+			<transform 30="290.678619" 31="46.785973" 32="98.056847"/>
 		</perch>
-		<perch id="perch15" parent_id="" purchase_interactable_id="" seasonal_flags="0" type="0">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="303.860107" 31="49.875641" 32="79.635056" 33="1"/>
+		<perch id="perch15">
+			<transform 30="303.860107" 31="49.875641" 32="79.635056"/>
 		</perch>
-		<perch id="perch16" parent_id="" purchase_interactable_id="" seasonal_flags="0" type="0">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="290.67453" 31="53.416603" 32="73.470352" 33="1"/>
+		<perch id="perch16">
+			<transform 30="290.67453" 31="53.416603" 32="73.470352"/>
 		</perch>
-		<perch id="perch17" parent_id="" purchase_interactable_id="" seasonal_flags="0" type="0">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="303.820099" 31="50.533348" 32="42.796875" 33="1"/>
+		<perch id="perch17">
+			<transform 30="303.820099" 31="50.533348" 32="42.796875"/>
 		</perch>
-		<perch id="perch18" parent_id="" purchase_interactable_id="" seasonal_flags="0" type="0">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="277.478241" 31="52.922779" 32="67.348328" 33="1"/>
+		<perch id="perch18">
+			<transform 30="277.478241" 31="52.922779" 32="67.348328"/>
 		</perch>
 	</perches>
 	<fires/>
 	<train_tracks/>
-	<iceberg_markers/>
+	<volcano_markers/>
+	<mineral_rocks/>
 </definition>
 

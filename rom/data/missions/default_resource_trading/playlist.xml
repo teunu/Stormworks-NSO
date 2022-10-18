@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <playlist path_id="app_data/data/missions/default_resource_trading" folder_path="data/missions/default_resource_trading" file_store="4" name="Default Resource Trading">
-	<locations location_id_counter="36" component_id_counter="155">
+	<locations location_id_counter="47" component_id_counter="182">
 		<locations>
 			<l id="13" tile="data/tiles/island_36_oil_refinery.xml" name="OIL REFINERY" is_env_mod="true" env_mod_spawn_num="1">
 				<components>
@@ -99,16 +99,7 @@
 				</components>
 			</l>
 			<l id="19" tile="data/tiles/island_33_tile_22.xml" name="MAINLAND QUARRY" is_env_mod="true" env_mod_spawn_num="1">
-				<components>
-					<c component_type="10" id="121" cargo_zone_import_cargo_type="coal_seller_medium" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1" vehicle_is_invulnerable="true">
-						<spawn_transform 00="0.024" 02="-0.999712" 20="0.999712" 22="0.024" 30="88.938011" 31="66.940887" 32="-217.983414"/>
-						<spawn_bounds>
-							<min x="-1" z="-1"/>
-							<max x="1" z="1"/>
-						</spawn_bounds>
-						<graph_links/>
-					</c>
-				</components>
+				<components/>
 			</l>
 			<l id="20" tile="data/tiles/island_33_tile_32.xml" name="TERMINAL SPYCAKES" is_env_mod="true" env_mod_spawn_num="1">
 				<components>
@@ -227,7 +218,17 @@
 				</components>
 			</l>
 			<l id="29" tile="data/tiles/island_41_underwater_mining.xml" name="ARCTIC UNDERWATER MINING" is_env_mod="true" env_mod_spawn_num="1">
-				<components/>
+				<components>
+					<c component_type="3" id="170" name="id_170" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_170.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
+						<spawn_transform 11="0.007867" 12="-0.999969" 21="0.999969" 22="0.007867" 30="-1.965762" 31="11.338372" 32="24.925438"/>
+						<spawn_bounds>
+							<min x="-24.875" y="-0.875" z="-2.875"/>
+							<max x="1.125" y="5.375" z="12.125"/>
+						</spawn_bounds>
+						<spawn_local_offset x="11.875" y="-2.25" z="-4.625"/>
+						<graph_links/>
+					</c>
+				</components>
 			</l>
 			<l id="30" tile="data/tiles/island_37_container_depot.xml" name="ARCTIC CONTAINER DEPOT" is_env_mod="true" env_mod_spawn_num="1">
 				<components>
@@ -245,16 +246,7 @@
 				<components/>
 			</l>
 			<l id="32" tile="data/tiles/mega_island_7_6.xml" name="DEAN HALL MINING COMPANY" is_env_mod="true" env_mod_spawn_num="1">
-				<components>
-					<c component_type="10" id="142" cargo_zone_import_cargo_type="coal_seller_medium" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1" vehicle_is_invulnerable="true">
-						<spawn_transform 00="-1" 02="0.000894" 20="-0.000894" 22="-1" 30="130.337158" 31="30.971054" 32="-28.982004"/>
-						<spawn_bounds>
-							<min x="-1" z="-1"/>
-							<max x="1" z="1"/>
-						</spawn_bounds>
-						<graph_links/>
-					</c>
-				</components>
+				<components/>
 			</l>
 			<l id="33" tile="data/tiles/mega_island_8_7.xml" name="HOLT TOWN" is_env_mod="true" env_mod_spawn_num="1">
 				<components>
@@ -321,32 +313,6 @@
 							<max x="1.375" y="0.875" z="2.125"/>
 						</spawn_bounds>
 						<spawn_local_offset y="-0.375"/>
-						<graph_links/>
-					</c>
-				</components>
-			</l>
-			<l id="2" name="coal_seller_medium" env_mod_spawn_num="1">
-				<components>
-					<c component_type="3" id="2" name="type=trade,transaction=buy,business=extractor,resource=coal" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_2.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
-						<spawn_transform 31="4.5" 32="3.256471"/>
-						<spawn_bounds>
-							<min x="-0.625" y="-0.125" z="-0.875"/>
-							<max x="0.625" y="8.875" z="7.375"/>
-						</spawn_bounds>
-						<spawn_local_offset y="-4.375" z="-3.25"/>
-						<graph_links/>
-					</c>
-				</components>
-			</l>
-			<l id="3" name="coal_seller_large" env_mod_spawn_num="1">
-				<components>
-					<c component_type="3" id="3" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_3.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
-						<spawn_transform 31="0.125"/>
-						<spawn_bounds>
-							<min x="-0.125" y="-0.125" z="-0.125"/>
-							<max x="0.125" y="0.125" z="0.375"/>
-						</spawn_bounds>
-						<spawn_local_offset z="-0.125"/>
 						<graph_links/>
 					</c>
 				</components>
@@ -464,6 +430,257 @@
 							<max x="1.125" y="1.875" z="0.875"/>
 						</spawn_bounds>
 						<spawn_local_offset y="-0.75" z="-0.125"/>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="37" tile="data/tiles/arid_island_8_14.xml" name="uranium plant" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="3" id="156" name="id_156" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_156.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
+						<spawn_transform 30="341.580261" 31="13.821082" 32="254.799057"/>
+						<spawn_bounds>
+							<min x="-0.625" y="-0.875" z="-0.625"/>
+							<max x="0.625" y="7.375" z="1.875"/>
+						</spawn_bounds>
+						<spawn_local_offset y="-3.25" z="-0.625"/>
+						<graph_links/>
+					</c>
+					<c component_type="3" id="157" name="id_157" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_157.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
+						<spawn_transform 30="333.910645" 31="13.795435" 32="254.790894"/>
+						<spawn_bounds>
+							<min x="-0.625" y="-0.875" z="-0.625"/>
+							<max x="0.625" y="7.375" z="1.875"/>
+						</spawn_bounds>
+						<spawn_local_offset y="-3.25" z="-0.625"/>
+						<graph_links/>
+					</c>
+					<c component_type="3" id="158" name="id_158" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_158.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
+						<spawn_transform 30="326.303436" 31="13.836639" 32="254.735718"/>
+						<spawn_bounds>
+							<min x="-0.625" y="-0.875" z="-0.625"/>
+							<max x="0.625" y="7.375" z="1.875"/>
+						</spawn_bounds>
+						<spawn_local_offset y="-3.25" z="-0.625"/>
+						<graph_links/>
+					</c>
+					<c component_type="3" id="159" name="id_159" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_159.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
+						<spawn_transform 30="318.643219" 31="13.828743" 32="254.813934"/>
+						<spawn_bounds>
+							<min x="-0.625" y="-0.875" z="-0.625"/>
+							<max x="0.625" y="7.375" z="1.875"/>
+						</spawn_bounds>
+						<spawn_local_offset y="-3.25" z="-0.625"/>
+						<graph_links/>
+					</c>
+					<c component_type="3" id="160" name="id_160" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_160.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
+						<spawn_transform 00="-0.999999" 02="-0.001462" 20="0.001462" 22="-0.999999" 30="318.65509" 31="13.804751" 32="240.94725"/>
+						<spawn_bounds>
+							<min x="-0.625" y="-0.875" z="-0.625"/>
+							<max x="0.625" y="7.375" z="1.875"/>
+						</spawn_bounds>
+						<spawn_local_offset y="-3.25" z="-0.625"/>
+						<graph_links/>
+					</c>
+					<c component_type="3" id="161" name="id_161" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_161.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
+						<spawn_transform 00="-0.999997" 02="-0.002335" 20="0.002335" 22="-0.999997" 30="326.273407" 31="13.837902" 32="240.945084"/>
+						<spawn_bounds>
+							<min x="-0.625" y="-0.875" z="-0.625"/>
+							<max x="0.625" y="7.375" z="1.875"/>
+						</spawn_bounds>
+						<spawn_local_offset y="-3.25" z="-0.625"/>
+						<graph_links/>
+					</c>
+					<c component_type="3" id="162" name="id_162" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_162.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
+						<spawn_transform 00="-1" 02="0.000401" 20="-0.000401" 22="-1" 30="333.944305" 31="13.809513" 32="240.938599"/>
+						<spawn_bounds>
+							<min x="-0.625" y="-0.875" z="-0.625"/>
+							<max x="0.625" y="7.375" z="1.875"/>
+						</spawn_bounds>
+						<spawn_local_offset y="-3.25" z="-0.625"/>
+						<graph_links/>
+					</c>
+					<c component_type="3" id="163" name="id_163" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_163.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
+						<spawn_transform 00="-1" 02="-0.000925" 20="0.000925" 22="-1" 30="341.539032" 31="13.813659" 32="240.941711"/>
+						<spawn_bounds>
+							<min x="-0.625" y="-0.875" z="-0.625"/>
+							<max x="0.625" y="7.375" z="1.875"/>
+						</spawn_bounds>
+						<spawn_local_offset y="-3.25" z="-0.625"/>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="38" tile="data/tiles/arid_island_15_5.xml" name="mineral lab" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="3" id="164" name="id_164" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_164.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
+						<spawn_transform 00="0.99922" 02="-0.039496" 20="0.039496" 22="0.99922" 30="-299.612061" 31="32.110401" 32="-163.237488"/>
+						<spawn_bounds>
+							<min x="-3.125" y="-0.875" z="-7.125"/>
+							<max x="0.625" y="6.625" z="13.125"/>
+						</spawn_bounds>
+						<spawn_local_offset x="1.25" y="-2.875" z="-3"/>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="39" tile="data/tiles/arid_island_16_10.xml" name="industrial sifter" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="3" id="165" name="id_165" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_165.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
+						<spawn_transform 00="0.490533" 01="-0.001425" 02="-0.871422" 10="-0.291677" 11="0.94205" 12="-0.165729" 20="0.821159" 21="0.335469" 22="0.461691" 30="297.830841" 31="20.706985" 32="-230.32338"/>
+						<spawn_bounds>
+							<min x="-1.875" y="-1.375" z="-21.875"/>
+							<max x="1.875" y="0.125" z="11.625"/>
+						</spawn_bounds>
+						<spawn_local_offset y="0.625" z="5.125"/>
+						<graph_links/>
+					</c>
+					<c component_type="3" id="166" name="id_166" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_166.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
+						<spawn_transform 00="-0.499334" 01="-0.000051" 02="0.86641" 10="0.866404" 11="0.003627" 12="0.49933" 20="-0.003168" 21="0.999993" 22="-0.001767" 30="265.491394" 31="24.653988" 32="-243.984894"/>
+						<spawn_bounds>
+							<min x="-1.875" y="-7.625" z="2.125"/>
+							<max x="4.375" y="0.125" z="17.375"/>
+						</spawn_bounds>
+						<spawn_local_offset x="-1.25" y="3.75" z="-9.75"/>
+						<graph_links/>
+					</c>
+					<c component_type="3" id="167" name="id_167" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_167.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
+						<spawn_transform 00="0.501124" 02="-0.865376" 20="0.865376" 22="0.501124" 30="276.141602" 31="15.449374" 32="-239.386017"/>
+						<spawn_bounds>
+							<min x="-6.625" y="-11.375" z="-1.875"/>
+							<max x="0.375" y="-6.625" z="16.125"/>
+						</spawn_bounds>
+						<spawn_local_offset x="3.125" y="9" z="-7.125"/>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="40" tile="data/tiles/arid_island_19_5.xml" name="foundry" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="3" id="168" name="id_168" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_168.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
+						<spawn_transform 00="-0.002091" 02="0.999998" 20="-0.999998" 22="-0.002091" 30="129.649277" 31="4.328725" 32="-91.857292"/>
+						<spawn_bounds>
+							<min x="-28.125" y="-1.375" z="-2.375"/>
+							<max x="1.875" y="5.375" z="3.875"/>
+						</spawn_bounds>
+						<spawn_local_offset x="13.125" y="-2" z="-0.75"/>
+						<graph_links/>
+					</c>
+					<c component_type="3" id="169" name="id_169" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_169.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
+						<spawn_transform 00="0.002465" 02="0.999997" 20="-0.999997" 22="0.002465" 30="112.869827" 31="7.833166" 32="-104.804726"/>
+						<spawn_bounds>
+							<min x="-22.125" y="-1.375" z="4.375"/>
+							<max x="-10.625" y="6.375" z="37.875"/>
+						</spawn_bounds>
+						<spawn_local_offset x="16.375" y="-2.5" z="-21.125"/>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="41" tile="data/tiles/arid_island_13_6.xml" name="Trading Yard" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="171" cargo_zone_import_cargo_type="ingot_buyer_iron" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.843667" 02="0.536867" 20="-0.536867" 22="0.843667" 30="-389.662354" 31="29.986284" 32="-217.376755"/>
+						<spawn_bounds>
+							<min x="-5" y="-5" z="-5"/>
+							<max x="5" y="5" z="5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="179" cargo_zone_import_cargo_type="ingot_buyer_steel" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.845439" 02="0.534072" 20="-0.534072" 22="0.845439" 30="-396.549805" 31="29.975811" 32="-207.124664"/>
+						<spawn_bounds>
+							<min x="-5" y="-5" z="-5"/>
+							<max x="5" y="5" z="5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="180" cargo_zone_import_cargo_type="ingot_buyer_aluminium" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.846571" 02="0.532276" 20="-0.532276" 22="0.846571" 30="-403.042755" 31="29.990864" 32="-196.861343"/>
+						<spawn_bounds>
+							<min x="-5" y="-5" z="-5"/>
+							<max x="5" y="5" z="5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="181" cargo_zone_import_cargo_type="ingot_buyer_gold_impure" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.851561" 02="0.524256" 20="-0.524256" 22="0.851561" 30="-414.579498" 31="29.957842" 32="-179.03981"/>
+						<spawn_bounds>
+							<min x="-5" y="-5" z="-5"/>
+							<max x="5" y="5" z="5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="182" cargo_zone_import_cargo_type="ingot_buyer_gold" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.856084" 02="0.516836" 20="-0.516836" 22="0.856084" 30="-420.704773" 31="29.91844" 32="-168.71759"/>
+						<spawn_bounds>
+							<min x="-5" y="-5" z="-5"/>
+							<max x="5" y="5" z="5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="43" name="ingot_buyer_iron" env_mod_spawn_num="1">
+				<components>
+					<c component_type="3" id="174" name="type=trade,transaction=sell,business=consumer,resource=coal,coal_type=6" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_174.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
+						<spawn_transform 30="-0.035126" 31="-0.459791" 32="-0.578659"/>
+						<spawn_bounds>
+							<min x="-2.125" y="0.125" z="-1.375"/>
+							<max x="0.875" y="1.375" z="3.625"/>
+						</spawn_bounds>
+						<spawn_local_offset x="0.625" y="-0.75" z="-1.125"/>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="44" name="ingot_buyer_steel" env_mod_spawn_num="1">
+				<components>
+					<c component_type="3" id="175" name="type=trade,transaction=sell,business=consumer,resource=coal,coal_type=7" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_175.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
+						<spawn_transform 30="-0.035126" 31="-0.429831" 32="-0.578659"/>
+						<spawn_bounds>
+							<min x="-2.125" y="0.125" z="-1.375"/>
+							<max x="0.875" y="1.375" z="3.625"/>
+						</spawn_bounds>
+						<spawn_local_offset x="0.625" y="-0.75" z="-1.125"/>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="45" name="ingot_buyer_aluminium" env_mod_spawn_num="1">
+				<components>
+					<c component_type="3" id="176" name="type=trade,transaction=sell,business=consumer,resource=coal,coal_type=8" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_176.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
+						<spawn_transform 30="-0.035126" 31="-0.443518" 32="-0.578659"/>
+						<spawn_bounds>
+							<min x="-2.125" y="0.125" z="-1.375"/>
+							<max x="0.875" y="1.375" z="3.625"/>
+						</spawn_bounds>
+						<spawn_local_offset x="0.625" y="-0.75" z="-1.125"/>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="46" name="ingot_buyer_gold_impure" env_mod_spawn_num="1">
+				<components>
+					<c component_type="3" id="177" name="type=trade,transaction=sell,business=consumer,resource=coal,coal_type=9" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_177.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
+						<spawn_transform 30="-0.035126" 31="-0.465103" 32="-0.578659"/>
+						<spawn_bounds>
+							<min x="-2.125" y="0.125" z="-1.375"/>
+							<max x="0.875" y="1.375" z="3.625"/>
+						</spawn_bounds>
+						<spawn_local_offset x="0.625" y="-0.75" z="-1.125"/>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="47" name="ingot_buyer_gold" env_mod_spawn_num="1">
+				<components>
+					<c component_type="3" id="178" name="type=trade,transaction=sell,business=consumer,resource=coal,coal_type=10" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_178.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
+						<spawn_transform 30="-0.035126" 31="-0.478205" 32="-0.578659"/>
+						<spawn_bounds>
+							<min x="-2.125" y="0.125" z="-1.375"/>
+							<max x="0.875" y="1.375" z="3.625"/>
+						</spawn_bounds>
+						<spawn_local_offset x="0.625" y="-0.75" z="-1.125"/>
 						<graph_links/>
 					</c>
 				</components>

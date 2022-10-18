@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition name="Laser Sensor (Missile)" category="7" type="56" mass="5" value="800" mesh_data_name="meshes/component_laser_missile.mesh" mesh_editor_only_name="meshes/arrow_radar_advanced_missile.mesh" constraint_axis="1" max_motor_force="100" cable_length="16" buoy_radius="1" buoy_factor="1" buoy_force="100" force_emitter_max_force="1000" force_emitter_max_vector="1" engine_max_force="1000" wheel_radius="0.25" button_type="1" light_range="1" light_ies_map="graphics/ies/ies_default.txtr" light_fov="1" door_lower_limit="-1" door_upper_limit="1" dynamic_max_rotation="3.141593" logic_gate_type="50" rudder_surface_area="0" radar_range="5000" radar_speed="0.03" radar_type="2">
+	<sfx_datas/>
+	<surfaces>
+		<surface orientation="3">
+			<position/>
+		</surface>
+		<surface>
+			<position/>
+		</surface>
+		<surface>
+			<position y="1"/>
+		</surface>
+		<surface orientation="4">
+			<position/>
+		</surface>
+		<surface orientation="4">
+			<position y="1"/>
+		</surface>
+		<surface orientation="1">
+			<position/>
+		</surface>
+		<surface orientation="1">
+			<position y="1"/>
+		</surface>
+		<surface orientation="5">
+			<position/>
+		</surface>
+		<surface orientation="5">
+			<position y="1"/>
+		</surface>
+	</surfaces>
+	<buoyancy_surfaces>
+		<surface orientation="3" shape="1">
+			<position/>
+		</surface>
+		<surface orientation="1" shape="1">
+			<position/>
+		</surface>
+		<surface orientation="1" shape="1">
+			<position y="1"/>
+		</surface>
+		<surface orientation="5" shape="1">
+			<position/>
+		</surface>
+		<surface orientation="5" shape="1">
+			<position y="1"/>
+		</surface>
+		<surface shape="1">
+			<position/>
+		</surface>
+		<surface shape="1">
+			<position y="1"/>
+		</surface>
+		<surface orientation="4" shape="1">
+			<position/>
+		</surface>
+		<surface orientation="4" shape="1">
+			<position y="1"/>
+		</surface>
+		<surface orientation="2" shape="1">
+			<position y="1"/>
+		</surface>
+	</buoyancy_surfaces>
+	<logic_nodes>
+		<logic_node label="Electric" mode="1" type="4" description="Electrical power connection.">
+			<position/>
+		</logic_node>
+		<logic_node label="Activate" mode="1" description="Enable the Laser Sensor.">
+			<position/>
+		</logic_node>
+		<logic_node label="Sensor Data" type="5" description="Outputs data for up to 8 targets. On/Off 1-8 : Target 1 Found, Target 2 Found, etc... Values 1-32 : Target 1 Distance, Target 1 Azimuth Angle, Target 1 Elevation Angle, Target 1 Time Since Detection, Target 2 Distance, Target 2 Azimuth Angle, Target 2 Elevation Angle, Target 2 Time Since Detection, etc...">
+			<position/>
+		</logic_node>
+		<logic_node label="Missile Output" type="5" description="Outputs x and y data for the most immediate target. Link this directly into a rocket fins component.">
+			<position y="1"/>
+		</logic_node>
+		<logic_node label="Frequency" mode="1" type="1" description="Target laser frequency to scan for.">
+			<position y="1"/>
+		</logic_node>
+	</logic_nodes>
+	<couplings/>
+	<voxels>
+		<voxel flags="1">
+			<position/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position y="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+	</voxels>
+	<voxel_min/>
+	<voxel_max y="1"/>
+	<voxel_physics_min/>
+	<voxel_physics_max y="1"/>
+	<bb_physics_min/>
+	<bb_physics_max/>
+	<compartment_sample_pos/>
+	<constraint_pos_parent/>
+	<constraint_pos_child/>
+	<voxel_location_child/>
+	<seat_offset/>
+	<seat_front/>
+	<seat_up/>
+	<seat_camera/>
+	<seat_render/>
+	<force_dir/>
+	<light_position/>
+	<light_color x="1" y="1" z="1"/>
+	<light_forward/>
+	<door_size x="1" y="1" z="1"/>
+	<door_normal/>
+	<door_side/>
+	<door_up/>
+	<door_base_pos/>
+	<dynamic_body_position/>
+	<dynamic_rotation_axes y="1"/>
+	<dynamic_side_axis x="1"/>
+	<magnet_offset/>
+	<connector_axis/>
+	<connector_up/>
+	<tooltip_properties description="This sensor is designed for missiles and acts along the Z axis, with an output node that passes data to course correct linked rocket fin components toward the closest target. The sensor also outputs data for up to 8 detected laser points." short_description="A short range sensor that returns information about detected laser points within its view."/>
+	<jet_engine_connections_prev/>
+	<jet_engine_connections_next/>
+	<particle_direction/>
+	<particle_offset/>
+	<particle_bounds/>
+	<rope_hook_offset/>
+</definition>
+

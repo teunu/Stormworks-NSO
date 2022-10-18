@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<definition is_island="true" tile_type="0" is_purchasable="false" purchase_cost="0" sea_floor_height="-6">
+<definition is_island="true">
 	<meshes>
-		<mesh id="tile_11_mesh" parent_id="" purchase_interactable_id="" seasonal_flags="0" file_name="meshes/island_33_tile_11.mesh">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="1000" 31="0" 32="-1000" 33="1"/>
+		<mesh id="tile_11_mesh" file_name="meshes/island_33_tile_11.mesh">
+			<transform 30="1000" 32="-1000"/>
 		</mesh>
 	</meshes>
 	<physics_objects/>
 	<physics_meshes>
-		<physics_mesh id="tile_11_phys" parent_id="" purchase_interactable_id="" seasonal_flags="0" file_name="meshes/island_33_tile_11_phys.phys">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="1000" 31="0" 32="-1000" 33="1"/>
+		<physics_mesh id="tile_11_phys" file_name="meshes/island_33_tile_11_phys.phys">
+			<transform 30="1000" 32="-1000"/>
 		</physics_mesh>
 	</physics_meshes>
 	<physics_dynamics/>
@@ -28,136 +28,137 @@
 	<dynamic_markers/>
 	<ladders/>
 	<perches>
-		<perch id="perch0" parent_id="" purchase_interactable_id="" seasonal_flags="0">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="330.224213" 31="35.91637" 32="-407.956726" 33="1"/>
+		<perch id="perch0">
+			<transform 30="330.224213" 31="35.91637" 32="-407.956726"/>
 		</perch>
-		<perch id="perch1" parent_id="" purchase_interactable_id="" seasonal_flags="0">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="324.685272" 31="36.056446" 32="-413.805542" 33="1"/>
+		<perch id="perch1">
+			<transform 30="324.685272" 31="36.056446" 32="-413.805542"/>
 		</perch>
-		<perch id="perch2" parent_id="" purchase_interactable_id="" seasonal_flags="0">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="334.517242" 31="35.826832" 32="-404.927826" 33="1"/>
+		<perch id="perch2">
+			<transform 30="334.517242" 31="35.826832" 32="-404.927826"/>
 		</perch>
-		<perch id="perch3" parent_id="" purchase_interactable_id="" seasonal_flags="0">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="268.500793" 31="32.963215" 32="-402.649597" 33="1"/>
+		<perch id="perch3">
+			<transform 30="268.500793" 31="32.963215" 32="-402.649597"/>
 		</perch>
-		<perch id="perch4" parent_id="" purchase_interactable_id="" seasonal_flags="0">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="271.437958" 31="32.795612" 32="-402.816803" 33="1"/>
+		<perch id="perch4">
+			<transform 30="271.437958" 31="32.795612" 32="-402.816803"/>
 		</perch>
-		<perch id="perch5" parent_id="" purchase_interactable_id="" seasonal_flags="0">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="0" 31="0" 32="0" 33="1"/>
+		<perch id="perch5">
+			<transform/>
 		</perch>
 	</perches>
 	<fires/>
 	<train_tracks>
-		<track id="train_track_0" parent_id="" purchase_interactable_id="" seasonal_flags="0">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="405.343201" 31="16.003662" 32="-499.99115" 33="1"/>
+		<track id="train_track_0">
+			<transform 30="405.343201" 31="16.003662" 32="-499.99115"/>
 			<links>
 				<link id="train_track_1"/>
 			</links>
 		</track>
-		<track id="train_track_1" parent_id="" purchase_interactable_id="" seasonal_flags="0">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="434.459412" 31="16.003662" 32="-474.96756" 33="1"/>
+		<track id="train_track_1">
+			<transform 30="434.459412" 31="16.003662" 32="-474.96756"/>
 			<links>
 				<link id="train_track_0"/>
 				<link id="train_track_11"/>
 			</links>
 		</track>
-		<track id="train_track_2" parent_id="" purchase_interactable_id="" seasonal_flags="0">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="457.091919" 31="16.003662" 32="-456.538544" 33="1"/>
+		<track id="train_track_2">
+			<transform 30="457.091919" 31="16.003662" 32="-456.538544"/>
 			<links>
 				<link id="train_track_11"/>
 				<link id="train_track_13"/>
 			</links>
 		</track>
-		<track id="train_track_3" parent_id="" purchase_interactable_id="" seasonal_flags="0">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="480.361298" 31="16.003662" 32="-438.907806" 33="1"/>
+		<track id="train_track_3">
+			<transform 30="480.361298" 31="16.003662" 32="-438.907806"/>
 			<links>
 				<link id="train_track_13"/>
 				<link id="train_track_14"/>
 			</links>
 		</track>
-		<track id="train_track_4" parent_id="" purchase_interactable_id="" seasonal_flags="0">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="499.985779" 31="16.003662" 32="-424.989197" 33="1"/>
+		<track id="train_track_4">
+			<transform 30="499.985779" 31="16.003662" 32="-424.989197"/>
 			<links>
 				<link id="train_track_14"/>
 			</links>
 		</track>
-		<track id="train_track_5" parent_id="" purchase_interactable_id="" seasonal_flags="0">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="398.656586" 31="16.003662" 32="-499.99115" 33="1"/>
+		<track id="train_track_5">
+			<transform 30="398.656586" 31="16.003662" 32="-499.99115"/>
 			<links>
 				<link id="train_track_6"/>
 			</links>
 		</track>
-		<track id="train_track_6" parent_id="" purchase_interactable_id="" seasonal_flags="0">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="431.655151" 31="16.003662" 32="-471.61496" 33="1"/>
+		<track id="train_track_6">
+			<transform 30="431.655151" 31="16.003662" 32="-471.61496"/>
 			<links>
 				<link id="train_track_5"/>
 				<link id="train_track_10"/>
 			</links>
 		</track>
-		<track id="train_track_7" parent_id="" purchase_interactable_id="" seasonal_flags="0">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="454.48465" 31="16.003662" 32="-453.005341" 33="1"/>
+		<track id="train_track_7">
+			<transform 30="454.48465" 31="16.003662" 32="-453.005341"/>
 			<links>
 				<link id="train_track_10"/>
 				<link id="train_track_12"/>
 			</links>
 		</track>
-		<track id="train_track_8" parent_id="" purchase_interactable_id="" seasonal_flags="0">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="477.481262" 31="16.003662" 32="-435.554382" 33="1"/>
+		<track id="train_track_8">
+			<transform 30="477.481262" 31="16.003662" 32="-435.554382"/>
 			<links>
 				<link id="train_track_12"/>
 				<link id="train_track_15"/>
 			</links>
 		</track>
-		<track id="train_track_9" parent_id="" purchase_interactable_id="" seasonal_flags="0">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="499.976135" 31="16.003662" 32="-419.674591" 33="1"/>
+		<track id="train_track_9">
+			<transform 30="499.976135" 31="16.003662" 32="-419.674591"/>
 			<links>
 				<link id="train_track_15"/>
 			</links>
 		</track>
-		<track id="train_track_10" parent_id="" purchase_interactable_id="" seasonal_flags="0">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="442.131958" 31="16.003662" 32="-462.928864" 33="1"/>
+		<track id="train_track_10">
+			<transform 30="442.131958" 31="16.003662" 32="-462.928864"/>
 			<links>
 				<link id="train_track_6"/>
 				<link id="train_track_7"/>
 			</links>
 		</track>
-		<track id="train_track_11" parent_id="" purchase_interactable_id="" seasonal_flags="0">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="445.075439" 31="16.003662" 32="-466.133636" 33="1"/>
+		<track id="train_track_11">
+			<transform 30="445.075439" 31="16.003662" 32="-466.133636"/>
 			<links>
 				<link id="train_track_1"/>
 				<link id="train_track_2"/>
 			</links>
 		</track>
-		<track id="train_track_12" parent_id="" purchase_interactable_id="" seasonal_flags="0">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="465.342651" 31="16.003662" 32="-444.624817" 33="1"/>
+		<track id="train_track_12">
+			<transform 30="465.342651" 31="16.003662" 32="-444.624817"/>
 			<links>
 				<link id="train_track_7"/>
 				<link id="train_track_8"/>
 			</links>
 		</track>
-		<track id="train_track_13" parent_id="" purchase_interactable_id="" seasonal_flags="0">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="468.3078" 31="16.003662" 32="-447.876862" 33="1"/>
+		<track id="train_track_13">
+			<transform 30="468.3078" 31="16.003662" 32="-447.876862"/>
 			<links>
 				<link id="train_track_2"/>
 				<link id="train_track_3"/>
 			</links>
 		</track>
-		<track id="train_track_14" parent_id="" purchase_interactable_id="" seasonal_flags="0">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="488.852997" 31="16.003662" 32="-432.807068" 33="1"/>
+		<track id="train_track_14">
+			<transform 30="488.852997" 31="16.003662" 32="-432.807068"/>
 			<links>
 				<link id="train_track_3"/>
 				<link id="train_track_4"/>
 			</links>
 		</track>
-		<track id="train_track_15" parent_id="" purchase_interactable_id="" seasonal_flags="0">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="488.870758" 31="16.003662" 32="-427.396057" 33="1"/>
+		<track id="train_track_15">
+			<transform 30="488.870758" 31="16.003662" 32="-427.396057"/>
 			<links>
 				<link id="train_track_8"/>
 				<link id="train_track_9"/>
 			</links>
 		</track>
 	</train_tracks>
-	<iceberg_markers/>
+	<volcano_markers/>
+	<mineral_rocks/>
 </definition>
 
