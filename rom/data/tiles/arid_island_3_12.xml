@@ -4,11 +4,23 @@
 		<mesh id="mesh0" file_name="meshes/arid_mainland/arid_island_3_12.mesh">
 			<transform/>
 		</mesh>
+		<mesh id="mesh1" file_name="meshes/arid_mainland_assets/arid_oil_platform.mesh">
+			<transform 30="412.251923" 31="18.27" 32="12.139788"/>
+		</mesh>
+		<mesh id="mesh2" file_name="meshes/workbench_static.mesh">
+			<transform 00="0" 02="1" 20="-1" 22="0" 30="413.055206" 31="18.299141" 32="21.642914"/>
+		</mesh>
 	</meshes>
 	<physics_objects/>
 	<physics_meshes>
 		<physics_mesh id="physics_mesh0" file_name="meshes/arid_mainland/arid_island_3_12.phys">
 			<transform/>
+		</physics_mesh>
+		<physics_mesh id="physics_mesh2" file_name="meshes/workbench_static_phys.phys">
+			<transform 00="0" 02="1" 20="-1" 22="0" 30="413.055206" 31="18.301704" 32="21.642914"/>
+		</physics_mesh>
+		<physics_mesh id="physics_mesh2" file_name="meshes/arid_mainland_assets/arid_oil_platform_phys.phys">
+			<transform 30="412.251923" 31="18.265224" 32="12.139788"/>
 		</physics_mesh>
 	</physics_meshes>
 	<physics_dynamics/>
@@ -16,8 +28,18 @@
 	<lights_spot/>
 	<lights_tube/>
 	<screens/>
-	<edit_areas/>
-	<interactables/>
+	<edit_areas>
+		<edit_area id="edit0" is_static="true">
+			<transform 30="412.251923" 31="36.75" 32="12.139788"/>
+			<size x="16.5" y="32" z="18.5"/>
+		</edit_area>
+	</edit_areas>
+	<interactables>
+		<interactable id="interact0" target_object_id="edit0" label="Workbench" interact_type="2">
+			<transform 30="412.241974" 31="19.258478" 32="22.420338"/>
+			<size x="2" y="2" z="1.5"/>
+		</interactable>
+	</interactables>
 	<door_logic_nodes/>
 	<light_logic_nodes/>
 	<rotation_logic_nodes/>

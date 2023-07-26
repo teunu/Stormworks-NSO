@@ -16,6 +16,12 @@
 		<mesh id="mesh4" file_name="meshes/arid_mainland_assets/railway_sign.mesh">
 			<transform 00="-0.34202" 02="-0.939693" 20="0.939693" 22="-0.34202" 30="-388.966858" 31="23.438129" 32="-53.900242"/>
 		</mesh>
+		<mesh id="mesh5" file_name="meshes/arid_mainland_assets/arid_oil_platform.mesh">
+			<transform 30="370.490082" 31="9.15" 32="-0.511297"/>
+		</mesh>
+		<mesh id="mesh6" file_name="meshes/workbench_static.mesh">
+			<transform 00="0" 02="1" 20="-1" 22="0" 30="371.424683" 31="9.127515" 32="8.998057"/>
+		</mesh>
 	</meshes>
 	<physics_objects/>
 	<physics_meshes>
@@ -34,14 +40,30 @@
 		<physics_mesh id="physics_mesh4" file_name="meshes/arid_mainland_assets/railway_sign_phys.phys">
 			<transform 00="-0.34202" 02="-0.939693" 20="0.939693" 22="-0.34202" 30="-388.966858" 31="23.438129" 32="-53.900242"/>
 		</physics_mesh>
+		<physics_mesh id="physics_mesh5" file_name="meshes/arid_mainland_assets/arid_oil_platform_phys.phys">
+			<transform 30="370.490082" 31="9.15" 32="-0.511297"/>
+		</physics_mesh>
+		<physics_mesh id="physics_mesh6" file_name="meshes/workbench_static_phys.phys">
+			<transform 00="0" 02="1" 20="-1" 22="0" 30="371.424683" 31="9.15094" 32="8.998057"/>
+		</physics_mesh>
 	</physics_meshes>
 	<physics_dynamics/>
 	<lights_omni/>
 	<lights_spot/>
 	<lights_tube/>
 	<screens/>
-	<edit_areas/>
-	<interactables/>
+	<edit_areas>
+		<edit_area id="edit0" is_static="true">
+			<transform 30="370.490082" 31="27.6" 32="-0.511297"/>
+			<size x="16.5" y="32" z="18.5"/>
+		</edit_area>
+	</edit_areas>
+	<interactables>
+		<interactable id="interact0" target_object_id="edit0" label="Workbench" interact_type="2">
+			<transform 30="370.584503" 31="10.16398" 32="9.710035"/>
+			<size x="2" y="2" z="1.5"/>
+		</interactable>
+	</interactables>
 	<door_logic_nodes/>
 	<light_logic_nodes/>
 	<rotation_logic_nodes/>
@@ -198,6 +220,7 @@
 			<links>
 				<link id="train_30"/>
 				<link id="train_38"/>
+				<link id="train_35"/>
 			</links>
 		</track>
 		<track id="train_32">
@@ -225,6 +248,7 @@
 			<transform 30="-318.065002" 31="23.42" 32="139.660583"/>
 			<links>
 				<link id="train_34"/>
+				<link id="train_31"/>
 			</links>
 		</track>
 		<track id="train_36">

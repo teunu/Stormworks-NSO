@@ -172,6 +172,9 @@
 		<markers id="tile_marker5" marker_type="13" string_data="Mallamar Gold Purification Lab" icon="7">
 			<transform 30="-279.670349" 31="39.967667" 32="-161.49704"/>
 		</markers>
+		<markers id="tile_marker6" marker_type="9">
+			<transform 00="0.04285" 02="0.999082" 20="-0.999082" 22="0.04285" 30="-307.756439" 31="30.75214" 32="-147.621292"/>
+		</markers>
 	</tile_markers>
 	<mission_zones/>
 	<dynamic_markers>
@@ -668,8 +671,8 @@
 			<transform 30="-392.118378" 31="30.069557" 32="-204.18396"/>
 			<links>
 				<link id="train_126"/>
-				<link id="train_127"/>
 				<link id="train_123"/>
+				<link id="train_128"/>
 			</links>
 		</track>
 		<track id="train_264">
@@ -685,18 +688,18 @@
 				<link id="train_153"/>
 			</links>
 		</track>
-		<track id="train_127">
-			<transform 30="-385.962494" 31="30.069557" 32="-208.206512"/>
+		<track id="train_244">
+			<transform 30="218.50383" 31="29.96793" 32="-142.919464"/>
 			<links>
-				<link id="train_124"/>
-				<link id="train_128"/>
+				<link id="train_242"/>
+				<link id="train_246"/>
 			</links>
 		</track>
 		<track id="train_128">
 			<transform 30="-379.948364" 31="30.069557" 32="-212.383377"/>
 			<links>
-				<link id="train_127"/>
 				<link id="train_129"/>
+				<link id="train_124"/>
 			</links>
 		</track>
 		<track id="train_129">
@@ -1462,13 +1465,6 @@
 			<links>
 				<link id="train_241"/>
 				<link id="train_245"/>
-			</links>
-		</track>
-		<track id="train_244">
-			<transform 30="218.50383" 31="29.96793" 32="-142.919464"/>
-			<links>
-				<link id="train_242"/>
-				<link id="train_246"/>
 			</links>
 		</track>
 	</train_tracks>

@@ -60,7 +60,7 @@ function onCreate(is_world_create)
                 zones = spawnObjects(spawn_transform, location.playlist_index, location.location_index, location.objects.zones, all_mission_objects)
             }
 
-            g_savedata.vehicles[spawned_objects.vehicle.id] = {survivors = spawned_objects.survivors, path = {}, state = { s = "pathing", timer = math.fmod(spawned_objects.vehicle.id, 300), is_simulating = false }, ui_id = server.getMapID(), map_id = server.getMapID(), ai_type = spawned_objects.vehicle.ai_type, bounds = location.objects.vehicle.bounds}
+            g_savedata.vehicles[spawned_objects.vehicle.id] = {survivors = spawned_objects.survivors, path = {}, state = { s = "pathing", timer = math.fmod(spawned_objects.vehicle.id, 300), is_simulating = false }, ui_id = server.getMapID(), map_id = server.getMapID(), ai_type = spawned_objects.vehicle.ai_type, bounds = location.objects.vehicle.bounds, current_damage = 0, despawn_timer = 0}
             createPath(spawned_objects.vehicle.id)
 
             local char_id = spawned_objects.survivors[1].id
@@ -87,7 +87,7 @@ function onCreate(is_world_create)
                 zones = spawnObjects(spawn_transform, location.playlist_index, location.location_index, location.objects.zones, all_mission_objects)
             }
 
-            g_savedata.vehicles[spawned_objects.vehicle.id] = {survivors = spawned_objects.survivors, path = {}, state = { s = "pathing", timer = math.fmod(spawned_objects.vehicle.id, 300), is_simulating = false }, ui_id = server.getMapID(), map_id = server.getMapID(), ai_type = spawned_objects.vehicle.ai_type, bounds = location.objects.vehicle.bounds}
+            g_savedata.vehicles[spawned_objects.vehicle.id] = {survivors = spawned_objects.survivors, path = {}, state = { s = "pathing", timer = math.fmod(spawned_objects.vehicle.id, 300), is_simulating = false }, ui_id = server.getMapID(), map_id = server.getMapID(), ai_type = spawned_objects.vehicle.ai_type, bounds = location.objects.vehicle.bounds, current_damage = 0, despawn_timer = 0}
             createPath(spawned_objects.vehicle.id)
 
             local char_id = spawned_objects.survivors[1].id
@@ -101,6 +101,8 @@ function onCreate(is_world_create)
             if vehicle_object.bounds == nil then
                 vehicle_object.bounds = { x_min = -40000, z_min = -40000, x_max = 40000, z_max = 140000}
             end
+            if vehicle_object.current_damage == nil then vehicle_object.current_damage = 0 end
+            if vehicle_object.despawn_timer == nil then vehicle_object.despawn_timer = 0 end
         end
     end
 end
@@ -119,7 +121,7 @@ function build_locations(playlist_index, location_index)
     local is_valid_vehicle = false
     local is_unique = false
     local bounds = { x_min = -40000, z_min = -40000, x_max = 40000, z_max = 140000}
-    
+
     for _, object_data in iterObjects(playlist_index, location_index) do
 
         for tag_index, tag_object in pairs(object_data.tags) do
@@ -181,7 +183,7 @@ function onVehicleLoad(vehicle_id)
     local vehicle_object = g_savedata.vehicles[vehicle_id]
     if vehicle_object ~= nil then
         vehicle_object.state.is_simulating = true
-        
+
         for npc_index, npc in pairs(vehicle_object.survivors) do
             local c = server.getCharacterData(npc.id)
             if c then
@@ -268,268 +270,283 @@ function onTick(tick_time)
     -- tick aircraft
     for vehicle_id, vehicle_object in pairs(g_savedata.vehicles) do
 
-        local update_behaviour = false
-        local ai_target = nil
-        local ai_state = 1
-        local ai_speed_pseudo = 150
+        if vehicle_object ~= nil then
 
-        --tick timers
-        vehicle_object.state.timer = vehicle_object.state.timer + 1
+            local update_behaviour = false
+            local ai_target = nil
+            local ai_state = 1
+            local ai_speed_pseudo = 150
 
-        --tick state
-        if vehicle_object.state.s == "pathing" then
+            --tick timers
+            vehicle_object.state.timer = vehicle_object.state.timer + 1
 
-            if(#vehicle_object.path < 1) then
-                vehicle_object.state.s = "waiting"
-            else
+            --tick state
+            if vehicle_object.state.s == "pathing" then
 
-                if vehicle_object.state.is_simulating then
-                    if vehicle_object.state.timer >= 300 then
-                        vehicle_object.state.timer = 0
-                        update_behaviour = true
-                    end
+                if(#vehicle_object.path < 1) then
+                    vehicle_object.state.s = "waiting"
                 else
-                    if vehicle_object.state.timer >= 900 then
-                        vehicle_object.state.timer = 0
-                        update_behaviour = true
+
+                    if vehicle_object.state.is_simulating then
+                        if vehicle_object.state.timer >= 300 then
+                            vehicle_object.state.timer = 0
+                            update_behaviour = true
+                        end
+                    else
+                        if vehicle_object.state.timer >= 900 then
+                            vehicle_object.state.timer = 0
+                            update_behaviour = true
+                        end
+                    end
+
+                    if vehicle_object.ai_type == "plane" then
+                        ai_speed_pseudo = 750
+                    else
+                        ai_speed_pseudo = 400
+                    end
+
+                    if render_debug then
+                        ai_target = matrix.translation(vehicle_object.path[1].x, cruise_height + (vehicle_id % 10 * 20), vehicle_object.path[1].z)
+                    end
+
+                    if update_all or update_behaviour then
+                        ai_state = 1
+                        ai_target = matrix.translation(vehicle_object.path[1].x, cruise_height + (vehicle_id % 10 * 20), vehicle_object.path[1].z)
+
+                        local vehicle_pos = server.getVehiclePos(vehicle_id)
+                        local distance = matrix.distance(ai_target, vehicle_pos)
+
+                        if distance < 500 then
+                            if vehicle_object.state.is_simulating == false then
+                                update_behaviour = false -- prevent overshooting
+                            end
+                            if(vehicle_object.path[1].dest_type == "airfield") then
+                                vehicle_object.state.s = "holding"
+                                vehicle_object.holding_index = 1
+                                table.insert(g_savedata.airfields[vehicle_object.path[1].airfield_index].queue, vehicle_object)
+                            else
+                                table.remove(vehicle_object.path, 1)
+                                vehicle_object.state.s = "waiting"
+                            end
+                        end
+
+                        refuel(vehicle_id)
                     end
                 end
 
-                if vehicle_object.ai_type == "plane" then
-                    ai_speed_pseudo = 750
-                else
-                    ai_speed_pseudo = 400
-                end
+            elseif vehicle_object.state.s == "waiting" then
 
+                vehicle_object.state.timer = 0
+
+                createPath(vehicle_id)
+
+                vehicle_object.state.s = "pathing"
+                refuel(vehicle_id)
+
+            elseif vehicle_object.state.s == "holding" then
+
+                ai_speed_pseudo = 50
                 if render_debug then
-                    ai_target = matrix.translation(vehicle_object.path[1].x, cruise_height + (vehicle_id % 10 * 20), vehicle_object.path[1].z)
+                    ai_target = matrix.translation(vehicle_object.path[1].x + holding_pattern[vehicle_object.holding_index].x, cruise_height + (vehicle_id % 10 * 20), vehicle_object.path[1].z + holding_pattern[vehicle_object.holding_index].z)
                 end
 
+                if vehicle_object.state.timer >= 600 then
+                    vehicle_object.state.timer = 0
+                    update_behaviour = true
+                end
                 if update_all or update_behaviour then
                     ai_state = 1
-                    ai_target = matrix.translation(vehicle_object.path[1].x, cruise_height + (vehicle_id % 10 * 20), vehicle_object.path[1].z)
+                    ai_target = matrix.translation(vehicle_object.path[1].x + holding_pattern[vehicle_object.holding_index].x, cruise_height + (vehicle_id % 10 * 20), vehicle_object.path[1].z + holding_pattern[vehicle_object.holding_index].z)
 
                     local vehicle_pos = server.getVehiclePos(vehicle_id)
                     local distance = matrix.distance(ai_target, vehicle_pos)
 
-                    if distance < 500 then
-                        if vehicle_object.state.is_simulating == false then
-                            update_behaviour = false -- prevent overshooting
-                        end
-                        if(vehicle_object.path[1].dest_type == "airfield") then
-                            vehicle_object.state.s = "holding"
-                            vehicle_object.holding_index = 1
-                            table.insert(g_savedata.airfields[vehicle_object.path[1].airfield_index].queue, vehicle_object)
-                        else
-                            table.remove(vehicle_object.path, 1)
-                            vehicle_object.state.s = "waiting"
-                        end
+                    if distance < 100 then
+                        vehicle_object.holding_index = 1 + ((vehicle_object.holding_index) % 4);
+                    end
+                end
+
+            elseif vehicle_object.state.s == "approach" then
+
+                ai_speed_pseudo = 20
+                if render_debug then
+                    ai_target = matrix.multiply(g_savedata.airfields[vehicle_object.path[1].airfield_index].transform,  matrix.translation(0, 300, 100))
+                end
+
+                if vehicle_object.state.timer >= 300 then
+                    vehicle_object.state.timer = 0
+                    update_behaviour = true
+                end
+                if update_all or update_behaviour then
+                    ai_state = 1
+                    ai_target = matrix.multiply(g_savedata.airfields[vehicle_object.path[1].airfield_index].transform,  matrix.translation(0, 300, 100))
+
+                    local vehicle_pos = server.getVehiclePos(vehicle_id)
+                    local distance = matrix.distance(ai_target, vehicle_pos)
+                    if distance < 50 then
+                        vehicle_object.state.s = "landing"
+                        vehicle_object.state.timer = 0
                     end
 
                     refuel(vehicle_id)
                 end
-            end
 
-        elseif vehicle_object.state.s == "waiting" then
+            elseif vehicle_object.state.s == "landing" then
 
-            vehicle_object.state.timer = 0
-
-            createPath(vehicle_id)
-
-            vehicle_object.state.s = "pathing"
-            refuel(vehicle_id)
-
-        elseif vehicle_object.state.s == "holding" then
-
-            ai_speed_pseudo = 50
-            if render_debug then
-                ai_target = matrix.translation(vehicle_object.path[1].x + holding_pattern[vehicle_object.holding_index].x, cruise_height + (vehicle_id % 10 * 20), vehicle_object.path[1].z + holding_pattern[vehicle_object.holding_index].z)
-            end
-
-            if vehicle_object.state.timer >= 600 then
-                vehicle_object.state.timer = 0
-                update_behaviour = true
-            end
-            if update_all or update_behaviour then
-                ai_state = 1
-                ai_target = matrix.translation(vehicle_object.path[1].x + holding_pattern[vehicle_object.holding_index].x, cruise_height + (vehicle_id % 10 * 20), vehicle_object.path[1].z + holding_pattern[vehicle_object.holding_index].z)
-
-                local vehicle_pos = server.getVehiclePos(vehicle_id)
-                local distance = matrix.distance(ai_target, vehicle_pos)
-
-                if distance < 100 then
-                    vehicle_object.holding_index = 1 + ((vehicle_object.holding_index) % 4);
-                end
-            end
-
-        elseif vehicle_object.state.s == "approach" then
-
-            ai_speed_pseudo = 20
-            if render_debug then
-                ai_target = matrix.multiply(g_savedata.airfields[vehicle_object.path[1].airfield_index].transform,  matrix.translation(0, 300, 100))
-            end
-
-            if vehicle_object.state.timer >= 300 then
-                vehicle_object.state.timer = 0
-                update_behaviour = true
-            end
-            if update_all or update_behaviour then
-                ai_state = 1
-                ai_target = matrix.multiply(g_savedata.airfields[vehicle_object.path[1].airfield_index].transform,  matrix.translation(0, 300, 100))
-
-                local vehicle_pos = server.getVehiclePos(vehicle_id)
-                local distance = matrix.distance(ai_target, vehicle_pos)
-                if distance < 50 then
-                    vehicle_object.state.s = "landing"
-                    vehicle_object.state.timer = 0
+                ai_speed_pseudo = 5
+                if render_debug then
+                    ai_target = matrix.translation(vehicle_object.path[1].x, vehicle_object.path[1].y - 5, vehicle_object.path[1].z)
                 end
 
-                refuel(vehicle_id)
-            end
-
-        elseif vehicle_object.state.s == "landing" then
-
-            ai_speed_pseudo = 5
-            if render_debug then
-                ai_target = matrix.translation(vehicle_object.path[1].x, vehicle_object.path[1].y - 5, vehicle_object.path[1].z)
-            end
-
-            if vehicle_object.state.timer >= 300 then
-                update_behaviour = true
-            end
-            if update_all or update_behaviour then
-                ai_state = 2
-                ai_target = matrix.translation(vehicle_object.path[1].x, vehicle_object.path[1].y - 5, vehicle_object.path[1].z)
-
-                -- 10 min max wait time for landing
-                if g_savedata.airfields[vehicle_object.path[1].airfield_index].landing_timer >= 36000 then
-                    vehicle_object.state.s = "takeoff"
+                if vehicle_object.state.timer >= 300 then
+                    update_behaviour = true
                 end
+                if update_all or update_behaviour then
+                    ai_state = 2
+                    ai_target = matrix.translation(vehicle_object.path[1].x, vehicle_object.path[1].y - 5, vehicle_object.path[1].z)
 
-                local vehicle_pos = server.getVehiclePos(vehicle_id)
-                local distance = matrix.distance(ai_target, vehicle_pos)
-                if distance < 10 then
-                     if vehicle_object.state.timer >= 900 then
-                        vehicle_object.state.s = "land_wait"
-                        ai_state = 0
+                    -- 10 min max wait time for landing
+                    if g_savedata.airfields[vehicle_object.path[1].airfield_index].landing_timer >= 36000 then
+                        vehicle_object.state.s = "takeoff"
+                    end
+
+                    local vehicle_pos = server.getVehiclePos(vehicle_id)
+                    local distance = matrix.distance(ai_target, vehicle_pos)
+                    if distance < 10 then
+                        if vehicle_object.state.timer >= 900 then
+                            vehicle_object.state.s = "land_wait"
+                            ai_state = 0
+                            vehicle_object.state.timer = 0
+                        end
+                    else
                         vehicle_object.state.timer = 0
                     end
-                else
+
+                    refuel(vehicle_id)
+                end
+
+            elseif vehicle_object.state.s == "land_wait" then
+
+                ai_speed_pseudo = 0
+
+                if vehicle_object.state.timer >= 6000 then
                     vehicle_object.state.timer = 0
+                    vehicle_object.state.s = "takeoff"
+                    refuel(vehicle_id)
                 end
 
-                refuel(vehicle_id)
-            end
+            elseif vehicle_object.state.s == "takeoff" then
 
-        elseif vehicle_object.state.s == "land_wait" then
-
-            ai_speed_pseudo = 0
-
-            if vehicle_object.state.timer >= 6000 then
-                vehicle_object.state.timer = 0
-                vehicle_object.state.s = "takeoff"
-                refuel(vehicle_id)
-            end
-
-        elseif vehicle_object.state.s == "takeoff" then
-
-            ai_speed_pseudo = 5
-            if render_debug then
-                ai_target = matrix.multiply(g_savedata.airfields[vehicle_object.path[1].airfield_index].transform, matrix.translation(0, 300, -100))
-            end
-
-            if vehicle_object.state.timer >= 300 then
-                vehicle_object.state.timer = 0
-                update_behaviour = true
-            end
-            if update_all or update_behaviour then
-                ai_state = 2
-                ai_target = matrix.multiply(g_savedata.airfields[vehicle_object.path[1].airfield_index].transform, matrix.translation(0, 300, -100))
-
-                local vehicle_pos = server.getVehiclePos(vehicle_id)
-                local distance = matrix.distance(ai_target, vehicle_pos)
-                if distance < 50 then
-                    table.remove(g_savedata.airfields[vehicle_object.path[1].airfield_index].queue, 1)
-                    vehicle_object.state.s = "waiting"
+                ai_speed_pseudo = 5
+                if render_debug then
+                    ai_target = matrix.multiply(g_savedata.airfields[vehicle_object.path[1].airfield_index].transform, matrix.translation(0, 300, -100))
                 end
 
-                refuel(vehicle_id)
+                if vehicle_object.state.timer >= 300 then
+                    vehicle_object.state.timer = 0
+                    update_behaviour = true
+                end
+                if update_all or update_behaviour then
+                    ai_state = 2
+                    ai_target = matrix.multiply(g_savedata.airfields[vehicle_object.path[1].airfield_index].transform, matrix.translation(0, 300, -100))
+
+                    local vehicle_pos = server.getVehiclePos(vehicle_id)
+                    local distance = matrix.distance(ai_target, vehicle_pos)
+                    if distance < 50 then
+                        table.remove(g_savedata.airfields[vehicle_object.path[1].airfield_index].queue, 1)
+                        vehicle_object.state.s = "waiting"
+                    end
+
+                    refuel(vehicle_id)
+                end
+
             end
 
-        end
+            --set ai behaviour
+            if (update_all or update_behaviour) and (ai_target ~= nil) then
+                if vehicle_object.state.is_simulating then
+                    server.setAITarget(vehicle_object.survivors[1].id, ai_target)
+                    server.setAIState(vehicle_object.survivors[1].id, ai_state)
+                else
+                    local ts_x, ts_y, ts_z = matrix.position(ai_target)
+                    local vehicle_pos = server.getVehiclePos(vehicle_id)
+                    local vehicle_x, vehicle_y, vehicle_z = matrix.position(vehicle_pos)
+                    local movement_x = ts_x - vehicle_x
+                    local movement_y = ts_y - vehicle_y
+                    local movement_z = ts_z - vehicle_z
+                    local length_xz = math.sqrt((movement_x * movement_x) + (movement_z * movement_z))
+                    movement_x = movement_x * ai_speed_pseudo / length_xz
+                    movement_y = math.min(ai_speed_pseudo, math.max(movement_y, -ai_speed_pseudo))
+                    movement_z = movement_z * ai_speed_pseudo / length_xz
 
-        --set ai behaviour
-        if (update_all or update_behaviour) and (ai_target ~= nil) then
-            if vehicle_object.state.is_simulating then
-                server.setAITarget(vehicle_object.survivors[1].id, ai_target)
-                server.setAIState(vehicle_object.survivors[1].id, ai_state)
-            else
-                local ts_x, ts_y, ts_z = matrix.position(ai_target)
-                local vehicle_pos = server.getVehiclePos(vehicle_id)
-                local vehicle_x, vehicle_y, vehicle_z = matrix.position(vehicle_pos)
-                local movement_x = ts_x - vehicle_x
-                local movement_y = ts_y - vehicle_y
-                local movement_z = ts_z - vehicle_z
-                local length_xz = math.sqrt((movement_x * movement_x) + (movement_z * movement_z))
-                movement_x = movement_x * ai_speed_pseudo / length_xz
-                movement_y = math.min(ai_speed_pseudo, math.max(movement_y, -ai_speed_pseudo))
-                movement_z = movement_z * ai_speed_pseudo / length_xz
+                    local rotation_matrix = matrix.rotationToFaceXZ(movement_x, movement_z)
+                    local new_pos = matrix.multiply(matrix.translation(vehicle_x + movement_x, vehicle_y + movement_y, vehicle_z + movement_z), rotation_matrix)
 
-                local rotation_matrix = matrix.rotationToFaceXZ(movement_x, movement_z)
-                local new_pos = matrix.multiply(matrix.translation(vehicle_x + movement_x, vehicle_y + movement_y, vehicle_z + movement_z), rotation_matrix)
-                
-                if server.getVehicleLocal(vehicle_id) == false then
-                    local _, new_transform = server.setVehiclePosSafe(vehicle_id, new_pos)
-                    for npc_index, npc_object in pairs(vehicle_object.survivors) do
-                        server.setObjectPos(npc_object.id, new_transform)
+                    if server.getVehicleLocal(vehicle_id) == false then
+                        local success, new_transform = server.setVehiclePosSafe(vehicle_id, new_pos)
+                        for npc_index, npc_object in pairs(vehicle_object.survivors) do
+                            server.setObjectPos(npc_object.id, new_transform)
+                        end
                     end
                 end
             end
-        end
 
-        if render_debug then
-            local vehicle_pos = server.getVehiclePos(vehicle_id)
-            local vehicle_x, vehicle_y, vehicle_z = matrix.position(vehicle_pos)
+            if render_debug then
+                local vehicle_pos = server.getVehiclePos(vehicle_id)
+                local vehicle_x, vehicle_y, vehicle_z = matrix.position(vehicle_pos)
 
-            local debug_data = vehicle_object.state.s .. " : " .. vehicle_object.state.timer .. "\n"
+                local debug_data = vehicle_object.state.s .. " : " .. vehicle_object.state.timer .. "\n"
 
-            debug_data = debug_data .. "Pos: " .. math.floor(vehicle_x) .. "\n".. math.floor(vehicle_y) .. "\n".. math.floor(vehicle_z) .. "\n"
-            if ai_target then
-                local ts_x, ts_y, ts_z = matrix.position(ai_target)
-                debug_data = debug_data .. "Dest: " .. math.floor(ts_x) .. "\n".. math.floor(ts_y) .. "\n".. math.floor(ts_z) .. "\n"
+                debug_data = debug_data .. "Pos: " .. math.floor(vehicle_x) .. "\n".. math.floor(vehicle_y) .. "\n".. math.floor(vehicle_z) .. "\n"
+                if ai_target then
+                    local ts_x, ts_y, ts_z = matrix.position(ai_target)
+                    debug_data = debug_data .. "Dest: " .. math.floor(ts_x) .. "\n".. math.floor(ts_y) .. "\n".. math.floor(ts_z) .. "\n"
+                end
+
+                if(#vehicle_object.path > 0) then
+                    debug_data = debug_data .. "Dest type: " .. vehicle_object.path[1].dest_type .. "\n"
+                end
+
+                server.removeMapObject(0 ,vehicle_object.map_id)
+                server.addMapObject(0, vehicle_object.map_id, 1, vehicle_object.ai_type == "heli" and 15 or 13, v_x, v_z, 0, 0, vehicle_id, 0, "AI " .. vehicle_object.ai_type .. " " .. vehicle_id, 1, debug_data)
             end
 
-            if(#vehicle_object.path > 0) then
-                debug_data = debug_data .. "Dest type: " .. vehicle_object.path[1].dest_type .. "\n"
+            --debug render
+            if render_debug and vehicle_object.state.is_simulating then
+                local vehicle_pos = server.getVehiclePos(vehicle_id)
+                local v_x, v_y, v_z = matrix.position(vehicle_pos)
+                local target_data = server.getAITarget(vehicle_object.survivors[1].id)
+                local popup_text = "state: ".. vehicle_object.state.s
+                if(#vehicle_object.path >= 1) then
+                    popup_text = popup_text .. "\ndest_server: " .. math.floor(target_data.x) .. " " .. math.floor(target_data.y) .. " " .. math.floor(target_data.z)
+                end
+                server.setPopup(0, vehicle_object.ui_id, "test", true, popup_text, v_x, v_y + 40, v_z, 0)
+            end
+    
+            if  vehicle_object.current_damage > 800 then
+                vehicle_object.despawn_timer = vehicle_object.despawn_timer + 1
             end
 
-            server.removeMapObject(0 ,vehicle_object.map_id)
-            server.addMapObject(0, vehicle_object.map_id, 1, vehicle_object.ai_type == "heli" and 15 or 13, v_x, v_z, 0, 0, vehicle_id, 0, "AI " .. vehicle_object.ai_type .. " " .. vehicle_id, 1, debug_data)
-        end
-
-        --debug render
-        if render_debug and vehicle_object.state.is_simulating then
-            local vehicle_pos = server.getVehiclePos(vehicle_id)
-            local v_x, v_y, v_z = matrix.position(vehicle_pos)
-            local target_data = server.getAITarget(vehicle_object.survivors[1].id)
-            local popup_text = "state: ".. vehicle_object.state.s
-            if(#vehicle_object.path >= 1) then
-                popup_text = popup_text .. "\ndest_server: " .. math.floor(target_data.x) .. " " .. math.floor(target_data.y) .. " " .. math.floor(target_data.z)
-            end
-            server.setPopup(0, vehicle_object.ui_id, "test", true, popup_text, v_x, v_y + 40, v_z, 0)
-        end
- 
-        if (update_all or update_behaviour) then
-            local vehicle_pos = server.getVehiclePos(vehicle_id)
-            if vehicle_pos[14] < -20 then
-                server.despawnVehicle(vehicle_id, true)
-                for _, survivor in pairs(vehicle_object.survivors) do
-                    server.despawnObject(survivor.id, true)
+            if (update_all or update_behaviour) or (vehicle_object.despawn_timer > 60 * 60 * 2) then
+                local vehicle_pos = server.getVehiclePos(vehicle_id)
+                if vehicle_pos[14] < -20 or  vehicle_object.despawn_timer > 60 * 60 * 2 then
+                    server.despawnVehicle(vehicle_id, true)
+                    for _, survivor in pairs(vehicle_object.survivors) do
+                        server.despawnObject(survivor.id, true)
+                    end
+                    g_savedata.vehicles[vehicle_id] = nil
                 end
             end
-        end
 
-        update_all = false
+            update_all = false
+        end
+    end
+end
+
+function onVehicleDamaged(vehicle_id, amount, x, y, z, body_id)
+    local vehicle_object = g_savedata.vehicles[vehicle_id]
+    if vehicle_object ~= nil then
+       vehicle_object.current_damage = vehicle_object.current_damage + amount
     end
 end
 
@@ -649,7 +666,7 @@ end
 
 function onCustomCommand(full_message, user_peer_id, is_admin, is_auth, command, arg1, arg2, arg3, arg4)
 
-	if command == "?ai_debug" and server.isDev() then
+	if command == "?ai_air_debug" and server.isDev() then
         render_debug = not render_debug
 
         for vehicle_id, vehicle_object in pairs(g_savedata.vehicles) do

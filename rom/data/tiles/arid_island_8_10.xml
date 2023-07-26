@@ -118,7 +118,7 @@
 			<transform 30="-34.385101" 31="116.45459" 32="-393.990814"/>
 			<size x="36.5" y="10" z="35"/>
 		</edit_area>
-		<edit_area id="workbench_b_edit" grid_size="4">
+		<edit_area id="edit_b" grid_size="4">
 			<transform 30="-116.373978" 31="116.419121" 32="-394.613403"/>
 			<size x="36.5" y="10" z="35"/>
 		</edit_area>
@@ -136,7 +136,7 @@
 			<transform 30="-57.601616" 31="112.25663" 32="-400.324463"/>
 			<size x="2" y="2" z="2"/>
 		</interactable>
-		<interactable id="workbench_b_int" target_object_id="workbench_b_edit" label="Workbench">
+		<interactable id="workbench_b_int" target_object_id="edit_b" label="Workbench" interact_type="2">
 			<transform 00="-0" 02="1" 20="-1" 22="-0" 30="-84.910172" 31="112.25663" 32="-398.969147"/>
 			<size x="1" y="2" z="2"/>
 		</interactable>
@@ -199,6 +199,18 @@
 		</markers>
 		<markers id="tile_marker7" marker_type="13" string_data="Gravedigger Truck Stop" icon="1">
 			<transform 30="-89.286598" 31="121.966812" 32="-345.145874"/>
+		</markers>
+		<markers id="tile_marker8" marker_type="9">
+			<transform 00="0.059058" 02="-0.998255" 20="0.998255" 22="0.059058" 30="-64.058197" 31="113.114288" 32="-399.401154"/>
+		</markers>
+		<markers id="tile_marker9" marker_type="9">
+			<transform 00="-0.288925" 02="-0.957352" 11="1" 20="0.957352" 22="-0.288925" 30="-82.904526" 31="112.144638" 32="-401.703125"/>
+		</markers>
+		<markers id="tile_marker10" marker_type="9">
+			<transform 00="0.749354" 02="0.662169" 20="-0.662169" 22="0.749354" 30="-88.007576" 31="112.144638" 32="-406.529144"/>
+		</markers>
+		<markers id="tile_marker11" marker_type="9">
+			<transform 30="-82.030396" 31="112.144638" 32="-387.658478"/>
 		</markers>
 	</tile_markers>
 	<mission_zones/>
@@ -852,21 +864,21 @@
 			</links>
 		</track>
 		<track id="train_164">
-			<transform 30="158.04866" 31="23.42" 32="16.160118"/>
+			<transform 30="158.04866" 31="23.42" 32="16.046213"/>
 			<links>
 				<link id="train_159"/>
 				<link id="train_167"/>
 			</links>
 		</track>
 		<track id="train_165">
-			<transform 30="160.097794" 31="23.42" 32="20.071671"/>
+			<transform 30="160.097794" 31="23.42" 32="19.931242"/>
 			<links>
 				<link id="train_161"/>
 				<link id="train_168"/>
 			</links>
 		</track>
 		<track id="train_166">
-			<transform 30="161.362686" 31="23.42" 32="19.39212"/>
+			<transform 30="161.362686" 31="23.42" 32="19.412327"/>
 			<links>
 				<link id="train_162"/>
 				<link id="train_168"/>
@@ -875,17 +887,17 @@
 		<track id="train_167">
 			<transform 30="189.298965" 31="23.445988" 32="0.675665"/>
 			<links>
-				<link id="train_163"/>
 				<link id="train_164"/>
 				<link id="train_169"/>
+				<link id="train_163"/>
 			</links>
 		</track>
 		<track id="train_168">
 			<transform 30="191.293152" 31="23.446583" 32="4.579412"/>
 			<links>
-				<link id="train_166"/>
 				<link id="train_165"/>
 				<link id="train_170"/>
+				<link id="train_166"/>
 			</links>
 		</track>
 		<track id="train_169">

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<definition name="Train Wheel Assembly Steam Large B" category="3" type="36" mass="400" value="100" flags="1" tags="steam" mesh_data_name="meshes/component_train_wheel_steam_large.mesh" mesh_0_name="meshes/component_train_wheel_dynamic_steam_large_b.mesh" mesh_1_name="meshes/component_train_piston_rod_l.mesh" mesh_editor_only_name="meshes/arrow_train.mesh" force_emitter_max_force="10" wheel_radius="1" wheel_wishbone_length="0.559" wheel_suspension_height="0.25">
+<definition name="Train Wheel Assembly Steam Large B" category="3" type="36" mass="400" value="100" flags="1" tags="steam" mesh_data_name="meshes/component_train_wheel_steam_large.mesh" mesh_0_name="meshes/component_train_wheel_dynamic_steam_large_b.mesh" mesh_1_name="meshes/component_train_piston_rod_l.mesh" mesh_editor_only_name="meshes/arrow_train_steam_large.mesh" force_emitter_max_force="10" wheel_radius="1" wheel_wishbone_length="0.559" wheel_suspension_height="0.25">
+	<tooltip_properties description="Attaches to rail lines. Connect to a train wheel drive piston or another steam train assembly." short_description="Steam powered train wheel assembly."/>
 	<sfx_datas/>
 	<surfaces>
 		<surface>
@@ -344,15 +345,15 @@
 		</logic_node>
 	</logic_nodes>
 	<couplings>
-		<coupling alignment="2" coupling_type="train" coupling_name="front" alignment_required="true">
+		<coupling alignment="2" coupling_type="train" coupling_name="3" alignment_required="true">
 			<position x="4" y="1"/>
 		</coupling>
-		<coupling orientation="1" alignment="2" coupling_type="train" coupling_name="back" alignment_required="true">
+		<coupling orientation="1" alignment="2" coupling_type="train" coupling_name="3" alignment_required="true">
 			<position x="-4" y="1"/>
 		</coupling>
 	</couplings>
 	<voxels>
-		<voxel>
+		<voxel flags="1">
 			<position/>
 			<physics_shape_rotation/>
 		</voxel>
@@ -392,39 +393,39 @@
 			<position x="-2" y="1" z="4"/>
 			<physics_shape_rotation/>
 		</voxel>
-		<voxel flags="1">
+		<voxel>
 			<position x="-2" y="2" z="-4"/>
 			<physics_shape_rotation/>
 		</voxel>
-		<voxel flags="1">
+		<voxel>
 			<position x="-2" y="2" z="-3"/>
 			<physics_shape_rotation/>
 		</voxel>
-		<voxel flags="1">
+		<voxel>
 			<position x="-2" y="2" z="-2"/>
 			<physics_shape_rotation/>
 		</voxel>
-		<voxel flags="1">
+		<voxel>
 			<position x="-2" y="2" z="-1"/>
 			<physics_shape_rotation/>
 		</voxel>
-		<voxel flags="1">
+		<voxel>
 			<position x="-2" y="2"/>
 			<physics_shape_rotation/>
 		</voxel>
-		<voxel flags="1">
+		<voxel>
 			<position x="-2" y="2" z="1"/>
 			<physics_shape_rotation/>
 		</voxel>
-		<voxel flags="1">
+		<voxel>
 			<position x="-2" y="2" z="2"/>
 			<physics_shape_rotation/>
 		</voxel>
-		<voxel flags="1">
+		<voxel>
 			<position x="-2" y="2" z="3"/>
 			<physics_shape_rotation/>
 		</voxel>
-		<voxel flags="1">
+		<voxel>
 			<position x="-2" y="2" z="4"/>
 			<physics_shape_rotation/>
 		</voxel>
@@ -536,39 +537,39 @@
 			<position x="-1" y="1" z="4"/>
 			<physics_shape_rotation/>
 		</voxel>
-		<voxel flags="1">
+		<voxel>
 			<position x="-1" y="2" z="-4"/>
 			<physics_shape_rotation/>
 		</voxel>
-		<voxel flags="1">
+		<voxel>
 			<position x="-1" y="2" z="-3"/>
 			<physics_shape_rotation/>
 		</voxel>
-		<voxel flags="1">
+		<voxel>
 			<position x="-1" y="2" z="-2"/>
 			<physics_shape_rotation/>
 		</voxel>
-		<voxel flags="1">
+		<voxel>
 			<position x="-1" y="2" z="-1"/>
 			<physics_shape_rotation/>
 		</voxel>
-		<voxel flags="1">
+		<voxel>
 			<position x="-1" y="2"/>
 			<physics_shape_rotation/>
 		</voxel>
-		<voxel flags="1">
+		<voxel>
 			<position x="-1" y="2" z="1"/>
 			<physics_shape_rotation/>
 		</voxel>
-		<voxel flags="1">
+		<voxel>
 			<position x="-1" y="2" z="2"/>
 			<physics_shape_rotation/>
 		</voxel>
-		<voxel flags="1">
+		<voxel>
 			<position x="-1" y="2" z="3"/>
 			<physics_shape_rotation/>
 		</voxel>
-		<voxel flags="1">
+		<voxel>
 			<position x="-1" y="2" z="4"/>
 			<physics_shape_rotation/>
 		</voxel>
@@ -680,39 +681,39 @@
 			<position y="1" z="4"/>
 			<physics_shape_rotation/>
 		</voxel>
-		<voxel flags="1">
+		<voxel>
 			<position y="2" z="-4"/>
 			<physics_shape_rotation/>
 		</voxel>
-		<voxel flags="1">
+		<voxel>
 			<position y="2" z="-3"/>
 			<physics_shape_rotation/>
 		</voxel>
-		<voxel flags="1">
+		<voxel>
 			<position y="2" z="-2"/>
 			<physics_shape_rotation/>
 		</voxel>
-		<voxel flags="1">
+		<voxel>
 			<position y="2" z="-1"/>
 			<physics_shape_rotation/>
 		</voxel>
-		<voxel flags="1">
+		<voxel>
 			<position y="2"/>
 			<physics_shape_rotation/>
 		</voxel>
-		<voxel flags="1">
+		<voxel>
 			<position y="2" z="1"/>
 			<physics_shape_rotation/>
 		</voxel>
-		<voxel flags="1">
+		<voxel>
 			<position y="2" z="2"/>
 			<physics_shape_rotation/>
 		</voxel>
-		<voxel flags="1">
+		<voxel>
 			<position y="2" z="3"/>
 			<physics_shape_rotation/>
 		</voxel>
-		<voxel flags="1">
+		<voxel>
 			<position y="2" z="4"/>
 			<physics_shape_rotation/>
 		</voxel>
@@ -824,39 +825,39 @@
 			<position x="1" y="1" z="4"/>
 			<physics_shape_rotation/>
 		</voxel>
-		<voxel flags="1">
+		<voxel>
 			<position x="1" y="2" z="-4"/>
 			<physics_shape_rotation/>
 		</voxel>
-		<voxel flags="1">
+		<voxel>
 			<position x="1" y="2" z="-3"/>
 			<physics_shape_rotation/>
 		</voxel>
-		<voxel flags="1">
+		<voxel>
 			<position x="1" y="2" z="-2"/>
 			<physics_shape_rotation/>
 		</voxel>
-		<voxel flags="1">
+		<voxel>
 			<position x="1" y="2" z="-1"/>
 			<physics_shape_rotation/>
 		</voxel>
-		<voxel flags="1">
+		<voxel>
 			<position x="1" y="2"/>
 			<physics_shape_rotation/>
 		</voxel>
-		<voxel flags="1">
+		<voxel>
 			<position x="1" y="2" z="1"/>
 			<physics_shape_rotation/>
 		</voxel>
-		<voxel flags="1">
+		<voxel>
 			<position x="1" y="2" z="2"/>
 			<physics_shape_rotation/>
 		</voxel>
-		<voxel flags="1">
+		<voxel>
 			<position x="1" y="2" z="3"/>
 			<physics_shape_rotation/>
 		</voxel>
-		<voxel flags="1">
+		<voxel>
 			<position x="1" y="2" z="4"/>
 			<physics_shape_rotation/>
 		</voxel>
@@ -968,39 +969,39 @@
 			<position x="2" y="1" z="4"/>
 			<physics_shape_rotation/>
 		</voxel>
-		<voxel flags="1">
+		<voxel>
 			<position x="2" y="2" z="-4"/>
 			<physics_shape_rotation/>
 		</voxel>
-		<voxel flags="1">
+		<voxel>
 			<position x="2" y="2" z="-3"/>
 			<physics_shape_rotation/>
 		</voxel>
-		<voxel flags="1">
+		<voxel>
 			<position x="2" y="2" z="-2"/>
 			<physics_shape_rotation/>
 		</voxel>
-		<voxel flags="1">
+		<voxel>
 			<position x="2" y="2" z="-1"/>
 			<physics_shape_rotation/>
 		</voxel>
-		<voxel flags="1">
+		<voxel>
 			<position x="2" y="2"/>
 			<physics_shape_rotation/>
 		</voxel>
-		<voxel flags="1">
+		<voxel>
 			<position x="2" y="2" z="1"/>
 			<physics_shape_rotation/>
 		</voxel>
-		<voxel flags="1">
+		<voxel>
 			<position x="2" y="2" z="2"/>
 			<physics_shape_rotation/>
 		</voxel>
-		<voxel flags="1">
+		<voxel>
 			<position x="2" y="2" z="3"/>
 			<physics_shape_rotation/>
 		</voxel>
-		<voxel flags="1">
+		<voxel>
 			<position x="2" y="2" z="4"/>
 			<physics_shape_rotation/>
 		</voxel>
@@ -1412,19 +1413,19 @@
 			<position x="4" y="1" z="2"/>
 			<physics_shape_rotation/>
 		</voxel>
-		<voxel flags="1">
+		<voxel>
 			<position x="3" y="2" z="3"/>
 			<physics_shape_rotation/>
 		</voxel>
-		<voxel flags="1">
+		<voxel>
 			<position x="3" y="2" z="4"/>
 			<physics_shape_rotation/>
 		</voxel>
-		<voxel flags="1">
+		<voxel>
 			<position x="4" y="2" z="3"/>
 			<physics_shape_rotation/>
 		</voxel>
-		<voxel flags="1">
+		<voxel>
 			<position x="4" y="2" z="4"/>
 			<physics_shape_rotation/>
 		</voxel>
@@ -1444,19 +1445,19 @@
 			<position x="-3" y="1" z="3"/>
 			<physics_shape_rotation/>
 		</voxel>
-		<voxel flags="1">
+		<voxel>
 			<position x="-3" y="2" z="4"/>
 			<physics_shape_rotation/>
 		</voxel>
-		<voxel flags="1">
+		<voxel>
 			<position x="-4" y="2" z="4"/>
 			<physics_shape_rotation/>
 		</voxel>
-		<voxel flags="1">
+		<voxel>
 			<position x="-3" y="2" z="3"/>
 			<physics_shape_rotation/>
 		</voxel>
-		<voxel flags="1">
+		<voxel>
 			<position x="-4" y="2" z="3"/>
 			<physics_shape_rotation/>
 		</voxel>
@@ -1484,11 +1485,11 @@
 			<position x="3" y="3" z="-3"/>
 			<physics_shape_rotation/>
 		</voxel>
-		<voxel flags="1">
+		<voxel>
 			<position x="3" y="2" z="-3"/>
 			<physics_shape_rotation/>
 		</voxel>
-		<voxel flags="1">
+		<voxel>
 			<position x="3" y="2" z="-4"/>
 			<physics_shape_rotation/>
 		</voxel>
@@ -1500,27 +1501,27 @@
 			<position x="3" y="1" z="-4"/>
 			<physics_shape_rotation/>
 		</voxel>
-		<voxel flags="1">
+		<voxel>
 			<position x="4" y="2" z="-3"/>
 			<physics_shape_rotation/>
 		</voxel>
-		<voxel flags="1">
+		<voxel>
 			<position x="4" y="2" z="-4"/>
 			<physics_shape_rotation/>
 		</voxel>
-		<voxel flags="1">
+		<voxel>
 			<position x="-3" y="2" z="-3"/>
 			<physics_shape_rotation/>
 		</voxel>
-		<voxel flags="1">
+		<voxel>
 			<position x="-3" y="2" z="-4"/>
 			<physics_shape_rotation/>
 		</voxel>
-		<voxel flags="1">
+		<voxel>
 			<position x="-4" y="2" z="-4"/>
 			<physics_shape_rotation/>
 		</voxel>
-		<voxel flags="1">
+		<voxel>
 			<position x="-4" y="2" z="-3"/>
 			<physics_shape_rotation/>
 		</voxel>
@@ -1732,11 +1733,91 @@
 			<position x="-4" y="4" z="4"/>
 			<physics_shape_rotation/>
 		</voxel>
+		<voxel>
+			<position x="-4" y="2" z="-2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="-4" y="2" z="-1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="-4" y="2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="-4" y="2" z="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="-4" y="2" z="2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="-3" y="2" z="-2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="-3" y="2" z="-1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="-3" y="2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="-3" y="2" z="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="-3" y="2" z="2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="3" y="2" z="-2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="3" y="2" z="-1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="3" y="2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="3" y="2" z="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="3" y="2" z="2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="4" y="2" z="-2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="4" y="2" z="-1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="4" y="2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="4" y="2" z="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="4" y="2" z="2"/>
+			<physics_shape_rotation/>
+		</voxel>
 	</voxels>
 	<voxel_min x="-4" z="-4"/>
 	<voxel_max x="4" y="4" z="4"/>
 	<voxel_physics_min x="-4" z="-4"/>
-	<voxel_physics_max x="4" y="2" z="4"/>
+	<voxel_physics_max x="4" y="1" z="4"/>
 	<bb_physics_min/>
 	<bb_physics_max/>
 	<compartment_sample_pos/>
@@ -1763,7 +1844,6 @@
 	<magnet_offset/>
 	<connector_axis/>
 	<connector_up/>
-	<tooltip_properties description="Attaches to rail lines. Connect to a train wheel drive piston or another steam train assembly." short_description="Steam powered train wheel assembly."/>
 	<jet_engine_connections_prev/>
 	<jet_engine_connections_next/>
 	<particle_direction/>

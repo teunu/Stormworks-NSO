@@ -40,7 +40,7 @@
 		<physics_mesh id="physics_mesh3" file_name="meshes/workbench_phys.phys">
 			<transform 00="0" 02="1" 20="-1" 22="0" 30="313.915741" 31="6.850771" 32="230.894775"/>
 		</physics_mesh>
-		<physics_mesh id="sale_sign_phys" parent_id="sale_sign_mesh" file_name="meshes/for_sale_sign_phys.phys">
+		<physics_mesh id="sale_sign_phys" parent_id="sale_sign_interact" file_name="meshes/for_sale_sign_phys.phys">
 			<transform 00="-1" 22="-1" 30="148.521988" 31="5.794517" 32="317.902191"/>
 		</physics_mesh>
 		<physics_mesh id="physics_mesh5" file_name="meshes/arid_mainland_assets/flatpack_house_phys.phys">
@@ -197,10 +197,19 @@
 			<transform 00="-0" 02="-1" 20="1" 22="-0" 30="352.831665" 31="5.989484" 32="250.99704"/>
 		</markers>
 		<markers id="purchase_marker" marker_type="5" icon="1">
-			<transform 30="353.764038" 31="6.100468" 32="248.606125"/>
+			<transform 30="353.764038" 31="6.89926" 32="248.606125"/>
 		</markers>
 		<markers id="tile_marker4" marker_type="13" string_data="JSI Dock" icon="1">
 			<transform 30="221.609314" 31="28.353148" 32="304.468079"/>
+		</markers>
+		<markers id="tile_marker6" marker_type="9">
+			<transform 30="354.150818" 31="6.655746" 32="252.773911"/>
+		</markers>
+		<markers id="tile_marker7" marker_type="9">
+			<transform 30="399.407257" 31="9.011471" 32="245.805466"/>
+		</markers>
+		<markers id="tile_marker8" marker_type="9">
+			<transform 30="193.739349" 31="6.586754" 32="282.372467"/>
 		</markers>
 	</tile_markers>
 	<mission_zones/>

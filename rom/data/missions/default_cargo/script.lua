@@ -225,12 +225,17 @@ function onTick(delta_worldtime)
 						end
 						server.setVehicleTooltip(cargo_package_object.vehicle_id, tooltip)
 					end
-				elseif cargo_package_object.timer > cargo_package_object.life then
-					is_expired = true
-					cargo_package_object.state = STATE_EXPIRED
 				end
 
-				cargo_package_object.timer = cargo_package_object.timer + 1
+				if cargo_package_object.state == STATE_DEFAULT then
+					cargo_package_object.timer = cargo_package_object.timer + delta_worldtime
+
+					if cargo_package_object.timer > cargo_package_object.life then
+						is_expired = true
+						cargo_package_object.state = STATE_EXPIRED
+						server.setVehicleTooltip(cargo_package_object.vehicle_id, "Package Expired")
+					end
+				end
 			else
 				is_expired = true
 			end

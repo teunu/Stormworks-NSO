@@ -44,6 +44,7 @@ function onTick(game_ticks)
 
 		if port.id % 60 == tick then
 
+			local is_update = false
 			local c, u, d, j = server.getTileInventory(port.transform)
 
 			local tank_data, success = server.getVehicleTank(port.id, "diesel_in")
@@ -51,6 +52,7 @@ function onTick(game_ticks)
 				if tank_data.value > 0 then
 					d = d + tank_data.value
 					server.setVehicleTank(port.id, "diesel_in", 0, 0)
+					is_update = true
 				end
 			end
 			local tank_data2, success2 = server.getVehicleTank(port.id, "jet_in")
@@ -58,6 +60,7 @@ function onTick(game_ticks)
 				if tank_data2.value > 0 then
 					j = j + tank_data2.value
 					server.setVehicleTank(port.id, "jet_in", 0, 0)
+					is_update = true
 				end
 			end
 
@@ -65,9 +68,11 @@ function onTick(game_ticks)
 			if success then
 				if tank_data.value < tank_data.capacity then
 					local delta = tank_data.capacity - tank_data.value
-					if delta < d then
+					delta = math.min(delta, d)
+					if delta > 0 then
 						d = d - delta
-						server.setVehicleTank(port.id, "diesel_out", tank_data.capacity, tank_data.fluid_type)
+						server.setVehicleTank(port.id, "diesel_out", tank_data.value + delta, tank_data.fluid_type)
+						is_update = true
 					end
 				end
 			end
@@ -75,9 +80,11 @@ function onTick(game_ticks)
 			if success2 then
 				if tank_data2.value < tank_data2.capacity then
 					local delta = tank_data2.capacity - tank_data2.value
-					if delta < j then
+					delta = math.min(delta, j)
+					if delta > 0 then
 						j = j - delta
-						server.setVehicleTank(port.id, "jet_out", tank_data2.capacity, tank_data2.fluid_type)
+						server.setVehicleTank(port.id, "jet_out", tank_data2.value + delta, tank_data2.fluid_type)
+						is_update = true
 					end
 				end
 			end
@@ -87,17 +94,21 @@ function onTick(game_ticks)
 				if hopper_data.values[0] > 0 then
 					c = c + hopper_data.values[0]
 					server.setVehicleHopper(port.id, "minerals_in", 0, 0)
+					is_update = true
 				end
 				if hopper_data.values[11] > 0 then
 					u = u + hopper_data.values[11]
 					server.setVehicleHopper(port.id, "minerals_in", 0, 11)
+					is_update = true
 				end
 			end
 
 			server.setVehicleKeypad(port.id, "diesel_level", d)
 			server.setVehicleKeypad(port.id, "jet_level", j)
 
-			server.setTileInventory(port.transform, c, u, d, j)
+			if is_update then
+				server.setTileInventory(port.transform, c, u, d, j)
+			end
 		end
 	end
 end

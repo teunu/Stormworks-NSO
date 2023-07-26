@@ -2,8 +2,6 @@ vehicle_count = property.slider("AI Count", 0, 256, 1, 128)
 
 g_savedata = { vehicles = {} }
 
-vehicle_data = {}
-
 built_locations = {}
 unique_locations = {}
 
@@ -40,8 +38,7 @@ function onCreate(is_world_create)
                 zones = spawnObjects(spawn_transform, location.playlist_index, location.location_index, location.objects.zones, all_mission_objects)
             }
 
-            g_savedata.vehicles[spawned_objects.vehicle.id] = {survivors = spawned_objects.survivors, destination = { x = 0, z = 0 }, map_id = server.getMapID(), state = { s = "pseudo", timer = math.fmod(spawned_objects.vehicle.id, 300) }, bounds = location.objects.vehicle.bounds, size = spawned_objects.vehicle.size }
-            vehicle_data[spawned_objects.vehicle.id] = { path = {} }
+            g_savedata.vehicles[spawned_objects.vehicle.id] = {survivors = spawned_objects.survivors, destination = { x = 0, z = 0 }, path = {}, map_id = server.getMapID(), state = { s = "pseudo", timer = math.fmod(spawned_objects.vehicle.id, 300) }, bounds = location.objects.vehicle.bounds, size = spawned_objects.vehicle.size, current_damage = 0, despawn_timer = 0, ai_type = spawned_objects.vehicle.ai_type }
         end
 
         for i = 1, #unique_locations do
@@ -61,13 +58,16 @@ function onCreate(is_world_create)
                 zones = spawnObjects(spawn_transform, location.playlist_index, location.location_index, location.objects.zones, all_mission_objects)
             }
 
-            g_savedata.vehicles[spawned_objects.vehicle.id] = {survivors = spawned_objects.survivors, destination = { x = 0, z = 0 }, map_id = server.getMapID(), state = { s = "pseudo", timer = math.fmod(spawned_objects.vehicle.id, 300) }, bounds = location.objects.vehicle.bounds, size = spawned_objects.vehicle.size }
-            vehicle_data[spawned_objects.vehicle.id] = { path = {} }
+            g_savedata.vehicles[spawned_objects.vehicle.id] = {survivors = spawned_objects.survivors, destination = { x = 0, z = 0 },  path = {}, map_id = server.getMapID(), state = { s = "pseudo", timer = math.fmod(spawned_objects.vehicle.id, 300) }, bounds = location.objects.vehicle.bounds, size = spawned_objects.vehicle.size, current_damage = 0, despawn_timer = 0, ai_type = spawned_objects.vehicle.ai_type }
         end
     else
-
         for vehicle_id, vehicle_object in pairs(g_savedata.vehicles) do
-            vehicle_data[vehicle_id] = { path = createPath(vehicle_id) }
+
+            if vehicle_object.path == nil then
+                createDestination(vehicle_id)
+                vehicle_object.path = createPath(vehicle_id)
+            end
+
             if server.getVehicleSimulating(vehicle_id) then
                 vehicle_object.state.s = "pathing"
             else
@@ -76,6 +76,8 @@ function onCreate(is_world_create)
             if vehicle_object.bounds == nil then
                 vehicle_object.bounds = { x_min = -40000, z_min = -40000, x_max = 40000, z_max = 140000}
             end
+            if vehicle_object.current_damage == nil then vehicle_object.current_damage = 0 end
+            if vehicle_object.despawn_timer == nil then vehicle_object.despawn_timer = 0 end
         end
 
     end
@@ -204,159 +206,245 @@ function createPath(vehicle_id)
     end
 
    return path_list
-
 end
 
 function onTick(tick_time)
 
     for vehicle_id, vehicle_object in pairs(g_savedata.vehicles) do
 
-        vehicle_object.state.timer = vehicle_object.state.timer + 1
+        if vehicle_object ~= nil then
+            vehicle_object.state.timer = vehicle_object.state.timer + 1
 
-        local vehicle_path = vehicle_data[vehicle_id].path
+            if vehicle_object.state.s == "pathing" then
 
-        if vehicle_object.state.s == "pathing" then
+                if #vehicle_object.path > 0 then
 
-            if #vehicle_path > 0 then
+                    if vehicle_object.state.timer >= 300 then
 
-                if vehicle_object.state.timer >= 300 then
+                        vehicle_object.state.timer = 0
 
-                    vehicle_object.state.timer = 0
+                        k1 = true
 
-                    k1 = true
+                        local vehicle_pos = server.getVehiclePos(vehicle_id)
+                        local distance = calculate_distance_to_next_waypoint(vehicle_object.path[1], vehicle_pos)
+                        server.setAITarget(vehicle_object.survivors[1].id, (matrix.translation(vehicle_object.path[1].x, 0, vehicle_object.path[1].z)))
+                        server.setAIState(vehicle_object.survivors[1].id, 1)
 
-                    local vehicle_pos = server.getVehiclePos(vehicle_id)
-                    local distance = calculate_distance_to_next_waypoint(vehicle_path[1], vehicle_pos)
-                    server.setAITarget(vehicle_object.survivors[1].id, (matrix.translation(vehicle_path[1].x, 0, vehicle_path[1].z)))
-                    server.setAIState(vehicle_object.survivors[1].id, 1)
+                        refuel(vehicle_id)
 
-                    refuel(vehicle_id)
-
-                    if distance < 100 then
-                        table.remove(vehicle_path, 1)
-                    end
-                end
-
-            else
-                vehicle_object.state.s = "waiting"
-                server.setAIState(vehicle_object.survivors[1].id, 0)
-            end
-
-        elseif vehicle_object.state.s == "waiting" then
-
-            if vehicle_object.state.timer >= 3600 then
-                vehicle_object.state.timer = 0
-                createDestination(vehicle_id)
-                vehicle_data[vehicle_id] = { path = createPath(vehicle_id) }
-
-                if server.getVehicleSimulating(vehicle_id) then
-                    vehicle_object.state.s = "pathing"
-                else
-                    vehicle_object.state.s = "pseudo"
-                end
-
-                refuel(vehicle_id)
-            end
-
-        elseif vehicle_object.state.s == "pseudo" then
-
-            if vehicle_object.state.timer >= 900 then
-
-                vehicle_object.state.timer = 0
-
-                if #vehicle_path > 0 then
-                    local vehicle_transform = server.getVehiclePos(vehicle_id)
-                    local vehicle_x, vehicle_y, vehicle_z = matrix.position(vehicle_transform)
-
-                    local speed = 60
-                    local movement_x = vehicle_path[1].x - vehicle_x
-                    local movement_z = vehicle_path[1].z - vehicle_z
-
-                    local length_xz = math.sqrt((movement_x * movement_x) + (movement_z * movement_z))
-
-                    movement_x = movement_x * speed / length_xz
-                    movement_z = movement_z * speed / length_xz
-
-                    local rotation_matrix = matrix.rotationToFaceXZ(movement_x, movement_z)
-                    local new_pos = matrix.multiply(matrix.translation(vehicle_x + movement_x, vehicle_y, vehicle_z + movement_z), rotation_matrix)
-
-                    if server.getVehicleLocal(vehicle_id) == false then
-                        local _, new_transform = server.setVehiclePosSafe(vehicle_id, new_pos)
-                        for npc_index, npc_object in pairs(vehicle_object.survivors) do
-                            server.setObjectPos(npc_object.id, new_transform)
+                        if distance < 100 then
+                            if render_debug then server.removeMapLine(0, vehicle_object.path[1].ui_id) end
+                            table.remove(vehicle_object.path, 1)
                         end
                     end
 
-                    local distance = calculate_distance_to_next_waypoint(vehicle_path[1], vehicle_transform)
-                    if distance < 100 then
-                        table.remove(vehicle_path, 1)
-                    end
                 else
                     vehicle_object.state.s = "waiting"
                     server.setAIState(vehicle_object.survivors[1].id, 0)
                 end
-            end
-        end
- 
-        if render_debug then
-            local vehicle_pos = server.getVehiclePos(vehicle_id)
-            local vehicle_x, vehicle_y, vehicle_z = matrix.position(vehicle_pos)
 
-            local debug_data = vehicle_object.state.s .. " : " .. vehicle_object.state.timer .. "\n"
+            elseif vehicle_object.state.s == "waiting" then
 
-            if vehicle_object.size then debug_data = debug_data .. "Size: " .. vehicle_object.size .. "\n" end
-            debug_data = debug_data .. "Pos: " .. math.floor(vehicle_x) .. "\n".. math.floor(vehicle_y) .. "\n".. math.floor(vehicle_z) .. "\n"
+                local wait_time = 3600
+                if vehicle_object.ai_type == "hospital" then wait_time = 3600 * 30 end
 
-            server.removeMapObject(0, vehicle_object.map_id)
-            server.addMapObject(0, vehicle_object.map_id, 1, 17, v_x, v_z, 0, 0, vehicle_id, 0, "AI Boat" .. vehicle_id, 1, debug_data)
+                if vehicle_object.state.timer >= wait_time then
+                    vehicle_object.state.timer = 0
 
-            if(#vehicle_path >= 1) then
-                server.removeMapLine(0, vehicle_object.map_id)
+                    if render_debug then
+                        for i = 1, #vehicle_object.path - 1 do
+                            server.removeMapLine(0, vehicle_object.path[i].ui_id)
+                        end
+                    end
 
-                if tostring(vehicle_id) == g_debug_vehicle_id or g_debug_vehicle_id == tostring(0) then
-                    server.addMapLine(0, vehicle_object.map_id, vehicle_pos, matrix.translation(vehicle_path[1].x, vehicle_path[1].y, vehicle_path[1].z), 0.5, 0, 0, 255, 255)
+                    createDestination(vehicle_id)
+                    vehicle_object.path = createPath(vehicle_id)
+
+                    if server.getVehicleSimulating(vehicle_id) then
+                        vehicle_object.state.s = "pathing"
+                    else
+                        vehicle_object.state.s = "pseudo"
+                    end
+
+                    refuel(vehicle_id)
                 end
 
-                for i = 1, #vehicle_path - 1 do
-                    local waypoint = vehicle_path[i]
-                    local waypoint_next = vehicle_path[i + 1]
+            elseif vehicle_object.state.s == "pseudo" then
 
-                    local waypoint_pos = matrix.translation(waypoint.x, waypoint.y, waypoint.z)
-                    local waypoint_pos_next = matrix.translation(waypoint_next.x, waypoint_next.y, waypoint_next.z)
+                if vehicle_object.state.timer >= 900 then
 
-                    server.removeMapLine(0, waypoint.ui_id)
+                    vehicle_object.state.timer = 0
 
-                    if tostring(vehicle_id) == g_debug_vehicle_id or g_debug_vehicle_id == tostring(0) then
-                        server.addMapLine(0, waypoint.ui_id, waypoint_pos, waypoint_pos_next, 0.5, 0, 0, 255, 255)
+                    if #vehicle_object.path > 0 then
+                        local vehicle_transform = server.getVehiclePos(vehicle_id)
+                        local vehicle_x, vehicle_y, vehicle_z = matrix.position(vehicle_transform)
+
+                        local speed = 60
+                        local movement_x = vehicle_object.path[1].x - vehicle_x
+                        local movement_z = vehicle_object.path[1].z - vehicle_z
+
+                        local length_xz = math.sqrt((movement_x * movement_x) + (movement_z * movement_z))
+
+                        movement_x = movement_x * speed / length_xz
+                        movement_z = movement_z * speed / length_xz
+
+                        local rotation_matrix = matrix.rotationToFaceXZ(movement_x, movement_z)
+                        local new_pos = matrix.multiply(matrix.translation(vehicle_x + movement_x, vehicle_y, vehicle_z + movement_z), rotation_matrix)
+
+                        if server.getVehicleLocal(vehicle_id) == false then
+                            local success, new_transform = server.setVehiclePosSafe(vehicle_id, new_pos)
+                            for npc_index, npc_object in pairs(vehicle_object.survivors) do
+                                server.setObjectPos(npc_object.id, new_transform)
+                            end
+                        end
+
+                        local distance = calculate_distance_to_next_waypoint(vehicle_object.path[1], vehicle_transform)
+                        if distance < 100 then
+                            if render_debug then server.removeMapLine(0, vehicle_object.path[1].ui_id) end
+                            table.remove(vehicle_object.path, 1)
+                        end
+                    else
+                        vehicle_object.state.s = "waiting"
+                        server.setAIState(vehicle_object.survivors[1].id, 0)
                     end
                 end
             end
-        end
 
-        if  vehicle_object.state.timer == 0 then
-            local vehicle_pos = server.getVehiclePos(vehicle_id)
-            if vehicle_pos[14] < -20 then
-                server.despawnVehicle(vehicle_id, true)
-                for _, survivor in pairs(vehicle_object.survivors) do
-                    server.despawnObject(survivor.id, true)
+            if render_debug then
+                if tostring(vehicle_id) == g_debug_vehicle_id or g_debug_vehicle_id == tostring(0) then
+
+                    local vehicle_pos = server.getVehiclePos(vehicle_id)
+                    local vehicle_x, vehicle_y, vehicle_z = matrix.position(vehicle_pos)
+
+                    local debug_data = vehicle_object.state.s .. " : " .. vehicle_object.state.timer .. "\n"
+
+                    if vehicle_object.size then debug_data = debug_data .. "Size: " .. vehicle_object.size .. "\n" end
+                    debug_data = debug_data .. "Pos: " .. math.floor(vehicle_x) .. "\n".. math.floor(vehicle_y) .. "\n".. math.floor(vehicle_z) .. "\n"
+
+                    server.removeMapObject(0, vehicle_object.map_id)
+                    server.addMapObject(0, vehicle_object.map_id, 1, 17, v_x, v_z, 0, 0, vehicle_id, 0, "AI Boat" .. vehicle_id, 1, debug_data)
+
+                    if(#vehicle_object.path >= 1) then
+                        server.removeMapLine(0, vehicle_object.map_id)
+                        server.addMapLine(0, vehicle_object.map_id, vehicle_pos, matrix.translation(vehicle_object.path[1].x, vehicle_object.path[1].y, vehicle_object.path[1].z), 0.5, 0, 0, 255, 255)
+
+                        for i = 1, #vehicle_object.path - 1 do
+                            local waypoint = vehicle_object.path[i]
+                            local waypoint_next = vehicle_object.path[i + 1]
+
+                            local waypoint_pos = matrix.translation(waypoint.x, waypoint.y, waypoint.z)
+                            local waypoint_pos_next = matrix.translation(waypoint_next.x, waypoint_next.y, waypoint_next.z)
+
+                            server.removeMapLine(0, waypoint.ui_id)
+                            server.addMapLine(0, waypoint.ui_id, waypoint_pos, waypoint_pos_next, 0.5, 0, 0, 255, 255)
+                        end
+                    end
+                end
+            end
+
+            local vehicle_hp = 600
+            if vehicle_object.size == "large" then
+                vehicle_hp = 2400
+            end
+            if vehicle_object.size == "medium" then
+                vehicle_hp = 1200
+            end
+            if  vehicle_object.current_damage > vehicle_hp then
+                vehicle_object.despawn_timer = vehicle_object.despawn_timer + 1
+            end
+
+            if vehicle_object.state.timer == 0 or (vehicle_object.despawn_timer > 60 * 60 * 2) then
+                local vehicle_pos = server.getVehiclePos(vehicle_id)
+                if vehicle_pos[14] < -20 or vehicle_object.despawn_timer > 60 * 60 * 2 then
+                    server.despawnVehicle(vehicle_id, true)
+                    for _, survivor in pairs(vehicle_object.survivors) do
+                        server.despawnObject(survivor.id, true)
+                    end
+                    g_savedata.vehicles[vehicle_id] = nil
                 end
             end
         end
     end
 end
 
-function onCustomCommand(full_message, user_peer_id, is_admin, is_auth, command, arg1, arg2, arg3, arg4)
+function onVehicleDamaged(vehicle_id, amount, x, y, z, body_id)
+    local vehicle_object = g_savedata.vehicles[vehicle_id]
+    if vehicle_object ~= nil then
+       vehicle_object.current_damage = vehicle_object.current_damage + amount
+    end
+end
 
-	if command == "?ai_debug" and server.isDev() then
-        render_debug = not render_debug
+function summonHospitalShip(x, z)
 
-        for vehicle_id, vehicle_object in pairs(g_savedata.vehicles) do
-            server.removeMapObject(0,vehicle_object.map_id)
+    local id=nil
+    local object=nil
+    local distsq=nil
+
+    for vehicle_id, vehicle_object in pairs(g_savedata.vehicles) do
+        if vehicle_object.ai_type == "hospital" then
+            local vehicle_transform = server.getVehiclePos(vehicle_id)
+            local vehicle_x, vehicle_y, vehicle_z = matrix.position(vehicle_transform)
+
+            local vector_x = vehicle_x - x
+            local vector_z = vehicle_z - z
+
+            local this_distsq = (vector_x * vector_x) + (vector_z * vector_z)
+
+            if distsq == nil or this_distsq < distsq then
+                object = vehicle_object
+                id = vehicle_id
+                distsq = this_distsq
+            end
         end
-	end
+    end
 
-    if command == "?ai_debug_vehicle" and server.isDev() then
-        g_debug_vehicle_id = arg1
+    if object ~= nil then
+        local random_transform = matrix.translation(x, 0, z)
+        local target_pos, success = server.getOceanTransform(random_transform, 1000, 2000)
+
+        if success then
+            local destination_pos = matrix.multiply(target_pos, matrix.translation(math.random(-500, 500), 0, math.random(-500, 500)))
+            local dest_x, dest_y, dest_z = matrix.position(destination_pos)
+
+            if render_debug then
+                for i = 1, #object.path - 1 do
+                    server.removeMapLine(0, object.path[i].ui_id)
+                end
+            end
+
+            object.destination.x = dest_x
+            object.destination.z = dest_z
+            object.path = createPath(id)
+
+            if server.getVehicleSimulating(id) then
+                object.state.s = "pathing"
+            else
+                object.state.s = "pseudo"
+            end
+        end
+
+        refuel(id)
+    end
+end
+
+function onCustomCommand(full_message, peer_id, is_admin, is_auth, command, arg1, arg2, arg3, arg4)
+
+    if peer_id == -1 then
+		if command == "?ai_summon_hospital_ship" then
+			summonHospitalShip(arg1, arg2)
+		end
+	else
+        if command == "?ai_debug" and server.isDev() then
+            render_debug = not render_debug
+
+            for vehicle_id, vehicle_object in pairs(g_savedata.vehicles) do
+                server.removeMapObject(0, vehicle_object.map_id)
+            end
+        end
+
+        if command == "?ai_debug_vehicle" and server.isDev() then
+            g_debug_vehicle_id = arg1
+        end
     end
 end
 
@@ -429,7 +517,12 @@ function spawnObject(spawn_transform, playlist_index, location_index, object, pa
 			end
 		end
 
-		local object_data = { type = object.type, id = spawned_object_id, component_id = object.id, size = l_size }
+        local l_ai_type = "default"
+		if hasTag(object.tags, "capability=hospital") then
+			l_ai_type = "hospital"
+		end
+
+		local object_data = { type = object.type, id = spawned_object_id, component_id = object.id, size = l_size, ai_type = l_ai_type }
 
 		if spawned_objects ~= nil then
 			table.insert(spawned_objects, object_data)

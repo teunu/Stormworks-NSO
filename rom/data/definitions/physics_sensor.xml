@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition name="Physics Sensor" category="7" type="16" mass="1.000000" value="20" flags="0" mesh_data_name="meshes/component_altisensor.mesh" mesh_editor_only_name="meshes/arrow_physics_sensor.mesh" logic_gate_type="61">
+	<surfaces>
+		<surface orientation="3" rotation="0" shape="1" trans_type="0" is_reverse_normals="false">
+			<position x="0" y="0" z="0"/>
+		</surface>
+		<surface orientation="4" rotation="0" shape="1" trans_type="0" is_reverse_normals="false">
+			<position x="0" y="0" z="0"/>
+		</surface>
+		<surface orientation="1" rotation="0" shape="1" trans_type="0" is_reverse_normals="false">
+			<position x="0" y="0" z="0"/>
+		</surface>
+		<surface orientation="5" rotation="0" shape="1" trans_type="0" is_reverse_normals="false">
+			<position x="0" y="0" z="0"/>
+		</surface>
+		<surface orientation="0" rotation="0" shape="1" trans_type="0" is_reverse_normals="false">
+			<position x="0" y="0" z="0"/>
+		</surface>
+	</surfaces>
+	<buoyancy_surfaces>
+		<surface orientation="1" rotation="0" shape="1" trans_type="0" is_reverse_normals="false">
+			<position x="0" y="0" z="0"/>
+		</surface>
+		<surface orientation="5" rotation="0" shape="1" trans_type="0" is_reverse_normals="false">
+			<position x="0" y="0" z="0"/>
+		</surface>
+		<surface orientation="0" rotation="0" shape="1" trans_type="0" is_reverse_normals="false">
+			<position x="0" y="0" z="0"/>
+		</surface>
+		<surface orientation="4" rotation="0" shape="1" trans_type="0" is_reverse_normals="false">
+			<position x="0" y="0" z="0"/>
+		</surface>
+		<surface orientation="2" rotation="0" shape="1" trans_type="0" is_reverse_normals="false">
+			<position x="0" y="0" z="0"/>
+		</surface>
+		<surface orientation="3" rotation="0" shape="1" trans_type="0" is_reverse_normals="false">
+			<position x="0" y="0" z="0"/>
+		</surface>
+	</buoyancy_surfaces>
+	<logic_nodes>
+		<logic_node orientation="0" label="Composite Output" mode="0" type="5" description="Outputs [1] x position, [2] y position, [3] z position, [4] euler rotation x, [5] euler rotation y, [6] euler rotation z, [7] linear velocity x, [8] linear velocity y, [9] linear velocity z, [10] angular velocity x, [11] angular velocity y, [12] angular velocity z, [13] absolute linear velocity, [14] absolute angular velocity, [15] local z tilt, [16] local x tilt and [17] compass heading (-0.5 to 0.5) to the respective composite channels." flags="0">
+			<position x="0" y="0" z="0"/>
+		</logic_node>
+		<logic_node label="Electric" mode="1" type="4" description="Electrical power connection." flags="0">
+			<position x="0" y="0" z="0"/>
+		</logic_node>
+	</logic_nodes>
+	<voxels>
+		<voxel flags="1" physics_shape="0">
+			<position x="0" y="0" z="0"/>
+			<physics_shape_rotation 00="1" 01="0" 02="0" 10="0" 11="1" 12="0" 20="0" 21="0" 22="1"/>
+		</voxel>
+	</voxels>
+	<voxel_min x="0" y="0" z="0"/>
+	<voxel_max x="0" y="0" z="0"/>
+	<voxel_physics_min x="0" y="0" z="0"/>
+	<voxel_physics_max x="0" y="0" z="0"/>
+	<bb_physics_min x="0.000000" y="0.000000" z="0.000000"/>
+	<bb_physics_max x="0.000000" y="0.000000" z="0.000000"/>
+	<constraint_pos_parent x="0.000000" y="0.000000" z="0.000000"/>
+	<constraint_pos_child x="0.000000" y="0.000000" z="0.000000"/>
+	<voxel_location_child x="0" y="0" z="0"/>
+	<force_dir x="0.000000" y="0.000000" z="0.000000"/>
+	<light_position x="0" y="0" z="0"/>
+	<light_color x="1.000000" y="1.000000" z="1.000000"/>
+	<door_size x="1.000000" y="1.000000" z="1.000000"/>
+	<dynamic_body_position x="0" y="0" z="0"/>
+	<dynamic_rotation_axes x="0.000000" y="1.000000" z="0.000000"/>
+	<dynamic_side_axis x="1.000000" y="0.000000" z="0.000000"/>
+	<magnet_offset x="0.000000" y="0.000000" z="0.000000"/>
+	<tooltip_properties description="Outputs physics information to a composite logic node. Requires Electric for GPS position functionality. This component is directed along its local Y axis." short_description="Sensor component that outputs various physics measurements such as position and velocity."/>
+	<reward_properties number_rewarded="4"/>
+</definition>
+

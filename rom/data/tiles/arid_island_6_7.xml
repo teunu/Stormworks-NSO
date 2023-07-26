@@ -14,7 +14,7 @@
 			<transform 00="-0.898794" 02="0.438371" 20="-0.438371" 22="-0.898794" 30="164.715622" 31="67.668991" 32="-479.61377"/>
 		</mesh>
 		<mesh id="mesh5" file_name="meshes/workbench.mesh">
-			<transform 00="-0.422618" 02="-0.906308" 20="0.906308" 22="-0.422618" 30="139.416306" 31="68.348785" 32="-467.966675"/>
+			<transform 00="-0.422618" 02="-0.906308" 20="0.906308" 22="-0.422618" 30="17.264034" 31="68.348785" 32="-430.287048"/>
 		</mesh>
 		<mesh id="mesh5" file_name="meshes/workbench.mesh">
 			<transform 00="0.422618" 02="0.906308" 20="-0.906308" 22="0.422618" 30="140.847137" 31="68.348785" 32="-464.898254"/>
@@ -58,14 +58,14 @@
 		<physics_mesh id="physics_mesh3" file_name="meshes/arid_mainland_assets/arid_mainland_train_terminal_single_phys.phys">
 			<transform 00="-0.898794" 02="0.438371" 20="-0.438371" 22="-0.898794" 30="173.387589" 31="67.668991" 32="-461.833588"/>
 		</physics_mesh>
-		<physics_mesh id="physics_mesh4" file_name="meshes/workbench_phys.phys">
-			<transform 00="-0.422618" 02="-0.906308" 20="0.906308" 22="-0.422618" 30="139.558685" 31="68.348785" 32="-467.661346"/>
+		<physics_mesh id="physics_mesh14" file_name="meshes/train_buffer_phys.phys">
+			<transform 00="-0.887011" 02="0.461749" 20="-0.461749" 22="-0.887011" 30="154.970734" 31="67.419098" 32="-485.010223"/>
 		</physics_mesh>
 		<physics_mesh id="physics_mesh5" file_name="meshes/workbench_phys.phys">
 			<transform 00="0.422618" 02="0.906308" 20="-0.906308" 22="0.422618" 30="140.847137" 31="68.348785" 32="-464.898254"/>
 		</physics_mesh>
-		<physics_mesh id="physics_mesh6" file_name="meshes/workbench_phys.phys">
-			<transform 00="0.422618" 02="0.906308" 20="-0.906308" 22="0.422618" 30="139.416306" 31="68.348785" 32="-467.966675"/>
+		<physics_mesh id="physics_mesh15" file_name="meshes/train_buffer_phys.phys">
+			<transform 00="-0.887011" 02="0.461749" 20="-0.461749" 22="-0.887011" 30="34.181267" 31="67.419098" 32="-445.417511"/>
 		</physics_mesh>
 		<physics_mesh id="flat_pack_house_phys" file_name="meshes/arid_mainland_assets/flatpack_house_phys.phys">
 			<transform 00="0.906308" 02="-0.422618" 20="0.422618" 22="0.906308" 30="130.272385" 31="67.665657" 32="-438.936707"/>
@@ -76,23 +76,17 @@
 		<physics_mesh id="f_door_2_phys" parent_id="f_door_2" file_name="meshes/arid_mainland_assets/flatpack_door_phys.phys">
 			<transform 00="-0.422618" 02="-0.906308" 20="0.906308" 22="-0.422618" 30="133.048828" 31="67.740372" 32="-438.603668"/>
 		</physics_mesh>
-		<physics_mesh id="physics_mesh10" file_name="meshes/for_sale_sign_phys.phys">
+		<physics_mesh id="physics_mesh10" parent_id="sale_sign_interact" file_name="meshes/for_sale_sign_phys.phys">
 			<transform 30="123.479195" 31="67.496712" 32="-440.491882"/>
 		</physics_mesh>
 		<physics_mesh id="physics_mesh15" file_name="meshes/train_buffer_phys.phys">
 			<transform 00="-0.887011" 02="0.461749" 20="-0.461749" 22="-0.887011" 30="28.25679" 31="67.419098" 32="-456.189209"/>
 		</physics_mesh>
-		<physics_mesh id="physics_mesh14" file_name="meshes/train_buffer_phys.phys">
-			<transform 00="-0.887011" 02="0.461749" 20="-0.461749" 22="-0.887011" 30="23.555965" 31="67.419098" 32="-453.581757"/>
+		<physics_mesh id="physics_mesh14" file_name="meshes/workbench_phys.phys">
+			<transform 00="-0.422619" 02="-0.906308" 20="0.906308" 22="-0.422619" 30="17.264034" 31="68.348785" 32="-430.287048"/>
 		</physics_mesh>
 		<physics_mesh id="physics_mesh15" file_name="meshes/train_buffer_phys.phys">
 			<transform 00="-0.887011" 02="0.461749" 20="-0.461749" 22="-0.887011" 30="164.239014" 31="67.419098" 32="-467.900696"/>
-		</physics_mesh>
-		<physics_mesh id="physics_mesh14" file_name="meshes/train_buffer_phys.phys">
-			<transform 00="-0.887011" 02="0.461749" 20="-0.461749" 22="-0.887011" 30="154.970734" 31="67.419098" 32="-485.010223"/>
-		</physics_mesh>
-		<physics_mesh id="physics_mesh15" file_name="meshes/train_buffer_phys.phys">
-			<transform 00="-0.887011" 02="0.461749" 20="-0.461749" 22="-0.887011" 30="34.181267" 31="67.419098" 32="-445.417511"/>
 		</physics_mesh>
 	</physics_meshes>
 	<physics_dynamics/>
@@ -127,7 +121,7 @@
 	<screens/>
 	<edit_areas>
 		<edit_area id="workbench_edit" grid_size="7">
-			<transform 00="0.464842" 02="0.885394" 20="-0.885394" 22="0.464842" 30="139.906403" 31="70.44252" 32="-477.248749"/>
+			<transform 00="0.464842" 02="0.885394" 20="-0.885394" 22="0.464842" 30="18.234852" 31="70.46067" 32="-437.015259"/>
 			<size x="5" y="6" z="25"/>
 		</edit_area>
 		<edit_area id="workbench_b_edit" grid_size="7">
@@ -141,7 +135,7 @@
 	</edit_areas>
 	<interactables>
 		<interactable id="workbench_int" target_object_id="workbench_edit" label="Workbench" interact_type="2">
-			<transform 00="-0.422618" 02="-0.906308" 20="0.906308" 22="-0.422618" 30="139.323242" 31="68.348785" 32="-468.166199"/>
+			<transform 00="-0.422618" 02="-0.906308" 20="0.906308" 22="-0.422618" 30="17.315615" 31="68.348785" 32="-430.42984"/>
 			<size x="1.4" y="2" z="2"/>
 		</interactable>
 		<interactable id="workbench_b_int" target_object_id="workbench_b_edit" label="Workbench" interact_type="2">
@@ -210,6 +204,9 @@
 		</markers>
 		<markers id="tile_marker5" marker_type="13" string_data="Serpentine Trainyard" icon="1">
 			<transform 30="120.736191" 31="75.249962" 32="-428.842743"/>
+		</markers>
+		<markers id="tile_marker6" marker_type="9">
+			<transform 00="-0.722088" 02="-0.691801" 20="0.691801" 22="-0.722088" 30="132.05481" 31="68.441048" 32="-437.77301"/>
 		</markers>
 	</tile_markers>
 	<mission_zones/>
@@ -288,35 +285,35 @@
 			</links>
 		</track>
 		<track id="train_28">
-			<transform 30="-431.29776" 31="65.942123" 32="-163.393356"/>
+			<transform 30="-431.29776" 31="65.830307" 32="-163.393356"/>
 			<links>
 				<link id="train_27"/>
 				<link id="train_29"/>
 			</links>
 		</track>
 		<track id="train_29">
-			<transform 30="-424.633453" 31="66.432556" 32="-165.90419"/>
+			<transform 30="-424.633453" 31="66.170593" 32="-165.90419"/>
 			<links>
 				<link id="train_28"/>
 				<link id="train_30"/>
 			</links>
 		</track>
 		<track id="train_30">
-			<transform 30="-417.606628" 31="66.946854" 32="-168.975525"/>
+			<transform 30="-417.606628" 31="66.436218" 32="-168.975525"/>
 			<links>
 				<link id="train_31"/>
 				<link id="train_29"/>
 			</links>
 		</track>
 		<track id="train_31">
-			<transform 30="-411.177338" 31="67.393448" 32="-172.34021"/>
+			<transform 30="-411.177338" 31="66.681168" 32="-172.34021"/>
 			<links>
 				<link id="train_32"/>
 				<link id="train_30"/>
 			</links>
 		</track>
 		<track id="train_32">
-			<transform 30="-404.704224" 31="67.42128" 32="-175.770767"/>
+			<transform 30="-404.746246" 31="66.909157" 32="-175.777267"/>
 			<links>
 				<link id="train_31"/>
 				<link id="train_35"/>
@@ -325,22 +322,22 @@
 		<track id="train_33">
 			<transform 30="-368.627502" 31="67.468307" 32="-200.596878"/>
 			<links>
-				<link id="train_34"/>
 				<link id="train_38"/>
+				<link id="train_248"/>
 			</links>
 		</track>
 		<track id="train_34">
-			<transform 30="-386.106934" 31="67.468369" 32="-188.040909"/>
+			<transform 30="-386.216431" 31="67.460205" 32="-187.99913"/>
 			<links>
-				<link id="train_35"/>
-				<link id="train_33"/>
+				<link id="train_246"/>
+				<link id="train_247"/>
 			</links>
 		</track>
 		<track id="train_35">
-			<transform 30="-398.30722" 31="67.455734" 32="-179.778488"/>
+			<transform 30="-398.30722" 31="67.18483" 32="-179.778488"/>
 			<links>
-				<link id="train_34"/>
 				<link id="train_32"/>
+				<link id="train_247"/>
 			</links>
 		</track>
 		<track id="train_36">
@@ -1546,6 +1543,27 @@
 			<links>
 				<link id="train_182"/>
 				<link id="train_184"/>
+			</links>
+		</track>
+		<track id="train_246">
+			<transform 30="-380.223999" 31="67.471535" 32="-192.261688"/>
+			<links>
+				<link id="train_34"/>
+				<link id="train_248"/>
+			</links>
+		</track>
+		<track id="train_247">
+			<transform 30="-392.307312" 31="67.417465" 32="-183.833237"/>
+			<links>
+				<link id="train_35"/>
+				<link id="train_34"/>
+			</links>
+		</track>
+		<track id="train_248">
+			<transform 30="-374.290314" 31="67.471535" 32="-196.558167"/>
+			<links>
+				<link id="train_33"/>
+				<link id="train_246"/>
 			</links>
 		</track>
 	</train_tracks>

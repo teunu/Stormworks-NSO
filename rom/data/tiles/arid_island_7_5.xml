@@ -91,7 +91,7 @@
 		<physics_mesh id="door_c_phys" parent_id="door_c" file_name="meshes/door_hospital_phys.phys">
 			<transform 00="0.707107" 02="-0.707107" 20="0.707107" 22="0.707107" 30="80.100792" 31="175.920242" 32="-128.578491"/>
 		</physics_mesh>
-		<physics_mesh id="physics_mesh13" file_name="meshes/for_sale_sign_phys.phys">
+		<physics_mesh id="sale_sign_phys" parent_id="sale_sign_interact" file_name="meshes/for_sale_sign_phys.phys">
 			<transform 00="-0" 02="-1" 20="1" 22="-0" 30="68.350708" 31="175.914597" 32="-50.814346"/>
 		</physics_mesh>
 	</physics_meshes>
@@ -333,35 +333,35 @@
 			<transform 00="0.707107" 02="-0.707107" 20="0.707107" 22="0.707107" 30="77.441612" 31="177.222504" 32="-62.733437"/>
 			<size x="0.6" y="0.8" z="0.5"/>
 		</interactable>
-		<interactable id="sale_sign_interact" label="Buy Island" interact_type="3">
+		<interactable id="sale_sign_interact" target_object_id="hangar_doors_logic" label="Buy Island" interact_type="3">
 			<transform 30="69.231636" 31="176.939148" 32="-51.649467"/>
 			<size x="2" y="2" z="2"/>
 		</interactable>
 	</interactables>
 	<door_logic_nodes>
-		<logic id="h_door_06_logic" target_a="h_door_06_closed" target_b="h_door_06_open" target_movable="h_door_06" anim_duration="320">
-			<transform 30="41.769547" 31="175.920563" 32="-92.175217"/>
-		</logic>
 		<logic id="door_b_logic" target_a="door_b_closed" target_b="door_b_open" target_movable="door_b" anim_duration="100">
 			<transform 30="80.100792" 31="178.901718" 32="-128.578491"/>
 		</logic>
 		<logic id="door_c_logic" target_a="door_c_closed" target_b="door_c_open" target_movable="door_c" anim_duration="100">
 			<transform 30="80.100792" 31="175.920242" 32="-128.578491"/>
 		</logic>
-		<logic id="h_door_01_logic" target_a="h_door_01_closed" target_b="h_door_01_open" target_movable="h_door_01" anim_duration="320">
+		<logic id="h_door_01_logic" target_a="h_door_01_closed" target_b="h_door_01_open" target_movable="h_door_01" anim_duration="750">
 			<transform 30="66.916855" 31="175.920563" 32="-67.027893"/>
 		</logic>
-		<logic id="h_door_02_logic" target_a="h_door_02_closed" target_b="h_door_02_open" target_movable="h_door_02" anim_duration="320">
+		<logic id="h_door_02_logic" target_a="h_door_02_closed" target_b="h_door_02_open" target_movable="h_door_02" anim_duration="750">
 			<transform 30="62.206268" 31="175.920563" 32="-72.055923"/>
 		</logic>
-		<logic id="h_door_03_logic" target_a="h_door_03_closed" target_b="h_door_03_open" target_movable="h_door_03" anim_duration="320">
+		<logic id="h_door_03_logic" target_a="h_door_03_closed" target_b="h_door_03_open" target_movable="h_door_03" anim_duration="750">
 			<transform 30="57.316334" 31="175.920563" 32="-77.221931"/>
 		</logic>
-		<logic id="h_door_04_logic" target_a="h_door_04_closed" target_b="h_door_04_open" target_movable="h_door_04" anim_duration="320">
+		<logic id="h_door_04_logic" target_a="h_door_04_closed" target_b="h_door_04_open" target_movable="h_door_04" anim_duration="750">
 			<transform 30="52.003975" 31="175.920563" 32="-82.534286"/>
 		</logic>
-		<logic id="h_door_05_logic" target_a="h_door_05_closed" target_b="h_door_05_open" target_movable="h_door_05" anim_duration="320">
+		<logic id="h_door_05_logic" target_a="h_door_05_closed" target_b="h_door_05_open" target_movable="h_door_05" anim_duration="750">
 			<transform 30="46.904984" 31="175.920563" 32="-87.357216"/>
+		</logic>
+		<logic id="h_door_06_logic" target_a="h_door_06_closed" target_b="h_door_06_open" target_movable="h_door_06" anim_duration="750">
+			<transform 30="41.769547" 31="175.920563" 32="-92.175217"/>
 		</logic>
 		<logic id="door_a_logic" target_a="door_a_closed" target_b="door_a_open" target_movable="hangar_entrance" anim_duration="100">
 			<transform 30="82.519577" 31="175.920563" 32="-67.08326"/>
@@ -419,7 +419,7 @@
 	</light_logic_nodes>
 	<rotation_logic_nodes/>
 	<hangar_door_logic_nodes>
-		<logic id="hangar_doors_logic" target_id_0="h_door_01_logic" target_id_1="h_door_02_logic" target_id_2="h_door_03_logic" target_id_3="h_door_04_logic" target_id_4="h_door_05_logic" target_id_5="h_door_06_logic">
+		<logic id="hangar_doors_logic" target_id_0="h_door_01_logic" target_id_1="h_door_02_logic" target_id_2="h_door_03_logic" target_id_3="h_door_04_logic" target_id_4="h_door_05_logic" target_id_5="h_door_06_logic" target_id_6="hangar_doors_audio">
 			<transform 30="69.590424" 31="178.053604" 32="-63.473282"/>
 		</logic>
 		<logic id="room_omni_logic" target_id_0="omni_a_logic" target_id_1="omni_b_logic" target_id_2="omni_c_logic" target_id_3="omni_d_logic" target_id_4="omni_e_logic" target_id_5="omni_f_logic">
@@ -432,7 +432,11 @@
 			<transform 30="71.569366" 31="177.375427" 32="-61.464516"/>
 		</logic>
 	</hangar_door_logic_nodes>
-	<audio_logic_nodes/>
+	<audio_logic_nodes>
+		<logic id="hangar_doors_audio" start_filename="audio/elevator/cn_elevator_start.ogg" loop_filename="audio/elevator/cn_elevator_lp.ogg" end_filename="audio/elevator/cn_elevator_end.ogg" range_inner="15" range_outer="75" audio_gain="1" audio_underwater_affected="true" play_duration="725">
+			<transform 00="0.707107" 02="0.707107" 20="-0.707107" 22="0.707107" 30="54.765381" 31="180" 32="-80.16964"/>
+		</logic>
+	</audio_logic_nodes>
 	<tile_markers>
 		<markers id="h_door_01_closed" marker_type="8" icon="1">
 			<transform 00="-0.707107" 02="0.707107" 20="-0.707107" 22="-0.707107" 30="66.656349" 31="175.920563" 32="-67.288399"/>
@@ -494,13 +498,22 @@
 		<markers id="tile_marker19" marker_type="13" string_data="Ender Airfield" icon="10">
 			<transform 30="1.130945" 31="192.771927" 32="-30.011612"/>
 		</markers>
+		<markers id="tile_marker20" marker_type="9">
+			<transform 00="-0.83211" 02="0.554611" 20="-0.554611" 22="-0.83211" 30="83.492226" 31="176.598251" 32="-123.634712"/>
+		</markers>
+		<markers id="tile_marker21" marker_type="9">
+			<transform 00="-0.156821" 02="0.987627" 20="-0.987627" 22="-0.156821" 30="83.492226" 31="176.598251" 32="-125.219452"/>
+		</markers>
+		<markers id="tile_marker22" marker_type="9">
+			<transform 00="-0.643169" 02="-0.765724" 20="0.765724" 22="-0.643169" 30="80.894592" 31="176.598251" 32="-134.204117"/>
+		</markers>
 	</tile_markers>
 	<mission_zones>
-		<zone id="mission_zone0">
-			<transform 00="0.707107" 02="-0.707107" 20="0.707107" 22="0.707107" 30="73.97068" 31="186.085831" 32="-99.131958"/>
-			<size x="57" y="20" z="57"/>
-			<outer_scale x="1" y="1" z="1"/>
-			<outer_offset/>
+		<zone id="hangad_indoor_audio" audio_reverb_gain="0.25" audio_reverb_amount="1.25">
+			<transform 00="0.707107" 02="-0.707107" 20="0.707107" 22="0.707107" 30="79.75943" 31="186.085831" 32="-104.992653"/>
+			<size x="40" y="20" z="58"/>
+			<outer_scale x="1.4" y="1" z="1"/>
+			<outer_offset x="-8"/>
 		</zone>
 	</mission_zones>
 	<dynamic_markers>

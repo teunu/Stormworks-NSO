@@ -32,7 +32,7 @@ function spawnAll()
 			server.announce("arecibo", v_id)
 		end
 
-		local len_1 = 150
+		local len_1 = 250
 		local len_2 = len_1
 
 		server.spawnVehicleRope(arecibo_dish["11"].v_id, 0, 1, 0, arecibo_dish["0"].v_id, -97, 0, -98, len_1, 3)
@@ -63,7 +63,7 @@ function onCustomCommand(full_message, user_peer_id, is_admin, is_auth, command,
 		if(good) then
 			printTable(data, "v")
 		else
-			server.annonuce("failed", "v")
+			server.announce("failed", "v")
 		end
 	end
 end

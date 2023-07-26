@@ -192,7 +192,7 @@ function onCreate(is_world_create)
 	if g_savedata.settings == nil then
 		g_savedata.settings = {
 			AI_PRODUCTION_TIME_BASE = property.slider("AI Production Time (Mins)", 1, 20, 1, 10) * 60 * 60,
-			ISLAND_COUNT = property.slider("Island Count - Total AI Max will be 3x this value", 7, 17, 1, 17),
+			ISLAND_COUNT = property.slider("Island Count - Total AI Max will be 3x this value", 7, 24, 1, 24),
 			MAX_PLANE_SIZE = property.slider("AI Planes Max", 0, 8, 1, 2),
 			MAX_HELI_SIZE = property.slider("AI Helis Max", 0, 8, 1, 5),
 			AI_INITIAL_SPAWN_COUNT = property.slider("AI Initial Spawn Count", 0, 15, 1, 10),
@@ -205,19 +205,22 @@ function onCreate(is_world_create)
 
     if is_dlc_weapons then
 
+		g_savedata.constructable_vehicles = {}
+		g_savedata.constructable_turrets = {}
+
+		for i in iterPlaylists() do
+			for j in iterLocations(i) do
+				build_locations(i, j)
+			end
+		end
+
+		for i = 1, #built_locations do
+			buildPrefabs(i)
+		end
+
         if is_world_create then
 
-			turret_zones = server.getZones("turret")
-
-            for i in iterPlaylists() do
-                for j in iterLocations(i) do
-                    build_locations(i, j)
-                end
-            end
-
-            for i = 1, #built_locations do
-				buildPrefabs(i)
-            end
+			local turret_zones = server.getZones("turret")
 
 			local start_island = server.getStartTile()
 
@@ -1852,7 +1855,7 @@ function tickVehicles()
 							local new_pos = matrix.multiply(matrix.translation(vehicle_x + movement_x, vehicle_y + movement_y, vehicle_z + movement_z), rotation_matrix)
 
 							if server.getVehicleLocal(vehicle_id) == false then
-								local _, new_transform = server.setVehiclePosSafe(vehicle_id, new_pos)
+								local success, new_transform = server.setVehiclePosSafe(vehicle_id, new_pos)
 
 								for npc_index, npc_object in pairs(vehicle_object.survivors) do
 									server.setObjectPos(npc_object.id, new_transform)

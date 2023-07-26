@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<definition name="Train Wheel Drive Piston Medium" category="3" type="53" mass="400" value="400" flags="56" tags="steam" mesh_data_name="meshes/component_train_wheel_piston_mid.mesh" mesh_0_name="meshes/component_train_main_piston_rod_m.mesh" mesh_1_name="meshes/component_train_main_piston_dynamic_m.mesh" wheel_radius="0.2993" wheel_wishbone_length="0.3" wheel_suspension_height="0.25" wheel_wishbone_margin="1.2" wheel_wishbone_offset="1.3492" steam_component_type="10">
+<definition name="Train Wheel Drive Piston Medium" category="3" type="53" mass="400" value="400" flags="56" tags="steam" mesh_data_name="meshes/component_train_wheel_piston_mid.mesh" mesh_0_name="meshes/component_train_main_piston_rod_m.mesh" mesh_1_name="meshes/component_train_main_piston_dynamic_m.mesh" mesh_editor_only_name="meshes/arrow_train_piston.mesh" wheel_radius="0.2993" wheel_wishbone_length="0.3" wheel_suspension_height="0.25" wheel_wishbone_margin="1.2" wheel_wishbone_offset="1.3492" steam_component_type="10" force_emitter_max_force="3">
 	<sfx_datas/>
 	<surfaces>
 		<surface orientation="5">
@@ -593,7 +593,7 @@
 		</logic_node>
 	</logic_nodes>
 	<couplings>
-		<coupling orientation="1" alignment="2" coupling_type="train" coupling_name="back" alignment_required="true">
+		<coupling orientation="1" alignment="2" coupling_type="train" coupling_name="2" alignment_required="true">
 			<position/>
 		</coupling>
 	</couplings>
@@ -675,38 +675,6 @@
 			<physics_shape_rotation/>
 		</voxel>
 		<voxel flags="1">
-			<position y="2" z="-5"/>
-			<physics_shape_rotation/>
-		</voxel>
-		<voxel flags="1">
-			<position x="1" y="2" z="-5"/>
-			<physics_shape_rotation/>
-		</voxel>
-		<voxel flags="1">
-			<position x="2" y="2" z="-5"/>
-			<physics_shape_rotation/>
-		</voxel>
-		<voxel flags="1">
-			<position x="3" y="2" z="-5"/>
-			<physics_shape_rotation/>
-		</voxel>
-		<voxel flags="1">
-			<position x="3" y="2" z="5"/>
-			<physics_shape_rotation/>
-		</voxel>
-		<voxel flags="1">
-			<position x="2" y="2" z="5"/>
-			<physics_shape_rotation/>
-		</voxel>
-		<voxel flags="1">
-			<position x="1" y="2" z="5"/>
-			<physics_shape_rotation/>
-		</voxel>
-		<voxel flags="1">
-			<position y="2" z="5"/>
-			<physics_shape_rotation/>
-		</voxel>
-		<voxel flags="1">
 			<position z="3"/>
 			<physics_shape_rotation/>
 		</voxel>
@@ -731,19 +699,11 @@
 			<physics_shape_rotation/>
 		</voxel>
 		<voxel flags="1">
-			<position x="4" y="2" z="5"/>
-			<physics_shape_rotation/>
-		</voxel>
-		<voxel flags="1">
 			<position x="4" y="1" z="5"/>
 			<physics_shape_rotation/>
 		</voxel>
 		<voxel flags="1">
 			<position x="4" z="5"/>
-			<physics_shape_rotation/>
-		</voxel>
-		<voxel flags="1">
-			<position x="4" y="2" z="-5"/>
 			<physics_shape_rotation/>
 		</voxel>
 		<voxel flags="1">
@@ -756,9 +716,9 @@
 		</voxel>
 	</voxels>
 	<voxel_min z="-5"/>
-	<voxel_max x="4" y="2" z="5"/>
+	<voxel_max x="4" y="1" z="5"/>
 	<voxel_physics_min z="-5"/>
-	<voxel_physics_max x="4" y="2" z="5"/>
+	<voxel_physics_max x="4" y="1" z="5"/>
 	<bb_physics_min/>
 	<bb_physics_max/>
 	<compartment_sample_pos/>

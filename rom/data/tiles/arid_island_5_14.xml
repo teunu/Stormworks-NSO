@@ -34,6 +34,12 @@
 		<mesh id="mesh10" file_name="meshes/workbench.mesh">
 			<transform 00="-0.71934" 02="0.694659" 20="-0.694659" 22="-0.71934" 30="-312.376862" 31="3.181799" 32="-393.419159"/>
 		</mesh>
+		<mesh id="mesh11" file_name="meshes/arid_mainland_assets/car_garage.mesh">
+			<transform 00="0.707107" 02="-0.707107" 20="0.707107" 22="0.707107" 30="-444.648041" 31="10.899719" 32="-370.758667"/>
+		</mesh>
+		<mesh id="workbench" file_name="meshes/workbench.mesh">
+			<transform 00="0.707107" 02="-0.707107" 20="0.707107" 22="0.707107" 30="-436.043152" 31="11.862574" 32="-373.036255"/>
+		</mesh>
 	</meshes>
 	<physics_objects/>
 	<physics_meshes>
@@ -58,7 +64,7 @@
 		<physics_mesh id="shutter_3_phys" parent_id="shutter_3" file_name="meshes/boathouse_shutter_arid_phys.phys">
 			<transform 00="-0.71934" 02="0.694658" 20="-0.694658" 22="-0.71934" 30="-317.946381" 31="11.334462" 32="-391.375305"/>
 		</physics_mesh>
-		<physics_mesh id="sale_sign_phys" parent_id="sale_sign_mesh" file_name="meshes/for_sale_sign_phys.phys">
+		<physics_mesh id="sale_sign_phys" parent_id="sale_sign_interact" file_name="meshes/for_sale_sign_phys.phys">
 			<transform 30="-303.453705" 31="15.17942" 32="-413.161407"/>
 		</physics_mesh>
 		<physics_mesh id="physics_mesh8" file_name="meshes/island_12_boat_shed_phys.phys">
@@ -69,6 +75,12 @@
 		</physics_mesh>
 		<physics_mesh id="physics_mesh10" file_name="meshes/workbench_phys.phys">
 			<transform 00="-0.71934" 02="0.694658" 20="-0.694658" 22="-0.71934" 30="-312.376862" 31="3.181799" 32="-393.419159"/>
+		</physics_mesh>
+		<physics_mesh id="physics_mesh11" file_name="meshes/arid_mainland_assets/car_garage_phys.phys">
+			<transform 00="0.707107" 02="-0.707107" 20="0.707107" 22="0.707107" 30="-444.648041" 31="10.899719" 32="-370.758667"/>
+		</physics_mesh>
+		<physics_mesh id="physics_mesh12" file_name="meshes/workbench_phys.phys">
+			<transform 00="0.707107" 02="-0.707107" 20="0.707107" 22="0.707107" 30="-436.043152" 31="11.862574" 32="-373.036255"/>
 		</physics_mesh>
 	</physics_meshes>
 	<physics_dynamics/>
@@ -133,6 +145,10 @@
 			<transform 30="-301.730927" 31="17.774399" 32="-420.050873"/>
 			<color x="1" y="1" z="1"/>
 		</light>
+		<light id="omni15" radius="20" is_render_halo="true">
+			<transform 30="-437.442596" 31="14.277903" 32="-368.610229"/>
+			<color x="5" y="5" z="3"/>
+		</light>
 	</lights_omni>
 	<lights_spot>
 		<light id="spot0" range="40" fov="0.349066" texture="graphics/ies/ies_default.txtr">
@@ -150,6 +166,10 @@
 		<edit_area id="edit1" grid_size="1">
 			<transform 00="0.719185" 02="-0.694818" 20="0.694818" 22="0.719185" 30="-303.829773" 31="0.554545" 32="-376.779694"/>
 			<size x="7.5" y="7.5" z="15"/>
+		</edit_area>
+		<edit_area id="land_edit" grid_size="3">
+			<transform 00="-0.707107" 02="0.707107" 20="-0.707107" 22="-0.707107" 30="-425.534668" 31="13.963398" 32="-386.121063"/>
+			<size x="16.5" y="6" z="18.5"/>
 		</edit_area>
 	</edit_areas>
 	<interactables>
@@ -191,6 +211,10 @@
 		</interactable>
 		<interactable id="interact9" target_object_id="edit1" label="Workbench" interact_type="2">
 			<transform 00="-0.712345" 02="0.701829" 20="-0.701829" 22="-0.712345" 30="-312.604523" 31="3.300829" 32="-393.194855"/>
+			<size x="1" y="2" z="2"/>
+		</interactable>
+		<interactable id="interact10" target_object_id="land_edit" label="Workbench" interact_type="2">
+			<transform 00="0.707107" 02="-0.707107" 20="0.707107" 22="0.707107" 30="-435.916534" 31="11.862574" 32="-373.162872"/>
 			<size x="1" y="2" z="2"/>
 		</interactable>
 	</interactables>

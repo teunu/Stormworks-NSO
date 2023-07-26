@@ -19,9 +19,15 @@ out vec3 view_position_out;
 out vec4 vertex_position_prev_out;
 out vec4 vertex_position_next_out;
 
+out float oil_spill_out;
+
 uniform sampler2D texture_wave_height_scale;
+uniform sampler2D texture_oil_spill_a;
+uniform sampler2D texture_oil_spill_b;
+uniform float oil_spill_blend;
 uniform float world_to_texture_scale;
 uniform vec3 world_offset; // offset for graphics, used in sampling height scale texture
+
 
 uniform vec3 camera_position;
 
@@ -36,6 +42,10 @@ void main()
 
 	normal_out = vertex_normal_in;
 	world_position_out = (mat_world * vec4(vertex_position_in.xyz, 1)).xyz;
+
+	//Oil spill texture
+	vec2 oil_coords = (world_position_out.xz - world_offset.xz) * world_to_texture_scale + vec2(0.501953125, 0.501953125);
+	oil_spill_out = mix(texture(texture_oil_spill_a, oil_coords).x, texture(texture_oil_spill_b, oil_coords).x, oil_spill_blend);
 
 	// Scale height according to texture
 	// TODO: do we want to scale foam amount as well?

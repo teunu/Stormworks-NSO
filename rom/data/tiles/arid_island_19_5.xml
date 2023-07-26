@@ -66,6 +66,18 @@
 		<markers id="tile_marker0" marker_type="13" string_data="Empire Industries Metal Ore Foundry" icon="7">
 			<transform 30="89.325706" 31="32.783535" 32="-52.867348"/>
 		</markers>
+		<markers id="tile_marker1" marker_type="9">
+			<transform 30="118.536507" 31="13.200399" 32="-99.675293"/>
+		</markers>
+		<markers id="tile_marker2" marker_type="9">
+			<transform 00="0.541907" 02="0.840439" 20="-0.840439" 22="0.541907" 30="147.338242" 31="13.200399" 32="-87.616257"/>
+		</markers>
+		<markers id="tile_marker3" marker_type="9">
+			<transform 00="0.605418" 02="0.795908" 20="-0.795908" 22="0.605418" 30="185.620697" 31="3.374931" 32="-95.653648"/>
+		</markers>
+		<markers id="tile_marker4" marker_type="9">
+			<transform 30="147.152283" 31="3.238019" 32="-119.262421"/>
+		</markers>
 	</tile_markers>
 	<mission_zones/>
 	<dynamic_markers/>
@@ -127,18 +139,17 @@
 			</links>
 		</track>
 		<track id="train_22">
-			<transform 30="-463.604797" 31="2.57" 32="-104.036377"/>
+			<transform 30="-461.682495" 31="2.57" 32="-104.047523"/>
 			<links>
-				<link id="train_23"/>
 				<link id="train_18"/>
 				<link id="train_25"/>
 			</links>
 		</track>
 		<track id="train_23">
-			<transform 30="-466.666626" 31="2.57" 32="-104.036377"/>
+			<transform 30="-463.347076" 31="2.57" 32="-103.952515"/>
 			<links>
-				<link id="train_22"/>
 				<link id="train_19"/>
+				<link id="train_25"/>
 			</links>
 		</track>
 		<track id="train_24">
@@ -151,8 +162,9 @@
 		<track id="train_25">
 			<transform 30="-455.424652" 31="2.57" 32="-103.966942"/>
 			<links>
-				<link id="train_22"/>
 				<link id="train_27"/>
+				<link id="train_22"/>
+				<link id="train_23"/>
 			</links>
 		</track>
 		<track id="train_26">
@@ -230,6 +242,7 @@
 			<links>
 				<link id="train_34"/>
 				<link id="train_38"/>
+				<link id="train_39"/>
 			</links>
 		</track>
 		<track id="train_38">
@@ -243,6 +256,7 @@
 			<transform 30="-70.409286" 31="2.57" 32="-99.272728"/>
 			<links>
 				<link id="train_40"/>
+				<link id="train_37"/>
 			</links>
 		</track>
 		<track id="train_40">
@@ -604,16 +618,15 @@
 		<track id="train_91">
 			<transform 30="-26.03545" 31="2.57" 32="-99.682625"/>
 			<links>
-				<link id="train_92"/>
 				<link id="train_38"/>
 				<link id="train_93"/>
+				<link id="train_98"/>
 			</links>
 		</track>
-		<track id="train_92">
-			<transform 30="-18.689207" 31="2.57" 32="-99.682625"/>
+		<track id="train_163">
+			<transform 30="500" 31="2.57" 32="-108.430267"/>
 			<links>
-				<link id="train_91"/>
-				<link id="train_95"/>
+				<link id="train_162"/>
 			</links>
 		</track>
 		<track id="train_93">
@@ -630,11 +643,11 @@
 				<link id="train_96"/>
 			</links>
 		</track>
-		<track id="train_95">
-			<transform 30="-11.344156" 31="2.57" 32="-99.636971"/>
+		<track id="train_162">
+			<transform 30="495.874146" 31="2.57" 32="-108.452621"/>
 			<links>
-				<link id="train_92"/>
-				<link id="train_97"/>
+				<link id="train_163"/>
+				<link id="train_161"/>
 			</links>
 		</track>
 		<track id="train_96">
@@ -644,18 +657,18 @@
 				<link id="train_99"/>
 			</links>
 		</track>
-		<track id="train_97">
-			<transform 30="-3.914467" 31="2.57" 32="-99.682625"/>
+		<track id="train_161">
+			<transform 30="450.113037" 31="2.57" 32="-108.469193"/>
 			<links>
-				<link id="train_95"/>
-				<link id="train_98"/>
+				<link id="train_162"/>
+				<link id="train_160"/>
 			</links>
 		</track>
 		<track id="train_98">
 			<transform 30="3.513315" 31="2.57" 32="-99.682625"/>
 			<links>
-				<link id="train_97"/>
 				<link id="train_101"/>
+				<link id="train_91"/>
 			</links>
 		</track>
 		<track id="train_99">
@@ -1088,26 +1101,6 @@
 			<links>
 				<link id="train_161"/>
 				<link id="train_159"/>
-			</links>
-		</track>
-		<track id="train_161">
-			<transform 30="450.113037" 31="2.57" 32="-108.469193"/>
-			<links>
-				<link id="train_162"/>
-				<link id="train_160"/>
-			</links>
-		</track>
-		<track id="train_162">
-			<transform 30="495.874146" 31="2.57" 32="-108.452621"/>
-			<links>
-				<link id="train_163"/>
-				<link id="train_161"/>
-			</links>
-		</track>
-		<track id="train_163">
-			<transform 30="500" 31="2.57" 32="-108.430267"/>
-			<links>
-				<link id="train_162"/>
 			</links>
 		</track>
 	</train_tracks>

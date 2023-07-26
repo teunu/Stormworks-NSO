@@ -3,11 +3,11 @@ local RESOURCE_JET = 2
 local RESOURCE_OIL = 5
 local RESOURCE_COAL = "Coal"
 
-local MAX_CHANGE = 0.0000001
-local MAX_TIME = 60 * 60
+local MAX_TIME = 60 * 10
+
 local UI_UPDATE_MAX = 7200
 
-local tick_time = 9999
+local VEHICLE_UPDATE_TICKS = 30
 
 g_savedata = {
     [RESOURCE_DIESEL] = { gantries = {} },
@@ -43,7 +43,7 @@ g_resources = {
             if money_current < math.floor(transaction + 0.5) then return end
 
             if server.getGameSettings().infinite_money == false then
-                server.setCurrency(money_current - math.floor(transaction + 0.5), server.getResearchPoints())
+                server.setCurrency(money_current - math.floor(transaction + 0.5))
             end
 
             if vehicle.is_buy then
@@ -71,53 +71,37 @@ g_resources = {
                         end
                     end
                 else
+                    local tick_ui = vehicle.timer_ui == nil or vehicle.timer_ui >= UI_UPDATE_MAX
+
                     vehicle.timer = vehicle.timer + 1
-                    if vehicle.timer >= 30 then
-                        vehicle.timer = vehicle.timer - 30
+                    if vehicle.timer >= VEHICLE_UPDATE_TICKS then
+                        vehicle.timer = vehicle.timer - VEHICLE_UPDATE_TICKS
 
                         if vehicle.base_factor == nil then
                             vehicle.base_factor = 1
                         end
 
-                        local current_price = self.base * vehicle.base_factor * vehicle.supply_demand
+                        local current_price = vehicle.is_buy and 2.0 or 3.0
                         local delta, vehicle_loaded = self:getvehicle(vehicle_id, vehicle)
-
-                        current_price = current_price * getPriceFactors(RESOURCE_DIESEL, self, vehicle_id, vehicle)
-
                         local transaction = delta * current_price
 
                         -- if loaded execute trade
                         if vehicle_loaded and math.abs(transaction) >= 1.0 then
                             self:executeTrade(vehicle_id, vehicle, transaction)
-                            vehicle.time_without_trade = 0
-                            vehicle.supply_demand_target = 1.0
-                        elseif vehicle.time_without_trade >= MAX_TIME then
-                            vehicle.supply_demand_target = 0.2
-                        else
-                            vehicle.time_without_trade = math.max(vehicle.time_without_trade + 1, MAX_TIME)
                         end
 
-                        if vehicle.is_buy then
-                            -- slowly lower price if supply is high
-                            vehicle.supply_demand =  vehicle.supply_demand + math.min(math.max((vehicle.supply_demand_target) - vehicle.supply_demand, -MAX_CHANGE), MAX_CHANGE)
-                        else
-                            -- slowly raise payment if demand is high
-                            vehicle.supply_demand =  vehicle.supply_demand + math.min(math.max((1 / vehicle.supply_demand_target) - vehicle.supply_demand, -MAX_CHANGE), MAX_CHANGE)
-                        end
+                        tick_ui = tick_ui or vehicle_loaded
                     end
 
-                    if vehicle.timer_ui == nil or vehicle.timer_ui >= UI_UPDATE_MAX then
+                    if tick_ui then
                         if vehicle.timer_ui == nil then
                             vehicle.timer_ui = math.random(0, UI_UPDATE_MAX)
                         else
                             vehicle.timer_ui = vehicle.timer_ui - UI_UPDATE_MAX
                         end
 
-                        local current_price = self.base * vehicle.base_factor * vehicle.supply_demand
-                        local delta, vehicle_loaded = self:getvehicle(vehicle_id, vehicle)
-                        current_price = current_price * getPriceFactors(RESOURCE_DIESEL, self, vehicle_id, vehicle)
-
-                        updateUI(self.name, vehicle_id, vehicle, current_price, vehicle_loaded)
+                        local current_price = vehicle.is_buy and 2.0 or 3.0
+                        updateUI(self.name, vehicle_id, vehicle, current_price)
                     end
                     vehicle.timer_ui = vehicle.timer_ui + 1
                 end
@@ -150,7 +134,7 @@ g_resources = {
             if money_current < math.floor(transaction + 0.5) then return end
 
             if server.getGameSettings().infinite_money == false then
-                server.setCurrency(money_current - math.floor(transaction + 0.5), server.getResearchPoints())
+                server.setCurrency(money_current - math.floor(transaction + 0.5))
             end
 
             if vehicle.is_buy then
@@ -178,53 +162,37 @@ g_resources = {
                         end
                     end
                 else
+                    local tick_ui = vehicle.timer_ui == nil or vehicle.timer_ui >= UI_UPDATE_MAX
+
                     vehicle.timer = vehicle.timer + 1
-                    if vehicle.timer >= 30 then
-                        vehicle.timer = vehicle.timer - 30
+                    if vehicle.timer >= VEHICLE_UPDATE_TICKS then
+                        vehicle.timer = vehicle.timer - VEHICLE_UPDATE_TICKS
 
                         if vehicle.base_factor == nil then
                             vehicle.base_factor = 1
                         end
 
-                        local current_price = self.base * vehicle.base_factor * vehicle.supply_demand
+                        local current_price = vehicle.is_buy and 4.0 or 6.0
                         local delta, vehicle_loaded = self:getvehicle(vehicle_id, vehicle)
-
-                        current_price = current_price * getPriceFactors(RESOURCE_JET, self, vehicle_id, vehicle)
-
                         local transaction = delta * current_price
 
                         -- if loaded execute trade
                         if vehicle_loaded and math.abs(transaction) >= 1.0 then
                             self:executeTrade(vehicle_id, vehicle, transaction)
-                            vehicle.time_without_trade = 0
-                            vehicle.supply_demand_target = 1.0
-                        elseif vehicle.time_without_trade >= MAX_TIME then
-                            vehicle.supply_demand_target = 0.2
-                        else
-                            vehicle.time_without_trade = math.max(vehicle.time_without_trade + 1, MAX_TIME)
                         end
 
-                        if vehicle.is_buy then
-                            -- slowly lower price if supply is high
-                            vehicle.supply_demand =  vehicle.supply_demand + math.min(math.max((vehicle.supply_demand_target) - vehicle.supply_demand, -MAX_CHANGE), MAX_CHANGE)
-                        else
-                            -- slowly raise payment if demand is high
-                            vehicle.supply_demand =  vehicle.supply_demand + math.min(math.max((1 / vehicle.supply_demand_target) - vehicle.supply_demand, -MAX_CHANGE), MAX_CHANGE)
-                        end
+                        tick_ui = tick_ui or vehicle_loaded
                     end
 
-                    if vehicle.timer_ui == nil or vehicle.timer_ui >= UI_UPDATE_MAX then
+                    if tick_ui then
                         if vehicle.timer_ui == nil then
                             vehicle.timer_ui = math.random(0, UI_UPDATE_MAX)
                         else
                             vehicle.timer_ui = vehicle.timer_ui - UI_UPDATE_MAX
                         end
 
-                        local current_price = self.base * vehicle.base_factor * vehicle.supply_demand
-                        local delta, vehicle_loaded = self:getvehicle(vehicle_id, vehicle)
-                        current_price = current_price * getPriceFactors(RESOURCE_JET, self, vehicle_id, vehicle)
-
-                        updateUI(self.name, vehicle_id, vehicle, current_price, vehicle_loaded)
+                        local current_price = vehicle.is_buy and 4.0 or 6.0
+                        updateUI(self.name, vehicle_id, vehicle, current_price)
                     end
                     vehicle.timer_ui = vehicle.timer_ui + 1
                 end
@@ -257,7 +225,7 @@ g_resources = {
             if money_current < math.floor(transaction + 0.5) then return end
 
             if server.getGameSettings().infinite_money == false then
-                server.setCurrency(money_current - math.floor(transaction + 0.5), server.getResearchPoints())
+                server.setCurrency(money_current - math.floor(transaction + 0.5))
             end
 
             if vehicle.is_buy then
@@ -285,53 +253,37 @@ g_resources = {
                         end
                     end
                 else
+                    local tick_ui = vehicle.timer_ui == nil or vehicle.timer_ui >= UI_UPDATE_MAX
+
                     vehicle.timer = vehicle.timer + 1
-                    if vehicle.timer >= 30 then
-                        vehicle.timer = vehicle.timer - 30
+                    if vehicle.timer >= VEHICLE_UPDATE_TICKS then
+                        vehicle.timer = vehicle.timer - VEHICLE_UPDATE_TICKS
 
                         if vehicle.base_factor == nil then
                             vehicle.base_factor = 1
                         end
 
-                        local current_price = self.base * vehicle.base_factor * vehicle.supply_demand
+                        local current_price = vehicle.is_buy and 0.5 or 1.0
                         local delta, vehicle_loaded = self:getvehicle(vehicle_id, vehicle)
-
-                        current_price = current_price * getPriceFactors(RESOURCE_OIL, self, vehicle_id, vehicle)
-
                         local transaction = delta * current_price
 
                         -- if loaded execute trade
                         if vehicle_loaded and math.abs(transaction) >= 1.0 then
                             self:executeTrade(vehicle_id, vehicle, transaction)
-                            vehicle.time_without_trade = 0
-                            vehicle.supply_demand_target = 1.0
-                        elseif vehicle.time_without_trade >= MAX_TIME then
-                            vehicle.supply_demand_target = 0.2
-                        else
-                            vehicle.time_without_trade = math.max(vehicle.time_without_trade + 1, MAX_TIME)
                         end
 
-                        if vehicle.is_buy then
-                            -- slowly lower price if supply is high
-                            vehicle.supply_demand =  vehicle.supply_demand + math.min(math.max((vehicle.supply_demand_target) - vehicle.supply_demand, -MAX_CHANGE), MAX_CHANGE)
-                        else
-                            -- slowly raise payment if demand is high
-                            vehicle.supply_demand =  vehicle.supply_demand + math.min(math.max((1 / vehicle.supply_demand_target) - vehicle.supply_demand, -MAX_CHANGE), MAX_CHANGE)
-                        end
+                        tick_ui = tick_ui or vehicle_loaded
                     end
 
-                    if vehicle.timer_ui == nil or vehicle.timer_ui >= UI_UPDATE_MAX then
+                    if tick_ui then
                         if vehicle.timer_ui == nil then
                             vehicle.timer_ui = math.random(0, UI_UPDATE_MAX)
                         else
                             vehicle.timer_ui = vehicle.timer_ui - UI_UPDATE_MAX
                         end
 
-                        local current_price = self.base * vehicle.base_factor * vehicle.supply_demand
-                        local delta, vehicle_loaded = self:getvehicle(vehicle_id, vehicle)
-                        current_price = current_price * getPriceFactors(RESOURCE_OIL, self, vehicle_id, vehicle)
-
-                        updateUI(self.name, vehicle_id, vehicle, current_price, vehicle_loaded)
+                        local current_price = vehicle.is_buy and 0.5 or 1.0
+                        updateUI(self.name, vehicle_id, vehicle, current_price)
                     end
                     vehicle.timer_ui = vehicle.timer_ui + 1
                 end
@@ -378,7 +330,7 @@ g_resources = {
             if money_current < math.floor(transaction + 0.5) then return end
 
             if server.getGameSettings().infinite_money == false then
-                server.setCurrency(money_current - math.floor(transaction + 0.5), server.getResearchPoints())
+                server.setCurrency(money_current - math.floor(transaction + 0.5))
             end
 
             if vehicle.is_buy then
@@ -406,53 +358,37 @@ g_resources = {
                         end
                     end
                 else
+                    local tick_ui = vehicle.timer_ui == nil or vehicle.timer_ui >= UI_UPDATE_MAX
+
                     vehicle.timer = vehicle.timer + 1
-                    if vehicle.timer >= 30 then
-                        vehicle.timer = vehicle.timer - 30
+                    if vehicle.timer >= VEHICLE_UPDATE_TICKS then
+                        vehicle.timer = vehicle.timer - VEHICLE_UPDATE_TICKS
 
                         if vehicle.base_factor == nil then
                             vehicle.base_factor = 1
                         end
 
-                        local current_price = self.base[vehicle.coal_type] * vehicle.base_factor * vehicle.supply_demand
+                        local current_price = self.base[vehicle.coal_type]
                         local delta, vehicle_loaded = self:getvehicle(vehicle_id, vehicle)
-
-                        current_price = current_price * getPriceFactors(RESOURCE_COAL, self, vehicle_id, vehicle)
-
                         local transaction = delta * current_price
 
                         -- if loaded execute trade
                         if vehicle_loaded and math.abs(transaction) >= 1.0 then
                             self:executeTrade(vehicle_id, vehicle, transaction)
-                            vehicle.time_without_trade = 0
-                            vehicle.supply_demand_target = 1.0
-                        elseif vehicle.time_without_trade >= MAX_TIME then
-                            vehicle.supply_demand_target = 0.2
-                        else
-                            vehicle.time_without_trade = math.max(vehicle.time_without_trade + 1, MAX_TIME)
                         end
 
-                        if vehicle.is_buy then
-                            -- slowly lower price if supply is high
-                            vehicle.supply_demand =  vehicle.supply_demand + math.min(math.max((vehicle.supply_demand_target) - vehicle.supply_demand, -MAX_CHANGE), MAX_CHANGE)
-                        else
-                            -- slowly raise payment if demand is high
-                            vehicle.supply_demand =  vehicle.supply_demand + math.min(math.max((1 / vehicle.supply_demand_target) - vehicle.supply_demand, -MAX_CHANGE), MAX_CHANGE)
-                        end
+                        tick_ui = tick_ui or vehicle_loaded
                     end
 
-                    if vehicle.timer_ui == nil or vehicle.timer_ui >= UI_UPDATE_MAX then
+                    if tick_ui then
                         if vehicle.timer_ui == nil then
                             vehicle.timer_ui = math.random(0, UI_UPDATE_MAX)
                         else
                             vehicle.timer_ui = vehicle.timer_ui - UI_UPDATE_MAX
                         end
 
-                        local current_price = self.base[vehicle.coal_type] * vehicle.base_factor * vehicle.supply_demand
-                        local delta, vehicle_loaded = self:getvehicle(vehicle_id, vehicle)
-                        current_price = current_price * getPriceFactors(RESOURCE_COAL, self, vehicle_id, vehicle)
-
-                        updateUI(self.name[vehicle.coal_type], vehicle_id, vehicle, current_price, vehicle_loaded)
+                        local current_price = self.base[vehicle.coal_type]
+                        updateUI(self.name[vehicle.coal_type], vehicle_id, vehicle, current_price)
                     end
                     vehicle.timer_ui = vehicle.timer_ui + 1
                 end
@@ -562,8 +498,7 @@ function onVehicleLoad(vehicle_id)
     end
 end
 
-function updateUI(name, vehicle_id, vehicle, current_price, vehicle_loaded)
-
+function updateUI(name, vehicle_id, vehicle, current_price)
     local vehicle_pos = server.getVehiclePos(vehicle_id)
     local g_x, g_y, g_z = matrix.position(vehicle_pos)
 
@@ -574,92 +509,13 @@ function updateUI(name, vehicle_id, vehicle, current_price, vehicle_loaded)
         server.addMapLabel(-1, vehicle.map_id, 14, name .. " Gantry" .. "\nSell for: " .. string.format("%.3f", current_price), g_x, g_z)
     end
 
-    if vehicle_loaded then
-        if vehicle.is_buy then
-            server.setVehicleKeypad(vehicle_id, "Price", current_price)
-        else
-            server.setVehicleKeypad(vehicle_id, "Price", current_price)
-        end
+    local is_sim, is_found = server.getVehicleSimulating(vehicle_id)
+    if is_sim then
+        server.setVehicleKeypad(vehicle_id, "Price", current_price)
     end
-end
-
-function getPriceFactors(resource_id, resource, vehicle_id, vehicle)
-
-    if vehicle.distance_factor == 0 or vehicle.price_refresh_timer == nil or vehicle.price_refresh_timer <= 0 then
-        generateDistanceFactor(resource_id, resource, vehicle_id, vehicle)
-        vehicle.price_refresh_timer = 60 * 2 * 5
-    else
-        vehicle.price_refresh_timer = vehicle.price_refresh_timer -1
-    end
-
-    local season_factor = 1.0 + (math.cos((m / 12) * math.pi * 2.0) * -0.5)
-
-    if vehicle.is_buy then
-        return season_factor * (1 /  vehicle.distance_factor)
-    else
-        return season_factor * vehicle.distance_factor
-    end
-end
-
-function generateDistanceFactor(resource_id, resource, vehicle_id, vehicle)
-
-    local target_type
-
-    if resource_id == RESOURCE_COAL then
-        if vehicle.business == "extractor" then -- find nearest manufacturer
-            target_type = "consumer"
-        elseif vehicle.business == "consumer" then
-            target_type = "extractor"
-        end
-    else
-        if vehicle.business == "extractor" then -- find nearest manufacturer
-            target_type = "manufacturer"
-        elseif vehicle.business == "manufacturer" then -- manufacturers refine at 1:1 ratio
-            vehicle.distance_factor = 1.0
-            return
-        elseif vehicle.business == "consumer" then
-            target_type = "manufacturer"
-
-        elseif vehicle.business == "retailer" then -- retailers sell at a 10% markup
-            local best_distance = 999999999
-            for target_id, target in pairs(g_savedata[resource_id].gantries) do
-                if target.business == "manufacturer" then
-                    local vehicle_pos = server.getVehiclePos(vehicle_id)
-                    local target_pos = server.getVehiclePos(target_id)
-                    best_distance = math.min(best_distance, matrix.distance(vehicle_pos, target_pos))
-                end
-            end
-            vehicle.distance_factor = 1 / ((1.0 + (best_distance / 8000.0)) * 1.1)
-            return
-        end
-
-    end
-
-    local vehicle_pos = server.getVehiclePos(vehicle_id)
-
-    local best_distance = 999999999
-    for target_id, target in pairs(g_savedata[resource_id].gantries) do
-        if target.business == target_type then     
-            local target_pos = server.getVehiclePos(target_id)
-            best_distance = math.min(best_distance, matrix.distance(vehicle_pos, target_pos))
-        end
-    end
-
-    if best_distance == 999999999 then -- default to dist from origin
-        best_distance = math.min(best_distance, matrix.distance(vehicle_pos, matrix.identity()))
-    end
-
-    vehicle.distance_factor = 1.0 + (best_distance / 8000.0)
 end
 
 function onTick(tick_delta)
-
-    tick_time = tick_time + 1
-    if tick_time >= 3600 then
-        tick_time = 0
-        d, m, y = server.getDate()
-    end
-
     for _, resource in pairs(g_resources) do
         resource:tick()
     end

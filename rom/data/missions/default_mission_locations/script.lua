@@ -23,6 +23,11 @@
 	capabilities:
 	tow - for vehicles that can be towed to a destination
 	repair - for vehicle sthat can be repaired
+	transpoder
+	flare
+	scuttle
+	refuel
+	oil
 --]]
 
 g_savedata =
@@ -36,7 +41,9 @@ g_savedata =
 	enable_disasters = property.checkbox("Natural Disaster Missions", true),
 	display_timers = property.checkbox("Display Timers", false),
 	display_rewards = property.checkbox("Display Reward", false),
-	damage_tracker = {}
+	damage_tracker = {},
+	oil_spills = {},
+	enable_oil_spills = property.checkbox("Oil Spill Missions", true),
 }
 local g_zones = {}
 local g_zones_hospital = {}
@@ -44,6 +51,9 @@ local g_output_log = {}
 local g_objective_update_counter = 0
 local map_update_cooldown = 0
 local hospital_zones_update_cooldown = 0
+local g_oil_spill_rate = 0.2
+
+local oil_debug = false
 
 g_objective_types =
 {
@@ -108,9 +118,11 @@ g_objective_types =
 							obj.bleed_counter = obj.bleed_counter + 60
 
 							if obj.bleed_counter > 600 then
-								obj.bleed_counter = 0
-								c.hp = c.hp - 1
-								server.setCharacterData(obj.id, c.hp, true, false)
+								if server.getGameSettings().npc_damage then
+									obj.bleed_counter = 0
+									c.hp = c.hp - 1
+									server.setCharacterData(obj.id, c.hp, true, false)
+								end
 							end
 						end
 
@@ -120,7 +132,7 @@ g_objective_types =
 							end
 
 							local reward = math.floor(objective.reward_value * (0.5 + (c.hp/200)))
-							server.notify(-1, "Casualty Rescued", "A casualty has been successfully rescued to the hospital. Rewarded $"..reward..".", 4)
+							server.notify(-1, "Casualty Rescued", "A casualty has been successfully rescued to the hospital. Rewarded $"..math.floor(reward)..".", 4)
 							server.setCurrency(server.getCurrency() + reward, server.getResearchPoints() + 1)
 							return true, true
 						end
@@ -153,7 +165,7 @@ g_objective_types =
 			end
 
 			if is_complete then
-				server.notify(-1, "Fire Extinguished", "Fire has been extinguished. Rewarded $"..objective.reward_value..".", 4)
+				server.notify(-1, "Fire Extinguished", "Fire has been extinguished. Rewarded $"..math.floor(objective.reward_value)..".", 4)
 				server.setCurrency(server.getCurrency() + objective.reward_value, server.getResearchPoints() + 1)
 			end
 
@@ -215,7 +227,7 @@ g_objective_types =
 
 			if is_complete then
 				g_savedata.damage_tracker[objective.vehicle_id] = nil
-				server.notify(-1, "Repair complete", "Full repair has been completed. Rewarded $"..objective.reward_value..".", 4)
+				server.notify(-1, "Repair complete", "Full repair has been completed. Rewarded $"..math.floor(objective.reward_value)..".", 4)
 				server.setCurrency(server.getCurrency() + objective.reward_value, server.getResearchPoints() + 1)
 			elseif objective.damaged then
 				local data, success = server.getVehicleData(objective.vehicle_id)
@@ -247,7 +259,7 @@ g_objective_types =
 						end
 
 						local reward = math.floor(objective.reward_value * (0.2 + (c.hp/125)))
-						server.notify(-1, "Delivery Complete", "The passenger has reached their destination. Rewarded $"..reward..".", 4)
+						server.notify(-1, "Delivery Complete", "The passenger has reached their destination. Rewarded $"..math.floor(reward)..".", 4)
 						server.setCurrency(server.getCurrency() + reward, server.getResearchPoints() + 1)
 						return true, true
 					end
@@ -289,7 +301,7 @@ g_objective_types =
 
 			if object_delivered_count == object_count then
 				if objective.reward_value == nil then objective.reward_value = 2000 end
-				server.notify(-1, "Delivery Complete", "The consignment has been delivered. Rewarded $"..objective.reward_value..".", 4)
+				server.notify(-1, "Delivery Complete", "The consignment has been delivered. Rewarded $"..math.floor(objective.reward_value)..".", 4)
 				server.setCurrency(server.getCurrency() + objective.reward_value, server.getResearchPoints() + 1)
 				return true, true
 			else
@@ -314,7 +326,7 @@ g_objective_types =
 
 			if object_delivered_count == object_count then
 				if objective.reward_value == nil then objective.reward_value = 2000 end
-				server.notify(-1, "Delivery Complete", "The consignment has been delivered. Rewarded $"..objective.reward_value..".", 4)
+				server.notify(-1, "Delivery Complete", "The consignment has been delivered. Rewarded $"..math.floor(objective.reward_value)..".", 4)
 				server.setCurrency(server.getCurrency() + objective.reward_value, server.getResearchPoints() + 1)
 				return true, true
 			else
@@ -342,7 +354,7 @@ g_objective_types =
 							end
 
 							local reward = math.floor(objective.reward_value * (0.5 + (c.hp/200)))
-							server.notify(-1, "Casualty Rescued", "A casualty has been successfully rescued to an safe zone. Rewarded $"..reward..".", 4)
+							server.notify(-1, "Casualty Rescued", "A casualty has been successfully rescued to an safe zone. Rewarded $"..math.floor(reward)..".", 4)
 							server.setCurrency(server.getCurrency() + reward, server.getResearchPoints() + 1)
 							return true, true
 						end
@@ -407,6 +419,7 @@ g_mission_types =
 				local search_radius = 4000 * (math.random(25, math.floor(50 + (difficulty_factor*50))) / 100)
 				local is_locate = math.random(1, 2) == 1 or is_transponder
 				local is_predator = server.dlcArid() and math.random(1, 2) == 1
+				local is_oil_spill = g_savedata.enable_oil_spills and hasTag(location.parameters.capabilities, "oil")
 
 				-- spawn objects from selected location using zone's world transform
 				local spawn_transform = matrix.multiply(zone.transform, matrix.translation(0, -zone.size.y * 0.5, 0))
@@ -439,7 +452,7 @@ g_mission_types =
 				mission.data.vehicle_main = main_vehicle
 
 				for survivor_index, survivor_object in pairs(mission.data.survivors) do
-					local is_survivor_injured = math.random(1, 3) == 1
+					local is_survivor_injured = server.getGameSettings().npc_damage and math.random(1, 3) == 1
 
 					if is_survivor_injured then
 						local survivor_health = math.random(60, 90)
@@ -502,6 +515,7 @@ g_mission_types =
 				mission.data.is_flare = is_flare
 				mission.data.is_repair = is_repair
 				mission.data.is_predator = is_predator
+				mission.data.is_oil_spill = is_oil_spill
 				mission.data.flare_timer = 60 * 30
 				mission.data.is_scuttle = is_scuttle
 				mission.data.incoming_disaster = incoming_disaster
@@ -511,28 +525,37 @@ g_mission_types =
 				spawnDisaster(mission.data)
 
 				-- Predators
-				if location.parameters.theme == "theme=camp" or location.parameters.theme == "theme=forest" then
-					if is_predator then
-						local x = zone.transform[13] - (zone.size.x) + (2 * zone.size.x * math.random())
-						local y = zone.transform[14] + 2
-						local z = zone.transform[15] - (zone.size.z) + (2 * zone.size.z * math.random())
-						local transform = matrix.translation(x, y, z)
-						local scale = 0.75 + (math.random() * 0.25)
-						server.spawnCreature(transform, 1, scale)
-						mission.desc = mission.desc.." A grizzly bear was spotted nearby, exercise extreme caution."
+				if is_predator then
+					local x = zone.transform[13] - (zone.size.x) + (2 * zone.size.x * math.random())
+					local y = zone.transform[14] + 2
+					local z = zone.transform[15] - (zone.size.z) + (2 * zone.size.z * math.random())
+					local transform = matrix.translation(x, y, z)
+					local scale = 0.75 + (math.random() * 0.25)
+
+					if location.parameters.theme == "theme=camp" or location.parameters.theme == "theme=forest" then
+						if hasTag(zone.tags, "biome=arid") then
+							server.spawnCreature(transform, 100, scale)
+							mission.desc = mission.desc.." A mountain lion was spotted nearby, exercise extreme caution."
+						else
+							server.spawnCreature(transform, 1, scale)
+							mission.desc = mission.desc.." A grizzly bear was spotted nearby, exercise extreme caution."
+						end
+					elseif hasTag(zone.tags, "biome=arctic") then
+							server.spawnCreature(transform, 3, scale)
+							mission.desc = mission.desc.." A polar bear was spotted nearby, exercise extreme caution."
+					else
+						mission.data.is_predator = false
 					end
-				elseif hasTag(zone.tags, "biome=arctic") then
-					if is_predator then
-						local x = zone.transform[13] - (zone.size.x) + (2 * zone.size.x * math.random())
-						local y = zone.transform[14] + 2
-						local z = zone.transform[15] - (zone.size.z) + (2 * zone.size.z * math.random())
-						local transform = matrix.translation(x, y, z)
-						local scale = 0.75 + (math.random() * 0.25)
-						server.spawnCreature(transform, 3, scale)
-						mission.desc = mission.desc.." A polar bear was spotted nearby, exercise extreme caution."
+				end
+
+				if is_oil_spill then
+					mission.data.oil = 250.0
+					if location.parameters.size == "size=large" then
+						mission.data.oil = 1000.0
+					elseif location.parameters.size == "size=medium" then
+						mission.data.oil = 500.0
 					end
-				else
-					is_predator = false
+					mission.desc = mission.desc.." Oil is leaking on site, a cleanup operation may be required."
 				end
 
 				if is_locate then
@@ -549,6 +572,10 @@ g_mission_types =
 					self:spawn_location_objectives(mission)
 				end
 
+				if tableLength(spawned_objects.survivors) > 0 then
+					server.command("?ai_summon_hospital_ship "..mission.data.zone_x.." "..mission.data.zone_z)
+				end
+
 				return true
 			end
 
@@ -556,10 +583,23 @@ g_mission_types =
 		end,
 
 		update = function(self, mission)
+			local imporant_loaded_prev = mission.is_important_loaded
 			mission.is_important_loaded = server.getVehicleSimulating(mission.data.vehicle_main.id)
 			for survivor_id, survivor_object in pairs(mission.data.survivors) do
 				if server.getObjectSimulating(survivor_object.id) then
 					mission.is_important_loaded = true
+				end
+			end
+
+			if mission.is_important_loaded == true and imporant_loaded_prev == false then
+				server.setAudioMood(-1, 4)
+			end
+
+			if mission.data.is_oil_spill then
+				if mission.data.oil > g_oil_spill_rate then
+					mission.data.oil = mission.data.oil - g_oil_spill_rate
+					current_oil = server.getOilSpill(mission.data.zone_transform)
+					server.setOilSpill(mission.data.zone_transform, current_oil + g_oil_spill_rate)
 				end
 			end
 		end,
@@ -651,10 +691,10 @@ g_mission_types =
             end
 
 			if survivor_count > 0 and fire_count > 0 then
-				mission.desc = "Extinguish all fires and rescue "..survivor_count.." casualt"..(survivor_count > 1 and "ies " or "y ")..mission.data.zone.name.." to a hospital."
+				mission.desc = "Extinguish all fires and rescue "..math.floor(survivor_count).." casualt"..(survivor_count > 1 and "ies " or "y ")..mission.data.zone.name.." to a hospital."
 				server.notify(-1, "Casualties and Fire", mission.desc, 0)
 			elseif survivor_count > 0 then
-				mission.desc = "Rescue "..survivor_count.." casualt"..(survivor_count > 1 and "ies " or "y ")..mission.data.zone.name.." to a hospital."
+				mission.desc = "Rescue "..math.floor(survivor_count).." casualt"..(survivor_count > 1 and "ies " or "y ")..mission.data.zone.name.." to a hospital."
 				server.notify(-1, "Casualties", mission.desc, 0)
 			elseif fire_count > 0 then
 				mission.desc = "Extinguish all fires "..mission.data.zone.name.."."
@@ -668,10 +708,14 @@ g_mission_types =
 			if mission.data.is_predator then
 				if hasTag(mission.data.zone.tags, "biome=arctic") then
 					mission.desc = mission.desc.." A polar bear was spotted nearby, exercise extreme caution."
+				elseif hasTag(mission.data.zone.tags, "biome=arid") then
+					mission.desc = mission.desc.." A mountain lion was spotted nearby, exercise extreme caution."
 				else
 					mission.desc = mission.desc.." A grizzly bear was spotted nearby, exercise extreme caution."
 				end
 			end
+
+			server.setAudioMood(-1, 4)
 
 			removeMissionMarkers(mission)
 			self:rebuild_ui(mission)
@@ -815,6 +859,7 @@ g_mission_types =
 		end,
 
 		update = function(self, mission)
+			local imporant_loaded_prev = mission.is_important_loaded
 			mission.is_important_loaded = false
 			if mission.data.vehicle_main ~= nil then
 				if server.getVehicleSimulating(mission.data.vehicle_main.id) then
@@ -830,6 +875,10 @@ g_mission_types =
 				if server.getObjectSimulating(crate.id) then
 					mission.is_important_loaded = true
 				end
+			end
+
+			if mission.is_important_loaded == true and imporant_loaded_prev == false then
+				server.setAudioMood(-1, 3)
 			end
 		end,
 
@@ -972,11 +1021,16 @@ g_mission_types =
 		end,
 
 		update = function(self, mission)
+			local imporant_loaded_prev = mission.is_important_loaded
 			mission.is_important_loaded = false
 			for survivor_id, survivor_object in pairs(mission.data.survivors) do
 				if server.getObjectSimulating(survivor_object.id) then
 					mission.is_important_loaded = true
 				end
+			end
+
+			if mission.is_important_loaded == true and imporant_loaded_prev == false then
+				server.setAudioMood(-1, 4)
 			end
 		end,
 
@@ -1048,14 +1102,15 @@ g_mission_types =
 				return false
 			end
 
-			local is_tow, is_repair, is_refuel = false, false, false
+			local is_tow, is_repair, is_refuel, is_oil_spill = false, false, false, false
 			for _, capability in pairs(location.parameters.capabilities) do
 				if capability == "tow" and math.random(1, 2) == 1 then is_tow = true end
 				if capability == "repair" and math.random(1, 2) == 1 then is_repair = true end
 				if capability == "refuel" and math.random(1, 2) == 1 then is_refuel = true end
+				if capability == "oil" and g_savedata.enable_oil_spills then is_oil_spill = true end
 			end
 
-			if is_tow == false and is_repair== false and is_refuel == false then
+			if is_tow == false and is_repair == false and is_refuel == false then
 				if hasTag(location.parameters.capabilities, "tow") then
 					is_tow = true
 				else
@@ -1129,6 +1184,7 @@ g_mission_types =
 				mission.data.zone_transform = spawn_transform
 				mission.data.incoming_disaster = incoming_disaster
 				mission.data.icon = 2
+				mission.data.is_oil_spill = is_oil_spill
 
 				if location.parameters.vehicle_type == "vehicle_type=boat_ocean" or location.parameters.vehicle_type == "vehicle_type=boat_river" then mission.data.icon = 16
 				elseif location.parameters.vehicle_type == "vehicle_type=helicopter" then mission.data.icon = 15
@@ -1153,10 +1209,18 @@ g_mission_types =
 					table.insert(mission.objectives, createObjectiveTransportVehicle(main_vehicle, destination_zone, reward))
 				elseif is_repair then
 					mission.desc = "Conduct repairs on "..location.objects.display_name.." "..source_zone.name
-
 					mission.data.reward = 2000
-
 					table.insert(mission.objectives, createObjectiveRepairVehicle(main_vehicle.id))
+				end
+
+				if is_oil_spill then
+					mission.data.oil = 400.0
+					if location.parameters.size == "size=large" then
+						mission.data.oil = 1000.0
+					elseif location.parameters.size == "size=medium" then
+						mission.data.oil = 700.0
+					end
+					mission.desc = mission.desc .. " The report indicates an oil leak at the site that could become an environmental disaster."
 				end
 
 				spawnDisaster(mission.data)
@@ -1170,10 +1234,23 @@ g_mission_types =
 		end,
 
 		update = function(self, mission)
+			local imporant_loaded_prev = mission.is_important_loaded
 			if mission.data.vehicle_main ~= nil then
 				mission.is_important_loaded = server.getVehicleSimulating(mission.data.vehicle_main.id)
 			else
 				mission.is_important_loaded = false
+			end
+
+			if mission.is_important_loaded == true and imporant_loaded_prev == false then
+				server.setAudioMood(-1, 3)
+			end
+
+			if mission.data.is_oil_spill then
+				if mission.data.oil > g_oil_spill_rate then
+					mission.data.oil = mission.data.oil - g_oil_spill_rate
+					current_oil = server.getOilSpill(mission.data.zone_transform)
+					server.setOilSpill(mission.data.zone_transform, current_oil + g_oil_spill_rate)
+				end
 			end
 		end,
 
@@ -1241,10 +1318,10 @@ g_mission_types =
 			local players = server.getPlayers()
 
 			for player_index, player_object in pairs(players) do
-				local tile_transform = server.getTileTransform((server.getPlayerPos(player_object.id)), location.data.tile)
+				local tile_transform, success = server.getTileTransform((server.getPlayerPos(player_object.id)), location.data.tile)
 				local distance_to_zone = matrix.distance(tile_transform, (server.getPlayerPos(player_object.id)))
 
-				if distance_to_zone > min_range and distance_to_zone < max_range then
+				if success and distance_to_zone > min_range and distance_to_zone < max_range then
 					is_in_range = true
 					spawn_transform = tile_transform
 				end
@@ -1265,7 +1342,7 @@ g_mission_types =
 
 				local survivor_count = 0
 				for survivor_index, survivor_object in pairs(mission.data.survivors) do
-					local is_survivor_injured = math.random(1, 3) == 1
+					local is_survivor_injured = server.getGameSettings().npc_damage and math.random(1, 3) == 1
 
 					local c = server.getCharacterData(survivor_object.id)
 
@@ -1332,6 +1409,10 @@ g_mission_types =
 
 				server.notify(-1, "New Mission",  mission.desc, 0)
 
+				if tableLength(spawned_objects.survivors) > 0 then
+					server.command("?ai_summon_hospital_ship "..mission.data.zone_x.." "..mission.data.zone_z)
+				end
+
 				return true
 			end
 
@@ -1339,11 +1420,16 @@ g_mission_types =
 		end,
 
 		update = function(self, mission)
+			local imporant_loaded_prev = mission.is_important_loaded
 			mission.is_important_loaded = false
 			for survivor_id, survivor_object in pairs(mission.data.survivors) do
 				if server.getObjectSimulating(survivor_object.id) then
 					mission.is_important_loaded = true
 				end
+			end
+
+			if mission.is_important_loaded == true and imporant_loaded_prev == false then
+				server.setAudioMood(-1, 4)
 			end
 		end,
 
@@ -1404,15 +1490,17 @@ g_mission_types =
 			table.insert(mission.objectives, createObjectiveExtinguishFire(mission.data.fires))
 
 			if survivor_count > 0 and fire_count > 0 then
-				mission.desc = "Extinguish all fires and rescue "..survivor_count.." casualt"..(survivor_count > 1 and "ies" or "y").." to a hospital."
+				mission.desc = "Extinguish all fires and rescue "..math.floor(survivor_count).." casualt"..(survivor_count > 1 and "ies" or "y").." to a hospital."
 				server.notify(-1, "Casualties and Fire", mission.desc, 0)
 			elseif survivor_count > 0 then
-				mission.desc = "Rescue "..survivor_count.." casualt"..(survivor_count > 1 and "ies" or "y").." to a hospital."
+				mission.desc = "Rescue "..math.floor(survivor_count).." casualt"..(survivor_count > 1 and "ies" or "y").." to a hospital."
 				server.notify(-1, "Casualties", mission.desc, 0)
 			elseif fire_count > 0 then
 				mission.desc = "Extinguish all fires."
 				server.notify(-1, "Fire", mission.desc, 0)
 			end
+
+			server.setAudioMood(-1, 4)
 
 			removeMissionMarkers(mission)
 			self:rebuild_ui(mission)
@@ -1434,6 +1522,11 @@ function onCreate(is_world_create)
 	if g_savedata.mission_life_base == nil then g_savedata.mission_life_base = 60*60*60 end
 	if g_savedata.disasters == nil then g_savedata.disasters = {} end
 	if g_savedata.damage_tracker == nil then g_savedata.damage_tracker = {} end
+	if g_savedata.oil_spills == nil then g_savedata.oil_spills = {} end
+
+	for mission_type_name, mission_type_data in pairs(g_mission_types) do
+		mission_type_data.valid_locations = {}
+	end
 
 	for i in iterPlaylists() do
 		for j in iterLocations(i) do
@@ -1481,6 +1574,14 @@ function onPlayerJoin(steamid, name, peerid, admin, auth)
 			end
 		end
 	end
+
+	if g_savedata.oil_spills ~= nil then
+		for _, spill_x in pairs(g_savedata.oil_spills) do
+			for k, spill_z in pairs(spill_x) do
+				server.addMapObject(peerid, spill_z.id, 0, 8, spill_z.x, spill_z.z, 0, 0, 0, 0, spill_z.display_label, spill_z.radius, spill_z.hover_label, 20, 20, 20, 150)
+			end
+		end
+	end
 end
 
 function onToggleMap(peer_id, is_open)
@@ -1506,7 +1607,8 @@ function onTick(delta_worldtime)
 			g_savedata.rescued_characters[char_id] = timer + 1
 		end
 		if timer == 180 then
-			server.setCharacterData(char_id, 100, false, false)
+			server.setCharacterData(char_id, 100, true, false)
+			server.setCharacterTooltip(char_id, "Rescued Survivor")
 			g_savedata.rescued_characters[char_id] = nil
 		end
 	end
@@ -1572,7 +1674,7 @@ function onTick(delta_worldtime)
 	end
 end
 
-function onCustomCommand(message, user_id, admin, auth, command, one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen)
+function onCustomCommand(message, user_id, admin, auth, command, one, two, three)
 	math.randomseed(server.getTimeMillisec())
 
 	local name = server.getPlayerName(user_id)
@@ -1594,7 +1696,7 @@ function onCustomCommand(message, user_id, admin, auth, command, one, two, three
 
 			if g_mission_types[one] == nil then server.announce("[Server]", "Usage: ?mstart {building, tow_vehicle, crashed_vehicle, transport} [difficulty:0-1]") return end
 			if #g_mission_types[one].valid_locations < 1 then server.announce("[Server]", "No valid locations found for that mission type!") return end
-			
+
 			local attempts = 0
 			repeat
 				attempts = attempts + 1
@@ -1692,6 +1794,11 @@ function onCustomCommand(message, user_id, admin, auth, command, one, two, three
 				zone_transform = server.getPlayerPos(0)
 			}
 			spawnDisaster(data)
+		end
+
+		if command == "?moil" and admin == true then
+			oil_debug = (oil_debug == false)
+			server.announce("oil debug", oil_debug and "True" or "False")
 		end
 
 		if command == "?log" and admin == true then
@@ -1830,6 +1937,95 @@ function is_spawn_location_clear(transform, zone_size)
 	end
 
 	return is_clear
+end
+
+function onOilSpill(x, z, delta, amount, v_id)
+
+	if g_savedata.enable_oil_spills == false then return nil end
+
+	if amount > 100.0 or oil_debug then
+		if g_savedata.oil_spills[x] == nil then g_savedata.oil_spills[x] = {} end
+		if g_savedata.oil_spills[x][z] == nil then
+			-- new spill data
+			g_savedata.oil_spills[x][z] = { oil = 0.0 }
+			g_savedata.oil_spills[x][z].id = server.getMapID()
+			g_savedata.oil_spills[x][z].title = "Oil Spill"
+			g_savedata.oil_spills[x][z].desc = "Clean up the oil spill!"
+			g_savedata.oil_spills[x][z].zone_radius = 500
+			local radius_offset = g_savedata.oil_spills[x][z].zone_radius * (math.random(20, 90) / 100)
+			local angle = math.random(0,100) / 100 * 2 * math.pi
+
+			if oil_debug == false then
+				g_savedata.oil_spills[x][z].x = (x * 1000) + radius_offset * math.cos(angle)
+				g_savedata.oil_spills[x][z].z = (z * 1000) + radius_offset * math.sin(angle)
+
+				local adjacent_oil = false
+				for i = -1, 1, 1 do
+					for j = -1, 1, 1 do
+						if i ~= 0 or j ~= 0 then
+							if g_savedata.oil_spills[x+i] ~= nil then
+								if g_savedata.oil_spills[x+i][z+j] ~= nil then
+									if g_savedata.oil_spills[x+i][z+j].oil > 100.0 then
+										adjacent_oil = true
+									end
+								end
+							end
+						end
+					end
+				end
+
+				if adjacent_oil == false then
+					server.notify(-1, "New Oil Spill", "The location has been marked on your map.", 0)
+				end
+			else
+				g_savedata.oil_spills[x][z].x = x * 1000
+				g_savedata.oil_spills[x][z].z = z * 1000
+			end
+		end
+
+		g_savedata.oil_spills[x][z].oil = amount
+
+		local g = 20
+		if oil_debug and amount > 100.0 then g = 200 end
+
+		local debug_oil_str = ""
+		if oil_debug then
+			debug_oil_str = "\nOil Amount: "..g_savedata.oil_spills[x][z].oil
+		end
+
+		server.removeMapObject(-1, g_savedata.oil_spills[x][z].id)
+		server.addMapObject(-1, g_savedata.oil_spills[x][z].id, 0, 8, g_savedata.oil_spills[x][z].x, g_savedata.oil_spills[x][z].z, 0, 0, 0, 0, g_savedata.oil_spills[x][z].title, g_savedata.oil_spills[x][z].zone_radius, g_savedata.oil_spills[x][z].desc..debug_oil_str, 20, g, 20, 150)
+	elseif amount < 50.0 and oil_debug == false then
+		if g_savedata.oil_spills[x] ~= nil then
+			if g_savedata.oil_spills[x][z] ~= nil then
+				server.removeMapObject(-1,  g_savedata.oil_spills[x][z].id)
+				g_savedata.oil_spills[x][z] = nil
+
+				if v_id ~= -1 then
+					local reward = 2000
+					server.notify(-1, "Oil Spill Cleaned", "The oil spill has been cleared. Rewarded $"..math.floor(reward)..".", 4)
+					server.setCurrency(server.getCurrency() + reward, server.getResearchPoints())
+				end
+			end
+		end
+	else
+		if g_savedata.oil_spills[x] ~= nil then
+			if g_savedata.oil_spills[x][z] ~= nil then
+				g_savedata.oil_spills[x][z].oil = amount
+
+				local g = 20
+				if oil_debug and amount > 100.0 then g = 200 end
+
+				local debug_oil_str = ""
+				if oil_debug then
+					debug_oil_str = "\nOil Amount: "..g_savedata.oil_spills[x][z].oil
+				end
+
+				server.removeMapObject(-1, g_savedata.oil_spills[x][z].id)
+				server.addMapObject(-1, g_savedata.oil_spills[x][z].id, 0, 8, g_savedata.oil_spills[x][z].x, g_savedata.oil_spills[x][z].z, 0, 0, 0, 0, g_savedata.oil_spills[x][z].title, g_savedata.oil_spills[x][z].zone_radius, g_savedata.oil_spills[x][z].desc..debug_oil_str, 20, g, 20, 150)
+			end
+		end
+	end
 end
 
 function getClosestVolcano(transform)

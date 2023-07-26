@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition name="Fluid Filter" category="9" type="24" mass="5" value="400" tags="basic" mesh_data_name="meshes/component_fluid_filter.mesh" water_component_type="27">
+	<tooltip_properties description="The valve can be configured to select which fluid groups may pass across the two directional valve. Liquids or gases." short_description="The fluid filter can prevent liquids or gases crossing the valve."/>
+	<sfx_datas/>
+	<surfaces>
+		<surface orientation="3" shape="3" trans_type="2">
+			<position/>
+		</surface>
+		<surface orientation="2" shape="3" trans_type="2">
+			<position y="1"/>
+		</surface>
+	</surfaces>
+	<buoyancy_surfaces/>
+	<logic_nodes>
+		<logic_node orientation="3" label="Fluid A" mode="1" type="3" description="Fluid connection.">
+			<position/>
+		</logic_node>
+		<logic_node orientation="2" label="Fluid B" mode="1" type="3" description="Fluid connection.">
+			<position y="1"/>
+		</logic_node>
+	</logic_nodes>
+	<couplings/>
+	<voxels>
+		<voxel flags="1" buoy_pipes="18">
+			<position/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1" buoy_pipes="18">
+			<position y="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+	</voxels>
+	<voxel_min/>
+	<voxel_max y="1"/>
+	<voxel_physics_min/>
+	<voxel_physics_max y="1"/>
+	<bb_physics_min/>
+	<bb_physics_max/>
+	<compartment_sample_pos/>
+	<constraint_pos_parent/>
+	<constraint_pos_child/>
+	<voxel_location_child/>
+	<seat_offset/>
+	<seat_front/>
+	<seat_up/>
+	<seat_camera/>
+	<seat_render/>
+	<force_dir/>
+	<light_position/>
+	<light_color x="1" y="1" z="1"/>
+	<light_forward/>
+	<door_size x="1" y="1" z="1"/>
+	<door_normal/>
+	<door_side/>
+	<door_up/>
+	<door_base_pos/>
+	<dynamic_body_position/>
+	<dynamic_rotation_axes y="1"/>
+	<dynamic_side_axis x="1"/>
+	<magnet_offset/>
+	<connector_axis/>
+	<connector_up/>
+	<jet_engine_connections_prev/>
+	<jet_engine_connections_next/>
+	<particle_direction/>
+	<particle_offset/>
+	<particle_bounds/>
+	<rope_hook_offset/>
+</definition>
+

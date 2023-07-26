@@ -14,7 +14,7 @@
 			<transform 00="0.642788" 02="-0.766044" 20="0.766044" 22="0.642788" 30="262.349884" 31="31.696163" 32="268.5401"/>
 		</mesh>
 		<mesh id="mesh4" file_name="meshes/workbench.mesh">
-			<transform 00="0.087156" 02="0.996195" 20="-0.996195" 22="0.087156" 30="-163.945145" 31="48.793217" 32="286.888489"/>
+			<transform 00="0.087156" 02="0.996195" 20="-0.996195" 22="0.087156" 30="-163.945145" 31="48.793217" 32="285.010223"/>
 		</mesh>
 		<mesh id="mesh5" file_name="meshes/arid_mainland_assets/flatpack_house.mesh">
 			<transform 00="0.087156" 02="0.996195" 20="-0.996195" 22="0.087156" 30="-202.471695" 31="47.674946" 32="258.438568"/>
@@ -29,11 +29,7 @@
 			<transform 30="-192.302414" 31="47.680195" 32="253.796356"/>
 		</mesh>
 	</meshes>
-	<physics_objects>
-		<physics_object id="physics_static0" file_name="meshes/for_sale_sign_phys.phys">
-			<transform 30="-192.302414" 31="47.680195" 32="253.796356"/>
-		</physics_object>
-	</physics_objects>
+	<physics_objects/>
 	<physics_meshes>
 		<physics_mesh id="physics_mesh0" file_name="meshes/arid_mainland/arid_island_12_10.phys">
 			<transform/>
@@ -42,13 +38,13 @@
 			<transform 00="0.642788" 02="-0.766044" 20="0.766044" 22="0.642788" 30="254.126175" 31="30.78159" 32="271.372223"/>
 		</physics_mesh>
 		<physics_mesh id="physics_mesh2" file_name="meshes/workbench_phys.phys">
-			<transform 00="0.087156" 02="0.996195" 20="-0.996195" 22="0.087156" 30="-163.945145" 31="48.793217" 32="286.888489"/>
+			<transform 00="0.087156" 02="0.996195" 20="-0.996195" 22="0.087156" 30="-163.945145" 31="48.793217" 32="284.998596"/>
 		</physics_mesh>
 		<physics_mesh id="physics_mesh3" file_name="meshes/workbench_phys.phys">
 			<transform 00="0.642788" 02="-0.766044" 20="0.766044" 22="0.642788" 30="262.349884" 31="31.696163" 32="268.5401"/>
 		</physics_mesh>
-		<physics_mesh id="physics_mesh4" file_name="meshes/workbench_phys.phys">
-			<transform 00="-0.087156" 02="-0.996195" 20="0.996195" 22="-0.087156" 30="-163.945145" 31="48.793217" 32="286.888489"/>
+		<physics_mesh id="physics_mesh8" file_name="meshes/arctic_tile_22_train_depot_phys.phys">
+			<transform 00="-0.061049" 02="-0.998135" 20="0.998135" 22="-0.061049" 30="-161.63269" 31="46.86924" 32="324.087616"/>
 		</physics_mesh>
 		<physics_mesh id="physics_mesh5" file_name="meshes/arid_mainland_assets/flatpack_house_phys.phys">
 			<transform 00="0.087156" 02="0.996195" 20="-0.996195" 22="0.087156" 30="-202.471695" 31="47.674946" 32="258.438568"/>
@@ -59,8 +55,8 @@
 		<physics_mesh id="p_door_2_phys" parent_id="p_door_2" file_name="meshes/arid_mainland_assets/flatpack_door_phys.phys">
 			<transform 00="0.996195" 02="-0.087156" 20="0.087156" 22="0.996195" 30="-203.735718" 31="47.754578" 32="260.903839"/>
 		</physics_mesh>
-		<physics_mesh id="physics_mesh8" file_name="meshes/arctic_tile_22_train_depot_phys.phys">
-			<transform 00="-0.061049" 02="-0.998135" 20="0.998135" 22="-0.061049" 30="-161.63269" 31="46.86924" 32="324.087616"/>
+		<physics_mesh id="sale_sign_phys" parent_id="sale_sign_interact" file_name="meshes/for_sale_sign_phys.phys">
+			<transform 30="-192.302414" 31="47.680195" 32="253.796356"/>
 		</physics_mesh>
 	</physics_meshes>
 	<physics_dynamics/>
@@ -70,55 +66,55 @@
 			<color x="5" y="5" z="5"/>
 		</light>
 		<light id="omni1" radius="10" is_render_halo="true">
-			<transform 30="-162.159836" 31="54.992966" 32="313.036865"/>
+			<transform 30="-162.436996" 31="55.107616" 32="310.949677"/>
 			<color x="1" y="1" z="1"/>
 		</light>
 		<light id="omni2" radius="10" is_render_halo="true">
-			<transform 30="-162.932129" 31="54.992966" 32="301.989685"/>
+			<transform 30="-163.10701" 31="55.100792" 32="299.953217"/>
 			<color x="1" y="1" z="1"/>
 		</light>
 		<light id="omni3" radius="10" is_render_halo="true">
-			<transform 30="-163.692627" 31="54.992966" 32="291.044037"/>
+			<transform 30="-163.77655" 31="55.116199" 32="288.980804"/>
 			<color x="1" y="1" z="1"/>
 		</light>
 		<light id="omni4" radius="10" is_render_halo="true">
-			<transform 30="-178.99469" 31="54.992966" 32="292.18512"/>
+			<transform 30="-179.21434" 31="55.119148" 32="289.896881"/>
 			<color x="1" y="1" z="1"/>
 		</light>
 		<light id="omni5" radius="10" is_render_halo="true">
-			<transform 30="-178.340714" 31="54.992966" 32="303.124603"/>
+			<transform 30="-178.534546" 31="55.123943" 32="300.91452"/>
 			<color x="1" y="1" z="1"/>
 		</light>
 		<light id="omni6" radius="10" is_render_halo="true">
-			<transform 30="-177.558289" 31="54.992966" 32="314.081726"/>
+			<transform 30="-177.867752" 31="55.130714" 32="311.900635"/>
 			<color x="1" y="1" z="1"/>
 		</light>
 		<light id="omni7" radius="10" is_render_halo="true">
-			<transform 30="-146.733398" 31="54.992966" 32="311.975861"/>
+			<transform 30="-147.020035" 31="55.097332" 32="309.999542"/>
 			<color x="1" y="1" z="1"/>
 		</light>
 		<light id="omni8" radius="10" is_render_halo="true">
-			<transform 30="-147.521851" 31="54.992966" 32="300.906708"/>
+			<transform 30="-147.690781" 31="55.11927" 32="299.012756"/>
 			<color x="1" y="1" z="1"/>
 		</light>
 		<light id="omni9" radius="10" is_render_halo="true">
-			<transform 30="-148.262024" 31="54.992966" 32="290.054077"/>
+			<transform 30="-148.355545" 31="55.123589" 32="288.033661"/>
 			<color x="1" y="1" z="1"/>
 		</light>
 		<light id="omni10" radius="0.5" is_render_halo="true">
-			<transform 30="-148.695679" 31="55.489586" 32="284.782532"/>
+			<transform 30="-148.726074" 31="55.480167" 32="282.838531"/>
 			<color x="1" y="1" z="1"/>
 		</light>
 		<light id="omni11" radius="0.5" is_render_halo="true">
-			<transform 30="-159.939621" 31="55.480644" 32="285.568359"/>
+			<transform 30="-159.986954" 31="55.487022" 32="283.5242"/>
 			<color x="1" y="1" z="1"/>
 		</light>
 		<light id="omni12" radius="0.5" is_render_halo="true">
-			<transform 30="-168.089386" 31="55.485889" 32="286.148499"/>
+			<transform 30="-168.157394" 31="55.4785" 32="284.027344"/>
 			<color x="1" y="1" z="1"/>
 		</light>
 		<light id="omni13" radius="0.5" is_render_halo="true">
-			<transform 30="-179.489975" 31="55.464016" 32="286.914429"/>
+			<transform 30="-179.552078" 31="55.483807" 32="284.72525"/>
 			<color x="1" y="1" z="1"/>
 		</light>
 		<light id="p_omni_a" radius="5" is_render_halo="true">
@@ -148,19 +144,19 @@
 	</lights_omni>
 	<lights_spot>
 		<light id="spot0" range="15" fov="0.261799" texture="graphics/ies/ies_default.txtr">
-			<transform 00="-1" 11="0.5" 12="-0.866025" 21="-0.866025" 22="-0.5" 30="-168.130081" 31="55.530197" 32="285.987091"/>
+			<transform 00="-1" 11="0.5" 12="-0.866025" 21="-0.866025" 22="-0.5" 30="-168.14653" 31="55.491276" 32="284.033539"/>
 			<color x="1" y="1" z="1"/>
 		</light>
 		<light id="spot1" range="15" fov="0.261799" texture="graphics/ies/ies_default.txtr">
-			<transform 00="-1" 11="0.5" 12="-0.866025" 21="-0.866025" 22="-0.5" 30="-159.965302" 31="55.478195" 32="285.629761"/>
+			<transform 00="-1" 11="0.5" 12="-0.866025" 21="-0.866025" 22="-0.5" 30="-159.980621" 31="55.488747" 32="283.52887"/>
 			<color x="1" y="1" z="1"/>
 		</light>
 		<light id="spot2" range="15" fov="0.261799" texture="graphics/ies/ies_default.txtr">
-			<transform 00="-1" 11="0.5" 12="-0.866025" 21="-0.866025" 22="-0.5" 30="-179.419846" 31="55.531269" 32="287.024689"/>
+			<transform 00="-1" 11="0.5" 12="-0.866025" 21="-0.866025" 22="-0.5" 30="-179.545258" 31="55.485909" 32="284.72171"/>
 			<color x="1" y="1" z="1"/>
 		</light>
 		<light id="spot3" range="15" fov="0.261799" texture="graphics/ies/ies_default.txtr">
-			<transform 00="-1" 11="0.5" 12="-0.866025" 21="-0.866025" 22="-0.5" 30="-148.691544" 31="55.498196" 32="284.648651"/>
+			<transform 00="-1" 11="0.5" 12="-0.866025" 21="-0.866025" 22="-0.5" 30="-148.721527" 31="55.48711" 32="282.847382"/>
 			<color x="1" y="1" z="1"/>
 		</light>
 	</lights_spot>
@@ -190,7 +186,7 @@
 			<size x="0.5" y="0.5" z="0.5"/>
 		</interactable>
 		<interactable id="workbench_int" target_object_id="workbench_edit" label="Workbench" interact_type="2">
-			<transform 00="0.087156" 02="0.996195" 20="-0.996195" 22="0.087156" 30="-163.929626" 31="48.793217" 32="287.065735"/>
+			<transform 00="0.087156" 02="0.996195" 20="-0.996195" 22="0.087156" 30="-163.929626" 31="48.793217" 32="285.0271"/>
 			<size x="1" y="2" z="2"/>
 		</interactable>
 		<interactable id="p_door_2_int" target_object_id="p_door_2_logic" label="Door">
@@ -299,6 +295,21 @@
 		</markers>
 		<markers id="tile_marker7" marker_type="13" string_data="Hyanen Garage" icon="1">
 			<transform 30="268.889069" 31="36.301041" 32="261.447235"/>
+		</markers>
+		<markers id="tile_marker8" marker_type="9">
+			<transform 00="-0.842979" 02="0.537947" 20="-0.537947" 22="-0.842979" 30="259.027435" 31="31.566256" 32="271.372223"/>
+		</markers>
+		<markers id="tile_marker9" marker_type="9">
+			<transform 00="-0.950657" 02="0.310242" 20="-0.310242" 22="-0.950657" 30="268.893768" 31="31.566256" 32="272.032471"/>
+		</markers>
+		<markers id="tile_marker10" marker_type="9">
+			<transform 00="-0.717754" 02="-0.696297" 11="1" 20="0.696297" 22="-0.717754" 30="-180.013077" 31="49.229496" 32="314.76001"/>
+		</markers>
+		<markers id="tile_marker11" marker_type="9">
+			<transform 00="-0.893821" 02="0.448424" 20="-0.448424" 22="-0.893821" 30="-155.022568" 31="49.229496" 32="313.453491"/>
+		</markers>
+		<markers id="tile_marker12" marker_type="9">
+			<transform 00="-0.49338" 02="0.869814" 20="-0.869814" 22="-0.49338" 30="-327.40097" 31="29.751534" 32="315.463531"/>
 		</markers>
 	</tile_markers>
 	<mission_zones/>
@@ -902,19 +913,22 @@
 		<track id="train_158">
 			<transform 30="-183.137421" 31="47.978493" 32="194.119293"/>
 			<links>
-				<link id="train_160"/>
 				<link id="train_157"/>
+				<link id="train_159"/>
 			</links>
 		</track>
 		<track id="train_159">
 			<transform 30="-183.627014" 31="47.978493" 32="212.458282"/>
-			<links/>
+			<links>
+				<link id="train_158"/>
+				<link id="train_160"/>
+			</links>
 		</track>
 		<track id="train_160">
 			<transform 30="-183.417023" 31="47.978493" 32="227.580811"/>
 			<links>
 				<link id="train_161"/>
-				<link id="train_158"/>
+				<link id="train_159"/>
 			</links>
 		</track>
 		<track id="train_161">

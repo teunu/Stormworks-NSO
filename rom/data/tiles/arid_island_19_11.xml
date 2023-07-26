@@ -5,7 +5,7 @@
 			<transform/>
 		</mesh>
 		<mesh id="mesh1" file_name="meshes/mainland_assets/mainland_runway.mesh">
-			<transform 00="0.707107" 02="0.707107" 20="-0.707107" 22="0.707107" 30="-84.352982" 31="19.118782" 32="-12.04784"/>
+			<transform 00="0.707107" 02="0.707107" 20="-0.707107" 22="0.707107" 30="-83.529327" 31="19.114193" 32="-11.039524"/>
 		</mesh>
 		<mesh id="hangar_mesh" file_name="meshes/ultimate_base_hangar.mesh">
 			<transform 00="-0.707107" 02="-0.707107" 20="0.707107" 22="-0.707107" 30="-49.699303" 31="19.074291" 32="226.026657"/>
@@ -55,8 +55,8 @@
 		<physics_mesh id="physics_mesh0" file_name="meshes/arid_mainland/arid_island_19_11.phys">
 			<transform/>
 		</physics_mesh>
-		<physics_mesh id="physics_mesh1" file_name="meshes/mainland_assets/mainland_runway_phys.phys">
-			<transform 00="0.707107" 02="0.707107" 20="-0.707107" 22="0.707107" 30="-84.352982" 31="19.118782" 32="-12.04784"/>
+		<physics_mesh id="sale_sign_phys" parent_id="sale_sign_interact" file_name="meshes/for_sale_sign_phys.phys">
+			<transform 30="30.584301" 31="19.048334" 32="150.996521"/>
 		</physics_mesh>
 		<physics_mesh id="hangar_phys" file_name="meshes/mainland_assets/mainland_hanger_phys.phys">
 			<transform 00="-0.707107" 02="-0.707107" 20="0.707107" 22="-0.707107" 30="-49.699303" 31="19.074291" 32="226.026657"/>
@@ -91,8 +91,8 @@
 		<physics_mesh id="door_c_phys" parent_id="door_c" file_name="meshes/door_hospital_phys.phys">
 			<transform 00="0.707107" 02="0.707107" 20="-0.707107" 22="0.707107" 30="108.513344" 31="19.110029" 32="157.255051"/>
 		</physics_mesh>
-		<physics_mesh id="physics_mesh13" file_name="meshes/for_sale_sign_phys.phys">
-			<transform 30="30.584301" 31="19.048334" 32="150.996521"/>
+		<physics_mesh id="physics_mesh13" file_name="meshes/mainland_assets/mainland_runway_phys.phys">
+			<transform 00="0.707107" 02="0.707107" 20="-0.707107" 22="0.707107" 30="-83.543114" 31="19.114193" 32="-11.025319"/>
 		</physics_mesh>
 	</physics_meshes>
 	<physics_dynamics/>
@@ -174,67 +174,67 @@
 			<color x="1" y="1" z="0.9"/>
 		</light>
 		<light id="omni19" radius="2" is_render_halo="true">
-			<transform 00="0.707107" 02="-0.707107" 20="0.707107" 22="0.707107" 30="103.351303" 31="19.2841" 32="-161.152771"/>
+			<transform 00="0.707107" 02="-0.707107" 20="0.707107" 22="0.707107" 30="104.187881" 31="19.2841" 32="-160.134964"/>
 			<color y="5"/>
 		</light>
 		<light id="omni20" radius="2" is_render_halo="true">
-			<transform 00="0.707107" 02="-0.707107" 20="0.707107" 22="0.707107" 30="124.80603" 31="19.2841" 32="-182.607498"/>
+			<transform 00="0.707107" 02="-0.707107" 20="0.707107" 22="0.707107" 30="125.656387" 31="19.2841" 32="-181.611908"/>
 			<color y="5"/>
 		</light>
 		<light id="omni21" radius="2" is_render_halo="true">
-			<transform 00="0.707107" 02="-0.707107" 20="0.707107" 22="0.707107" 30="145.911255" 31="19.2841" 32="-203.712723"/>
+			<transform 00="0.707107" 02="-0.707107" 20="0.707107" 22="0.707107" 30="146.7453" 31="19.2841" 32="-202.720871"/>
 			<color y="5"/>
 		</light>
 		<light id="omni22" radius="2" is_render_halo="true">
-			<transform 00="0.707107" 02="-0.707107" 20="0.707107" 22="0.707107" 30="167.113037" 31="19.2841" 32="-224.914505"/>
+			<transform 00="0.707107" 02="-0.707107" 20="0.707107" 22="0.707107" 30="167.937897" 31="19.2841" 32="-223.921982"/>
 			<color y="5"/>
 		</light>
 		<light id="omni23" radius="2" is_render_halo="true">
-			<transform 00="0.707107" 02="-0.707107" 20="0.707107" 22="0.707107" 30="188.257111" 31="19.2841" 32="-246.058578"/>
+			<transform 00="0.707107" 02="-0.707107" 20="0.707107" 22="0.707107" 30="189.107971" 31="19.2841" 32="-245.055893"/>
 			<color y="5"/>
 		</light>
 		<light id="omni24" radius="2" is_render_halo="true">
-			<transform 00="0.707107" 02="-0.707107" 20="0.707107" 22="0.707107" 30="209.359497" 31="19.2841" 32="-267.16098"/>
+			<transform 00="0.707107" 02="-0.707107" 20="0.707107" 22="0.707107" 30="210.169098" 31="19.2841" 32="-266.158752"/>
 			<color y="5"/>
 		</light>
 		<light id="omni25" radius="2" is_render_halo="true">
-			<transform 00="0.707107" 02="-0.707107" 20="0.707107" 22="0.707107" 30="230.409088" 31="19.2841" 32="-288.210571"/>
+			<transform 00="0.707107" 02="-0.707107" 20="0.707107" 22="0.707107" 30="231.218948" 31="19.2841" 32="-287.182922"/>
 			<color y="5"/>
 		</light>
 		<light id="omni26" radius="2" is_render_halo="true">
-			<transform 00="0.707107" 02="-0.707107" 20="0.707107" 22="0.707107" 30="251.847137" 31="19.2841" 32="-309.648651"/>
+			<transform 00="0.707107" 02="-0.707107" 20="0.707107" 22="0.707107" 30="252.65564" 31="19.2841" 32="-308.633484"/>
 			<color y="5"/>
 		</light>
 		<light id="omni27" radius="2" is_render_halo="true">
-			<transform 00="0.707107" 02="-0.707107" 20="0.707107" 22="0.707107" 30="-236.780685" 31="19.2841" 32="178.979172"/>
+			<transform 00="0.707107" 02="-0.707107" 20="0.707107" 22="0.707107" 30="-235.96051" 31="19.2841" 32="180.000824"/>
 			<color x="1" y="5"/>
 		</light>
 		<light id="omni28" radius="2" is_render_halo="true">
-			<transform 00="0.707107" 02="-0.707107" 20="0.707107" 22="0.707107" 30="-258.233459" 31="19.2841" 32="200.431961"/>
+			<transform 00="0.707107" 02="-0.707107" 20="0.707107" 22="0.707107" 30="-257.422516" 31="19.2841" 32="201.446304"/>
 			<color y="5"/>
 		</light>
 		<light id="omni29" radius="2" is_render_halo="true">
-			<transform 00="0.707107" 02="-0.707107" 20="0.707107" 22="0.707107" 30="-279.279266" 31="19.2841" 32="221.477783"/>
+			<transform 00="0.707107" 02="-0.707107" 20="0.707107" 22="0.707107" 30="-278.460297" 31="19.2841" 32="222.500763"/>
 			<color y="5"/>
 		</light>
 		<light id="omni30" radius="2" is_render_halo="true">
-			<transform 00="0.707107" 02="-0.707107" 20="0.707107" 22="0.707107" 30="-300.380981" 31="19.2841" 32="242.579498"/>
+			<transform 00="0.707107" 02="-0.707107" 20="0.707107" 22="0.707107" 30="-299.568237" 31="19.2841" 32="243.583649"/>
 			<color y="5"/>
 		</light>
 		<light id="omni31" radius="2" is_render_halo="true">
-			<transform 00="0.707107" 02="-0.707107" 20="0.707107" 22="0.707107" 30="-321.521362" 31="19.2841" 32="263.71991"/>
+			<transform 00="0.707107" 02="-0.707107" 20="0.707107" 22="0.707107" 30="-320.717438" 31="19.2841" 32="264.737885"/>
 			<color y="5"/>
 		</light>
 		<light id="omni32" radius="2" is_render_halo="true">
-			<transform 00="0.707107" 02="-0.707107" 20="0.707107" 22="0.707107" 30="-342.73233" 31="19.2841" 32="284.930878"/>
+			<transform 00="0.707107" 02="-0.707107" 20="0.707107" 22="0.707107" 30="-341.93222" 31="19.2841" 32="285.95993"/>
 			<color y="5"/>
 		</light>
 		<light id="omni33" radius="2" is_render_halo="true">
-			<transform 00="0.707107" 02="-0.707107" 20="0.707107" 22="0.707107" 30="-363.805847" 31="19.2841" 32="306.004395"/>
+			<transform 00="0.707107" 02="-0.707107" 20="0.707107" 22="0.707107" 30="-363.022919" 31="19.2841" 32="307.03891"/>
 			<color y="5"/>
 		</light>
 		<light id="omni34" radius="2" is_render_halo="true">
-			<transform 00="0.707107" 02="-0.707107" 20="0.707107" 22="0.707107" 30="-385.310974" 31="19.2841" 32="327.509521"/>
+			<transform 00="0.707107" 02="-0.707107" 20="0.707107" 22="0.707107" 30="-384.509399" 31="19.2841" 32="328.519348"/>
 			<color y="5"/>
 		</light>
 		<light id="lamp_omni" radius="3" is_render_halo="true">
@@ -321,7 +321,7 @@
 			<transform 00="0.707107" 02="-0.707107" 20="0.707107" 22="0.707107" 30="108.243729" 31="23.347591" 32="157.149261"/>
 			<size x="0.3" y="0.3" z="0.3"/>
 		</interactable>
-		<interactable id="sale_sign_interact" label="Buy Island" interact_type="3">
+		<interactable id="sale_sign_interact" target_object_id="hangar_doors_logic" label="Buy Island" interact_type="3">
 			<transform 30="31.32206" 31="20.268204" 32="151.772507"/>
 			<size x="2" y="2" z="2"/>
 		</interactable>
@@ -341,22 +341,22 @@
 		<logic id="door_c_logic" target_a="door_c_closed" target_b="door_c_open" target_movable="door_c" anim_duration="100">
 			<transform 30="108.510246" 31="19.110029" 32="157.255051"/>
 		</logic>
-		<logic id="h_door_06_logic" target_a="h_door_06_closed" target_b="h_door_06_open" target_movable="h_door_06" anim_duration="320">
+		<logic id="h_door_06_logic" target_a="h_door_06_closed" target_b="h_door_06_open" target_movable="h_door_06" anim_duration="750">
 			<transform 30="72.295616" 31="19.074291" 32="118.767281"/>
 		</logic>
-		<logic id="h_door_01_logic" target_a="h_door_01_closed" target_b="h_door_01_open" target_movable="h_door_01" anim_duration="320">
+		<logic id="h_door_01_logic" target_a="h_door_01_closed" target_b="h_door_01_open" target_movable="h_door_01" anim_duration="750">
 			<transform 30="47.14946" 31="19.074291" 32="143.913437"/>
 		</logic>
-		<logic id="h_door_02_logic" target_a="h_door_02_closed" target_b="h_door_02_open" target_movable="h_door_02" anim_duration="320">
+		<logic id="h_door_02_logic" target_a="h_door_02_closed" target_b="h_door_02_open" target_movable="h_door_02" anim_duration="750">
 			<transform 30="52.198692" 31="19.074291" 32="139.18605"/>
 		</logic>
-		<logic id="h_door_03_logic" target_a="h_door_03_closed" target_b="h_door_03_open" target_movable="h_door_03" anim_duration="320">
+		<logic id="h_door_03_logic" target_a="h_door_03_closed" target_b="h_door_03_open" target_movable="h_door_03" anim_duration="750">
 			<transform 30="57.300777" 31="19.074291" 32="134.432022"/>
 		</logic>
-		<logic id="h_door_04_logic" target_a="h_door_04_closed" target_b="h_door_04_open" target_movable="h_door_04" anim_duration="320">
+		<logic id="h_door_04_logic" target_a="h_door_04_closed" target_b="h_door_04_open" target_movable="h_door_04" anim_duration="750">
 			<transform 30="62.608246" 31="19.074291" 32="129.124557"/>
 		</logic>
-		<logic id="h_door_05_logic" target_a="h_door_05_closed" target_b="h_door_05_open" target_movable="h_door_05" anim_duration="320">
+		<logic id="h_door_05_logic" target_a="h_door_05_closed" target_b="h_door_05_open" target_movable="h_door_05" anim_duration="750">
 			<transform 30="67.487335" 31="19.074291" 32="123.897408"/>
 		</logic>
 		<logic id="door_a_logic" target_a="door_a_closed" target_b="door_a_open" target_movable="hangar_entrance" anim_duration="100">
@@ -415,7 +415,7 @@
 	</light_logic_nodes>
 	<rotation_logic_nodes/>
 	<hangar_door_logic_nodes>
-		<logic id="hangar_doors_logic" target_id_0="h_door_01_logic" target_id_1="h_door_02_logic" target_id_2="h_door_03_logic" target_id_3="h_door_04_logic" target_id_4="h_door_05_logic" target_id_5="h_door_06_logic">
+		<logic id="hangar_doors_logic" target_id_0="h_door_01_logic" target_id_1="h_door_02_logic" target_id_2="h_door_03_logic" target_id_3="h_door_04_logic" target_id_4="h_door_05_logic" target_id_5="h_door_06_logic" target_id_6="hangar_doors_audio">
 			<transform 30="43.225464" 31="20.351887" 32="146.924149"/>
 		</logic>
 		<logic id="omni_logic" target_id_0="omni_a_logic" target_id_1="omni_b_logic" target_id_2="omni_c_logic" target_id_3="omni_d_logic" target_id_4="omni_e_logic" target_id_5="omni_f_logic">
@@ -428,7 +428,11 @@
 			<transform 30="42.405251" 31="23.137333" 32="147.788864"/>
 		</logic>
 	</hangar_door_logic_nodes>
-	<audio_logic_nodes/>
+	<audio_logic_nodes>
+		<logic id="hangar_doors_audio" start_filename="audio/elevator/cn_elevator_start.ogg" loop_filename="audio/elevator/cn_elevator_lp.ogg" end_filename="audio/elevator/cn_elevator_end.ogg" range_inner="15" range_outer="75" audio_gain="1" audio_underwater_affected="true" play_duration="725">
+			<transform 00="0.707107" 02="0.707107" 20="-0.707107" 22="0.707107" 30="59.921299" 31="25" 32="131.593063"/>
+		</logic>
+	</audio_logic_nodes>
 	<tile_markers>
 		<markers id="door_b_open" marker_type="8" icon="1">
 			<transform 00="-0.707107" 02="0.707107" 20="-0.707107" 22="-0.707107" 30="108.534828" 31="22.055183" 32="157.248108"/>
@@ -490,13 +494,22 @@
 		<markers id="tile_marker19" marker_type="13" string_data="Clarke Airfield" icon="10">
 			<transform 30="15.725491" 31="48.285995" 32="92.479889"/>
 		</markers>
+		<markers id="tile_marker20" marker_type="9">
+			<transform 30="299.196533" 31="5.381764" 32="348.265015"/>
+		</markers>
+		<markers id="tile_marker21" marker_type="9">
+			<transform 30="79.047821" 31="19.830975" 32="366.44397"/>
+		</markers>
+		<markers id="tile_marker22" marker_type="9">
+			<transform 30="300.340759" 31="5.381764" 32="346.373169"/>
+		</markers>
 	</tile_markers>
 	<mission_zones>
-		<zone id="mission_zone0">
-			<transform 00="0.707107" 02="-0.707107" 20="0.707107" 22="0.707107" 30="79.245117" 31="27.006985" 32="150.996521"/>
-			<size x="57" y="20" z="57"/>
-			<outer_scale/>
-			<outer_offset/>
+		<zone id="hangar_indoor_audio" audio_reverb_gain="0.25" audio_reverb_amount="0.125">
+			<transform 00="0.707107" 02="-0.707107" 20="0.707107" 22="0.707107" 30="84.978783" 31="27.006985" 32="156.77478"/>
+			<size x="58" y="20" z="40"/>
+			<outer_scale x="1" y="1" z="1.4"/>
+			<outer_offset z="-8"/>
 		</zone>
 	</mission_zones>
 	<dynamic_markers>
@@ -515,13 +528,13 @@
 			</links>
 		</track>
 		<track id="train_130">
-			<transform 30="500" 31="19.17" 32="159.289993"/>
+			<transform 30="501.049988" 31="19.17" 32="158.210007"/>
 			<links>
 				<link id="train_134"/>
 			</links>
 		</track>
 		<track id="train_131">
-			<transform 30="500" 31="19.17" 32="165.580002"/>
+			<transform 30="501.06424" 31="19.17" 32="164.592957"/>
 			<links>
 				<link id="train_133"/>
 			</links>
@@ -587,13 +600,13 @@
 			</links>
 		</track>
 		<track id="train_141">
-			<transform 30="500" 31="19.17" 32="-402.049988"/>
+			<transform 30="500" 31="19.17" 32="-401.935242"/>
 			<links>
 				<link id="train_143"/>
 			</links>
 		</track>
 		<track id="train_142">
-			<transform 30="500" 31="19.17" 32="-400.869995"/>
+			<transform 30="498.268829" 31="19.17" 32="-402.484253"/>
 			<links>
 				<link id="train_144"/>
 			</links>

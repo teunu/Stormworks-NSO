@@ -38,7 +38,7 @@
 			<transform 00="-0" 02="-1" 20="1" 22="-0" 30="299.509125" 31="16.729549" 32="-98.564453"/>
 		</physics_mesh>
 		<physics_mesh id="door_hosp_01_phys" parent_id="door_hosp_01" file_name="meshes/door_hospital_phys.phys">
-			<transform 30="301.789795" 31="16.923918" 32="-102.744476"/>
+			<transform 00="-1" 22="-1" 30="301.789795" 31="16.923918" 32="-102.744476"/>
 		</physics_mesh>
 		<physics_mesh id="door_hosp_02_phys" parent_id="door_hosp_02" file_name="meshes/door_hospital_phys.phys">
 			<transform 00="-1" 22="-1" 30="301.287689" 31="16.923918" 32="-101.306938"/>
@@ -57,9 +57,6 @@
 		</physics_mesh>
 		<physics_mesh id="door_hosp_07_phys" parent_id="door_hosp_07" file_name="meshes/door_glass_hospital_phys.phys">
 			<transform 00="-0" 02="-1" 20="1" 22="-0" 30="317.168701" 31="16.9356" 32="-101.594673"/>
-		</physics_mesh>
-		<physics_mesh id="door_hosp_01_phys" parent_id="door_hosp_01" file_name="meshes/door_hospital_phys.phys">
-			<transform 00="-1" 22="-1" 30="301.789795" 31="16.923918" 32="-102.744476"/>
 		</physics_mesh>
 	</physics_meshes>
 	<physics_dynamics/>
@@ -135,7 +132,7 @@
 			<transform 30="303.652466" 31="18.069996" 32="-101.306938"/>
 			<size x="1" y="2" z="0.3"/>
 		</interactable>
-		<interactable id="door_02_int" parent_id="door_hosp_03" target_object_id="door_02_logic" label="Door">
+		<interactable id="door_02_int" parent_id="door_hosp_02" target_object_id="door_02_logic" label="Door">
 			<transform 30="300.815155" 31="17.953173" 32="-101.359032"/>
 			<size x="1" y="2" z="0.3"/>
 		</interactable>
@@ -173,7 +170,7 @@
 			<transform 30="304.100952" 31="16.923918" 32="-101.306938"/>
 		</logic>
 		<logic id="door_02_logic" target_a="door_02_closed" target_b="door_02_open" target_movable="door_hosp_02" anim_duration="100">
-			<transform 30="301.287689" 31="16.923918" 32="-101.306938"/>
+			<transform 30="302.128876" 31="18.395258" 32="-101.306938"/>
 		</logic>
 		<logic id="door_01_logic" target_a="door_01_closed" target_b="door_01_open" target_movable="door_hosp_01" anim_duration="100">
 			<transform 30="301.789795" 31="16.923918" 32="-102.744476"/>
@@ -238,6 +235,9 @@
 		</markers>
 		<markers id="tile_marker14" marker_type="13" string_data="Aljon Hospital" icon="8">
 			<transform 30="301.789795" 31="27.071697" 32="-120.707291"/>
+		</markers>
+		<markers id="tile_marker15" marker_type="9" icon="1">
+			<transform 00="-0.508444" 02="0.861095" 20="-0.861095" 22="-0.508444" 30="303.974854" 31="17.642006" 32="-100.076149"/>
 		</markers>
 	</tile_markers>
 	<mission_zones/>

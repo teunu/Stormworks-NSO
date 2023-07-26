@@ -377,10 +377,12 @@ local biomes = {
             mid = {
                 {c=2000, a={-1}, min=1, max=1}, --none
                 {c=1000, a={43}, min=1, max=3}, --hare
+				{c=1000, a={101}, min=1, max=2}, --croc
             },
             high = {
                 {c=2000, a={-1}, min=1, max=1}, --none
                 {c=1000, a={62}, min=1, max=4}, --wolf
+				{c=2000, a={101}, min=2, max=3}, --croc
             }
         },
         forest = {
@@ -487,19 +489,24 @@ local biomes = {
             low = {
                 {c=2000, a={-1}, min=1, max=1}, --none
                 {c=1000, a={44}, min=2, max=4}, --hare
-                {c=1000, a={39, 40, 41}, min=3, max=6}, --goat
+                {c=2000, a={39, 40, 41}, min=3, max=6}, --goat
+                {c=2000, a={98}, min=2, max=4}, --bighorn
             },
             mid = {
                 {c=2000, a={-1}, min=1, max=1}, --none
                 {c=1000, a={44}, min=2, max=4}, --hare
                 {c=1000, a={39, 40, 41}, min=3, max=6}, --goat
                 {c=1000, a={62}, min=1, max=4}, --wolf
+                {c=2000, a={98}, min=3, max=5}, --bighorn
+				{c=2000, a={100}, min=1, max=1}, --mtnlion
             },
             high = {
                 {c=2000, a={-1}, min=1, max=1}, --none
                 {c=1000, a={44}, min=2, max=4}, --hare
-                {c=1000, a={39, 40, 41}, min=3, max=6}, --goat
+                {c=2000, a={39, 40, 41}, min=3, max=6}, --goat
                 {c=1000, a={62}, min=1, max=4}, --wolf
+                {c=2000, a={98}, min=3, max=5}, --bighorn
+				{c=2000, a={100}, min=1, max=1}, --mtnlion
             }
         },
         farm = {
@@ -544,6 +551,9 @@ local biomes = {
                 {c=1000, a={43}, min=1, max=3}, --hare
                 {c=1000, a={9}, min=1, max=3}, --cow
                 {c=1000, a={46, 47, 48}, min=1, max=3}, --horse
+                {c=2000, a={97}, min=3, max=6}, --buffalo plains
+                {c=2000, a={99}, min=1, max=1}, --roadrunner plains
+				{c=2000, a={102}, min=1, max=1}, --coyote plains
             },
             mid = {
                 {c=2000, a={-1}, min=1, max=1}, --none
@@ -552,16 +562,20 @@ local biomes = {
                 {c=1000, a={60}, min=1, max=6}, --wildcat
                 {c=1000, a={9}, min=1, max=6}, --cow
                 {c=1000, a={46, 47, 48}, min=2, max=6}, --horse
+                {c=2000, a={97}, min=3, max=6}, --buffalo plains
+                {c=2000, a={99}, min=1, max=1}, --roadrunner plains
+				{c=2000, a={102}, min=1, max=1}, --coyote plains
             },
             high = {
                 {c=2000, a={-1}, min=1, max=1}, --none
                 {c=1000, a={36}, min=2, max=4}, --fox
                 {c=1000, a={43}, min=3, max=8}, --hare
                 {c=1000, a={60}, min=1, max=8}, --wildcat
-                {c=1000, a={62}, min=1, max=6}, --wolf
-                {c=1000, a={2}, min=1, max=3}, --bear
                 {c=1000, a={9}, min=3, max=6}, --cow
                 {c=1000, a={46, 47, 48}, min=3, max=8}, --horse
+                {c=2000, a={97}, min=3, max=6}, --buffalo plains
+                {c=2000, a={99}, min=1, max=1}, --roadrunner plains
+				{c=2000, a={102}, min=1, max=1}, --coyote plains
             }
         },
     },

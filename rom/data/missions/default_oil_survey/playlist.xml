@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<playlist folder_path="data/missions/default_oil_survey" file_store="4" name="Default Oil Survey">
+	<locations location_id_counter="10" component_id_counter="14">
+		<locations>
+			<l id="1" name="default_wellhead" env_mod_spawn_num="1">
+				<components>
+					<c component_type="3" id="1" name="default_wellhead" display_name="default_wellhead" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_1.xml" vehicle_file_store="4" vehicle_is_invulnerable="true">
+						<spawn_transform 31="1.37153"/>
+						<spawn_bounds>
+							<min x="-1.125" y="-9.875" z="-1.125"/>
+							<max x="1.125" y="-0.125" z="1.125"/>
+						</spawn_bounds>
+						<spawn_local_offset y="5"/>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="2" name="oil_vendor" env_mod_spawn_num="1">
+				<components>
+					<c component_type="3" id="2" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_2.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
+						<spawn_transform 30="-0.002325" 31="0.994647" 32="0.043755"/>
+						<spawn_bounds>
+							<min x="-1.125" y="-1.875" z="-0.875"/>
+							<max x="0.375" y="0.125" z="-0.125"/>
+						</spawn_bounds>
+						<spawn_local_offset x="0.375" y="0.875" z="0.5"/>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="3" tile="data/tiles/oil_rig_medium.xml" name="MEDIUM OIL RIG" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="3" cargo_zone_import_cargo_type="oil_vendor" display_name="Oil Vendor" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="2.73692" 31="27.459435" 32="11.622546"/>
+						<spawn_bounds>
+							<min x="-5" y="-5" z="-5"/>
+							<max x="5" y="5" z="5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="2" id="10" display_name="Chief Surveyor" dynamic_object_type="2" character_outfit_category="1" character_type="2" vehicle_file_store="1">
+						<spawn_transform 30="6.826863" 31="19.386431" 32="10.258312"/>
+						<spawn_bounds>
+							<min x="-0.11" y="-0.8" z="-0.11"/>
+							<max x="0.11" y="0.8" z="0.11"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="4" tile="data/tiles/oil_rig.xml" name="SMALL OIL RIG" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="4" cargo_zone_import_cargo_type="oil_vendor" display_name="Oil Vendor" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="-2.146222" 31="13.863507" 32="2.288535"/>
+						<spawn_bounds>
+							<min x="-5" y="-5" z="-5"/>
+							<max x="5" y="5" z="5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="5" tile="data/tiles/arctic_tile_12_oilrig.xml" name="ARCTIC OIL PLATFORM" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="5" cargo_zone_import_cargo_type="oil_vendor" display_name="Oil Vendor" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.002818" 02="0.999996" 20="-0.999996" 22="0.002818" 30="111.089264" 31="5.877347" 32="-58.738823"/>
+						<spawn_bounds>
+							<min x="-5" y="-5" z="-5"/>
+							<max x="5" y="5" z="5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="6" tile="data/tiles/arid_island_3_12.xml" name="ARID_ISLAND_3_12" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="6" cargo_zone_import_cargo_type="default_wellhead" display_name="default_wellhead" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="412.251923" 31="14.401507" 32="12.139788"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="7" tile="data/tiles/arid_island_8_11.xml" name="ARID_ISLAND_8_11" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="7" cargo_zone_import_cargo_type="default_wellhead" display_name="default_wellhead" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="370.490082" 31="5.237906" 32="-0.511297"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="8" tile="data/tiles/arid_island_23_14.xml" name="ARID_ISLAND_23_14" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="8" cargo_zone_import_cargo_type="default_wellhead" display_name="default_wellhead" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="-291.762238" 31="12.230189" 32="-361.867706"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="9" tile="data/tiles/arid_island_24_4.xml" name="ARID_ISLAND_24_4" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="9" cargo_zone_import_cargo_type="default_wellhead" display_name="default_wellhead" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="-172.407883" 31="40.881142" 32="-84.083221"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+		</locations>
+	</locations>
+</playlist>
+

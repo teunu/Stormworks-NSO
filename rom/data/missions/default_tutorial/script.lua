@@ -49,7 +49,8 @@ function onTick(delta_worldtime)
 				v2.convert_timer = v2.convert_timer + 1
 			end
 			if v2.convert_timer == 180 then
-				server.setCharacterData(the_id, 100, false, false)
+				server.setCharacterData(the_id, 100, true, false)
+				server.setCharacterTooltip(the_id, "Rescued Survivor")
 			end
 		end
 	end
