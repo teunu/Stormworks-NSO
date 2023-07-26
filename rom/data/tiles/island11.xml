@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<definition tile_type="4">
+<definition is_island="true" tile_type="4" sea_floor_height="-8">
 	<meshes>
 		<mesh id="island_mesh" file_name="nso_mod/meshes/islands/coastguard_island.mesh">
 			<transform/>
@@ -17,7 +17,7 @@
 			<transform 30="-95.49072" 31="0.456238" 32="61.632813"/>
 		</mesh>
 		<mesh id="StaticObject_22" file_name="nso_mod/meshes/rocks/rock_big_2.mesh">
-			<transform 00="-0.583626" 01="-0.772037" 02="-0.251676" 10="0.812023" 11="-0.554886" 12="-0.180887" 20="0" 21="-0.309937" 22="0.950758" 30="-93.39795" 31="1.215242" 32="62.387695"/>
+			<transform 00="-0.583626" 01="-0.772037" 02="-0.251676" 10="0.812023" 11="-0.554886" 12="-0.180887" 21="-0.309937" 22="0.950758" 30="-93.39795" 31="1.215242" 32="62.387695"/>
 		</mesh>
 		<mesh id="StaticObject_21" file_name="nso_mod/meshes/rocks/rock_small_2.mesh">
 			<transform 11="0.197004" 12="0.980403" 21="-0.980403" 22="0.197004" 30="-100.108887" 31="1.103424" 32="66.0957"/>
@@ -29,7 +29,7 @@
 			<transform 30="-131.789551" 31="-1.96684" 32="69.96289"/>
 		</mesh>
 		<mesh id="StaticObject_18" file_name="nso_mod/meshes/rocks/rock_big_2.mesh">
-			<transform 00="0.523698" 01="0.067599" 02="0.849218" 10="-0.128019" 11="0.991772" 12="0" 20="-0.84223" 21="-0.108716" 22="0.528043" 30="-135.17334" 31="-0.969087" 32="71.02051"/>
+			<transform 00="0.523698" 01="0.067599" 02="0.849218" 10="-0.128019" 11="0.991772" 20="-0.84223" 21="-0.108716" 22="0.528043" 30="-135.17334" 31="-0.969087" 32="71.02051"/>
 		</mesh>
 		<mesh id="StaticObject_17" file_name="meshes/generated_object_geom/tiles/island11/nso_mod/decoration/workbenches/blueprints_rolled__StaticObject_17.mesh">
 			<transform 30="166.469727" 31="1.646695" 32="70.237305"/>
@@ -50,7 +50,7 @@
 			<transform 00="-0.138509" 02="0.990361" 20="-0.990361" 22="-0.138509" 30="127.125977" 31="1.631908" 32="62.390625"/>
 		</mesh>
 		<mesh id="StaticObject_11" file_name="meshes/generated_object_geom/tiles/island11/nso_mod/decoration/workbenches/blueprints_rolled__StaticObject_11.mesh">
-			<transform 00="0.962239" 01="0" 02="0.272205" 10="0" 11="-1" 12="-0.000001" 20="0.272205" 21="0.000001" 22="-0.962239" 30="128.155762" 31="1.71823" 32="62.265625"/>
+			<transform 00="0.962239" 02="0.272205" 11="-1" 12="-0.000001" 20="0.272205" 21="0.000001" 22="-0.962239" 30="128.155762" 31="1.71823" 32="62.265625"/>
 		</mesh>
 		<mesh id="StaticObject_10" file_name="meshes/generated_object_geom/tiles/island11/nso_mod/decoration/workbenches/workbench_clean__StaticObject_10.mesh">
 			<transform 00="0.085151" 02="-0.996368" 20="0.996368" 22="0.085151" 30="127.313965" 31="1" 32="62.381836"/>
@@ -80,7 +80,7 @@
 			<transform 00="0.995303" 02="-0.096813" 20="0.096813" 22="0.995303" 30="53.410644" 31="10.014924" 32="56.83008"/>
 		</mesh>
 		<mesh id="StaticObject_1" file_name="meshes/island_13_building.mesh">
-			<transform 00="0.998309" 01="-0.021783" 02="-0.053905" 10="0.021814" 11="0.999762" 12="0" 20="0.053892" 21="-0.001176" 22="0.998546" 30="-5.03418" 31="11.753838" 32="65.981445"/>
+			<transform 00="0.998309" 01="-0.021783" 02="-0.053905" 10="0.021814" 11="0.999762" 20="0.053892" 21="-0.001176" 22="0.998546" 30="-5.03418" 31="11.753838" 32="65.981445"/>
 		</mesh>
 		<mesh id="StaticObject_0" file_name="meshes/island_11_building.mesh">
 			<transform 00="-0.993648" 02="0.112535" 20="-0.112535" 22="-0.993648" 30="65.60596" 31="9.946957" 32="67.4375"/>
@@ -98,7 +98,7 @@
 			<transform 30="-95.49072" 31="0.456238" 32="61.632813"/>
 		</physics_mesh>
 		<physics_mesh id="StaticObject_22_phys" file_name="nso_mod/meshes/rocks/rock_big_2.phys">
-			<transform 00="-0.583626" 01="-0.772037" 02="-0.251676" 10="0.812023" 11="-0.554886" 12="-0.180887" 20="0" 21="-0.309937" 22="0.950758" 30="-93.39795" 31="1.215242" 32="62.387695"/>
+			<transform 00="-0.583626" 01="-0.772037" 02="-0.251676" 10="0.812023" 11="-0.554886" 12="-0.180887" 21="-0.309937" 22="0.950758" 30="-93.39795" 31="1.215242" 32="62.387695"/>
 		</physics_mesh>
 		<physics_mesh id="StaticObject_21_phys" file_name="nso_mod/meshes/rocks/rock_small_2.phys">
 			<transform 11="0.197004" 12="0.980403" 21="-0.980403" 22="0.197004" 30="-100.108887" 31="1.103424" 32="66.0957"/>
@@ -110,7 +110,7 @@
 			<transform 30="-131.789551" 31="-1.96684" 32="69.96289"/>
 		</physics_mesh>
 		<physics_mesh id="StaticObject_18_phys" file_name="nso_mod/meshes/rocks/rock_big_2.phys">
-			<transform 00="0.523698" 01="0.067599" 02="0.849218" 10="-0.128019" 11="0.991772" 12="0" 20="-0.84223" 21="-0.108716" 22="0.528043" 30="-135.17334" 31="-0.969087" 32="71.02051"/>
+			<transform 00="0.523698" 01="0.067599" 02="0.849218" 10="-0.128019" 11="0.991772" 20="-0.84223" 21="-0.108716" 22="0.528043" 30="-135.17334" 31="-0.969087" 32="71.02051"/>
 		</physics_mesh>
 		<physics_mesh id="StaticObject_15_phys" file_name="meshes/generated_object_geom/tiles/island11/nso_mod/decoration/workbenches/workbench_clean__StaticObject_15_phys.phys">
 			<transform 00="0.655581" 02="0.755125" 20="-0.755125" 22="0.655581" 30="166.2168" 31="1.016556" 32="70.45996"/>
@@ -149,7 +149,7 @@
 			<transform 00="0.995303" 02="-0.096813" 20="0.096813" 22="0.995303" 30="53.410644" 31="10.014924" 32="56.83008"/>
 		</physics_mesh>
 		<physics_mesh id="StaticObject_1_phys" file_name="meshes/island_13_building_phys.phys">
-			<transform 00="0.998309" 01="-0.021783" 02="-0.053905" 10="0.021814" 11="0.999762" 12="0" 20="0.053892" 21="-0.001176" 22="0.998546" 30="-5.03418" 31="11.753838" 32="65.981445"/>
+			<transform 00="0.998309" 01="-0.021783" 02="-0.053905" 10="0.021814" 11="0.999762" 20="0.053892" 21="-0.001176" 22="0.998546" 30="-5.03418" 31="11.753838" 32="65.981445"/>
 		</physics_mesh>
 		<physics_mesh id="StaticObject_0_phys" file_name="meshes/generated_object_geom/tiles/island11/island_11_building__StaticObject_0_phys.phys">
 			<transform 00="-0.993648" 02="0.112535" 20="-0.112535" 22="-0.993648" 30="65.60596" 31="9.946957" 32="67.4375"/>

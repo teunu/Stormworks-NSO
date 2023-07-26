@@ -1,13 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <definition is_island="true" tile_type="2">
 	<meshes>
-		<mesh id="mesh0" file_name="meshes/mainland/mega_island_15_6.mesh">
+		<mesh id="mesh0" file_name="nso_mod/meshes/mainland/15_6_main.mesh">
+			<transform/>
+		</mesh>
+		<mesh id="mesh1" file_name="nso_mod/meshes/structures/buildings/deltac_camp.mesh">
+			<transform/>
+		</mesh>
+		<mesh id="mesh2" file_name="nso_mod/meshes/mainland/15_6_camp_base.mesh">
 			<transform/>
 		</mesh>
 	</meshes>
 	<physics_objects/>
 	<physics_meshes>
-		<physics_mesh id="physics_mesh0" file_name="meshes/mainland/mega_island_15_6.phys">
+		<physics_mesh id="physics_mesh0" file_name="nso_mod/meshes/mainland/15_6_main.phys">
+			<transform/>
+		</physics_mesh>
+		<physics_mesh id="physics_mesh1" file_name="nso_mod/meshes/structures/buildings/deltac_camp.phys">
+			<transform/>
+		</physics_mesh>
+		<physics_mesh id="physics_mesh2" file_name="nso_mod/meshes/mainland/15_6_camp_base.phys">
 			<transform/>
 		</physics_mesh>
 	</physics_meshes>
@@ -23,14 +35,48 @@
 	<rotation_logic_nodes/>
 	<hangar_door_logic_nodes/>
 	<audio_logic_nodes/>
-	<tile_markers/>
+	<tile_markers>
+		<markers id="tile_marker0" seasonal_flags="2" marker_type="13" icon="7">
+			<transform 31="11.484264" 32="321.515564"/>
+		</markers>
+	</tile_markers>
 	<mission_zones/>
-	<dynamic_markers/>
+	<dynamic_markers>
+		<dynamic_marker id="dynamic_marker_item0" item_type="25">
+			<transform 30="208.85704" 31="5.83376" 32="261.361084"/>
+		</dynamic_marker>
+		<dynamic_marker id="dynamic_marker_item1" item_type="25">
+			<transform 30="209.70665" 31="5.937055" 32="261.890015"/>
+		</dynamic_marker>
+		<dynamic_marker id="dynamic_marker_item2" item_type="27">
+			<transform 00="0.463213" 02="0.886247" 20="-0.886247" 22="0.463213" 30="217.667099" 31="6.388083" 32="294.577057"/>
+		</dynamic_marker>
+		<dynamic_marker id="dynamic_marker_item3" item_type="26">
+			<transform 00="0.330102" 01="-0.153007" 02="0.931462" 10="0.420534" 11="0.907277" 20="-0.845094" 21="0.391712" 22="0.363839" 30="217.046677" 31="6.24229" 32="295.314362"/>
+		</dynamic_marker>
+		<dynamic_marker id="dynamic_marker_item4" item_type="25">
+			<transform 00="0.45733" 01="0.889297" 10="-0.889297" 11="0.45733" 30="208.858353" 31="5.937055" 32="262.493408"/>
+		</dynamic_marker>
+	</dynamic_markers>
 	<ladders/>
-	<perches/>
+	<perches>
+		<perch id="perch0">
+			<transform 00="-0.413902" 02="-0.910321" 20="0.910321" 22="-0.413902" 30="209.07518" 31="12.360633" 32="300.22348"/>
+		</perch>
+		<perch id="perch1">
+			<transform 00="0.58969" 02="-0.80763" 20="0.80763" 22="0.58969" 30="207.112213" 31="12.360633" 32="299.969849"/>
+		</perch>
+		<perch id="perch2">
+			<transform 00="0.380543" 02="-0.924763" 20="0.924763" 22="0.380543" 30="213.609207" 31="3.391445" 32="317.039307"/>
+		</perch>
+	</perches>
 	<fires/>
 	<train_tracks/>
 	<volcano_markers/>
-	<mineral_rocks/>
+	<mineral_rocks>
+		<rock id="mineral0">
+			<transform 30="-55.350929" 31="20.022697" 32="137.7995"/>
+		</rock>
+	</mineral_rocks>
 </definition>
 

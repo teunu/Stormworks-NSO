@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LuaIntegration</name>
+    </assembly>
+    <members>
+        <member name="F:LuaIntegration.ConnectionCustomData._curveSpecFilePath">
+            <summary>
+            <see cref="P:LuaIntegration.ConnectionCustomData.CurveSpecFilePath"/> but this property does not perform validation nor raise events.
+            </summary>
+        </member>
+        <member name="P:LuaIntegration.ConnectionCustomData.CurveSpecFilePath">
+            <summary>
+            The path, relative to <see cref="!:StormworksPaths.CurveSpec"/> to load the <see cref="!:LuaIntegration.CurveSpec"/> from.
+            </summary>
+        </member>
+        <member name="F:LuaIntegration.ConnectionCustomData._curveSpec">
+            <summary>
+            <see cref="P:LuaIntegration.ConnectionCustomData.CurveSpec"/> but this property does not perform validation nor raise events.
+            </summary>
+        </member>
+        <member name="P:LuaIntegration.ConnectionCustomData.CurveSpec">
+            <summary>
+            The <see cref="!:LuaIntegration.CurveSpec"/> of the connection.
+            </summary>
+        </member>
+        <member name="M:LuaIntegration.ConnectionCustomData.CurveGraph#Interface#ICloneForMTR{CurveGraph#Interface#IConnectionCustomData}#CloneForMultiThreadedReading">
+            <inheritdoc />
+        </member>
+        <member name="E:LuaIntegration.ConnectionCustomData.Changed">
+            <inheritdoc />
+        </member>
+        <member name="T:LuaIntegration.CurveSpecCache.LoadExceptionDelegate">
+            <summary>
+            Signature fo the handler that is called when loading causes an exception.
+            </summary>
+            <param name="key">The key/file path that was being loaded.</param>
+            <param name="e">The exception that occurred.</param>
+        </member>
+        <member name="E:LuaIntegration.CurveSpecCache.OnException">
+            <summary>
+            Event to raise when an Exception occurs.
+            </summary>
+        </member>
+        <member name="F:LuaIntegration.CurveSpecCache.Entry.Spec">
+            <summary>
+            The result or <see langword="null"/> if loading failed.
+            </summary>
+        </member>
+        <member name="F:LuaIntegration.CurveSpecCache.Entry.LastWriteTime">
+            <summary>
+            The LastWriteTime of the file when it was last loaded.
+            </summary>
+        </member>
+        <member name="F:LuaIntegration.CurveSpecCache.Entry.Exception">
+            <summary>
+            <see langword="null"/>, unless loading failed, in which case it holds the <see cref="F:LuaIntegration.CurveSpecCache.Entry.Exception"/> that was thrown.
+            </summary>
+        </member>
+        <member name="F:LuaIntegration.CurveSpecLoader.SandBoxVersion">
+            <summary>
+            This should match the version on the sandbox file.
+            Visual Studio doesn't seem to update it in all cases when building.
+            </summary>
+        </member>
+        <member name="T:LuaIntegration.ByteOrderMarkException">
+            <summary>
+            Exception that is thrown when there is an error due to encoding with UTF-8-BOM (UTF-8 with Byte Order Mark).
+            </summary>
+        </member>
+        <member name="T:LuaIntegration.LuaException">
+            <summary>
+            Exception that is thrown when there is something wrong with a lua script.
+            </summary>
+        </member>
+        <member name="M:LuaIntegration.Program.Main(System.String[])">
+            <summary>
+            Starts an interactive Lua session in the sandbox created for loading <see cref="T:Extrusion.CurveSpec"/>.
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="T:LuaIntegration.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:LuaIntegration.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:LuaIntegration.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:LuaIntegration.Properties.Resources.sandbox">
+            <summary>
+              Looks up a localized resource of type System.Byte[].
+            </summary>
+        </member>
+    </members>
+</doc>

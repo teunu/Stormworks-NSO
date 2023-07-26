@@ -1,0 +1,624 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BinaryDataModel</name>
+    </assembly>
+    <members>
+        <member name="T:BinaryDataModel.Converters.Binary">
+            <summary>
+            Loads and saves Stormworks .mesh and .phys file formats and converts between them.
+            </summary>
+        </member>
+        <member name="M:BinaryDataModel.Converters.Binary.LoadMesh(System.String)">
+            <summary>
+            Load a <see cref="T:BinaryDataModel.DataTypes.Mesh"/> from the given <paramref name="filePath"/>.
+            </summary>
+            <param name="filePath"></param>
+            <returns></returns>
+            <exception cref="T:Shared.Exceptions.FileInteractionException"></exception>
+        </member>
+        <member name="M:BinaryDataModel.Converters.Binary.LoadMesh(System.IO.Stream,BinaryDataModel.Converters.Binary.MeshDiagCallback)">
+            <summary>
+            Load a <see cref="T:BinaryDataModel.DataTypes.Mesh"/> from the given <see cref="T:System.IO.Stream"/>.
+            </summary>
+            <param name="stream"></param>
+            <param name="diag"></param>
+            <returns></returns>
+            <exception cref="T:Shared.Exceptions.BinaryDataException"></exception>
+        </member>
+        <member name="M:BinaryDataModel.Converters.Binary.Save(System.IO.Stream,BinaryDataModel.DataTypes.Mesh,BinaryDataModel.Converters.Binary.MeshDiagCallback)">
+            <summary>
+            Save a <see cref="T:BinaryDataModel.DataTypes.Mesh"/> to the given <see cref="T:System.IO.Stream"/>.
+            </summary>
+            <param name="stream"></param>
+            <param name="mesh"></param>
+            <param name="diag"></param>
+            <exception cref="T:System.InvalidOperationException"></exception>
+        </member>
+        <member name="M:BinaryDataModel.Converters.Binary.Save(System.String,BinaryDataModel.DataTypes.Mesh,BinaryDataModel.Converters.Binary.MeshDiagCallback)">
+            <summary>
+            Save a <see cref="T:BinaryDataModel.DataTypes.Mesh"/> to a (new) file at <paramref name="path"/>.
+            </summary>
+            <param name="path"></param>
+            <param name="mesh"></param>
+            <param name="diag"></param>
+        </member>
+        <member name="M:BinaryDataModel.Converters.Binary.LoadPhys(System.String)">
+            <summary>
+            Load a <see cref="T:BinaryDataModel.DataTypes.Phys"/> from <paramref name="filePath"/>.
+            </summary>
+            <param name="filePath"></param>
+            <returns></returns>
+            <exception cref="T:Shared.Exceptions.FileInteractionException"></exception>
+        </member>
+        <member name="M:BinaryDataModel.Converters.Binary.LoadPhys(System.IO.Stream,BinaryDataModel.Converters.Binary.PhyDiagCallback)">
+            <summary>
+            Load a <see cref="T:BinaryDataModel.DataTypes.Phys"/> from the given <paramref name="stream"/>.
+            </summary>
+            <param name="stream"></param>
+            <param name="diag"></param>
+            <returns></returns>
+            <exception cref="T:Shared.Exceptions.BinaryDataException"></exception>
+        </member>
+        <member name="M:BinaryDataModel.Converters.Binary.Save(System.IO.Stream,BinaryDataModel.DataTypes.Phys,BinaryDataModel.Converters.Binary.PhyDiagCallback)">
+            <summary>
+            Save a <see cref="T:BinaryDataModel.DataTypes.Phys"/> to the <paramref name="stream"/>.
+            </summary>
+            <param name="stream"></param>
+            <param name="mesh"></param>
+            <param name="diag"></param>
+        </member>
+        <member name="M:BinaryDataModel.Converters.Binary.Save(System.String,BinaryDataModel.DataTypes.Phys,BinaryDataModel.Converters.Binary.PhyDiagCallback)">
+            <summary>
+            Save a <see cref="T:BinaryDataModel.DataTypes.Phys"/> to a (new) file at <paramref name="path"/>.
+            </summary>
+            <param name="path"></param>
+            <param name="mesh"></param>
+            <param name="diag"></param>
+        </member>
+        <member name="M:BinaryDataModel.Converters.Binary.ConvertToVertexOnly(BinaryDataModel.DataTypes.Mesh)">
+            <summary>
+            Convert the <paramref name="mesh"/> to a <see cref="T:BinaryDataModel.DataTypes.Phys"/> that only contains vertices, leaving the faces to be defined by the vertex order.
+            </summary>
+            <param name="mesh"></param>
+            <returns></returns>
+        </member>
+        <member name="T:BinaryDataModel.Converters.Obj">
+            <summary>
+            Loads and saves .obj file format.
+            This converter cannot convert color data.
+            </summary>
+        </member>
+        <member name="T:BinaryDataModel.Converters.Ply">
+            <summary>
+            Loads and saves .Ply file format
+            </summary>
+        </member>
+        <member name="F:BinaryDataModel.Converters.Ply.MultiFileFirstRegex">
+            <summary>
+            Regex to match the first/primary file of a multi file .ply mesh (due to subMeshes).
+            </summary>
+        </member>
+        <member name="F:BinaryDataModel.Converters.Ply.MultiFileAfterRegex">
+            <summary>
+            Regex to match any non-first file of a multi file .ply mesh (due to subMeshes).
+            </summary>
+        </member>
+        <member name="F:BinaryDataModel.Converters.Ply.ConverterSettings.ReverseTriangles">
+            <summary>
+            Reverse the triangles, making them face in the other direction.
+            Typically combined with <see cref="F:BinaryDataModel.Converters.Ply.ConverterSettings.ReverseNormals"/>.
+            </summary>
+        </member>
+        <member name="F:BinaryDataModel.Converters.Ply.ConverterSettings.ReverseNormals">
+            <summary>
+            Reverse the normals. Normals are used for light calculation where they provide the 'up' direction of the surface.
+            Typically combined with <see cref="F:BinaryDataModel.Converters.Ply.ConverterSettings.ReverseTriangles"/>.
+            </summary>
+        </member>
+        <member name="F:BinaryDataModel.Converters.Ply.ConverterSettings.TransformUpConvention">
+            <summary>
+            Transform Blender convention to Stormworks and back. .Ply files will be written for Blender and read from Blender.
+            Internal format will have Stormworks convention.
+            Stormworks is y-up, Blender is z-up
+            </summary>
+        </member>
+        <member name="P:BinaryDataModel.Converters.Ply.ConverterSettings.MirrorX">
+            <summary>
+            Mirror across X axis.
+            </summary>
+        </member>
+        <member name="P:BinaryDataModel.Converters.Ply.ConverterSettings.MirrorY">
+            <summary>
+            Mirror across Y axis.
+            </summary>
+        </member>
+        <member name="P:BinaryDataModel.Converters.Ply.ConverterSettings.MirrorZ">
+            <summary>
+            Mirror across Z axis.
+            </summary>
+        </member>
+        <member name="M:BinaryDataModel.Converters.Ply.ConverterSettings.ToString">
+            <inheritdoc />
+        </member>
+        <member name="M:BinaryDataModel.Converters.Ply.ConverterSettings.LoadVertex(OpenToolkit.Mathematics.Vector3)">
+            <summary>
+            Transforms a vertex that was loaded from .ply file.
+            </summary>
+            <param name="v"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BinaryDataModel.Converters.Ply.ConverterSettings.LoadNormal(OpenToolkit.Mathematics.Vector3)">
+            <summary>
+            Transforms a normal that was loaded from .ply file.
+            </summary>
+            <param name="v"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BinaryDataModel.Converters.Ply.ConverterSettings.SaveVertex(OpenToolkit.Mathematics.Vector3)">
+            <summary>
+            Transforms a vertex to be saved to .ply file.
+            </summary>
+            <param name="v"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BinaryDataModel.Converters.Ply.ConverterSettings.SaveNormal(OpenToolkit.Mathematics.Vector3)">
+            <summary>
+            Transforms a normal to be saved to .ply file.
+            </summary>
+            <param name="v"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BinaryDataModel.Converters.Ply.LoadMesh(System.String,System.Boolean,BinaryDataModel.Converters.Ply.ConverterSettings)">
+            <summary>
+            Load a <see cref="T:BinaryDataModel.DataTypes.Mesh"/> from the specified path.
+            If <see cref="!:multiFile"/> is true and <see cref="!:filePath"/> is in the format 'path/name.0.extension'
+            then the loader will search for all files in the folder with the format 'name.*.extension'
+            and generate a single result with all the files becoming subMeshes in the result.
+            </summary>
+            <param name="filePath">The filePath to load from.</param>
+            <param name="multiFile">If true will attempt to load subMeshes from separate files.</param>
+            <returns></returns>
+            <exception cref="T:Shared.Exceptions.FileInteractionException"></exception>
+        </member>
+        <member name="M:BinaryDataModel.Converters.Ply.LoadPhys(System.String,System.Boolean,BinaryDataModel.Converters.Ply.ConverterSettings)">
+            <summary>
+            Load a <see cref="T:BinaryDataModel.DataTypes.Phys"/> from the specified path.
+            If <see cref="!:multiFile"/> is true and <see cref="!:filePath"/> is in the format 'path/name.0.extension'
+            then the loader will search for all files in the folder with the format 'name.*.extension'
+            and generate a single result with all the files becoming subMeshes in the result.
+            </summary>
+            <param name="filePath">The filePath to load from.</param>
+            <param name="multiFile">If true will attempt to load subMeshes from separate files.</param>
+            <returns></returns>
+            <exception cref="T:Shared.Exceptions.FileInteractionException"></exception>
+        </member>
+        <member name="M:BinaryDataModel.Converters.Ply.LoadPhys(System.IO.Stream,BinaryDataModel.Converters.Ply.ConverterSettings)">
+            <summary>
+            Loads a <see cref="T:BinaryDataModel.DataTypes.Phys"/> from a .ply ASCII (1.0) stream.
+            </summary>
+            <param name="stream"></param>
+            <returns></returns>
+            <exception cref="T:Shared.Exceptions.PlyDataException"></exception>
+        </member>
+        <member name="M:BinaryDataModel.Converters.Ply.Save(BinaryDataModel.DataTypes.Phys,System.IO.Stream,System.Int32,BinaryDataModel.Converters.Ply.ConverterSettings)">
+            <summary>
+            Save the specified <see cref="T:BinaryDataModel.DataTypes.PhySubMesh"/> to the provided stream.
+            </summary>
+            <param name="phys"></param>
+            <param name="stream"></param>
+            <param name="subMeshIndex"></param>
+        </member>
+        <member name="T:BinaryDataModel.DataTypes.Mesh">
+            <summary>
+            Holds the data found in the Stormworks .mesh file format.
+            </summary>
+        </member>
+        <member name="F:BinaryDataModel.DataTypes.Mesh.fileName">
+            <summary>
+            The filePath from where this <see cref="T:BinaryDataModel.DataTypes.Mesh"/> was loaded.
+            </summary>
+        </member>
+        <member name="F:BinaryDataModel.DataTypes.Mesh.header0">
+            <summary>
+            Unknown, values: 7
+            </summary>
+            <remarks>Position: header 0</remarks>
+        </member>
+        <member name="F:BinaryDataModel.DataTypes.Mesh.header1">
+            <summary>
+            Unknown, values: 1
+            </summary>
+            <remarks>Position: header 1</remarks>
+        </member>
+        <member name="P:BinaryDataModel.DataTypes.Mesh.vertexCount">
+             <summary>
+             Number of <see cref="T:BinaryDataModel.DataTypes.VertexRecord"/>s in the mesh.
+             </summary>
+             <remarks>
+             The real value is actually <see cref="T:System.UInt16"/> and the
+             Maximum vertexCount for saving is <see cref="F:System.UInt16.MaxValue"/>.
+             Larger meshes are allowed to exist in memory for rendering purposes.
+            
+             Position: header 2, type: <see cref="T:System.UInt32"/>.
+             </remarks>
+        </member>
+        <member name="F:BinaryDataModel.DataTypes.Mesh.header3">
+            <summary>
+            Unknown, values: 19
+            </summary>
+            <remarks>Position: header 3</remarks>
+        </member>
+        <member name="F:BinaryDataModel.DataTypes.Mesh.header4">
+            <summary>
+            Unknown, values: 0
+            </summary>
+            <remarks>Position: header 4</remarks>
+        </member>
+        <member name="P:BinaryDataModel.DataTypes.Mesh.indexCount">
+            <summary>
+            Number of indices in the Mesh. 3 indices make a triangle.
+            </summary>
+            <remarks>Position: After vertex buffer, type: <see cref="T:System.UInt32"/>.</remarks>
+        </member>
+        <member name="F:BinaryDataModel.DataTypes.Mesh.indices">
+            <summary>
+            The triangle indices of the mesh.
+            Note that the real data structure uses <see cref="T:System.UInt16"/> instead, but for our purposes we use <see cref="T:System.UInt32"/>.
+            </summary>
+        </member>
+        <member name="F:BinaryDataModel.DataTypes.Mesh.subMeshes">
+            <summary>
+            The <see cref="T:BinaryDataModel.DataTypes.SubMesh"/>es in this <see cref="T:BinaryDataModel.DataTypes.Mesh"/>.
+            SubMeshes define (amongst other things) what shader to use.
+            </summary>
+        </member>
+        <member name="P:BinaryDataModel.DataTypes.Mesh.SubMeshCount">
+            <summary>
+            The number of SubMeshes in the Mesh.
+            </summary>
+            <remarks>Position: after indexBuffer, type: <see cref="T:System.UInt16"/>.</remarks>
+        </member>
+        <member name="P:BinaryDataModel.DataTypes.Mesh.SingleSubMesh">
+            <summary>
+            Is there a single SubMesh.
+            </summary>
+        </member>
+        <member name="P:BinaryDataModel.DataTypes.Mesh.CanBeSaved">
+            <summary>
+            Can the <see cref="T:BinaryDataModel.DataTypes.Mesh"/> be saved to the Stormworks .mesh format.
+            </summary>
+        </member>
+        <member name="M:BinaryDataModel.DataTypes.Mesh.#ctor">
+            <summary>
+            Create a new Empty <see cref="T:BinaryDataModel.DataTypes.Mesh"/> instance.
+            Note that you have to add a <see cref="T:BinaryDataModel.DataTypes.SubMesh"/> in order to use it.
+            </summary>
+        </member>
+        <member name="P:BinaryDataModel.DataTypes.Mesh.SizeEstimate">
+            <summary>
+            The approximate size in bytes, assuming no padding.
+            </summary>
+        </member>
+        <member name="M:BinaryDataModel.DataTypes.Mesh.Bounds">
+            <summary>
+            Get the bounds of the mesh by adding the bounds of the submeshes.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BinaryDataModel.DataTypes.Mesh.RecomputeBounds">
+            <summary>
+            Recompute the bounds of all submeshes.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BinaryDataModel.DataTypes.Mesh.DeduplicateVertices">
+            <summary>
+            Deduplicate identical VertexRecords.
+            </summary>
+            <remarks>
+            This process is rather slow.
+            </remarks>
+        </member>
+        <member name="M:BinaryDataModel.DataTypes.Mesh.ToString">
+            <inheritdoc />
+        </member>
+        <member name="T:BinaryDataModel.DataTypes.SubMesh.Shader">
+            <summary>
+            The valid values in the field <see cref="F:BinaryDataModel.DataTypes.SubMesh.shaderId"/>.
+            </summary>
+        </member>
+        <member name="F:BinaryDataModel.DataTypes.SubMesh.Shader.Opaque">
+            <summary>
+            Standard Opaque shader.
+            </summary>
+        </member>
+        <member name="F:BinaryDataModel.DataTypes.SubMesh.Shader.Transparent">
+            <summary>
+            Transparency shader.
+            </summary>
+        </member>
+        <member name="F:BinaryDataModel.DataTypes.SubMesh.Shader.Emissive">
+            <summary>
+            Emissive/unlit shader.
+            </summary>
+        </member>
+        <member name="F:BinaryDataModel.DataTypes.SubMesh.Shader.Lava">
+            <summary>
+            Used for lava flows
+            </summary>
+        </member>
+        <member name="F:BinaryDataModel.DataTypes.SubMesh.indexBufferStart">
+            <summary>
+            The starting index into the shared index buffer for this <see cref="T:BinaryDataModel.DataTypes.SubMesh"/>.
+            </summary>
+            <remarks>Position: field 0.</remarks>
+        </member>
+        <member name="F:BinaryDataModel.DataTypes.SubMesh.indexBufferLength">
+            <summary>
+            The amount of indices in the shared index buffer to uses for this <see cref="T:BinaryDataModel.DataTypes.SubMesh"/>.
+            </summary>
+            <remarks>Position: field 1.</remarks>
+        </member>
+        <member name="F:BinaryDataModel.DataTypes.SubMesh.header2">
+            <summary>
+            Unknown, values: 0
+            </summary>
+            <remarks>Position:field 2.</remarks>
+        </member>
+        <member name="F:BinaryDataModel.DataTypes.SubMesh.shaderId">
+            <summary>
+            Shader to be used for this SubMesh.
+            </summary>
+            <remarks>Position: field 3</remarks>
+        </member>
+        <member name="F:BinaryDataModel.DataTypes.SubMesh.bounds">
+            <summary>
+            The bounds, this is used for thrustrum culling.
+            </summary>
+            <remarks>Position: fields 4 and 5</remarks>
+        </member>
+        <member name="F:BinaryDataModel.DataTypes.SubMesh.header6">
+            <summary>
+            Unknown, values: 0
+            </summary>
+            <remarks>Position: field 6</remarks>
+        </member>
+        <member name="P:BinaryDataModel.DataTypes.SubMesh.nameByteLength">
+            <summary>
+            Length, in bytes, of the string <see cref="F:BinaryDataModel.DataTypes.SubMesh.name"/>.
+            </summary>
+            <remarks>Position: field 7.</remarks>
+        </member>
+        <member name="F:BinaryDataModel.DataTypes.SubMesh.name">
+            <summary>
+            Name of the SubMesh
+            </summary>
+            <remarks>Position: field 7.</remarks>
+        </member>
+        <member name="F:BinaryDataModel.DataTypes.SubMesh.header8">
+            <summary>
+            Unknown, seems to be unused. Speculated purpose is SubMesh origin, or scale.
+            values: (1,1,1)
+            </summary>
+            <remarks>Position: field 8.</remarks>
+        </member>
+        <member name="F:BinaryDataModel.DataTypes.SubMesh.FixedSizeEstimate">
+            <summary>
+            Estimate of the fixed size part of this structure, assuming no padding.
+            The <see cref="T:System.String"/> <see cref="F:BinaryDataModel.DataTypes.SubMesh.name"/> is not included.
+            </summary>
+        </member>
+        <member name="M:BinaryDataModel.DataTypes.SubMesh.#ctor(BinaryDataModel.DataTypes.Mesh,System.String,Shared.Bounds3)">
+            <summary>
+            Create a <see cref="T:BinaryDataModel.DataTypes.SubMesh"/> to encompass all the data in <see cref="T:BinaryDataModel.DataTypes.Mesh"/> <paramref name="parent"/>.
+            </summary>
+            <param name="parent"></param>
+            <param name="name"></param>
+            <param name="bounds"></param>
+        </member>
+        <member name="M:BinaryDataModel.DataTypes.SubMesh.ToString">
+            <inheritdoc />
+        </member>
+        <member name="M:BinaryDataModel.DataTypes.SubMesh.Equals(BinaryDataModel.DataTypes.SubMesh)">
+            <inheritdoc />
+        </member>
+        <member name="M:BinaryDataModel.DataTypes.SubMesh.Equals(System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="M:BinaryDataModel.DataTypes.SubMesh.GetHashCode">
+            <inheritdoc />
+        </member>
+        <member name="T:BinaryDataModel.DataTypes.Phys">
+            <summary>
+            Holds the data in the Stormworks .phys file format.
+            </summary>
+        </member>
+        <member name="F:BinaryDataModel.DataTypes.Phys.fileName">
+            <summary>
+            The filePath from where this <see cref="T:BinaryDataModel.DataTypes.Phys"/> was loaded.
+            </summary>
+        </member>
+        <member name="F:BinaryDataModel.DataTypes.Phys.header0">
+            <summary>
+            unknown. values: 2
+            </summary>
+            <remarks>Position: header 0</remarks>
+        </member>
+        <member name="P:BinaryDataModel.DataTypes.Phys.subMeshCount">
+            <summary>
+            The amount of <see cref="T:BinaryDataModel.DataTypes.PhySubMesh"/>.
+            </summary>
+            <remarks>Position: header 1, type <see cref="T:System.UInt16"/>.</remarks>
+        </member>
+        <member name="F:BinaryDataModel.DataTypes.Phys.subMeshes">
+            <summary>
+            The <see cref="T:BinaryDataModel.DataTypes.PhySubMesh"/>es contained in this <see cref="T:BinaryDataModel.DataTypes.Phys"/>ics mesh.
+            </summary>
+        </member>
+        <member name="M:BinaryDataModel.DataTypes.Phys.ConvertToIndexedTriangles">
+            <summary>
+            Convert all <see cref="T:BinaryDataModel.DataTypes.PhySubMesh"/> in this <see cref="T:BinaryDataModel.DataTypes.Phys"/> to IndexedTriangles format.
+            </summary>
+        </member>
+        <member name="M:BinaryDataModel.DataTypes.Phys.ConvertToOrderedVertices(System.Boolean)">
+            <summary>
+            Convert all <see cref="T:BinaryDataModel.DataTypes.PhySubMesh"/> in this <see cref="T:BinaryDataModel.DataTypes.Phys"/> to Ordered Vertices format.
+            </summary>
+            <param name="strict">if false, skip any <see cref="T:BinaryDataModel.DataTypes.PhySubMesh"/> that already has no indices. otherwise those would throw.</param>
+        </member>
+        <member name="P:BinaryDataModel.DataTypes.PhySubMesh.vertexCount">
+            <summary>
+            The amount of vertices in this <see cref="T:BinaryDataModel.DataTypes.PhySubMesh"/>.
+            </summary>
+            <remarks>Position: header 0, type <see cref="T:System.UInt16"/>.</remarks>
+        </member>
+        <member name="P:BinaryDataModel.DataTypes.PhySubMesh.indexCount">
+            <summary>
+            The amount of indices in this <see cref="T:BinaryDataModel.DataTypes.PhySubMesh"/>.
+            </summary>
+            <remarks>Position: after vertexBuffer, type <see cref="T:System.UInt16"/>.</remarks>
+        </member>
+        <member name="P:BinaryDataModel.DataTypes.PhySubMesh.hasIndices">
+            <summary>
+            Are triangles defined explicitly with indices.
+            </summary>
+        </member>
+        <member name="M:BinaryDataModel.DataTypes.PhySubMesh.ConvertToIndexedTriangles">
+            <summary>
+            Convert the mesh to use indices to define the triangles. This typically means a reduction in memory usage.
+            Note that this process could use up to 4x the current memory temporarily.
+            </summary>
+        </member>
+        <member name="M:BinaryDataModel.DataTypes.PhySubMesh.ConvertToOrderedVertices">
+            <summary>
+            Convert the mesh to not use indices at all. This will typically increase memory usage.
+            </summary>
+        </member>
+        <member name="F:BinaryDataModel.DataTypes.VertexRecord.SizeEstimate">
+            <summary>
+            Estimate of the size of this structure, assuming no padding.
+            </summary>
+        </member>
+        <member name="M:BinaryDataModel.DataTypes.VertexRecord.Equals(BinaryDataModel.DataTypes.VertexRecord)">
+            <inheritdoc />
+        </member>
+        <member name="M:BinaryDataModel.DataTypes.VertexRecord.Equals(System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="M:BinaryDataModel.DataTypes.VertexRecord.GetHashCode">
+            <inheritdoc />
+        </member>
+        <member name="M:BinaryDataModel.MeshCache.GetOrLoadMesh(System.String)">
+            <summary>
+            Returns the <see cref="T:BinaryDataModel.DataTypes.Mesh"/> at this path, or null if such mesh does not exist or loading failed.
+            </summary>
+            <param name="romPath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BinaryDataModel.MeshCache.GetOrLoadPhys(System.String)">
+            <summary>
+            Returns the <see cref="T:BinaryDataModel.DataTypes.Phys"/> at this path, or null if such phys does not exist or loading failed.
+            </summary>
+            <param name="romPath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BinaryDataModel.MeshCache.TryGetLazyMesh(System.String,System.Lazy{BinaryDataModel.DataTypes.Mesh}@)">
+            <summary>
+            Try to retrieve the <see cref="T:System.Lazy`1"/> for this path (which could point to a null mesh).
+            returns true if the <paramref name="result"/> has a value (which could be a <see cref="T:System.Lazy`1"/> pointing to null)
+            </summary>
+            <param name="romPath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BinaryDataModel.MeshCache.TryGetLazyPhys(System.String,System.Lazy{BinaryDataModel.DataTypes.Phys}@)">
+            <summary>
+            Try to retrieve the <see cref="T:System.Lazy`1"/> for this path (which could point to a null phys).
+            returns true if the <paramref name="result"/> has a value (which could be a <see cref="T:System.Lazy`1"/> pointing to null)
+            </summary>
+            <param name="romPath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BinaryDataModel.MeshCache.AddOrUpdate(System.String,BinaryDataModel.DataTypes.Mesh)">
+            <summary>
+            Add or update the mesh for the given path. Mesh may be null.
+            </summary>
+            <param name="romPath"></param>
+            <param name="value">The value to insert, or null</param>
+        </member>
+        <member name="M:BinaryDataModel.MeshCache.AddOrUpdate(System.String,BinaryDataModel.DataTypes.Phys)">
+            <summary>
+            Add or update the mesh for the given path. Mesh may be null.
+            </summary>
+            <param name="romPath"></param>
+            <param name="value">The value to insert, or null</param>
+        </member>
+        <member name="M:BinaryDataModel.MeshCache.TryAdd(System.String,BinaryDataModel.DataTypes.Mesh)">
+            <inheritdoc cref="M:Shared.LazyCache`2.TryAdd(`0,`1)"/>
+        </member>
+        <member name="M:BinaryDataModel.MeshCache.TryAdd(System.String,BinaryDataModel.DataTypes.Phys)">
+            <inheritdoc cref="M:Shared.LazyCache`2.TryAdd(`0,`1)"/>
+        </member>
+        <member name="M:BinaryDataModel.MeshCache.Clear">
+            <inheritdoc cref="M:Shared.LazyCache`2.Clear"/>
+        </member>
+        <member name="F:BinaryDataModel.MeshCombiner.DataItem.paintColors">
+            <summary>
+            The paint color that will be applied to paintable vertices.
+            </summary>
+        </member>
+        <member name="F:BinaryDataModel.MeshCombiner.DataItem.doPaint">
+            <summary>
+            Should paint be applied.
+            </summary>
+        </member>
+        <member name="F:BinaryDataModel.MeshCombiner.DataItem.forcePaintColor">
+            <summary>
+            Force-Apply paint to every vertex, not just paintable ones.
+            </summary>
+        </member>
+        <member name="F:BinaryDataModel.MeshCombiner.DataItem.reverseTriangles">
+            <summary>
+            Reverse the triangles, this may be needed for some transformations.
+            </summary>
+        </member>
+        <member name="F:BinaryDataModel.MeshCombiner.DataItem.forceEmissiveColor">
+            <summary>
+            When <see langword="true"/> the last value in <see cref="F:BinaryDataModel.MeshCombiner.DataItem.paintColors"/> will be used to override all color on emissive mesh data.
+            </summary>
+        </member>
+        <member name="M:BinaryDataModel.MeshCombiner.Transform(BinaryDataModel.DataTypes.Mesh,OpenToolkit.Mathematics.Matrix4,System.Boolean)">
+            <summary>
+            Apply the <paramref name="transformation"/> to <paramref name="mesh"/>, creating a new <see cref="T:BinaryDataModel.DataTypes.Mesh"/>.
+            </summary>
+            <param name="mesh">The <see cref="T:BinaryDataModel.DataTypes.Mesh"/> to transform</param>
+            <param name="transformation">The transformation to apply.</param>
+            <param name="reverseTriangles">
+            Should triangles be reversed.
+            This may be needed when the transformation contains negative scale component.
+            </param>
+            <returns>A new <see cref="T:BinaryDataModel.DataTypes.Mesh"/> with <paramref name="transformation"/> applied to it.</returns>
+        </member>
+        <member name="M:BinaryDataModel.MeshCombiner.Transform(BinaryDataModel.DataTypes.Phys,OpenToolkit.Mathematics.Matrix4,System.Boolean)">
+            <summary>
+            Apply the <paramref name="transformation"/> to <paramref name="mesh"/>, creating a new <see cref="T:BinaryDataModel.DataTypes.Phys"/>.
+            </summary>
+            <param name="mesh">The <see cref="T:BinaryDataModel.DataTypes.Phys"/> to transform</param>
+            <param name="transformation">The transformation to apply.</param>
+            <param name="reverseTriangles">
+            Should triangles be reversed.
+            This may be needed when the transformation contains negative scale component.
+            </param>
+            <returns>A new <see cref="T:BinaryDataModel.DataTypes.Phys"/> with <paramref name="transformation"/> applied to it.</returns>
+        </member>
+        <member name="M:BinaryDataModel.MeshCombiner.Combine(System.Collections.Generic.IEnumerable{BinaryDataModel.MeshCombiner.DataItem},System.Boolean,System.Boolean)">
+            <summary>
+            Combine the list of meshes into a new <see cref="T:BinaryDataModel.DataTypes.Mesh"/>.
+            </summary>
+            <param name="meshes">Collection of meshes and metaData.</param>
+            <param name="mergeSubMeshes">Merge SubMeshes by <see cref="T:BinaryDataModel.DataTypes.SubMesh.Shader"/></param>.
+            <param name="deduplicateVertexRecords">Use <see cref="M:BinaryDataModel.DataTypes.Mesh.DeduplicateVertices"/> to reduce the size of the combined mesh.</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

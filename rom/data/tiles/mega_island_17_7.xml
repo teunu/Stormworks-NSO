@@ -4,16 +4,44 @@
 		<mesh id="mesh0" file_name="nso_mod/meshes/mainland/17_7_main.mesh">
 			<transform/>
 		</mesh>
+		<mesh id="mesh1" file_name="nso_mod/meshes/structures/buildings/hangar_cockerells.mesh">
+			<transform 00="0.694587" 02="0.719409" 20="-0.719409" 22="0.694587" 30="-291.38916" 31="16.4" 32="-315.438812"/>
+		</mesh>
+		<mesh id="mesh2" file_name="nso_mod/meshes/decoration/clutter/hangar_frame_destroyed.mesh">
+			<transform 00="0.687083" 02="0.726579" 20="-0.726579" 22="0.687083" 30="-290" 31="16.4" 32="-253"/>
+		</mesh>
+		<mesh id="mesh3" file_name="nso_mod/meshes/structures/blimp_tower.mesh">
+			<transform 00="0.707107" 02="0.707107" 20="-0.707107" 22="0.707107" 30="-314.046814" 31="16.479525" 32="-124.665222"/>
+		</mesh>
 	</meshes>
 	<physics_objects/>
 	<physics_meshes>
 		<physics_mesh id="physics_mesh0" file_name="nso_mod/meshes/mainland/17_7_main.phys">
 			<transform/>
 		</physics_mesh>
+		<physics_mesh id="physics_mesh1" file_name="nso_mod/meshes/structures/buildings/hangar_cockerells.phys">
+			<transform 00="0.707107" 02="0.707107" 20="-0.707107" 22="0.707107" 30="-292.356232" 31="16.684729" 32="-315.981537"/>
+		</physics_mesh>
+		<physics_mesh id="physics_mesh2" file_name="nso_mod/meshes/decoration/clutter/hangar_frame_destroyed.phys">
+			<transform 00="0.707107" 02="0.707107" 20="-0.707107" 22="0.707107" 30="-289.206665" 31="16" 32="-252.628403"/>
+		</physics_mesh>
+		<physics_mesh id="physics_mesh3" file_name="nso_mod/meshes/structures/blimp_tower.phys">
+			<transform 00="0.718223" 02="0.695813" 20="-0.695813" 22="0.718223" 30="-314.167114" 31="16.538948" 32="-124.751579"/>
+		</physics_mesh>
 	</physics_meshes>
 	<physics_dynamics/>
-	<lights_omni/>
-	<lights_spot/>
+	<lights_omni>
+		<light id="omni0" radius="45" is_render_halo="true">
+			<transform 00="0.455462" 02="0.890255" 20="-0.890255" 22="0.455462" 30="-295.508484" 31="25.808149" 32="-311.284241"/>
+			<color x="1" y="1" z="1"/>
+		</light>
+	</lights_omni>
+	<lights_spot>
+		<light id="spot0" range="45" fov="0.785398" texture="graphics/ies/ies_default.txtr">
+			<transform 00="0.686625" 02="0.727012" 10="-0.442597" 11="0.793332" 12="0.41801" 20="-0.576762" 21="-0.608789" 22="0.544721" 30="-332.180359" 31="29.121969" 32="-275.792847"/>
+			<color x="1" y="1" z="1"/>
+		</light>
+	</lights_spot>
 	<lights_tube/>
 	<screens/>
 	<edit_areas/>
@@ -22,12 +50,43 @@
 	<light_logic_nodes/>
 	<rotation_logic_nodes/>
 	<hangar_door_logic_nodes/>
-	<audio_logic_nodes/>
-	<tile_markers/>
+	<audio_logic_nodes>
+		<logic id="audio0" loop_filename="nso_mod/audio/ambient_loops/forest_birds.ogg" range_inner="120" range_outer="180" audio_underwater_affected="true">
+			<transform 30="-301.486023" 31="25.248543" 32="-350.38327"/>
+		</logic>
+	</audio_logic_nodes>
+	<tile_markers>
+		<markers id="tile_marker0" marker_type="5" string_data="Cockerels Airfield">
+			<transform 30="-364.978241" 31="17.91848" 32="-180.197754"/>
+		</markers>
+	</tile_markers>
 	<mission_zones/>
 	<dynamic_markers/>
-	<ladders/>
-	<perches/>
+	<ladders>
+		<ladder id="ladder_0" height="27">
+			<transform 00="0.708019" 02="0.706194" 20="-0.706194" 22="0.708019" 30="-317.999756" 31="18.883858" 32="-114.323547"/>
+		</ladder>
+	</ladders>
+	<perches>
+		<perch id="perch0">
+			<transform 30="-318.818359" 31="46.833397" 32="-117.777466"/>
+		</perch>
+		<perch id="perch1">
+			<transform 00="0.664259" 02="0.747502" 20="-0.747502" 22="0.664259" 30="-315.624451" 31="46.794594" 32="-123.313019"/>
+		</perch>
+		<perch id="perch2">
+			<transform 30="-316.040619" 31="36.626221" 32="-120.635284"/>
+		</perch>
+		<perch id="perch3">
+			<transform 30="-279.736176" 31="29.895248" 32="-258.944458"/>
+		</perch>
+		<perch id="perch4">
+			<transform 00="0.397438" 02="-0.917629" 20="0.917629" 22="0.397438" 30="-278.104431" 31="29.701117" 32="-257.338623"/>
+		</perch>
+		<perch id="perch5">
+			<transform 30="-269.297333" 31="29.809538" 32="-278.110352"/>
+		</perch>
+	</perches>
 	<fires/>
 	<train_tracks/>
 	<volcano_markers/>

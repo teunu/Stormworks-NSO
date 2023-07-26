@@ -1,0 +1,1079 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Extrusion</name>
+    </assembly>
+    <members>
+        <member name="T:Extrusion.CurveSpec">
+            <summary>
+            The specification for the visual representation of a <see cref="T:CurveGraph.CubicBezierCurve"/>.
+            </summary>
+        </member>
+        <member name="F:Extrusion.CurveSpec.name">
+            <summary>
+            A user-defined name for the spec. If not set the fileName will be used (note: that only for the root spec).
+            </summary>
+        </member>
+        <member name="P:Extrusion.CurveSpec.WillGenerateMesh">
+            <summary>
+            <see langword="true"/> when the <see cref="T:Extrusion.CurveSpec"/> will generate a (visual) mesh.
+            </summary>
+        </member>
+        <member name="P:Extrusion.CurveSpec.WillGeneratePhys">
+            <summary>
+            <see langword="true"/> when the <see cref="T:Extrusion.CurveSpec"/> will generate a (physics) mesh.
+            </summary>
+        </member>
+        <member name="F:Extrusion.CurveSpec.SnapType">
+            <summary>
+            Only Specs with the same <see cref="F:Extrusion.CurveSpec.SnapType"/> can snap to this.
+            If <see langword="null"/> no snapPoint will be created at all.
+            </summary>
+        </member>
+        <member name="F:Extrusion.CurveSpec.MinLength">
+            <summary>
+            Arbitrarily decided minimum length for a curve with this <see cref="T:Extrusion.CurveSpec"/> assigned to it.
+            </summary>
+        </member>
+        <member name="F:Extrusion.CurveSpec.DefaultMaxSegmentLength">
+            <summary>
+            The default value for <see cref="F:Extrusion.CurveSpec.MaxSegmentLength"/> that will be used if none is explicitly assigned.
+            </summary>
+        </member>
+        <member name="F:Extrusion.CurveSpec.MaxSegmentLength">
+            <summary>
+            The Maximum length of resulting extrusion mesh. If the Curve to be extruded is longer it will be split into segments such that each segment is below the length limit.
+            </summary>
+        </member>
+        <member name="P:Extrusion.CurveSpec.RecursiveMinLength">
+            <summary>
+            Actual minimum length for a curve with this <see cref="T:Extrusion.CurveSpec"/> assigned to it.
+            This value takes into account any minimums specified by members.
+            </summary>
+        </member>
+        <member name="F:Extrusion.CurveSpec.Extrusions">
+            <summary>
+            Extrusions of a crossSection.
+            </summary>
+        </member>
+        <member name="F:Extrusion.CurveSpec.Periodics">
+            <summary>
+            Items to be placed along the curve periodically.
+            </summary>
+        </member>
+        <member name="F:Extrusion.CurveSpec.TrainPhysics">
+            <summary>
+            Physics for train wheels.
+            </summary>
+        </member>
+        <member name="F:Extrusion.CurveSpec.SubSpecs">
+            <summary>
+            References to other <see cref="T:Extrusion.CurveSpec"/>s.
+            </summary>
+        </member>
+        <member name="M:Extrusion.CurveSpec.Validate">
+            <summary>
+            Validate that the <see cref="T:Extrusion.CurveSpec"/> is valid and will not produce errors when using it to generate decorations.
+            </summary>
+        </member>
+        <member name="M:Extrusion.CurveSpec.Validate(Shared.Validation.Validator)">
+            <inheritdoc />
+        </member>
+        <member name="M:Extrusion.CurveSpec.ToString">
+            <inheritdoc/>
+        </member>
+        <member name="F:Extrusion.Diagnostics.CurveIteratorDiag.Initialize">
+            <summary>
+            Called when the <see cref="T:Extrusion.Diagnostics.CurveIteratorDiag"/> is attached to a <see cref="T:Extrusion.Generator.CurveIterator"/>.
+            </summary>
+        </member>
+        <member name="F:Extrusion.Diagnostics.CurveIteratorDiag.Start">
+            <summary>
+            Called when Iteration starts.
+            </summary>
+        </member>
+        <member name="F:Extrusion.Diagnostics.CurveIteratorDiag.MainIteration">
+            <summary>
+            Called for each iteration,
+            when the candidate sample has been computed, but not yet checked.
+            </summary>
+        </member>
+        <member name="F:Extrusion.Diagnostics.CurveIteratorDiag.Check_Result">
+            <summary>
+            Called when a sample is checked.
+            Note: enabling this diagnostic will cause all checks to run (no short-circuit).
+            </summary>
+        </member>
+        <member name="F:Extrusion.Diagnostics.CurveIteratorDiag.Check_Angle">
+            <summary>
+            The angle computed by Check_Angle (in degrees). The value must be less than <see cref="F:Extrusion.Support.InterpolationSettings.MaxAngleBetweenInterpolations"/> (as provided by: <see cref="P:Extrusion.Generator.CurveIterator.CurrentSettings"/>).
+            </summary>
+        </member>
+        <member name="F:Extrusion.Diagnostics.CurveIteratorDiag.Check_SegmentOffset">
+            <summary>
+            The distance computed by Check_MidpointOffset. The value must be less than <see cref="F:Extrusion.Support.InterpolationSettings.MaxSegmentOffset"/> (as provided by: <see cref="P:Extrusion.Generator.CurveIterator.CurrentSettings"/>).
+            </summary>
+        </member>
+        <member name="F:Extrusion.Diagnostics.CurveIteratorDiag.Search_Start">
+            <summary>
+            Called when the candidate sample did not pass the test
+            and a Binary Search will be performed to find a passing sample.
+            </summary>
+        </member>
+        <member name="F:Extrusion.Diagnostics.CurveIteratorDiag.Search_Iteration">
+            <summary>
+            Called for each iteration in the search,
+            when the candidate sample has been computed but not yet checked.
+            </summary>
+        </member>
+        <member name="F:Extrusion.Diagnostics.CurveIteratorDiag.Search_Min">
+            <summary>
+            Called when the search minimum is set to the pivot.
+            This means that the CandidateSample passed the test.
+            </summary>
+        </member>
+        <member name="F:Extrusion.Diagnostics.CurveIteratorDiag.Search_Max">
+            <summary>
+            Called when the search maximum is set to the pivot.
+            This means that the CandidateSample failed the test.
+            </summary>
+        </member>
+        <member name="F:Extrusion.Diagnostics.CurveIteratorDiag.Search_FinalAdjust">
+            <summary>
+            Called when the search is done and the result sample is adjusted to MinDistance.
+            </summary>
+        </member>
+        <member name="F:Extrusion.Diagnostics.CurveIteratorDiag.Search_End">
+            <summary>
+            Called when the search is done.
+            </summary>
+        </member>
+        <member name="F:Extrusion.Diagnostics.CurveIteratorDiag.Yield">
+            <summary>
+            Called just before a <see cref="T:CurveGraph.CurveSample"/> is <see langword="yield"/>ed.
+            Is called regardless of what case caused the yield.
+            </summary>
+        </member>
+        <member name="F:Extrusion.Diagnostics.CurveIteratorDiag.Yield_Done">
+            <summary>
+            Called when AdvanceCandidate resulted in a valid candidate at the end of the curve.
+            Called after <see cref="F:Extrusion.Diagnostics.CurveIteratorDiag.Yield"/> but before the actual <see langword="yield"/>.
+            </summary>
+        </member>
+        <member name="F:Extrusion.Diagnostics.CurveIteratorDiag.Yield_Done_Stretched">
+            <summary>
+            Called when AdvanceCandidate resulted in a sample that CheckNestSampleFits stretched to the end.
+            Note that due to implementation reasons this is called after that yield.
+            </summary>
+        </member>
+        <member name="F:Extrusion.Diagnostics.CurveIteratorDiag.Yield_Done_Searched_Stretched">
+            <summary>
+            Called when the sample after search is the final sample somehow.
+            This could happen when CheckNextSampleFits needed to stretch it.
+            </summary>
+        </member>
+        <member name="F:Extrusion.Diagnostics.CurveIteratorDiag.FinalSegmentConstraint">
+            <summary>
+            FinalSegmentConstrain check shrunk the current segment in order to
+            </summary>
+        </member>
+        <member name="F:Extrusion.Diagnostics.CurveIteratorDiag.FinalSegmentConstraint_Stretched">
+            <summary>
+            FinalSegmentConstrain check shrunk the current segment in order to
+            </summary>
+        </member>
+        <member name="F:Extrusion.Diagnostics.CurveIteratorDiag.FinalSegmentConstraint_Shrunk">
+            <summary>
+            FinalSegmentConstrain check shrunk the current segment in order to
+            </summary>
+        </member>
+        <member name="F:Extrusion.Diagnostics.CurveIteratorDiag.Done">
+            <summary>
+            Called when the Extrusion is done.
+            </summary>
+        </member>
+        <member name="F:Extrusion.Diagnostics.CurveIteratorDiag.Finally">
+            <summary>
+            Called when the Iteration is disposed of (done or crashed).
+            </summary>
+        </member>
+        <member name="T:Extrusion.Diagnostics.ExtruderDiag">
+            <summary>
+            Diagnostics handler for <see cref="T:Extrusion.Generator.Extruder"/>.
+            Not suitable for MultiThreaded access, but can be re-used.
+            </summary>
+        </member>
+        <member name="F:Extrusion.Diagnostics.ExtruderDiag.IteratorDiag">
+            <summary>
+            Diagnostics to pass to the <see cref="!:Extrusion.Generator.CurveIterator"/>.
+            </summary>
+        </member>
+        <member name="F:Extrusion.Diagnostics.ExtruderDiag.Initialize">
+            <summary>
+            Called when the <see cref="T:Extrusion.Diagnostics.ExtruderDiag"/> is attached to a <see cref="!:Extrusion.Generator.Extruder"/>.
+            </summary>
+        </member>
+        <member name="F:Extrusion.Diagnostics.ExtruderDiag.Generate_Begin">
+            <summary>
+            Called just before entering the loop that will generate the extrusion.
+            </summary>
+        </member>
+        <member name="F:Extrusion.Diagnostics.ExtruderDiag.Generate_Vertices">
+            <summary>
+            Called before a set of vertices is generated to continue a <see cref="!:LoopSet"/>.
+            </summary>
+        </member>
+        <member name="F:Extrusion.Diagnostics.ExtruderDiag.Generate_ExtraVertices">
+            <summary>
+            Called before an extra set of vertices is generated to start the next <see cref="!:LoopSet"/>.
+            </summary>
+        </member>
+        <member name="F:Extrusion.Diagnostics.ExtruderDiag.Generate_Vertex">
+            <summary>
+            Called for each <see cref="!:Vertex"/> added.
+            </summary>
+        </member>
+        <member name="F:Extrusion.Diagnostics.ExtruderDiag.Generate_Indices">
+            <summary>
+            Called before indices are generated.
+            </summary>
+        </member>
+        <member name="T:Extrusion.Diagnostics.ExtruderDiag.TrianglePairAction">
+            <summary>
+            Called for each index added.
+            </summary>
+            <param name="start">The index of the vertex for the start of the line.</param>
+            <param name="end">The index of the vertex for the end of the line.</param>
+            <param name="triangle_u">The indices of first generated triangle.</param>
+            <param name="triangle_v">The indices of second generated triangle.</param>
+        </member>
+        <member name="F:Extrusion.Diagnostics.ExtruderDiag.Generate_TrianglePair">
+            <summary>
+            Called for each index added.
+            </summary>
+        </member>
+        <member name="F:Extrusion.Diagnostics.ExtruderDiag.Generate_Yield">
+            <summary>
+            Called just before the <see cref="!:Extrusion.Generator.Extruder"/> <see langword="yield" />s.
+            </summary>
+        </member>
+        <member name="F:Extrusion.Diagnostics.ExtruderDiag.Generate_EndOfStep">
+            <summary>
+            Called just before the next <see cref="T:CurveGraph.CurveSample"/> is requested from the <see cref="!:Extrusion.Generator.CurveIterator"/>.
+            </summary>
+        </member>
+        <member name="F:Extrusion.Diagnostics.ExtruderDiag.Advance_Before">
+            <summary>
+            Called just before the next LoopSetIndex and LoopIndex are computed.
+            </summary>
+        </member>
+        <member name="F:Extrusion.Diagnostics.ExtruderDiag.Advance_NextLoop">
+            <summary>
+            Called when the advance step moves to another <see cref="!:LoopSet"/>.
+            </summary>
+        </member>
+        <member name="F:Extrusion.Diagnostics.ExtruderDiag.Advance_NextLoopSet">
+            <summary>
+            Called when the advance step moves to another <see cref="!:LoopSet"/>.
+            </summary>
+        </member>
+        <member name="F:Extrusion.Diagnostics.ExtruderDiag.Advance_OneLoopSet">
+            <summary>
+            Called when the advance step restarts the current <see cref="!:LoopSet"/> (because there is only one).
+            </summary>
+        </member>
+        <member name="F:Extrusion.Diagnostics.ExtruderDiag.Advance_ResetLoopSet">
+            <summary>
+            Called when the advance step wrapped around to the first <see cref="!:LoopSet"/>.
+            </summary>
+        </member>
+        <member name="F:Extrusion.Diagnostics.ExtruderDiag.Advance_After">
+            <summary>
+            Called just after the next LoopSetIndex and LoopIndex are computed.
+            Parameter <see langword="true" /> when extra vertices will be generated because switching between LoopSets.
+            </summary>
+            <remarks>
+            This is called for all cases. For individual cases use <see cref="F:Extrusion.Diagnostics.ExtruderDiag.Advance_NextLoopSet"/>, <see cref="F:Extrusion.Diagnostics.ExtruderDiag.Advance_OneLoopSet"/> and <see cref="F:Extrusion.Diagnostics.ExtruderDiag.Advance_ResetLoopSet"/>.
+            </remarks>
+        </member>
+        <member name="F:Extrusion.Diagnostics.ExtruderDiag.Done">
+            <summary>
+            Called when the Extrusion is done.
+            </summary>
+        </member>
+        <member name="F:Extrusion.Diagnostics.ExtruderDiag.Finally">
+            <summary>
+            Called when the Extrusion is disposed of (done or crashed).
+            </summary>
+        </member>
+        <member name="M:Extrusion.Diagnostics.ExtruderDiag.LogAll(System.Text.StringBuilder)">
+            <summary>
+            Returns a new <see cref="T:Extrusion.Diagnostics.ExtruderDiag"/> with a default set of loggers attached.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:Extrusion.Diagnostics.PeriodicPlacerDiag.Initialize">
+            <summary>
+            Called when the <see cref="T:Extrusion.Diagnostics.ExtruderDiag"/> is attached to a <see cref="T:Extrusion.Generator.Extruder"/>.
+            </summary>
+        </member>
+        <member name="F:Extrusion.Diagnostics.PeriodicPlacerDiag.Start">
+            <summary>
+            Called before entering the loop.
+            </summary>
+        </member>
+        <member name="F:Extrusion.Diagnostics.PeriodicPlacerDiag.NotLongEnough">
+            <summary>
+            Called when the curve segment is not long enough to fit any placements.
+            </summary>
+        </member>
+        <member name="F:Extrusion.Diagnostics.PeriodicPlacerDiag.Done">
+            <summary>
+            Called when all Placements are done.
+            </summary>
+        </member>
+        <member name="F:Extrusion.Diagnostics.PeriodicPlacerDiag.Finally">
+            <summary>
+            Called when the Iterator is disposed of (done or crashed).
+            </summary>
+        </member>
+        <member name="M:Extrusion.Diagnostics.PeriodicPlacerDiag.LogAll(System.Text.StringBuilder)">
+            <summary>
+            Returns a new <see cref="T:Extrusion.Diagnostics.ExtruderDiag"/> with a default set of loggers attached.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:Extrusion.Diagnostics.TrainPhysicsDiag.IteratorDiag">
+            <summary>
+            Diagnostics to pass to the <see cref="!:TrainPhysicsGenerator.CurveIterator"/>.
+            </summary>
+        </member>
+        <member name="F:Extrusion.Diagnostics.TrainPhysicsDiag.Initialize">
+            <summary>
+            Called when the <see cref="T:Extrusion.Diagnostics.ExtruderDiag"/> is attached to a <see cref="!:Extrusion.Generator.Extruder"/>.
+            </summary>
+        </member>
+        <member name="F:Extrusion.Diagnostics.TrainPhysicsDiag.Done">
+            <summary>
+            Called when the Extrusion is done.
+            </summary>
+        </member>
+        <member name="F:Extrusion.Diagnostics.TrainPhysicsDiag.Finally">
+            <summary>
+            Called when the Extrusion is disposed of (done or crashed).
+            </summary>
+        </member>
+        <member name="T:Extrusion.Extrusion.ExtrusionSpec">
+            <summary>
+            Specifies how to generate a single extrusion for a <see cref="T:CurveGraph.CubicBezierCurve"/>.
+            </summary>
+        </member>
+        <member name="F:Extrusion.Extrusion.ExtrusionSpec.Enabled">
+            <summary>
+            Allow disabling without having to destroy the configuration itself.
+            </summary>
+        </member>
+        <member name="P:Extrusion.Extrusion.ExtrusionSpec.Visual">
+            <summary>
+            Generate a visual mesh data for this extrusion.
+            </summary>
+        </member>
+        <member name="P:Extrusion.Extrusion.ExtrusionSpec.Physics">
+            <summary>
+            Generate physics mesh data for this Extrusion.
+            </summary>
+        </member>
+        <member name="F:Extrusion.Extrusion.ExtrusionSpec.MeshSharing">
+            <summary>
+            How the <see cref="T:BinaryDataModel.DataTypes.Mesh"/> data should be shared between parts of the <see cref="T:Extrusion.CurveSpec"/>.
+            When <see langword="null"/> no <see cref="T:BinaryDataModel.DataTypes.Mesh"/> data will be generated.
+            </summary>
+        </member>
+        <member name="F:Extrusion.Extrusion.ExtrusionSpec.PhysSharing">
+            <summary>
+            How the <see cref="T:BinaryDataModel.DataTypes.Phys"/> data should be shared between parts of the <see cref="T:Extrusion.CurveSpec"/>.
+            When <see langword="null"/> no <see cref="T:BinaryDataModel.DataTypes.Phys"/> data will be generated.
+            </summary>
+        </member>
+        <member name="F:Extrusion.Extrusion.ExtrusionSpec.LoopSets">
+            <summary>
+            During Extrusion loopSets will be placed in the order they appear.
+            </summary>
+        </member>
+        <member name="F:Extrusion.Extrusion.ExtrusionSpec.PhysicsOverrideSets">
+            <summary>
+            When not <see langword="null"/> will override any physics defined in <see cref="F:Extrusion.Extrusion.ExtrusionSpec.LoopSets"/>.
+            </summary>
+            <remarks>
+            Example use case: if you need different <see cref="T:Extrusion.Support.InterpolationSettings"/> for the physics mesh.
+            </remarks>
+        </member>
+        <member name="M:Extrusion.Extrusion.ExtrusionSpec.Validate(Shared.Validation.Validator)">
+            <inheritdoc />
+        </member>
+        <member name="T:Extrusion.Extrusion.Loop">
+            <summary>
+            A loop specifies a single point along the extrusion.
+            </summary>
+        </member>
+        <member name="F:Extrusion.Extrusion.Loop.InterpolationSettings">
+            <summary>
+            Defines the length of the segment between this loop and the next loop.
+            If there is no next loop it is ignored.
+            </summary>
+        </member>
+        <member name="F:Extrusion.Extrusion.Loop.Vertices">
+            <summary>
+            Vertices shared for both Visual and Physics mesh.
+            </summary>
+        </member>
+        <member name="M:Extrusion.Extrusion.Loop.Validate(Shared.Validation.Validator)">
+            <inheritdoc />
+        </member>
+        <member name="T:Extrusion.Extrusion.LoopSet">
+            <summary>
+            Loops inside a <see cref="T:Extrusion.Extrusion.LoopSet"/> are attached to each other according to <see cref="F:Extrusion.Extrusion.LoopSet.LineIndices"/>.
+            When switching between <see cref="T:Extrusion.Extrusion.LoopSet"/> the vertices of both are placed at the same <see cref="T:CurveGraph.CurveSample"/>.
+            </summary>
+        </member>
+        <member name="F:Extrusion.Extrusion.LoopSet.LineIndices">
+            <summary>
+            LineIndices only for visual mesh.
+            </summary>
+        </member>
+        <member name="F:Extrusion.Extrusion.LoopSet.ReverseTriangles">
+            <summary>
+            Reverse the order of triangle indices.
+            </summary>
+        </member>
+        <member name="P:Extrusion.Extrusion.LoopSet.PhysFromVisual">
+            <summary>
+            Use exactly <see cref="F:Extrusion.Extrusion.LoopSet.LineIndices"/> for physics.
+            When <see langword="true"/> <see cref="P:Extrusion.Extrusion.LoopSet.PhysLineIndices"/> will set to <see langword="null"/>.
+            </summary>
+        </member>
+        <member name="P:Extrusion.Extrusion.LoopSet.PhysLineIndices">
+            <summary>
+            LineIndices only for physics.
+            When set to null <see cref="P:Extrusion.Extrusion.LoopSet.PhysFromVisual"/> will be set to <see langword="true"/>.
+            Will never return <see langword="null"/>: it will return either <see cref="F:Extrusion.Extrusion.LoopSet.LineIndices"/>,
+            <see cref="P:Extrusion.Extrusion.LoopSet.PhysLineIndices"/> (if it is not <see langword="null"/> or a new <see cref="T:System.Collections.Generic.List`1"/>.
+            </summary>
+        </member>
+        <member name="M:Extrusion.Extrusion.LoopSet.ComputeNormals(System.Boolean)">
+            <summary>
+            Compute normals for all loops.
+            </summary>
+            <param name="overrideExisting">When <see langword="false"/> (default) only normals with length zero will be recalculated.</param>
+        </member>
+        <member name="M:Extrusion.Extrusion.LoopSet.Validate(Shared.Validation.Validator)">
+            <inheritdoc />
+        </member>
+        <member name="T:Extrusion.Generator.CurveDecorator">
+            <summary>
+            Generates Decorations, such as <see cref="T:BinaryDataModel.DataTypes.Mesh"/>, <see cref="T:BinaryDataModel.DataTypes.Phys"/> and TrainTrack nodes.
+            Can be re-used to minimize allocations, but cannot be used from multiple Threads at once.
+            </summary>
+        </member>
+        <member name="F:Extrusion.Generator.CurveDecorator.ReverseTriangles">
+            <summary>
+            Reverse triangles to match Godot convention.
+            </summary>
+        </member>
+        <member name="P:Extrusion.Generator.CurveDecorator.CurveName">
+            <summary>
+            The name of the curve, used in names for elements, meshes, etc.
+            </summary>
+        </member>
+        <member name="P:Extrusion.Generator.CurveDecorator.CurveSpace2MeshSpace">
+            <summary>
+            Add to world space vertices to transform them
+            from curve space to mesh space (so the center of curve is at 0,0,0).
+            </summary>
+        </member>
+        <member name="M:Extrusion.Generator.CurveDecorator.GetSteppingEnumerable(CurveGraph.CubicBezierCurve,Extrusion.CurveSpec,System.String)">
+            <summary>
+            Returns an <see cref="T:System.Collections.IEnumerable"/> that steps through the curve and all elements of <paramref name="spec"/>.
+            The <see cref="T:Extrusion.Generator.CurveDecorator.ResultData"/> is in the last element of the <see cref="T:System.Collections.Generic.IEnumerable`1"/>, all intermediate steps return <see langword="null"/>.
+            If you wish to construct the partial result after steps call <see cref="M:Extrusion.Generator.CurveDecorator.CreateResultData"/>.
+            </summary>
+            <param name="curve"></param>
+            <param name="spec"></param>
+            <param name="curveName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Extrusion.Generator.CurveDecorator.SteppingEnumerable_Implementation(CurveGraph.CubicBezierCurve,Extrusion.CurveSpec,System.String,Extrusion.Generator.IteratorSettings)">
+            <summary>
+            Returns an <see cref="T:System.Collections.IEnumerable"/> that steps through the curve and all elements of <paramref name="spec"/>. All steps return null.
+            </summary>
+            <param name="curve"></param>
+            <param name="spec"></param>
+            <param name="curveName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Extrusion.Generator.CurveDecorator.Generate(CurveGraph.CubicBezierCurve,Extrusion.CurveSpec,System.String)">
+            <summary>
+            Generates all elements in the <paramref name="spec"/> in a single invocation.
+            </summary>
+            <param name="curve"></param>
+            <param name="spec"></param>
+            <param name="curveName"></param>
+        </member>
+        <member name="M:Extrusion.Generator.CurveDecorator.CreateResultData">
+            <summary>
+            Generates a <see cref="T:Extrusion.Generator.CurveDecorator.ResultData"/> based on the current state of the <see cref="T:Extrusion.Generator.CurveDecorator"/>.
+            The result is completely detached from this <see cref="T:Extrusion.Generator.CurveDecorator"/> instance, no state changes of this will be visible in the <see cref="T:Extrusion.Generator.CurveDecorator.ResultData"/>.
+            Note: This is only valid after at lest one step from <see cref="M:Extrusion.Generator.CurveDecorator.GetSteppingEnumerable(CurveGraph.CubicBezierCurve,Extrusion.CurveSpec,System.String)"/> has yielded.
+            </summary>
+            <returns></returns>
+            <exception cref="T:System.InvalidOperationException"></exception>
+        </member>
+        <member name="T:Extrusion.Generator.CurveDecorator.ResultData">
+            <summary>
+            Contains all the data generated by the <see cref="T:Extrusion.Generator.CurveDecorator"/>.
+            </summary>
+        </member>
+        <member name="T:Extrusion.Generator.CurveIterator">
+            <summary>
+            Iterates over a <see cref="T:CurveGraph.CubicBezierCurve"/> according to an array of <see cref="T:Extrusion.Support.InterpolationSettings"/>.
+            Each instance can run a single iteration at a time, but it can be re-used multiple times.
+            The iterator tries to find the maximum length segments within the constraints provided.
+            </summary>
+        </member>
+        <member name="P:Extrusion.Generator.CurveIterator.SearchIteration">
+            <summary>
+            The current iteration in the searching phase, or -1 if not searching right now.
+            </summary>
+        </member>
+        <member name="P:Extrusion.Generator.CurveIterator.CurrentLoop">
+            <summary>
+            Index to the current loop in the flattened array of loops.
+            </summary>
+        </member>
+        <member name="P:Extrusion.Generator.CurveIterator.CurrentDistance">
+            <summary>
+            The distance along the curve for <see cref="P:Extrusion.Generator.CurveIterator.CandidateSample"/>.
+            </summary>
+        </member>
+        <member name="P:Extrusion.Generator.CurveIterator.CurrentSegmentLength">
+            <summary>
+            The length of the segment between <see cref="P:Extrusion.Generator.CurveIterator.PreviousSample"/> and <see cref="P:Extrusion.Generator.CurveIterator.CandidateSample"/>.
+            </summary>
+        </member>
+        <member name="P:Extrusion.Generator.CurveIterator.SearchFromSample">
+            <summary>
+            The sample that did not pass the test causing search to start.
+            </summary>
+        </member>
+        <member name="M:Extrusion.Generator.CurveIterator.#ctor(CurveGraph.CubicBezierCurve,Extrusion.Generator.IteratorSettings,Extrusion.Support.InterpolationSettings[],System.Int32[],Extrusion.Diagnostics.CurveIteratorDiag)">
+            <summary>
+            Create a new <see cref="T:Extrusion.Generator.CurveIterator"/>.
+            </summary>
+            <param name="curve">The curve to iterate over.</param>
+            <param name="settingsArray">The settings to use.</param>
+            <param name="endIndices">
+            Acceptable indices in <paramref name="settingsArray"/> where the iteration may stop, or <see langword="null"/> to allow always.
+            The Length must match <paramref name="settingsArray"/>.
+            </param>
+            <exception cref="T:System.ArgumentException"></exception>
+        </member>
+        <member name="T:Extrusion.Generator.CurveIterator.Checks">
+            <summary>
+            Enum to signal which tests failed.
+            </summary>
+        </member>
+        <member name="M:Extrusion.Generator.CurveIterator.CheckCandidate(CurveGraph.CurveSample)">
+            <summary>
+            Inspect <paramref name="sample"/> and look at the internal state to see if <paramref name="sample"/> is valid.
+            Tests include: angle between tangents, distance from true curve and the midpoint between <see cref="P:Extrusion.Generator.CurveIterator.PreviousSample"/> and <paramref name="sample"/>.
+            </summary>
+            <param name="sample"></param>
+            <returns><see langword="true"/> if valid, <see langword="false"/> otherwise.</returns>
+        </member>
+        <member name="M:Extrusion.Generator.CurveIterator.CheckTangent(CurveGraph.CurveSample)">
+            <summary>
+            Check that the angle between the tangent of <paramref name="sample"/> and <see cref="P:Extrusion.Generator.CurveIterator.PreviousSample"/>
+            is less than <see cref="F:Extrusion.Support.InterpolationSettings.MaxAngleBetweenInterpolations"/> (from <seealso cref="P:Extrusion.Generator.CurveIterator.CurrentSettings"/>).
+            </summary>
+            <param name="sample"></param>
+            <returns><see langword="true"/> if less, <see langword="false"/> otherwise.</returns>
+        </member>
+        <member name="M:Extrusion.Generator.CurveIterator.CheckMidpointOffset(CurveGraph.CurveSample)">
+            <summary>
+            Check that the midpoint between <paramref name="sample"/> and <see cref="P:Extrusion.Generator.CurveIterator.PreviousSample"/>
+            is no further than <see cref="F:Extrusion.Support.InterpolationSettings.MaxSegmentOffset"/> (from <seealso cref="P:Extrusion.Generator.CurveIterator.CurrentSettings"/>)
+            away from the 'true' <see cref="T:CurveGraph.CubicBezierCurve"/>.
+            </summary>
+            <remarks>
+            This check is expensive because it needs to compute a new <see cref="T:CurveGraph.CurveSample"/> at the midpoint to compare to.
+            </remarks>
+            <param name="sample"></param>
+            <returns><see langword="true"/> if less, <see langword="false"/> otherwise.</returns>
+        </member>
+        <member name="M:Extrusion.Generator.CurveIterator.AdvanceCandidate">
+            <summary>
+            Update the internal state to move on to the next Candidate Sample.
+            </summary>
+        </member>
+        <member name="M:Extrusion.Generator.CurveIterator.CheckFinalSegmentConstraint">
+            <summary>
+            Check that the current sample will not cause constraints to break down the line.
+            For example that the distance between the current sample and the end is less than the minimum distance.
+            </summary>
+            <returns><see langword="true" /> if iteration needs to stop, <see langword="false"/> otherwise.</returns>
+        </member>
+        <member name="M:Extrusion.Generator.CurveIterator.IterateCurve">
+            <summary>
+            Begin iteration over <see cref="F:Extrusion.Generator.CurveIterator.Curve"/>.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Extrusion.Generator.Extruder.LoopSetIndex">
+            <summary>
+            The index of the current <see cref="T:Extrusion.Extrusion.LoopSet"/>.
+            </summary>
+        </member>
+        <member name="P:Extrusion.Generator.Extruder.LoopIndex">
+            <summary>
+            The index of the current <see cref="T:Extrusion.Extrusion.Loop"/> in the current <see cref="T:Extrusion.Extrusion.LoopSet"/>.
+            </summary>
+        </member>
+        <member name="P:Extrusion.Generator.Extruder.FirstNewVertex">
+            <summary>
+            The index of the first new <see cref="!:Vertex"/> that was generated this iteration.
+            </summary>
+        </member>
+        <member name="P:Extrusion.Generator.Extruder.FirstNewIndex">
+            <summary>
+            The index of the first new triangle index that was generated this iteration.
+            </summary>
+        </member>
+        <member name="P:Extrusion.Generator.Extruder.CurrentLoopSet">
+            <summary>
+            The current <see cref="T:Extrusion.Extrusion.LoopSet"/>.
+            </summary>
+        </member>
+        <member name="P:Extrusion.Generator.Extruder.CurrentStepIndex">
+            <summary>
+            Simple counter for the amount of steps that have been made.
+            </summary>
+        </member>
+        <member name="M:Extrusion.Generator.Extruder.Advance">
+            <summary>
+            Advance to the next loop.
+            </summary>
+            <returns><see langword="true"/> if the <see cref="P:Extrusion.Generator.Extruder.CurrentLoopSet"/> changed and we need to place the starting vertices for that.</returns>
+        </member>
+        <member name="M:Extrusion.Generator.Extruder.Generate(Extrusion.Generator.IteratorSettings)">
+            <summary>
+            Each yield return generates one segment.
+            The first iteration will make two loops so that there is always valid mesh data.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Extrusion.Generator.IPartGenerator">
+            <summary>
+            Common interface for all the geometry generating components in a <see cref="T:Extrusion.Generator.CurveDecorator"/>.
+            </summary>
+        </member>
+        <member name="P:Extrusion.Generator.IPartGenerator.DistanceInCurve">
+            <summary>
+            The distance along the curve that the <see cref="T:Extrusion.Generator.IPartGenerator"/>'s last activity occurred.
+            </summary>
+        </member>
+        <member name="M:Extrusion.Generator.IPartGenerator.Generate(Extrusion.Generator.IteratorSettings)">
+            <summary>
+            The IEnumerable that will generate the content.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Extrusion.Generator.MeshData.CurveSpace2meshSpace">
+            <summary>
+            Add to world space vertices to transform them
+            from curve space to mesh space (so the center of curve is at 0,0,0).
+            </summary>
+        </member>
+        <member name="P:Extrusion.Generator.PeriodicPlacer.DistanceInCurve">
+            <inheritdoc />
+        </member>
+        <member name="M:Extrusion.Generator.PeriodicPlacer.Generate(Extrusion.Generator.IteratorSettings)">
+            <inheritdoc />
+        </member>
+        <member name="F:Extrusion.Generator.TrainPhysicsGenerator.TrackName">
+            <summary>
+            Placed between curve name and step number. When defined should contain a leading separator.
+            </summary>
+        </member>
+        <member name="P:Extrusion.Generator.TrainPhysicsGenerator.DistanceInCurve">
+            <inheritdoc />
+        </member>
+        <member name="M:Extrusion.Generator.TrainPhysicsGenerator.Generate(Extrusion.Generator.IteratorSettings)">
+            <inheritdoc />
+        </member>
+        <member name="F:Extrusion.Periodic.MeshSpecification.Transform">
+            <summary>
+            The Transformation, relative to the position along the curve that has interpolated.
+            This is only meaningful to use when using <see cref="T:Extrusion.Periodic.PeriodicGroup"/>.
+            </summary>
+        </member>
+        <member name="P:Extrusion.Periodic.MeshSpecification.Mesh">
+            <summary>
+            The Mesh to be placed.
+            </summary>
+        </member>
+        <member name="P:Extrusion.Periodic.MeshSpecification.MeshPath">
+            <summary>
+            The path, relative to rom from where the <see cref="T:BinaryDataModel.DataTypes.Mesh"/> should be fetched.
+            </summary>
+        </member>
+        <member name="F:Extrusion.Periodic.MeshSpecification.PaintZones">
+            <summary>
+            When defined will override specific colors (see: <see cref="F:BinaryDataModel.MeshCombiner.paintZoneColors"/>) with the provided ones.
+            </summary>
+        </member>
+        <member name="F:Extrusion.Periodic.MeshSpecification.ForcePaint">
+            <summary>
+            Apply <see cref="F:Extrusion.Periodic.MeshSpecification.PaintZones"/>[0] to all vertices.
+            </summary>
+        </member>
+        <member name="F:Extrusion.Periodic.MeshSpecification.GeneratePhys">
+            <summary>
+            Generate <see cref="P:Extrusion.Periodic.MeshSpecification.Phys"/> from <see cref="P:Extrusion.Periodic.MeshSpecification.Mesh"/>.
+            </summary>
+        </member>
+        <member name="P:Extrusion.Periodic.MeshSpecification.Phys">
+            <summary>
+            The PhysMesh to place or <see langword="null"/>.
+            </summary>
+        </member>
+        <member name="P:Extrusion.Periodic.MeshSpecification.PhysPath">
+            <summary>
+            The path, relative to rom, from where the <see cref="T:BinaryDataModel.DataTypes.Phys"/> should be fetched.
+            </summary>
+        </member>
+        <member name="M:Extrusion.Periodic.MeshSpecification.Validate(Shared.Validation.Validator)">
+            <inheritdoc />
+        </member>
+        <member name="M:Extrusion.Periodic.MeshSpecification.Clone">
+            <summary>
+            Performs a member wise clone, <see cref="P:Extrusion.Periodic.MeshSpecification.Mesh"/> and <see cref="P:Extrusion.Periodic.MeshSpecification.Phys"/> are copied by reference because they are assumed to be used in read-only manner.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Extrusion.Periodic.PeriodicGroup">
+            <summary>
+            A defined group of <see cref="T:Extrusion.Periodic.PeriodicItem"/> that are placed together at the same spot along the curve.
+            </summary>
+        </member>
+        <member name="F:Extrusion.Periodic.PeriodicGroup.Entries">
+            <summary>
+            The <see cref="T:Extrusion.Periodic.MeshSpecification"/>s to be placed.
+            </summary>
+        </member>
+        <member name="F:Extrusion.Periodic.PeriodicItem.MeshSpec">
+            <summary>
+            Holds the specification for the <see cref="T:BinaryDataModel.DataTypes.Mesh"/> and/or <see cref="T:BinaryDataModel.DataTypes.Phys"/>.
+            </summary>
+        </member>
+        <member name="M:Extrusion.Periodic.PeriodicItem.Validate(Shared.Validation.Validator)">
+            <inheritdoc />
+        </member>
+        <member name="M:Extrusion.Periodic.PeriodicItem.Clone">
+            <summary>
+            Clones the instance into a new one.
+            Members are cloned as appropriate,
+            except the actual mesh inside <see cref="F:Extrusion.Periodic.PeriodicItem.MeshSpec"/>
+            which are copied by reference, because their instances are used for reading only.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Extrusion.Periodic.PeriodicItemBase">
+            <summary>
+            Defines a mesh is to be placed periodically along a <see cref="T:CurveGraph.CubicBezierCurve"/>.
+            </summary>
+        </member>
+        <member name="F:Extrusion.Periodic.PeriodicItemBase.MinDistance">
+            <summary>
+            If the distance (in meters) between the previous and this element is less than this value,
+            prevent it from being placed.
+            </summary>
+        </member>
+        <member name="F:Extrusion.Periodic.PeriodicItemBase.IdealDistance">
+            <summary>
+            The distance in meters between the previous and this element.
+            </summary>
+        </member>
+        <member name="M:Extrusion.Periodic.PeriodicItemBase.Validate(Shared.Validation.Validator)">
+            <inheritdoc />
+        </member>
+        <member name="T:Extrusion.Periodic.PeriodicItemSpec">
+            <summary>
+            Specifies how to place meshes along a <see cref="T:CurveGraph.CubicBezierCurve"/>.
+            </summary>
+        </member>
+        <member name="F:Extrusion.Periodic.PeriodicItemSpec.Enabled">
+            <summary>
+            Allow disabling without having to destroy the configuration itself.
+            </summary>
+        </member>
+        <member name="P:Extrusion.Periodic.PeriodicItemSpec.Visual">
+            <summary>
+            Generate a visual mesh data for this Item.
+            </summary>
+        </member>
+        <member name="P:Extrusion.Periodic.PeriodicItemSpec.Physics">
+            <summary>
+            Generate physics mesh data for this Item.
+            </summary>
+        </member>
+        <member name="F:Extrusion.Periodic.PeriodicItemSpec.MeshSharing">
+            <summary>
+            How the <see cref="T:BinaryDataModel.DataTypes.Mesh"/> data should be shared between parts of the <see cref="T:Extrusion.CurveSpec"/>.
+            When <see langword="null"/> no <see cref="T:BinaryDataModel.DataTypes.Mesh"/> data will be generated.
+            </summary>
+        </member>
+        <member name="F:Extrusion.Periodic.PeriodicItemSpec.PhysSharing">
+            <summary>
+            How the <see cref="T:BinaryDataModel.DataTypes.Phys"/> data should be shared between parts of the <see cref="T:Extrusion.CurveSpec"/>.
+            When <see langword="null"/> no <see cref="T:BinaryDataModel.DataTypes.Phys"/> data will be generated.
+            </summary>
+        </member>
+        <member name="F:Extrusion.Periodic.PeriodicItemSpec.InitialOffset">
+            <summary>
+            The initial offset, in terms of <see cref="!:PeriodicItem.IdealDistance"/> (total over all items)
+            from the start of the curve that the first element will be placed.
+            This ensures that consecutive curves have sensible distance between placements between curves.
+            </summary>
+        </member>
+        <member name="F:Extrusion.Periodic.PeriodicItemSpec.Smudge">
+            <summary>
+            Allow changing <see cref="!:PeriodicItem.IdealDistance"/> (on all items) to fit an exact integer amount inside the length of the curve.
+            </summary>
+        </member>
+        <member name="F:Extrusion.Periodic.PeriodicItemSpec.AlwaysFullSequence">
+            <summary>
+            Require a full sequence to always be placed.
+            If it cannot be placed then place nothing at all.
+            <seealso cref="!:PeriodicItem.MinDistance"/>.
+            </summary>
+        </member>
+        <member name="F:Extrusion.Periodic.PeriodicItemSpec.Items">
+            <summary>
+            During Extrusion periodicItems will be placed in the order they appear.
+            </summary>
+        </member>
+        <member name="M:Extrusion.Periodic.PeriodicItemSpec.Validate(Shared.Validation.Validator)">
+            <inheritdoc />
+        </member>
+        <member name="M:Extrusion.Prefab.SphereGenerator.SphereFaceSection.StretchCorrection(OpenToolkit.Mathematics.Vector3)">
+            <summary>
+            Corrects for the stretching that occurs when inflating the cube into a sphere,
+            where the triangles close to the seams would be smaller.
+            </summary>
+            <param name="v"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Extrusion.Support.InterpolationSettings">
+            <summary>
+            Settings to adjust the interpolation process.
+            </summary>
+        </member>
+        <member name="F:Extrusion.Support.InterpolationSettings.MinInterpolationDistance">
+            <summary>
+            The minimum distance between interpolations (length of segments).
+            </summary>
+        </member>
+        <member name="F:Extrusion.Support.InterpolationSettings.MaxInterpolationDistance">
+            <summary>
+            The maximum distance between interpolations (length of segments).
+            </summary>
+        </member>
+        <member name="F:Extrusion.Support.InterpolationSettings.MaxAngleBetweenInterpolations">
+            <summary>
+            The maximum angle, in degrees, between the 'forward direction' of interpolated segments.
+            </summary>
+        </member>
+        <member name="F:Extrusion.Support.InterpolationSettings.MaxSegmentOffset">
+            <summary>
+            The maximum offset between the real curve and the middle of the segment.
+            </summary>
+        </member>
+        <member name="F:Extrusion.Support.InterpolationSettings.ShrinkReluctance">
+            <summary>
+            Bias towards making longer segments rather than shorter when segment lengths need to be adjusted to prevent ending with a constraint breaking segment.
+            This is a multiplier that applies to the 'shrinked past constraint' value when it is compared against the 'stretched past constraint' value.
+            </summary>
+        </member>
+        <member name="M:Extrusion.Support.InterpolationSettings.Validate(Shared.Validation.Validator)">
+            <inheritdoc />
+        </member>
+        <member name="T:Extrusion.Support.MeshOrPhysSharing">
+            <summary>
+            Specifies how elements should be merged (or not) into (sub) meshes.
+            </summary>
+        </member>
+        <member name="F:Extrusion.Support.MeshOrPhysSharing.SharedMesh">
+            <summary>
+            Specifies how the element should share mesh.
+            When set to <see cref="F:Extrusion.Support.MeshOrPhysSharing.ParentSharedID"/> it will merge into whatever mesh is defined for the parent.
+            When set to <see cref="F:Extrusion.Support.MeshOrPhysSharing.MainSharedID"/> it will always merge into the main mesh for a given curve.
+            When set to <see langword="null"/> or <see cref="F:System.String.Empty"/> it will always generate a unique mesh.
+            When set to any other value it will share with any other uses of that same value.
+            </summary>
+        </member>
+        <member name="F:Extrusion.Support.MeshOrPhysSharing.SharedSubMesh">
+            <summary>
+            Specifies how the element should share subMesh within a mesh.
+            In the case of <see cref="T:Extrusion.Support.MeshSharing"/>: All identifiers are unique to the selected <see cref="F:Extrusion.Support.MeshSharing.Shader"/>.
+            When set to <see cref="F:Extrusion.Support.MeshOrPhysSharing.ParentSharedID"/> it will merge into whatever mesh is defined for the parent.
+            When set to <see cref="F:Extrusion.Support.MeshOrPhysSharing.MainSharedID"/> it will always merge into the main mesh for a given curve.
+            When set to <see langword="null"/> or <see cref="F:System.String.Empty"/> it will always generate a unique mesh.
+            When set to any other value it will share with any other uses of that same value.
+            </summary>
+        </member>
+        <member name="F:Extrusion.Support.MeshOrPhysSharing.SectionID">
+            <summary>
+            The ID of the section, this is used by the CurveDecorator to split a mesh into multiple parts if the curve is very long.
+            It is not exposed publicly.
+            </summary>
+        </member>
+        <member name="M:Extrusion.Support.MeshOrPhysSharing.Equals(Extrusion.Support.MeshOrPhysSharing)">
+            <inheritdoc />
+        </member>
+        <member name="M:Extrusion.Support.MeshOrPhysSharing.GetHashCode">
+            <inheritdoc />
+        </member>
+        <member name="M:Extrusion.Support.MeshOrPhysSharing.Validate(Shared.Validation.Validator)">
+            <inheritdoc />
+        </member>
+        <member name="F:Extrusion.Support.MeshSharing.Shader">
+            <summary>
+            The shader to be used.
+            </summary>
+        </member>
+        <member name="P:Extrusion.Support.MeshSharing.Default">
+            <summary>
+            Returns a new instance with the default settings.
+            </summary>
+        </member>
+        <member name="M:Extrusion.Support.MeshSharing.Equals(Extrusion.Support.MeshSharing)">
+            <inheritdoc />
+        </member>
+        <member name="M:Extrusion.Support.MeshSharing.Equals(System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="M:Extrusion.Support.MeshSharing.GetHashCode">
+            <inheritdoc />
+        </member>
+        <member name="M:Extrusion.Support.MeshSharing.Validate(Shared.Validation.Validator)">
+            <inheritdoc />
+        </member>
+        <member name="P:Extrusion.Support.PhysSharing.Default">
+            <summary>
+            Returns a new instance with the default settings.
+            </summary>
+        </member>
+        <member name="M:Extrusion.Support.PhysSharing.Equals(Extrusion.Support.PhysSharing)">
+            <inheritdoc />
+        </member>
+        <member name="M:Extrusion.Support.PhysSharing.Equals(System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="M:Extrusion.Support.PhysSharing.GetHashCode">
+            <inheritdoc />
+        </member>
+        <member name="F:Extrusion.Support.Transformation.LockRotationX">
+            <summary>
+            Ignore all rotation around the X axis and use only the rotation specified in <see cref="F:Extrusion.Support.Transformation.Transform"/>.
+            </summary>
+        </member>
+        <member name="F:Extrusion.Support.Transformation.LockRotationY">
+            <summary>
+            Ignore all rotation around the Y axis and use only the rotation specified in <see cref="F:Extrusion.Support.Transformation.Transform"/>.
+            </summary>
+        </member>
+        <member name="F:Extrusion.Support.Transformation.LockRotationZ">
+            <summary>
+            Ignore all rotation around the Z axis and use only the rotation specified in <see cref="F:Extrusion.Support.Transformation.Transform"/>.
+            </summary>
+        </member>
+        <member name="F:Extrusion.Support.Transformation.AnchorTransform">
+            <summary>
+            Transform from the <see cref="T:CurveGraph.CurveSample"/> to where <see cref="F:Extrusion.Support.Transformation.Transform"/> will be applied.
+            This only matters when there are locked rotation axis, because those locked rotations are computed after this.
+            Using <see cref="F:Extrusion.Support.Transformation.AnchorTransform"/> you can transform inside the coordinate system of the sample and only after that lock the rotations to world space.
+            </summary>
+        </member>
+        <member name="F:Extrusion.Support.Transformation.Transform">
+            <summary>
+            Transformation combined with <see cref="T:CurveGraph.CurveSample"/>
+            to create the final transformation for the Mesh or VertexRecord.
+            </summary>
+        </member>
+        <member name="P:Extrusion.Support.Transformation.LocalPosition">
+            <summary>
+            Gets or sets the Local Position encoded in the <see cref="F:Extrusion.Support.Transformation.Transform"/>.
+            </summary>
+        </member>
+        <member name="P:Extrusion.Support.Transformation.LocalScale">
+            <summary>
+            Gets or sets the Local Scale encoded by the <see cref="F:Extrusion.Support.Transformation.Transform"/>.
+            </summary>
+        </member>
+        <member name="P:Extrusion.Support.Transformation.LocalRotationRadians">
+            <summary>
+            Gets or sets the Local Rotation encoded by the <see cref="F:Extrusion.Support.Transformation.Transform"/> as Pitch (X), Yaw (Y), Roll (Z) angles in radians.
+            </summary>
+        </member>
+        <member name="P:Extrusion.Support.Transformation.AddLocalRotationRadians">
+            <summary>
+            Adds to the Local rotation encoded by the <see cref="F:Extrusion.Support.Transformation.Transform"/> as Pitch (X), Yaw (Y), Roll (Z) angles in radians.
+            This adds to the rotation already there. This allows you to specify the rotation in steps, which may be easier to deal with.
+            </summary>
+        </member>
+        <member name="P:Extrusion.Support.Transformation.LocalRotationDegrees">
+            <summary>
+            Gets or sets the Local Rotation encoded by the <see cref="F:Extrusion.Support.Transformation.Transform"/> as Pitch (X), Yaw (Y), Roll (Z) angles in degrees.
+            </summary>
+        </member>
+        <member name="P:Extrusion.Support.Transformation.AddLocalRotationDegrees">
+            <summary>
+            Adds to the Local rotation encoded by the <see cref="F:Extrusion.Support.Transformation.Transform"/> as Pitch (X), Yaw (Y), Roll (Z) angles in degrees.
+            This adds to the rotation already there. This allows you to specify the rotation in steps, which may be easier to deal with.
+            </summary>
+        </member>
+        <member name="P:Extrusion.Support.Transformation.LocalQuaternion">
+            <summary>
+            Gets or sets the Local Rotation encoded by the <see cref="F:Extrusion.Support.Transformation.Transform"/> as a <see cref="T:OpenToolkit.Mathematics.Quaternion"/>.
+            </summary>
+        </member>
+        <member name="P:Extrusion.Support.Transformation.AddLocalQuaternion">
+            <summary>
+            Adds to the Local Rotation encoded by the <see cref="F:Extrusion.Support.Transformation.Transform"/> as a <see cref="T:OpenToolkit.Mathematics.Quaternion"/>.
+            </summary>
+        </member>
+        <member name="M:Extrusion.Support.Transformation.ComputeFinalTransform(OpenToolkit.Mathematics.Matrix4)">
+            <summary>
+            Compute the Final Transformation.
+            </summary>
+            <param name="sampleTransform"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Extrusion.Support.Transformation.Validate(Shared.Validation.Validator)">
+            <inheritdoc />
+        </member>
+        <member name="T:Extrusion.Train.TrainPhysicsSpec">
+            <summary>
+            Specification for train wheel physics.
+            </summary>
+        </member>
+        <member name="F:Extrusion.Train.TrainPhysicsSpec.Enabled">
+            <summary>
+            Allow disabling without having to destroy the configuration itself.
+            </summary>
+        </member>
+        <member name="M:Extrusion.Train.TrainPhysicsSpec.Validate(Shared.Validation.Validator)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

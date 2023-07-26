@@ -1,0 +1,668 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CustomSerialization</name>
+    </assembly>
+    <members>
+        <member name="T:CustomSerialization.Attributes.SerializationAttribute">
+            <summary>
+            The base for all Serializer related Attributes.
+            </summary>
+        </member>
+        <member name="T:CustomSerialization.Attributes.SerializerExplicitAttribute">
+            <summary>
+            Signal to the Serializer that the serialization specification of this <see cref="T:System.Type"/>
+            should be made by only looking at members decorated with <see cref="T:CustomSerialization.Attributes.SerializerIncludeAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CustomSerialization.Attributes.SerializerExplicitAttribute.ByReference">
+            <summary>
+            Always serialize this type as a reference and store it's real value in a centralized list.
+            </summary>
+        </member>
+        <member name="F:CustomSerialization.Attributes.SerializerIncludeAttribute.NameOverride">
+            <summary>
+            The name of the member to use during serialization.
+            </summary>
+        </member>
+        <member name="F:CustomSerialization.Attributes.SerializerIncludeAttribute.ByReference">
+            <summary>
+            Serialize this member by reference: it's values will be stored elsewhere, either in another member (of another type) or in a centralized container.
+            </summary>
+        </member>
+        <member name="F:CustomSerialization.Attributes.SerializerIncludeAttribute.XmlAsAttribute">
+            <summary>
+            Serialize this member as a Xml Attribute
+            </summary>
+        </member>
+        <member name="F:CustomSerialization.Attributes.SerializerIncludeAttribute.Optional">
+            <summary>
+            If this member is missing assign <see cref="F:CustomSerialization.Attributes.SerializerIncludeAttribute.DefaultValue"/> or <see langword="default"/> instead of throwing an <see cref="T:System.Exception"/>.
+            </summary>
+        </member>
+        <member name="F:CustomSerialization.Attributes.SerializerIncludeAttribute.DefaultValue">
+            <summary>
+            The default value to assign when the member is missing.
+            Note that assigning a value other than <see langword="null"/> will set <see cref="F:CustomSerialization.Attributes.SerializerIncludeAttribute.Optional"/> to <see langword="true"/>.
+            </summary>
+        </member>
+        <member name="F:CustomSerialization.Attributes.SerializerIncludeAttribute.OmitIfDefault">
+            <summary>
+            Do not serialize the value if it is equal to <see cref="F:CustomSerialization.Attributes.SerializerIncludeAttribute.DefaultValue"/>. Implies <see cref="F:CustomSerialization.Attributes.SerializerIncludeAttribute.Optional"/>.
+            </summary>
+        </member>
+        <member name="M:CustomSerialization.BuiltIn.StringSpec.FromString(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:CustomSerialization.BuiltIn.StringSpec.ValueToString(System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="M:CustomSerialization.ByRefContainer.Values(System.Type)">
+            <summary>
+            Returns all object, ID pairs for the given <see cref="T:System.Type"/> <paramref name="key"/>.
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CustomSerialization.DictionaryOfContainer`2.GetEnumerator">
+            <inheritdoc />
+        </member>
+        <member name="M:CustomSerialization.DictionaryOfContainer`2.System#Collections#IEnumerable#GetEnumerator">
+            <inheritdoc />
+        </member>
+        <member name="M:CustomSerialization.DictionaryOfContainer`2.Clear">
+            <inheritdoc />
+        </member>
+        <member name="M:CustomSerialization.DictionaryOfContainer`2.Add(System.Collections.Generic.KeyValuePair{`0,`1})">
+            <inheritdoc />
+        </member>
+        <member name="M:CustomSerialization.DictionaryOfContainer`2.Contains(System.Collections.Generic.KeyValuePair{`0,`1})">
+            <inheritdoc />
+        </member>
+        <member name="M:CustomSerialization.DictionaryOfContainer`2.CopyTo(System.Collections.Generic.KeyValuePair{`0,`1}[],System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:CustomSerialization.DictionaryOfContainer`2.Remove(System.Collections.Generic.KeyValuePair{`0,`1})">
+            <inheritdoc />
+        </member>
+        <member name="P:CustomSerialization.DictionaryOfContainer`2.Count">
+            <inheritdoc />
+        </member>
+        <member name="P:CustomSerialization.DictionaryOfContainer`2.IsReadOnly">
+            <inheritdoc />
+        </member>
+        <member name="M:CustomSerialization.DictionaryOfContainer`2.Add(`0,`1)">
+            <inheritdoc />
+        </member>
+        <member name="M:CustomSerialization.DictionaryOfContainer`2.ContainsKey(`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:CustomSerialization.DictionaryOfContainer`2.Remove(`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:CustomSerialization.DictionaryOfContainer`2.TryGetValue(`0,`1@)">
+            <inheritdoc />
+        </member>
+        <member name="P:CustomSerialization.DictionaryOfContainer`2.Item(`0)">
+            <inheritdoc />
+        </member>
+        <member name="P:CustomSerialization.DictionaryOfContainer`2.Keys">
+            <inheritdoc />
+        </member>
+        <member name="P:CustomSerialization.DictionaryOfContainer`2.Values">
+            <inheritdoc />
+        </member>
+        <member name="T:CustomSerialization.Exceptions.InvalidDataException">
+            <summary>
+            Thrown when there is something wrong with the data format.
+            </summary>
+        </member>
+        <member name="T:CustomSerialization.Exceptions.InvalidFormatException">
+            <summary>
+            Thrown when the data stream is not in a format the <see cref="T:CustomSerialization.Serializer"/> can read.
+            </summary>
+        </member>
+        <member name="T:CustomSerialization.Exceptions.MissingAbstractOrInterfaceImplementationSpecificationException">
+            <summary>
+            When a <see cref="T:System.Type"/> has a member of interface or abstract type and the real runtime type found in that member does not have a known <see cref="T:CustomSerialization.TypeSerializationSpecification"/>.
+            </summary>
+        </member>
+        <member name="T:CustomSerialization.Exceptions.SerializerException">
+            <summary>
+            Base class for specific <see cref="T:System.Exception"/>s thrown by the <see cref="T:CustomSerialization.Serializer"/>.
+            </summary>
+        </member>
+        <member name="T:CustomSerialization.Exceptions.TypeMismatchException">
+            <summary>
+            When the type to be (de)serialized does not match the <see cref="T:System.Type"/> specified in the <see cref="T:CustomSerialization.Specification.GraphSerializationSpecification"/>.
+            </summary>
+        </member>
+        <member name="T:CustomSerialization.Exceptions.UnknownTypeException">
+            <summary>
+            When (de)serialization encounters a <see cref="T:System.Type"/> for which there is no known <see cref="T:CustomSerialization.TypeSerializationSpecification"/>.
+            </summary>
+        </member>
+        <member name="F:CustomSerialization.Exceptions.XmlDataException.element">
+            <summary>
+            The element that contained incorrect data, may be null if unknown.
+            </summary>
+        </member>
+        <member name="M:CustomSerialization.Exceptions.XmlDataException.#ctor(System.Xml.Linq.XElement,System.Exception)">
+            <summary>
+            Get a new <see cref="T:CustomSerialization.Exceptions.XmlDataException"/> with auto formatted message like:
+            $"{innerException.GetType().Name} occurred getting data from {element.Name} at {element.GetLineInfoString()}".
+            </summary>
+            <param name="element"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:CustomSerialization.Exceptions.XmlDataException.AutoFormatDataName(System.String,System.Xml.Linq.XElement,System.Exception)">
+            <summary>
+            Get a new <see cref="T:CustomSerialization.Exceptions.XmlDataException"/> with auto formatted message like:
+            $"{innerException.GetType().Name} occurred getting '{dataName}' from {element.Name} at {element.GetLineInfoString()}".
+            </summary>
+            <param name="dataName">The name of the DataType to put in the message</param>
+            <param name="element"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="P:CustomSerialization.MemberInfoExt.ValueFieldInfo.MemberValueType">
+            <inheritdoc />
+        </member>
+        <member name="M:CustomSerialization.MemberInfoExt.ValueFieldInfo.GetValue(System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="M:CustomSerialization.MemberInfoExt.ValueFieldInfo.GetCustomAttributes(System.Boolean)">
+            <inheritdoc />
+        </member>
+        <member name="M:CustomSerialization.MemberInfoExt.ValueFieldInfo.GetCustomAttributes(System.Type,System.Boolean)">
+            <inheritdoc />
+        </member>
+        <member name="M:CustomSerialization.MemberInfoExt.ValueFieldInfo.IsDefined(System.Type,System.Boolean)">
+            <inheritdoc />
+        </member>
+        <member name="P:CustomSerialization.MemberInfoExt.ValueFieldInfo.DeclaringType">
+            <inheritdoc />
+        </member>
+        <member name="P:CustomSerialization.MemberInfoExt.ValueFieldInfo.MemberType">
+            <inheritdoc />
+        </member>
+        <member name="P:CustomSerialization.MemberInfoExt.ValueFieldInfo.Name">
+            <inheritdoc />
+        </member>
+        <member name="P:CustomSerialization.MemberInfoExt.ValueFieldInfo.ReflectedType">
+            <inheritdoc />
+        </member>
+        <member name="P:CustomSerialization.MemberInfoExt.ValueMemberInfo.MemberValueType">
+            <summary>
+            The <see cref="T:System.Type"/> of the value held by the Member.
+            </summary>
+        </member>
+        <member name="M:CustomSerialization.MemberInfoExt.ValueMemberInfo.GetValue(System.Object)">
+            <summary>
+            Retrieve the value of the member for <paramref name="instance"/>.
+            </summary>
+            <param name="instance"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CustomSerialization.MemberInfoExt.ValueMemberInfo.SetValue(System.Object,System.Object)">
+            <summary>
+            Set the value of the member on <paramref name="instance"/> to <paramref name="value"/>
+            </summary>
+            <param name="instance"></param>
+            <param name="value"></param>
+        </member>
+        <member name="P:CustomSerialization.MemberInfoExt.ValuePropertyInfo.MemberValueType">
+            <inheritdoc />
+        </member>
+        <member name="M:CustomSerialization.MemberInfoExt.ValuePropertyInfo.GetValue(System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="M:CustomSerialization.MemberInfoExt.ValuePropertyInfo.GetCustomAttributes(System.Boolean)">
+            <inheritdoc />
+        </member>
+        <member name="M:CustomSerialization.MemberInfoExt.ValuePropertyInfo.GetCustomAttributes(System.Type,System.Boolean)">
+            <inheritdoc />
+        </member>
+        <member name="M:CustomSerialization.MemberInfoExt.ValuePropertyInfo.IsDefined(System.Type,System.Boolean)">
+            <inheritdoc />
+        </member>
+        <member name="P:CustomSerialization.MemberInfoExt.ValuePropertyInfo.DeclaringType">
+            <inheritdoc />
+        </member>
+        <member name="P:CustomSerialization.MemberInfoExt.ValuePropertyInfo.MemberType">
+            <inheritdoc />
+        </member>
+        <member name="P:CustomSerialization.MemberInfoExt.ValuePropertyInfo.Name">
+            <inheritdoc />
+        </member>
+        <member name="P:CustomSerialization.MemberInfoExt.ValuePropertyInfo.ReflectedType">
+            <inheritdoc />
+        </member>
+        <member name="M:CustomSerialization.Serializer.SerializeType(System.Object,CustomSerialization.TypeSerializationSpecification,System.Xml.Linq.XElement,System.Boolean)">
+            <summary>
+            Serialize <paramref name="instance"/> into an existing empty <see cref="T:System.Xml.Linq.XElement"/> <paramref name="element"/>.
+            </summary>
+            <param name="instance"></param>
+            <param name="typeSpec"></param>
+            <param name="element"></param>
+            <param name="ignoreByRef">Ignore <see cref="P:CustomSerialization.TypeSerializationSpecification.ByRef"/> and serialize the object anyway.</param>
+        </member>
+        <member name="M:CustomSerialization.Serializer.SerializePrimitive(System.Object,CustomSerialization.BuiltIn.PrimitiveSpec,System.Xml.Linq.XElement)">
+            <summary>
+            Serialize a primitive type.
+            </summary>
+            <param name="instance"></param>
+            <param name="primitiveSpec"></param>
+            <param name="parent"></param>
+        </member>
+        <member name="M:CustomSerialization.Serializer.SerializeMember(CustomSerialization.Specification.MemberSerializationSpecification,System.Object,System.Xml.Linq.XElement)">
+            <summary>
+            Serialize a member
+            </summary>
+            <param name="memberSpec">Specification of the member</param>
+            <param name="memberOwnerInstance">The object that owns the member</param>
+            <param name="memberParent">The <see cref="T:System.Xml.Linq.XElement"/> that will represent the owner of the member</param>
+        </member>
+        <member name="M:CustomSerialization.Serializer.SerializeMemberAsAttribute(CustomSerialization.Specification.MemberSerializationSpecification,System.Object,System.Xml.Linq.XElement)">
+            <summary>
+            
+            </summary>
+            <param name="memberSpec"></param>
+            <param name="instance"></param>
+            <param name="memberParent"></param>
+        </member>
+        <member name="M:CustomSerialization.Serializer.ExamineByRef(CustomSerialization.TypeSerializationSpecification,System.Object)">
+            <summary>
+            Examine a object that is to be serialized as reference to discover any data inside that also needs to be serialized
+            so that internal data structures are kept up to date.
+            </summary>
+            <param name="instance"></param>
+            <param name="spec"></param>
+        </member>
+        <member name="M:CustomSerialization.Serializer.ExamineByRef(CustomSerialization.Specification.MemberSerializationSpecification,System.Object)">
+            <summary>
+            Examine a object that is to be serialized as reference to discover any data inside that also needs to be serialized
+            so that internal data structures are kept up to date.
+            </summary>
+            <param name="memberSpec"></param>
+            <param name="memberOwnerInstance"></param>
+        </member>
+        <member name="M:CustomSerialization.Serializer.HandleDeserialized(CustomSerialization.TypeSerializationSpecification,System.Object)">
+            <summary>
+            Deal with the bookKeeping and events that need to trigger after Deserialization of an object.
+            </summary>
+            <param name="spec"></param>
+            <param name="instance"></param>
+        </member>
+        <member name="M:CustomSerialization.Serializer.Deserialize(System.Xml.Linq.XElement,CustomSerialization.TypeSerializationSpecification,System.Object,System.Boolean)">
+            <summary>
+            Deserialize the data in <see cref="!:element"/> into <see cref="!:instance"/> or a new object.
+            </summary>
+            <param name="element"></param>
+            <param name="spec"></param>
+            <param name="instance">a empty instance that was created to preserve reference identity or <see langword="null"/></param>
+            <param name="forceReadRef">Ignore <see cref="P:CustomSerialization.TypeSerializationSpecification.ByRef"/> and deserialize the object anyway.</param>
+            <returns></returns>
+        </member>
+        <member name="M:CustomSerialization.Serializer.DeserializeFromAttribute(System.Collections.Generic.Dictionary{System.String,System.String},CustomSerialization.Specification.MemberSerializationSpecification)">
+            <summary>
+            Deserialize a Primitive Type from a <paramref name="attributes"/> using <paramref name="spec"/> to find the <see cref="T:CustomSerialization.TypeSerializationSpecification"/> and attributeName
+            </summary>
+            <param name="attributes"></param>
+            <param name="spec"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CustomSerialization.Serializer.DeserializeFromAttribute(System.Collections.Generic.Dictionary{System.String,System.String},CustomSerialization.TypeSerializationSpecification)">
+            <summary>
+            Deserialize a Primitive Type from a standalone element's attributes.
+            </summary>
+            <param name="attributes"></param>
+            <param name="spec"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CustomSerialization.Serializer.DeserializeFromAttribute(System.String,CustomSerialization.TypeSerializationSpecification)">
+            <summary>
+            Deserialize a primitive type from a string.
+            </summary>
+            <param name="data"></param>
+            <param name="spec"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CustomSerialization.Specification.CollectionTypeSpecification.#ctor(System.Type,CustomSerialization.Specification.SpecGenerator.SpecGeneratorSettings)">
+            <inheritdoc />
+        </member>
+        <member name="T:CustomSerialization.Specification.GraphSerializationSpecification">
+            <summary>
+            Holds the information required to serialize the object graph represented by <see cref="F:CustomSerialization.Specification.GraphSerializationSpecification.Root"/>.
+            </summary>
+        </member>
+        <member name="F:CustomSerialization.Specification.GraphSerializationSpecification.Root">
+            <summary>
+            The <see cref="T:System.Type"/> that this <see cref="T:CustomSerialization.Specification.GraphSerializationSpecification"/> is for.
+            </summary>
+        </member>
+        <member name="F:CustomSerialization.Specification.GraphSerializationSpecification.typeNameMap">
+            <summary>
+            Map from (Expected_Type + Name) -> Real_Type
+            </summary>
+        </member>
+        <member name="F:CustomSerialization.Specification.GraphSerializationSpecification.ByRefTypes">
+            <summary>
+            <see cref="T:System.Type"/>s that will be serialized by reference.
+            </summary>
+        </member>
+        <member name="F:CustomSerialization.Specification.GraphSerializationSpecification.NoHeader">
+            <summary>
+            Do not include the serializer's header.
+            </summary>
+        </member>
+        <member name="M:CustomSerialization.Specification.GraphSerializationSpecification.AddType(System.Type,CustomSerialization.Specification.SpecGenerator.SpecGeneratorSettings)">
+            <summary>
+            Add a <see cref="T:CustomSerialization.TypeSerializationSpecification"/> to <see cref="F:CustomSerialization.Specification.GraphSerializationSpecification.TypeSpecifications"/>. This may be required if the <see cref="F:CustomSerialization.Specification.GraphSerializationSpecification.Root"/>
+            has members typed as interfaces or abstract classes. The concrete implementations of those are not added automatically.
+            </summary>
+            <param name="t"></param>
+            <param name="settings"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CustomSerialization.Specification.GraphSerializationSpecification.MakeReady">
+            <summary>
+            Perform some bookKeeping steps to make the <see cref="T:CustomSerialization.Specification.GraphSerializationSpecification"/> ready to be used.
+            </summary>
+        </member>
+        <member name="M:CustomSerialization.Specification.GraphSerializationSpecification.DiscoverByReferenceTypes">
+            <summary>
+            Populate the list of types that will be serialized by reference.
+            </summary>
+        </member>
+        <member name="M:CustomSerialization.Specification.GraphSerializationSpecification.SetupTypeNameMap">
+            <summary>
+            Populate the Mapping from TypeNames to <see cref="T:System.Type"/>s.
+            </summary>
+        </member>
+        <member name="F:CustomSerialization.Specification.MemberSerializationSpecification.ParentSpecification">
+            <summary>
+            The specification of the <see cref="T:System.Type"/> that holds this Member.
+            </summary>
+        </member>
+        <member name="P:CustomSerialization.Specification.MemberSerializationSpecification.ValueType">
+            <summary>
+            The <see cref="T:System.Type"/> of the value of the <see cref="F:CustomSerialization.Specification.MemberSerializationSpecification.Member"/>.
+            </summary>
+        </member>
+        <member name="F:CustomSerialization.Specification.MemberSerializationSpecification.SerializedName">
+            <summary>
+            The name as it will appear in the serialized stream.
+            </summary>
+        </member>
+        <member name="F:CustomSerialization.Specification.MemberSerializationSpecification.ByReference">
+            <summary>
+            Serialize this member by reference: it will be replace by a reference and serialized in a global list.
+            </summary>
+        </member>
+        <member name="F:CustomSerialization.Specification.MemberSerializationSpecification.AsAttribute">
+            <summary>
+            Serialize this member into an attribute rather than an element.
+            </summary>
+        </member>
+        <member name="F:CustomSerialization.Specification.MemberSerializationSpecification.AsAttributeAutomaticallyAssigned">
+            <summary>
+            The value of <see cref="F:CustomSerialization.Specification.MemberSerializationSpecification.AsAttribute"/> was automatically assigned.
+            </summary>
+        </member>
+        <member name="P:CustomSerialization.Specification.MemberSerializationSpecification.OmitIfDefault">
+            <summary>
+            Do not serialize the value if it is equal to the <see cref="F:CustomSerialization.Specification.MemberSerializationSpecification.DefaultValue"/>. Implies <see cref="F:CustomSerialization.Specification.MemberSerializationSpecification.Optional"/>.
+            </summary>
+        </member>
+        <member name="F:CustomSerialization.Specification.MemberSerializationSpecification.Order">
+            <summary>
+            Number used to sort the members into a consistent order.
+            </summary>
+        </member>
+        <member name="M:CustomSerialization.Specification.MemberSerializationSpecification.ToString">
+            <inheritdoc />
+        </member>
+        <member name="F:CustomSerialization.Specification.SpecGenerator.SpecGeneratorSettings.AllowCustomSerializerAttributes">
+            <summary>
+            When <see cref="F:CustomSerialization.Specification.SpecGenerator.SpecGeneratorSettings.Mode"/> is <see cref="F:CustomSerialization.Specification.SpecGenerator.OperatingMode.Automatic"/>: allow selecting <see cref="T:CustomSerialization.Attributes.SerializationAttribute"/> to create a specification with.
+            </summary>
+        </member>
+        <member name="F:CustomSerialization.Specification.SpecGenerator.SpecGeneratorSettings.AllowDataContractAttributes">
+            <summary>
+            When <see cref="F:CustomSerialization.Specification.SpecGenerator.SpecGeneratorSettings.Mode"/> is <see cref="F:CustomSerialization.Specification.SpecGenerator.OperatingMode.Automatic"/>: allow selecting <see cref="T:System.Runtime.Serialization.DataContractAttribute"/> to create a specification with.
+            </summary>
+        </member>
+        <member name="F:CustomSerialization.Specification.SpecGenerator.SpecGeneratorSettings.AllowSerializableAttribute">
+            <summary>
+            When <see cref="F:CustomSerialization.Specification.SpecGenerator.SpecGeneratorSettings.Mode"/> is <see cref="F:CustomSerialization.Specification.SpecGenerator.OperatingMode.Automatic"/>: generating a specification if <see cref="T:System.SerializableAttribute"/> is on the <see cref="T:System.Type"/>.
+            </summary>
+        </member>
+        <member name="F:CustomSerialization.Specification.SpecGenerator.SpecGeneratorSettings.AllowUnguided">
+            <summary>
+            When <see cref="F:CustomSerialization.Specification.SpecGenerator.SpecGeneratorSettings.Mode"/> is <see cref="F:CustomSerialization.Specification.SpecGenerator.OperatingMode.Automatic"/>: generating a specification for a <see langword="class"/> even when there is no attribute of any kind on the <see cref="T:System.Type"/> to offer guidance.
+            </summary>
+        </member>
+        <member name="F:CustomSerialization.Specification.SpecGenerator.SpecGeneratorSettings.UseParameterLessConstructor">
+            <summary>
+            Use a parameterless constructor if possible.
+            </summary>
+        </member>
+        <member name="M:CustomSerialization.Specification.SpecGenerator.CreateGraphSerializationSpecification(System.Type,CustomSerialization.Specification.SpecGenerator.SpecGeneratorSettings)">
+            <summary>
+            Generates a full <see cref="T:CustomSerialization.Specification.GraphSerializationSpecification"/> by inspecting the members of <paramref name="rootType"/> in accordance with <paramref name="settings"/>.
+            Note that only statically discoverable <see cref="T:System.Type"/>s will be considered. Implementations of abstract types or interfaces need to be added manually or (de)serialization will fail.
+            </summary>
+            <param name="rootType"></param>
+            <param name="settings"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CustomSerialization.Specification.SpecGenerator.CreateTypeSpecification(System.Type,CustomSerialization.Specification.SpecGenerator.SpecGeneratorSettings)">
+            <summary>
+            Generate a <see cref="T:CustomSerialization.TypeSerializationSpecification"/> for <paramref name="type"/>.
+            Note that this Method merely selects one of the other Methods based on the <see cref="T:System.Attribute"/>s it finds on <paramref name="type"/> and what is specified in <paramref name="settings"/>.
+            </summary>
+            <param name="type">The <see cref="T:System.Type"/> to generate a specification for</param>
+            <param name="settings">Optional settings for the generation.</param>
+            <returns>A <see cref="T:CustomSerialization.TypeSerializationSpecification"/> for <paramref name="type"/></returns>
+        </member>
+        <member name="T:CustomSerialization.TypeSerializationSpecification">
+            <summary>
+            Specification for how a <see cref="F:CustomSerialization.TypeSerializationSpecification.Type"/> should be serialized.
+            </summary>
+        </member>
+        <member name="P:CustomSerialization.TypeSerializationSpecification.ByRef">
+            <summary>
+            Signals that this Type should be serialized by reference no matter where it is encountered.
+            </summary>
+        </member>
+        <member name="F:CustomSerialization.TypeSerializationSpecification.introducedTypes">
+            <summary>
+            List of known types that this type introduced.
+            </summary>
+        </member>
+        <member name="F:CustomSerialization.TypeSerializationSpecification.knownDerivatives">
+            <summary>
+            Set of types that derive from this type.
+            </summary>
+        </member>
+        <member name="F:CustomSerialization.TypeSerializationSpecification.Constructor">
+            <summary>
+            The parameterless constructor used to create an instance, or <see langword='null'/>
+            if it does not exist or should not be used.
+            </summary>
+        </member>
+        <member name="F:CustomSerialization.TypeSerializationSpecification.OnSerializing">
+            <summary>
+            The action to call on the instance before Serializing the instance, or <see langword='null'/>.
+            </summary>
+        </member>
+        <member name="F:CustomSerialization.TypeSerializationSpecification.OnSerialized">
+            <summary>
+            The action to call on the instance after Serializing the instance, or <see langword='null'/>.
+            </summary>
+        </member>
+        <member name="F:CustomSerialization.TypeSerializationSpecification.OnDeserializing">
+            <summary>
+            The action to call on the uninitialized instance before DeSerializing data into the instance, or <see langword='null'/>.
+            </summary>
+        </member>
+        <member name="F:CustomSerialization.TypeSerializationSpecification.OnDeserialized">
+            <summary>
+            The action to call on the instance when Deserialization of the object and it's members is complete, or <see langword='null'/>.
+            Note that when there are cyclic object references those cyclic members may not have been deserialized yet, if you need them use <see cref="F:CustomSerialization.TypeSerializationSpecification.OnGraphDeserialized"/> instead.
+            </summary>
+        </member>
+        <member name="F:CustomSerialization.TypeSerializationSpecification.OnGraphDeserialized">
+            <summary>
+            The action to call on the instance when DeSerializing the entire object graph is complete, or <see langword='null'/>.
+            </summary>
+        </member>
+        <member name="F:CustomSerialization.TypeSerializationSpecification.ToStringWithFormatProvider">
+            <summary>
+            The ToString method that takes a <see cref="T:System.IFormatProvider"/> parameter, or <see langword='null'/>.
+            </summary>
+        </member>
+        <member name="M:CustomSerialization.TypeSerializationSpecification.FindSpecialMethods">
+            <summary>
+            Find various special methods related to serialization such as events before and after (de) serialization, and constructors.
+            </summary>
+        </member>
+        <member name="M:CustomSerialization.TypeSerializationSpecification.TryFindDelegate``2(System.Reflection.MethodInfo,System.Reflection.ParameterInfo[])">
+            <summary>
+            Check if <paramref name="method"/> is decorated with <typeparamref name="TAttribute"/> and has a signature that matches <typeparamref name="TDelegate"/>.
+            </summary>
+            <typeparam name="TAttribute"></typeparam>
+            <typeparam name="TDelegate"></typeparam>
+            <param name="method"></param>
+            <param name="methodParameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CustomSerialization.TypeSerializationSpecification.TryFindDelegate``2(System.Reflection.MethodInfo,System.Reflection.ParameterInfo[],``1@)">
+            <summary>
+            Check if <paramref name="method"/> is decorated with <typeparamref name="TAttribute"/> and has a signature that matches <typeparamref name="TDelegate"/>.
+            If it does then create a delegate to call that method and assign it to <paramref name="destination"/>.
+            </summary>
+            <typeparam name="TAttribute"></typeparam>
+            <typeparam name="TDelegate"></typeparam>
+            <param name="method"></param>
+            <param name="methodParameters"></param>
+            <param name="destination"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CustomSerialization.TypeSerializationSpecification.GetFastInstanceActionInvoker``1(System.Reflection.MethodInfo)">
+            <summary>
+            Generates a delegate that can call an instance method where the instance is provided as <see cref="T:System.Object"/>.
+            </summary>
+            <param name="method"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CustomSerialization.TypeSerializationSpecification.GetFastInstanceActionInvoker``2(System.Reflection.MethodInfo)">
+            <summary>
+            Generates a delegate that can call an instance method where the instance is provided as <see cref="T:System.Object"/>.
+            </summary>
+            <param name="method"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CustomSerialization.TypeSerializationSpecification.GetFastInstanceActionInvoker``3(System.Reflection.MethodInfo)">
+            <summary>
+            Generates a delegate that can call an instance method where the instance is provided as <see cref="T:System.Object"/>.
+            </summary>
+            <param name="method"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CustomSerialization.TypeSerializationSpecification.GetFastInstanceFuncInvoker``2(System.Reflection.MethodInfo)">
+            <summary>
+            Generates a delegate that can call an instance method where the instance is provided as <see cref="T:System.Object"/>.
+            </summary>
+            <param name="method"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CustomSerialization.TypeSerializationSpecification.GetFastInstanceFuncInvoker``3(System.Reflection.MethodInfo)">
+            <summary>
+            Generates a delegate that can call an instance method where the instance is provided as <see cref="T:System.Object"/>.
+            </summary>
+            <param name="method"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CustomSerialization.TypeSerializationSpecification.GetFastInstanceFuncInvoker``4(System.Reflection.MethodInfo)">
+            <summary>
+            Generates a delegate that can call an instance method where the instance is provided as <see cref="T:System.Object"/>.
+            </summary>
+            <param name="method"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CustomSerialization.TypeSerializationSpecification.ToString">
+            <inheritdoc />
+        </member>
+        <member name="M:CustomSerialization.TypeSerializationSpecification.Create(System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Returns a new instance of <see cref="F:CustomSerialization.TypeSerializationSpecification.Type"/>, created either by the parameterless constructor or by <see cref="T:System.Runtime.Serialization.FormatterServices"/>.
+            <see cref="F:CustomSerialization.TypeSerializationSpecification.OnDeserializing"/> will be called if applicable.
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CustomSerialization.TypeSerializationSpecification.DeserializeOverrideDelegate">
+            <summary>
+            Delegate that can be called to override Deserialization process.
+            </summary>
+            <param name="serializer"></param>
+            <param name="element">The <see cref="T:System.Xml.Linq.XElement"/> to deserialize from</param>
+            <param name="attributes">The attributes of <paramref name="element"/></param>
+            <param name="instance">When reference identity is required to be preserved an object (as created by <see cref="M:CustomSerialization.TypeSerializationSpecification.Create(System.Runtime.Serialization.StreamingContext)"/>) will be passed here.</param>
+            <returns></returns>
+        </member>
+        <member name="F:CustomSerialization.TypeSerializationSpecification.OverrideDeserialize">
+            <summary>
+            Override the deserialization process completely.
+            Responsible for calling <see cref="F:CustomSerialization.TypeSerializationSpecification.OnDeserializing"/> and <see cref="F:CustomSerialization.TypeSerializationSpecification.OnMembersDeserialized"/> if applicable.
+            </summary>
+        </member>
+        <member name="T:CustomSerialization.TypeSerializationSpecification.SerializeOverrideDelegate">
+            <summary>
+            Delegate that can be called to modify or override the serialization process.
+            </summary>
+            <param name="serializer"></param>
+            <param name="element">The <see cref="T:System.Xml.Linq.XElement"/> to serialize into.</param>
+            <param name="instance">The instance of <see cref="F:CustomSerialization.TypeSerializationSpecification.Type"/> to serialize.</param>
+        </member>
+        <member name="F:CustomSerialization.TypeSerializationSpecification.OverrideSerialize">
+            <summary>
+            Override the serialization process completely.
+            Responsible for calling
+            <see cref="F:CustomSerialization.TypeSerializationSpecification.OnSerializing"/> and <see cref="F:CustomSerialization.TypeSerializationSpecification.OnSerialized"/> if applicable.
+            </summary>
+        </member>
+        <member name="T:CustomSerialization.TypeSerializationSpecification.DeserializeAugmentDelegate">
+            <summary>
+            <see cref="F:CustomSerialization.TypeSerializationSpecification.OnMembersDeserialized"/>.
+            </summary>
+            <param name="instance">The instance being deserialized</param>
+            <param name="serializer">The serializer</param>
+            <param name="element">The <see cref="T:System.Xml.Linq.XElement"/> containing data for <paramref name="instance"/>.</param>
+            <param name="attributes">The attributes of <paramref name="element"/>.</param>
+        </member>
+        <member name="F:CustomSerialization.TypeSerializationSpecification.OnMembersDeserialized">
+            <summary>
+            Will be called after members have been deserialized.
+            This is called just before <see cref="F:CustomSerialization.TypeSerializationSpecification.OnDeserialized"/> and has a signature that allows reading the serialization stream.
+            It is also possible to call on the <see cref="T:CustomSerialization.Serializer"/> to do additional work.
+            </summary>
+        </member>
+        <member name="T:CustomSerialization.TypeSerializationSpecification.SerializeAugmentDelegate">
+            <summary>
+            <see cref="T:CustomSerialization.TypeSerializationSpecification.SerializeAugmentDelegate"/>.
+            </summary>
+            <param name="instance">The instance to be serialized</param>
+            <param name="serializer">The serializer</param>
+            <param name="element">The element that will contain the data for <paramref name="instance"/></param>
+        </member>
+        <member name="F:CustomSerialization.TypeSerializationSpecification.BeforeMembersSerialized">
+            <summary>
+            Will be called before members are serialized.
+            This is called just after <see cref="F:CustomSerialization.TypeSerializationSpecification.OnSerializing"/> and has a signature that allows modifying the serialization stream.
+            It is also possible to call on the <see cref="T:CustomSerialization.Serializer"/> to do additional work.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,2345 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DataModel</name>
+    </assembly>
+    <members>
+        <member name="T:DataModel.DataTypes.DefinitionCategory">
+            <summary>
+            Definition category is used for sorting in the inventory screen.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.DefinitionCategory.Structural">
+            <summary>
+            Structural blocks and some miscelanious.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.DefinitionCategory.VehicleControl">
+            <summary>
+            Control and movement related components.
+            Radio, Seat, Wheel, Wing, KeepActive
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.DefinitionCategory.Mechanics">
+            <summary>
+            Pivot, Hinge, Piston, Linear track, Button Keypad, Throttle, Sliding door, Hinged door, Custom door
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.DefinitionCategory.Propulsion">
+            <summary>
+            Propeller, Rotor, Engine, Motor, Torque meter, Train bogie, Rocket
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.DefinitionCategory.SpecialistEquipment">
+            <summary>
+            Seat, Bed, Light, Fluid nozzle, Equipment inventory, Heater, Cable anchor, winch, flare launcher, parachute
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.DefinitionCategory.Logic">
+            <summary>
+            Logic gates, MicroController
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.DefinitionCategory.Displays">
+            <summary>
+            Speaker, Display, Laser beacon, screen
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.DefinitionCategory.Sensors">
+            <summary>
+            Camera
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.DefinitionCategory.Decorative">
+            <summary>
+            Rubber Tyre, railings.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.DefinitionCategory.Fluid">
+            <summary>
+            Fluid devices such as valves, tanks, pumps, radiators, etc.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.DefinitionCategory.Electric">
+            <summary>
+            Electrical devices: Battery, charger, breaker, relay, generator, solar
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.DefinitionCategory.JetEngine">
+            <summary>
+            Jet engine related components.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.DefinitionCategory.Weapon">
+            <summary>
+            Weapon related components, guns, warheads, ammo handling.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.DefinitionCategory.ModularEngine">
+            <summary>
+            Modular engine components.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.DefinitionCategory.SteamPower">
+            <summary>
+            Steam power related components, including nuclear and coal based heat generation.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.DefinitionCategory.Window">
+            <summary>
+            Window components in various shapes and sizes.
+            </summary>
+        </member>
+        <member name="T:DataModel.DataTypes.DefinitionType">
+            <summary>
+            The <see cref="T:DataModel.DataTypes.DefinitionType"/> determines functionality the component has.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.DefinitionType.Structural">
+            <summary>
+            See <see cref="T:DataModel.DataTypes.BlockType"/> for subtypes within this category.
+            Cannot have mesh_data
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.DefinitionType.Seat">
+            <summary>
+            See <see cref="T:DataModel.DataTypes.SeatPose"/> for subtypes within this category.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.DefinitionType.ForceEmitter">
+            <summary>
+            Propellers etc.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.DefinitionType.Buoyancy">
+            <summary>
+            Landing float
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.DefinitionType.WheelOld">
+            <summary>
+            Official name is "Wheel", but it's the old implementation.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.DefinitionType.Pipe">
+            <summary>
+            Pipes, either for fluid or for mechanical (shaft) power.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.DefinitionType.MultiBody">
+            <summary>
+            Part that connects to another <see cref="T:DataModel.Vehicles.Body"/> using a permanent physics joint.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.DefinitionType.Button">
+            <summary>
+            General User input devices: buttons, throttle, etc.
+            See <see cref="T:DataModel.DataTypes.ButtonType"/> for subtypes within this category.
+            DevName: 'Button'.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.DefinitionType.Basic">
+            <summary>
+            Items with Surfaces and a Mesh but no functionality.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.DefinitionType.Light">
+            <summary>
+            See <see cref="T:DataModel.DataTypes.LightType"/> for subtypes within this category.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.DefinitionType.LightDynamic">
+            <summary>
+            Spotlight on a integrated single axis pivot.
+            Official name: "Dynamic light"
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.DefinitionType.Basic_Dynamic">
+            <summary>
+            Unknown purpose.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.DefinitionType.Gyro">
+            <summary>
+            The "Gyro" control system.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.DefinitionType.LogicGate">
+            <summary>
+            Logic boxes, sensors, 'old' radar
+            See <see cref="T:DataModel.DataTypes.LogicGateType"/> for subtypes within this category.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.DefinitionType.Connector">
+            <summary>
+            Connects two separate vehicles with a physics joint of considerable strength.
+            Able to transfer Composite and power or fluid depending on variant.
+            See <see cref="T:DataModel.DataTypes.ConnectorType"/> for subtypes within this category.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.DefinitionType.AeroHydroDynamic">
+            <summary>
+            Movable Aerodynamic and Hydrodynamic control surfaces.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.DefinitionType.WinchDepreciated">
+            <summary>
+            The old style winch with a wire permanently connected to a included <see cref="T:DataModel.Vehicles.Body"/>.
+            Allows logicNode connections between the other Body.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.DefinitionType.Indicator">
+            <summary>
+            See <see cref="T:DataModel.DataTypes.IndicatorType"/> for subtypes within this category.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.DefinitionType.Handle">
+            <summary>
+            Handhold that the player can grab onto.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.DefinitionType.FluidDevice">
+            <summary>
+            Tanks, radiators, intakes, valves, but also speaker, transponder, etc.
+            See <see cref="T:DataModel.DataTypes.FluidDeviceType"/> for subTypes in this category.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.DefinitionType.MagAll">
+            <summary>
+            Magical magnet that connects to anything but fluid and gas.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.DefinitionType.Sign">
+            <summary>
+            PaintAble Sign and Indicator.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.DefinitionType.DoorDock">
+            <summary>
+            Door with docking capability.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.DefinitionType.DoorCustom">
+            <summary>
+            Door parts to create custom shape door.
+            See <see cref="T:DataModel.DataTypes.CustomDoorType"/> for subtypes within this category.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.DefinitionType.Electrical">
+            <summary>
+            See <see cref="T:DataModel.DataTypes.ElectricComponentType"/> for subTypes within this category.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.DefinitionType.EquipmentInventory">
+            <summary>
+            See <see cref="T:DataModel.DataTypes.InventoryClass"/> for sizes and shapes.
+            See <see cref="T:DataModel.DataTypes.InventoryItem"/> for items.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.DefinitionType.Transmission">
+            <summary>
+            DevName: 'Torque'.
+            See <see cref="T:DataModel.DataTypes.TransmissionComponentType"/> for subTypes within this category.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.DefinitionType.JetEngineComponent">
+            <summary>
+            See <see cref="T:DataModel.DataTypes.JetComponentType"/> for subTypes within this category.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.DefinitionType.CompositeIO">
+            <summary>
+            RGB Light, RGB indicator.
+            See <see cref="T:DataModel.DataTypes.CompositeDeviceType"/> for subtypes within this category.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.DefinitionType.Wheel">
+            <summary>
+            See <see cref="T:DataModel.DataTypes.WheelType"/> for subTypes within this category.
+            DevName: 'WheelAdvanced'
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.DefinitionType.Weapon">
+            <summary>
+            See <see cref="T:DataModel.DataTypes.WeaponType"/> for subtypes within this category.
+            See also: <seealso cref="T:DataModel.DataTypes.WeaponClass"/> and <seealso cref="T:DataModel.DataTypes.WeaponBeltType"/>.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.DefinitionType.KeepActive">
+            <summary>
+            DevName: 'NoSleep'.
+            Keeps vehicles loaded in a 2km radius.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.DefinitionType.RocketPart">
+            <summary>
+            See <see cref="T:DataModel.DataTypes.RocketType"/> for subtypes within this category.
+            DevName: 'Solid Rocket'
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.DefinitionType.RopeHook">
+            <summary>
+            Seems to use <see cref="T:DataModel.DataTypes.LogicGateSubType"/> to discriminate between rope types.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.DefinitionType.Steam">
+            <summary>
+            Steam related parts: boiler, condenser, etc.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.DefinitionType.Nuclear">
+            <summary>
+            Nuclear reactor parts: fuel assembly, control rod, etc.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.DefinitionType.Friction">
+            <summary>
+            Friction pad.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.DefinitionType.Radar">
+            <summary>
+            The 'new' Composite-only radar blocks with noise and less control.
+            </summary>
+        </member>
+        <member name="T:DataModel.DataTypes.DefinitionFlags">
+            <summary>
+            Flags may add additional functionality to blocks,
+            determine how they can be used or
+            are used to differentiate subtypes within a <see cref="T:DataModel.DataTypes.DefinitionType"/>.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.DefinitionFlags.ForceEmitterUnderwaterOnly">
+            <summary>
+            Only for <see cref="F:DataModel.DataTypes.DefinitionType.ForceEmitter"/>.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.DefinitionFlags.ForceEmitterBladePitchMode">
+            <summary>
+            Only for <see cref="F:DataModel.DataTypes.DefinitionType.ForceEmitter"/>.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.DefinitionFlags.DragPlace_X">
+            <summary>
+            Allow drag placement along the X axis (in/relative to the blocks own voxel coordinates).
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.DefinitionFlags.DragPlace_Y">
+            <summary>
+            Allow drag placement along the Y axis (in/relative to the blocks own voxel coordinates).
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.DefinitionFlags.DragPlace_Z">
+            <summary>
+            Allow drag placement along the Z axis (in/relative to the blocks own voxel coordinates).
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.DefinitionFlags.RoboticJoint_Gimbal">
+            <summary>
+            Used both for <see cref="F:DataModel.DataTypes.DefinitionType.MultiBody"/> and <see cref="F:DataModel.DataTypes.DefinitionType.Camera"/>.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.DefinitionFlags.RoboticVelocity">
+            <summary>
+            Only for <see cref="F:DataModel.DataTypes.DefinitionType.MultiBody"/>
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.DefinitionFlags.RoboticUpDown">
+            <summary>
+            Only for <see cref="F:DataModel.DataTypes.DefinitionType.MultiBody"/>
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.DefinitionFlags.Nameable">
+            <summary>
+            Player can enter a name for the block.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.DefinitionFlags.Aerofoil">
+            <summary>
+            Only for <see cref="F:DataModel.DataTypes.DefinitionType.AeroHydroDynamic"/>
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.DefinitionFlags.Spring">
+            <summary>
+            Only for <see cref="F:DataModel.DataTypes.DefinitionType.MultiBody"/>
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.DefinitionFlags.PositiveLimit">
+            <summary>
+            Only for <see cref="F:DataModel.DataTypes.DefinitionType.MultiBody"/>
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.DefinitionFlags.ForceEmitterDisableBadePhysics">
+            <summary>
+            For <see cref="F:DataModel.DataTypes.DefinitionType.ForceEmitter"/>: disables the blade physics.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.DefinitionFlags.NoMagnet">
+            <summary>
+            For <see cref="F:DataModel.DataTypes.DefinitionType.Connector"/>: disables the magnetic attraction force.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.DefinitionFlags.NoAdditive">
+            <summary>
+            <see cref="F:DataModel.DataTypes.DefinitionType.Indicator"/> has no additive (emissive).
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.DefinitionFlags.HiddenFromInventory">
+            <summary>
+            Component does not show in the Inventory.
+            </summary>
+        </member>
+        <member name="T:DataModel.DataTypes.BlockType">
+            <summary>
+            SubTypes within <see cref="F:DataModel.DataTypes.DefinitionType.Structural"/>.
+            </summary>
+        </member>
+        <member name="T:DataModel.DataTypes.SeatPose">
+            <summary>
+            Subtypes within <see cref="F:DataModel.DataTypes.DefinitionType.Seat"/>.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.SeatPose.Seat">
+            <summary>
+            Standard seat.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.SeatPose.Seat_Stick">
+            <summary>
+            Seat with control stick.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.SeatPose.Helm">
+            <summary>
+            Standing with wheel.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.SeatPose.Bed">
+            <summary>
+            Laying down.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.SeatPose.Harness">
+            <summary>
+            Strapped into harness.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.SeatPose.Seat_Wheel">
+            <summary>
+            Seat with steering wheel.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.SeatPose.Handle">
+            <summary>
+            Standing with handle.
+            </summary>
+        </member>
+        <member name="T:DataModel.DataTypes.WheelType">
+            <summary>
+            Subtypes within <see cref="F:DataModel.DataTypes.DefinitionType.Wheel"/>.
+            </summary>
+        </member>
+        <member name="T:DataModel.DataTypes.ButtonType">
+            <summary>
+            Subtypes within <see cref="F:DataModel.DataTypes.DefinitionType.Button"/>.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.ButtonType.Push">
+            <summary>
+            Push button.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.ButtonType.Toggle">
+            <summary>
+            Toggle button.
+            Also used by some not button related blocks. This could be a mistake on the game's part.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.ButtonType.KeyTurn">
+            <summary>
+            The 'Key button' where you press and hold to activate and press to deactivate.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.ButtonType.Locked">
+            <summary>
+            Locked button
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.ButtonType.Keypad_Small">
+            <summary>
+            Keypad for a single number.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.ButtonType.Keypad_Large">
+            <summary>
+            Keypad for two numbers, typically used for GPS coordinates.
+            </summary>
+        </member>
+        <member name="T:DataModel.DataTypes.LightType">
+            <summary>
+            Subtypes within <see cref="F:DataModel.DataTypes.DefinitionType.Light"/>.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.LightType.Point">
+            <summary>
+            PointLight, does not cast shadow.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.LightType.Spot">
+            <summary>
+            SpotLight, casts a shadow.
+            </summary>
+        </member>
+        <member name="T:DataModel.DataTypes.CustomDoorType">
+            <summary>
+            Subtypes within <see cref="F:DataModel.DataTypes.DefinitionType.DoorCustom"/>.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.CustomDoorType.Controller">
+            <summary>
+            Used to lock the panel to the frame.
+            </summary>
+        </member>
+        <member name="T:DataModel.DataTypes.LogicGateType">
+            <summary>
+            Subtypes within <see cref="F:DataModel.DataTypes.DefinitionType.LogicGate"/>.
+            See <see cref="T:DataModel.DataTypes.LogicGateSubType"/> for subtypes within
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.LogicGateType.Bool_UpDown">
+            <summary>
+            Logic gate that holds a number that can be increased or decreased using two boolean inputs.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.LogicGateType.Float_LT">
+            <summary>
+            Less than
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.LogicGateType.TorqueAdd">
+            <summary>
+            This was used in the no longer existing 'simple mode'.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.LogicGateType.TorqueMeter">
+            <summary>
+            This was used in the no longer existing 'simple mode'.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.LogicGateType.Float_GT">
+            <summary>
+            Greater than
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.LogicGateType.TrainJunction">
+            <summary>
+            Interacts with a nearby train line junction in the world.
+            Behaves like a push to toggle.
+            The game does not save the state of junctions.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.LogicGateType.Radar">
+            <summary>
+            See <see cref="T:DataModel.DataTypes.LogicGateSubType"/> for subtypes within this category.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.LogicGateType.Sens_Radar">
+            <summary>
+            Radar Detector
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.LogicGateType.Sens_Impact">
+            <summary>
+            Responds to instantaneous change in velocity.
+            </summary>
+        </member>
+        <member name="T:DataModel.DataTypes.IndicatorType">
+            <summary>
+            Subtypes within <see cref="F:DataModel.DataTypes.DefinitionType.Indicator"/>.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.IndicatorType.Dial">
+            <summary>
+            Dial with needle.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.IndicatorType.Light">
+            <summary>
+            Simple indicator light.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.IndicatorType.Horizon">
+            <summary>
+            Artificial horizon.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.IndicatorType.Number">
+            <summary>
+            Digital number display.
+            (Behind the scenes this uses several rollers that move in discrete increments.)
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.IndicatorType.Gauge">
+            <summary>
+            Vertical gauge with two indicators.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.IndicatorType.Buzzer">
+            <summary>
+            Speaker that can be configured to play a single sound.
+            Configuration options include the sound, volume and pitch/speed.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.IndicatorType.Horn">
+            <summary>
+            Speaker with no configuration options.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.IndicatorType.LaserBeacon">
+            <summary>
+            Beacon that is visible to the laser point sensor.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.IndicatorType.Siren">
+            <summary>
+            Speaker that plays a single hardcoded sound with varying pitch/speed.
+            The pitch depends on the internal state of the siren, which can be regulated using a boolean signal.
+            </summary>
+        </member>
+        <member name="T:DataModel.DataTypes.ConnectorType">
+            <summary>
+            Subtypes within <see cref="F:DataModel.DataTypes.DefinitionType.Connector"/>.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.ConnectorType.Large">
+            <summary>
+            Large connector with both fluid, electric and mechanical power connections.
+            Aligns with the plane but can rotate freely on the connection axis.
+            Must be activated with a boolean signal to connect.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.ConnectorType.Small">
+            <summary>
+            Small connector with a ball joint.
+            Must be activated with a boolean signal to connect.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.ConnectorType.Hinge">
+            <summary>
+            Connector that can hinge along it's long axis while connected.
+            Must be activated with a boolean signal to connect.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.ConnectorType.Fluid">
+            <summary>
+            Small connector with ball physics joint.
+            Activated by default, requires boolean signal to disconnect.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.ConnectorType.Electric">
+            <summary>
+            Small connector with ball physics joint.
+            Activated by default, requires boolean signal to disconnect.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.ConnectorType.SliderGripper">
+            <summary>
+            Connector that can slide freely along a track of <see cref="F:DataModel.DataTypes.ConnectorType.SliderTrack"/>.
+            Has a brake to lock it in place and a signal to disconnect.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.ConnectorType.SliderTrack">
+            <summary>
+            Track along which <see cref="F:DataModel.DataTypes.ConnectorType.SliderGripper"/> can slide.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.ConnectorType.HardpointParent">
+            <summary>
+            Hardpoint connector. Has a very strong fixed physics connection.
+            Two orientations are allowed for the <see cref="F:DataModel.DataTypes.ConnectorType.HardpointChild"/>.
+            Has signals to release or to launch the child and
+            also a number output to identify the kind of child.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.ConnectorType.HardpointChild">
+            <summary>
+            Hardpoint connector. Has a boolean that enables only when the <see cref="F:DataModel.DataTypes.ConnectorType.HardpointParent"/> was
+            signaled to launch.
+            </summary>
+        </member>
+        <member name="T:DataModel.DataTypes.FluidDeviceType">
+            <summary>
+            Subtypes within <see cref="F:DataModel.DataTypes.DefinitionType.FluidDevice"/>.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.FluidDeviceType.Port_Small">
+            <summary>
+            Small fluid port.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.FluidDeviceType.MeterVolume">
+            <summary>
+            Measures the volume of fluid in a enclosed compartment.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.FluidDeviceType.Nozzle">
+            <summary>
+            Spray nozzle
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.FluidDeviceType.ValveCheck">
+            <summary>
+            One way valve.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.FluidDeviceType.ValveBool">
+            <summary>
+            Two state valve.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.FluidDeviceType.ValveVariable">
+            <summary>
+            Valve with continuous control.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.FluidDeviceType.MeterPressure">
+            <summary>
+            Measures the pressure inside a pipe system.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.FluidDeviceType.Spawner">
+            <summary>
+            Fluid spawner.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.FluidDeviceType.Exchanger_Fluid_Ambient">
+            <summary>
+            Radiator
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.FluidDeviceType.PumpJet">
+            <summary>
+            Propulsion device that takes mechanical power and water to create a jet of water that produces thrust.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.FluidDeviceType.Port_Large">
+            <summary>
+            Large Fluid port.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.FluidDeviceType.Pump_Torque">
+            <summary>
+            Pump driven by Torque connection.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.FluidDeviceType.Port_Scoop">
+            <summary>
+            Fluid port which produces higher pressure at speed (in the correct direction).
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.FluidDeviceType.Exchanger_Fluid_Fluid">
+            <summary>
+            Heat exchanger.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.FluidDeviceType.Exchanger_Gas_Gas">
+            <summary>
+            Heat exchanger.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.FluidDeviceType.Exchanger_Fluid_Gas">
+            <summary>
+            Heat exchanger.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.FluidDeviceType.PhysicsFlooder">
+            <summary>
+            Physics optimizer: When placed in an enclosed volume that volume will be considered not-hollow for physics purposes.
+            This means that the Physics engine can use less and larger physics primitives to generate the shape
+            however it cannot be entered.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.FluidDeviceType.CompressedTank">
+            <summary>
+            Tank with 100x capacity but also 100x weight.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.FluidDeviceType.ValveBoolManual">
+            <summary>
+            Boolean Valve that can be manually operated by a Player.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.FluidDeviceType.Pump_Manual">
+            <summary>
+            Pump that can be manually operated by a Player.
+            </summary>
+        </member>
+        <member name="T:DataModel.DataTypes.TransmissionComponentType">
+            <summary>
+            Subtypes within <see cref="F:DataModel.DataTypes.DefinitionType.Transmission"/>.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.TransmissionComponentType.Meter">
+            <summary>
+            Torque meter.
+            </summary>
+        </member>
+        <member name="T:DataModel.DataTypes.JetComponentType">
+            <summary>
+            Subtypes within <see cref="F:DataModel.DataTypes.DefinitionType.JetEngineComponent"/>.
+            </summary>
+        </member>
+        <member name="T:DataModel.DataTypes.InventoryClass">
+            <summary>
+            Sizes within <see cref="F:DataModel.DataTypes.DefinitionType.EquipmentInventory"/>
+            </summary>
+        </member>
+        <member name="T:DataModel.DataTypes.InventoryItem">
+            <summary>
+            Items for an <see cref="F:DataModel.DataTypes.DefinitionType.EquipmentInventory"/>
+            </summary>
+        </member>
+        <member name="T:DataModel.DataTypes.ElectricComponentType">
+            <summary>
+            Subtypes within <see cref="F:DataModel.DataTypes.DefinitionType.Electrical"/>.
+            </summary>
+        </member>
+        <member name="T:DataModel.DataTypes.CompositeDeviceType">
+            <summary>
+            Subtypes within <see cref="F:DataModel.DataTypes.DefinitionType.CompositeIO"/>.
+            </summary>
+        </member>
+        <member name="T:DataModel.DataTypes.RocketType">
+            <summary>
+            Subtypes within <see cref="F:DataModel.DataTypes.DefinitionType.RocketPart"/>.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.RocketType.Nozzle">
+            <summary>
+            Thruster of the rocket.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.RocketType.Body">
+            <summary>
+            Body containing fuel.
+            </summary>
+        </member>
+        <member name="T:DataModel.DataTypes.WeaponType">
+            <summary>
+            Subtypes within <see cref="F:DataModel.DataTypes.DefinitionType.Weapon"/>.
+            </summary>
+        </member>
+        <member name="T:DataModel.DataTypes.WeaponClass">
+            <summary>
+            Size classes within <see cref="F:DataModel.DataTypes.DefinitionType.Weapon"/>.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.WeaponClass.MachineGun">
+            <summary>
+            Manual reload only
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.WeaponClass.Light">
+            <summary>
+            Light AutoCannon, 1x1x3 ammo belt.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.WeaponClass.Rotary">
+            <summary>
+            Rotary AutoCannon, 1x1x3 ammo belt.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.WeaponClass.Heavy">
+            <summary>
+            Heavy AutoCannon, 1x1x3 ammo belt.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.WeaponClass.Battle">
+            <summary>
+            Tank Cannon, 1x1x3 shells.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.WeaponClass.Artillery">
+            <summary>
+            Artillery Cannon, 1x1x4 shells.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.WeaponClass.Bertha">
+            <summary>
+            Larger <see cref="F:DataModel.DataTypes.WeaponClass.Artillery"/>, 3x3x7 shells.
+            </summary>
+        </member>
+        <member name="T:DataModel.DataTypes.WeaponBeltType">
+            <summary>
+            Subtypes within <see cref="F:DataModel.DataTypes.WeaponType.Belt"/>.
+            </summary>
+        </member>
+        <member name="F:DataModel.DataTypes.WeaponBeltType.Receiver">
+            <summary>
+            Connector that transfers ammo between vehicle(body)s.
+            </summary>
+        </member>
+        <member name="F:DataModel.Definitions.Definition.name">
+            <summary>
+            Name that is shown in the User interface.
+            </summary>
+        </member>
+        <member name="F:DataModel.Definitions.Definition.category">
+            <summary>
+            Inventory category
+            </summary>
+        </member>
+        <member name="F:DataModel.Definitions.Definition.value">
+            <summary>
+            Money value
+            </summary>
+        </member>
+        <member name="F:DataModel.Definitions.Definition.mesh_data_name">
+            <summary>
+            Static Mesh
+            </summary>
+        </member>
+        <member name="F:DataModel.Definitions.Definition.mesh_0_name">
+            <summary>
+            Moving Element 1 Mesh
+            </summary>
+            <remarks>
+            Rotor/Propeller Hub
+            </remarks>
+        </member>
+        <member name="F:DataModel.Definitions.Definition.mesh_1_name">
+            <summary>
+            Moving Element 2 Mesh
+            </summary>
+            <remarks>
+            Rotor/Propeller Blade
+            </remarks>
+        </member>
+        <member name="F:DataModel.Definitions.Definition.mesh_editor_only_name">
+            <summary>
+            Editor Only Arrows
+            </summary>
+        </member>
+        <member name="F:DataModel.Definitions.Definition.IsSingleVoxel">
+            <summary>
+            Is the block a single Voxel
+            </summary>
+        </member>
+        <member name="P:DataModel.Definitions.Definition.IsCompletelyDefined">
+            <summary>
+            Is the definition for this block complete
+            (not missing info / implementation for the specific type)
+            </summary>
+        </member>
+        <member name="F:DataModel.Definitions.Definition.mesh_0_transform">
+            <summary>
+            The transform, to place <see cref="F:DataModel.Definitions.Definition.mesh_0_name"/> correctly relative to <see cref="F:DataModel.Definitions.Definition.mesh_data_name"/>.
+            </summary>
+        </member>
+        <member name="F:DataModel.Definitions.Definition.mesh_1_transform">
+            <summary>
+            The transform, to place <see cref="F:DataModel.Definitions.Definition.mesh_1_name"/> correctly relative to <see cref="F:DataModel.Definitions.Definition.mesh_data_name"/>
+            </summary>
+        </member>
+        <member name="M:DataModel.Definitions.Definition.OptimizeEnclosedPipeSurfaces">
+            <summary>
+            Enclosed pipes use a mesh for the pipe hole surface, which means that
+            those faces won't be optimized when generating the surface mesh.
+            This is an oversight by the Stormworks Devs.
+            We will fix that by detecting such a mesh, removing it,
+            and patching the surfaces with a new shape.
+            </summary>
+        </member>
+        <member name="M:DataModel.Definitions.Definition.ToString">
+            <inheritdoc />
+        </member>
+        <member name="F:DataModel.Definitions.Definition.Empty">
+            <summary>
+            An empty definition
+            </summary>
+        </member>
+        <member name="T:DataModel.Definitions.Definitions.PaintableThingy">
+            <summary>
+            Represents paintable sign and paintable indicator.
+            They have a single face where you can color a 9X9 grid of squares.
+            In the case of the paintable inidcator there is an additional emissive layer that can be enabled with a boolean input.
+            </summary>
+        </member>
+        <member name="M:DataModel.Definitions.Definitions.PaintableThingy.#ctor(System.String,System.Xml.Linq.XElement,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <inheritdoc />
+        </member>
+        <member name="T:DataModel.Definitions.Definitions.Scaled2ndMesh">
+            <summary>
+            Test class for messing with the emissive part of buttons etc.
+            </summary>
+        </member>
+        <member name="M:DataModel.Definitions.Definitions.Scaled2ndMesh.#ctor(System.String,System.Xml.Linq.XElement,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <inheritdoc />
+        </member>
+        <member name="M:DataModel.Definitions.RocketBody.#ctor(System.String,System.Xml.Linq.XElement,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <inheritdoc />
+        </member>
+        <member name="T:DataModel.Definitions.RocketPart">
+            <summary>
+            Base class for Rocket related parts.
+            </summary>
+        </member>
+        <member name="M:DataModel.Definitions.RocketPart.#ctor(System.String,System.Xml.Linq.XElement,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <inheritdoc />
+        </member>
+        <member name="M:DataModel.Definitions.RocketThruster.#ctor(System.String,System.Xml.Linq.XElement,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <inheritdoc />
+        </member>
+        <member name="T:DataModel.Definitions.Structural">
+            <summary>
+            Structural blocks don't have a mesh: it's auto generated.
+            </summary>
+        </member>
+        <member name="M:DataModel.Definitions.Structural.#ctor(System.String,System.Xml.Linq.XElement,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <inheritdoc />
+        </member>
+        <member name="M:DataModel.Definitions.TrainBogie.#ctor(System.String,System.Xml.Linq.XElement,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <inheritdoc />
+        </member>
+        <member name="T:DataModel.Definitions.Transmission">
+            <summary>
+            Pipes, for transmission of mechanical power and fluids.
+            </summary>
+        </member>
+        <member name="M:DataModel.Definitions.Transmission.#ctor(System.String,System.Xml.Linq.XElement,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <inheritdoc />
+        </member>
+        <member name="M:DataModel.Definitions.UnImplemented.#ctor(System.String,System.Xml.Linq.XElement,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <inheritdoc />
+        </member>
+        <member name="M:DataModel.Definitions.Weapon.#ctor(System.String,System.Xml.Linq.XElement,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <inheritdoc />
+        </member>
+        <member name="T:DataModel.Definitions.Weapons.Barrel">
+            <summary>
+            Barrel of a gun (also base class for <see cref="T:DataModel.Definitions.Weapons.Gun"/>).
+            </summary>
+        </member>
+        <member name="F:DataModel.Definitions.Weapons.Barrel.BarrelLength">
+            <summary>
+            The length of the barrel measured in voxels from 0,0,0 in +y direction.
+            </summary>
+        </member>
+        <member name="M:DataModel.Definitions.Weapons.Barrel.#ctor(System.String,System.Xml.Linq.XElement,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <inheritdoc />
+        </member>
+        <member name="M:DataModel.Definitions.Weapons.Belt.#ctor(System.String,System.Xml.Linq.XElement,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <inheritdoc />
+        </member>
+        <member name="T:DataModel.Definitions.Weapons.Drum">
+            <summary>
+            Ammo storage.
+            </summary>
+        </member>
+        <member name="M:DataModel.Definitions.Weapons.Drum.#ctor(System.String,System.Xml.Linq.XElement,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <inheritdoc />
+        </member>
+        <member name="F:DataModel.Definitions.Weapons.Gun.HasFeed">
+            <summary>
+            Does the gun have an included ammo feed.
+            </summary>
+        </member>
+        <member name="M:DataModel.Definitions.Weapons.Gun.#ctor(System.String,System.Xml.Linq.XElement,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <inheritdoc />
+        </member>
+        <member name="T:DataModel.Definitions.Weapons.Muzzle">
+            <summary>
+            Muzzle brake at the end of a <see cref="T:DataModel.Definitions.Weapons.Barrel"/>.
+            Reduces recoil.
+            </summary>
+        </member>
+        <member name="M:DataModel.Definitions.Weapons.Muzzle.#ctor(System.String,System.Xml.Linq.XElement,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <inheritdoc />
+        </member>
+        <member name="M:DataModel.Definitions.Weapons.RocketLauncher.#ctor(System.String,System.Xml.Linq.XElement,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <inheritdoc />
+        </member>
+        <member name="M:DataModel.Definitions.Weapons.Warhead.#ctor(System.String,System.Xml.Linq.XElement,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <inheritdoc />
+        </member>
+        <member name="M:DataModel.Definitions.Weapons.WarheadEMP.#ctor(System.String,System.Xml.Linq.XElement,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <inheritdoc />
+        </member>
+        <member name="F:DataModel.Definitions.NestedTypes.Surface.Shape.Square_Weight">
+            <summary>
+            Has a diamond in the center.
+            </summary>
+        </member>
+        <member name="T:DataModel.Definitions.NestedTypes.Surface.TransType">
+            <summary>
+            Defines the kind of pipe (fluid||shaftPower) this surface is.
+            </summary>
+        </member>
+        <member name="F:DataModel.Definitions.NestedTypes.Surface.TransType.None">
+            <summary>
+            No connection.
+            </summary>
+        </member>
+        <member name="F:DataModel.Definitions.NestedTypes.Surface.TransType.Power">
+            <summary>
+            Power (shaft) connection.
+            </summary>
+        </member>
+        <member name="F:DataModel.Definitions.NestedTypes.Surface.TransType.Fluid">
+            <summary>
+            Fluid connection.
+            </summary>
+        </member>
+        <member name="F:DataModel.Definitions.NestedTypes.Surface.orientation">
+            <summary>
+            Orientation of the surface around the voxel.
+            </summary>
+        </member>
+        <member name="F:DataModel.Definitions.NestedTypes.Surface.rotation">
+            <summary>
+            Rotation of the shape
+            </summary>
+        </member>
+        <member name="F:DataModel.Definitions.NestedTypes.Surface.shape">
+            <summary>
+            The shape of the surface
+            </summary>
+        </member>
+        <member name="F:DataModel.Definitions.NestedTypes.Surface.trans_type">
+            <summary>
+            The pipe type of this surface.
+            </summary>
+        </member>
+        <member name="F:DataModel.Definitions.NestedTypes.Surface.position">
+            <summary>
+            Voxel position
+            </summary>
+        </member>
+        <member name="F:DataModel.Definitions.NestedTypes.Surface.surfaceTransform">
+            <summary>
+            Transform from Component-Voxel-Space to Component-Mesh-Space
+            </summary>
+        </member>
+        <member name="F:DataModel.Definitions.NestedTypes.Surface.surfaceMesh">
+            <summary>
+            The Mesh for this Surface
+            </summary>
+            <remarks>
+            Can be null, not all shapes are defined yet.
+            </remarks>
+        </member>
+        <member name="F:DataModel.Definitions.NestedTypes.Surface.surfaceColor">
+            <summary>
+            When getting surfaces from a component a color can be assigned.
+            </summary>
+        </member>
+        <member name="M:DataModel.Definitions.NestedTypes.Surface.ToString">
+            <inheritdoc />
+        </member>
+        <member name="M:DataModel.Definitions.NestedTypes.Surface.AreOpposingSurfaces(DataModel.Definitions.NestedTypes.Surface,DataModel.Definitions.NestedTypes.Surface)">
+             <summary>
+             True if the given surfaces are opposing each other,
+             that is they are in the same (mesh-space) position
+             and are facing each other.
+            
+             </summary>
+             <param name="a"></param>
+             <param name="b"></param>
+             <returns></returns>
+        </member>
+        <member name="M:DataModel.Definitions.NestedTypes.Surface.AreMeshGenEliminatedSurfaces(DataModel.Definitions.NestedTypes.Surface,DataModel.Definitions.NestedTypes.Surface,System.Boolean)">
+            <summary>
+            Returns true if the given surfaces are inside each other in such a way
+            that they should be eliminated for rendering.
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DataModel.Definitions.NestedTypes.Surface.IsMeshGenEliminatedSurface(DataModel.Definitions.NestedTypes.Surface,DataModel.Definitions.NestedTypes.Surface,System.Boolean)">
+            <summary>
+            Returns true if surface <paramref name="a"/> is
+            eliminated for rendering by the presence of <paramref name="b"/>.
+            Note: always check <see cref="M:DataModel.Definitions.NestedTypes.Surface.AreMeshGenEliminatedSurfaces(DataModel.Definitions.NestedTypes.Surface,DataModel.Definitions.NestedTypes.Surface,System.Boolean)"/> first.
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DataModel.Definitions.NestedTypes.Surface.IsSquareShape(DataModel.Definitions.NestedTypes.Surface.Shape)">
+            <summary>
+            Returns true for any <see cref="T:DataModel.Definitions.NestedTypes.Surface.Shape"/> that is a Square (covers the entire face).
+            </summary>
+            <param name="s"></param>
+            <returns></returns>
+        </member>
+        <member name="F:DataModel.Definitions.NestedTypes.Voxel.Flags.Empty">
+            <summary>
+            Voxel is empty.
+            </summary>
+        </member>
+        <member name="F:DataModel.Definitions.NestedTypes.Voxel.Flags.Physics">
+            <summary>
+            Voxel has physics as defined by <see cref="T:DataModel.Definitions.NestedTypes.Voxel.PhysicsShape"/>
+            </summary>
+        </member>
+        <member name="F:DataModel.Definitions.NestedTypes.Voxel.Flags.RaycastBlock">
+            <summary>
+            Voxel is empty, but blocks (mouse) RayCasts.
+            </summary>
+        </member>
+        <member name="F:DataModel.Definitions.NestedTypes.Voxel.Flags.DoorOpening">
+            <summary>
+            Voxel contains the opening of a door.
+            Blocks RayCast too.
+            </summary>
+        </member>
+        <member name="T:DataModel.Definitions.NestedTypes.Voxel.BuoyPipe">
+            <summary>
+            The directions in which a pipe connection can be made.
+            </summary>
+        </member>
+        <member name="T:DataModel.Definitions.ReadOnTheFlyDefinitions">
+            <summary>
+            Definitions Dictionary that reads definitions on the fly as they are requested rather than upfront.
+            </summary>
+        </member>
+        <member name="M:DataModel.Definitions.ReadOnTheFlyDefinitions.GetEnumerator">
+            <inheritdoc />
+        </member>
+        <member name="M:DataModel.Definitions.ReadOnTheFlyDefinitions.System#Collections#IEnumerable#GetEnumerator">
+            <inheritdoc />
+        </member>
+        <member name="P:DataModel.Definitions.ReadOnTheFlyDefinitions.Count">
+            <inheritdoc />
+        </member>
+        <member name="M:DataModel.Definitions.ReadOnTheFlyDefinitions.ContainsKey(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:DataModel.Definitions.ReadOnTheFlyDefinitions.TryGetValue(System.String,DataModel.Definitions.Definition@)">
+            <inheritdoc />
+        </member>
+        <member name="P:DataModel.Definitions.ReadOnTheFlyDefinitions.Item(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="P:DataModel.Definitions.ReadOnTheFlyDefinitions.Keys">
+            <inheritdoc />
+        </member>
+        <member name="P:DataModel.Definitions.ReadOnTheFlyDefinitions.Values">
+            <inheritdoc />
+        </member>
+        <member name="P:DataModel.Missions.Component.parentPlaylist">
+            <summary>
+            Metadata: The parent <see cref="T:DataModel.Missions.Playlist"/>
+            </summary>
+        </member>
+        <member name="F:DataModel.Missions.Component.parentLocation">
+            <summary>
+            Metadata: The parent <see cref="T:DataModel.Missions.Location"/>
+            </summary>
+        </member>
+        <member name="F:DataModel.Missions.Component.id">
+            <summary>
+            Assigned automatically.
+            </summary>
+        </member>
+        <member name="P:DataModel.Missions.Component.is_environment">
+            <summary>
+            Is this Component always present in the environment (otherwise spawns with mission activation)
+            </summary>
+        </member>
+        <member name="F:DataModel.Missions.Component.vehicleParent">
+            <summary>
+            Parent vehicle ( = <see cref="T:DataModel.Missions.Component"/>) of this <see cref="T:DataModel.Missions.Component"/>.
+            </summary>
+        </member>
+        <member name="F:DataModel.Missions.Component.vehicle_parent_id">
+            <summary>
+            Based on automatically assigned id, use <see cref="F:DataModel.Missions.Component.vehicleParent"/> to manipulate.
+            </summary>
+        </member>
+        <member name="F:DataModel.Missions.Component.name">
+            <summary>
+            Name, in-game-editor called Tags.
+            </summary>
+        </member>
+        <member name="M:DataModel.Missions.Component.MoveToLocation(DataModel.Missions.Location)">
+            <summary>
+            Remove the component from the current location, and add it to the given location (which can be null).
+            </summary>
+            <param name="newLocation"></param>
+        </member>
+        <member name="M:DataModel.Missions.Component.ToString">
+            <inheritdoc />
+        </member>
+        <member name="E:DataModel.Missions.ComponentWrapper.VisualChanged">
+            <summary>
+            Event that fires when the visual may need to change.
+            </summary>
+        </member>
+        <member name="M:DataModel.Missions.ComponentWrapper.RaiseVisualChanged">
+            <summary>
+            Raise <see cref="E:DataModel.Missions.ComponentWrapper.VisualChanged"/>.
+            </summary>
+        </member>
+        <member name="M:DataModel.Missions.ComponentWrapper.MoveToLocation(DataModel.Missions.Location)">
+            <summary>
+            Remove the component from the current location, and add it to the given location (which can be null).
+            </summary>
+            <param name="newLocation"></param>
+        </member>
+        <member name="M:DataModel.Missions.ComponentWrapper.Create``1(DataModel.Missions.Component)">
+            <summary>
+            Create a <see cref="T:DataModel.Missions.ComponentWrapper"/> around the given <see cref="T:DataModel.Missions.Component"/>
+            </summary>
+            <typeparam name="TWrapper"></typeparam>
+            <param name="c"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DataModel.Missions.ComponentWrapper.Create``1(DataModel.Missions.Location)">
+            <summary>
+            Create a new <see cref="T:DataModel.Missions.Component"/> in the given <see cref="T:DataModel.Missions.Location"/> and wrap it with <typeparamref name="TWrapper"/>.
+            </summary>
+            <typeparam name="TWrapper"></typeparam>
+            <param name="l"></param>
+            <returns></returns>
+        </member>
+        <member name="F:DataModel.Missions.Location.parent">
+            <summary>
+            Metadata: The parent <see cref="T:DataModel.Missions.Playlist"/>
+            </summary>
+        </member>
+        <member name="F:DataModel.Missions.Location.id">
+            <summary>
+            id is assigned automatically
+            </summary>
+        </member>
+        <member name="P:DataModel.Missions.Location.tile">
+            <summary>
+            Path to the tile.xml file this location defines components for.
+            </summary>
+        </member>
+        <member name="P:DataModel.Missions.Location.tileName">
+            <summary>
+            The file name (without extension) of the tile.
+            </summary>
+        </member>
+        <member name="F:DataModel.Missions.Location.name">
+            <summary>
+            todo: not visible in-game?
+            </summary>
+        </member>
+        <member name="F:DataModel.Missions.Location.env_mod_spawn_num">
+            <summary>
+            For tiles that may spawn multiple times, the amount that this environment mod will spawn on it.
+            </summary>
+        </member>
+        <member name="F:DataModel.Missions.Playlist.meta_filePath">
+            <summary>
+            Metadata: The file this data was deserialized from.
+            </summary>
+        </member>
+        <member name="M:DataModel.Missions.Playlist.GetComponentIEnumerable">
+            <summary>
+            All <see cref="T:DataModel.Missions.Component"/>s in the <see cref="T:DataModel.Missions.Playlist"/>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DataModel.Missions.Playlist.GetVehiclePath(System.String)">
+            <summary>
+            Convert a vehicle filepath as stored in mission xml to a full absolute path pointing to the actual file.
+            </summary>
+            <param name="vehicleFilePath"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DataModel.Tiles.AbstractMeshOrPhys">
+            <summary>
+            Shared parts of <see cref="T:DataModel.Tiles.MeshInfo"/> and <see cref="T:DataModel.Tiles.PhysInfo"/>.
+            </summary>
+        </member>
+        <member name="P:DataModel.Tiles.AbstractMeshOrPhys.file_name">
+            <summary>
+            The file name of the .mesh or .phys file of this object.
+            </summary>
+        </member>
+        <member name="M:DataModel.Tiles.AbstractMeshOrPhys.DerivedToXElement(System.Xml.Linq.XElement)">
+            <inheritdoc />
+        </member>
+        <member name="M:DataModel.Tiles.AbstractMeshOrPhys.ToString">
+            <inheritdoc />
+        </member>
+        <member name="T:DataModel.Tiles.AbstractTileItem">
+            <summary>
+            The base for all items in a <see cref="T:DataModel.Tiles.Tile"/>.
+            </summary>
+        </member>
+        <member name="T:DataModel.Tiles.AbstractTileItem.SeasonFlags">
+            <summary>
+            Used to make objects only appear for special events.
+            </summary>
+        </member>
+        <member name="F:DataModel.Tiles.AbstractTileItem.SeasonFlags.Always">
+            <summary>
+            The object should appear always.
+            </summary>
+        </member>
+        <member name="F:DataModel.Tiles.AbstractTileItem.SeasonFlags.Halloween">
+            <summary>
+            The object should appear only during Halloween.
+            </summary>
+        </member>
+        <member name="F:DataModel.Tiles.AbstractTileItem.SeasonFlags.Xmas">
+            <summary>
+            The object should appear only during Christmas.
+            </summary>
+        </member>
+        <member name="F:DataModel.Tiles.AbstractTileItem.SeasonFlags.Both">
+            <summary>
+            Appear only during <see cref="F:DataModel.Tiles.AbstractTileItem.SeasonFlags.Halloween"/> and <see cref="F:DataModel.Tiles.AbstractTileItem.SeasonFlags.Xmas"/>.
+            </summary>
+        </member>
+        <member name="P:DataModel.Tiles.AbstractTileItem.id">
+            <summary>
+            The Unique ID of this object.
+            </summary>
+        </member>
+        <member name="M:DataModel.Tiles.AbstractTileItem.SetID(System.String,System.Boolean)">
+            <summary>
+            Set the <see cref="P:DataModel.Tiles.AbstractTileItem.id"/> of the object to a new <paramref name="value"/>, while preventing name collisions.
+            </summary>
+            <param name="value"></param>
+            <param name="forceRaiseEvent"></param>
+            <exception cref="T:System.ArgumentException"></exception>
+        </member>
+        <member name="M:DataModel.Tiles.AbstractTileItem.SetID_NoValidationNoEvent(System.String)">
+            <summary>
+            Set the id without any validation or event being raised.
+            </summary>
+            <param name="newValue"></param>
+        </member>
+        <member name="P:DataModel.Tiles.AbstractTileItem._parent">
+            <summary>
+            Does not throw when not yet linked.
+            </summary>
+        </member>
+        <member name="P:DataModel.Tiles.AbstractTileItem.LTransform">
+            <summary>
+            The Transform relative to <see cref="P:DataModel.Tiles.AbstractTileItem.parent"/>.
+            </summary>
+        </member>
+        <member name="P:DataModel.Tiles.AbstractTileItem.GTransform">
+            <summary>
+            The Transform relative to the World.
+            It includes the <see cref="P:DataModel.Tiles.AbstractTileItem.parent"/> hierarchy.
+            </summary>
+        </member>
+        <member name="P:DataModel.Tiles.AbstractTileItem.ElementOrder">
+            <summary>
+            The order of this element in the tile's list of elements (which is per type).
+            It is set automatically when loading from file.
+            <seealso cref="T:DataModel.Tiles.AbstractTileItem.TileItemOrderComparer"/>.
+            </summary>
+        </member>
+        <member name="P:DataModel.Tiles.AbstractTileItem.ChangedSinceLastSaved">
+            <summary>
+            Note: this does not track changes by itself (yet), it's up to the user to set the flag.
+            Setting the flag will also set it on the parent <see cref="P:DataModel.Tiles.AbstractTileItem.tile"/>.
+            </summary>
+        </member>
+        <member name="P:DataModel.Tiles.AbstractTileItem.meta_elementName">
+            <summary>
+            The name (used as type) of the XmlElement.
+            </summary>
+        </member>
+        <member name="P:DataModel.Tiles.AbstractTileItem.meta_containerName">
+            <summary>
+            The name of the container that will contain this element.
+            </summary>
+        </member>
+        <member name="F:DataModel.Tiles.AbstractTileItem.meta_constructor_attributes">
+            <summary>
+            Contains the attributes for use during construction. It is NOT kept up-to-date.
+            </summary>
+        </member>
+        <member name="P:DataModel.Tiles.AbstractTileItem.LoadIgnore">
+            <summary>
+            Used by the Editor program to detect items that it should not load,
+            because those items ware generated by the editor using data outside of the Tile.
+            </summary>
+        </member>
+        <member name="P:DataModel.Tiles.AbstractTileItem.AutoIDFormat">
+            <summary>
+            A string that is suffixed with a automatically generated number to create a unique <see cref="P:DataModel.Tiles.AbstractTileItem.id"/>.
+            </summary>
+        </member>
+        <member name="P:DataModel.Tiles.AbstractTileItem.IsTerrain">
+            <summary>
+            When defined signals to StormworksEditor to override the default 'is this a terrain object?'
+            behaviour and override it with the provided value.
+            This is useful if the automatic detection is wrong.
+            When an object is considered 'terrain' it will not be selectable unless specifically enabled.
+            </summary>
+            <remarks>
+            The game will ignore this attribute.
+            </remarks>
+        </member>
+        <member name="M:DataModel.Tiles.AbstractTileItem.Register(DataModel.Tiles.Tile)">
+            <summary>
+            Register the parent <see cref="T:DataModel.Tiles.Tile"/>.
+            </summary>
+            <param name="parentTile"></param>
+        </member>
+        <member name="M:DataModel.Tiles.AbstractTileItem.LinkStringIdPropertiesToInstances">
+            <summary>
+            Assign references to <see cref="T:DataModel.Tiles.AbstractTileItem"/>s that ware referenced in the xml by string id
+            and could not be fetched because they might not have been loaded yet before.
+            </summary>
+        </member>
+        <member name="M:DataModel.Tiles.AbstractTileItem.DerivedLinkStringIdPropertiesToInstances">
+            <inheritdoc cref="M:DataModel.Tiles.AbstractTileItem.LinkStringIdPropertiesToInstances"/>
+        </member>
+        <member name="M:DataModel.Tiles.AbstractTileItem.SetupParent">
+            <summary>
+            Add ourselves to the list of children of our <see cref="P:DataModel.Tiles.AbstractTileItem.parent"/>.
+            </summary>
+        </member>
+        <member name="F:DataModel.Tiles.AbstractTileItem.NoInteractableSameObjectLink">
+            <summary>
+            Interactable Linking does not work well enough to be reliable.
+            Note we use a const bool rather than a #if
+            because an #if allows your code to break in refactorings such as renames.
+            Doing it like this ensure that that bit of code must compile,
+            even if it will be stripped from the build by the compiler in the end.
+            </summary>
+        </member>
+        <member name="F:DataModel.Tiles.AbstractTileItem.__buffer">
+            <summary>
+            Prevent frequent allocations related to the names.
+            </summary>
+        </member>
+        <member name="M:DataModel.Tiles.AbstractTileItem.FindSameObjectLinks(System.Boolean)">
+            <summary>
+            Search for Items with the same name (allowing for some defined suffixes),
+            for the purpose of linking these items together.
+            Example: <see cref="T:DataModel.Tiles.MeshInfo"/> and <see cref="T:DataModel.Tiles.PhysInfo"/> should be linked so that they stay together.
+            </summary>
+        </member>
+        <member name="M:DataModel.Tiles.AbstractTileItem.GetCleanId(System.String)">
+            <summary>
+            Returns a new <see cref="T:System.String"/> with the prefixes and suffixes used for SameObjectLinking removed.
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DataModel.Tiles.AbstractTileItem.ToXElement">
+            <summary>
+            Create a new XElement to represent this.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DataModel.Tiles.AbstractTileItem.DerivedToXElement(System.Xml.Linq.XElement)">
+            <summary>
+            Add the data stored in the derived class into the XElement.
+            </summary>
+            <param name="baseElement"></param>
+        </member>
+        <member name="M:DataModel.Tiles.AbstractTileItem.ToStringCommonStart(System.Text.StringBuilder,System.Boolean)">
+            <summary>
+            Appends the common elements like <see cref="P:DataModel.Tiles.AbstractTileItem.id"/>, <see cref="P:DataModel.Tiles.AbstractTileItem.parent_id"/>, etc. to <paramref name="sb"/>.
+            </summary>
+            <param name="sb"></param>
+            <param name="open">Include the opening curly brace.</param>
+        </member>
+        <member name="M:DataModel.Tiles.AbstractTileItem.ToStringCommonEnd(System.Text.StringBuilder,System.Boolean)">
+            <summary>
+            Appends the <see cref="P:DataModel.Tiles.AbstractTileItem.LTransform"/> as position, scale and rotation to <paramref name="sb"/> and finally a closing curly brace.
+            </summary>
+            <param name="sb"></param>
+            <param name="close">Include the closing curly brace.</param>
+        </member>
+        <member name="M:DataModel.Tiles.AbstractTileItem.ToString">
+            <inheritdoc />
+        </member>
+        <member name="F:DataModel.Tiles.AbstractTileItem.typeMap">
+            <summary>
+            Map from a <see cref="T:System.Type"/> to a dummy instance of that type, used to fetch 'static' elements of the
+            Concrete type that can be required to exist by an interface/inheritance
+            but can't be static properties themselves because C# decided
+            that there will never be a use-case for that.
+            </summary>
+        </member>
+        <member name="F:DataModel.Tiles.AbstractTileItem.OrderComparer">
+            <summary>
+            Sorts <seealso cref="T:DataModel.Tiles.AbstractTileItem"/>s such that the resulting order is:
+            <br/> Elements with <see cref="P:DataModel.Tiles.AbstractTileItem.ElementOrder"/>, sorted ascending and then by <see cref="P:DataModel.Tiles.AbstractTileItem.id"/>.
+            <br/> Elements without <see cref="P:DataModel.Tiles.AbstractTileItem.ElementOrder"/>, sorted by <see cref="P:DataModel.Tiles.AbstractTileItem.id"/>.
+            <br/> Elements with <see cref="F:DataModel.Tiles.AbstractTileItem.loadIgnore"/>, sorted separately but using all the previous rules.
+            </summary>
+        </member>
+        <member name="F:DataModel.Tiles.EditArea.GridSize.Custom">
+            <summary>
+            See <see cref="P:DataModel.Tiles.EditArea.size"/> for the size of the <see cref="T:DataModel.Tiles.EditArea"/>.
+            </summary>
+        </member>
+        <member name="P:DataModel.Tiles.EditArea.grid_size">
+            <summary>
+            The pre-Defined <see cref="T:DataModel.Tiles.EditArea.GridSize"/> to use for this area.
+            If <see cref="F:DataModel.Tiles.EditArea.GridSize.Custom"/> is specified read the size from <see cref="P:DataModel.Tiles.EditArea.size"/> instead.
+            Note: <see cref="P:DataModel.Tiles.EditArea.size"/> and <see cref="P:DataModel.Tiles.EditArea.grid_size"/> keep each other in sync.
+            </summary>
+        </member>
+        <member name="P:DataModel.Tiles.EditArea.meta_elementName">
+            <inheritdoc />
+        </member>
+        <member name="P:DataModel.Tiles.EditArea.meta_containerName">
+            <inheritdoc />
+        </member>
+        <member name="P:DataModel.Tiles.EditArea.size">
+            <summary>
+            Size of the EditArea.
+            Note: Setting <see cref="P:DataModel.Tiles.EditArea.size"/> can cause <see cref="P:DataModel.Tiles.EditArea.grid_size"/> to change to maintain consistency.
+            </summary>
+        </member>
+        <member name="M:DataModel.Tiles.EditArea.ToString">
+            <inheritdoc />
+        </member>
+        <member name="T:DataModel.Tiles.Interactable.UseCase">
+            <summary>
+            The 'use_case' of an <see cref="T:DataModel.Tiles.Interactable"/>.
+            Does not appear to be actually used for anything.
+            </summary>
+        </member>
+        <member name="F:DataModel.Tiles.Interactable.UseCase.Default">
+            <summary>
+            Use this unless you know otherwise.
+            </summary>
+        </member>
+        <member name="F:DataModel.Tiles.Interactable.UseCase.Unknown1">
+            <summary>
+            Used in some places, but no pattern could be found.
+            </summary>
+        </member>
+        <member name="F:DataModel.Tiles.Interactable.UseCase.Testing">
+            <summary>
+            Used only on tile_test.xml
+            </summary>
+        </member>
+        <member name="T:DataModel.Tiles.Interactable.InteractType">
+            <summary>
+            The type of interaction to be performed.
+            </summary>
+        </member>
+        <member name="F:DataModel.Tiles.Interactable.InteractType.Logic">
+            <summary>
+            Generic interaction to trigger logic for lights, doors, etc.
+            </summary>
+        </member>
+        <member name="F:DataModel.Tiles.Interactable.InteractType.NeverUsed1">
+            <summary>
+            Not used anywhere.
+            </summary>
+        </member>
+        <member name="F:DataModel.Tiles.Interactable.InteractType.Workbench">
+            <summary>
+            For opening the vehicle editor.
+            </summary>
+        </member>
+        <member name="F:DataModel.Tiles.Interactable.InteractType.Purchase">
+            <summary>
+            For purchasing an island.
+            </summary>
+        </member>
+        <member name="F:DataModel.Tiles.Interactable.InteractType.Wardrobe">
+            <summary>
+            For opening the character customization (wardrobe).
+            </summary>
+        </member>
+        <member name="P:DataModel.Tiles.Interactable.target_object_id">
+            <summary>
+            The target for the logic interaction, for example an <see cref="T:DataModel.Tiles.EditArea"/>.
+            </summary>
+        </member>
+        <member name="F:DataModel.Tiles.Interactable.label">
+            <summary>
+            The label shown to the user.
+            </summary>
+        </member>
+        <member name="F:DataModel.Tiles.Interactable.use_case">
+            <summary>
+            Does not appear to be used for anything.
+            </summary>
+        </member>
+        <member name="F:DataModel.Tiles.Interactable.interact_type">
+            <summary>
+            The type of interaction to be performed.
+            </summary>
+        </member>
+        <member name="F:DataModel.Tiles.Interactable.is_purchased">
+            <summary>
+            Presumably only used in save files.
+            </summary>
+        </member>
+        <member name="F:DataModel.Tiles.Interactable.size">
+            <summary>
+            Size of the Interactable area.
+            </summary>
+        </member>
+        <member name="P:DataModel.Tiles.Interactable.meta_elementName">
+            <inheritdoc />
+        </member>
+        <member name="P:DataModel.Tiles.Interactable.meta_containerName">
+            <inheritdoc />
+        </member>
+        <member name="M:DataModel.Tiles.Interactable.DerivedLinkStringIdPropertiesToInstances">
+            <inheritdoc />
+        </member>
+        <member name="M:DataModel.Tiles.Interactable.DerivedToXElement(System.Xml.Linq.XElement)">
+            <inheritdoc />
+        </member>
+        <member name="M:DataModel.Tiles.Interactable.ToString">
+            <inheritdoc />
+        </member>
+        <member name="P:DataModel.Tiles.MeshInfo.meta_elementName">
+            <inheritdoc />
+        </member>
+        <member name="P:DataModel.Tiles.MeshInfo.meta_containerName">
+            <inheritdoc />
+        </member>
+        <member name="M:DataModel.Tiles.MeshInfo.FindSameObjectLinks(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="P:DataModel.Tiles.PhysInfo.meta_elementName">
+            <inheritdoc />
+        </member>
+        <member name="P:DataModel.Tiles.PhysInfo.meta_containerName">
+            <inheritdoc />
+        </member>
+        <member name="M:DataModel.Tiles.PhysInfo.#ctor(DataModel.Tiles.AbstractMeshOrPhys)">
+            <summary>
+            Copy a <see cref="T:DataModel.Tiles.AbstractMeshOrPhys"/> instance.
+            </summary>
+            <param name="mesh"></param>
+        </member>
+        <member name="M:DataModel.Tiles.PhysInfo.#ctor(DataModel.Tiles.AbstractMeshOrPhys,System.String,System.String)">
+            <summary>
+            Copy a <see cref="T:DataModel.Tiles.AbstractMeshOrPhys"/> instance and override the <paramref name="id"/> and <paramref name="file_name"/>.
+            </summary>
+            <param name="mesh"></param>
+            <param name="id"></param>
+            <param name="file_name"></param>
+        </member>
+        <member name="M:DataModel.Tiles.PhysInfo.#ctor(System.Xml.Linq.XElement)">
+            <inheritdoc />
+        </member>
+        <member name="F:DataModel.Tiles.TrainTrackNode._constructionOnlyLinks">
+            <summary>
+            Used only during construction: stores link ids while the <see cref="T:DataModel.Tiles.Tile"/> is still loading
+            and the elements with those ids may not be loaded yet.
+            <see cref="M:DataModel.Tiles.TrainTrackNode.DerivedLinkStringIdPropertiesToInstances"/> will populate <see cref="F:DataModel.Tiles.TrainTrackNode.Links"/> and also make this <see langword="null" />.
+            </summary>
+        </member>
+        <member name="P:DataModel.Tiles.TrainTrackNode.LinkIds">
+            <summary>
+            The <see cref="T:System.String"/> ids of <see cref="F:DataModel.Tiles.TrainTrackNode.Links"/> in sorted order.
+            </summary>
+        </member>
+        <member name="F:DataModel.Tiles.TrainTrackNode.Links">
+            <summary>
+            The linked <see cref="T:DataModel.Tiles.TrainTrackNode"/>s. Use <see cref="M:DataModel.Tiles.TrainTrackNode.AddLink(DataModel.Tiles.TrainTrackNode)"/>, and <see cref="M:DataModel.Tiles.TrainTrackNode.RemoveLink(DataModel.Tiles.TrainTrackNode)"/> to edit.
+            </summary>
+        </member>
+        <member name="P:DataModel.Tiles.TrainTrackNode.LPosition">
+            <summary>
+            Get or Set the Position stored in <see cref="!:LTransform"/>.
+            </summary>
+        </member>
+        <member name="P:DataModel.Tiles.TrainTrackNode.GPosition">
+            <summary>
+            Get or Set the Position stored in <see cref="!:GTransform"/>.
+            </summary>
+        </member>
+        <member name="P:DataModel.Tiles.TrainTrackNode.meta_elementName">
+            <inheritdoc />
+        </member>
+        <member name="P:DataModel.Tiles.TrainTrackNode.meta_containerName">
+            <inheritdoc />
+        </member>
+        <member name="M:DataModel.Tiles.TrainTrackNode.#ctor(System.String,OpenToolkit.Mathematics.Vector3)">
+            <summary>
+            
+            </summary>
+            <param name="id">Unique id</param>
+            <param name="position"></param>
+        </member>
+        <member name="M:DataModel.Tiles.TrainTrackNode.#ctor(System.String,OpenToolkit.Mathematics.Vector3,DataModel.Tiles.TrainTrackNode)">
+            <summary>
+            Create a new Track element and automatically setup links to and from the provided <paramref name="previous"/>
+            </summary>
+            <param name="id">unique id</param>
+            <param name="position"></param>
+            <param name="previous">Track element to link</param>
+        </member>
+        <member name="M:DataModel.Tiles.TrainTrackNode.DerivedLinkStringIdPropertiesToInstances">
+            <inheritdoc />
+        </member>
+        <member name="M:DataModel.Tiles.TrainTrackNode.ReplaceLink(DataModel.Tiles.TrainTrackNode,DataModel.Tiles.TrainTrackNode)">
+            <summary>
+            Replace <paramref name="toRemove"/> with <paramref name="replacement"/> in <see cref="F:DataModel.Tiles.TrainTrackNode.Links"/>.
+            </summary>
+            <param name="toRemove"></param>
+            <param name="replacement"></param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:DataModel.Tiles.TrainTrackNode.Absorb(DataModel.Tiles.TrainTrackNode)">
+            <summary>
+            Absorb the given Node, that means to move all links of <paramref name="toAbsorb"/> to this node.
+            </summary>
+            <param name="toAbsorb"></param>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:DataModel.Tiles.TrainTrackNode.RemoveButPreserveLinkPast(DataModel.Tiles.TrainTrackNode)">
+            <summary>
+            Remove <paramref name="other"/> but preserve the linking
+            by replacing <paramref name="other"/> with <see langword="this"/> in all <paramref name="other"/>'s links.
+            </summary>
+            <param name="other"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DataModel.Tiles.TrainTrackNode.ClearLinks">
+            <summary>
+            Remove all <see cref="F:DataModel.Tiles.TrainTrackNode.Links"/>.
+            </summary>
+        </member>
+        <member name="M:DataModel.Tiles.TrainTrackNode.AllReachableTrackNodes(System.Collections.Generic.HashSet{DataModel.Tiles.TrainTrackNode})">
+            <summary>
+            Enumerate all <see cref="T:DataModel.Tiles.TrainTrackNode"/>s reachable from this one.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DataModel.Tiles.TrainTrackNode.ToString">
+            <inheritdoc />
+        </member>
+        <member name="M:DataModel.Tiles.Tree.ParseTrees(System.Xml.Linq.XDocument)">
+            <summary>
+            Parse a list of <see cref="T:DataModel.Tiles.Tree"/>s from a <see cref="T:System.Xml.Linq.XDocument"/> from an instances.xml file.
+            </summary>
+            <param name="doc"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DataModel.Tiles.Tree.ParseTrees(System.Xml.Linq.XElement)">
+            <summary>
+            Parse a list of <see cref="T:DataModel.Tiles.Tree"/>s from a 'Trees' <see cref="T:System.Xml.Linq.XElement"/>.
+            </summary>
+            <param name="treesElement"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DataModel.Tiles.Tree.WriteTreesDocument(System.Collections.Generic.ICollection{DataModel.Tiles.Tree})">
+            <summary>
+            Write a <see cref="T:System.Xml.Linq.XDocument"/> for a list of trees. The document can be written to an instances file.
+            </summary>
+            <param name="trees"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DataModel.Tiles.Tree.WriteTrees(System.Collections.Generic.ICollection{DataModel.Tiles.Tree},System.Xml.Linq.XElement)">
+            <summary>
+            Write the list of trees to a Trees <see cref="T:System.Xml.Linq.XElement"/>.
+            </summary>
+            <param name="trees"></param>
+            <param name="container">Optional container to place the trees in, if not provided will be created.</param>
+            <returns>XElement containing a list of trees</returns>
+        </member>
+        <member name="M:DataModel.Tiles.Tree.WriteTree(DataModel.Tiles.Tree)">
+            <summary>
+            Write a single <see cref="T:DataModel.Tiles.Tree"/> to an <see cref="T:System.Xml.Linq.XElement"/>.
+            </summary>
+            <param name="tree"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DataModel.Tiles.Tree.ToString">
+            <inheritdoc />
+        </member>
+        <member name="T:DataModel.Tiles.LinkedTileProperty">
+            <summary>
+            Represents a value on a <see cref="T:DataModel.Tiles.AbstractTileItem"/> that is a
+            <see cref="T:System.String"/> that links to another <see cref="T:DataModel.Tiles.AbstractTileItem"/>.
+            The <see cref="T:DataModel.Tiles.LinkedTileProperty"/> will automatically keep that
+            <see cref="T:System.String"/> value and linked <see cref="T:DataModel.Tiles.AbstractTileItem"/> in sync with each other.
+            What happens when a <see cref="T:DataModel.Tiles.AbstractTileItem"/> with the given name cannot be found is configurable
+            by specifying <see cref="M:DataModel.Tiles.LinkedTileProperty.SetNameOrUnchanged(System.String)"/>, <see cref="M:DataModel.Tiles.LinkedTileProperty.SetNameOrThrow(System.String)"/> or <see cref="M:DataModel.Tiles.LinkedTileProperty.SetNameRegardless(System.String)"/>
+            to the constructor.
+            </summary>
+        </member>
+        <member name="M:DataModel.Tiles.LinkedTileProperty.#ctor(DataModel.Tiles.AbstractTileItem,System.String,DataModel.Tiles.LinkedTileProperty.NameSetterOption,DataModel.Tiles.LinkedTileProperty.CycleDetector)">
+            <summary>
+            Creates a new <see cref="T:DataModel.Tiles.LinkedTileProperty"/>.
+            </summary>
+            <param name="parent">The <see cref="T:DataModel.Tiles.AbstractTileItem"/> that will contain this <see cref="T:DataModel.Tiles.LinkedTileProperty"/>.</param>
+            <param name="propertyName">The name of the property to be wrapped, will be used in error messages.</param>
+            <param name="nameSetterOption">Chooses which method to use as the NameSetter, see the documentation of <see cref="T:DataModel.Tiles.LinkedTileProperty.NameSetterOption"/>.
+            Defaults to <see cref="F:DataModel.Tiles.LinkedTileProperty.DefaultNameSetterOption"/>.
+            </param>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:DataModel.Tiles.LinkedTileProperty.#ctor(DataModel.Tiles.AbstractTileItem,System.String,System.Action{System.String},DataModel.Tiles.LinkedTileProperty.CycleDetector)">
+            <summary>
+            Creates a new <see cref="T:DataModel.Tiles.LinkedTileProperty"/> using the provided <paramref name="nameSetter"/>.
+            </summary>
+            <param name="parent">The <see cref="T:DataModel.Tiles.AbstractTileItem"/> that will contain this <see cref="T:DataModel.Tiles.LinkedTileProperty"/>.</param>
+            <param name="propertyName">The name of the property to be wrapped, will be used in error messages.</param>
+            <param name="nameSetter"></param>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="P:DataModel.Tiles.LinkedTileProperty.Name">
+            <summary>
+            The name/id of the linked <see cref="T:DataModel.Tiles.AbstractTileItem"/>.
+            <br/>
+            Writing to this property will invoke <see cref="F:DataModel.Tiles.LinkedTileProperty.nameSetter"/>, which could ignore the provided value, or throw,
+            if the matching <see cref="T:DataModel.Tiles.AbstractTileItem"/> is not found.
+            </summary>
+        </member>
+        <member name="F:DataModel.Tiles.LinkedTileProperty.NameSetterOption.SetOrThrow">
+            <summary>
+            <see cref="M:DataModel.Tiles.LinkedTileProperty.SetNameOrThrow(System.String)"/>
+            </summary>
+        </member>
+        <member name="F:DataModel.Tiles.LinkedTileProperty.NameSetterOption.SetOrUnchanged">
+            <summary>
+            <see cref="M:DataModel.Tiles.LinkedTileProperty.SetNameOrUnchanged(System.String)"/>
+            </summary>
+        </member>
+        <member name="F:DataModel.Tiles.LinkedTileProperty.NameSetterOption.SetRegardless">
+            <summary>
+            <see cref="M:DataModel.Tiles.LinkedTileProperty.SetNameRegardless(System.String)"/>
+            </summary>
+        </member>
+        <member name="M:DataModel.Tiles.LinkedTileProperty.SetNameOrThrow(System.String)">
+            <summary>
+            Set <see cref="P:DataModel.Tiles.LinkedTileProperty.Name"/> to <paramref name="newValue"/> if it is valid
+            or leave the value unchanged and throw an <see cref="T:DataModel.Tiles.ElementNotFoundException"/>.
+            </summary>
+            <exception cref="T:DataModel.Tiles.ElementNotFoundException"></exception>
+            <param name="newValue"></param>
+        </member>
+        <member name="M:DataModel.Tiles.LinkedTileProperty.SetNameOrUnchanged(System.String)">
+            <summary>
+            Set <see cref="P:DataModel.Tiles.LinkedTileProperty.Name"/> to <paramref name="newValue"/> if it is valid,
+            or leave it unchanged.
+            </summary>
+            <param name="newValue"></param>
+        </member>
+        <member name="M:DataModel.Tiles.LinkedTileProperty.SetNameRegardless(System.String)">
+            <summary>
+            Set <see cref="P:DataModel.Tiles.LinkedTileProperty.Name"/> to <paramref name="newValue"/> regardless of it's validity.
+            </summary>
+            <param name="newValue"></param>
+        </member>
+        <member name="M:DataModel.Tiles.LinkedTileProperty.TrySetName(System.String)">
+            <summary>
+            Try to set <see cref="P:DataModel.Tiles.LinkedTileProperty.Name"/> to <paramref name="newValue"/>, returning true if successful,
+            false otherwise.
+            </summary>
+            <param name="newValue"></param>
+            <returns></returns>
+        </member>
+        <member name="P:DataModel.Tiles.LinkedTileProperty.Value">
+            <summary>
+            The linked <see cref="T:DataModel.Tiles.AbstractTileItem"/> which could be null, even if <see cref="P:DataModel.Tiles.LinkedTileProperty.Name"/> has a value.
+            Setting this property will change <see cref="P:DataModel.Tiles.LinkedTileProperty.Name"/> to match the assigned value.
+            Setting <see langword="null"/> is allowed.
+            </summary>
+        </member>
+        <member name="M:DataModel.Tiles.LinkedTileProperty.Fetch">
+            <summary>
+            During deserialization of a <see cref="T:DataModel.Tiles.Tile"/>s elements the element linked to could not yet be deserialized.
+            Therefore this method is called afterwards to fetch the linked element.
+            </summary>
+        </member>
+        <member name="M:DataModel.Tiles.LinkedTileProperty.FetchOrThrow">
+            <summary>
+            During deserialization of a <see cref="T:DataModel.Tiles.Tile"/>s elements the element linked to could not yet be deserialized.
+            Therefore this method is called afterwards to fetch the linked element.
+            </summary>
+        </member>
+        <member name="T:DataModel.Tiles.NotYetLinkedException">
+            <summary>
+            Exception that is thrown when attempting to access the value of a <see cref="T:DataModel.Tiles.LinkedTileProperty"/> while
+            that is not yet initialized (because the <see cref="P:DataModel.Tiles.AbstractTileItem.tile"/> value has not been assigned yet.
+            </summary>
+        </member>
+        <member name="F:DataModel.Tiles.Tile.meta_romPath">
+            <summary>
+            The path to the tile.xml file as it's used in the Game (relative to the 'rom' folder)
+            </summary>
+        </member>
+        <member name="P:DataModel.Tiles.Tile.meta_instancePath">
+            <summary>
+            The path to the tile_instances.xml file as it's used in the Game (relative to 'rom' folder).
+            Created on the fly based on <see cref="F:DataModel.Tiles.Tile.meta_romPath"/>.
+            </summary>
+        </member>
+        <member name="F:DataModel.Tiles.Tile.fileName">
+            <summary>
+            The name of the file this definition was read from (without extension)
+            </summary>
+        </member>
+        <member name="P:DataModel.Tiles.Tile.tileName">
+            <summary>
+            The name of the tile, this returns <see cref="F:DataModel.Tiles.Tile.fileName"/> because no such property is implemented in the xml.
+            </summary>
+        </member>
+        <member name="M:DataModel.Tiles.Tile.AllTileItems">
+            <summary>
+            Enumerates all currently implemented collections of <see cref="T:DataModel.Tiles.AbstractTileItem"/>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DataModel.Tiles.Tile.AllTileItemsTyped">
+            <summary>
+            Enumerates all currently implemented collections of <see cref="T:DataModel.Tiles.AbstractTileItem"/>
+            Giving a ValueTuple of the Type that is in the collection.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:DataModel.Tiles.Tile.ChangedSinceLastSaved">
+            <summary>
+            Note: this does not track all changes by itself (yet), it's up to the user to set the flag.
+            Setting the flag false will also apply that to all <see cref="T:DataModel.Tiles.AbstractTileItem"/> in <see cref="F:DataModel.Tiles.Tile.Elements"/>.
+            </summary>
+        </member>
+        <member name="E:DataModel.Tiles.Tile.ChangedSinceLastSavedChanged">
+            <summary>
+            Event that triggers when the value of <see cref="P:DataModel.Tiles.Tile.ChangedSinceLastSaved"/> changes.
+            </summary>
+        </member>
+        <member name="M:DataModel.Tiles.Tile.IdTransformation(System.String,System.Text.RegularExpressions.Regex,System.String)">
+            <summary>
+            Change <paramref name="original_id"/> by appending <paramref name="suffix"/> and a unique number, using <paramref name="regex"/> to find the number, which must be in capture group 1.
+            </summary>
+            <param name="suffix"></param>
+            <param name="regex"></param>
+            <param name="original_id"></param>
+            <returns></returns>
+        </member>
+        <member name="F:DataModel.Tiles.Tile.IdConflictSuffix">
+            <summary>
+            The suffix, followed by an number, that will be added to an items id
+            when it conflicts with an existing id.
+            Only used during loading.
+            </summary>
+        </member>
+        <member name="F:DataModel.Tiles.Tile.IdConflictRegex">
+            <summary>
+            <see cref="T:DataModel.Tiles.AbstractTileItem"/>s that had a conflicting <see cref="P:DataModel.Tiles.AbstractTileItem.id"/>
+            during loading will match this <see cref="T:System.Text.RegularExpressions.Regex"/>.
+            Capture group 1 holds the number that is added to the suffix (<see cref="F:DataModel.Tiles.Tile.IdConflictSuffix"/>).
+            </summary>
+        </member>
+        <member name="F:DataModel.Tiles.Tile.MovedInSuffix">
+            <summary>
+            The suffix (followed by a number not included here) that will be added to
+            <see cref="P:DataModel.Tiles.AbstractTileItem.id"/> when it is <see cref="M:DataModel.Tiles.Tile.Add(DataModel.Tiles.AbstractTileItem)"/>ed and there is a name conflict.
+            </summary>
+        </member>
+        <member name="F:DataModel.Tiles.Tile.MovedInRegex">
+            <summary>
+            <see cref="T:DataModel.Tiles.AbstractTileItem"/>s that ware <see cref="M:DataModel.Tiles.Tile.Add(DataModel.Tiles.AbstractTileItem)"/>ed and had a conflicting <see cref="P:DataModel.Tiles.AbstractTileItem.id"/>
+            will match this <see cref="T:System.Text.RegularExpressions.Regex"/>.
+            Capture group 1 holds the number that is added to the suffix (<see cref="F:DataModel.Tiles.Tile.MovedInSuffix"/>).
+            </summary>
+        </member>
+        <member name="M:DataModel.Tiles.Tile.Add(DataModel.Tiles.AbstractTileItem)">
+            <summary>
+            Add <paramref name="item"/> to this <see cref="T:DataModel.Tiles.Tile"/>.
+            If there is a <see cref="P:DataModel.Tiles.AbstractTileItem.id"/> conflict <paramref name="item"/> will be renamed.
+            </summary>
+            <param name="item">The <see cref="T:DataModel.Tiles.AbstractTileItem"/> to add.</param>
+            <returns><see langword="true"/> when the item was added, <see langword="false"/> when it was already present.</returns>
+        </member>
+        <member name="M:DataModel.Tiles.Tile.AddMany(System.Collections.Generic.IEnumerable{DataModel.Tiles.AbstractTileItem})">
+            <summary>
+            Add all items to the tile using <see cref="M:DataModel.Tiles.Tile.Add(DataModel.Tiles.AbstractTileItem)"/>.
+            </summary>
+            <param name="items"></param>
+        </member>
+        <member name="M:DataModel.Tiles.Tile.TryChangeID(DataModel.Tiles.AbstractTileItem,System.String)">
+            <summary>
+            This method is only intended for use by <see cref="M:DataModel.Tiles.AbstractTileItem.SetID(System.String,System.Boolean)"/>.
+            </summary>
+            <param name="item"></param>
+            <param name="newID"></param>
+            <returns><see langword="true"/> when the id was changed, <see langword="false"/> when it was not.</returns>
+        </member>
+        <member name="M:DataModel.Tiles.Tile.Remove(DataModel.Tiles.AbstractTileItem)">
+            <summary>
+            Remove the given <paramref name="item"/> from this <see cref="T:DataModel.Tiles.Tile"/>.
+            </summary>
+            <param name="item">The <see cref="T:DataModel.Tiles.AbstractTileItem"/> to remove</param>
+            <returns><see langword="true"/> when the item was removed, <see langword="false"/> when it was not present.</returns>
+        </member>
+        <member name="M:DataModel.Tiles.Tile.SaveDataToDocument(System.Xml.Linq.XDocument)">
+            <summary>
+            Save the information in this instance into <paramref name="doc"/>
+            by replacing the attributes and (implemented) containers.
+            Unimplemented parts are not modified.
+            </summary>
+            <param name="doc"></param>
+        </member>
+        <member name="M:DataModel.Tiles.Tile.ToString">
+            <inheritdoc />
+        </member>
+        <member name="F:DataModel.Tiles.Tile.InstancesRegex">
+            <summary>
+            Regex to identify (tree) instances files, which only contain trees.
+            </summary>
+        </member>
+        <member name="F:DataModel.Tiles.Tile.RotationsRegex">
+            <summary>
+            Regex to identify rotations of tiles that the game likes to save for whatever reason.
+            </summary>
+        </member>
+        <member name="M:DataModel.Tiles.Tile.GetInstancesPath(System.String)">
+            <summary>
+            Returns the path to the (tree) instances file for the given <paramref name="path"/> to a tile.
+            Only transforms the given path: does not interact with the filesystem.
+            </summary>
+            <param name="path"></param>
+            <returns></returns>
+        </member>
+        <member name="P:DataModel.Vehicles.Author.ElementOrder">
+            <summary>
+            The order of this element in the parent's list of elements.
+            It is set automatically when loading from file.
+            </summary>
+        </member>
+        <member name="T:DataModel.Vehicles.Body">
+            <summary>
+            Represents a physics body of a <see cref="T:DataModel.Vehicles.Vehicle"/>.
+            </summary>
+        </member>
+        <member name="P:DataModel.Vehicles.Body.ElementOrder">
+            <summary>
+            The order of this element in the parent's list of elements.
+            It is set automatically when loading from file.
+            </summary>
+        </member>
+        <member name="P:DataModel.Vehicles.Body.mesh">
+            <summary>
+            <see cref="T:BinaryDataModel.DataTypes.Mesh"/> for this <see cref="T:DataModel.Vehicles.Body"/>.
+            Will be generated exactly once if does not exist using <see cref="T:System.Lazy`1"/>.
+            Can be <see langword="null"/> if a failure occurred,
+            in that case you can find the <see cref="T:System.Exception"/> in <see cref="P:DataModel.Vehicles.Body.meshGenerationException"/>.
+            </summary>
+        </member>
+        <member name="P:DataModel.Vehicles.Body.meshGenerationException">
+            <summary>
+            If an <see cref="T:System.Exception"/> occurred during <see cref="T:BinaryDataModel.DataTypes.Mesh"/> generation it will be stored
+            here for reference, because by default it is swallowed by <see cref="M:DataModel.Vehicles.Body.SafeGenerateMesh"/>.
+            </summary>
+        </member>
+        <member name="M:DataModel.Vehicles.Body.GenerateMesh">
+            <summary>
+            Generate the <see cref="T:BinaryDataModel.DataTypes.Mesh"/> for this <see cref="T:DataModel.Vehicles.Body"/>.
+            Note: This is independent of the property <see cref="P:DataModel.Vehicles.Body.mesh"/>.
+            </summary>
+            <returns>A new <see cref="T:BinaryDataModel.DataTypes.Mesh"/></returns>
+        </member>
+        <member name="M:DataModel.Vehicles.Body.SafeGenerateMesh">
+            <summary>
+            Calls <see cref="M:DataModel.Vehicles.Body.GenerateMesh"/> but swallows and logs any <see cref="T:System.Exception"/> that may occur.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DataModel.Vehicles.Body.ToString">
+            <inheritdoc />
+        </member>
+        <member name="T:DataModel.Vehicles.Component">
+            <summary>
+            Represents a single Component (a block or device) on a <see cref="P:DataModel.Vehicles.Component.Vehicle"/>.
+            </summary>
+        </member>
+        <member name="F:DataModel.Vehicles.Component.defaultDefinitionName">
+            <summary>
+            The definition that will be used when it's not specified due to compression.
+            </summary>
+        </member>
+        <member name="P:DataModel.Vehicles.Component.ColorParser">
+            <summary>
+            The parser for colors. This varies by <see cref="F:DataModel.Vehicles.Vehicle.data_version"/>.
+            </summary>
+        </member>
+        <member name="F:DataModel.Vehicles.Component.t">
+            <summary>
+            Symmetry flags.
+            </summary>
+        </member>
+        <member name="P:DataModel.Vehicles.Component.bc">
+            <summary>
+            Primary paint zone 1
+            </summary>
+        </member>
+        <member name="P:DataModel.Vehicles.Component.bc2">
+            <summary>
+            Primary paint zone 2
+            </summary>
+        </member>
+        <member name="P:DataModel.Vehicles.Component.bc3">
+            <summary>
+            Primary paint zone 3
+            </summary>
+        </member>
+        <member name="P:DataModel.Vehicles.Component.ac">
+            <summary>
+            Emissive colour.
+            </summary>
+        </member>
+        <member name="P:DataModel.Vehicles.Component.sc">
+            <summary>
+            Surface colours
+            </summary>
+        </member>
+        <member name="F:DataModel.Vehicles.Component.position">
+            <summary>
+            Voxel position
+            </summary>
+        </member>
+        <member name="P:DataModel.Vehicles.Component.ElementOrder">
+            <summary>
+            The order of this element in the parent's list of elements.
+            It is set automatically when loading from file.
+            </summary>
+        </member>
+        <member name="F:DataModel.Vehicles.Component.surfaceColours">
+            <summary>
+            Surface Colours
+            </summary>
+        </member>
+        <member name="P:DataModel.Vehicles.Component.LoadTimeGeneratedMesh">
+            <summary>
+            Load-Time generated <see cref="T:BinaryDataModel.DataTypes.Mesh"/>.
+            </summary>
+        </member>
+        <member name="F:DataModel.Vehicles.Component.LoadTimeGeneratedMeshTransform">
+            <summary>
+            Load-Time generated <see cref="T:BinaryDataModel.DataTypes.Mesh"/> transform.
+            </summary>
+        </member>
+        <member name="F:DataModel.Vehicles.Component.defaultRotation">
+            <summary>
+            The value of the orientation ('o' element) when no value is specified in the xml.
+            </summary>
+        </member>
+        <member name="M:DataModel.Vehicles.Component.GetComponentSurfaceData">
+            <summary>
+            Get <see cref="T:DataModel.Definitions.NestedTypes.Surface"/> data for the <see cref="T:BinaryDataModel.MeshCombiner"/> from this <see cref="T:DataModel.Vehicles.Component"/>.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DataModel.Vehicles.Component.GetVehicleSpaceSurfaces">
+            <summary>
+            Get Surfaces transformed to Vehicle space
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DataModel.Vehicles.Component.GetComponentTransform">
+            <summary>
+            Get a Component to VehicleBody transform, and a bool if triangles should be reversed.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DataModel.Vehicles.Component.ToString">
+            <inheritdoc />
+        </member>
+        <member name="M:DataModel.Vehicles.Components.PaintableIndicator.#ctor(DataModel.Vehicles.Body)">
+            <inheritdoc />
+        </member>
+        <member name="M:DataModel.Vehicles.Components.PaintableIndicator.#ctor(DataModel.Vehicles.Body,System.Xml.Linq.XElement)">
+            <inheritdoc />
+        </member>
+        <member name="M:DataModel.Vehicles.Components.PaintableIndicator.#ctor(DataModel.Vehicles.Body,System.Xml.Linq.XElement,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <inheritdoc />
+        </member>
+        <member name="M:DataModel.Vehicles.Components.PaintableIndicator.ToXElement">
+            <inheritdoc />
+        </member>
+        <member name="P:DataModel.Vehicles.Components.PaintableSign.LoadTimeGeneratedMesh">
+            <inheritdoc />
+        </member>
+        <member name="M:DataModel.Vehicles.Components.PaintableSign.#ctor(DataModel.Vehicles.Body)">
+            <inheritdoc />
+        </member>
+        <member name="M:DataModel.Vehicles.Components.PaintableSign.#ctor(DataModel.Vehicles.Body,System.Xml.Linq.XElement)">
+            <inheritdoc />
+        </member>
+        <member name="M:DataModel.Vehicles.Components.PaintableSign.#ctor(DataModel.Vehicles.Body,System.Xml.Linq.XElement,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <inheritdoc />
+        </member>
+        <member name="M:DataModel.Vehicles.Components.PaintableSign.ToXElement">
+            <inheritdoc />
+        </member>
+        <member name="F:DataModel.Vehicles.LogicNodeLink.ElementOrder">
+            <summary>
+            The order of this element in the parent's list of elements.
+            It is set automatically when loading from file.
+            </summary>
+        </member>
+        <member name="F:DataModel.Vehicles.MeshGenerator.GetOrLoadMesh">
+            <summary>
+            Method to fetch Mesh based on it's path relative to ROM (as used in the definition xml).
+            Returning <see cref="!:null"/> is acceptable.
+            </summary>
+        </member>
+        <member name="F:DataModel.Vehicles.Vehicle.data_version">
+            <summary>
+            The serialized data version used to load the vehicle.
+            Versions >= 3 use a limited form of compression.
+            </summary>
+        </member>
+        <member name="F:DataModel.Vehicles.Vehicle.is_static">
+            <summary>
+            Static vehicles cannot move and do not compute collisions with other static vehicles.
+            </summary>
+        </member>
+        <member name="F:DataModel.Vehicles.Vehicle.bodies_id">
+            <summary>
+            The highest <see cref="F:DataModel.Vehicles.Body.unique_id"/> that is in use.
+            </summary>
+        </member>
+        <member name="F:DataModel.Vehicles.Vehicle.editor_placement_offset">
+            <summary>
+            The offset inside the VehicleEditor's workbench where the vehicle is placed.
+            </summary>
+        </member>
+        <member name="F:DataModel.Vehicles.Vehicle.voxelBounds">
+            <summary>
+            Bounds of the voxels of the vehicle.
+            Note: current implementation does not keep the bounds up to date with modifications.
+            </summary>
+        </member>
+        <member name="P:DataModel.Vehicles.Vehicle.voxelBoundsF">
+            <summary>
+            <see cref="F:DataModel.Vehicles.Vehicle.voxelBounds"/> but scaled to match the world coordinates.
+            </summary>
+        </member>
+        <member name="F:DataModel.Vehicles.Vehicle.meshBounds">
+            <summary>
+            The bounds containing the Meshes of all bodies.
+            </summary>
+        </member>
+        <member name="P:DataModel.Vehicles.Vehicle.AllComponents">
+            <summary>
+            Enumerates all the components on the vehicle by enumerating over the vehicle's bodies.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:DataModel.Vehicles.Vehicle.ColorParser">
+            <summary>
+            The method to be used to parse colors from xml.
+            The way colors are stored changed with <see cref="F:DataModel.Vehicles.Vehicle.data_version"/> 3.
+            </summary>
+        </member>
+        <member name="M:DataModel.Vehicles.Vehicle.ToString">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,661 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CurveGraph</name>
+    </assembly>
+    <members>
+        <member name="T:CurveGraph.Connection">
+            <summary>
+            A <see cref="T:CurveGraph.Connection"/> between <see cref="T:CurveGraph.CurveNode"/>s.
+            </summary>
+        </member>
+        <member name="P:CurveGraph.Connection.IsRemoved">
+            <summary>
+            Has this connection been removed.
+            </summary>
+        </member>
+        <member name="E:CurveGraph.Connection.Created">
+            <summary>
+            Triggered when a connection is created.
+            </summary>
+        </member>
+        <member name="E:CurveGraph.Connection.Changed">
+            <summary>
+            Triggered when the <see cref="T:CurveGraph.Connection"/> is changed, for example because the <see cref="T:CurveGraph.CubicBezierCurve"/> is changed.
+            </summary>
+        </member>
+        <member name="E:CurveGraph.Connection.Removed">
+            <summary>
+            Triggered when the connection is removed.
+            </summary>
+        </member>
+        <member name="P:CurveGraph.Connection.data">
+            <summary>
+            Any custom data attached to this <see cref="T:CurveGraph.Connection"/>.
+            Should be serializable.
+            </summary>
+        </member>
+        <member name="M:CurveGraph.Connection.CloneForMultiThreadedReading">
+            <summary>
+            Create a copy of the Connection data (To get a unchanging copy for use with MultiThreading). Events won't fire on this copy.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CurveGraph.Connection.Split">
+            <summary>
+            Split this <see cref="T:CurveGraph.Connection"/> in two, returning the created <see cref="T:CurveGraph.CurveNode"/> and <see cref="T:CurveGraph.Connection"/>.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CurveGraph.Connection.SplitAtTime(System.Single)">
+            <summary>
+            Split this <see cref="T:CurveGraph.Connection"/> in two at the given <paramref name="time"/>, returning the created <see cref="T:CurveGraph.CurveNode"/> and <see cref="T:CurveGraph.Connection"/>.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CurveGraph.Connection.SplitAtDistance(System.Single)">
+            <summary>
+            Split this <see cref="T:CurveGraph.Connection"/> in two at the given <paramref name="distance"/>, returning the created <see cref="T:CurveGraph.CurveNode"/> and <see cref="T:CurveGraph.Connection"/>.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CurveGraph.Connection.Remove">
+            <summary>
+            Remove this connection
+            </summary>
+        </member>
+        <member name="M:CurveGraph.Connection.TryRemove">
+            <summary>
+            Remove the connection. Returns <see	langword="true"/> on success.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CurveGraph.Connection.FixupAfterDeserialization(System.Object)">
+            <summary>
+            Fixup Deserialization because DataContract does not follow the spec.
+            </summary>
+            <param name="sender"></param>
+        </member>
+        <member name="M:CurveGraph.Connection.ToString">
+            <inheritdoc />
+        </member>
+        <member name="T:CurveGraph.ConnectionNodeSettings">
+            <summary>
+            Contains information about one side of a connection between nodes.
+            </summary>
+        </member>
+        <member name="P:CurveGraph.ConnectionNodeSettings.SmoothingWeight">
+            <summary>
+            Smoothing contribution factor. If set to 0 this node will have no contribution to the new Direction.
+            </summary>
+        </member>
+        <member name="T:CurveGraph.CubicBezierCurve">
+            <summary>
+            Mathematical object for cubic Bézier curve definition.
+            It is made of two spline nodes which hold the four needed control points : two positions and two directions
+            It provides methods to get positions and tangent along the curve, specifying a distance or a ratio, plus the curve length.
+            
+            Note that a time of 0.5 and half the total distance won't necessarily define the same curve point as the curve curvature is not linear.
+            </summary>
+        </member>
+        <member name="P:CurveGraph.CubicBezierCurve.Length">
+            <summary>
+            Length of the curve in world unit.
+            </summary>
+        </member>
+        <member name="E:CurveGraph.CubicBezierCurve.Changed">
+            <summary>
+            This event is raised when the <see cref="T:CurveGraph.CubicBezierCurve"/> has changed, for example when one of of the control points has moved.
+            </summary>
+        </member>
+        <member name="P:CurveGraph.CubicBezierCurve.Position">
+            <summary>
+            The Position of the <see cref="T:CurveGraph.CubicBezierCurve"/>, specifically the midpoint between <see cref="P:CurveGraph.CubicBezierCurve.StartNode"/> and <see cref="P:CurveGraph.CubicBezierCurve.EndNode"/>.
+            </summary>
+        </member>
+        <member name="P:CurveGraph.CubicBezierCurve.StartControlPoint">
+            <summary>
+            The Control point for the start node.
+            </summary>
+        </member>
+        <member name="P:CurveGraph.CubicBezierCurve.EndControlPoint">
+            <summary>
+            The Control point for the end node.
+            </summary>
+        </member>
+        <member name="F:CurveGraph.CubicBezierCurve.startDirection">
+            <summary>
+            The EndDirection as it is actually used in the current Curve.
+            It may differ from the direction of <see cref="P:CurveGraph.CubicBezierCurve.StartNode"/> for various reasons.
+            Value is assigned in <see cref="M:CurveGraph.CubicBezierCurve.ComputeSamples(CurveGraph.CurveNode)"/>
+            </summary>
+        </member>
+        <member name="F:CurveGraph.CubicBezierCurve.endDirection">
+            <summary>
+            The EndDirection as it is actually used in the current Curve.
+            It may differ from the direction of <see cref="P:CurveGraph.CubicBezierCurve.EndNode"/> for various reasons.
+            Value is assigned in <see cref="M:CurveGraph.CubicBezierCurve.ComputeSamples(CurveGraph.CurveNode)"/>
+            </summary>
+        </member>
+        <member name="M:CurveGraph.CubicBezierCurve.#ctor(CurveGraph.CurveNode,CurveGraph.CurveNode)">
+            <summary>
+            Build a new cubic Bézier curve between two given spline node.
+            </summary>
+            <param name="n1"></param>
+            <param name="n2"></param>
+        </member>
+        <member name="M:CurveGraph.CubicBezierCurve.RaiseChanged">
+            <summary>
+            Raise the <see cref="E:CurveGraph.CubicBezierCurve.Changed"/> <see langword="event"/>.
+            </summary>
+        </member>
+        <member name="M:CurveGraph.CubicBezierCurve.Connect(CurveGraph.CurveNode,CurveGraph.CurveNode)">
+            <summary>
+            Change both the start and end nodes of the curve.
+            </summary>
+            <param name="newN1"></param>
+            <param name="newN2"></param>
+        </member>
+        <member name="M:CurveGraph.CubicBezierCurve.GetInverseDirection">
+            <summary>
+            Convenient method to get the third control point of the curve, as the direction of the end spline node indicates the starting tangent of the next curve.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CurveGraph.CubicBezierCurve.GetLocation(System.Single)">
+            <summary>
+            Returns point on curve at given time. Time must be between 0 and 1.
+            </summary>
+            <param name="t"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CurveGraph.CubicBezierCurve.GetVelocity(System.Single)">
+            <summary>
+            Returns velocity (tangent with a magnitude)  of curve at given time. Time must be between 0 and 1.
+            </summary>
+            <param name="t"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CurveGraph.CubicBezierCurve.GetSamples">
+            <summary>
+            Get the array of samples. Could be <see langword="null" />.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CurveGraph.CubicBezierCurve.CopySamplesTo(CurveGraph.CurveSample[],System.Int64)">
+            <summary>
+            Copy the samples into the specified array, starting at <paramref name="index"/> in <paramref name="destination"/>.
+            </summary>
+            <param name="destination"></param>
+            <param name="index"></param>
+        </member>
+        <member name="M:CurveGraph.CubicBezierCurve.GetSample(System.Single)">
+            <summary>
+            Returns an interpolated sample of the curve, containing all curve data at this time.
+            </summary>
+            <param name="time"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CurveGraph.CubicBezierCurve.GetReverseSample(System.Single)">
+            <summary>
+            Returns an interpolated sample of the curve, containing all curve data at this time like <see cref="M:CurveGraph.CubicBezierCurve.GetSample(System.Single)"/>.
+            But operates in reverse, as if <see cref="P:CurveGraph.CubicBezierCurve.StartNode"/> is <see cref="P:CurveGraph.CubicBezierCurve.EndNode"/> and vice versa.
+            This means that the <see cref="F:CurveGraph.CurveSample.tangent"/> faces in reverse,
+            and <see cref="F:CurveGraph.CurveSample.timeInCurve"/> and <see cref="F:CurveGraph.CurveSample.distanceInCurve"/>
+            are measured from the 'normal' end of the curve instead.
+            </summary>
+            <param name="reverseTime">Time, from the end of the curve where the sample should be fetched. [0..1]</param>
+            <returns></returns>
+        </member>
+        <member name="M:CurveGraph.CubicBezierCurve.GetSampleAtDistance(System.Single)">
+            <summary>
+            Returns an interpolated sample of the curve, containing all curve data at this distance.
+            </summary>
+            <param name="distance"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CurveGraph.CubicBezierCurve.GetReverseSampleAtDistance(System.Single)">
+            <summary>
+            Returns an interpolated sample of the curve, containing all curve data at this time like <see cref="M:CurveGraph.CubicBezierCurve.GetSampleAtDistance(System.Single)"/>.
+            But operates in reverse, as if <see cref="P:CurveGraph.CubicBezierCurve.StartNode"/> is <see cref="P:CurveGraph.CubicBezierCurve.EndNode"/> and vice versa.
+            This means that the <see cref="F:CurveGraph.CurveSample.tangent"/> faces in reverse,
+            and <see cref="F:CurveGraph.CurveSample.timeInCurve"/> and <see cref="F:CurveGraph.CurveSample.distanceInCurve"/>
+            are measured from the 'normal' end of the curve instead.
+            </summary>
+            <param name="reverseDistance">Distance, from the end of the curve where the sample should be fetched. [0..<see cref="P:CurveGraph.CubicBezierCurve.Length"/>]</param>
+            <returns></returns>
+        </member>
+        <member name="M:CurveGraph.CubicBezierCurve.ReverseSample(CurveGraph.CurveSample)">
+            <summary>
+            Reverse a <see cref="T:CurveGraph.CurveSample"/> so that it faces in reverse and
+            it's <see cref="F:CurveGraph.CurveSample.timeInCurve"/> and <see cref="F:CurveGraph.CurveSample.distanceInCurve"/>
+            are measured from the end of the curve.
+            </summary>
+            <remarks>
+            Note: Reversing an already reversed sample produces an INVALID sample.
+            </remarks>
+            <param name="forwardSample"></param>
+            <returns>reverseSample</returns>
+        </member>
+        <member name="M:CurveGraph.CubicBezierCurve.GetNearSample(OpenToolkit.Mathematics.Vector3)">
+            <summary>
+            Returns a CurveSample that is closest to the target position.
+            </summary>
+            <param name="target"></param>
+            <returns></returns>
+        </member>
+        <member name="P:CurveGraph.CurveNode.position">
+            <summary>
+            Node position.
+            Does not trigger <see cref="E:CurveGraph.CurveNode.NodeValuesChanged"/> event.
+            </summary>
+        </member>
+        <member name="P:CurveGraph.CurveNode.Position">
+            <summary>
+            Node position.
+            Changes will trigger <see cref="E:CurveGraph.CurveNode.NodeValuesChanged"/> event.
+            </summary>
+        </member>
+        <member name="P:CurveGraph.CurveNode.direction">
+            <summary>
+            Node Direction (Tangent)
+            Does not trigger <see cref="E:CurveGraph.CurveNode.NodeValuesChanged"/> event.
+            </summary>
+        </member>
+        <member name="P:CurveGraph.CurveNode.Direction">
+            <summary>
+            Node Direction (Tangent)
+            Changes will trigger <see cref="E:CurveGraph.CurveNode.NodeValuesChanged"/> event.
+            If <see cref="P:CurveGraph.CurveNode.AutoSmooth"/> is enabled then the <see cref="P:CurveGraph.CurveNode.Direction"/> is computed automatically.
+            </summary>
+        </member>
+        <member name="P:CurveGraph.CurveNode.up">
+            <summary>
+            Up vector to apply at this node.
+            Useful to specify the orientation when the tangent blend with the world UP (gimbal lock)
+            This value is not used on the spline itself but is commonly used on bended content.
+            Does not trigger <see cref="E:CurveGraph.CurveNode.NodeValuesChanged"/> event.
+            </summary>
+        </member>
+        <member name="P:CurveGraph.CurveNode.Up">
+            <summary>
+            Up vector to apply at this node.
+            Useful to specify the orientation when the tangent blend with the world UP (gimbal lock)
+            This value is not used on the spline itself but is commonly used on bended content.
+            Changes will trigger <see cref="E:CurveGraph.CurveNode.NodeValuesChanged"/> event.
+            </summary>
+        </member>
+        <member name="P:CurveGraph.CurveNode.scale">
+            <summary>
+            Scale to apply at this node.
+            This value is not used on the spline itself but is commonly used on bended content.
+            Does not trigger <see cref="E:CurveGraph.CurveNode.NodeValuesChanged"/> event.
+            </summary>
+        </member>
+        <member name="P:CurveGraph.CurveNode.Scale">
+            <summary>
+            Scale to apply at this node.
+            This value is not used on the spline itself but is commonly used on bended content.
+            Changes trigger <see cref="E:CurveGraph.CurveNode.NodeValuesChanged"/> event.
+            </summary>
+        </member>
+        <member name="P:CurveGraph.CurveNode.roll">
+            <summary>
+            Roll to apply at this node.
+            This value is not used on the spline itself but is commonly used on bended content.
+            Does not trigger <see cref="E:CurveGraph.CurveNode.NodeValuesChanged"/> event.
+            </summary>
+        </member>
+        <member name="P:CurveGraph.CurveNode.Roll">
+            <summary>
+            Roll to apply at this node.
+            This value is not used on the spline itself but is commonly used on bended content.
+            Changes will trigger <see cref="E:CurveGraph.CurveNode.NodeValuesChanged"/>.
+            </summary>
+        </member>
+        <member name="F:CurveGraph.CurveNode._autoSmooth">
+            <summary>
+            Set Automatic smoothing for this Node.
+            Does not trigger <see cref="E:CurveGraph.CurveNode.NodeValuesChanged"/> event.
+            </summary>
+        </member>
+        <member name="P:CurveGraph.CurveNode.AutoSmooth">
+            <summary>
+            Set Automatic smoothing for this Node.
+            Changes will trigger <see cref="E:CurveGraph.CurveNode.NodeValuesChanged"/>.
+            </summary>
+        </member>
+        <member name="P:CurveGraph.CurveNode.curvature">
+            <summary>
+            Auto smoother curvature at this Node.
+            Does not trigger <see cref="E:CurveGraph.CurveNode.NodeValuesChanged"/> event.
+            </summary>
+        </member>
+        <member name="P:CurveGraph.CurveNode.Curvature">
+            <summary>
+            Auto smoother curvature at this Node.
+            Changes will trigger <see cref="E:CurveGraph.CurveNode.NodeValuesChanged"/>.
+            </summary>
+        </member>
+        <member name="F:CurveGraph.CurveNode.Connections">
+            <summary>
+            Connections to other nodes. Use the dedicated methods to edit the collection.
+            </summary>
+        </member>
+        <member name="E:CurveGraph.CurveNode.NodeValuesChanged">
+            <summary>
+            Raised when any value of this <see cref="T:CurveGraph.CurveNode"/> changes.
+            </summary>
+        </member>
+        <member name="E:CurveGraph.CurveNode.ConnectionsChanged">
+            <summary>
+            Event raised when <see cref="F:CurveGraph.CurveNode.Connections"/> changed.
+            </summary>
+        </member>
+        <member name="F:CurveGraph.CurveNode._data">
+            <summary>
+            Any custom data attached to this <see cref="T:CurveGraph.CurveNode"/>.
+            Should be serializable.
+            </summary>
+        </member>
+        <member name="M:CurveGraph.CurveNode.RaiseNodeValuesChanged(System.Boolean)">
+            <summary>
+            Raise the NodeValuesChanged event.
+            </summary>
+            <param name="needSmoothing">Should the Smoother be triggered (if it's enabled).</param>
+        </member>
+        <member name="M:CurveGraph.CurveNode.IsConnectedTo(CurveGraph.CurveNode)">
+            <summary>
+            Does this node have a direct <see cref="T:CurveGraph.Connection"/> to <paramref name="destination"/>?
+            </summary>
+            <param name="destination"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CurveGraph.CurveNode.TryGetConnection(CurveGraph.CurveNode,CurveGraph.Connection@)">
+            <summary>
+            Try to get the direct <see cref="T:CurveGraph.Connection"/> between this and <paramref name="destination"/>.
+            </summary>
+            <param name="destination">The destination to get the <see cref="T:CurveGraph.Connection"/> for.</param>
+            <param name="connection">The <see cref="T:CurveGraph.Connection"/> if found, or null.</param>
+            <returns>A connection was returned.</returns>
+        </member>
+        <member name="M:CurveGraph.CurveNode.GetConnection(CurveGraph.CurveNode)">
+            <summary>
+            Get the <see cref="T:CurveGraph.Connection"/> to the specified <paramref name="destination"/>.
+            </summary>
+            <param name="destination"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CurveGraph.CurveNode._Remote_AddConnection(CurveGraph.CurveNode,CurveGraph.Connection)">
+            <summary>
+            This is called on the 'other' <see cref="T:CurveGraph.CurveNode"/> when a <see cref="T:CurveGraph.Connection"/> is added.
+            So that it's state can be updated to match.
+            </summary>
+            <param name="toConnectTo"></param>
+            <param name="connection"></param>
+        </member>
+        <member name="M:CurveGraph.CurveNode.CanConnectTo(CurveGraph.CurveNode)">
+            <summary>
+            Can a connection be made to <paramref name="destination"/>.
+            </summary>
+            <param name="destination"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CurveGraph.CurveNode.CreateConnection(CurveGraph.CurveNode)">
+            <summary>
+            Create a new <see cref="T:CurveGraph.Connection"/> to the specified <paramref name="destination"/>.
+            </summary>
+            <param name="destination">The destination for the <see cref="T:CurveGraph.Connection"/>.</param>
+            <returns>The created <see cref="T:CurveGraph.Connection"/>.</returns>
+        </member>
+        <member name="M:CurveGraph.CurveNode._Remote_RemoveConnection(CurveGraph.CurveNode)">
+            <summary>
+            This is called on the 'other' <see cref="T:CurveGraph.CurveNode"/> when a <see cref="T:CurveGraph.Connection"/> is removed.
+            So that it's state can be updated to match.
+            </summary>
+            <param name="toRemove"></param>
+        </member>
+        <member name="M:CurveGraph.CurveNode.TryRemoveConnection(CurveGraph.CurveNode,CurveGraph.Connection@)">
+            <summary>
+            Attempt to remove the <see cref="T:CurveGraph.Connection"/> to the specified <paramref name="destination"/>.
+            </summary>
+            <param name="destination">The destination node to identify the <see cref="T:CurveGraph.Connection"/> with.</param>
+            <param name="removed">The removed <see cref="T:CurveGraph.Connection"/>.</param>
+            <returns>A <see cref="T:CurveGraph.Connection"/> was removed and returned.</returns>
+        </member>
+        <member name="M:CurveGraph.CurveNode.RemoveConnection(CurveGraph.CurveNode)">
+            <summary>
+            Remove the connection to the specified destination.
+            </summary>
+            <param name="destination">The destination node to identify the <see cref="T:CurveGraph.Connection"/> with.</param>
+            <returns>The removed connection.</returns>
+        </member>
+        <member name="M:CurveGraph.CurveNode.ClearConnections">
+            <summary>
+            Remove all connections.
+            </summary>
+        </member>
+        <member name="M:CurveGraph.CurveNode.Absorb(CurveGraph.CurveNode)">
+            <summary>
+            Absorb the given <see cref="T:CurveGraph.CurveNode"/> into this: move all connection of <paramref name="other"/> to this instead.
+            </summary>
+            <param name="other"></param>
+        </member>
+        <member name="M:CurveGraph.CurveNode.Remote_RemovedFromConnection(CurveGraph.CurveNode,CurveGraph.CurveNode)">
+            <summary>
+            A <see cref="T:CurveGraph.Connection"/> start or end was changed, we ware removed.
+            </summary>
+            <param name="destination">The destination by which the <see cref="T:CurveGraph.Connection"/> will be identified.</param>
+            <param name="newNode">The node that has replaced us in the connection.</param>
+            <returns>True if the connection was found, false otherwise (failed).</returns>
+        </member>
+        <member name="M:CurveGraph.CurveNode.Remote_ConnectionDestinationChanged(CurveGraph.CurveNode,CurveGraph.CurveNode)">
+            <summary>
+            A <see cref="T:CurveGraph.Connection"/> start or end was changed, we need to update the destination.
+            </summary>
+            <param name="oldDestination">Old destination</param>
+            <param name="newDestination">New destination</param>
+            <returns>True if the connection was found, false otherwise (failed).</returns>
+        </member>
+        <member name="M:CurveGraph.CurveNode.ReplaceThisInConnection(CurveGraph.CurveNode,CurveGraph.CurveNode)">
+            <summary>
+            Change the <see cref="T:CurveGraph.Connection"/> to <paramref name="destination"/> by replacing this node with <paramref name="replacement"/>.
+            </summary>
+            <param name="destination">The destination <see cref="T:CurveGraph.CurveNode"/> to lookup the <see cref="T:CurveGraph.Connection"/> for.</param>
+            <param name="replacement">The <see cref="T:CurveGraph.CurveNode"/> that will replace this in the <see cref="T:CurveGraph.Connection"/>.</param>
+            <returns>True if success, false otherwise.</returns>
+        </member>
+        <member name="M:CurveGraph.CurveNode.ReplaceDestinationInConnection(CurveGraph.CurveNode,CurveGraph.CurveNode)">
+            <summary>
+            Change the <see cref="T:CurveGraph.Connection"/> to <paramref name="oldDestination"/> to instead go to <paramref name="newDestination"/>.
+            </summary>
+            <param name="oldDestination">The destination <see cref="T:CurveGraph.CurveNode"/> to lookup the <see cref="T:CurveGraph.Connection"/> for.</param>
+            <param name="newDestination">The <see cref="T:CurveGraph.CurveNode"/> that will replace the <paramref name="oldDestination"/> in the <see cref="T:CurveGraph.Connection"/>.</param>
+            <returns>True if success, false otherwise.</returns>
+        </member>
+        <member name="M:CurveGraph.CurveNode.Split">
+            <summary>
+            Split the <see cref="T:CurveGraph.CurveNode"/> in two.
+            A new node is created, and connections are moved to it based on their outgoing directions.
+            Connections heading along our <see cref="P:CurveGraph.CurveNode.Direction"/> will stay.
+            Connections heading opposite are moved to the new Node.
+            Note: it is not guaranteed that any connections will be moved.
+            </summary>
+            <returns>The new <see cref="T:CurveGraph.CurveNode"/></returns>
+        </member>
+        <member name="M:CurveGraph.CurveNode.NetworkNodes(System.Collections.Generic.IEnumerable{CurveGraph.CurveNode})">
+            <summary>
+            All nodes reachable from this node (including this). Ordered closest first (in terms of hops).
+            </summary>
+            <remarks>
+            This <see cref="T:CurveGraph.CurveNode"/> will always be returned first.
+            </remarks>
+            <param name="additionalStartNodes">
+            Additional nodes to investigate. This will allow discovery of nodes from unconnected subnets.
+            </param>
+            <returns></returns>
+        </member>
+        <member name="M:CurveGraph.CurveNode.NetworkConnections(System.Collections.Generic.IEnumerable{CurveGraph.CurveNode})">
+            <summary>
+            All connections reachable from this node. Ordered closes first (in terms of hops).
+            </summary>
+            <remarks>
+            Connections from this node are returned first.
+            </remarks>
+            <param name="additionalStartNodes">
+            Additional nodes to investigate. This will allow discovery of connections from unconnected subnets.
+            </param>
+            <returns></returns>
+        </member>
+        <member name="M:CurveGraph.CurveNode.NetworkNodesAndConnections(System.Collections.Generic.IEnumerable{CurveGraph.CurveNode})">
+            <summary>
+            All nodes and connections reachable from this node (including this node). Ordered closest first (in terms of hops).
+            returns a <see cref="T:CurveGraph.CurveNode.NetworkObject"/> containing *either* a <see cref="T:CurveGraph.CurveNode"/> or a <see cref="T:CurveGraph.Connection"/>.
+            </summary>
+            <remarks>
+            This <see cref="T:CurveGraph.CurveNode"/> will always be returned first.
+            </remarks>
+            <returns></returns>
+        </member>
+        <member name="M:CurveGraph.CurveNode.ToString">
+            <inheritdoc />
+        </member>
+        <member name="T:CurveGraph.CurveNode.NetworkObject">
+            <summary>
+            An Entry in a CurveGraph network.
+            Contains either a <see cref="T:CurveGraph.CurveNode"/> or a <see cref="F:CurveGraph.CurveNode.NetworkObject.Connection"/>.
+            </summary>
+        </member>
+        <member name="T:CurveGraph.CurveNode.ConnectionsChangedEventArgs">
+            <summary>
+            Details for how the <see cref="F:CurveGraph.CurveNode.Connections"/> of a <see cref="F:CurveGraph.CurveNode.ConnectionsChangedEventArgs.CurveNode"/> have changed.
+            </summary>
+        </member>
+        <member name="M:CurveGraph.CurveNode.ConnectionsChangedEventArgs.ToString">
+            <inheritdoc />
+        </member>
+        <member name="T:CurveGraph.CurveSample">
+            <summary>
+            Immutable <see langword="struct"/> containing all data about a point on a <see cref="T:CurveGraph.CubicBezierCurve"/>.
+            </summary>
+        </member>
+        <member name="F:CurveGraph.CurveSample.location">
+            <summary>
+            The position of the <see cref="T:CurveGraph.CurveSample"/>.
+            </summary>
+        </member>
+        <member name="F:CurveGraph.CurveSample.velocity">
+            <summary>
+            The '<see cref="F:CurveGraph.CurveSample.velocity"/>' of the <see cref="T:CurveGraph.CurveSample"/> the <see cref="F:CurveGraph.CurveSample.velocity"/> points in the same direction as <see cref="F:CurveGraph.CurveSample.tangent"/> but the magnitude depends on the magnitude of the <see cref="P:CurveGraph.CurveNode.Direction"/>.
+            </summary>
+        </member>
+        <member name="F:CurveGraph.CurveSample.tangent">
+            <summary>
+            The <see cref="F:CurveGraph.CurveSample.tangent"/> of the <see cref="T:CurveGraph.CurveSample"/>, the <see cref="F:CurveGraph.CurveSample.tangent"/> points in the same direction as <see cref="F:CurveGraph.CurveSample.velocity"/> but is always of unit length.
+            </summary>
+        </member>
+        <member name="F:CurveGraph.CurveSample.up">
+            <summary>
+            The <see cref="F:CurveGraph.CurveSample.up"/> unit vector, which is interpolated between the <see cref="P:CurveGraph.CurveNode.Up"/> of either end.
+            </summary>
+        </member>
+        <member name="F:CurveGraph.CurveSample.scale">
+            <summary>
+            The <see cref="F:CurveGraph.CurveSample.scale"/> vector, which is interpolated between the <see cref="P:CurveGraph.CurveNode.Scale"/> of either end.
+            </summary>
+        </member>
+        <member name="F:CurveGraph.CurveSample.roll">
+            <summary>
+            The <see cref="F:CurveGraph.CurveSample.roll"/>, which is interpolated between the <see cref="P:CurveGraph.CurveNode.Roll"/> of either end.
+            </summary>
+        </member>
+        <member name="F:CurveGraph.CurveSample.distanceInCurve">
+            <summary>
+            The distance along the curve in world units.
+            </summary>
+        </member>
+        <member name="F:CurveGraph.CurveSample.timeInCurve">
+            <summary>
+            The distance along the curve as a fraction. Note that a <see cref="F:CurveGraph.CurveSample.timeInCurve"/> of o.5f does not necessarily correspond to the true half-way point.
+            </summary>
+        </member>
+        <member name="F:CurveGraph.CurveSample.curve">
+            <summary>
+            The <see cref="T:CurveGraph.CubicBezierCurve"/> that this is a sample of.
+            </summary>
+        </member>
+        <member name="P:CurveGraph.CurveSample.Rotation">
+            <summary>
+            Rotation is a look-at quaternion calculated from the tangent, roll and up vector. Mixing non zero roll and custom up vector is not advised.
+            </summary>
+        </member>
+        <member name="M:CurveGraph.CurveSample.Equals(System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="M:CurveGraph.CurveSample.GetHashCode">
+            <inheritdoc />
+        </member>
+        <member name="M:CurveGraph.CurveSample.Transformation">
+            <summary>
+            Creates a transformation <see cref="T:OpenToolkit.Mathematics.Matrix4"/> that represents the <see cref="T:CurveGraph.CurveSample"/>.
+            <see cref="F:CurveGraph.CurveSample.scale"/> is included, but the scale along the forward (Z axis) is always one.
+            The resulting matrix is Row Major.
+            Note: the result is not stored but computed each time it is needed.
+            </summary>
+        </member>
+        <member name="M:CurveGraph.CurveSample.Lerp(CurveGraph.CurveSample,CurveGraph.CurveSample,System.Single)">
+            <summary>
+            Linearly interpolates between two curve samples.
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <param name="t"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CurveGraph.CurveSample.ToString">
+            <inheritdoc />
+        </member>
+        <member name="M:CurveGraph.CurveSample.Equals(CurveGraph.CurveSample)">
+            <inheritdoc />
+        </member>
+        <member name="T:CurveGraph.Interface.ICloneForMTR`1">
+            <summary>
+            For types that implement a method to create a Clone that is suitable for multiThreaded reading.
+            That is, changes to the original don't show up and global bookKeeping events are disabled.
+            It's allowed (but not required) that events don't fire.
+            </summary>
+            <typeparam name="TConcreteType"></typeparam>
+        </member>
+        <member name="M:CurveGraph.Interface.ICloneForMTR`1.CloneForMultiThreadedReading">
+            <summary>
+            Create a copy of the object that is suitable for reading from in a multiThreaded environment.
+            Changes to the original don't show up and global bookKeeping events are disabled.
+            It's allowed (but not required) that other events also don't fire.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:CurveGraph.Interface.IConnectionCustomData">
+            <summary>
+            Interface for the <see cref="P:CurveGraph.Connection.data"/> object.
+            This interface allows the object to cause the <see cref="E:CurveGraph.Connection.Changed"/> <see langword="event"/> to be raised.
+            </summary>
+        </member>
+        <member name="E:CurveGraph.Interface.IConnectionCustomData.Changed">
+            <summary>
+            An event that fires when the CustomData has changed and the connection needs to be updated.
+            </summary>
+        </member>
+        <member name="T:CurveGraph.Interface.ICurveNodeCustomData">
+            <summary>
+            Interface for the <see cref="P:CurveGraph.CurveNode.Data"/> object.
+            This interface allows the object to cause the <see cref="E:CurveGraph.CurveNode.NodeValuesChanged"/> <see langword="event"/> to be raised.
+            </summary>
+        </member>
+        <member name="E:CurveGraph.Interface.ICurveNodeCustomData.Changed">
+            <summary>
+            An event that fires when the CustomData has changed and the <see cref="T:CurveGraph.CurveNode"/> needs to be updated.
+            The <see langword="bool"/> parameter specifies that smoothing may need to be performed.
+            </summary>
+        </member>
+    </members>
+</doc>

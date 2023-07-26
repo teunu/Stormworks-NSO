@@ -1,0 +1,1930 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Shared</name>
+    </assembly>
+    <members>
+        <member name="T:Shared.ArrayRangedWrapper">
+            <summary>
+            A wrapper for an array that exposes only a subset of that array.
+            </summary>
+        </member>
+        <member name="M:Shared.ArrayRangedWrapper.New``1(System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Create a new ArrayRange, but without having to specify the type parameter explicitly.
+            </summary>
+            <typeparam name="TData"></typeparam>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Shared.ArrayRangedWrapper.New``1(``0[])">
+            <summary>
+            Create a new ArrayRange, but without having to specify the type parameter explicitly.
+            </summary>
+            <typeparam name="TData"></typeparam>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Shared.ArrayRangedWrapper.New``1(``0[],System.Int32,System.Int32)">
+            <summary>
+            Create a new ArrayRange, but without having to specify the type parameter explicitly.
+            </summary>
+            <typeparam name="TData"></typeparam>
+            <param name="data"></param>
+            <param name="start"></param>
+            <param name="length"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Shared.ArrayRangedWrapper`1">
+            <summary>
+            A wrapper for an array that exposes only a subset of that array.
+            </summary>
+            <typeparam name="TData">The type of the elements in the array.</typeparam>
+        </member>
+        <member name="F:Shared.ArrayRangedWrapper`1.data">
+            <summary>
+            The data to be wrapped.
+            </summary>
+        </member>
+        <member name="F:Shared.ArrayRangedWrapper`1.Start">
+            <summary>
+            The index of the first element that the wrapper exposes.
+            </summary>
+        </member>
+        <member name="F:Shared.ArrayRangedWrapper`1.Length">
+            <summary>
+            The Length of the exposed segment.
+            </summary>
+        </member>
+        <member name="M:Shared.ArrayRangedWrapper`1.#ctor(`0[])">
+            <summary>
+            Create a new wrapper that exposes the entire source array.
+            </summary>
+            <param name="data">The array to wrap.</param>
+        </member>
+        <member name="M:Shared.ArrayRangedWrapper`1.#ctor(`0[],System.Int32,System.Int32)">
+            <summary>
+            Create a new wrapper that exposes a segment of the source array.
+            </summary>
+            <param name="data">The array to wrap.</param>
+            <param name="start">The index of the first available element.</param>
+            <param name="length">The amount of elements to expose.</param>
+        </member>
+        <member name="P:Shared.ArrayRangedWrapper`1.Item(System.Int32)">
+            <summary>
+            Index into the wrapped data [0..Length - 1].
+            </summary>
+            <param name="i">The 0 based index of the element in the wrapped segment.</param>
+            <returns>The value at the specified index.</returns>
+        </member>
+        <member name="P:Shared.ArrayRangedWrapper`1.Data">
+            <summary>
+            Get a copy of the wrapped data as a new Array.
+            </summary>
+        </member>
+        <member name="M:Shared.ArrayRangedWrapper`1.GetEnumerator">
+            <inheritdoc />
+        </member>
+        <member name="P:Shared.ArrayRangedWrapper`1.Count">
+            <summary>
+            The count of elements in the exposed segment. Same as <see cref="F:Shared.ArrayRangedWrapper`1.Length"/>.
+            </summary>
+        </member>
+        <member name="M:Shared.ArrayRangedWrapper`1.System#Collections#IEnumerable#GetEnumerator">
+            <inheritdoc />
+        </member>
+        <member name="T:Shared.Bounds3">
+            <summary>
+            Defines an axis-aligned bounding box.
+            </summary>
+        </member>
+        <member name="P:Shared.Bounds3.Min">
+            <summary>
+            Gets or sets the minimum boundary of the structure.
+            </summary>
+        </member>
+        <member name="P:Shared.Bounds3.Max">
+            <summary>
+            Gets or sets the maximum boundary of the structure.
+            </summary>
+        </member>
+        <member name="M:Shared.Bounds3.#ctor(System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Shared.Bounds3"/> struct.
+            When <paramref name="initEmpty"/> is specified <see cref="P:Shared.Bounds3.Min"/> and <see cref="P:Shared.Bounds3.Max"/> will be set to infinity so
+            that the <see cref="M:Shared.Bounds3.Inflate(OpenToolkit.Mathematics.Vector3)"/> operation can be used to populate the bounds.
+            </summary>
+            <param name="initEmpty"></param>
+        </member>
+        <member name="M:Shared.Bounds3.#ctor(OpenToolkit.Mathematics.Vector3,OpenToolkit.Mathematics.Vector3)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Shared.Bounds3"/> struct.
+            </summary>
+            <param name="min">The minimum point on the XY plane this box encloses.</param>
+            <param name="max">The maximum point on the XY plane this box encloses.</param>
+        </member>
+        <member name="M:Shared.Bounds3.#ctor(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Shared.Bounds3"/> struct.
+            </summary>
+            <param name="minX">The minimum X value to be enclosed.</param>
+            <param name="minY">The minimum Y value to be enclosed.</param>
+            <param name="minZ">The minimum Z value to be enclosed.</param>
+            <param name="maxX">The maximum X value to be enclosed.</param>
+            <param name="maxY">The maximum Y value to be enclosed.</param>
+            <param name="maxZ">The maximum Z value to be enclosed.</param>
+        </member>
+        <member name="P:Shared.Bounds3.Size">
+            <summary>
+            Gets or sets a vector describing the size of the Bounds3 structure.
+            </summary>
+        </member>
+        <member name="P:Shared.Bounds3.HalfSize">
+            <summary>
+            Gets or sets a vector describing half the size of the box.
+            </summary>
+        </member>
+        <member name="P:Shared.Bounds3.Center">
+            <summary>
+            Gets or sets a vector describing the center of the box.
+            </summary>
+        </member>
+        <member name="M:Shared.Bounds3.Contains(OpenToolkit.Mathematics.Vector3)">
+            <summary>
+            Returns whether the box contains the specified point (borders inclusive).
+            </summary>
+            <param name="point">The point to query.</param>
+            <returns>Whether this box contains the point.</returns>
+        </member>
+        <member name="M:Shared.Bounds3.Contains(OpenToolkit.Mathematics.Vector3,System.Boolean)">
+            <summary>
+            Returns whether the box contains the specified point (borders inclusive).
+            </summary>
+            <param name="point">The point to query.</param>
+            <param name="boundaryInclusive">
+            Whether points on the box boundary should be recognised as contained as well.
+            </param>
+            <returns>Whether this box contains the point.</returns>
+        </member>
+        <member name="M:Shared.Bounds3.Contains(Shared.Bounds3)">
+            <summary>
+            Returns whether the box contains the specified box (borders inclusive).
+            </summary>
+            <param name="other">The box to query.</param>
+            <returns>Whether this box contains the other box.</returns>
+        </member>
+        <member name="M:Shared.Bounds3.DistanceToNearestEdge(OpenToolkit.Mathematics.Vector3)">
+            <summary>
+            Returns the distance between the nearest edge and the specified point.
+            </summary>
+            <param name="point">The point to find distance for.</param>
+            <returns>The distance between the specified point and the nearest edge.</returns>
+        </member>
+        <member name="M:Shared.Bounds3.Translate(OpenToolkit.Mathematics.Vector3)">
+            <summary>
+            Translates this Bounds3 by the given amount.
+            </summary>
+            <param name="distance">The distance to translate the box.</param>
+        </member>
+        <member name="M:Shared.Bounds3.Translated(OpenToolkit.Mathematics.Vector3)">
+            <summary>
+            Returns a Bounds3 translated by the given amount.
+            </summary>
+            <param name="distance">The distance to translate the box.</param>
+            <returns>The translated box.</returns>
+        </member>
+        <member name="M:Shared.Bounds3.Scale(OpenToolkit.Mathematics.Vector3,OpenToolkit.Mathematics.Vector3)">
+            <summary>
+            Scales this Bounds3 by the given amount.
+            </summary>
+            <param name="scale">The scale to scale the box.</param>
+            <param name="anchor">The anchor to scale the box from.</param>
+        </member>
+        <member name="M:Shared.Bounds3.Scaled(OpenToolkit.Mathematics.Vector3,OpenToolkit.Mathematics.Vector3)">
+            <summary>
+            Returns a Bounds3 scaled by a given amount from an anchor point.
+            </summary>
+            <param name="scale">The scale to scale the box.</param>
+            <param name="anchor">The anchor to scale the box from.</param>
+            <returns>The scaled box.</returns>
+        </member>
+        <member name="M:Shared.Bounds3.Inflate(OpenToolkit.Mathematics.Vector3)">
+            <summary>
+            Inflate this Bounds3 to encapsulate a given point.
+            </summary>
+            <param name="point">The point to query.</param>
+        </member>
+        <member name="M:Shared.Bounds3.Inflated(OpenToolkit.Mathematics.Vector3)">
+            <summary>
+            Inflate this Bounds3 to encapsulate a given point.
+            </summary>
+            <param name="point">The point to query.</param>
+            <returns>The inflated box.</returns>
+        </member>
+        <member name="M:Shared.Bounds3.op_Equality(Shared.Bounds3,Shared.Bounds3)">
+            <summary>
+            Equality comparator.
+            </summary>
+            <param name="left">The left operand.</param>
+            <param name="right">The right operand.</param>
+        </member>
+        <member name="M:Shared.Bounds3.op_Inequality(Shared.Bounds3,Shared.Bounds3)">
+            <summary>
+            Inequality comparator.
+            </summary>
+            <param name="left">The left operand.</param>
+            <param name="right">The right operand.</param>
+        </member>
+        <member name="M:Shared.Bounds3.Equals(System.Object)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Shared.Bounds3.Equals(Shared.Bounds3)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Shared.Bounds3.GetHashCode">
+            <inheritdoc/>
+        </member>
+        <member name="M:Shared.Bounds3.ToString">
+            <inheritdoc/>
+        </member>
+        <member name="T:Shared.Bounds3i">
+            <summary>
+            Defines an axis-aligned 2d box (rectangle).
+            </summary>
+        </member>
+        <member name="P:Shared.Bounds3i.Min">
+            <summary>
+            Gets or sets the minimum boundary of the structure.
+            </summary>
+        </member>
+        <member name="P:Shared.Bounds3i.Max">
+            <summary>
+            Gets or sets the maximum boundary of the structure.
+            </summary>
+        </member>
+        <member name="M:Shared.Bounds3i.#ctor(System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Shared.Bounds3"/> struct.
+            When <paramref name="initEmpty"/> is specified <see cref="P:Shared.Bounds3i.Min"/> and <see cref="P:Shared.Bounds3i.Max"/> will be set to infinity so
+            that the <see cref="M:Shared.Bounds3i.Inflate(OpenToolkit.Mathematics.Vector3i)"/> operation can be used to populate the bounds.
+            </summary>
+            <param name="initEmpty"></param>
+        </member>
+        <member name="M:Shared.Bounds3i.#ctor(OpenToolkit.Mathematics.Vector3i,OpenToolkit.Mathematics.Vector3i)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Shared.Bounds3i"/> struct.
+            </summary>
+            <param name="min">The minimum point on the XY plane this box encloses.</param>
+            <param name="max">The maximum point on the XY plane this box encloses.</param>
+        </member>
+        <member name="M:Shared.Bounds3i.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Shared.Bounds3i"/> struct.
+            </summary>
+            <param name="minX">The minimum X value to be enclosed.</param>
+            <param name="minY">The minimum Y value to be enclosed.</param>
+            <param name="minZ">The minimum Z value to be enclosed.</param>
+            <param name="maxX">The maximum X value to be enclosed.</param>
+            <param name="maxY">The maximum Y value to be enclosed.</param>
+            <param name="maxZ">The maximum Z value to be enclosed.</param>
+        </member>
+        <member name="P:Shared.Bounds3i.Size">
+            <summary>
+            Gets a vector describing the size of the Bounds3i structure.
+            </summary>
+        </member>
+        <member name="P:Shared.Bounds3i.HalfSize">
+            <summary>
+            Gets or sets a vector describing half the size of the box.
+            </summary>
+        </member>
+        <member name="P:Shared.Bounds3i.Center">
+            <summary>
+            Gets a vector describing the center of the box.
+            </summary>
+            to avoid annoying off-by-one errors in box placement, no setter is provided for this property
+        </member>
+        <member name="M:Shared.Bounds3i.Contains(OpenToolkit.Mathematics.Vector3i)">
+            <summary>
+            Returns whether the box contains the specified point (borders inclusive).
+            </summary>
+            <param name="point">The point to query.</param>
+            <returns>Whether this box contains the point.</returns>
+        </member>
+        <member name="M:Shared.Bounds3i.Contains(OpenToolkit.Mathematics.Vector3i,System.Boolean)">
+            <summary>
+            Returns whether the box contains the specified point (borders inclusive).
+            </summary>
+            <param name="point">The point to query.</param>
+            <param name="boundaryInclusive">
+            Whether points on the box boundary should be recognised as contained as well.
+            </param>
+            <returns>Whether this box contains the point.</returns>
+        </member>
+        <member name="M:Shared.Bounds3i.Contains(Shared.Bounds3i)">
+            <summary>
+            Returns whether the box contains the specified box (borders inclusive).
+            </summary>
+            <param name="other">The box to query.</param>
+            <returns>Whether this box contains the other box.</returns>
+        </member>
+        <member name="M:Shared.Bounds3i.DistanceToNearestEdge(OpenToolkit.Mathematics.Vector3i)">
+            <summary>
+            Returns the distance between the nearest edge and the specified point.
+            </summary>
+            <param name="point">The point to find distance for.</param>
+            <returns>The distance between the specified point and the nearest edge.</returns>
+        </member>
+        <member name="M:Shared.Bounds3i.Translate(OpenToolkit.Mathematics.Vector3i)">
+            <summary>
+            Translates this Bounds3i by the given amount.
+            </summary>
+            <param name="distance">The distance to translate the box.</param>
+        </member>
+        <member name="M:Shared.Bounds3i.Translated(OpenToolkit.Mathematics.Vector3i)">
+            <summary>
+            Returns a Bounds3i translated by the given amount.
+            </summary>
+            <param name="distance">The distance to translate the box.</param>
+            <returns>The translated box.</returns>
+        </member>
+        <member name="M:Shared.Bounds3i.Scale(OpenToolkit.Mathematics.Vector3i,OpenToolkit.Mathematics.Vector3i)">
+            <summary>
+            Scales this Bounds3i by the given amount.
+            </summary>
+            <param name="scale">The scale to scale the box.</param>
+            <param name="anchor">The anchor to scale the box from.</param>
+        </member>
+        <member name="M:Shared.Bounds3i.Scaled(OpenToolkit.Mathematics.Vector3i,OpenToolkit.Mathematics.Vector3i)">
+            <summary>
+            Returns a Bounds3i scaled by a given amount from an anchor point.
+            </summary>
+            <param name="scale">The scale to scale the box.</param>
+            <param name="anchor">The anchor to scale the box from.</param>
+            <returns>The scaled box.</returns>
+        </member>
+        <member name="M:Shared.Bounds3i.Inflate(OpenToolkit.Mathematics.Vector3i)">
+            <summary>
+            Inflate this Bounds3i to encapsulate a given point.
+            </summary>
+            <param name="point">The point to query.</param>
+        </member>
+        <member name="M:Shared.Bounds3i.Inflated(OpenToolkit.Mathematics.Vector3i)">
+            <summary>
+            Inflate this Bounds3i to encapsulate a given point.
+            </summary>
+            <param name="point">The point to query.</param>
+            <returns>The inflated box.</returns>
+        </member>
+        <member name="M:Shared.Bounds3i.op_Equality(Shared.Bounds3i,Shared.Bounds3i)">
+            <summary>
+            Equality comparator.
+            </summary>
+            <param name="left">The left operand.</param>
+            <param name="right">The right operand.</param>
+        </member>
+        <member name="M:Shared.Bounds3i.op_Inequality(Shared.Bounds3i,Shared.Bounds3i)">
+            <summary>
+            Inequality comparator.
+            </summary>
+            <param name="left">The left operand.</param>
+            <param name="right">The right operand.</param>
+        </member>
+        <member name="M:Shared.Bounds3i.Equals(System.Object)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Shared.Bounds3i.Equals(Shared.Bounds3i)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Shared.Bounds3i.GetHashCode">
+            <inheritdoc/>
+        </member>
+        <member name="M:Shared.Bounds3i.ToString">
+            <inheritdoc/>
+        </member>
+        <member name="T:Shared.EnumValidator">
+            <summary>
+            Validates an enum WAY faster than <see cref="M:System.Enum.IsDefined(System.Type,System.Object)"/>.
+            </summary>
+        </member>
+        <member name="M:Shared.EnumValidator.IsDefined``1(``0)">
+            <summary>
+            Checks if the provided <paramref name="value"/> is actually part of the enum.
+            That is: there is a name in the enum that maps to that value.
+            It does not work on Flags enums: it requires that every value has a defined name.
+            </summary>
+            <typeparam name="TEnum"></typeparam>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Shared.EnumValidator`1.values">
+            <summary>
+            Sorted array of values so BinarySearch can be used.
+            </summary>
+        </member>
+        <member name="M:Shared.EnumValidator`1.IsDefined(`0)">
+            <inheritdoc cref="M:Shared.EnumValidator.IsDefined``1(``0)"/>
+        </member>
+        <member name="T:Shared.EventProperty`1">
+            <summary>
+            Represents a Property with a <see cref="E:Shared.EventProperty`1.Changed"/> event and Validation.
+            </summary>
+        </member>
+        <member name="P:Shared.EventProperty`1.Value">
+            <summary>
+            The current Value.
+            </summary>
+        </member>
+        <member name="P:Shared.EventProperty`1.Silent">
+            <summary>
+            Set the value without triggering <see cref="E:Shared.EventProperty`1.Changed"/>.
+            </summary>
+        </member>
+        <member name="P:Shared.EventProperty`1.Standard">
+            <summary>
+            Set the value and trigger <see cref="E:Shared.EventProperty`1.Changed"/>.
+            </summary>
+        </member>
+        <member name="M:Shared.ExceptionExt.ExceptionToString(System.Exception,System.Action{System.Text.StringBuilder})">
+            <summary>
+            Generate a string for an <see cref="T:System.Exception"/>, with an optional
+            formatter for extra fields.
+            </summary>
+            <param name="ex"></param>
+            <param name="customFieldsFormatterAction"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Shared.ExceptionExt.SetStackTrace(System.Exception,System.Diagnostics.StackTrace)">
+            <summary>
+            Override the normally not writable <see cref="P:System.Exception.StackTrace"/> property using optimized reflection caller.
+            </summary>
+            <param name="target">The <see cref="T:System.Exception"/> to operate on.</param>
+            <param name="stack">The <see cref="T:System.Diagnostics.StackTrace"/> to apply.</param>
+            <returns><paramref name="target"/></returns>
+        </member>
+        <member name="T:Shared.Exceptions.BinaryDataException">
+            <summary>
+            Exception thrown when interacting (loading/saving) a binary file.
+            </summary>
+        </member>
+        <member name="T:Shared.Exceptions.BinaryDataFormatException">
+            <summary>
+            Exception thrown when the file/stream format is wrong.
+            </summary>
+        </member>
+        <member name="M:Shared.Exceptions.BinaryDataFormatException.#ctor(System.Char[],System.Char[])">
+            <summary>
+            Automatically generate a message like $"Unsupported file type: '{new string(actual)}' expected: '{new string(expected)}'."
+            </summary>
+            <param name="expected"></param>
+            <param name="actual"></param>
+        </member>
+        <member name="T:Shared.Exceptions.DialectXmlLoadException">
+            <summary>
+            Exception thrown when reading a Stormworks dialect XML file. It's data includes both dialect and clean xml text.
+            </summary>
+        </member>
+        <member name="F:Shared.Exceptions.DialectXmlLoadException.DialectXml">
+            <summary>
+            The stormworks-Dialect xml that was loaded from file.
+            </summary>
+        </member>
+        <member name="F:Shared.Exceptions.DialectXmlLoadException.CompliantXml">
+            <summary>
+            The spec-compliant xml that will be read by the parser.
+            </summary>
+        </member>
+        <member name="M:Shared.Exceptions.DialectXmlLoadException.ToString">
+            <inheritdoc />
+        </member>
+        <member name="T:Shared.Exceptions.FileInteractionException">
+            <summary>
+            A General Exception used for any operation that involves a file with a known path.
+            The filePath will appear in the exception message.
+            The actual exception is typically stored inside.
+            </summary>
+        </member>
+        <member name="F:Shared.Exceptions.FileInteractionException.messageHasFilePath">
+            <summary>
+            Does the message already contain the file path.
+            </summary>
+        </member>
+        <member name="F:Shared.Exceptions.FileInteractionException.FilePath">
+            <summary>
+            The path of the file that the interaction was attempted with.
+            </summary>
+        </member>
+        <member name="M:Shared.Exceptions.FileInteractionException.#ctor(System.String,System.Exception)">
+            <summary>
+            Create a new <see cref="T:Shared.Exceptions.FileInteractionException"/> with auto generated message:
+            $"{innerException.GetType().Name} occurred reading '{filePath}'."
+            </summary>
+            <param name="filePath"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="P:Shared.Exceptions.FileInteractionException.NonFileException">
+            <summary>
+            Get the first non <see cref="T:Shared.Exceptions.FileInteractionException"/> by traversing <see cref="P:System.Exception.InnerException"/>.
+            </summary>
+        </member>
+        <member name="M:Shared.Exceptions.FileInteractionException.ToString">
+            <inheritdoc />
+        </member>
+        <member name="T:Shared.Exceptions.InvalidValueException">
+            <summary>
+            This exception is thrown when an attempt was made to set a invalid value.
+            When this exception is thrown the object guarantees to remain in a valid state.
+            </summary>
+        </member>
+        <member name="T:Shared.Exceptions.PlyDataException">
+            <summary>
+            Exception thrown when interacting (loading/saving) a .ply file.
+            </summary>
+        </member>
+        <member name="F:Shared.Exceptions.PlyDataException.LineNumber">
+            <summary>
+            The line in the .ply file where the error occurred.
+            </summary>
+        </member>
+        <member name="T:Shared.Exceptions.XmlDataException">
+            <summary>
+            Exception thrown when reading xml file and the file parses correctly, but the data inside is wrong.
+            </summary>
+        </member>
+        <member name="F:Shared.Exceptions.XmlDataException.element">
+            <summary>
+            The element that contained incorrect data, may be null if unknown.
+            </summary>
+        </member>
+        <member name="M:Shared.Exceptions.XmlDataException.#ctor(System.Xml.Linq.XElement,System.Exception)">
+            <summary>
+            Get a new <see cref="T:Shared.Exceptions.XmlDataException"/> with auto formatted message like:
+            $"{innerException.GetType().Name} occurred getting data from {element.Name} at {element.GetLineInfoString()}".
+            </summary>
+            <param name="element"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Shared.Exceptions.XmlDataException.AutoFormatDataName(System.String,System.Xml.Linq.XElement,System.Exception)">
+            <summary>
+            Get a new <see cref="T:Shared.Exceptions.XmlDataException"/> with auto formatted message like:
+            $"{innerException.GetType().Name} occurred getting '{dataName}' from {element.Name} at {element.GetLineInfoString()}".
+            </summary>
+            <param name="dataName">The name of the DataType to put in the message</param>
+            <param name="element"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:Shared.Extensions.XElementExt.GetLineInfoString(System.Xml.Linq.XElement)">
+            <summary>
+            Get a string like "line {number} position {number}." or "position information not available."
+            </summary>
+            <param name="element"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Shared.IEnumerableExt.EnumerateWithIndices``1(System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Enumerate over <param name="self"></param> with an included index.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="self"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Shared.IEnumerableExt.CommonPrefix``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Enumerates the common prefix of two <see cref="T:System.Collections.Generic.IEnumerable`1"/>s.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="source1"></param>
+            <param name="source2"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Shared.LazyCache`2">
+            <summary>
+            Cache that guarantees <see cref="F:Shared.LazyCache`2.CreateEntry"/> will be called exactly once for each new key.
+            </summary>
+            <typeparam name="TKey"></typeparam>
+            <typeparam name="TValue"></typeparam>
+        </member>
+        <member name="F:Shared.LazyCache`2.cache">
+            <summary>
+            The underlying collection.
+            </summary>
+        </member>
+        <member name="F:Shared.LazyCache`2.CreateEntry">
+            <summary>
+            The Func used to create the entry for a given Key.
+            When this is used <see cref="M:Shared.LazyCache`2.DefaultCreateEntryLazy(`0)"/> will be used
+            to transform the Value returned by this Func into a <see cref="T:System.Lazy`1"/>.
+            </summary>
+        </member>
+        <member name="F:Shared.LazyCache`2.CreateEntryLazy">
+            <summary>
+            The Func used to create a <see cref="T:System.Lazy`1"/> for a given key.
+            </summary>
+        </member>
+        <member name="F:Shared.LazyCache`2.UpdateEntry">
+            <summary>
+            The Func used to update the <see cref="T:System.Lazy`1"/> for a given key.
+            </summary>
+        </member>
+        <member name="M:Shared.LazyCache`2.#ctor(System.Func{`0,`1})">
+            <summary>
+            Create a new <see cref="T:Shared.LazyCache`2"/> using a valueFactory that creates non-lazy <typeparamref name="TValue"/>s.
+            </summary>
+            <remarks>
+            <see cref="F:Shared.LazyCache`2.CreateEntryLazy"/> will be <see cref="M:Shared.LazyCache`2.DefaultCreateEntryLazy(`0)"/> and <see cref="F:Shared.LazyCache`2.UpdateEntry"/> will be <see cref="M:Shared.LazyCache`2.DefaultUpdateEntry(`0,System.Lazy{`1},System.Lazy{`1})"/>.
+            </remarks>
+            <param name="createEntry"></param>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:Shared.LazyCache`2.#ctor(System.Func{`0,`1},System.Func{`0,System.Lazy{`1},System.Lazy{`1},System.Lazy{`1}})">
+            <summary>
+            Create a new <see cref="T:Shared.LazyCache`2"/> using a valueFactory that creates non-lazy <typeparamref name="TValue"/>s,
+            and a Func for updating entries.
+            </summary>
+            <remarks>
+            <see cref="F:Shared.LazyCache`2.CreateEntryLazy"/> will be <see cref="M:Shared.LazyCache`2.DefaultCreateEntryLazy(`0)"/>.
+            </remarks>
+            <param name="createEntry"></param>
+            <param name="updateEntry"></param>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:Shared.LazyCache`2.#ctor(System.Func{`0,System.Lazy{`1}})">
+            <summary>
+            Create a new <see cref="T:Shared.LazyCache`2"/> using a value factory that returns a <see cref="T:System.Lazy`1"/> directly.
+            </summary>
+            <remarks>
+            <see cref="F:Shared.LazyCache`2.UpdateEntry"/> will be <see cref="M:Shared.LazyCache`2.DefaultUpdateEntry(`0,System.Lazy{`1},System.Lazy{`1})"/>.
+            </remarks>
+            <param name="createEntryLazy"></param>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:Shared.LazyCache`2.#ctor(System.Func{`0,System.Lazy{`1}},System.Func{`0,System.Lazy{`1},System.Lazy{`1},System.Lazy{`1}})">
+            <summary>
+            Create a new <see cref="T:Shared.LazyCache`2"/> using a value factory that returns a <see cref="T:System.Lazy`1"/> directly,
+            and a Func for updating entries.
+            </summary>
+            <param name="createEntryLazy"></param>
+            <param name="updateEntry"></param>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:Shared.LazyCache`2.DefaultCreateEntryLazy(`0)">
+            <summary>
+            The default method to create a <see cref="T:System.Lazy`1"/> from the value returned by <see cref="F:Shared.LazyCache`2.CreateEntry"/>.
+            This method simply creates a new <see cref="T:System.Lazy`1"/> with <see cref="F:System.Threading.LazyThreadSafetyMode.ExecutionAndPublication"/>.
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Shared.LazyCache`2.DefaultUpdateEntry(`0,System.Lazy{`1},System.Lazy{`1})">
+            <summary>
+            The default method to update a value.
+            This method simply returns <paramref name="newValue"/>.
+            </summary>
+            <param name="key">The key for this entry.</param>
+            <param name="oldValue">The old value that will be replaced.</param>
+            <param name="newValue">The new value.</param>
+            <returns>The new value.</returns>
+        </member>
+        <member name="M:Shared.LazyCache`2.GetOrAdd(`0)">
+            <summary>
+            Returns the <typeparamref name="TValue"/> for the <paramref name="key"/>,
+            or <see langword="null"/> if that is what was stored.
+            If <see cref="F:Shared.LazyCache`2.CreateEntry"/> throws and <see cref="T:System.Exception"/> it will appear here.
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Shared.LazyCache`2.TryGet(`0,`1@)">
+            <summary>
+            Try to retrieve the <typeparamref name="TValue"/> for this <paramref name="key"/>.
+            returns <see langword="true"/> if <paramref name="key"/> exists.
+            Note that <paramref name="result"/> could still be <see langword="null"/> if that is what was stored.
+            </summary>
+            <param name="key"></param>
+            <param name="result"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Shared.LazyCache`2.TryGetLazy(`0,System.Lazy{`1}@)">
+            <summary>
+            Try to retrieve the <see cref="T:System.Lazy`1"/> for <paramref name="key"/>.
+            returns <see langword="true"/> if <paramref name="key"/> exists.
+            Note that <paramref name="result"/> could be a <see cref="T:System.Lazy`1"/> holding a value of <see langword="null"/>.
+            </summary>
+            <param name="key"></param>
+            <param name="result"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Shared.LazyCache`2.AddOrUpdate(`0,`1)">
+            <summary>
+            Add or update the <paramref name="value"/> for the given <paramref name="key"/>.
+            <paramref name="value"/> may be <see langword="null"/>.
+            </summary>
+            <param name="key"></param>
+            <param name="value">The value to insert, or <see langword="null"/></param>
+        </member>
+        <member name="M:Shared.LazyCache`2.TryAdd(`0,`1)">
+            <summary>
+            Try to add the <paramref name="key"/>, <paramref name="value"/> pair.
+            Returns <see langword="true"/> if it didn't exist yet and was added,
+            <see langword="false"/> otherwise.
+            </summary>
+            <param name="key"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Shared.LazyCache`2.TryRemove(`0,`1@)">
+            <summary>
+            Try to remove the entry for <paramref name="key"/>.
+            Returns <see langword="true"/> if <paramref name="key"/> existed and was removed.
+            Note that <paramref name="result"/> could still be <see langword="null"/> if that 'value' was stored.
+            </summary>
+            <param name="key"></param>
+            <param name="result"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Shared.LazyCache`2.TryRemoveLazy(`0,System.Lazy{`1}@)">
+            <summary>
+            Try to remove the <see cref="T:System.Lazy`1"/> for <paramref name="key"/>.
+            returns <see langword="true"/> if <paramref name="key"/> existed and was removed.
+            Note that <paramref name="result"/> could be a <see cref="T:System.Lazy`1"/> holding a value of <see langword="null"/>.
+            </summary>
+            <param name="key"></param>
+            <param name="result"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Shared.LazyCache`2.Clear">
+            <summary>
+            Remove all entries from the Cache.
+            </summary>
+        </member>
+        <member name="M:Shared.LazyCache`2.ContainsKey(`0)">
+            <summary>
+            Check if the cache contains an entry for <paramref name="key"/>.
+            Note that the value that <paramref name="key"/> points to could still be <see langword="null"/> if that is what was stored.
+            </summary>
+            <param name="key"></param>
+            <returns><see langword="true"/> if the <paramref name="key"/> has an associated value, <see langword="false"/> otherwise.</returns>
+        </member>
+        <member name="M:Shared.LazyCache`2.GetOrAddAsync(`0)">
+            <summary>
+            Returns the <typeparamref name="TValue"/> for the <paramref name="key"/>,
+            or <see langword="null"/> if that is what was stored.
+            If <see cref="F:Shared.LazyCache`2.CreateEntry"/> throws and <see cref="T:System.Exception"/> it will appear here.
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Shared.LazyCache`2.TryGetAsync(`0)">
+            <summary>
+            Try to retrieve the <typeparamref name="TValue"/> for this <paramref name="key"/>.
+            returns <see langword="true"/> if <paramref name="key"/> exists.
+            Note that the resulting value could still be <see langword="null"/> if that is what was stored.
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Shared.LazyCache`2.TryRemoveAsync(`0)">
+            <summary>
+            Try to remove the entry for <paramref name="key"/>.
+            Returns <see langword="true"/> if <paramref name="key"/> existed and was removed.
+            Note that result could still be <see langword="null"/> if that is what was stored.
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Shared.LazyCache`2.Count">
+            <inheritdoc cref="P:System.Collections.Concurrent.ConcurrentDictionary`2.Count"/>
+        </member>
+        <member name="P:Shared.LazyCache`2.IsEmpty">
+            <inheritdoc cref="P:System.Collections.Concurrent.ConcurrentDictionary`2.IsEmpty"/>
+        </member>
+        <member name="P:Shared.LazyCache`2.Keys">
+            <inheritdoc cref="P:System.Collections.Concurrent.ConcurrentDictionary`2.Keys"/>
+        </member>
+        <member name="P:Shared.LazyCache`2.Values">
+            <summary>
+            A collection that contains the values in the <see cref="T:Shared.LazyCache`2"/>.
+            </summary>
+        </member>
+        <member name="P:Shared.LazyCache`2.LazyValues">
+            <summary>
+            A collection that contains the <see cref="T:System.Lazy`1"/> values in the <see cref="T:Shared.LazyCache`2"/>.
+            </summary>
+        </member>
+        <member name="M:Shared.LazyCache`2.GetEnumerator">
+            <summary>
+            Returns an enumerator that iterates through the <see cref="T:Shared.LazyCache`2"/>.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Shared.LazyCache`2.GetLazyEnumerator">
+            <inheritdoc cref="M:System.Collections.Concurrent.ConcurrentDictionary`2.GetEnumerator"/>
+        </member>
+        <member name="T:Shared.LazyCacheExtension">
+            <summary>
+            Contains some Methods that due to language constraints cannot exist as a member of the <see cref="T:Shared.LazyCache`2"/> class itself.
+            </summary>
+        </member>
+        <member name="M:Shared.LazyCacheExtension.ContainsKeyWithNonNullValue``2(Shared.LazyCache{``0,``1},``0)">
+            <summary>
+            Check if the <paramref name="cache"/> contains a value for <paramref name="key"/> and that value is not <see langword="null"/>.
+            </summary>
+            <typeparam name="TKey">The type of the Key</typeparam>
+            <typeparam name="TValue">The type of the Value</typeparam>
+            <param name="cache">The <see cref="T:Shared.LazyCache`2"/> instance to work with.</param>
+            <param name="key">The key to check.</param>
+            <returns><see langword="true"/> if the <paramref name="key"/> has an associated value and that value is not <see langword="null"/>.
+            <see langword="false"/> otherwise.</returns>
+        </member>
+        <member name="M:Shared.LazyCacheExtension.ContainsKeyWithNonNullValueAsync``2(Shared.LazyCache{``0,``1},``0)">
+            <summary>
+            Check if the <paramref name="cache"/> contains a value for <paramref name="key"/> and that value is not <see langword="null"/>.
+            </summary>
+            <typeparam name="TKey">The type of the Key</typeparam>
+            <typeparam name="TValue">The type of the Value</typeparam>
+            <param name="cache">The <see cref="T:Shared.LazyCache`2"/> instance to work with.</param>
+            <param name="key">The key to check.</param>
+            <returns><see langword="true"/> if the <paramref name="key"/> has an associated value and that value is not <see langword="null"/>.
+            <see langword="false"/> otherwise.</returns>
+        </member>
+        <member name="T:Shared.NullLastComparer`1">
+            <summary>
+            Compares using the default comparer, except that <see langword="null"/> is ordered last instead of first.
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="F:Shared.NullLastComparer`1.Comparer">
+            <summary>
+            The Comparer instance. Can be shared across Threads without limitation.
+            </summary>
+        </member>
+        <member name="M:Shared.NullLastComparer`1.Compare(System.Nullable{`0},System.Nullable{`0})">
+            <inheritdoc />
+        </member>
+        <member name="M:Shared.PathHelper.GetSolutionDirectoryOrCurrent(System.String)">
+            <summary>
+            Searches for the solution directory, if not found returns the current directory.
+            </summary>
+            <param name="currentPath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Shared.PathHelper.GetRelativePath(System.String,System.String)">
+            <summary>
+            Creates a relative path from one file or folder to another.
+            </summary>
+            <param name="fromPath">Contains the directory that defines the start of the relative path.</param>
+            <param name="toPath">Contains the path that defines the endpoint of the relative path.</param>
+            <returns>The relative path from the start directory to the end path.</returns>
+            <exception cref="T:System.ArgumentNullException"><paramref name="fromPath"/> or <paramref name="toPath"/> is <c>null</c>.</exception>
+            <exception cref="T:System.UriFormatException"></exception>
+            <exception cref="T:System.InvalidOperationException"></exception>
+        </member>
+        <member name="M:Shared.PathHelper.GetFilePathWithoutExtension(System.String)">
+            <summary>
+            Returns the full filePath, except the extension.
+            </summary>
+            <param name="filePath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Shared.PathHelper.NormalizeDirectorySeparator(System.String)">
+            <summary>
+            Normalize Directory separator characters so the path works on all operating systems.
+            Windows accepts both slashes, Linux only forward slash '/' so that is used.
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Shared.QuaternionExt.FromLookAt(OpenToolkit.Mathematics.Vector3,OpenToolkit.Mathematics.Vector3)">
+            <summary>
+            Create a quaternion that looks in <paramref name="direction"/> with <paramref name="up"/> as the up vector.
+            Both should be normalized vectors.
+            </summary>
+            <param name="direction">Normalized direction vector.</param>
+            <param name="up">Normalized up vector.</param>
+            <returns>A Quaternion that represents the direction.</returns>
+        </member>
+        <member name="M:Shared.QuaternionExt.FromDirectionVectors(OpenToolkit.Mathematics.Vector3,OpenToolkit.Mathematics.Vector3,OpenToolkit.Mathematics.Vector3)">
+            <summary>
+            Creates a <see cref="T:OpenToolkit.Mathematics.Quaternion"/> that represents the rotation from <paramref name="fromDirection"/> to <paramref name="toDirection"/>.
+            All inputs must be normalized vectors.
+            </summary>
+            <param name="fromDirection">Normalized starting direction.</param>
+            <param name="toDirection">Normalized target direction.</param>
+            <param name="up">Normalized up vector for the result.</param>
+            <returns>The equivalent <see cref="T:OpenToolkit.Mathematics.Quaternion"/>.</returns>
+        </member>
+        <member name="M:Shared.QuaternionExt.AngleBetween(OpenToolkit.Mathematics.Quaternion,OpenToolkit.Mathematics.Quaternion)">
+            <summary>
+            Returns the angle in radians between <paramref name="a"/> and <paramref name="b"/>.
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <returns>Signed Angle in radians</returns>
+        </member>
+        <member name="M:Shared.QuaternionExt.AngleFromMultipleOf(System.Single,System.Single)">
+            <summary>
+            Returns the distance <paramref name="angle"/> is away from any integer multiple of <paramref name="alignment"/>.
+            </summary>
+            <param name="angle"></param>
+            <param name="alignment"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Shared.ReadOnlySet`1">
+            <summary>
+            Wrapper around an <see cref="T:System.Collections.Generic.ISet`1"/> that only allows read operations.
+            Note that the owner of the underlying <see cref="T:System.Collections.Generic.ISet`1"/> can still modify it, and those changes will be reflected by this wrapper.
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:Shared.ReadOnlySet`1.#ctor(System.Collections.Generic.ISet{`0})">
+            <summary>
+            Create a new wrapper around <paramref name="set"/>.
+            </summary>
+            <param name="set"></param>
+        </member>
+        <member name="M:Shared.ReadOnlySet`1.GetEnumerator">
+            <inheritdoc />
+        </member>
+        <member name="M:Shared.ReadOnlySet`1.System#Collections#IEnumerable#GetEnumerator">
+            <inheritdoc />
+        </member>
+        <member name="M:Shared.ReadOnlySet`1.System#Collections#Generic#ICollection{T}#Add(`0)">
+            <summary>
+            Not supported.
+            </summary>
+            <param name="item"></param>
+            <exception cref="T:System.NotSupportedException"></exception>
+        </member>
+        <member name="M:Shared.ReadOnlySet`1.UnionWith(System.Collections.Generic.IEnumerable{`0})">
+            <summary>
+            Not supported.
+            </summary>
+            <param name="other"></param>
+            <exception cref="T:System.NotSupportedException"></exception>
+        </member>
+        <member name="M:Shared.ReadOnlySet`1.IntersectWith(System.Collections.Generic.IEnumerable{`0})">
+            <summary>
+            Not supported.
+            </summary>
+            <param name="other"></param>
+            <exception cref="T:System.NotSupportedException"></exception>
+        </member>
+        <member name="M:Shared.ReadOnlySet`1.ExceptWith(System.Collections.Generic.IEnumerable{`0})">
+            <summary>
+            Not supported.
+            </summary>
+            <param name="other"></param>
+            <exception cref="T:System.NotSupportedException"></exception>
+        </member>
+        <member name="M:Shared.ReadOnlySet`1.SymmetricExceptWith(System.Collections.Generic.IEnumerable{`0})">
+            <summary>
+            Not supported.
+            </summary>
+            <param name="item"></param>
+            <exception cref="T:System.NotSupportedException"></exception>
+        </member>
+        <member name="M:Shared.ReadOnlySet`1.IsSubsetOf(System.Collections.Generic.IEnumerable{`0})">
+            <inheritdoc />
+        </member>
+        <member name="M:Shared.ReadOnlySet`1.IsSupersetOf(System.Collections.Generic.IEnumerable{`0})">
+            <inheritdoc />
+        </member>
+        <member name="M:Shared.ReadOnlySet`1.IsProperSupersetOf(System.Collections.Generic.IEnumerable{`0})">
+            <inheritdoc />
+        </member>
+        <member name="M:Shared.ReadOnlySet`1.IsProperSubsetOf(System.Collections.Generic.IEnumerable{`0})">
+            <inheritdoc />
+        </member>
+        <member name="M:Shared.ReadOnlySet`1.Overlaps(System.Collections.Generic.IEnumerable{`0})">
+            <inheritdoc />
+        </member>
+        <member name="M:Shared.ReadOnlySet`1.SetEquals(System.Collections.Generic.IEnumerable{`0})">
+            <inheritdoc />
+        </member>
+        <member name="M:Shared.ReadOnlySet`1.Add(`0)">
+            <summary>
+            Not supported.
+            </summary>
+            <param name="item"></param>
+            <exception cref="T:System.NotSupportedException"></exception>
+        </member>
+        <member name="M:Shared.ReadOnlySet`1.Clear">
+            <summary>
+            Not supported.
+            </summary>
+            <exception cref="T:System.NotSupportedException"></exception>
+        </member>
+        <member name="M:Shared.ReadOnlySet`1.Contains(`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Shared.ReadOnlySet`1.CopyTo(`0[],System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Shared.ReadOnlySet`1.Remove(`0)">
+            <summary>
+            Not supported.
+            </summary>
+            <param name="item"></param>
+            <exception cref="T:System.NotSupportedException"></exception>
+        </member>
+        <member name="P:Shared.ReadOnlySet`1.Count">
+            <summary>
+            The number of elements in the <see cref="T:Shared.ReadOnlySet`1"/>.
+            </summary>
+        </member>
+        <member name="P:Shared.ReadOnlySet`1.IsReadOnly">
+            <inheritdoc />
+        </member>
+        <member name="M:Shared.RWLookup`2.GetEnumerator">
+            <inheritdoc />
+        </member>
+        <member name="M:Shared.RWLookup`2.System#Collections#IEnumerable#GetEnumerator">
+            <inheritdoc />
+        </member>
+        <member name="M:Shared.RWLookup`2.Grouping`2.GetEnumerator">
+            <inheritdoc />
+        </member>
+        <member name="M:Shared.RWLookup`2.Grouping`2.System#Collections#IEnumerable#GetEnumerator">
+            <inheritdoc />
+        </member>
+        <member name="M:Shared.RWLookup`2.Grouping`2.Add(`3)">
+            <inheritdoc />
+        </member>
+        <member name="M:Shared.RWLookup`2.Grouping`2.Clear">
+            <inheritdoc />
+        </member>
+        <member name="M:Shared.RWLookup`2.Grouping`2.Contains(`3)">
+            <inheritdoc />
+        </member>
+        <member name="M:Shared.RWLookup`2.Grouping`2.CopyTo(`3[],System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Shared.RWLookup`2.Grouping`2.Remove(`3)">
+            <inheritdoc />
+        </member>
+        <member name="P:Shared.RWLookup`2.Grouping`2.Count">
+            <inheritdoc />
+        </member>
+        <member name="P:Shared.RWLookup`2.Grouping`2.IsReadOnly">
+            <inheritdoc />
+        </member>
+        <member name="M:Shared.RWLookup`2.Grouping`2.IndexOf(`3)">
+            <inheritdoc />
+        </member>
+        <member name="M:Shared.RWLookup`2.Grouping`2.Insert(System.Int32,`3)">
+            <inheritdoc />
+        </member>
+        <member name="M:Shared.RWLookup`2.Grouping`2.RemoveAt(System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="P:Shared.RWLookup`2.Grouping`2.Item(System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Shared.Serialization.ISerializationEventReceiver.BeforeSerialize">
+            <summary>
+            Called just before serialization, on the root object.
+            </summary>
+        </member>
+        <member name="M:Shared.Serialization.ISerializationEventReceiver.AfterDeserialize(System.String)">
+            <summary>
+            Called just after deserialization, on the root object.
+            </summary>
+            <param name="filePath">The path from where the object was deserialized</param>
+        </member>
+        <member name="T:Shared.Serialization.OverrideXml">
+            <summary>
+            Creates XmlAttributeOverrides instance using an easy-to-use fluent interface
+            </summary>
+        </member>
+        <member name="M:Shared.Serialization.OverrideXml.Override(System.Type)">
+            <summary>
+            Specifies that subsequent attributes wil be applied to type t
+            </summary>
+        </member>
+        <member name="M:Shared.Serialization.OverrideXml.Override``1">
+            <summary>
+            Specifies that subsequent attributes wil be applied to type T
+            </summary>
+        </member>
+        <member name="M:Shared.Serialization.OverrideXml.Member(System.String)">
+            <summary>
+            Specifies that subsequent attributes wil be applied to the given member of the current type
+            </summary>
+        </member>
+        <member name="M:Shared.Serialization.OverrideXml.Commit">
+            <summary>
+            Constructs XmlAttributeOverrides instance from previously specified attributes
+            </summary>
+        </member>
+        <member name="M:Shared.Serialization.OverrideXml.XmlRoot(System.String)">
+            <summary>
+            Adds [XmlRoot(elementName)] attribute to current type or member
+            </summary>
+        </member>
+        <member name="M:Shared.Serialization.OverrideXml.Attr(System.Xml.Serialization.XmlRootAttribute)">
+            <summary>
+            Adds specified instance of XmlRootAttribute for current type or member
+            </summary>
+        </member>
+        <member name="M:Shared.Serialization.OverrideXml.XmlAttribute">
+            <summary>
+            Adds [XmlAttribute] attribute to current type or member
+            </summary>
+        </member>
+        <member name="M:Shared.Serialization.OverrideXml.XmlAttribute(System.String)">
+            <summary>
+            Adds [XmlAttribute(name)] attribute to current type or member
+            </summary>
+        </member>
+        <member name="M:Shared.Serialization.OverrideXml.Attr(System.Xml.Serialization.XmlAttributeAttribute)">
+            <summary>
+            Adds specified instance of XmlAttributeAttribute to current type or member
+            </summary>
+        </member>
+        <member name="M:Shared.Serialization.OverrideXml.XmlElement">
+            <summary>
+            Adds [XmlElement] attribute to current type or member
+            </summary>
+        </member>
+        <member name="M:Shared.Serialization.OverrideXml.XmlElement(System.String)">
+            <summary>
+            Adds [XmlElement(name)] attribute to current type or member
+            </summary>
+        </member>
+        <member name="M:Shared.Serialization.OverrideXml.Attr(System.Xml.Serialization.XmlElementAttribute)">
+            <summary>
+            Adds specified instance of XmlElementAttribute to current type or member
+            </summary>
+        </member>
+        <member name="M:Shared.Serialization.OverrideXml.XmlIgnore(System.Boolean)">
+            <summary>
+            Adds [XmlIgnore] attribute to current type or member
+            </summary>
+            <param name="bIgnore"></param>
+        </member>
+        <member name="M:Shared.Serialization.OverrideXml.XmlAnyAttribute">
+            <summary>
+            Adds [XmlAnyAttribute] attribute to current type or member
+            </summary>
+        </member>
+        <member name="M:Shared.Serialization.OverrideXml.XmlAnyElement">
+            <summary>
+            Adds [XmlAnyElement] attribute to current type or member
+            </summary>
+        </member>
+        <member name="M:Shared.Serialization.OverrideXml.XmlAnyElement(System.String)">
+            <summary>
+            Adds [XmlAnyElement(name)] attribute to current type or member
+            </summary>
+        </member>
+        <member name="M:Shared.Serialization.OverrideXml.XmlAnyElement(System.String,System.String)">
+            <summary>
+            Adds [XmlAnyElement(name,ns)] attribute to current type or member
+            </summary>
+        </member>
+        <member name="M:Shared.Serialization.OverrideXml.Attr(System.Xml.Serialization.XmlAnyElementAttribute)">
+            <summary>
+            Adds specified instance of XmlAnyElementAttribute to current type or member
+            </summary>
+        </member>
+        <member name="M:Shared.Serialization.OverrideXml.XmlArray">
+            <summary>
+            Adds [XmlArray] attribute to current type or memeber
+            </summary>
+        </member>
+        <member name="M:Shared.Serialization.OverrideXml.XmlArray(System.String)">
+            <summary>
+            Adds [XmlArray(elementName)] attribute to current type or memeber
+            </summary>
+        </member>
+        <member name="M:Shared.Serialization.OverrideXml.Attr(System.Xml.Serialization.XmlArrayAttribute)">
+            <summary>
+            Adds specified instance of XmlArrayAttribute to current type or memeber
+            </summary>
+        </member>
+        <member name="M:Shared.Serialization.OverrideXml.XmlArrayItem">
+            <summary>
+            Adds [XmlArrayItem] attribute to current type or member
+            </summary>
+        </member>
+        <member name="M:Shared.Serialization.OverrideXml.XmlArrayItem(System.String)">
+            <summary>
+            Adds [XmlArrayItem(elementName)] attribute to current type or member
+            </summary>
+        </member>
+        <member name="M:Shared.Serialization.OverrideXml.Attr(System.Xml.Serialization.XmlArrayItemAttribute)">
+            <summary>
+            Adds specified instance of XmlArrayItemAttribute to current type or member
+            </summary>
+        </member>
+        <member name="M:Shared.Serialization.OverrideXml.XmlDefaultValue(System.Object)">
+            <summary>
+            Adds [XmlDefault(value)] attribute to current type or member
+            </summary>
+        </member>
+        <member name="M:Shared.Serialization.OverrideXml.Xmlns(System.Boolean)">
+            <summary>
+            Applies or removes [XmlNamespaceDeclarations] attribute from current type or member
+            </summary>
+        </member>
+        <member name="M:Shared.Serialization.OverrideXml.XmlText">
+            <summary>
+            Adds [XmlText] attribute to current type or member
+            </summary>
+        </member>
+        <member name="M:Shared.Serialization.OverrideXml.XmlType(System.String)">
+            <summary>
+            Adds [XmlType(typeName)] attribute to current type or member
+            </summary>
+        </member>
+        <member name="M:Shared.Serialization.OverrideXml.Attr(System.Xml.Serialization.XmlTypeAttribute)">
+            <summary>
+            Adds specified instance of XmlTypeAttribute to current type or member
+            </summary>
+        </member>
+        <member name="M:Shared.Serialization.SerializationHelper.GetSerializer(System.Type)">
+            <summary>
+            Get a serializer for <paramref name="type"/> with overrides already applied.
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Shared.Serialization.SerializationHelper.Pure">
+            <summary>
+            Serialize using <see cref="T:System.Xml.Serialization.XmlSerializer"/>.
+            </summary>
+        </member>
+        <member name="M:Shared.Serialization.SerializationHelper.Pure.LoadFromFile``1(System.String)">
+            <summary>
+            Read a <typeparamref name="TSerialized"/> from <paramref name="filePath"/> using <see cref="T:System.Xml.Serialization.XmlSerializer"/>
+            </summary>
+            <typeparam name="TSerialized"></typeparam>
+            <param name="filePath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Shared.Serialization.SerializationHelper.Pure.LoadFromStream``1(System.IO.Stream,System.String)">
+            <summary>
+            Read a <typeparamref name="TSerialized"/> from <param name="stream"></param> optionally provide the original file path in <paramref name="filePath"/> to populate exception info using <see cref="T:System.Xml.Serialization.XmlSerializer"/>
+            </summary>
+            <typeparam name="TSerialized"></typeparam>
+            <param name="stream"></param>
+            <param name="filePath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Shared.Serialization.SerializationHelper.Pure.SaveToFile``1(``0,System.String)">
+            <summary>
+            Write a <typeparamref name="TSerialized"/> to <paramref name="filePath"/> using <see cref="T:System.Xml.Serialization.XmlSerializer"/>
+            </summary>
+            <typeparam name="TSerialized"></typeparam>
+            <param name="filePath"></param>
+            <param name="data">The object to be serialized</param>
+            <returns></returns>
+        </member>
+        <member name="M:Shared.Serialization.SerializationHelper.Pure.SaveToStream``1(System.IO.Stream,``0)">
+            <summary>
+            Write a <typeparamref name="TSerialized"/> to <paramref name="outputStream"/> using <see cref="T:System.Xml.Serialization.XmlSerializer"/>
+            </summary>
+            <typeparam name="TSerialized"></typeparam>
+            <param name="outputStream">The stream to write to</param>
+            <param name="data">The object to be serialized</param>
+            <returns></returns>
+        </member>
+        <member name="T:Shared.Serialization.SerializationHelper.Dialect">
+            <summary>
+            Serialize using <see cref="T:System.Xml.Serialization.XmlSerializer"/> with Stormworks Dialect Transformation.
+            </summary>
+        </member>
+        <member name="M:Shared.Serialization.SerializationHelper.Dialect.LoadFromFile``1(System.String)">
+            <summary>
+            Read a <typeparamref name="TSerialized"/> from <paramref name="filePath"/> using <see cref="T:System.Xml.Serialization.XmlSerializer"/>
+            </summary>
+            <typeparam name="TSerialized"></typeparam>
+            <param name="filePath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Shared.Serialization.SerializationHelper.Dialect.LoadFromStream``1(System.IO.Stream,System.String)">
+            <summary>
+            Read a <typeparamref name="TSerialized"/> from <param name="inputStream"></param> optionally provide the original file path in <paramref name="filePath"/> to populate exception info using <see cref="T:System.Xml.Serialization.XmlSerializer"/>
+            </summary>
+            <typeparam name="TSerialized"></typeparam>
+            <param name="inputStream"></param>
+            <param name="filePath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Shared.Serialization.SerializationHelper.Dialect.SaveToFile``1(``0,System.String)">
+            <summary>
+            Write a <typeparamref name="TSerialized"/> to <paramref name="filePath"/> using <see cref="T:System.Xml.Serialization.XmlSerializer"/>
+            </summary>
+            <typeparam name="TSerialized"></typeparam>
+            <param name="filePath"></param>
+            <param name="data">The object to be serialized</param>
+            <returns></returns>
+        </member>
+        <member name="M:Shared.Serialization.SerializationHelper.Dialect.SaveToStream``1(System.IO.Stream,``0)">
+            <summary>
+            Write a <typeparamref name="TSerialized"/> to <paramref name="outputStream"/> using <see cref="T:System.Xml.Serialization.XmlSerializer"/>
+            </summary>
+            <typeparam name="TSerialized"></typeparam>
+            <param name="outputStream">The stream to write to</param>
+            <param name="data">The object to be serialized</param>
+            <returns></returns>
+        </member>
+        <member name="T:Shared.Serialization.SerializationHelper.DContract">
+            <summary>
+            Serialize using <see cref="T:System.Runtime.Serialization.DataContractSerializer"/>.
+            </summary>
+        </member>
+        <member name="M:Shared.Serialization.SerializationHelper.DContract.GetSerializer(System.Type)">
+            <summary>
+            Get a serializer for <paramref name="type"/> with overrides already applied.
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Shared.Serialization.SerializationHelper.DContract.LoadFromFile``1(System.String)">
+            <summary>
+            Read a <typeparamref name="TSerialized"/> from <paramref name="filePath"/> using <see cref="T:System.Xml.Serialization.XmlSerializer"/>
+            </summary>
+            <typeparam name="TSerialized"></typeparam>
+            <param name="filePath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Shared.Serialization.SerializationHelper.DContract.LoadFromStream``1(System.IO.Stream,System.String)">
+            <summary>
+            Read a <typeparamref name="TSerialized"/> from <param name="stream"></param> optionally provide the original file path in <paramref name="filePath"/> to populate exception info using <see cref="T:System.Xml.Serialization.XmlSerializer"/>
+            </summary>
+            <typeparam name="TSerialized"></typeparam>
+            <param name="stream"></param>
+            <param name="filePath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Shared.Serialization.SerializationHelper.DContract.SaveToFile``1(``0,System.String)">
+            <summary>
+            Write a <typeparamref name="TSerialized"/> to <paramref name="filePath"/> using <see cref="T:System.Xml.Serialization.XmlSerializer"/>
+            </summary>
+            <typeparam name="TSerialized"></typeparam>
+            <param name="filePath"></param>
+            <param name="data">The object to be serialized</param>
+            <returns></returns>
+        </member>
+        <member name="M:Shared.Serialization.SerializationHelper.DContract.SaveToStream``1(System.IO.Stream,``0)">
+            <summary>
+            Write a <typeparamref name="TSerialized"/> to <paramref name="outputStream"/> using <see cref="T:System.Xml.Serialization.XmlSerializer"/>
+            </summary>
+            <typeparam name="TSerialized"></typeparam>
+            <param name="outputStream">The stream to write to</param>
+            <param name="data">The object to be serialized</param>
+            <returns></returns>
+        </member>
+        <member name="M:Shared.Serialization.XMLHelper.LoadFromStream(System.IO.Stream)">
+            <summary>
+            Load a Storworks dialect XDocument from the stream.
+            </summary>
+            <param name="stream">Stream to read from</param>
+            <returns></returns>
+        </member>
+        <member name="M:Shared.Serialization.XMLHelper.SaveToFile(System.Xml.Linq.XDocument,System.String)">
+            <summary>
+            Save an <see cref="T:System.Xml.Linq.XDocument"/> <paramref name="document"/> to <paramref name="filePath"/>
+            </summary>
+            <param name="document"></param>
+            <param name="filePath"></param>
+        </member>
+        <member name="M:Shared.Serialization.XMLHelper.XAttributeToDictionary(System.Collections.Generic.IEnumerable{System.Xml.Linq.XAttribute})">
+            <summary>
+            Create a <see cref="T:System.Collections.Generic.Dictionary`2"/> from an <see cref="T:System.Collections.Generic.IEnumerable`1"/>
+            </summary>
+            <param name="enumerable"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Shared.Serialization.XMLHelper.SetAttributeValueIND``1(System.Xml.Linq.XElement,System.Xml.Linq.XName,``0,``0)">
+            <summary>
+            Set Attribute Value If Not Default<br/>
+            Set the value of the attribute at <paramref name="key"/> to value
+            only if it's not <paramref name="defaultValue"/>, in that case do nothing.
+            </summary>
+            <param name="instance">The <see cref="T:System.Xml.Linq.XElement"/> to set the attribute on.</param>
+            <param name="key">The <see cref="T:System.Xml.Linq.XName"/> of the attribute.</param>
+            <param name="value">The value to be set.</param>
+            <param name="defaultValue">The default value that will cause <paramref name="value"/> to not be set.</param>
+        </member>
+        <member name="M:Shared.Serialization.XMLHelper.SetAttributeValueIND_Formatted``1(System.Xml.Linq.XElement,System.Xml.Linq.XName,System.String,``0,``0)">
+            <summary>
+            Set Attribute Value If Not Default Formatted<br/>
+            Set the value of the attribute at <paramref name="key"/> to value
+            only if it's not <paramref name="defaultValue"/>, in that case do nothing.
+            The value is formatted according to <paramref name="format"/> after it's compared.
+            </summary>
+            <param name="instance">The <see cref="T:System.Xml.Linq.XElement"/> to set the attribute on.</param>
+            <param name="key">The <see cref="T:System.Xml.Linq.XName"/> of the attribute.</param>
+            <param name="format">The format to pass to <paramref name="value"/>'s ToString method.</param>
+            <param name="value">The value to be set.</param>
+            <param name="defaultValue">The default value that will cause <paramref name="value"/> to not be set.</param>
+        </member>
+        <member name="M:Shared.Serialization.XMLHelper.SetAttributeValueIND_Hex``1(System.Xml.Linq.XElement,System.Xml.Linq.XName,``0,``0)">
+            <summary>
+            Set Attribute Value If Not Default Hexadecimal<br/>
+            Set the value of the attribute at <paramref name="key"/> to value
+            only if it's not <paramref name="defaultValue"/>, in that case do nothing.
+            </summary>
+            <param name="instance">The <see cref="T:System.Xml.Linq.XElement"/> to set the attribute on.</param>
+            <param name="key">The <see cref="T:System.Xml.Linq.XName"/> of the attribute.</param>
+            <param name="value">The value to be set.</param>
+            <param name="defaultValue">The default value that will cause <paramref name="value"/> to not be set.</param>
+        </member>
+        <member name="F:Shared.StormworksPaths.Steam">
+            <summary>
+            The Installation Directory of Steam
+            </summary>
+        </member>
+        <member name="F:Shared.StormworksPaths.Install">
+            <summary>
+            The installation directory of Stormworks
+            </summary>
+        </member>
+        <member name="P:Shared.StormworksPaths.Meshes.extruded_track_pieces">
+            <summary>
+            Generated .mesh and .phys for extruded track pieces.
+            </summary>
+        </member>
+        <member name="P:Shared.StormworksPaths.Meshes.generated_object_geom">
+            <summary>
+            Generated .mesh and .phys for static objects.
+            </summary>
+        </member>
+        <member name="M:Shared.StormworksPaths.IsPathInStormworksInstall(System.String,System.String@)">
+            <summary>
+            Check if <paramref name="path"/> is inside a Stormworks Installation.
+            If so <see langword="true"/> is returned and <paramref name="installRoot"/> has the full path to the Installation's root.
+            </summary>
+            <param name="path">A path (directory or file) to be checked.</param>
+            <param name="installRoot">If returned <see langword="true"/> the root of the Stormworks Installation that was found.</param>
+            <returns><see langword="true"/> if an install was found.</returns>
+        </member>
+        <member name="T:Shared.SynchronizedHashSet`1">
+            <summary>
+            Synchronized <see cref="T:System.Collections.Generic.HashSet`1"/> implemented using <see cref="T:System.Threading.ReaderWriterLockSlim"/> with <see cref="F:System.Threading.LockRecursionPolicy.SupportsRecursion"/>.
+            </summary>
+            <typeparam name="TValue"></typeparam>
+        </member>
+        <member name="M:Shared.SynchronizedHashSet`1.#ctor(System.Threading.LockRecursionPolicy)">
+            <summary>
+            Creates an empty <see cref="T:Shared.SynchronizedHashSet`1"/>.
+            </summary>
+            <param name="recursionPolicy">
+            The <see cref="T:System.Threading.LockRecursionPolicy"/> of the internal <see cref="T:System.Threading.ReaderWriterLockSlim"/> that is used to synchronize access.
+            </param>
+        </member>
+        <member name="M:Shared.SynchronizedHashSet`1.#ctor(System.Collections.Generic.IEnumerable{`0},System.Threading.LockRecursionPolicy)">
+            <summary>
+            Creates a <see cref="T:Shared.SynchronizedHashSet`1"/> containing the elements of <paramref name="collection"/>.
+            </summary>
+            <param name="collection">The initial content of the <see cref="T:Shared.SynchronizedHashSet`1"/>.</param>
+            <param name="recursionPolicy">
+            The <see cref="T:System.Threading.LockRecursionPolicy"/> of the internal <see cref="T:System.Threading.ReaderWriterLockSlim"/> that is used to synchronize access.
+            </param>
+        </member>
+        <member name="P:Shared.SynchronizedHashSet`1.Count">
+            <inheritdoc cref="P:System.Collections.Generic.HashSet`1.Count" />
+        </member>
+        <member name="P:Shared.SynchronizedHashSet`1.IsReadOnly">
+            <inheritdoc />
+        </member>
+        <member name="M:Shared.SynchronizedHashSet`1.Add(`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Shared.SynchronizedHashSet`1.System#Collections#Generic#ICollection{TValue}#Add(`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Shared.SynchronizedHashSet`1.Clear">
+            <inheritdoc />
+        </member>
+        <member name="M:Shared.SynchronizedHashSet`1.Contains(`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Shared.SynchronizedHashSet`1.Remove(`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Shared.SynchronizedHashSet`1.CopyTo(`0[],System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Shared.SynchronizedHashSet`1.CopyTo(`0[],System.Int32,System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Shared.SynchronizedHashSet`1.ExceptWith(System.Collections.Generic.IEnumerable{`0})">
+            <inheritdoc />
+        </member>
+        <member name="M:Shared.SynchronizedHashSet`1.IntersectWith(System.Collections.Generic.IEnumerable{`0})">
+            <inheritdoc />
+        </member>
+        <member name="M:Shared.SynchronizedHashSet`1.SymmetricExceptWith(System.Collections.Generic.IEnumerable{`0})">
+            <inheritdoc />
+        </member>
+        <member name="M:Shared.SynchronizedHashSet`1.UnionWith(System.Collections.Generic.IEnumerable{`0})">
+            <inheritdoc />
+        </member>
+        <member name="M:Shared.SynchronizedHashSet`1.IsProperSubsetOf(System.Collections.Generic.IEnumerable{`0})">
+            <inheritdoc />
+        </member>
+        <member name="M:Shared.SynchronizedHashSet`1.IsProperSupersetOf(System.Collections.Generic.IEnumerable{`0})">
+            <inheritdoc />
+        </member>
+        <member name="M:Shared.SynchronizedHashSet`1.IsSubsetOf(System.Collections.Generic.IEnumerable{`0})">
+            <inheritdoc />
+        </member>
+        <member name="M:Shared.SynchronizedHashSet`1.IsSupersetOf(System.Collections.Generic.IEnumerable{`0})">
+            <inheritdoc />
+        </member>
+        <member name="M:Shared.SynchronizedHashSet`1.Overlaps(System.Collections.Generic.IEnumerable{`0})">
+            <inheritdoc />
+        </member>
+        <member name="M:Shared.SynchronizedHashSet`1.SetEquals(System.Collections.Generic.IEnumerable{`0})">
+            <inheritdoc />
+        </member>
+        <member name="M:Shared.SynchronizedHashSet`1.GetEnumerator">
+            <inheritdoc />
+        </member>
+        <member name="M:Shared.SynchronizedHashSet`1.System#Collections#IEnumerable#GetEnumerator">
+            <inheritdoc />
+        </member>
+        <member name="M:Shared.SynchronizedHashSet`1.Dispose">
+            <inheritdoc />
+        </member>
+        <member name="T:Shared.Validation.Diagnostic">
+            <summary>
+            Provides a diagnostic report with a <see cref="F:Shared.Validation.Diagnostic.Severity"/>, <see cref="F:Shared.Validation.Diagnostic.Message"/> and <see cref="F:Shared.Validation.Diagnostic.Location"/>.
+            <br/>
+            <see cref="T:Shared.Validation.Diagnostic"/>s are created by a <see cref="T:Shared.Validation.Validator"/>.
+            </summary>
+        </member>
+        <member name="F:Shared.Validation.Diagnostic.Severity">
+            <summary>
+            The severity level of the <see cref="T:Shared.Validation.Diagnostic"/>.
+            </summary>
+        </member>
+        <member name="F:Shared.Validation.Diagnostic.Message">
+            <summary>
+            The message describing the diagnostic.
+            </summary>
+        </member>
+        <member name="F:Shared.Validation.Diagnostic.Location">
+            <summary>
+            The location of the diagnostic. The exact format depends on what is being validated.
+            In general it's a stack of names (and indices when collections are involved)
+            , starting with the current location and ending with the object where validation started.
+            </summary>
+        </member>
+        <member name="M:Shared.Validation.Diagnostic.ToString">
+            <inheritdoc />
+        </member>
+        <member name="M:Shared.Validation.Diagnostic.ToStringExceptLocation">
+            <summary>
+            Return <see cref="M:Shared.Validation.Diagnostic.ToString"/> but without <see cref="F:Shared.Validation.Diagnostic.Location"/>.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:Shared.Validation.DiagnosticSeverity.None">
+            <summary>
+            Placeholder value: do <strong>not</strong> use as the SeverityLevel of a <see cref="T:Shared.Validation.Diagnostic"/>.
+            </summary>
+        </member>
+        <member name="F:Shared.Validation.DiagnosticSeverity.Information">
+            <summary>
+            Use for general information.
+            </summary>
+        </member>
+        <member name="F:Shared.Validation.DiagnosticSeverity.Mitigation">
+            <summary>
+            Use for cases where a problem was automatically mitigated.
+            </summary>
+        </member>
+        <member name="F:Shared.Validation.DiagnosticSeverity.Warning">
+            <summary>
+            Use for cases where there is something wrong, but the problem will not cause a critical error or crash.
+            </summary>
+        </member>
+        <member name="F:Shared.Validation.DiagnosticSeverity.Error">
+            <summary>
+            Use for cases where the problem could cause a critical error or crash.
+            </summary>
+        </member>
+        <member name="F:Shared.Validation.DiagnosticSeverity.Critical">
+            <summary>
+            Use for cases where the problem could cause collection of additional <see cref="T:Shared.Validation.Diagnostic"/>s to fail or misreport.
+            </summary>
+        </member>
+        <member name="T:Shared.Validation.IValidateable">
+            <summary>
+            An object that can be checked for validity by a <see cref="T:Shared.Validation.Validator"/>.
+            </summary>
+        </member>
+        <member name="M:Shared.Validation.IValidateable.Validate(Shared.Validation.Validator)">
+            <summary>
+            Validate that the object is valid and will not produce errors when used.
+            </summary>
+            <param name="v">
+            The <see cref="T:Shared.Validation.Validator"/> that will perform the validation
+            and where <see cref="T:Shared.Validation.Diagnostic"/>s will be collected.</param>
+        </member>
+        <member name="T:Shared.Validation.Validator">
+            <summary>
+            A <see cref="T:Shared.Validation.Validator"/> can validate an <see cref="T:Shared.Validation.IValidateable"/>.
+            It will collect the <see cref="T:Shared.Validation.Diagnostic"/>s that are generated.
+            <br/>
+            A <see cref="T:Shared.Validation.Validator"/> instance can be used by a single thread at a time.
+            Call <see cref="M:Shared.Validation.Validator.Clear"/> to prepare it for re-use.
+            </summary>
+        </member>
+        <member name="F:Shared.Validation.Validator.Diagnostics">
+            <summary>
+            The <see cref="T:Shared.Validation.Diagnostic"/>s collected by this <see cref="T:Shared.Validation.Validator"/>.
+            </summary>
+        </member>
+        <member name="P:Shared.Validation.Validator.WorstSeverity">
+            <summary>
+            The highest/worst <see cref="T:Shared.Validation.DiagnosticSeverity"/> the <see cref="T:Shared.Validation.Validator"/> has observed so far.
+            </summary>
+        </member>
+        <member name="P:Shared.Validation.Validator.Location">
+            <summary>
+            Retrieves the current location where validation is taking place,
+            as a list of member names (and indices into collections if applicable)
+            starting with the current/deepest member and ending with the object Validation was started with.
+            </summary>
+        </member>
+        <member name="M:Shared.Validation.Validator.Add(Shared.Validation.Diagnostic)">
+            <summary>
+            Add a <see cref="T:Shared.Validation.Diagnostic"/> to <see cref="F:Shared.Validation.Validator.diagnostics"/> and update <see cref="P:Shared.Validation.Validator.WorstSeverity"/>.
+            </summary>
+            <param name="d"></param>
+        </member>
+        <member name="M:Shared.Validation.Validator.Clear">
+            <summary>
+            Clear and Reset the <see cref="T:Shared.Validation.Validator"/> so it can be re-used.
+            </summary>
+        </member>
+        <member name="M:Shared.Validation.Validator.Warning(System.String)">
+            <summary>
+            Generate a <see cref="T:Shared.Validation.Diagnostic"/> of <see cref="F:Shared.Validation.DiagnosticSeverity.Warning"/> with <paramref name="message"/>.
+            </summary>
+            <param name="message">The message of the <see cref="T:Shared.Validation.Diagnostic"/>.</param>
+        </member>
+        <member name="M:Shared.Validation.Validator.Warning(System.Boolean,System.String)">
+            <summary>
+            When <paramref name="condition"/> is <see langword="true"/>
+            add a <see cref="T:Shared.Validation.Diagnostic"/> with <see cref="F:Shared.Validation.DiagnosticSeverity.Warning"/> with <paramref name="message"/>.
+            </summary>
+            <param name="condition"></param>
+            <param name="message"></param>
+        </member>
+        <member name="M:Shared.Validation.Validator.Error(System.String)">
+            <summary>
+            Generate a <see cref="T:Shared.Validation.Diagnostic"/> of <see cref="F:Shared.Validation.DiagnosticSeverity.Error"/> with <paramref name="message"/>.
+            </summary>
+            <param name="message">The message of the <see cref="T:Shared.Validation.Diagnostic"/>.</param>
+        </member>
+        <member name="M:Shared.Validation.Validator.Error(System.Boolean,System.String)">
+            <summary>
+            When <paramref name="condition"/> is <see langword="true"/>
+            add a <see cref="T:Shared.Validation.Diagnostic"/> with <see cref="F:Shared.Validation.DiagnosticSeverity.Error"/> with <paramref name="message"/>.
+            </summary>
+            <param name="condition"></param>
+            <param name="message"></param>
+        </member>
+        <member name="M:Shared.Validation.Validator.WarnIfEmpty``1(System.Collections.Generic.ICollection{``0},System.String)">
+            <summary>
+            Add a <see cref="F:Shared.Validation.DiagnosticSeverity.Warning"/> <see cref="T:Shared.Validation.Diagnostic"/> when <paramref name="collection"/> is empty.
+            </summary>
+            <typeparam name="TElement"></typeparam>
+            <param name="collection"></param>
+            <param name="memberName"></param>
+        </member>
+        <member name="M:Shared.Validation.Validator.ErrorIfEmpty``1(System.Collections.Generic.ICollection{``0},System.String)">
+            <summary>
+            Add a <see cref="F:Shared.Validation.DiagnosticSeverity.Error"/> <see cref="T:Shared.Validation.Diagnostic"/> when <paramref name="collection"/> is empty.
+            </summary>
+            <typeparam name="TElement"></typeparam>
+            <param name="collection"></param>
+            <param name="memberName"></param>
+        </member>
+        <member name="M:Shared.Validation.Validator.Validate(Shared.Validation.IValidateable,System.String,System.Boolean)">
+            <summary>
+            Validate <paramref name="toValidate"/>, generating a <see cref="T:Shared.Validation.Diagnostic"/>s
+            using <paramref name="memberName"/> as the <see cref="F:Shared.Validation.Diagnostic.Location"/>.
+            <br/>
+            This method will use <see cref="M:Shared.Validation.Validator.PushContext(System.String)"/>.
+            </summary>
+            <param name="toValidate">The object to be validated.</param>
+            <param name="memberName">The name of the member to display in the <see cref="F:Shared.Validation.Diagnostic.Location"/>.</param>
+            <param name="allowNull">Allow <see langword="null"/> values.</param>
+        </member>
+        <member name="M:Shared.Validation.Validator.Validate(Shared.Validation.IValidateable,System.Boolean)">
+            <summary>
+            Validate <paramref name="toValidate"/>, generating a
+            <see cref="T:Shared.Validation.Diagnostic"/>s using the name 'element' as the <see cref="F:Shared.Validation.Diagnostic.Location"/>.
+            <br/>
+            This method is meant to be used in combination with <see cref="M:Shared.Validation.Validator.PushContext(System.String,System.Int32)"/>.
+            </summary>
+            <param name="toValidate">The object to be validated.</param>
+            <param name="allowNull">Allow <see langword="null"/> values.</param>
+        </member>
+        <member name="M:Shared.Validation.Validator.Validate``1(``0,System.String)">
+            <summary>
+            Validate that the provided enum value is a defined value for that enum:
+            That the enum contains a name that maps to the provided value.
+            </summary>
+            <typeparam name="TEnum">The type of the enum.</typeparam>
+            <param name="toValidate">The value to validate.</param>
+            <param name="memberName">The name of the member being checked.</param>
+        </member>
+        <member name="M:Shared.Validation.Validator.Validate``1(System.Collections.Generic.ICollection{``0},System.String,Shared.Validation.DiagnosticSeverity,System.Boolean,System.Boolean)">
+            <summary>
+            Validate a <see cref="T:System.Collections.Generic.ICollection`1"/> of <see cref="T:Shared.Validation.IValidateable"/>.
+            </summary>
+            <typeparam name="TElement">The type of the elements.</typeparam>
+            <param name="collection">The collection to validate.</param>
+            <param name="collectionName">The name of the Collection to display in any <see cref="T:Shared.Validation.Diagnostic"/>s.</param>
+            <param name="emptySeverity">The severity of <see cref="T:Shared.Validation.Diagnostic"/> when the collection is empty.</param>
+            <param name="allowNullCollection">Is the collection allowed to be <see langword="null"/>.</param>
+            <param name="allowNullElements">Are elements in the collection allowed to be <see langword="null"/>.</param>
+        </member>
+        <member name="M:Shared.Validation.Validator.ValidateFloatFinite(System.Single,System.String)">
+            <summary>
+            Validate that the provided float is finite and generate an
+            <see cref="F:Shared.Validation.DiagnosticSeverity.Error"/> level <see cref="T:Shared.Validation.Diagnostic"/> otherwise.
+            </summary>
+            <param name="value">The value to validate.</param>
+            <param name="memberName">The name of the member being validated.</param>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:Shared.Validation.Validator.ThrowErrors">
+            <summary>
+            Throw an <see cref="T:System.AggregateException"/> containing all <see cref="F:Shared.Validation.Validator.diagnostics"/> with severity <see cref="F:Shared.Validation.DiagnosticSeverity.Error"/> or above.
+            </summary>
+        </member>
+        <member name="M:Shared.Validation.Validator.ToString(System.Collections.Generic.IEnumerable{Shared.Validation.Diagnostic},System.Func{Shared.Validation.DiagnosticSeverity,System.String,System.String})">
+            <summary>
+            Generate a string for all <see cref="T:Shared.Validation.Diagnostic"/>s provided.
+            </summary>
+            <param name="diagnostics">The diagnostics to generate a string representation for.</param>
+            <param name="entryHandler">Receives the severity and string for a entry, could be used to color the string.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Shared.Validation.Validator.ToString">
+            <summary>
+            Generate a string for all entries in the <see cref="T:Shared.Validation.Validator"/>.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Shared.Validation.Validator.ValidationContext">
+            <summary>
+            A token to be placed in a <see langword="using"/> construct to keep track of <see cref="P:Shared.Validation.Validator.Location"/>.
+            <br/>
+            Use <see cref="M:Shared.Validation.Validator.PushContext(System.String)"/> or <see cref="M:Shared.Validation.Validator.PushContext(System.String,System.Int32)"/>
+            to receive one.
+            </summary>
+        </member>
+        <member name="M:Shared.Validation.Validator.ValidationContext.Dispose">
+            <summary>
+            Usage of this method is not recommended.
+            <br/>
+            Instead make use of the <see langword="using"/> construct to handle this automatically.
+            <br/>
+            This method simply calls <see cref="M:Shared.Validation.Validator.PopContext(Shared.Validation.Validator.ValidationContext)"/>, see that method for more details.
+            </summary>
+        </member>
+        <member name="M:Shared.Validation.Validator.ValidationContext.Equals(Shared.Validation.Validator.ValidationContext)">
+            <inheritdoc />
+        </member>
+        <member name="M:Shared.Validation.Validator.ValidationContext.Equals(System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="M:Shared.Validation.Validator.ValidationContext.GetHashCode">
+            <inheritdoc />
+        </member>
+        <member name="M:Shared.Validation.Validator.ValidationContext.ToString">
+            <inheritdoc />
+        </member>
+        <member name="M:Shared.Validation.Validator.PushContext(System.String)">
+            <summary>
+            When a member of an <see cref="T:Shared.Validation.IValidateable"/> is itself <see cref="T:Shared.Validation.IValidateable"/>
+            put the return value in a <see langword="using"/> construct to keep the
+            <see cref="P:Shared.Validation.Validator.Location"/> of the <see cref="T:Shared.Validation.Validator"/> up to date.
+            </summary>
+            <param name="memberName">The name of the Member.</param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:Shared.Validation.Validator.PushContext(System.String,System.Int32)">
+            <summary>
+            When a member of an <see cref="T:Shared.Validation.IValidateable"/> is a collection of <see cref="T:Shared.Validation.IValidateable"/>
+            and <see cref="M:Shared.Validation.Validator.Validate``1(System.Collections.Generic.ICollection{``0},System.String,Shared.Validation.DiagnosticSeverity,System.Boolean,System.Boolean)"/>
+            cannot be used:
+            Put the return value in a <see langword="using"/> construct to keep the <see cref="P:Shared.Validation.Validator.Location"/> of the <see cref="T:Shared.Validation.Validator"/> up to date.
+            </summary>
+            <param name="memberName">The name of the collection.</param>
+            <param name="index">The index of the current element.</param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:Shared.Validation.Validator.PopContext(Shared.Validation.Validator.ValidationContext)">
+            <summary>
+            Usage of this method is not recommended.
+            <br/>
+            Instead put <see cref="M:Shared.Validation.Validator.PushContext(System.String)"/> or <see cref="M:Shared.Validation.Validator.PushContext(System.String,System.Int32)"/>
+            inside the <see langword="using"/> construct to handle this automatically.
+            <br/>
+            Leaving contexts out of order will cause an <see cref="T:System.InvalidOperationException"/>.
+            Use this method ONLY if you have special needs that <see langword="using"/> cannot provide.
+            </summary>
+            <param name="context"></param>
+            <exception cref="T:System.InvalidOperationException"></exception>
+        </member>
+        <member name="M:Shared.VectorExt.Project(OpenToolkit.Mathematics.Vector3,OpenToolkit.Mathematics.Vector3)">
+            <summary>
+            Project <paramref name="vector"/> onto <paramref name="direction"/>.
+            </summary>
+            <param name="vector">The vector to project.</param>
+            <param name="direction">The vector to project onto.</param>
+            <returns><paramref name="vector"/> projected onto <paramref name="direction"/>.
+            IF the Length of <paramref name="direction"/> is 0 then <see cref="F:OpenToolkit.Mathematics.Vector3.Zero"/> is returned.</returns>
+        </member>
+        <member name="M:Shared.VectorExt.ApproxEquals(OpenToolkit.Mathematics.Vector2,OpenToolkit.Mathematics.Vector2,System.Single)">
+            <summary>
+            Returns true when the difference between <paramref name="a"/> and <paramref name="b"/>
+            is less than or equal to <paramref name="margin"/>.
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <param name="margin"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Shared.VectorExt.ApproxEquals(OpenToolkit.Mathematics.Vector3,OpenToolkit.Mathematics.Vector3,System.Single)">
+            <summary>
+            Returns true when the difference between <paramref name="a"/> and <paramref name="b"/>
+            is less than or equal to <paramref name="margin"/>.
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <param name="margin"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Shared.VectorExt.ApproxEquals(OpenToolkit.Mathematics.Vector4,OpenToolkit.Mathematics.Vector4,System.Single)">
+            <summary>
+            Returns true when the difference between <paramref name="a"/> and <paramref name="b"/>
+            is less than or equal to <paramref name="margin"/>.
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <param name="margin"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Shared.VectorExt.HasNan(OpenToolkit.Mathematics.Vector2)">
+            <summary>
+            Returns true if any component of the vector is NaN
+            </summary>
+            <param name="v"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Shared.VectorExt.HasNan(OpenToolkit.Mathematics.Vector3)">
+            <summary>
+            Returns true if any component of the vector is NaN
+            </summary>
+            <param name="v"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Shared.VectorExt.HasNan(OpenToolkit.Mathematics.Vector4)">
+            <summary>
+            Returns true if any component of the vector is NaN
+            </summary>
+            <param name="v"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Shared.VectorExt.IsFinite(OpenToolkit.Mathematics.Vector2)">
+            <summary>
+            Returns true if all components of the vector are finite, that is: not infinite, NaN or otherwise not a valid number.
+            </summary>
+            <param name="v"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Shared.VectorExt.IsFinite(OpenToolkit.Mathematics.Vector3)">
+            <summary>
+            Returns true if all components of the vector are finite, that is: not infinite, NaN or otherwise not a valid number.
+            </summary>
+            <param name="v"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Shared.VectorExt.IsFinite(OpenToolkit.Mathematics.Vector4)">
+            <summary>
+            Returns true if all components of the vector are finite, that is: not infinite, NaN or otherwise not a valid number.
+            </summary>
+            <param name="v"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Shared.VisiblePropertyAttribute">
+            <summary>
+            Signals that the decorated property should be visible to the User.
+            </summary>
+        </member>
+    </members>
+</doc>
