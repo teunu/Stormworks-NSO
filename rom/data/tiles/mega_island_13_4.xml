@@ -4,7 +4,7 @@
 		<mesh id="mesh0" file_name="nso_mod/meshes/mainland/13_4_main.mesh">
 			<transform/>
 		</mesh>
-		<mesh id="mesh1" file_name="nso_mod/meshes/structures/hoy_castle_whitebox.mesh">
+		<mesh id="mesh1" file_name="nso_mod/meshes/structures/hoy_castle.mesh">
 			<transform/>
 		</mesh>
 	</meshes>
@@ -16,14 +16,27 @@
 		<physics_mesh id="mesh1" file_name="nso_mod/meshes/structures/hoy_castle_whitebox.phys">
 			<transform/>
 		</physics_mesh>
+		<physics_mesh id="mesh1" file_name="nso_mod/meshes/structures/hoy_castle.phys">
+			<transform/>
+		</physics_mesh>
 	</physics_meshes>
 	<physics_dynamics/>
 	<lights_omni/>
 	<lights_spot/>
 	<lights_tube/>
 	<screens/>
-	<edit_areas/>
-	<interactables/>
+	<edit_areas>
+		<edit_area id="artillery_edit" seasonal_flags="0" grid_size="0" is_static="false" default_vehicle="" spawned_static_vehicle_id="0" is_invisible_vehicle="false">
+			<transform 00="-0.707106769" 01="0" 02="-0.707106769" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.707106769" 21="0" 22="-0.707106769" 23="0" 30="-240.208984" 31="46" 32="-71.79199" 33="1"/>
+			<size x="22" y="10" z="22"/>
+		</edit_area>
+	</edit_areas>
+	<interactables>
+		<interactable id="artillery_interact" seasonal_flags="0" target_object_id="artillery_edit" label="Artillery Workbench" use_case="0" interact_type="2" is_purchased="false" is_ignore_purchased="false">
+			<transform 00="0.7071067" 01="0" 02="-0.7071069" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.7071069" 21="0" 22="0.7071067" 23="0" 30="-261" 31="41.6903725" 32="-70" 33="1"/>
+			<size x="2" y="1" z="1"/>
+		</interactable>
+	</interactables>
 	<door_logic_nodes/>
 	<light_logic_nodes/>
 	<rotation_logic_nodes/>
