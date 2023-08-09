@@ -1,74 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<definition is_island="true" tile_type="2">
+<definition is_island="True" tile_type="2" is_purchasable="False" purchase_cost="0" sea_floor_height="-6">
 	<meshes>
-		<mesh id="mesh0" file_name="meshes/mainland/mega_island_11_4.mesh">
-			<transform/>
+		<mesh id="mesh0" seasonal_flags="0" file_name="meshes/mainland/mega_island_11_4.mesh">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="0" 31="0" 32="0" 33="1"/>
 		</mesh>
-		<mesh id="turbine_07" file_name="meshes/wind_turbine_02.mesh">
-			<transform 30="-400.914673" 31="21.650532" 32="15.577141"/>
+		<mesh id="turbine_07" seasonal_flags="0" file_name="meshes/wind_turbine_02.mesh">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-400.914673" 31="21.6505318" 32="15.5771408" 33="1"/>
 		</mesh>
-		<mesh id="turbine_08" file_name="meshes/wind_turbine_02.mesh">
-			<transform 30="-387.839417" 31="21.873096" 32="148.159531"/>
+		<mesh id="turbine_08" seasonal_flags="0" file_name="meshes/wind_turbine_02.mesh">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-387.839417" 31="21.8730965" 32="148.159531" 33="1"/>
 		</mesh>
-		<mesh id="turbine_09" file_name="meshes/wind_turbine_02.mesh">
-			<transform 30="-417.92215" 31="43.155205" 32="352.140808"/>
+		<mesh id="turbine_09" seasonal_flags="0" file_name="meshes/wind_turbine_02.mesh">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-417.92215" 31="43.1552048" 32="352.1408" 33="1"/>
 		</mesh>
-		<mesh id="turbine_10" file_name="meshes/wind_turbine_02.mesh">
-			<transform 30="-487.37616" 31="46.563637" 32="462.104614"/>
+		<mesh id="turbine_10" seasonal_flags="0" file_name="meshes/wind_turbine_02.mesh">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-487.37616" 31="46.5636368" 32="462.1046" 33="1"/>
 		</mesh>
-		<mesh id="turbine_07_blades" file_name="meshes/wind_turbine_02_blades.mesh">
-			<transform 11="0.906308" 12="0.422618" 21="-0.422618" 22="0.906308" 30="-393.763184" 31="109.056046" 32="15.577141"/>
+		<mesh id="turbine_07_blades" seasonal_flags="0" file_name="meshes/wind_turbine_02_blades.mesh">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="0.906308" 12="0.422618" 13="0" 20="0" 21="-0.422618" 22="0.906308" 23="0" 30="-393.763184" 31="109.056046" 32="15.5771408" 33="1"/>
 		</mesh>
-		<mesh id="turbine_08_blades" file_name="meshes/wind_turbine_02_blades.mesh">
-			<transform 30="-380.682343" 31="109.338448" 32="147.95816"/>
+		<mesh id="turbine_08_blades" seasonal_flags="0" file_name="meshes/wind_turbine_02_blades.mesh">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-380.682343" 31="109.338448" 32="147.95816" 33="1"/>
 		</mesh>
-		<mesh id="turbine_09_blades" file_name="meshes/wind_turbine_02_blades.mesh">
-			<transform 30="-410.770538" 31="130.637146" 32="352.253387"/>
+		<mesh id="turbine_09_blades" seasonal_flags="0" file_name="meshes/wind_turbine_02_blades.mesh">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-410.770538" 31="130.637146" 32="352.2534" 33="1"/>
 		</mesh>
-		<mesh id="turbine_10_blades" file_name="meshes/wind_turbine_02_blades.mesh">
-			<transform 11="-0" 12="1" 21="-1" 22="-0" 30="-480.228271" 31="133.995026" 32="462.20697"/>
+		<mesh id="turbine_10_blades" seasonal_flags="0" file_name="meshes/wind_turbine_02_blades.mesh">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="0" 12="1" 13="0" 20="0" 21="-1" 22="0" 23="0" 30="-480.228271" 31="133.995026" 32="462.20697" 33="1"/>
 		</mesh>
-		<mesh id="building_mesh" file_name="meshes/wind_farm_island_building.mesh">
-			<transform 00="0.707107" 02="-0.707107" 20="0.707107" 22="0.707107" 30="-384.460541" 31="21.119886" 32="23.152624"/>
+		<mesh id="building_mesh" seasonal_flags="0" file_name="meshes/wind_farm_island_building.mesh">
+			<transform 00="0.707107" 01="0" 02="-0.707107" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.707107" 21="0" 22="0.707107" 23="0" 30="-384.460541" 31="21.1198864" 32="23.1526241" 33="1"/>
 		</mesh>
-		<mesh id="door_01" file_name="meshes/door_exterior.mesh">
-			<transform 00="0.707107" 02="0.707107" 20="-0.707107" 22="0.707107" 30="-388.172974" 31="21.247112" 32="24.391537"/>
+		<mesh id="door_01" seasonal_flags="0" file_name="meshes/door_exterior.mesh">
+			<transform 00="0.707107" 01="0" 02="0.707107" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.707107" 21="0" 22="0.707107" 23="0" 30="-388.172974" 31="21.2471123" 32="24.3915367" 33="1"/>
 		</mesh>
 	</meshes>
 	<physics_objects/>
 	<physics_meshes>
-		<physics_mesh id="physics_mesh0" file_name="meshes/mainland/mega_island_11_4.phys">
-			<transform/>
+		<physics_mesh id="physics_mesh0" seasonal_flags="0" file_name="meshes/mainland/mega_island_11_4.phys">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="0" 31="0" 32="0" 33="1"/>
 		</physics_mesh>
-		<physics_mesh id="turbine_07_phys" file_name="meshes/wind_turbine_02_phys.phys">
-			<transform 30="-400.914673" 31="21.650532" 32="15.577141"/>
+		<physics_mesh id="turbine_07_phys" seasonal_flags="0" file_name="meshes/wind_turbine_02_phys.phys">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-400.914673" 31="21.6505318" 32="15.5771408" 33="1"/>
 		</physics_mesh>
-		<physics_mesh id="turbine_08_phys" file_name="meshes/wind_turbine_02_phys.phys">
-			<transform 30="-387.839417" 31="21.873096" 32="148.159531"/>
+		<physics_mesh id="turbine_08_phys" seasonal_flags="0" file_name="meshes/wind_turbine_02_phys.phys">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-387.839417" 31="21.8730965" 32="148.159531" 33="1"/>
 		</physics_mesh>
-		<physics_mesh id="turbine_09_phys" file_name="meshes/wind_turbine_02_phys.phys">
-			<transform 30="-417.92215" 31="43.155205" 32="352.140808"/>
+		<physics_mesh id="turbine_09_phys" seasonal_flags="0" file_name="meshes/wind_turbine_02_phys.phys">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-417.92215" 31="43.1552048" 32="352.1408" 33="1"/>
 		</physics_mesh>
-		<physics_mesh id="turbine_10_phys" file_name="meshes/wind_turbine_02_phys.phys">
-			<transform 30="-487.37616" 31="46.563637" 32="462.104614"/>
+		<physics_mesh id="turbine_10_phys" seasonal_flags="0" file_name="meshes/wind_turbine_02_phys.phys">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-487.37616" 31="46.5636368" 32="462.1046" 33="1"/>
 		</physics_mesh>
-		<physics_mesh id="turbine_07_blades_phys" parent_id="turbine_07_blades" file_name="meshes/wind_turbine_02_blades_phys.phys">
-			<transform 11="0.906308" 12="0.422618" 21="-0.422618" 22="0.906308" 30="-393.763184" 31="109.056046" 32="15.577141"/>
+		<physics_mesh id="turbine_07_blades_phys" parent_id="turbine_07_blades" seasonal_flags="0" file_name="meshes/wind_turbine_02_blades_phys.phys">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="0.906308" 12="0.422618" 13="0" 20="0" 21="-0.422618" 22="0.906308" 23="0" 30="-393.763184" 31="109.056046" 32="15.5771408" 33="1"/>
 		</physics_mesh>
-		<physics_mesh id="turbine_08_blades_phys" parent_id="turbine_08_blades" file_name="meshes/wind_turbine_02_blades_phys.phys">
-			<transform 30="-380.682343" 31="109.338448" 32="147.95816"/>
+		<physics_mesh id="turbine_08_blades_phys" parent_id="turbine_08_blades" seasonal_flags="0" file_name="meshes/wind_turbine_02_blades_phys.phys">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-380.682343" 31="109.338448" 32="147.95816" 33="1"/>
 		</physics_mesh>
-		<physics_mesh id="turbine_09_blades_phys" parent_id="turbine_09_blades" file_name="meshes/wind_turbine_02_blades_phys.phys">
-			<transform 30="-410.770538" 31="130.637146" 32="352.253387"/>
+		<physics_mesh id="turbine_09_blades_phys" parent_id="turbine_09_blades" seasonal_flags="0" file_name="meshes/wind_turbine_02_blades_phys.phys">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-410.770538" 31="130.637146" 32="352.2534" 33="1"/>
 		</physics_mesh>
-		<physics_mesh id="turbine_10_blades_phys" parent_id="turbine_10_blades" file_name="meshes/wind_turbine_02_blades_phys.phys">
-			<transform 11="-0" 12="1" 21="-1" 22="-0" 30="-480.228271" 31="133.995026" 32="462.20697"/>
+		<physics_mesh id="turbine_10_blades_phys" parent_id="turbine_10_blades" seasonal_flags="0" file_name="meshes/wind_turbine_02_blades_phys.phys">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="0" 12="1" 13="0" 20="0" 21="-1" 22="0" 23="0" 30="-480.228271" 31="133.995026" 32="462.20697" 33="1"/>
 		</physics_mesh>
-		<physics_mesh id="building_phys" file_name="meshes/wind_farm_island_building_phys.phys">
-			<transform 00="0.707107" 02="-0.707107" 20="0.707107" 22="0.707107" 30="-384.460541" 31="21.120001" 32="23.152624"/>
+		<physics_mesh id="building_phys" seasonal_flags="0" file_name="meshes/wind_farm_island_building_phys.phys">
+			<transform 00="0.707107" 01="0" 02="-0.707107" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.707107" 21="0" 22="0.707107" 23="0" 30="-384.460541" 31="21.12" 32="23.1526241" 33="1"/>
 		</physics_mesh>
-		<physics_mesh id="door_01_phys" parent_id="door_01" file_name="meshes/door_hospital_phys.phys">
-			<transform 00="0.707107" 02="0.707107" 20="-0.707107" 22="0.707107" 30="-388.172974" 31="21.247112" 32="24.391537"/>
+		<physics_mesh id="door_01_phys" parent_id="door_01" seasonal_flags="0" file_name="meshes/door_hospital_phys.phys">
+			<transform 00="0.707107" 01="0" 02="0.707107" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.707107" 21="0" 22="0.707107" 23="0" 30="-388.172974" 31="21.2471123" 32="24.3915367" 33="1"/>
 		</physics_mesh>
 	</physics_meshes>
 	<physics_dynamics/>
@@ -104,8 +104,8 @@
 	<screens/>
 	<edit_areas/>
 	<interactables>
-		<interactable id="door_01_interact" parent_id="door_01" target_object_id="door_01_logic" label="Door">
-			<transform 00="0.712128" 02="-0.70205" 20="0.70205" 22="0.712128" 30="-387.830688" 31="22.357607" 32="24.755793"/>
+		<interactable id="door_01_interact" parent_id="door_01" seasonal_flags="0" target_object_id="door_01_logic" label="Door" use_case="0" interact_type="0" is_purchased="false" is_ignore_purchased="false">
+			<transform 00="0.712128" 01="0" 02="-0.70205" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.70205" 21="0" 22="0.712128" 23="0" 30="-387.8307" 31="22.3576069" 32="24.7557926" 33="1"/>
 			<size x="0.518719" y="1.75891" z="0.818049"/>
 		</interactable>
 	</interactables>

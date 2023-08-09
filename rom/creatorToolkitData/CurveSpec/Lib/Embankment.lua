@@ -38,7 +38,7 @@ function lib.Embankment(Settings, ISet)
 	local v	= VertexRecord()
 	v.color		= Colour
 
-	v.position	= Vector3(-BottomWidth, -Height, 0)
+	v.position	= Vector3(-BottomWidth, -Height + YOffset, 0)
 	loop.Vertices:Add(v)
 
 	v.position	= Vector3(-TopWidth, YOffset - AntiZGlitch, 0)
@@ -57,14 +57,14 @@ function lib.Embankment(Settings, ISet)
 	v.position	= Vector3(TopWidth, YOffset, 0)
 	loop.Vertices:Add(v)
 
-	v.position	= Vector3(BottomWidth, -Height, 0)
+	v.position	= Vector3(BottomWidth, -Height + YOffset, 0)
 	loop.Vertices:Add(v)
 
 	if closedBottom then
-		v.position	= Vector3(BottomWidth, -Height, 0)
+		v.position	= Vector3(BottomWidth, -Height + YOffset, 0)
 		loop.Vertices:Add(v)
 
-		v.position	= Vector3(-BottomWidth, -Height, 0)
+		v.position	= Vector3(-BottomWidth, -Height + YOffset, 0)
 		loop.Vertices:Add(v)
 
 		set.LineIndices:Add(6)

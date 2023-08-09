@@ -1,257 +1,386 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<definition tile_type="2" sea_floor_height="-10">
+<definition is_island="False" tile_type="2" is_purchasable="False" purchase_cost="0" sea_floor_height="-10">
 	<meshes>
-		<mesh id="mesh0" file_name="nso_mod/meshes/mainland/8_9_main.mesh">
-			<transform/>
+		<mesh id="mesh0" seasonal_flags="0" file_name="nso_mod/meshes/mainland/8_9_main.mesh">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="0" 31="0" 32="0" 33="1"/>
 		</mesh>
-		<mesh id="StaticObject_21" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/nature/rock_mount_01__StaticObject_21.mesh">
-			<transform 00="0.885511" 01="-0.165487" 02="-0.434148" 10="0.28716" 11="0.929513" 12="0.231398" 20="0.365253" 21="-0.329575" 22="0.870615" 30="-440.331055" 31="18.867731" 32="-17.605469"/>
+		<mesh id="StaticObject_21" seasonal_flags="0" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/nature/rock_mount_01__StaticObject_21.mesh">
+			<transform 00="0.885511" 01="-0.165487" 02="-0.434148" 03="0" 10="0.28716" 11="0.929513" 12="0.231398" 13="0" 20="0.365253" 21="-0.329575" 22="0.870615" 23="0" 30="-440.331055" 31="18.8677311" 32="-17.6054688" 33="1"/>
 		</mesh>
-		<mesh id="StaticObject_20" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/nature/rock_mount_02__StaticObject_20.mesh">
-			<transform 00="0.597049" 01="-0.017644" 02="-0.80201" 10="-0.324676" 11="0.908901" 12="-0.261697" 20="0.733565" 21="0.416639" 22="0.53693" 30="-465.3579" 31="18.254719" 32="-31.716797"/>
+		<mesh id="StaticObject_20" seasonal_flags="0" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/nature/rock_mount_02__StaticObject_20.mesh">
+			<transform 00="0.597049" 01="-0.017644" 02="-0.80201" 03="0" 10="-0.324676" 11="0.908901" 12="-0.261697" 13="0" 20="0.733565" 21="0.416639" 22="0.53693" 23="0" 30="-465.3579" 31="18.2547188" 32="-31.7167969" 33="1"/>
 		</mesh>
-		<mesh id="StaticObject_19" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/decoration/workbenches/workbench_clean__StaticObject_19.mesh">
-			<transform 00="0.640709" 02="0.767784" 20="-0.767784" 22="0.640709" 30="-259.353516" 31="2.127179" 32="35.243164"/>
+		<mesh id="StaticObject_19" seasonal_flags="0" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/decoration/workbenches/workbench_clean__StaticObject_19.mesh">
+			<transform 00="0.640709" 01="0" 02="0.767784" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.767784" 21="0" 22="0.640709" 23="0" 30="-259.353516" 31="2.127179" 32="35.2431641" 33="1"/>
 		</mesh>
-		<mesh id="StaticObject_18" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/decoration/workbenches/workbench_clean__StaticObject_18.mesh">
-			<transform 00="0.753804" 02="-0.657099" 20="0.657099" 22="0.753804" 30="-309.393555" 31="12.037952" 32="-6.866211"/>
+		<mesh id="StaticObject_18" seasonal_flags="0" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/decoration/workbenches/workbench_clean__StaticObject_18.mesh">
+			<transform 00="0.753804" 01="0" 02="-0.657099" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.657099" 21="0" 22="0.753804" 23="0" 30="-309.393555" 31="12.0379524" 32="-6.866211" 33="1"/>
 		</mesh>
-		<mesh id="StaticObject_17" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/decoration/wall_straight_short__StaticObject_17.mesh">
-			<transform 00="0.625191" 01="-0" 02="0.780472" 10="-0.183177" 11="0.972068" 12="0.146733" 20="-0.758672" 21="-0.234701" 22="0.607728" 30="-310.6504" 31="12.13435" 32="-6.780273"/>
+		<mesh id="StaticObject_17" seasonal_flags="0" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/decoration/wall_straight_short__StaticObject_17.mesh">
+			<transform 00="0.625191" 01="0" 02="0.780472" 03="0" 10="-0.183177" 11="0.972068" 12="0.146733" 13="0" 20="-0.758672" 21="-0.234701" 22="0.607728" 23="0" 30="-310.6504" 31="12.13435" 32="-6.780273" 33="1"/>
 		</mesh>
-		<mesh id="StaticObject_16" file_name="nso_mod/meshes/rocks/rock_small_4.mesh">
-			<transform 00="0.838031" 02="0.545622" 20="-0.545622" 22="0.838031" 30="-267.1328" 31="10.087434" 32="-49.060547"/>
+		<mesh id="StaticObject_16" seasonal_flags="0" file_name="nso_mod/meshes/rocks/rock_small_4.mesh">
+			<transform 00="0.838031" 01="0" 02="0.545622" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.545622" 21="0" 22="0.838031" 23="0" 30="-267.1328" 31="10.0874338" 32="-49.0605469" 33="1"/>
 		</mesh>
-		<mesh id="StaticObject_15" file_name="nso_mod/meshes/rocks/rock_small_3.mesh">
-			<transform 30="-264.5879" 31="10.576917" 32="-53.24707"/>
+		<mesh id="StaticObject_15" seasonal_flags="0" file_name="nso_mod/meshes/rocks/rock_small_3.mesh">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-264.5879" 31="10.5769167" 32="-53.24707" 33="1"/>
 		</mesh>
-		<mesh id="StaticObject_14" file_name="nso_mod/meshes/rocks/rock_big_3.mesh">
-			<transform 00="0.272006" 01="0.906854" 02="-0.321914" 10="-0.180577" 11="0.376686" 12="0.90857" 20="0.945201" 21="-0.189006" 22="0.266218" 30="-268.3662" 31="10.419609" 32="-51.914063"/>
+		<mesh id="StaticObject_14" seasonal_flags="0" file_name="nso_mod/meshes/rocks/rock_big_3.mesh">
+			<transform 00="0.272006" 01="0.906854" 02="-0.321914" 03="0" 10="-0.180577" 11="0.376686" 12="0.90857" 13="0" 20="0.945201" 21="-0.189006" 22="0.266218" 23="0" 30="-268.3662" 31="10.4196091" 32="-51.9140625" 33="1"/>
 		</mesh>
-		<mesh id="StaticObject_13" file_name="nso_mod/meshes/rocks/rock_small_4.mesh">
-			<transform 00="0.968579" 01="-0.248705" 10="0.248705" 11="0.968579" 30="-316.55957" 31="11.195742" 32="-11.927734"/>
+		<mesh id="StaticObject_13" seasonal_flags="0" file_name="nso_mod/meshes/rocks/rock_small_4.mesh">
+			<transform 00="0.968579" 01="-0.248705" 02="0" 03="0" 10="0.248705" 11="0.968579" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-316.55957" 31="11.1957417" 32="-11.9277344" 33="1"/>
 		</mesh>
-		<mesh id="StaticObject_12" file_name="nso_mod/meshes/rocks/rock_small_1.mesh">
-			<transform 00="0.712277" 01="-0.701898" 10="0.701898" 11="0.712277" 30="-313.1172" 31="10.46528" 32="-6.876953"/>
+		<mesh id="StaticObject_12" seasonal_flags="0" file_name="nso_mod/meshes/rocks/rock_small_1.mesh">
+			<transform 00="0.712277" 01="-0.701898" 02="0" 03="0" 10="0.701898" 11="0.712277" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-313.1172" 31="10.46528" 32="-6.876953" 33="1"/>
 		</mesh>
-		<mesh id="StaticObject_11" file_name="nso_mod/meshes/rocks/rock_big_3.mesh">
-			<transform 30="-307.530273" 31="9.181732" 32="-2.609375"/>
+		<mesh id="StaticObject_11" seasonal_flags="0" file_name="nso_mod/meshes/rocks/rock_big_3.mesh">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-307.530273" 31="9.181732" 32="-2.609375" 33="1"/>
 		</mesh>
-		<mesh id="StaticObject_10" file_name="nso_mod/meshes/decoration/clutter/rusted_gas_tank.mesh">
-			<transform 00="0.836182" 01="-0.531772" 02="-0.134236" 10="0.536628" 11="0.843819" 12="-0" 20="0.113271" 21="-0.072035" 22="0.990949" 30="-310.338867" 31="9.751062" 32="-3.228516"/>
+		<mesh id="StaticObject_10" seasonal_flags="0" file_name="nso_mod/meshes/decoration/clutter/rusted_gas_tank.mesh">
+			<transform 00="0.836182" 01="-0.531772" 02="-0.134236" 03="0" 10="0.536628" 11="0.843819" 12="0" 13="0" 20="0.113271" 21="-0.072035" 22="0.990949" 23="0" 30="-310.338867" 31="9.751062" 32="-3.228516" 33="1"/>
 		</mesh>
-		<mesh id="StaticObject_9" file_name="nso_mod/meshes/decoration/clutter/rusted_big_tank.mesh">
-			<transform 00="-0.759947" 02="-0.649985" 11="0.999994" 20="0.649985" 22="-0.759947" 30="-304.2422" 31="12.087246" 32="-13.018555"/>
+		<mesh id="StaticObject_9" seasonal_flags="0" file_name="nso_mod/meshes/decoration/clutter/rusted_big_tank.mesh">
+			<transform 00="-0.759947" 01="0" 02="-0.649985" 03="0" 10="0" 11="0.999994" 12="0" 13="0" 20="0.649985" 21="0" 22="-0.759947" 23="0" 30="-304.2422" 31="12.0872459" 32="-13.0185547" 33="1"/>
 		</mesh>
-		<mesh id="StaticObject_8" file_name="nso_mod/meshes/decoration/clutter/rusted_beam.mesh">
-			<transform 00="0.36584" 02="0.930678" 20="-0.930678" 22="0.36584" 30="-302.597656" 31="12.019042" 32="-10.245117"/>
+		<mesh id="StaticObject_8" seasonal_flags="0" file_name="nso_mod/meshes/decoration/clutter/rusted_beam.mesh">
+			<transform 00="0.36584" 01="0" 02="0.930678" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.930678" 21="0" 22="0.36584" 23="0" 30="-302.597656" 31="12.019042" 32="-10.2451172" 33="1"/>
 		</mesh>
-		<mesh id="StaticObject_7" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/decoration/workbenches/workbench_clean__StaticObject_7.mesh">
-			<transform 00="0.142613" 02="0.989779" 20="-0.989779" 22="0.142613" 30="-308.5" 31="12.076549" 32="-16.875977"/>
+		<mesh id="StaticObject_7" seasonal_flags="0" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/decoration/workbenches/workbench_clean__StaticObject_7.mesh">
+			<transform 00="0.142613" 01="0" 02="0.989779" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.989779" 21="0" 22="0.142613" 23="0" 30="-308.5" 31="12.0765486" 32="-16.8759766" 33="1"/>
 		</mesh>
-		<mesh id="StaticObject_6" file_name="nso_mod/meshes/nature/rocks_paralel_small_01.mesh">
-			<transform 00="0.932283" 02="-0.36173" 20="0.36173" 22="0.932283" 30="-61.5791" 31="6.268582" 32="172.951172"/>
+		<mesh id="StaticObject_6" seasonal_flags="0" file_name="nso_mod/meshes/nature/rocks_paralel_small_01.mesh">
+			<transform 00="0.932283" 01="0" 02="-0.36173" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.36173" 21="0" 22="0.932283" 23="0" 30="-61.5791" 31="6.268582" 32="172.951172" 33="1"/>
 		</mesh>
-		<mesh id="StaticObject_5" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/nature/rocks_slab_small_01__StaticObject_5.mesh">
-			<transform 00="0.964467" 01="0.189558" 02="0.184039" 10="-0.193694" 11="0.981051" 12="0.004593" 20="-0.179681" 21="-0.040077" 22="0.982908" 30="-66.52344" 31="5.738286" 32="167.224609"/>
+		<mesh id="StaticObject_5" seasonal_flags="0" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/nature/rocks_slab_small_01__StaticObject_5.mesh">
+			<transform 00="0.964467" 01="0.189558" 02="0.184039" 03="0" 10="-0.193694" 11="0.981051" 12="0.004593" 13="0" 20="-0.179681" 21="-0.040077" 22="0.982908" 23="0" 30="-66.52344" 31="5.738286" 32="167.224609" 33="1"/>
 		</mesh>
-		<mesh id="StaticObject_4" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/nature/rocks_slab_small_01__StaticObject_4.mesh">
-			<transform 00="0.861403" 01="-0.138478" 02="-0.48868" 10="0.158721" 11="0.987324" 12="-0" 20="0.482486" 21="-0.077564" 22="0.872463" 30="-25.958984" 31="6.312745" 32="175.675781"/>
+		<mesh id="StaticObject_4" seasonal_flags="0" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/nature/rocks_slab_small_01__StaticObject_4.mesh">
+			<transform 00="0.861403" 01="-0.138478" 02="-0.48868" 03="0" 10="0.158721" 11="0.987324" 12="0" 13="0" 20="0.482486" 21="-0.077564" 22="0.872463" 23="0" 30="-25.9589844" 31="6.312745" 32="175.675781" 33="1"/>
 		</mesh>
-		<mesh id="StaticObject_3" file_name="nso_mod/meshes/nature/rocks_paralel_small_01.mesh">
-			<transform 00="-0.308425" 01="0.017925" 02="-0.951081" 10="-0.280857" 11="0.953536" 12="0.10905" 20="0.908843" 21="0.300751" 22="-0.289059" 30="-29.22754" 31="6.179626" 32="183.297852"/>
+		<mesh id="StaticObject_3" seasonal_flags="0" file_name="nso_mod/meshes/nature/rocks_paralel_small_01.mesh">
+			<transform 00="-0.308425" 01="0.017925" 02="-0.951081" 03="0" 10="-0.280857" 11="0.953536" 12="0.10905" 13="0" 20="0.908843" 21="0.300751" 22="-0.289059" 23="0" 30="-29.22754" 31="6.179626" 32="183.297852" 33="1"/>
 		</mesh>
-		<mesh id="StaticObject_2" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/nature/rocks_slab_small_01__StaticObject_2.mesh">
-			<transform 00="0.504545" 01="0.851577" 02="0.142308" 10="-0.832278" 11="0.523559" 12="-0.182206" 20="-0.229669" 21="-0.026509" 22="0.972908" 30="-33.404297" 31="2.807221" 32="178.732422"/>
+		<mesh id="StaticObject_2" seasonal_flags="0" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/nature/rocks_slab_small_01__StaticObject_2.mesh">
+			<transform 00="0.504545" 01="0.851577" 02="0.142308" 03="0" 10="-0.832278" 11="0.523559" 12="-0.182206" 13="0" 20="-0.229669" 21="-0.026509" 22="0.972908" 23="0" 30="-33.4042969" 31="2.807221" 32="178.732422" 33="1"/>
 		</mesh>
-		<mesh id="StaticObject_1" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/nature/rocks_slab_small_01__StaticObject_1.mesh">
-			<transform 00="0.944412" 01="-0.250164" 02="0.213316" 10="0.235008" 11="0.967428" 12="0.094096" 20="-0.229908" 21="-0.038734" 22="0.972441" 30="-22.55371" 31="4.515697" 32="181.182617"/>
+		<mesh id="StaticObject_1" seasonal_flags="0" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/nature/rocks_slab_small_01__StaticObject_1.mesh">
+			<transform 00="0.944412" 01="-0.250164" 02="0.213316" 03="0" 10="0.235008" 11="0.967428" 12="0.094096" 13="0" 20="-0.229908" 21="-0.038734" 22="0.972441" 23="0" 30="-22.55371" 31="4.515697" 32="181.182617" 33="1"/>
 		</mesh>
-		<mesh id="StaticObject_0" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/nature/bush__StaticObject_0.mesh">
-			<transform 30="494.589844" 31="4.633185" 32="23.213867"/>
+		<mesh id="StaticObject_0" seasonal_flags="0" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/nature/bush__StaticObject_0.mesh">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="494.589844" 31="4.633185" 32="23.2138672" 33="1"/>
 		</mesh>
-		<mesh id="ExtrudedTrackMesh_Curve_89" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_89.mesh">
-			<transform 30="-117.181641" 31="27.57115" 32="-476.7041"/>
+		<mesh id="ExtrudedTrackMesh_Curve_89" seasonal_flags="0" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_89.mesh">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-117.181641" 31="27.57115" 32="-476.7041" 33="1"/>
 		</mesh>
-		<mesh id="ExtrudedTrackMesh_Curve_54" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_54.mesh">
-			<transform 30="-142.395508" 31="27.5243" 32="-463.957031"/>
+		<mesh id="ExtrudedTrackMesh_Curve_54" seasonal_flags="0" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_54.mesh">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-142.395508" 31="27.5243" 32="-463.957031" 33="1"/>
 		</mesh>
-		<mesh id="ExtrudedTrackMesh_Curve_53" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_53.mesh">
-			<transform 30="-174.7207" 31="27.372276" 32="-456.669922"/>
+		<mesh id="ExtrudedTrackMesh_Curve_53" seasonal_flags="0" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_53.mesh">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-174.7207" 31="27.3722763" 32="-456.669922" 33="1"/>
 		</mesh>
-		<mesh id="ExtrudedTrackMesh_Curve_52" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_52.mesh">
-			<transform 30="-209.984375" 31="27.38788" 32="-454.480469"/>
+		<mesh id="ExtrudedTrackMesh_Curve_52" seasonal_flags="0" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_52.mesh">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-209.984375" 31="27.38788" 32="-454.480469" 33="1"/>
 		</mesh>
-		<mesh id="ExtrudedTrackMesh_Curve_51" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_51.mesh">
-			<transform 30="-241.791016" 31="27.40131" 32="-453.519531"/>
+		<mesh id="ExtrudedTrackMesh_Curve_51" seasonal_flags="0" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_51.mesh">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-241.791016" 31="27.40131" 32="-453.519531" 33="1"/>
 		</mesh>
-		<mesh id="ExtrudedTrackMesh_Curve_50" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_50.mesh">
-			<transform 30="-264.7881" 31="27.423069" 32="-442.5879"/>
+		<mesh id="ExtrudedTrackMesh_Curve_50" seasonal_flags="0" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_50.mesh">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-264.7881" 31="27.423069" 32="-442.5879" 33="1"/>
 		</mesh>
-		<mesh id="ExtrudedTrackMesh_Curve_49" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_49.mesh">
-			<transform 30="-273.792" 31="27.4855" 32="-422.0879"/>
+		<mesh id="ExtrudedTrackMesh_Curve_49" seasonal_flags="0" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_49.mesh">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-273.792" 31="27.4855" 32="-422.0879" 33="1"/>
 		</mesh>
-		<mesh id="ExtrudedTrackMesh_Curve_48" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_48.mesh">
-			<transform 30="-265.97168" 31="26.181425" 32="-385.857422"/>
+		<mesh id="ExtrudedTrackMesh_Curve_48" seasonal_flags="0" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_48.mesh">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-265.97168" 31="26.1814251" 32="-385.857422" 33="1"/>
 		</mesh>
-		<mesh id="ExtrudedTrackMesh_Curve_47" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_47.mesh">
-			<transform 30="-245.519531" 31="22.16456" 32="-321.107422"/>
+		<mesh id="ExtrudedTrackMesh_Curve_47" seasonal_flags="0" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_47.mesh">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-245.519531" 31="22.16456" 32="-321.107422" 33="1"/>
 		</mesh>
-		<mesh id="ExtrudedTrackMesh_Curve_46" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_46.mesh">
-			<transform 30="-232.523438" 31="17.570126" 32="-245.1914"/>
+		<mesh id="ExtrudedTrackMesh_Curve_46" seasonal_flags="0" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_46.mesh">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-232.523438" 31="17.5701256" 32="-245.1914" 33="1"/>
 		</mesh>
-		<mesh id="ExtrudedTrackMesh_Curve_45" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_45.mesh">
-			<transform 30="-232.175781" 31="14.729845" 32="-185.3789"/>
+		<mesh id="ExtrudedTrackMesh_Curve_45" seasonal_flags="0" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_45.mesh">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-232.175781" 31="14.729845" 32="-185.3789" 33="1"/>
 		</mesh>
-		<mesh id="ExtrudedTrackMesh_Curve_44" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_44.mesh">
-			<transform 30="-236.102539" 31="13.091915" 32="-139.576172"/>
+		<mesh id="ExtrudedTrackMesh_Curve_44" seasonal_flags="0" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_44.mesh">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-236.102539" 31="13.0919151" 32="-139.576172" 33="1"/>
 		</mesh>
-		<mesh id="ExtrudedTrackMesh_Curve_43" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_43.mesh">
-			<transform 30="-248.550781" 31="12.41197" 32="-94.512695"/>
+		<mesh id="ExtrudedTrackMesh_Curve_43" seasonal_flags="0" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_43.mesh">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-248.550781" 31="12.41197" 32="-94.5126953" 33="1"/>
 		</mesh>
-		<mesh id="ExtrudedTrackMesh_Curve_42" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_42.mesh">
-			<transform 30="-287.2871" 31="12.35824" 32="-44.57129"/>
+		<mesh id="ExtrudedTrackMesh_Curve_42" seasonal_flags="0" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_42.mesh">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-287.2871" 31="12.35824" 32="-44.57129" 33="1"/>
 		</mesh>
-		<mesh id="ExtrudedTrackMesh_Curve_41" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_41.mesh">
-			<transform 30="-326.022461" 31="12.34081" 32="-8.091797"/>
+		<mesh id="ExtrudedTrackMesh_Curve_41" seasonal_flags="0" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_41.mesh">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-326.022461" 31="12.34081" 32="-8.091797" 33="1"/>
 		</mesh>
-		<mesh id="ExtrudedTrackMesh_Curve_40" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_40.mesh">
-			<transform 30="-346.75" 31="12.384855" 32="7.197266"/>
+		<mesh id="ExtrudedTrackMesh_Curve_40" seasonal_flags="0" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_40.mesh">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-346.75" 31="12.3848553" 32="7.197266" 33="1"/>
 		</mesh>
-		<mesh id="ExtrudedTrackMesh_Curve_39" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_39.mesh">
-			<transform 30="-372.5083" 31="13.800425" 32="11.361328"/>
+		<mesh id="ExtrudedTrackMesh_Curve_39" seasonal_flags="0" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_39.mesh">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-372.5083" 31="13.8004246" 32="11.3613281" 33="1"/>
 		</mesh>
-		<mesh id="ExtrudedTrackMesh_Curve_38" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_38.mesh">
-			<transform 30="-469.6963" 31="19.478893" 32="-37.226563"/>
+		<mesh id="ExtrudedTrackMesh_Curve_38" seasonal_flags="0" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_38.mesh">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-469.6963" 31="19.4788933" 32="-37.2265625" 33="1"/>
 		</mesh>
-		<mesh id="ExtrudedTrackMesh_Curve_37" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_37.mesh">
-			<transform 30="-425.813477" 31="17.222324" 32="-11.776367"/>
+		<mesh id="ExtrudedTrackMesh_Curve_37" seasonal_flags="0" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_37.mesh">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-425.813477" 31="17.2223244" 32="-11.7763672" 33="1"/>
+		</mesh>
+		<mesh id="StaticObject_0_Transferred_0" seasonal_flags="0" _CT_loadIgnore="true" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/nature/bush__StaticObject_0.mesh">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="494.589844" 31="4.63318539" 32="23.2138672" 33="1"/>
+		</mesh>
+		<mesh id="StaticObject_10_Transferred_0" seasonal_flags="0" _CT_loadIgnore="true" file_name="nso_mod/meshes/decoration/clutter/rusted_gas_tank.mesh">
+			<transform 00="0.8361816" 01="-0.53177166" 02="-0.134236187" 03="0" 10="0.5366285" 11="0.843818665" 12="-1.86264515E-08" 13="0" 20="0.113271005" 21="-0.07203494" 22="0.9909494" 23="0" 30="-310.338867" 31="9.751062" 32="-3.22851563" 33="1"/>
+		</mesh>
+		<mesh id="StaticObject_11_Transferred_0" seasonal_flags="0" _CT_loadIgnore="true" file_name="nso_mod/meshes/rocks/rock_big_3.mesh">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-307.530273" 31="9.181732" 32="-2.609375" 33="1"/>
+		</mesh>
+		<mesh id="StaticObject_12_Transferred_0" seasonal_flags="0" _CT_loadIgnore="true" file_name="nso_mod/meshes/rocks/rock_small_1.mesh">
+			<transform 00="0.712277" 01="-0.701898456" 02="0" 03="0" 10="0.701898456" 11="0.712277" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-313.1172" 31="10.46528" 32="-6.876953" 33="1"/>
+		</mesh>
+		<mesh id="StaticObject_13_Transferred_0" seasonal_flags="0" _CT_loadIgnore="true" file_name="nso_mod/meshes/rocks/rock_small_4.mesh">
+			<transform 00="0.968579233" 01="-0.248705223" 02="0" 03="0" 10="0.248705223" 11="0.968579233" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-316.55957" 31="11.1957417" 32="-11.9277344" 33="1"/>
+		</mesh>
+		<mesh id="StaticObject_14_Transferred_0" seasonal_flags="0" _CT_loadIgnore="true" file_name="nso_mod/meshes/rocks/rock_big_3.mesh">
+			<transform 00="0.2720055" 01="0.906854153" 02="-0.321913838" 03="0" 10="-0.180577487" 11="0.376686037" 12="0.90857" 13="0" 20="0.9452009" 21="-0.189005673" 22="0.266218126" 23="0" 30="-268.3662" 31="10.4196091" 32="-51.9140625" 33="1"/>
+		</mesh>
+		<mesh id="StaticObject_15_Transferred_0" seasonal_flags="0" _CT_loadIgnore="true" file_name="nso_mod/meshes/rocks/rock_small_3.mesh">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-264.5879" 31="10.5769167" 32="-53.24707" 33="1"/>
+		</mesh>
+		<mesh id="StaticObject_16_Transferred_0" seasonal_flags="0" _CT_loadIgnore="true" file_name="nso_mod/meshes/rocks/rock_small_4.mesh">
+			<transform 00="0.8380313" 01="0" 02="0.5456222" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.5456222" 21="0" 22="0.8380313" 23="0" 30="-267.1328" 31="10.0874338" 32="-49.0605469" 33="1"/>
+		</mesh>
+		<mesh id="StaticObject_17_Transferred_0" seasonal_flags="0" _CT_loadIgnore="true" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/decoration/wall_straight_short__StaticObject_17.mesh">
+			<transform 00="0.625190556" 01="-5.21540642E-08" 02="0.780472159" 03="0" 10="-0.183177233" 11="0.9720677" 12="0.146732628" 13="0" 20="-0.758671761" 21="-0.23470059" 22="0.6077276" 23="0" 30="-310.6504" 31="12.13435" 32="-6.78027344" 33="1"/>
+		</mesh>
+		<mesh id="StaticObject_18_Transferred_0" seasonal_flags="0" _CT_loadIgnore="true" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/decoration/workbenches/workbench_clean__StaticObject_18.mesh">
+			<transform 00="0.753804445" 01="0" 02="-0.6570988" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.6570988" 21="0" 22="0.753804445" 23="0" 30="-309.393555" 31="12.0379524" 32="-6.866211" 33="1"/>
+		</mesh>
+		<mesh id="StaticObject_19_Transferred_0" seasonal_flags="0" _CT_loadIgnore="true" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/decoration/workbenches/workbench_clean__StaticObject_19.mesh">
+			<transform 00="0.6407088" 01="0" 02="0.76778394" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.76778394" 21="0" 22="0.6407088" 23="0" 30="-259.353516" 31="2.12717938" 32="35.2431641" 33="1"/>
+		</mesh>
+		<mesh id="StaticObject_1_Transferred_0" seasonal_flags="0" _CT_loadIgnore="true" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/nature/rocks_slab_small_01__StaticObject_1.mesh">
+			<transform 00="0.944412" 01="-0.25016427" 02="0.213316321" 03="0" 10="0.2350075" 11="0.9674283" 12="0.09409551" 13="0" 20="-0.229907572" 21="-0.038734" 22="0.9724414" 23="0" 30="-22.55371" 31="4.51569653" 32="181.182617" 33="1"/>
+		</mesh>
+		<mesh id="StaticObject_20_Transferred_0" seasonal_flags="0" _CT_loadIgnore="true" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/nature/rock_mount_02__StaticObject_20.mesh">
+			<transform 00="0.597049356" 01="-0.0176441818" 02="-0.8020105" 03="0" 10="-0.32467556" 11="0.9089006" 12="-0.261697471" 13="0" 20="0.733565152" 21="0.4166395" 22="0.5369299" 23="0" 30="-465.3579" 31="18.2547188" 32="-31.7167969" 33="1"/>
+		</mesh>
+		<mesh id="StaticObject_21_Transferred_0" seasonal_flags="0" _CT_loadIgnore="true" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/nature/rock_mount_01__StaticObject_21.mesh">
+			<transform 00="0.885510743" 01="-0.165486783" 02="-0.4341485" 03="0" 10="0.2871597" 11="0.929513037" 12="0.231397524" 13="0" 20="0.365253448" 21="-0.329574943" 22="0.8706149" 23="0" 30="-440.331055" 31="18.8677311" 32="-17.6054688" 33="1"/>
+		</mesh>
+		<mesh id="StaticObject_2_Transferred_0" seasonal_flags="0" _CT_loadIgnore="true" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/nature/rocks_slab_small_01__StaticObject_2.mesh">
+			<transform 00="0.504545" 01="0.851576567" 02="0.142308474" 03="0" 10="-0.8322778" 11="0.5235595" 12="-0.182206124" 13="0" 20="-0.229669452" 21="-0.02650901" 22="0.972907662" 23="0" 30="-33.4042969" 31="2.80722117" 32="178.732422" 33="1"/>
+		</mesh>
+		<mesh id="StaticObject_3_Transferred_0" seasonal_flags="0" _CT_loadIgnore="true" file_name="nso_mod/meshes/nature/rocks_paralel_small_01.mesh">
+			<transform 00="-0.308424622" 01="0.0179249626" 02="-0.9510806" 03="0" 10="-0.280856669" 11="0.953536153" 12="0.109049834" 13="0" 20="0.90884316" 21="0.300750524" 22="-0.289059281" 23="0" 30="-29.22754" 31="6.17962646" 32="183.297852" 33="1"/>
+		</mesh>
+		<mesh id="StaticObject_4_Transferred_0" seasonal_flags="0" _CT_loadIgnore="true" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/nature/rocks_slab_small_01__StaticObject_4.mesh">
+			<transform 00="0.861403167" 01="-0.138477981" 02="-0.4886803" 03="0" 10="0.158720762" 11="0.9873235" 12="-1.86264515E-08" 13="0" 20="0.482485533" 21="-0.07756369" 22="0.8724629" 23="0" 30="-25.9589844" 31="6.31274462" 32="175.675781" 33="1"/>
+		</mesh>
+		<mesh id="StaticObject_5_Transferred_0" seasonal_flags="0" _CT_loadIgnore="true" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/nature/rocks_slab_small_01__StaticObject_5.mesh">
+			<transform 00="0.964467466" 01="0.189558014" 02="0.184038773" 03="0" 10="-0.193693861" 11="0.981051266" 12="0.0045930706" 13="0" 20="-0.179680809" 21="-0.040077053" 22="0.982908249" 23="0" 30="-66.52344" 31="5.73828554" 32="167.224609" 33="1"/>
+		</mesh>
+		<mesh id="StaticObject_6_Transferred_0" seasonal_flags="0" _CT_loadIgnore="true" file_name="nso_mod/meshes/nature/rocks_paralel_small_01.mesh">
+			<transform 00="0.932282865" 01="0" 02="-0.361730069" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.361730069" 21="0" 22="0.932282865" 23="0" 30="-61.5791" 31="6.26858234" 32="172.951172" 33="1"/>
+		</mesh>
+		<mesh id="StaticObject_7_Transferred_0" seasonal_flags="0" _CT_loadIgnore="true" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/decoration/workbenches/workbench_clean__StaticObject_7.mesh">
+			<transform 00="0.142612681" 01="0" 02="0.9897786" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.9897786" 21="0" 22="0.142612681" 23="0" 30="-308.5" 31="12.0765486" 32="-16.8759766" 33="1"/>
+		</mesh>
+		<mesh id="StaticObject_8_Transferred_0" seasonal_flags="0" _CT_loadIgnore="true" file_name="nso_mod/meshes/decoration/clutter/rusted_beam.mesh">
+			<transform 00="0.36583963" 01="0" 02="0.9306779" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.9306779" 21="0" 22="0.36583963" 23="0" 30="-302.597656" 31="12.019042" 32="-10.2451172" 33="1"/>
+		</mesh>
+		<mesh id="StaticObject_9_Transferred_0" seasonal_flags="0" _CT_loadIgnore="true" file_name="nso_mod/meshes/decoration/clutter/rusted_big_tank.mesh">
+			<transform 00="-0.759946764" 01="0" 02="-0.649985135" 03="0" 10="0" 11="0.999993443" 12="0" 13="0" 20="0.649985135" 21="0" 22="-0.759946764" 23="0" 30="-304.2422" 31="12.0872459" 32="-13.0185547" 33="1"/>
 		</mesh>
 	</meshes>
 	<physics_objects/>
 	<physics_meshes>
-		<physics_mesh id="StaticObject_21_phys" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/nature/rock_mount_01__StaticObject_21_phys.phys">
-			<transform 00="0.885511" 01="-0.165487" 02="-0.434148" 10="0.28716" 11="0.929513" 12="0.231398" 20="0.365253" 21="-0.329575" 22="0.870615" 30="-440.331055" 31="18.867731" 32="-17.605469"/>
+		<physics_mesh id="StaticObject_21_phys" seasonal_flags="0" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/nature/rock_mount_01__StaticObject_21_phys.phys">
+			<transform 00="0.885511" 01="-0.165487" 02="-0.434148" 03="0" 10="0.28716" 11="0.929513" 12="0.231398" 13="0" 20="0.365253" 21="-0.329575" 22="0.870615" 23="0" 30="-440.331055" 31="18.8677311" 32="-17.6054688" 33="1"/>
 		</physics_mesh>
-		<physics_mesh id="StaticObject_20_phys" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/nature/rock_mount_02__StaticObject_20_phys.phys">
-			<transform 00="0.597049" 01="-0.017644" 02="-0.80201" 10="-0.324676" 11="0.908901" 12="-0.261697" 20="0.733565" 21="0.416639" 22="0.53693" 30="-465.3579" 31="18.254719" 32="-31.716797"/>
+		<physics_mesh id="StaticObject_20_phys" seasonal_flags="0" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/nature/rock_mount_02__StaticObject_20_phys.phys">
+			<transform 00="0.597049" 01="-0.017644" 02="-0.80201" 03="0" 10="-0.324676" 11="0.908901" 12="-0.261697" 13="0" 20="0.733565" 21="0.416639" 22="0.53693" 23="0" 30="-465.3579" 31="18.2547188" 32="-31.7167969" 33="1"/>
 		</physics_mesh>
-		<physics_mesh id="StaticObject_19_phys" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/decoration/workbenches/workbench_clean__StaticObject_19_phys.phys">
-			<transform 00="0.640709" 02="0.767784" 20="-0.767784" 22="0.640709" 30="-259.353516" 31="2.127179" 32="35.243164"/>
+		<physics_mesh id="StaticObject_19_phys" seasonal_flags="0" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/decoration/workbenches/workbench_clean__StaticObject_19_phys.phys">
+			<transform 00="0.640709" 01="0" 02="0.767784" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.767784" 21="0" 22="0.640709" 23="0" 30="-259.353516" 31="2.127179" 32="35.2431641" 33="1"/>
 		</physics_mesh>
-		<physics_mesh id="StaticObject_18_phys" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/decoration/workbenches/workbench_clean__StaticObject_18_phys.phys">
-			<transform 00="0.753804" 02="-0.657099" 20="0.657099" 22="0.753804" 30="-309.393555" 31="12.037952" 32="-6.866211"/>
+		<physics_mesh id="StaticObject_18_phys" seasonal_flags="0" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/decoration/workbenches/workbench_clean__StaticObject_18_phys.phys">
+			<transform 00="0.753804" 01="0" 02="-0.657099" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.657099" 21="0" 22="0.753804" 23="0" 30="-309.393555" 31="12.0379524" 32="-6.866211" 33="1"/>
 		</physics_mesh>
-		<physics_mesh id="StaticObject_17_phys" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/decoration/wall_straight_short__StaticObject_17_phys.phys">
-			<transform 00="0.625191" 01="-0" 02="0.780472" 10="-0.183177" 11="0.972068" 12="0.146733" 20="-0.758672" 21="-0.234701" 22="0.607728" 30="-310.6504" 31="12.13435" 32="-6.780273"/>
+		<physics_mesh id="StaticObject_17_phys" seasonal_flags="0" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/decoration/wall_straight_short__StaticObject_17_phys.phys">
+			<transform 00="0.625191" 01="0" 02="0.780472" 03="0" 10="-0.183177" 11="0.972068" 12="0.146733" 13="0" 20="-0.758672" 21="-0.234701" 22="0.607728" 23="0" 30="-310.6504" 31="12.13435" 32="-6.780273" 33="1"/>
 		</physics_mesh>
-		<physics_mesh id="StaticObject_16_phys" file_name="nso_mod/meshes/rocks/rock_small_4.phys">
-			<transform 00="0.838031" 02="0.545622" 20="-0.545622" 22="0.838031" 30="-267.1328" 31="10.087434" 32="-49.060547"/>
+		<physics_mesh id="StaticObject_16_phys" seasonal_flags="0" file_name="nso_mod/meshes/rocks/rock_small_4.phys">
+			<transform 00="0.838031" 01="0" 02="0.545622" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.545622" 21="0" 22="0.838031" 23="0" 30="-267.1328" 31="10.0874338" 32="-49.0605469" 33="1"/>
 		</physics_mesh>
-		<physics_mesh id="StaticObject_15_phys" file_name="nso_mod/meshes/rocks/rock_small_3.phys">
-			<transform 30="-264.5879" 31="10.576917" 32="-53.24707"/>
+		<physics_mesh id="StaticObject_15_phys" seasonal_flags="0" file_name="nso_mod/meshes/rocks/rock_small_3.phys">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-264.5879" 31="10.5769167" 32="-53.24707" 33="1"/>
 		</physics_mesh>
-		<physics_mesh id="StaticObject_14_phys" file_name="nso_mod/meshes/rocks/rock_big_3.phys">
-			<transform 00="0.272006" 01="0.906854" 02="-0.321914" 10="-0.180577" 11="0.376686" 12="0.90857" 20="0.945201" 21="-0.189006" 22="0.266218" 30="-268.3662" 31="10.419609" 32="-51.914063"/>
+		<physics_mesh id="StaticObject_14_phys" seasonal_flags="0" file_name="nso_mod/meshes/rocks/rock_big_3.phys">
+			<transform 00="0.272006" 01="0.906854" 02="-0.321914" 03="0" 10="-0.180577" 11="0.376686" 12="0.90857" 13="0" 20="0.945201" 21="-0.189006" 22="0.266218" 23="0" 30="-268.3662" 31="10.4196091" 32="-51.9140625" 33="1"/>
 		</physics_mesh>
-		<physics_mesh id="StaticObject_13_phys" file_name="nso_mod/meshes/rocks/rock_small_4.phys">
-			<transform 00="0.968579" 01="-0.248705" 10="0.248705" 11="0.968579" 30="-316.55957" 31="11.195742" 32="-11.927734"/>
+		<physics_mesh id="StaticObject_13_phys" seasonal_flags="0" file_name="nso_mod/meshes/rocks/rock_small_4.phys">
+			<transform 00="0.968579" 01="-0.248705" 02="0" 03="0" 10="0.248705" 11="0.968579" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-316.55957" 31="11.1957417" 32="-11.9277344" 33="1"/>
 		</physics_mesh>
-		<physics_mesh id="StaticObject_12_phys" file_name="nso_mod/meshes/rocks/rock_small_1.phys">
-			<transform 00="0.712277" 01="-0.701898" 10="0.701898" 11="0.712277" 30="-313.1172" 31="10.46528" 32="-6.876953"/>
+		<physics_mesh id="StaticObject_12_phys" seasonal_flags="0" file_name="nso_mod/meshes/rocks/rock_small_1.phys">
+			<transform 00="0.712277" 01="-0.701898" 02="0" 03="0" 10="0.701898" 11="0.712277" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-313.1172" 31="10.46528" 32="-6.876953" 33="1"/>
 		</physics_mesh>
-		<physics_mesh id="StaticObject_11_phys" file_name="nso_mod/meshes/rocks/rock_big_3.phys">
-			<transform 30="-307.530273" 31="9.181732" 32="-2.609375"/>
+		<physics_mesh id="StaticObject_11_phys" seasonal_flags="0" file_name="nso_mod/meshes/rocks/rock_big_3.phys">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-307.530273" 31="9.181732" 32="-2.609375" 33="1"/>
 		</physics_mesh>
-		<physics_mesh id="StaticObject_10_phys" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/decoration/clutter/rusted_gas_tank__StaticObject_10_phys.phys">
-			<transform 00="0.836182" 01="-0.531772" 02="-0.134236" 10="0.536628" 11="0.843819" 12="-0" 20="0.113271" 21="-0.072035" 22="0.990949" 30="-310.338867" 31="9.751062" 32="-3.228516"/>
+		<physics_mesh id="StaticObject_10_phys" seasonal_flags="0" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/decoration/clutter/rusted_gas_tank__StaticObject_10_phys.phys">
+			<transform 00="0.836182" 01="-0.531772" 02="-0.134236" 03="0" 10="0.536628" 11="0.843819" 12="0" 13="0" 20="0.113271" 21="-0.072035" 22="0.990949" 23="0" 30="-310.338867" 31="9.751062" 32="-3.228516" 33="1"/>
 		</physics_mesh>
-		<physics_mesh id="StaticObject_9_phys" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/decoration/clutter/rusted_big_tank__StaticObject_9_phys.phys">
-			<transform 00="-0.759947" 02="-0.649985" 11="0.999994" 20="0.649985" 22="-0.759947" 30="-304.2422" 31="12.087246" 32="-13.018555"/>
+		<physics_mesh id="StaticObject_9_phys" seasonal_flags="0" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/decoration/clutter/rusted_big_tank__StaticObject_9_phys.phys">
+			<transform 00="-0.759947" 01="0" 02="-0.649985" 03="0" 10="0" 11="0.999994" 12="0" 13="0" 20="0.649985" 21="0" 22="-0.759947" 23="0" 30="-304.2422" 31="12.0872459" 32="-13.0185547" 33="1"/>
 		</physics_mesh>
-		<physics_mesh id="StaticObject_8_phys" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/decoration/clutter/rusted_beam__StaticObject_8_phys.phys">
-			<transform 00="0.36584" 02="0.930678" 20="-0.930678" 22="0.36584" 30="-302.597656" 31="12.019042" 32="-10.245117"/>
+		<physics_mesh id="StaticObject_8_phys" seasonal_flags="0" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/decoration/clutter/rusted_beam__StaticObject_8_phys.phys">
+			<transform 00="0.36584" 01="0" 02="0.930678" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.930678" 21="0" 22="0.36584" 23="0" 30="-302.597656" 31="12.019042" 32="-10.2451172" 33="1"/>
 		</physics_mesh>
-		<physics_mesh id="StaticObject_7_phys" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/decoration/workbenches/workbench_clean__StaticObject_7_phys.phys">
-			<transform 00="0.142613" 02="0.989779" 20="-0.989779" 22="0.142613" 30="-308.5" 31="12.076549" 32="-16.875977"/>
+		<physics_mesh id="StaticObject_7_phys" seasonal_flags="0" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/decoration/workbenches/workbench_clean__StaticObject_7_phys.phys">
+			<transform 00="0.142613" 01="0" 02="0.989779" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.989779" 21="0" 22="0.142613" 23="0" 30="-308.5" 31="12.0765486" 32="-16.8759766" 33="1"/>
 		</physics_mesh>
-		<physics_mesh id="StaticObject_6_phys" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/nature/rocks_paralel_small_01__StaticObject_6_phys.phys">
-			<transform 00="0.932283" 02="-0.36173" 20="0.36173" 22="0.932283" 30="-61.5791" 31="6.268582" 32="172.951172"/>
+		<physics_mesh id="StaticObject_6_phys" seasonal_flags="0" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/nature/rocks_paralel_small_01__StaticObject_6_phys.phys">
+			<transform 00="0.932283" 01="0" 02="-0.36173" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.36173" 21="0" 22="0.932283" 23="0" 30="-61.5791" 31="6.268582" 32="172.951172" 33="1"/>
 		</physics_mesh>
-		<physics_mesh id="StaticObject_5_phys" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/nature/rocks_slab_small_01__StaticObject_5_phys.phys">
-			<transform 00="0.964467" 01="0.189558" 02="0.184039" 10="-0.193694" 11="0.981051" 12="0.004593" 20="-0.179681" 21="-0.040077" 22="0.982908" 30="-66.52344" 31="5.738286" 32="167.224609"/>
+		<physics_mesh id="StaticObject_5_phys" seasonal_flags="0" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/nature/rocks_slab_small_01__StaticObject_5_phys.phys">
+			<transform 00="0.964467" 01="0.189558" 02="0.184039" 03="0" 10="-0.193694" 11="0.981051" 12="0.004593" 13="0" 20="-0.179681" 21="-0.040077" 22="0.982908" 23="0" 30="-66.52344" 31="5.738286" 32="167.224609" 33="1"/>
 		</physics_mesh>
-		<physics_mesh id="StaticObject_4_phys" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/nature/rocks_slab_small_01__StaticObject_4_phys.phys">
-			<transform 00="0.861403" 01="-0.138478" 02="-0.48868" 10="0.158721" 11="0.987324" 12="-0" 20="0.482486" 21="-0.077564" 22="0.872463" 30="-25.958984" 31="6.312745" 32="175.675781"/>
+		<physics_mesh id="StaticObject_4_phys" seasonal_flags="0" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/nature/rocks_slab_small_01__StaticObject_4_phys.phys">
+			<transform 00="0.861403" 01="-0.138478" 02="-0.48868" 03="0" 10="0.158721" 11="0.987324" 12="0" 13="0" 20="0.482486" 21="-0.077564" 22="0.872463" 23="0" 30="-25.9589844" 31="6.312745" 32="175.675781" 33="1"/>
 		</physics_mesh>
-		<physics_mesh id="StaticObject_3_phys" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/nature/rocks_paralel_small_01__StaticObject_3_phys.phys">
-			<transform 00="-0.308425" 01="0.017925" 02="-0.951081" 10="-0.280857" 11="0.953536" 12="0.10905" 20="0.908843" 21="0.300751" 22="-0.289059" 30="-29.22754" 31="6.179626" 32="183.297852"/>
+		<physics_mesh id="StaticObject_3_phys" seasonal_flags="0" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/nature/rocks_paralel_small_01__StaticObject_3_phys.phys">
+			<transform 00="-0.308425" 01="0.017925" 02="-0.951081" 03="0" 10="-0.280857" 11="0.953536" 12="0.10905" 13="0" 20="0.908843" 21="0.300751" 22="-0.289059" 23="0" 30="-29.22754" 31="6.179626" 32="183.297852" 33="1"/>
 		</physics_mesh>
-		<physics_mesh id="StaticObject_2_phys" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/nature/rocks_slab_small_01__StaticObject_2_phys.phys">
-			<transform 00="0.504545" 01="0.851577" 02="0.142308" 10="-0.832278" 11="0.523559" 12="-0.182206" 20="-0.229669" 21="-0.026509" 22="0.972908" 30="-33.404297" 31="2.807221" 32="178.732422"/>
+		<physics_mesh id="StaticObject_2_phys" seasonal_flags="0" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/nature/rocks_slab_small_01__StaticObject_2_phys.phys">
+			<transform 00="0.504545" 01="0.851577" 02="0.142308" 03="0" 10="-0.832278" 11="0.523559" 12="-0.182206" 13="0" 20="-0.229669" 21="-0.026509" 22="0.972908" 23="0" 30="-33.4042969" 31="2.807221" 32="178.732422" 33="1"/>
 		</physics_mesh>
-		<physics_mesh id="StaticObject_1_phys" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/nature/rocks_slab_small_01__StaticObject_1_phys.phys">
-			<transform 00="0.944412" 01="-0.250164" 02="0.213316" 10="0.235008" 11="0.967428" 12="0.094096" 20="-0.229908" 21="-0.038734" 22="0.972441" 30="-22.55371" 31="4.515697" 32="181.182617"/>
+		<physics_mesh id="StaticObject_1_phys" seasonal_flags="0" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/nature/rocks_slab_small_01__StaticObject_1_phys.phys">
+			<transform 00="0.944412" 01="-0.250164" 02="0.213316" 03="0" 10="0.235008" 11="0.967428" 12="0.094096" 13="0" 20="-0.229908" 21="-0.038734" 22="0.972441" 23="0" 30="-22.55371" 31="4.515697" 32="181.182617" 33="1"/>
 		</physics_mesh>
-		<physics_mesh id="ExtrudedTrackMesh_Curve_phys_89" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_phys_89.phys">
-			<transform 30="-117.181641" 31="27.57115" 32="-476.7041"/>
+		<physics_mesh id="ExtrudedTrackMesh_Curve_phys_89" seasonal_flags="0" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_phys_89.phys">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-117.181641" 31="27.57115" 32="-476.7041" 33="1"/>
 		</physics_mesh>
-		<physics_mesh id="ExtrudedTrackMesh_Curve_phys_54" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_phys_54.phys">
-			<transform 30="-142.395508" 31="27.5243" 32="-463.957031"/>
+		<physics_mesh id="ExtrudedTrackMesh_Curve_phys_54" seasonal_flags="0" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_phys_54.phys">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-142.395508" 31="27.5243" 32="-463.957031" 33="1"/>
 		</physics_mesh>
-		<physics_mesh id="ExtrudedTrackMesh_Curve_phys_53" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_phys_53.phys">
-			<transform 30="-174.7207" 31="27.372276" 32="-456.669922"/>
+		<physics_mesh id="ExtrudedTrackMesh_Curve_phys_53" seasonal_flags="0" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_phys_53.phys">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-174.7207" 31="27.3722763" 32="-456.669922" 33="1"/>
 		</physics_mesh>
-		<physics_mesh id="ExtrudedTrackMesh_Curve_phys_52" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_phys_52.phys">
-			<transform 30="-209.984375" 31="27.38788" 32="-454.480469"/>
+		<physics_mesh id="ExtrudedTrackMesh_Curve_phys_52" seasonal_flags="0" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_phys_52.phys">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-209.984375" 31="27.38788" 32="-454.480469" 33="1"/>
 		</physics_mesh>
-		<physics_mesh id="ExtrudedTrackMesh_Curve_phys_51" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_phys_51.phys">
-			<transform 30="-241.791016" 31="27.40131" 32="-453.519531"/>
+		<physics_mesh id="ExtrudedTrackMesh_Curve_phys_51" seasonal_flags="0" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_phys_51.phys">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-241.791016" 31="27.40131" 32="-453.519531" 33="1"/>
 		</physics_mesh>
-		<physics_mesh id="ExtrudedTrackMesh_Curve_phys_50" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_phys_50.phys">
-			<transform 30="-264.7881" 31="27.423069" 32="-442.5879"/>
+		<physics_mesh id="ExtrudedTrackMesh_Curve_phys_50" seasonal_flags="0" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_phys_50.phys">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-264.7881" 31="27.423069" 32="-442.5879" 33="1"/>
 		</physics_mesh>
-		<physics_mesh id="ExtrudedTrackMesh_Curve_phys_49" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_phys_49.phys">
-			<transform 30="-273.792" 31="27.4855" 32="-422.0879"/>
+		<physics_mesh id="ExtrudedTrackMesh_Curve_phys_49" seasonal_flags="0" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_phys_49.phys">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-273.792" 31="27.4855" 32="-422.0879" 33="1"/>
 		</physics_mesh>
-		<physics_mesh id="ExtrudedTrackMesh_Curve_phys_48" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_phys_48.phys">
-			<transform 30="-265.97168" 31="26.181425" 32="-385.857422"/>
+		<physics_mesh id="ExtrudedTrackMesh_Curve_phys_48" seasonal_flags="0" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_phys_48.phys">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-265.97168" 31="26.1814251" 32="-385.857422" 33="1"/>
 		</physics_mesh>
-		<physics_mesh id="ExtrudedTrackMesh_Curve_phys_47" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_phys_47.phys">
-			<transform 30="-245.519531" 31="22.16456" 32="-321.107422"/>
+		<physics_mesh id="ExtrudedTrackMesh_Curve_phys_47" seasonal_flags="0" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_phys_47.phys">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-245.519531" 31="22.16456" 32="-321.107422" 33="1"/>
 		</physics_mesh>
-		<physics_mesh id="ExtrudedTrackMesh_Curve_phys_46" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_phys_46.phys">
-			<transform 30="-232.523438" 31="17.570126" 32="-245.1914"/>
+		<physics_mesh id="ExtrudedTrackMesh_Curve_phys_46" seasonal_flags="0" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_phys_46.phys">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-232.523438" 31="17.5701256" 32="-245.1914" 33="1"/>
 		</physics_mesh>
-		<physics_mesh id="ExtrudedTrackMesh_Curve_phys_45" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_phys_45.phys">
-			<transform 30="-232.175781" 31="14.729845" 32="-185.3789"/>
+		<physics_mesh id="ExtrudedTrackMesh_Curve_phys_45" seasonal_flags="0" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_phys_45.phys">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-232.175781" 31="14.729845" 32="-185.3789" 33="1"/>
 		</physics_mesh>
-		<physics_mesh id="ExtrudedTrackMesh_Curve_phys_44" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_phys_44.phys">
-			<transform 30="-236.102539" 31="13.091915" 32="-139.576172"/>
+		<physics_mesh id="ExtrudedTrackMesh_Curve_phys_44" seasonal_flags="0" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_phys_44.phys">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-236.102539" 31="13.0919151" 32="-139.576172" 33="1"/>
 		</physics_mesh>
-		<physics_mesh id="ExtrudedTrackMesh_Curve_phys_43" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_phys_43.phys">
-			<transform 30="-248.550781" 31="12.41197" 32="-94.512695"/>
+		<physics_mesh id="ExtrudedTrackMesh_Curve_phys_43" seasonal_flags="0" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_phys_43.phys">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-248.550781" 31="12.41197" 32="-94.5126953" 33="1"/>
 		</physics_mesh>
-		<physics_mesh id="ExtrudedTrackMesh_Curve_phys_42" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_phys_42.phys">
-			<transform 30="-287.2871" 31="12.35824" 32="-44.57129"/>
+		<physics_mesh id="ExtrudedTrackMesh_Curve_phys_42" seasonal_flags="0" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_phys_42.phys">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-287.2871" 31="12.35824" 32="-44.57129" 33="1"/>
 		</physics_mesh>
-		<physics_mesh id="ExtrudedTrackMesh_Curve_phys_41" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_phys_41.phys">
-			<transform 30="-326.022461" 31="12.34081" 32="-8.091797"/>
+		<physics_mesh id="ExtrudedTrackMesh_Curve_phys_41" seasonal_flags="0" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_phys_41.phys">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-326.022461" 31="12.34081" 32="-8.091797" 33="1"/>
 		</physics_mesh>
-		<physics_mesh id="ExtrudedTrackMesh_Curve_phys_40" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_phys_40.phys">
-			<transform 30="-346.75" 31="12.384855" 32="7.197266"/>
+		<physics_mesh id="ExtrudedTrackMesh_Curve_phys_40" seasonal_flags="0" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_phys_40.phys">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-346.75" 31="12.3848553" 32="7.197266" 33="1"/>
 		</physics_mesh>
-		<physics_mesh id="ExtrudedTrackMesh_Curve_phys_39" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_phys_39.phys">
-			<transform 30="-372.5083" 31="13.800425" 32="11.361328"/>
+		<physics_mesh id="ExtrudedTrackMesh_Curve_phys_39" seasonal_flags="0" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_phys_39.phys">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-372.5083" 31="13.8004246" 32="11.3613281" 33="1"/>
 		</physics_mesh>
-		<physics_mesh id="ExtrudedTrackMesh_Curve_phys_38" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_phys_38.phys">
-			<transform 30="-469.6963" 31="19.478893" 32="-37.226563"/>
+		<physics_mesh id="ExtrudedTrackMesh_Curve_phys_38" seasonal_flags="0" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_phys_38.phys">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-469.6963" 31="19.4788933" 32="-37.2265625" 33="1"/>
 		</physics_mesh>
-		<physics_mesh id="physics_mesh0" file_name="nso_mod/meshes/mainland/8_9_main.phys">
-			<transform/>
+		<physics_mesh id="physics_mesh0" seasonal_flags="0" file_name="nso_mod/meshes/mainland/8_9_main.phys">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="0" 31="0" 32="0" 33="1"/>
 		</physics_mesh>
-		<physics_mesh id="ExtrudedTrackMesh_Curve_phys_37" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_phys_37.phys">
-			<transform 30="-425.813477" 31="17.222324" 32="-11.776367"/>
+		<physics_mesh id="ExtrudedTrackMesh_Curve_phys_37" seasonal_flags="0" file_name="meshes/extruded_track_pieces/mega_island_8_9_ExtrudedTrackMesh_Curve_phys_37.phys">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-425.813477" 31="17.2223244" 32="-11.7763672" 33="1"/>
+		</physics_mesh>
+		<physics_mesh id="StaticObject_10_phys_Transferred_0" seasonal_flags="0" _CT_loadIgnore="true" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/decoration/clutter/rusted_gas_tank__StaticObject_10_phys.phys">
+			<transform 00="0.8361816" 01="-0.53177166" 02="-0.134236187" 03="0" 10="0.5366285" 11="0.843818665" 12="-1.86264515E-08" 13="0" 20="0.113271005" 21="-0.07203494" 22="0.9909494" 23="0" 30="-310.338867" 31="9.751062" 32="-3.22851563" 33="1"/>
+		</physics_mesh>
+		<physics_mesh id="StaticObject_11_phys_Transferred_0" seasonal_flags="0" _CT_loadIgnore="true" file_name="nso_mod/meshes/rocks/rock_big_3.phys">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-307.530273" 31="9.181732" 32="-2.609375" 33="1"/>
+		</physics_mesh>
+		<physics_mesh id="StaticObject_12_phys_Transferred_0" seasonal_flags="0" _CT_loadIgnore="true" file_name="nso_mod/meshes/rocks/rock_small_1.phys">
+			<transform 00="0.712277" 01="-0.701898456" 02="0" 03="0" 10="0.701898456" 11="0.712277" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-313.1172" 31="10.46528" 32="-6.876953" 33="1"/>
+		</physics_mesh>
+		<physics_mesh id="StaticObject_13_phys_Transferred_0" seasonal_flags="0" _CT_loadIgnore="true" file_name="nso_mod/meshes/rocks/rock_small_4.phys">
+			<transform 00="0.968579233" 01="-0.248705223" 02="0" 03="0" 10="0.248705223" 11="0.968579233" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-316.55957" 31="11.1957417" 32="-11.9277344" 33="1"/>
+		</physics_mesh>
+		<physics_mesh id="StaticObject_14_phys_Transferred_0" seasonal_flags="0" _CT_loadIgnore="true" file_name="nso_mod/meshes/rocks/rock_big_3.phys">
+			<transform 00="0.2720055" 01="0.906854153" 02="-0.321913838" 03="0" 10="-0.180577487" 11="0.376686037" 12="0.90857" 13="0" 20="0.9452009" 21="-0.189005673" 22="0.266218126" 23="0" 30="-268.3662" 31="10.4196091" 32="-51.9140625" 33="1"/>
+		</physics_mesh>
+		<physics_mesh id="StaticObject_15_phys_Transferred_0" seasonal_flags="0" _CT_loadIgnore="true" file_name="nso_mod/meshes/rocks/rock_small_3.phys">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-264.5879" 31="10.5769167" 32="-53.24707" 33="1"/>
+		</physics_mesh>
+		<physics_mesh id="StaticObject_16_phys_Transferred_0" seasonal_flags="0" _CT_loadIgnore="true" file_name="nso_mod/meshes/rocks/rock_small_4.phys">
+			<transform 00="0.8380313" 01="0" 02="0.5456222" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.5456222" 21="0" 22="0.8380313" 23="0" 30="-267.1328" 31="10.0874338" 32="-49.0605469" 33="1"/>
+		</physics_mesh>
+		<physics_mesh id="StaticObject_17_phys_Transferred_0" seasonal_flags="0" _CT_loadIgnore="true" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/decoration/wall_straight_short__StaticObject_17_phys.phys">
+			<transform 00="0.625190556" 01="-5.21540642E-08" 02="0.780472159" 03="0" 10="-0.183177233" 11="0.9720677" 12="0.146732628" 13="0" 20="-0.758671761" 21="-0.23470059" 22="0.6077276" 23="0" 30="-310.6504" 31="12.13435" 32="-6.78027344" 33="1"/>
+		</physics_mesh>
+		<physics_mesh id="StaticObject_18_phys_Transferred_0" seasonal_flags="0" _CT_loadIgnore="true" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/decoration/workbenches/workbench_clean__StaticObject_18_phys.phys">
+			<transform 00="0.753804445" 01="0" 02="-0.6570988" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.6570988" 21="0" 22="0.753804445" 23="0" 30="-309.393555" 31="12.0379524" 32="-6.866211" 33="1"/>
+		</physics_mesh>
+		<physics_mesh id="StaticObject_19_phys_Transferred_0" seasonal_flags="0" _CT_loadIgnore="true" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/decoration/workbenches/workbench_clean__StaticObject_19_phys.phys">
+			<transform 00="0.6407088" 01="0" 02="0.76778394" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.76778394" 21="0" 22="0.6407088" 23="0" 30="-259.353516" 31="2.12717938" 32="35.2431641" 33="1"/>
+		</physics_mesh>
+		<physics_mesh id="StaticObject_1_phys_Transferred_0" seasonal_flags="0" _CT_loadIgnore="true" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/nature/rocks_slab_small_01__StaticObject_1_phys.phys">
+			<transform 00="0.944412" 01="-0.25016427" 02="0.213316321" 03="0" 10="0.2350075" 11="0.9674283" 12="0.09409551" 13="0" 20="-0.229907572" 21="-0.038734" 22="0.9724414" 23="0" 30="-22.55371" 31="4.51569653" 32="181.182617" 33="1"/>
+		</physics_mesh>
+		<physics_mesh id="StaticObject_20_phys_Transferred_0" seasonal_flags="0" _CT_loadIgnore="true" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/nature/rock_mount_02__StaticObject_20_phys.phys">
+			<transform 00="0.597049356" 01="-0.0176441818" 02="-0.8020105" 03="0" 10="-0.32467556" 11="0.9089006" 12="-0.261697471" 13="0" 20="0.733565152" 21="0.4166395" 22="0.5369299" 23="0" 30="-465.3579" 31="18.2547188" 32="-31.7167969" 33="1"/>
+		</physics_mesh>
+		<physics_mesh id="StaticObject_21_phys_Transferred_0" seasonal_flags="0" _CT_loadIgnore="true" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/nature/rock_mount_01__StaticObject_21_phys.phys">
+			<transform 00="0.885510743" 01="-0.165486783" 02="-0.4341485" 03="0" 10="0.2871597" 11="0.929513037" 12="0.231397524" 13="0" 20="0.365253448" 21="-0.329574943" 22="0.8706149" 23="0" 30="-440.331055" 31="18.8677311" 32="-17.6054688" 33="1"/>
+		</physics_mesh>
+		<physics_mesh id="StaticObject_2_phys_Transferred_0" seasonal_flags="0" _CT_loadIgnore="true" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/nature/rocks_slab_small_01__StaticObject_2_phys.phys">
+			<transform 00="0.504545" 01="0.851576567" 02="0.142308474" 03="0" 10="-0.8322778" 11="0.5235595" 12="-0.182206124" 13="0" 20="-0.229669452" 21="-0.02650901" 22="0.972907662" 23="0" 30="-33.4042969" 31="2.80722117" 32="178.732422" 33="1"/>
+		</physics_mesh>
+		<physics_mesh id="StaticObject_3_phys_Transferred_0" seasonal_flags="0" _CT_loadIgnore="true" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/nature/rocks_paralel_small_01__StaticObject_3_phys.phys">
+			<transform 00="-0.308424622" 01="0.0179249626" 02="-0.9510806" 03="0" 10="-0.280856669" 11="0.953536153" 12="0.109049834" 13="0" 20="0.90884316" 21="0.300750524" 22="-0.289059281" 23="0" 30="-29.22754" 31="6.17962646" 32="183.297852" 33="1"/>
+		</physics_mesh>
+		<physics_mesh id="StaticObject_4_phys_Transferred_0" seasonal_flags="0" _CT_loadIgnore="true" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/nature/rocks_slab_small_01__StaticObject_4_phys.phys">
+			<transform 00="0.861403167" 01="-0.138477981" 02="-0.4886803" 03="0" 10="0.158720762" 11="0.9873235" 12="-1.86264515E-08" 13="0" 20="0.482485533" 21="-0.07756369" 22="0.8724629" 23="0" 30="-25.9589844" 31="6.31274462" 32="175.675781" 33="1"/>
+		</physics_mesh>
+		<physics_mesh id="StaticObject_5_phys_Transferred_0" seasonal_flags="0" _CT_loadIgnore="true" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/nature/rocks_slab_small_01__StaticObject_5_phys.phys">
+			<transform 00="0.964467466" 01="0.189558014" 02="0.184038773" 03="0" 10="-0.193693861" 11="0.981051266" 12="0.0045930706" 13="0" 20="-0.179680809" 21="-0.040077053" 22="0.982908249" 23="0" 30="-66.52344" 31="5.73828554" 32="167.224609" 33="1"/>
+		</physics_mesh>
+		<physics_mesh id="StaticObject_6_phys_Transferred_0" seasonal_flags="0" _CT_loadIgnore="true" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/nature/rocks_paralel_small_01__StaticObject_6_phys.phys">
+			<transform 00="0.932282865" 01="0" 02="-0.361730069" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.361730069" 21="0" 22="0.932282865" 23="0" 30="-61.5791" 31="6.26858234" 32="172.951172" 33="1"/>
+		</physics_mesh>
+		<physics_mesh id="StaticObject_7_phys_Transferred_0" seasonal_flags="0" _CT_loadIgnore="true" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/decoration/workbenches/workbench_clean__StaticObject_7_phys.phys">
+			<transform 00="0.142612681" 01="0" 02="0.9897786" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.9897786" 21="0" 22="0.142612681" 23="0" 30="-308.5" 31="12.0765486" 32="-16.8759766" 33="1"/>
+		</physics_mesh>
+		<physics_mesh id="StaticObject_8_phys_Transferred_0" seasonal_flags="0" _CT_loadIgnore="true" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/decoration/clutter/rusted_beam__StaticObject_8_phys.phys">
+			<transform 00="0.36583963" 01="0" 02="0.9306779" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.9306779" 21="0" 22="0.36583963" 23="0" 30="-302.597656" 31="12.019042" 32="-10.2451172" 33="1"/>
+		</physics_mesh>
+		<physics_mesh id="StaticObject_9_phys_Transferred_0" seasonal_flags="0" _CT_loadIgnore="true" file_name="meshes/generated_object_geom/tiles/mega_island_8_9/nso_mod/decoration/clutter/rusted_big_tank__StaticObject_9_phys.phys">
+			<transform 00="-0.759946764" 01="0" 02="-0.649985135" 03="0" 10="0" 11="0.999993443" 12="0" 13="0" 20="0.649985135" 21="0" 22="-0.759946764" 23="0" 30="-304.2422" 31="12.0872459" 32="-13.0185547" 33="1"/>
 		</physics_mesh>
 	</physics_meshes>
 	<physics_dynamics/>
@@ -260,30 +389,30 @@
 	<lights_tube/>
 	<screens/>
 	<edit_areas>
-		<edit_area id="submarine_dock">
-			<transform 00="-0.743144" 02="0.669131" 11="1" 20="-0.669131" 22="-0.743144" 30="-263.963867" 31="3.466715" 32="0.520508"/>
+		<edit_area id="submarine_dock" seasonal_flags="0" grid_size="0" is_static="false" default_vehicle="" spawned_static_vehicle_id="0" is_invisible_vehicle="false">
+			<transform 00="-0.743144155" 01="0" 02="0.669131339" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.669131339" 21="0" 22="-0.743144155" 23="0" 30="-263.963867" 31="3.466715" 32="0.520508" 33="1"/>
 			<size x="96" y="32" z="112"/>
 		</edit_area>
-		<edit_area id="submarine">
-			<transform 00="0.743145" 02="-0.66913" 20="0.66913" 22="0.743145" 30="-253.578125" 31="2.082341" 32="12.529297"/>
+		<edit_area id="submarine" seasonal_flags="0" grid_size="0" is_static="false" default_vehicle="" spawned_static_vehicle_id="0" is_invisible_vehicle="false">
+			<transform 00="0.743145168" 01="0" 02="-0.6691302" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.6691302" 21="0" 22="0.743145168" 23="0" 30="-253.578125" 31="2.082341" 32="12.5292969" 33="1"/>
 			<size x="16" y="16" z="42"/>
 		</edit_area>
-		<edit_area id="cave_train">
-			<transform 00="0.639237" 02="0.76901" 20="-0.76901" 22="0.639237" 30="-294.199219" 31="14.671699" 32="-37.14453"/>
+		<edit_area id="cave_train" seasonal_flags="0" grid_size="0" is_static="false" default_vehicle="" spawned_static_vehicle_id="0" is_invisible_vehicle="false">
+			<transform 00="0.639237046" 01="0" 02="0.769009769" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.769009769" 21="0" 22="0.639237046" 23="0" 30="-294.199219" 31="14.6716986" 32="-37.14453" 33="1"/>
 			<size x="6" y="4" z="48"/>
 		</edit_area>
 	</edit_areas>
 	<interactables>
-		<interactable id="sub_base_interact" target_object_id="submarine_dock" label="Submarine Base Static" interact_type="2">
-			<transform 00="-0.763741" 02="0.645523" 20="-0.645523" 22="-0.763741" 30="-309.339355" 31="12.860081" 32="-6.811523"/>
+		<interactable id="sub_base_interact" seasonal_flags="0" target_object_id="submarine_dock" label="Submarine Base Static" use_case="0" interact_type="2" is_purchased="false" is_ignore_purchased="false">
+			<transform 00="-0.763741" 01="0" 02="0.645523" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.645523" 21="0" 22="-0.763741" 23="0" 30="-309.339355" 31="12.8600807" 32="-6.811523" 33="1"/>
 			<size x="1.10862" y="0.388667" z="2.672549"/>
 		</interactable>
-		<interactable id="sub_edit_interact" target_object_id="submarine" label="Submarine Docl" interact_type="2">
-			<transform 00="0.641423" 02="0.767188" 20="-0.767188" 22="0.641423" 30="-259.3877" 31="3.017841" 32="35.214844"/>
+		<interactable id="sub_edit_interact" seasonal_flags="0" target_object_id="submarine" label="Submarine Docl" use_case="0" interact_type="2" is_purchased="false" is_ignore_purchased="false">
+			<transform 00="0.641423" 01="0" 02="0.767188" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.767188" 21="0" 22="0.641423" 23="0" 30="-259.3877" 31="3.017841" 32="35.2148438" 33="1"/>
 			<size x="1.10862" y="0.24807" z="2.672549"/>
 		</interactable>
-		<interactable id="kohl_underground_interact" target_object_id="cave_train" label="Rail Cart" interact_type="2">
-			<transform 00="0.147457" 02="0.989068" 20="-0.989068" 22="0.147457" 30="-308.563" 31="13.105362" 32="-16.824219"/>
+		<interactable id="kohl_underground_interact" seasonal_flags="0" target_object_id="cave_train" label="Rail Cart" use_case="0" interact_type="2" is_purchased="false" is_ignore_purchased="false">
+			<transform 00="0.147457" 01="0" 02="0.989068" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.989068" 21="0" 22="0.147457" 23="0" 30="-308.563" 31="13.1053619" 32="-16.8242188" 33="1"/>
 			<size x="1.10862" y="0.388667" z="2.672549"/>
 		</interactable>
 	</interactables>
@@ -298,1385 +427,7 @@
 	<ladders/>
 	<perches/>
 	<fires/>
-	<train_tracks>
-		<track id="Curve#89_Track#1_#6">
-			<transform 30="-123.501953" 31="27.640759" 32="-470.238281"/>
-			<links>
-				<link id="Curve#54_Track#1_#7"/>
-				<link id="Curve#89_Track#1_#5"/>
-			</links>
-		</track>
-		<track id="Curve#89_Track#1_#5">
-			<transform 30="-120.023438" 31="27.601435" 32="-472.2129"/>
-			<links>
-				<link id="Curve#89_Track#1_#4"/>
-				<link id="Curve#89_Track#1_#6"/>
-			</links>
-		</track>
-		<track id="Curve#89_Track#1_#4">
-			<transform 30="-116.668945" 31="27.55122" 32="-474.389648"/>
-			<links>
-				<link id="Curve#89_Track#1_#3"/>
-				<link id="Curve#89_Track#1_#5"/>
-			</links>
-		</track>
-		<track id="Curve#89_Track#1_#3">
-			<transform 30="-113.508789" 31="27.503067" 32="-476.8379"/>
-			<links>
-				<link id="Curve#89_Track#1_#2"/>
-				<link id="Curve#89_Track#1_#4"/>
-			</links>
-		</track>
-		<track id="Curve#89_Track#1_#2">
-			<transform 30="-110.602539" 31="27.470135" 32="-479.583"/>
-			<links>
-				<link id="Curve#89_Track#1_#1"/>
-				<link id="Curve#89_Track#1_#3"/>
-			</links>
-		</track>
-		<track id="Curve#89_Track#1_#1">
-			<transform 30="-107.989258" 31="27.462051" 32="-482.609375"/>
-			<links>
-				<link id="Curve#89_Track#1_#2"/>
-			</links>
-		</track>
-		<track id="Curve#54_Track#1_#7">
-			<transform 30="-128.701172" 31="27.65937" 32="-467.546875"/>
-			<links>
-				<link id="Curve#54_Track#1_#6"/>
-				<link id="Curve#89_Track#1_#6"/>
-			</links>
-		</track>
-		<track id="Curve#54_Track#1_#6">
-			<transform 30="-132.736328" 31="27.640938" 32="-465.709961"/>
-			<links>
-				<link id="Curve#54_Track#1_#5"/>
-				<link id="Curve#54_Track#1_#7"/>
-			</links>
-		</track>
-		<track id="Curve#54_Track#1_#5">
-			<transform 30="-136.507813" 31="27.6048" 32="-464.3828"/>
-			<links>
-				<link id="Curve#54_Track#1_#4"/>
-				<link id="Curve#54_Track#1_#6"/>
-			</links>
-		</track>
-		<track id="Curve#54_Track#1_#4">
-			<transform 30="-140.379883" 31="27.554302" 32="-463.3828"/>
-			<links>
-				<link id="Curve#54_Track#1_#3"/>
-				<link id="Curve#54_Track#1_#5"/>
-			</links>
-		</track>
-		<track id="Curve#54_Track#1_#3">
-			<transform 30="-144.303711" 31="27.499563" 32="-462.613281"/>
-			<links>
-				<link id="Curve#54_Track#1_#2"/>
-				<link id="Curve#54_Track#1_#4"/>
-			</links>
-		</track>
-		<track id="Curve#54_Track#1_#2">
-			<transform 30="-148.243164" 31="27.450855" 32="-461.921875"/>
-			<links>
-				<link id="Curve#54_Track#1_#1"/>
-				<link id="Curve#54_Track#1_#3"/>
-			</links>
-		</track>
-		<track id="Curve#54_Track#1_#1">
-			<transform 30="-152.175781" 31="27.413702" 32="-461.192383"/>
-			<links>
-				<link id="Curve#53_Track#1_#9"/>
-				<link id="Curve#54_Track#1_#2"/>
-			</links>
-		</track>
-		<track id="Curve#53_Track#1_#9">
-			<transform 30="-156.089844" 31="27.38923" 32="-460.368164"/>
-			<links>
-				<link id="Curve#53_Track#1_#8"/>
-				<link id="Curve#54_Track#1_#1"/>
-			</links>
-		</track>
-		<track id="Curve#53_Track#1_#8">
-			<transform 30="-161.969727" 31="27.36698" 32="-458.96875"/>
-			<links>
-				<link id="Curve#53_Track#1_#7"/>
-				<link id="Curve#53_Track#1_#9"/>
-			</links>
-		</track>
-		<track id="Curve#53_Track#1_#7">
-			<transform 30="-165.850586" 31="27.357634" 32="-458"/>
-			<links>
-				<link id="Curve#53_Track#1_#6"/>
-				<link id="Curve#53_Track#1_#8"/>
-			</links>
-		</track>
-		<track id="Curve#53_Track#1_#6">
-			<transform 30="-169.732422" 31="27.35183" 32="-457.03418"/>
-			<links>
-				<link id="Curve#53_Track#1_#5"/>
-				<link id="Curve#53_Track#1_#7"/>
-			</links>
-		</track>
-		<track id="Curve#53_Track#1_#5">
-			<transform 30="-173.62207" 31="27.348919" 32="-456.102539"/>
-			<links>
-				<link id="Curve#53_Track#1_#4"/>
-				<link id="Curve#53_Track#1_#6"/>
-			</links>
-		</track>
-		<track id="Curve#53_Track#1_#4">
-			<transform 30="-177.527344" 31="27.348242" 32="-455.236328"/>
-			<links>
-				<link id="Curve#53_Track#1_#3"/>
-				<link id="Curve#53_Track#1_#5"/>
-			</links>
-		</track>
-		<track id="Curve#53_Track#1_#3">
-			<transform 30="-181.452148" 31="27.349161" 32="-454.463867"/>
-			<links>
-				<link id="Curve#53_Track#1_#2"/>
-				<link id="Curve#53_Track#1_#4"/>
-			</links>
-		</track>
-		<track id="Curve#53_Track#1_#2">
-			<transform 30="-185.398438" 31="27.351042" 32="-453.8125"/>
-			<links>
-				<link id="Curve#53_Track#1_#1"/>
-				<link id="Curve#53_Track#1_#3"/>
-			</links>
-		</track>
-		<track id="Curve#53_Track#1_#1">
-			<transform 30="-189.366211" 31="27.353281" 32="-453.3086"/>
-			<links>
-				<link id="Curve#52_Track#1_#8"/>
-				<link id="Curve#53_Track#1_#2"/>
-			</links>
-		</track>
-		<track id="Curve#52_Track#1_#8">
-			<transform 30="-193.351563" 31="27.35532" 32="-452.97168"/>
-			<links>
-				<link id="Curve#52_Track#1_#7"/>
-				<link id="Curve#53_Track#1_#1"/>
-			</links>
-		</track>
-		<track id="Curve#52_Track#1_#7">
-			<transform 30="-198.833984" 31="27.360615" 32="-452.8994"/>
-			<links>
-				<link id="Curve#52_Track#1_#6"/>
-				<link id="Curve#52_Track#1_#8"/>
-			</links>
-		</track>
-		<track id="Curve#52_Track#1_#6">
-			<transform 30="-202.823242" 31="27.367987" 32="-453.176758"/>
-			<links>
-				<link id="Curve#52_Track#1_#5"/>
-				<link id="Curve#52_Track#1_#7"/>
-			</links>
-		</track>
-		<track id="Curve#52_Track#1_#5">
-			<transform 30="-206.790039" 31="27.377752" 32="-453.689453"/>
-			<links>
-				<link id="Curve#52_Track#1_#4"/>
-				<link id="Curve#52_Track#1_#6"/>
-			</links>
-		</track>
-		<track id="Curve#52_Track#1_#4">
-			<transform 30="-210.735352" 31="27.388914" 32="-454.348633"/>
-			<links>
-				<link id="Curve#52_Track#1_#3"/>
-				<link id="Curve#52_Track#1_#5"/>
-			</links>
-		</track>
-		<track id="Curve#52_Track#1_#3">
-			<transform 30="-214.676758" 31="27.400103" 32="-455.03125"/>
-			<links>
-				<link id="Curve#52_Track#1_#2"/>
-				<link id="Curve#52_Track#1_#4"/>
-			</links>
-		</track>
-		<track id="Curve#52_Track#1_#2">
-			<transform 30="-218.634766" 31="27.409851" 32="-455.603516"/>
-			<links>
-				<link id="Curve#52_Track#1_#1"/>
-				<link id="Curve#52_Track#1_#3"/>
-			</links>
-		</track>
-		<track id="Curve#52_Track#1_#1">
-			<transform 30="-222.619141" 31="27.416891" 32="-455.9463"/>
-			<links>
-				<link id="Curve#51_Track#1_#7"/>
-				<link id="Curve#52_Track#1_#2"/>
-			</links>
-		</track>
-		<track id="Curve#51_Track#1_#7">
-			<transform 30="-226.618164" 31="27.42044" 32="-455.988281"/>
-			<links>
-				<link id="Curve#51_Track#1_#6"/>
-				<link id="Curve#52_Track#1_#1"/>
-			</links>
-		</track>
-		<track id="Curve#51_Track#1_#6">
-			<transform 30="-233.605469" 31="27.417479" 32="-455.74707"/>
-			<links>
-				<link id="Curve#51_Track#1_#5"/>
-				<link id="Curve#51_Track#1_#7"/>
-			</links>
-		</track>
-		<track id="Curve#51_Track#1_#5">
-			<transform 30="-237.598633" 31="27.41125" 32="-455.523438"/>
-			<links>
-				<link id="Curve#51_Track#1_#4"/>
-				<link id="Curve#51_Track#1_#6"/>
-			</links>
-		</track>
-		<track id="Curve#51_Track#1_#4">
-			<transform 30="-241.582031" 31="27.402927" 32="-455.166016"/>
-			<links>
-				<link id="Curve#51_Track#1_#3"/>
-				<link id="Curve#51_Track#1_#5"/>
-			</links>
-		</track>
-		<track id="Curve#51_Track#1_#3">
-			<transform 30="-245.541992" 31="27.393972" 32="-454.602539"/>
-			<links>
-				<link id="Curve#51_Track#1_#2"/>
-				<link id="Curve#51_Track#1_#4"/>
-			</links>
-		</track>
-		<track id="Curve#51_Track#1_#2">
-			<transform 30="-249.451172" 31="27.386229" 32="-453.7627"/>
-			<links>
-				<link id="Curve#51_Track#1_#1"/>
-				<link id="Curve#51_Track#1_#3"/>
-			</links>
-		</track>
-		<track id="Curve#51_Track#1_#1">
-			<transform 30="-253.273438" 31="27.381704" 32="-452.589844"/>
-			<links>
-				<link id="Curve#50_Track#1_#5"/>
-				<link id="Curve#51_Track#1_#2"/>
-			</links>
-		</track>
-		<track id="Curve#50_Track#1_#5">
-			<transform 30="-256.964844" 31="27.38218" 32="-451.051758"/>
-			<links>
-				<link id="Curve#50_Track#1_#4"/>
-				<link id="Curve#51_Track#1_#1"/>
-			</links>
-		</track>
-		<track id="Curve#50_Track#1_#4">
-			<transform 30="-263.580078" 31="27.398497" 32="-447.1045"/>
-			<links>
-				<link id="Curve#50_Track#1_#3"/>
-				<link id="Curve#50_Track#1_#5"/>
-			</links>
-		</track>
-		<track id="Curve#50_Track#1_#3">
-			<transform 30="-266.518555" 31="27.414648" 32="-444.398438"/>
-			<links>
-				<link id="Curve#50_Track#1_#2"/>
-				<link id="Curve#50_Track#1_#4"/>
-			</links>
-		</track>
-		<track id="Curve#50_Track#1_#2">
-			<transform 30="-268.949219" 31="27.433302" 32="-441.227539"/>
-			<links>
-				<link id="Curve#50_Track#1_#1"/>
-				<link id="Curve#50_Track#1_#3"/>
-			</links>
-		</track>
-		<track id="Curve#50_Track#1_#1">
-			<transform 30="-270.9209" 31="27.450561" 32="-437.75"/>
-			<links>
-				<link id="Curve#49_Track#1_#6"/>
-				<link id="Curve#50_Track#1_#2"/>
-			</links>
-		</track>
-		<track id="Curve#49_Track#1_#6">
-			<transform 30="-272.611328" 31="27.46396" 32="-434.125"/>
-			<links>
-				<link id="Curve#49_Track#1_#5"/>
-				<link id="Curve#50_Track#1_#1"/>
-			</links>
-		</track>
-		<track id="Curve#49_Track#1_#5">
-			<transform 30="-274.5957" 31="27.530985" 32="-429.6455"/>
-			<links>
-				<link id="Curve#49_Track#1_#4"/>
-				<link id="Curve#49_Track#1_#6"/>
-			</links>
-		</track>
-		<track id="Curve#49_Track#1_#4">
-			<transform 30="-275.917" 31="27.641718" 32="-425.875"/>
-			<links>
-				<link id="Curve#49_Track#1_#3"/>
-				<link id="Curve#49_Track#1_#5"/>
-			</links>
-		</track>
-		<track id="Curve#49_Track#1_#3">
-			<transform 30="-276.473633" 31="27.717585" 32="-421.923828"/>
-			<links>
-				<link id="Curve#49_Track#1_#2"/>
-				<link id="Curve#49_Track#1_#4"/>
-			</links>
-		</track>
-		<track id="Curve#49_Track#1_#2">
-			<transform 30="-276.3125" 31="27.708332" 32="-417.9297"/>
-			<links>
-				<link id="Curve#49_Track#1_#1"/>
-				<link id="Curve#49_Track#1_#3"/>
-			</links>
-		</track>
-		<track id="Curve#49_Track#1_#1">
-			<transform 30="-275.74707" 31="27.630438" 32="-413.97168"/>
-			<links>
-				<link id="Curve#48_Track#1_#12"/>
-				<link id="Curve#49_Track#1_#2"/>
-			</links>
-		</track>
-		<track id="Curve#48_Track#1_#9">
-			<transform 30="-270.022461" 31="26.850784" 32="-395.135742"/>
-			<links>
-				<link id="Curve#48_Track#1_#10"/>
-				<link id="Curve#48_Track#1_#8"/>
-			</links>
-		</track>
-		<track id="Curve#48_Track#1_#8">
-			<transform 30="-268.459961" 31="26.65381" 32="-391.458984"/>
-			<links>
-				<link id="Curve#48_Track#1_#7"/>
-				<link id="Curve#48_Track#1_#9"/>
-			</links>
-		</track>
-		<track id="Curve#48_Track#1_#7">
-			<transform 30="-266.875" 31="26.44732" 32="-387.792"/>
-			<links>
-				<link id="Curve#48_Track#1_#6"/>
-				<link id="Curve#48_Track#1_#8"/>
-			</links>
-		</track>
-		<track id="Curve#48_Track#1_#6">
-			<transform 30="-265.3047" 31="26.232931" 32="-384.119141"/>
-			<links>
-				<link id="Curve#48_Track#1_#5"/>
-				<link id="Curve#48_Track#1_#7"/>
-			</links>
-		</track>
-		<track id="Curve#48_Track#1_#5">
-			<transform 30="-263.768555" 31="26.012445" 32="-380.432617"/>
-			<links>
-				<link id="Curve#48_Track#1_#4"/>
-				<link id="Curve#48_Track#1_#6"/>
-			</links>
-		</track>
-		<track id="Curve#48_Track#1_#4">
-			<transform 30="-262.285156" 31="25.786943" 32="-376.7246"/>
-			<links>
-				<link id="Curve#48_Track#1_#3"/>
-				<link id="Curve#48_Track#1_#5"/>
-			</links>
-		</track>
-		<track id="Curve#48_Track#1_#3">
-			<transform 30="-260.8623" 31="25.5577" 32="-372.993164"/>
-			<links>
-				<link id="Curve#48_Track#1_#2"/>
-				<link id="Curve#48_Track#1_#4"/>
-			</links>
-		</track>
-		<track id="Curve#48_Track#1_#2">
-			<transform 30="-259.500977" 31="25.325594" 32="-369.239258"/>
-			<links>
-				<link id="Curve#48_Track#1_#1"/>
-				<link id="Curve#48_Track#1_#3"/>
-			</links>
-		</track>
-		<track id="Curve#48_Track#1_#12">
-			<transform 30="-274.972656" 31="27.50704" 32="-410.0498"/>
-			<links>
-				<link id="Curve#48_Track#1_#11"/>
-				<link id="Curve#49_Track#1_#1"/>
-			</links>
-		</track>
-		<track id="Curve#48_Track#1_#11">
-			<transform 30="-272.885742" 31="27.209751" 32="-402.594727"/>
-			<links>
-				<link id="Curve#48_Track#1_#10"/>
-				<link id="Curve#48_Track#1_#12"/>
-			</links>
-		</track>
-		<track id="Curve#48_Track#1_#10">
-			<transform 30="-271.5166" 31="27.036531" 32="-398.8418"/>
-			<links>
-				<link id="Curve#48_Track#1_#11"/>
-				<link id="Curve#48_Track#1_#9"/>
-			</links>
-		</track>
-		<track id="Curve#48_Track#1_#1">
-			<transform 30="-258.2041" 31="25.09144" 32="-365.4629"/>
-			<links>
-				<link id="Curve#47_Track#1_#21"/>
-				<link id="Curve#48_Track#1_#2"/>
-			</links>
-		</track>
-		<track id="Curve#47_Track#1_#9">
-			<transform 30="-242.330078" 31="21.752142" 32="-315.495117"/>
-			<links>
-				<link id="Curve#47_Track#1_#10"/>
-				<link id="Curve#47_Track#1_#8"/>
-			</links>
-		</track>
-		<track id="Curve#47_Track#1_#8">
-			<transform 30="-241.236328" 31="21.490368" 32="-311.65625"/>
-			<links>
-				<link id="Curve#47_Track#1_#7"/>
-				<link id="Curve#47_Track#1_#9"/>
-			</links>
-		</track>
-		<track id="Curve#47_Track#1_#7">
-			<transform 30="-240.178711" 31="21.229744" 32="-307.807617"/>
-			<links>
-				<link id="Curve#47_Track#1_#6"/>
-				<link id="Curve#47_Track#1_#8"/>
-			</links>
-		</track>
-		<track id="Curve#47_Track#1_#6">
-			<transform 30="-239.160156" 31="20.970587" 32="-303.948242"/>
-			<links>
-				<link id="Curve#47_Track#1_#5"/>
-				<link id="Curve#47_Track#1_#7"/>
-			</links>
-		</track>
-		<track id="Curve#47_Track#1_#5">
-			<transform 30="-238.1836" 31="20.713554" 32="-300.078125"/>
-			<links>
-				<link id="Curve#47_Track#1_#4"/>
-				<link id="Curve#47_Track#1_#6"/>
-			</links>
-		</track>
-		<track id="Curve#47_Track#1_#4">
-			<transform 30="-237.251953" 31="20.458942" 32="-296.1963"/>
-			<links>
-				<link id="Curve#47_Track#1_#3"/>
-				<link id="Curve#47_Track#1_#5"/>
-			</links>
-		</track>
-		<track id="Curve#47_Track#1_#3">
-			<transform 30="-236.3711" 31="20.207071" 32="-292.302734"/>
-			<links>
-				<link id="Curve#47_Track#1_#2"/>
-				<link id="Curve#47_Track#1_#4"/>
-			</links>
-		</track>
-		<track id="Curve#47_Track#1_#21">
-			<transform 30="-256.9707" 31="24.85581" 32="-361.665039"/>
-			<links>
-				<link id="Curve#47_Track#1_#20"/>
-				<link id="Curve#48_Track#1_#1"/>
-			</links>
-		</track>
-		<track id="Curve#47_Track#1_#20">
-			<transform 30="-255.59375" 31="24.58426" 32="-357.3506"/>
-			<links>
-				<link id="Curve#47_Track#1_#19"/>
-				<link id="Curve#47_Track#1_#21"/>
-			</links>
-		</track>
-		<track id="Curve#47_Track#1_#2">
-			<transform 30="-235.542969" 31="19.958563" 32="-288.397461"/>
-			<links>
-				<link id="Curve#47_Track#1_#1"/>
-				<link id="Curve#47_Track#1_#3"/>
-			</links>
-		</track>
-		<track id="Curve#47_Track#1_#19">
-			<transform 30="-254.366211" 31="24.339394" 32="-353.551758"/>
-			<links>
-				<link id="Curve#47_Track#1_#18"/>
-				<link id="Curve#47_Track#1_#20"/>
-			</links>
-		</track>
-		<track id="Curve#47_Track#1_#18">
-			<transform 30="-253.12793" 31="24.090315" 32="-349.755859"/>
-			<links>
-				<link id="Curve#47_Track#1_#17"/>
-				<link id="Curve#47_Track#1_#19"/>
-			</links>
-		</track>
-		<track id="Curve#47_Track#1_#17">
-			<transform 30="-251.8877" 31="23.83763" 32="-345.9619"/>
-			<links>
-				<link id="Curve#47_Track#1_#16"/>
-				<link id="Curve#47_Track#1_#18"/>
-			</links>
-		</track>
-		<track id="Curve#47_Track#1_#16">
-			<transform 30="-250.647461" 31="23.581966" 32="-342.167"/>
-			<links>
-				<link id="Curve#47_Track#1_#15"/>
-				<link id="Curve#47_Track#1_#17"/>
-			</links>
-		</track>
-		<track id="Curve#47_Track#1_#15">
-			<transform 30="-249.413086" 31="23.323908" 32="-338.3711"/>
-			<links>
-				<link id="Curve#47_Track#1_#14"/>
-				<link id="Curve#47_Track#1_#16"/>
-			</links>
-		</track>
-		<track id="Curve#47_Track#1_#14">
-			<transform 30="-248.186523" 31="23.063993" 32="-334.572266"/>
-			<links>
-				<link id="Curve#47_Track#1_#13"/>
-				<link id="Curve#47_Track#1_#15"/>
-			</links>
-		</track>
-		<track id="Curve#47_Track#1_#13">
-			<transform 30="-246.974609" 31="22.802633" 32="-330.769531"/>
-			<links>
-				<link id="Curve#47_Track#1_#12"/>
-				<link id="Curve#47_Track#1_#14"/>
-			</links>
-		</track>
-		<track id="Curve#47_Track#1_#12">
-			<transform 30="-245.7793" 31="22.540337" 32="-326.9619"/>
-			<links>
-				<link id="Curve#47_Track#1_#11"/>
-				<link id="Curve#47_Track#1_#13"/>
-			</links>
-		</track>
-		<track id="Curve#47_Track#1_#11">
-			<transform 30="-244.604492" 31="22.277552" 32="-323.146484"/>
-			<links>
-				<link id="Curve#47_Track#1_#10"/>
-				<link id="Curve#47_Track#1_#12"/>
-			</links>
-		</track>
-		<track id="Curve#47_Track#1_#10">
-			<transform 30="-243.453125" 31="22.0147" 32="-319.3252"/>
-			<links>
-				<link id="Curve#47_Track#1_#11"/>
-				<link id="Curve#47_Track#1_#9"/>
-			</links>
-		</track>
-		<track id="Curve#47_Track#1_#1">
-			<transform 30="-234.774414" 31="19.713808" 32="-284.4795"/>
-			<links>
-				<link id="Curve#46_Track#1_#17"/>
-				<link id="Curve#47_Track#1_#2"/>
-			</links>
-		</track>
-		<track id="Curve#46_Track#1_#9">
-			<transform 30="-230.782227" 31="17.476091" 32="-245.78418"/>
-			<links>
-				<link id="Curve#46_Track#1_#10"/>
-				<link id="Curve#46_Track#1_#8"/>
-			</links>
-		</track>
-		<track id="Curve#46_Track#1_#8">
-			<transform 30="-230.719727" 31="17.262482" 32="-241.790039"/>
-			<links>
-				<link id="Curve#46_Track#1_#7"/>
-				<link id="Curve#46_Track#1_#9"/>
-			</links>
-		</track>
-		<track id="Curve#46_Track#1_#7">
-			<transform 30="-230.705078" 31="17.052385" 32="-237.7959"/>
-			<links>
-				<link id="Curve#46_Track#1_#6"/>
-				<link id="Curve#46_Track#1_#8"/>
-			</links>
-		</track>
-		<track id="Curve#46_Track#1_#6">
-			<transform 30="-230.725586" 31="16.845705" 32="-233.800781"/>
-			<links>
-				<link id="Curve#46_Track#1_#5"/>
-				<link id="Curve#46_Track#1_#7"/>
-			</links>
-		</track>
-		<track id="Curve#46_Track#1_#5">
-			<transform 30="-230.771484" 31="16.642412" 32="-229.806641"/>
-			<links>
-				<link id="Curve#46_Track#1_#4"/>
-				<link id="Curve#46_Track#1_#6"/>
-			</links>
-		</track>
-		<track id="Curve#46_Track#1_#4">
-			<transform 30="-230.833984" 31="16.442173" 32="-225.8125"/>
-			<links>
-				<link id="Curve#46_Track#1_#3"/>
-				<link id="Curve#46_Track#1_#5"/>
-			</links>
-		</track>
-		<track id="Curve#46_Track#1_#3">
-			<transform 30="-230.897461" 31="16.244799" 32="-221.817383"/>
-			<links>
-				<link id="Curve#46_Track#1_#2"/>
-				<link id="Curve#46_Track#1_#4"/>
-			</links>
-		</track>
-		<track id="Curve#46_Track#1_#2">
-			<transform 30="-230.9502" 31="16.050024" 32="-217.822266"/>
-			<links>
-				<link id="Curve#46_Track#1_#1"/>
-				<link id="Curve#46_Track#1_#3"/>
-			</links>
-		</track>
-		<track id="Curve#46_Track#1_#17">
-			<transform 30="-234.067383" 31="19.47331" 32="-280.5498"/>
-			<links>
-				<link id="Curve#46_Track#1_#16"/>
-				<link id="Curve#47_Track#1_#1"/>
-			</links>
-		</track>
-		<track id="Curve#46_Track#1_#16">
-			<transform 30="-232.988281" 31="19.058502" 32="-273.635742"/>
-			<links>
-				<link id="Curve#46_Track#1_#15"/>
-				<link id="Curve#46_Track#1_#17"/>
-			</links>
-		</track>
-		<track id="Curve#46_Track#1_#15">
-			<transform 30="-232.46582" 31="18.824507" 32="-269.676758"/>
-			<links>
-				<link id="Curve#46_Track#1_#14"/>
-				<link id="Curve#46_Track#1_#16"/>
-			</links>
-		</track>
-		<track id="Curve#46_Track#1_#14">
-			<transform 30="-232.013672" 31="18.592768" 32="-265.708984"/>
-			<links>
-				<link id="Curve#46_Track#1_#13"/>
-				<link id="Curve#46_Track#1_#15"/>
-			</links>
-		</track>
-		<track id="Curve#46_Track#1_#13">
-			<transform 30="-231.632813" 31="18.363531" 32="-261.7334"/>
-			<links>
-				<link id="Curve#46_Track#1_#12"/>
-				<link id="Curve#46_Track#1_#14"/>
-			</links>
-		</track>
-		<track id="Curve#46_Track#1_#12">
-			<transform 30="-231.320313" 31="18.137005" 32="-257.75293"/>
-			<links>
-				<link id="Curve#46_Track#1_#11"/>
-				<link id="Curve#46_Track#1_#13"/>
-			</links>
-		</track>
-		<track id="Curve#46_Track#1_#11">
-			<transform 30="-231.077148" 31="17.91346" 32="-253.7666"/>
-			<links>
-				<link id="Curve#46_Track#1_#10"/>
-				<link id="Curve#46_Track#1_#12"/>
-			</links>
-		</track>
-		<track id="Curve#46_Track#1_#10">
-			<transform 30="-230.899414" 31="17.693129" 32="-249.776367"/>
-			<links>
-				<link id="Curve#46_Track#1_#11"/>
-				<link id="Curve#46_Track#1_#9"/>
-			</links>
-		</track>
-		<track id="Curve#46_Track#1_#1">
-			<transform 30="-230.981445" 31="15.857548" 32="-213.827148"/>
-			<links>
-				<link id="Curve#45_Track#1_#12"/>
-				<link id="Curve#46_Track#1_#2"/>
-			</links>
-		</track>
-		<track id="Curve#45_Track#1_#9">
-			<transform 30="-231.053711" 31="15.081082" 32="-196.818359"/>
-			<links>
-				<link id="Curve#45_Track#1_#10"/>
-				<link id="Curve#45_Track#1_#8"/>
-			</links>
-		</track>
-		<track id="Curve#45_Track#1_#8">
-			<transform 30="-231.15332" 31="14.916437" 32="-192.823242"/>
-			<links>
-				<link id="Curve#45_Track#1_#7"/>
-				<link id="Curve#45_Track#1_#9"/>
-			</links>
-		</track>
-		<track id="Curve#45_Track#1_#7">
-			<transform 30="-231.298828" 31="14.760037" 32="-188.8291"/>
-			<links>
-				<link id="Curve#45_Track#1_#6"/>
-				<link id="Curve#45_Track#1_#8"/>
-			</links>
-		</track>
-		<track id="Curve#45_Track#1_#6">
-			<transform 30="-231.493164" 31="14.611851" 32="-184.836914"/>
-			<links>
-				<link id="Curve#45_Track#1_#5"/>
-				<link id="Curve#45_Track#1_#7"/>
-			</links>
-		</track>
-		<track id="Curve#45_Track#1_#5">
-			<transform 30="-231.736328" 31="14.470852" 32="-180.84668"/>
-			<links>
-				<link id="Curve#45_Track#1_#4"/>
-				<link id="Curve#45_Track#1_#6"/>
-			</links>
-		</track>
-		<track id="Curve#45_Track#1_#4">
-			<transform 30="-232.022461" 31="14.335176" 32="-176.859375"/>
-			<links>
-				<link id="Curve#45_Track#1_#3"/>
-				<link id="Curve#45_Track#1_#5"/>
-			</links>
-		</track>
-		<track id="Curve#45_Track#1_#3">
-			<transform 30="-232.3418" 31="14.202073" 32="-172.874023"/>
-			<links>
-				<link id="Curve#45_Track#1_#2"/>
-				<link id="Curve#45_Track#1_#4"/>
-			</links>
-		</track>
-		<track id="Curve#45_Track#1_#2">
-			<transform 30="-232.681641" 31="14.068717" 32="-168.890625"/>
-			<links>
-				<link id="Curve#45_Track#1_#1"/>
-				<link id="Curve#45_Track#1_#3"/>
-			</links>
-		</track>
-		<track id="Curve#45_Track#1_#12">
-			<transform 30="-230.978516" 31="15.66694" 32="-209.832031"/>
-			<links>
-				<link id="Curve#45_Track#1_#11"/>
-				<link id="Curve#46_Track#1_#1"/>
-			</links>
-		</track>
-		<track id="Curve#45_Track#1_#11">
-			<transform 30="-230.96875" 31="15.432856" 32="-204.810547"/>
-			<links>
-				<link id="Curve#45_Track#1_#10"/>
-				<link id="Curve#45_Track#1_#12"/>
-			</links>
-		</track>
-		<track id="Curve#45_Track#1_#10">
-			<transform 30="-230.994141" 31="15.253469" 32="-200.814453"/>
-			<links>
-				<link id="Curve#45_Track#1_#11"/>
-				<link id="Curve#45_Track#1_#9"/>
-			</links>
-		</track>
-		<track id="Curve#45_Track#1_#1">
-			<transform 30="-233.02832" 31="13.932811" 32="-164.9082"/>
-			<links>
-				<link id="Curve#44_Track#1_#10"/>
-				<link id="Curve#45_Track#1_#2"/>
-			</links>
-		</track>
-		<track id="Curve#44_Track#1_#9">
-			<transform 30="-233.910156" 31="13.524786" 32="-153.7793"/>
-			<links>
-				<link id="Curve#44_Track#1_#10"/>
-				<link id="Curve#44_Track#1_#8"/>
-			</links>
-		</track>
-		<track id="Curve#44_Track#1_#8">
-			<transform 30="-234.162109" 31="13.366355" 32="-149.790039"/>
-			<links>
-				<link id="Curve#44_Track#1_#7"/>
-				<link id="Curve#44_Track#1_#9"/>
-			</links>
-		</track>
-		<track id="Curve#44_Track#1_#7">
-			<transform 30="-234.410156" 31="13.20512" 32="-145.801758"/>
-			<links>
-				<link id="Curve#44_Track#1_#6"/>
-				<link id="Curve#44_Track#1_#8"/>
-			</links>
-		</track>
-		<track id="Curve#44_Track#1_#6">
-			<transform 30="-234.693359" 31="13.046124" 32="-141.814453"/>
-			<links>
-				<link id="Curve#44_Track#1_#5"/>
-				<link id="Curve#44_Track#1_#7"/>
-			</links>
-		</track>
-		<track id="Curve#44_Track#1_#5">
-			<transform 30="-235.054688" 31="12.895264" 32="-137.833984"/>
-			<links>
-				<link id="Curve#44_Track#1_#4"/>
-				<link id="Curve#44_Track#1_#6"/>
-			</links>
-		</track>
-		<track id="Curve#44_Track#1_#4">
-			<transform 30="-235.535156" 31="12.758266" 32="-133.865234"/>
-			<links>
-				<link id="Curve#44_Track#1_#3"/>
-				<link id="Curve#44_Track#1_#5"/>
-			</links>
-		</track>
-		<track id="Curve#44_Track#1_#3">
-			<transform 30="-236.155273" 31="12.638952" 32="-129.916016"/>
-			<links>
-				<link id="Curve#44_Track#1_#2"/>
-				<link id="Curve#44_Track#1_#4"/>
-			</links>
-		</track>
-		<track id="Curve#44_Track#1_#2">
-			<transform 30="-236.919922" 31="12.538711" 32="-125.991211"/>
-			<links>
-				<link id="Curve#44_Track#1_#1"/>
-				<link id="Curve#44_Track#1_#3"/>
-			</links>
-		</track>
-		<track id="Curve#44_Track#1_#10">
-			<transform 30="-233.374023" 31="13.79275" 32="-160.925781"/>
-			<links>
-				<link id="Curve#44_Track#1_#9"/>
-				<link id="Curve#45_Track#1_#1"/>
-			</links>
-		</track>
-		<track id="Curve#44_Track#1_#1">
-			<transform 30="-237.817383" 31="12.456717" 32="-122.094727"/>
-			<links>
-				<link id="Curve#43_Track#1_#12"/>
-				<link id="Curve#44_Track#1_#2"/>
-			</links>
-		</track>
-		<track id="Curve#43_Track#1_#9">
-			<transform 30="-242.594727" 31="12.291783" 32="-102.866211"/>
-			<links>
-				<link id="Curve#43_Track#1_#10"/>
-				<link id="Curve#43_Track#1_#8"/>
-			</links>
-		</track>
-		<track id="Curve#43_Track#1_#8">
-			<transform 30="-243.615234" 31="12.303526" 32="-98.99902"/>
-			<links>
-				<link id="Curve#43_Track#1_#7"/>
-				<link id="Curve#43_Track#1_#9"/>
-			</links>
-		</track>
-		<track id="Curve#43_Track#1_#7">
-			<transform 30="-244.7832" 31="12.324136" 32="-95.17383"/>
-			<links>
-				<link id="Curve#43_Track#1_#6"/>
-				<link id="Curve#43_Track#1_#8"/>
-			</links>
-		</track>
-		<track id="Curve#43_Track#1_#6">
-			<transform 30="-246.1416" 31="12.349236" 32="-91.41211"/>
-			<links>
-				<link id="Curve#43_Track#1_#5"/>
-				<link id="Curve#43_Track#1_#7"/>
-			</links>
-		</track>
-		<track id="Curve#43_Track#1_#5">
-			<transform 30="-247.709961" 31="12.374723" 32="-87.7334"/>
-			<links>
-				<link id="Curve#43_Track#1_#4"/>
-				<link id="Curve#43_Track#1_#6"/>
-			</links>
-		</track>
-		<track id="Curve#43_Track#1_#4">
-			<transform 30="-249.486328" 31="12.397451" 32="-84.149414"/>
-			<links>
-				<link id="Curve#43_Track#1_#3"/>
-				<link id="Curve#43_Track#1_#5"/>
-			</links>
-		</track>
-		<track id="Curve#43_Track#1_#3">
-			<transform 30="-251.455078" 31="12.415381" 32="-80.66797"/>
-			<links>
-				<link id="Curve#43_Track#1_#2"/>
-				<link id="Curve#43_Track#1_#4"/>
-			</links>
-		</track>
-		<track id="Curve#43_Track#1_#2">
-			<transform 30="-253.5918" 31="12.427436" 32="-77.28711"/>
-			<links>
-				<link id="Curve#43_Track#1_#1"/>
-				<link id="Curve#43_Track#1_#3"/>
-			</links>
-		</track>
-		<track id="Curve#43_Track#1_#12">
-			<transform 30="-238.831055" 31="12.39108" 32="-118.225586"/>
-			<links>
-				<link id="Curve#43_Track#1_#11"/>
-				<link id="Curve#44_Track#1_#1"/>
-			</links>
-		</track>
-		<track id="Curve#43_Track#1_#11">
-			<transform 30="-240.749023" 31="12.309541" 32="-110.650391"/>
-			<links>
-				<link id="Curve#43_Track#1_#10"/>
-				<link id="Curve#43_Track#1_#12"/>
-			</links>
-		</track>
-		<track id="Curve#43_Track#1_#10">
-			<transform 30="-241.660156" 31="12.292875" 32="-106.755859"/>
-			<links>
-				<link id="Curve#43_Track#1_#11"/>
-				<link id="Curve#43_Track#1_#9"/>
-			</links>
-		</track>
-		<track id="Curve#43_Track#1_#1">
-			<transform 30="-255.8711" 31="12.433236" 32="-74.00098"/>
-			<links>
-				<link id="Curve#42_Track#1_#19"/>
-				<link id="Curve#43_Track#1_#2"/>
-			</links>
-		</track>
-		<track id="Curve#42_Track#1_#9">
-			<transform 30="-288.703125" 31="12.348934" 32="-41.445313"/>
-			<links>
-				<link id="Curve#42_Track#1_#10"/>
-				<link id="Curve#42_Track#1_#8"/>
-			</links>
-		</track>
-		<track id="Curve#42_Track#1_#8">
-			<transform 30="-291.792" 31="12.339384" 32="-38.90332"/>
-			<links>
-				<link id="Curve#42_Track#1_#7"/>
-				<link id="Curve#42_Track#1_#9"/>
-			</links>
-		</track>
-		<track id="Curve#42_Track#1_#7">
-			<transform 30="-294.890625" 31="12.330014" 32="-36.374023"/>
-			<links>
-				<link id="Curve#42_Track#1_#6"/>
-				<link id="Curve#42_Track#1_#8"/>
-			</links>
-		</track>
-		<track id="Curve#42_Track#1_#6">
-			<transform 30="-297.994141" 31="12.320946" 32="-33.851563"/>
-			<links>
-				<link id="Curve#42_Track#1_#5"/>
-				<link id="Curve#42_Track#1_#7"/>
-			</links>
-		</track>
-		<track id="Curve#42_Track#1_#5">
-			<transform 30="-301.098633" 31="12.312314" 32="-31.329102"/>
-			<links>
-				<link id="Curve#42_Track#1_#4"/>
-				<link id="Curve#42_Track#1_#6"/>
-			</links>
-		</track>
-		<track id="Curve#42_Track#1_#4">
-			<transform 30="-304.1953" 31="12.304281" 32="-28.796875"/>
-			<links>
-				<link id="Curve#42_Track#1_#3"/>
-				<link id="Curve#42_Track#1_#5"/>
-			</links>
-		</track>
-		<track id="Curve#42_Track#1_#3">
-			<transform 30="-307.276367" 31="12.297057" 32="-26.246094"/>
-			<links>
-				<link id="Curve#42_Track#1_#2"/>
-				<link id="Curve#42_Track#1_#4"/>
-			</links>
-		</track>
-		<track id="Curve#42_Track#1_#2">
-			<transform 30="-310.333" 31="12.290912" 32="-23.666016"/>
-			<links>
-				<link id="Curve#42_Track#1_#1"/>
-				<link id="Curve#42_Track#1_#3"/>
-			</links>
-		</track>
-		<track id="Curve#42_Track#1_#19">
-			<transform 30="-258.269531" 31="12.43286" 32="-70.799805"/>
-			<links>
-				<link id="Curve#42_Track#1_#18"/>
-				<link id="Curve#43_Track#1_#1"/>
-			</links>
-		</track>
-		<track id="Curve#42_Track#1_#18">
-			<transform 30="-262.339844" 31="12.42554" 32="-65.9082"/>
-			<links>
-				<link id="Curve#42_Track#1_#17"/>
-				<link id="Curve#42_Track#1_#19"/>
-			</links>
-		</track>
-		<track id="Curve#42_Track#1_#17">
-			<transform 30="-265.041016" 31="12.419335" 32="-62.958008"/>
-			<links>
-				<link id="Curve#42_Track#1_#16"/>
-				<link id="Curve#42_Track#1_#18"/>
-			</links>
-		</track>
-		<track id="Curve#42_Track#1_#16">
-			<transform 30="-267.826172" 31="12.412193" 32="-60.086914"/>
-			<links>
-				<link id="Curve#42_Track#1_#15"/>
-				<link id="Curve#42_Track#1_#17"/>
-			</links>
-		</track>
-		<track id="Curve#42_Track#1_#15">
-			<transform 30="-270.681641" 31="12.404306" 32="-57.286133"/>
-			<links>
-				<link id="Curve#42_Track#1_#14"/>
-				<link id="Curve#42_Track#1_#16"/>
-			</links>
-		</track>
-		<track id="Curve#42_Track#1_#14">
-			<transform 30="-273.5918" 31="12.39583" 32="-54.54297"/>
-			<links>
-				<link id="Curve#42_Track#1_#13"/>
-				<link id="Curve#42_Track#1_#15"/>
-			</links>
-		</track>
-		<track id="Curve#42_Track#1_#13">
-			<transform 30="-276.5498" 31="12.386905" 32="-51.84961"/>
-			<links>
-				<link id="Curve#42_Track#1_#12"/>
-				<link id="Curve#42_Track#1_#14"/>
-			</links>
-		</track>
-		<track id="Curve#42_Track#1_#12">
-			<transform 30="-279.5459" 31="12.377647" 32="-49.200195"/>
-			<links>
-				<link id="Curve#42_Track#1_#11"/>
-				<link id="Curve#42_Track#1_#13"/>
-			</links>
-		</track>
-		<track id="Curve#42_Track#1_#11">
-			<transform 30="-282.574219" 31="12.368168" 32="-46.586914"/>
-			<links>
-				<link id="Curve#42_Track#1_#10"/>
-				<link id="Curve#42_Track#1_#12"/>
-			</links>
-		</track>
-		<track id="Curve#42_Track#1_#10">
-			<transform 30="-285.6289" 31="12.358563" 32="-44.003906"/>
-			<links>
-				<link id="Curve#42_Track#1_#11"/>
-				<link id="Curve#42_Track#1_#9"/>
-			</links>
-		</track>
-		<track id="Curve#42_Track#1_#1">
-			<transform 30="-313.3501" 31="12.286241" 32="-21.039063"/>
-			<links>
-				<link id="Curve#41_Track#1_#7"/>
-				<link id="Curve#42_Track#1_#2"/>
-			</links>
-		</track>
-		<track id="Curve#41_Track#1_#7">
-			<transform 30="-316.3042" 31="12.28362" 32="-18.342773"/>
-			<links>
-				<link id="Curve#41_Track#1_#6"/>
-				<link id="Curve#42_Track#1_#1"/>
-			</links>
-		</track>
-		<track id="Curve#41_Track#1_#6">
-			<transform 30="-319.4214" 31="12.284038" 32="-15.339844"/>
-			<links>
-				<link id="Curve#41_Track#1_#5"/>
-				<link id="Curve#41_Track#1_#7"/>
-			</links>
-		</track>
-		<track id="Curve#41_Track#1_#5">
-			<transform 30="-322.228027" 31="12.288624" 32="-12.490234"/>
-			<links>
-				<link id="Curve#41_Track#1_#4"/>
-				<link id="Curve#41_Track#1_#6"/>
-			</links>
-		</track>
-		<track id="Curve#41_Track#1_#4">
-			<transform 30="-324.930664" 31="12.299347" 32="-9.541992"/>
-			<links>
-				<link id="Curve#41_Track#1_#3"/>
-				<link id="Curve#41_Track#1_#5"/>
-			</links>
-		</track>
-		<track id="Curve#41_Track#1_#3">
-			<transform 30="-327.485352" 31="12.319745" 32="-6.464844"/>
-			<links>
-				<link id="Curve#41_Track#1_#2"/>
-				<link id="Curve#41_Track#1_#4"/>
-			</links>
-		</track>
-		<track id="Curve#41_Track#1_#2">
-			<transform 30="-329.932129" 31="12.352503" 32="-3.300781"/>
-			<links>
-				<link id="Curve#41_Track#1_#1"/>
-				<link id="Curve#41_Track#1_#3"/>
-			</links>
-		</track>
-		<track id="Curve#41_Track#1_#1">
-			<transform 30="-332.640137" 31="12.383844" 32="-0.363281"/>
-			<links>
-				<link id="Curve#40_Track#1_#6"/>
-				<link id="Curve#41_Track#1_#2"/>
-			</links>
-		</track>
-		<track id="Curve#40_Track#1_#6">
-			<transform 30="-335.7412" 31="12.398" 32="2.160156"/>
-			<links>
-				<link id="Curve#40_Track#1_#5"/>
-				<link id="Curve#41_Track#1_#1"/>
-			</links>
-		</track>
-		<track id="Curve#40_Track#1_#5">
-			<transform 30="-339.367676" 31="12.393983" 32="4.56543"/>
-			<links>
-				<link id="Curve#40_Track#1_#4"/>
-				<link id="Curve#40_Track#1_#6"/>
-			</links>
-		</track>
-		<track id="Curve#40_Track#1_#4">
-			<transform 30="-342.861328" 31="12.376132" 32="6.510742"/>
-			<links>
-				<link id="Curve#40_Track#1_#3"/>
-				<link id="Curve#40_Track#1_#5"/>
-			</links>
-		</track>
-		<track id="Curve#40_Track#1_#3">
-			<transform 30="-346.463379" 31="12.351748" 32="8.249023"/>
-			<links>
-				<link id="Curve#40_Track#1_#2"/>
-				<link id="Curve#40_Track#1_#4"/>
-			</links>
-		</track>
-		<track id="Curve#40_Track#1_#2">
-			<transform 30="-350.1494" 31="12.327807" 32="9.801758"/>
-			<links>
-				<link id="Curve#40_Track#1_#1"/>
-				<link id="Curve#40_Track#1_#3"/>
-			</links>
-		</track>
-		<track id="Curve#40_Track#1_#1">
-			<transform 30="-353.9077" 31="12.316087" 32="11.167969"/>
-			<links>
-				<link id="Curve#39_Track#1_#7"/>
-				<link id="Curve#40_Track#1_#2"/>
-			</links>
-		</track>
-		<track id="Curve#39_Track#1_#7">
-			<transform 30="-357.7588" 31="12.37171" 32="12.234375"/>
-			<links>
-				<link id="Curve#39_Track#1_#6"/>
-				<link id="Curve#40_Track#1_#1"/>
-			</links>
-		</track>
-		<track id="Curve#39_Track#1_#6">
-			<transform 30="-363.93457" 31="13.061068" 32="13.734375"/>
-			<links>
-				<link id="Curve#39_Track#1_#5"/>
-				<link id="Curve#39_Track#1_#7"/>
-			</links>
-		</track>
-		<track id="Curve#39_Track#1_#5">
-			<transform 30="-367.876953" 31="13.517676" 32="14.213867"/>
-			<links>
-				<link id="Curve#39_Track#1_#4"/>
-				<link id="Curve#39_Track#1_#6"/>
-			</links>
-		</track>
-		<track id="Curve#39_Track#1_#4">
-			<transform 30="-371.852051" 31="13.944212" 32="14.25"/>
-			<links>
-				<link id="Curve#39_Track#1_#3"/>
-				<link id="Curve#39_Track#1_#5"/>
-			</links>
-		</track>
-		<track id="Curve#39_Track#1_#3">
-			<transform 30="-375.812" 31="14.331125" 32="13.859375"/>
-			<links>
-				<link id="Curve#39_Track#1_#2"/>
-				<link id="Curve#39_Track#1_#4"/>
-			</links>
-		</track>
-		<track id="Curve#39_Track#1_#2">
-			<transform 30="-379.717773" 31="14.674399" 32="13.075195"/>
-			<links>
-				<link id="Curve#39_Track#1_#1"/>
-				<link id="Curve#39_Track#1_#3"/>
-			</links>
-		</track>
-		<track id="Curve#39_Track#1_#1">
-			<transform 30="-383.539063" 31="14.973297" 32="11.936523"/>
-			<links>
-				<link id="Curve#37_Track#1_#22"/>
-				<link id="Curve#39_Track#1_#2"/>
-			</links>
-		</track>
-		<track id="Curve#38_Track#1_#3">
-			<transform 30="-475.022949" 31="19.74228" 32="-40.411133"/>
-			<links>
-				<link id="Curve#38_Track#1_#2"/>
-			</links>
-		</track>
-		<track id="Curve#38_Track#1_#2">
-			<transform 30="-471.3086" 31="19.600376" 32="-38.001953"/>
-			<links>
-				<link id="Curve#38_Track#1_#1"/>
-				<link id="Curve#38_Track#1_#3"/>
-			</links>
-		</track>
-		<track id="Curve#38_Track#1_#1">
-			<transform 30="-467.830566" 31="19.39856" 32="-36.03711"/>
-			<links>
-				<link id="Curve#37_Track#1_#0"/>
-				<link id="Curve#38_Track#1_#2"/>
-			</links>
-		</track>
-		<track id="Curve#37_Track#1_#9">
-			<transform 30="-433.540527" 31="17.685173" 32="-15.514648"/>
-			<links>
-				<link id="Curve#37_Track#1_#10"/>
-				<link id="Curve#37_Track#1_#8"/>
-			</links>
-		</track>
-		<track id="Curve#37_Track#1_#8">
-			<transform 30="-436.963379" 31="17.854637" 32="-17.578125"/>
-			<links>
-				<link id="Curve#37_Track#1_#7"/>
-				<link id="Curve#37_Track#1_#9"/>
-			</links>
-		</track>
-		<track id="Curve#37_Track#1_#7">
-			<transform 30="-440.384766" 31="18.02368" 32="-19.642578"/>
-			<links>
-				<link id="Curve#37_Track#1_#6"/>
-				<link id="Curve#37_Track#1_#8"/>
-			</links>
-		</track>
-		<track id="Curve#37_Track#1_#6">
-			<transform 30="-443.8037" 31="18.192245" 32="-21.711914"/>
-			<links>
-				<link id="Curve#37_Track#1_#5"/>
-				<link id="Curve#37_Track#1_#7"/>
-			</links>
-		</track>
-		<track id="Curve#37_Track#1_#5">
-			<transform 30="-447.222656" 31="18.360779" 32="-23.78125"/>
-			<links>
-				<link id="Curve#37_Track#1_#4"/>
-				<link id="Curve#37_Track#1_#6"/>
-			</links>
-		</track>
-		<track id="Curve#37_Track#1_#4">
-			<transform 30="-450.643066" 31="18.529457" 32="-25.848633"/>
-			<links>
-				<link id="Curve#37_Track#1_#3"/>
-				<link id="Curve#37_Track#1_#5"/>
-			</links>
-		</track>
-		<track id="Curve#37_Track#1_#3">
-			<transform 30="-454.064941" 31="18.69856" 32="-27.913086"/>
-			<links>
-				<link id="Curve#37_Track#1_#2"/>
-				<link id="Curve#37_Track#1_#4"/>
-			</links>
-		</track>
-		<track id="Curve#37_Track#1_#22">
-			<transform 30="-387.2578" 31="15.22914" 32="10.488281"/>
-			<links>
-				<link id="Curve#37_Track#1_#21"/>
-				<link id="Curve#39_Track#1_#1"/>
-			</links>
-		</track>
-		<track id="Curve#37_Track#1_#21">
-			<transform 30="-391.92627" 31="15.513692" 32="8.288086"/>
-			<links>
-				<link id="Curve#37_Track#1_#20"/>
-				<link id="Curve#37_Track#1_#22"/>
-			</links>
-		</track>
-		<track id="Curve#37_Track#1_#20">
-			<transform 30="-395.4795" 31="15.717157" 32="6.462891"/>
-			<links>
-				<link id="Curve#37_Track#1_#19"/>
-				<link id="Curve#37_Track#1_#21"/>
-			</links>
-		</track>
-		<track id="Curve#37_Track#1_#2">
-			<transform 30="-457.490723" 31="18.868626" 32="-29.970703"/>
-			<links>
-				<link id="Curve#37_Track#1_#1"/>
-				<link id="Curve#37_Track#1_#3"/>
-			</links>
-		</track>
-		<track id="Curve#37_Track#1_#19">
-			<transform 30="-399.001953" 31="15.912328" 32="4.578125"/>
-			<links>
-				<link id="Curve#37_Track#1_#18"/>
-				<link id="Curve#37_Track#1_#20"/>
-			</links>
-		</track>
-		<track id="Curve#37_Track#1_#18">
-			<transform 30="-402.50293" 31="16.10163" 32="2.652344"/>
-			<links>
-				<link id="Curve#37_Track#1_#17"/>
-				<link id="Curve#37_Track#1_#19"/>
-			</links>
-		</track>
-		<track id="Curve#37_Track#1_#17">
-			<transform 30="-405.986328" 31="16.286596" 32="0.695313"/>
-			<links>
-				<link id="Curve#37_Track#1_#16"/>
-				<link id="Curve#37_Track#1_#18"/>
-			</links>
-		</track>
-		<track id="Curve#37_Track#1_#16">
-			<transform 30="-409.45752" 31="16.46821" 32="-1.28418"/>
-			<links>
-				<link id="Curve#37_Track#1_#15"/>
-				<link id="Curve#37_Track#1_#17"/>
-			</links>
-		</track>
-		<track id="Curve#37_Track#1_#15">
-			<transform 30="-412.91748" 31="16.647055" 32="-3.283203"/>
-			<links>
-				<link id="Curve#37_Track#1_#14"/>
-				<link id="Curve#37_Track#1_#16"/>
-			</links>
-		</track>
-		<track id="Curve#37_Track#1_#14">
-			<transform 30="-416.369629" 31="16.823784" 32="-5.295898"/>
-			<links>
-				<link id="Curve#37_Track#1_#13"/>
-				<link id="Curve#37_Track#1_#15"/>
-			</links>
-		</track>
-		<track id="Curve#37_Track#1_#13">
-			<transform 30="-419.813477" 31="16.998625" 32="-7.323242"/>
-			<links>
-				<link id="Curve#37_Track#1_#12"/>
-				<link id="Curve#37_Track#1_#14"/>
-			</links>
-		</track>
-		<track id="Curve#37_Track#1_#12">
-			<transform 30="-423.251953" 31="17.171965" 32="-9.359375"/>
-			<links>
-				<link id="Curve#37_Track#1_#11"/>
-				<link id="Curve#37_Track#1_#13"/>
-			</links>
-		</track>
-		<track id="Curve#37_Track#1_#11">
-			<transform 30="-426.685547" 31="17.34406" 32="-11.404297"/>
-			<links>
-				<link id="Curve#37_Track#1_#10"/>
-				<link id="Curve#37_Track#1_#12"/>
-			</links>
-		</track>
-		<track id="Curve#37_Track#1_#10">
-			<transform 30="-430.115234" 31="17.515074" 32="-13.456055"/>
-			<links>
-				<link id="Curve#37_Track#1_#11"/>
-				<link id="Curve#37_Track#1_#9"/>
-			</links>
-		</track>
-		<track id="Curve#37_Track#1_#1">
-			<transform 30="-460.92334" 31="19.040419" 32="-32.01758"/>
-			<links>
-				<link id="Curve#37_Track#1_#0"/>
-				<link id="Curve#37_Track#1_#2"/>
-			</links>
-		</track>
-		<track id="Curve#37_Track#1_#0">
-			<transform 30="-464.369141" 31="19.21551" 32="-34.041016"/>
-			<links>
-				<link id="Curve#37_Track#1_#1"/>
-				<link id="Curve#38_Track#1_#1"/>
-			</links>
-		</track>
-	</train_tracks>
+	<train_tracks/>
 	<volcano_markers/>
 	<mineral_rocks/>
 </definition>

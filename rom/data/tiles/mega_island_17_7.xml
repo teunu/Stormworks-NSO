@@ -1,32 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<definition is_island="true" tile_type="2">
+<definition is_island="True" tile_type="2" is_purchasable="False" purchase_cost="0" sea_floor_height="-6">
 	<meshes>
-		<mesh id="mesh0" file_name="nso_mod/meshes/mainland/17_7_main.mesh">
-			<transform/>
+		<mesh id="mesh0" seasonal_flags="0" file_name="nso_mod/meshes/mainland/17_7_main.mesh">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="0" 31="0" 32="0" 33="1"/>
 		</mesh>
-		<mesh id="mesh1" file_name="nso_mod/meshes/structures/buildings/hangar_cockerells.mesh">
-			<transform 00="0.694587" 02="0.719409" 20="-0.719409" 22="0.694587" 30="-291.38916" 31="16.4" 32="-315.438812"/>
+		<mesh id="mesh1" seasonal_flags="0" file_name="nso_mod/meshes/structures/buildings/hangar_cockerells.mesh">
+			<transform 00="0.694587" 01="0" 02="0.719409" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.719409" 21="0" 22="0.694587" 23="0" 30="-291.38916" 31="16.4" 32="-315.4388" 33="1"/>
 		</mesh>
-		<mesh id="mesh2" file_name="nso_mod/meshes/decoration/clutter/hangar_frame_destroyed.mesh">
-			<transform 00="0.687083" 02="0.726579" 20="-0.726579" 22="0.687083" 30="-290" 31="16.4" 32="-253"/>
+		<mesh id="mesh2" seasonal_flags="0" file_name="nso_mod/meshes/decoration/clutter/hangar_frame_destroyed.mesh">
+			<transform 00="0.687083" 01="0" 02="0.726579" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.726579" 21="0" 22="0.687083" 23="0" 30="-290" 31="16.4" 32="-253" 33="1"/>
 		</mesh>
-		<mesh id="mesh3" file_name="nso_mod/meshes/structures/blimp_tower.mesh">
-			<transform 00="0.707107" 02="0.707107" 20="-0.707107" 22="0.707107" 30="-314.046814" 31="16.479525" 32="-124.665222"/>
+		<mesh id="mesh3" seasonal_flags="0" file_name="nso_mod/meshes/structures/blimp_tower.mesh">
+			<transform 00="0.707107" 01="0" 02="0.707107" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.707107" 21="0" 22="0.707107" 23="0" 30="-314.0468" 31="16.4795246" 32="-124.665222" 33="1"/>
+		</mesh>
+		<mesh id="StaticObject_0" seasonal_flags="0" _CT_loadIgnore="true" file_name="nso_mod/meshes/structures/blimp_tower.mesh">
+			<transform 00="0.6146121" 01="0" 02="0.7888295" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.7888295" 21="0" 22="0.6146121" 23="0" 30="-292.8418" 31="16.80767" 32="-134.1372" 33="1"/>
+		</mesh>
+		<mesh id="StaticObject_1" seasonal_flags="0" _CT_loadIgnore="true" file_name="nso_mod/meshes/structures/buildings/hangar_cockerells.mesh">
+			<transform 00="0.6809473" 01="0" 02="0.7323324" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.7323324" 21="0" 22="0.6809473" 23="0" 30="-289.111328" 31="16.7571545" 32="-311.931152" 33="1"/>
+		</mesh>
+		<mesh id="StaticObject_2" seasonal_flags="0" _CT_loadIgnore="true" file_name="nso_mod/meshes/decoration/clutter/hangar_frame_destroyed.mesh">
+			<transform 00="0.687737644" 01="0" 02="0.725959361" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.725959361" 21="0" 22="0.687737644" 23="0" 30="-287.2461" 31="16.9331532" 32="-252.1377" 33="1"/>
 		</mesh>
 	</meshes>
 	<physics_objects/>
 	<physics_meshes>
-		<physics_mesh id="physics_mesh0" file_name="nso_mod/meshes/mainland/17_7_main.phys">
-			<transform/>
+		<physics_mesh id="physics_mesh0" seasonal_flags="0" file_name="nso_mod/meshes/mainland/17_7_main.phys">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="0" 31="0" 32="0" 33="1"/>
 		</physics_mesh>
-		<physics_mesh id="physics_mesh1" file_name="nso_mod/meshes/structures/buildings/hangar_cockerells.phys">
-			<transform 00="0.707107" 02="0.707107" 20="-0.707107" 22="0.707107" 30="-292.356232" 31="16.684729" 32="-315.981537"/>
+		<physics_mesh id="physics_mesh1" seasonal_flags="0" file_name="nso_mod/meshes/structures/buildings/hangar_cockerells.phys">
+			<transform 00="0.707107" 01="0" 02="0.707107" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.707107" 21="0" 22="0.707107" 23="0" 30="-292.356232" 31="16.6847286" 32="-315.981537" 33="1"/>
 		</physics_mesh>
-		<physics_mesh id="physics_mesh2" file_name="nso_mod/meshes/decoration/clutter/hangar_frame_destroyed.phys">
-			<transform 00="0.707107" 02="0.707107" 20="-0.707107" 22="0.707107" 30="-289.206665" 31="16" 32="-252.628403"/>
+		<physics_mesh id="physics_mesh2" seasonal_flags="0" file_name="nso_mod/meshes/decoration/clutter/hangar_frame_destroyed.phys">
+			<transform 00="0.707107" 01="0" 02="0.707107" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.707107" 21="0" 22="0.707107" 23="0" 30="-289.206665" 31="16" 32="-252.6284" 33="1"/>
 		</physics_mesh>
-		<physics_mesh id="physics_mesh3" file_name="nso_mod/meshes/structures/blimp_tower.phys">
-			<transform 00="0.718223" 02="0.695813" 20="-0.695813" 22="0.718223" 30="-314.167114" 31="16.538948" 32="-124.751579"/>
+		<physics_mesh id="physics_mesh3" seasonal_flags="0" file_name="nso_mod/meshes/structures/blimp_tower.phys">
+			<transform 00="0.718223" 01="0" 02="0.695813" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.695813" 21="0" 22="0.718223" 23="0" 30="-314.1671" 31="16.5389481" 32="-124.751579" 33="1"/>
+		</physics_mesh>
+		<physics_mesh id="StaticObject_0_phys" seasonal_flags="0" _CT_loadIgnore="true" file_name="nso_mod/meshes/structures/blimp_tower.phys">
+			<transform 00="0.6146121" 01="0" 02="0.7888295" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.7888295" 21="0" 22="0.6146121" 23="0" 30="-292.8418" 31="16.80767" 32="-134.1372" 33="1"/>
+		</physics_mesh>
+		<physics_mesh id="StaticObject_1_phys" seasonal_flags="0" _CT_loadIgnore="true" file_name="nso_mod/meshes/structures/buildings/hangar_cockerells.phys">
+			<transform 00="0.6809473" 01="0" 02="0.7323324" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.7323324" 21="0" 22="0.6809473" 23="0" 30="-289.111328" 31="16.7571545" 32="-311.931152" 33="1"/>
+		</physics_mesh>
+		<physics_mesh id="StaticObject_2_phys" seasonal_flags="0" _CT_loadIgnore="true" file_name="nso_mod/meshes/decoration/clutter/hangar_frame_destroyed.phys">
+			<transform 00="0.687737644" 01="0" 02="0.725959361" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.725959361" 21="0" 22="0.687737644" 23="0" 30="-287.2461" 31="16.9331532" 32="-252.1377" 33="1"/>
 		</physics_mesh>
 	</physics_meshes>
 	<physics_dynamics/>

@@ -1,20 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<definition tile_type="2">
+<definition is_island="False" tile_type="2" is_purchasable="False" purchase_cost="0" sea_floor_height="-6">
 	<meshes>
-		<mesh id="mesh0" file_name="nso_mod/meshes/mainland/11_7_main.mesh">
-			<transform/>
+		<mesh id="mesh0" seasonal_flags="0" file_name="nso_mod/meshes/mainland/11_7_main.mesh">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="0" 31="0" 32="0" 33="1"/>
 		</mesh>
-		<mesh id="StaticObject_0" file_name="nso_mod/meshes/structures/buildings/house_small_blue.mesh">
-			<transform 30="98.33789" 31="14.802339" 32="472.927734"/>
+		<mesh id="StaticObject_0" seasonal_flags="0" file_name="nso_mod/meshes/structures/buildings/house_small_blue.mesh">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="98.33789" 31="14.8023386" 32="472.927734" 33="1"/>
+		</mesh>
+		<mesh id="StaticObject_0_Transferred_0" seasonal_flags="0" _CT_loadIgnore="true" file_name="nso_mod/meshes/structures/buildings/house_small_blue.mesh">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="98.33789" 31="14.8023386" 32="472.927734" 33="1"/>
 		</mesh>
 	</meshes>
 	<physics_objects/>
 	<physics_meshes>
-		<physics_mesh id="StaticObject_0_phys" file_name="meshes/generated_object_geom/tiles/mega_island_11_7/nso_mod/structures/buildings/house_small_blue__StaticObject_0_phys.phys">
-			<transform 30="98.33789" 31="14.802339" 32="472.927734"/>
+		<physics_mesh id="StaticObject_0_phys" seasonal_flags="0" file_name="meshes/generated_object_geom/tiles/mega_island_11_7/nso_mod/structures/buildings/house_small_blue__StaticObject_0_phys.phys">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="98.33789" 31="14.8023386" 32="472.927734" 33="1"/>
 		</physics_mesh>
-		<physics_mesh id="physics_mesh0" file_name="nso_mod/meshes/mainland/11_7_main.phys">
-			<transform/>
+		<physics_mesh id="physics_mesh0" seasonal_flags="0" file_name="nso_mod/meshes/mainland/11_7_main.phys">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="0" 31="0" 32="0" 33="1"/>
+		</physics_mesh>
+		<physics_mesh id="StaticObject_0_phys_Transferred_0" seasonal_flags="0" _CT_loadIgnore="true" file_name="meshes/generated_object_geom/tiles/mega_island_11_7/nso_mod/structures/buildings/house_small_blue__StaticObject_0_phys.phys">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="98.33789" 31="14.8023386" 32="472.927734" 33="1"/>
 		</physics_mesh>
 	</physics_meshes>
 	<physics_dynamics/>

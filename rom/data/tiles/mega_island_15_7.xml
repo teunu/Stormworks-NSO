@@ -1,44 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<definition is_island="true" tile_type="2">
+<definition is_island="True" tile_type="2" is_purchasable="False" purchase_cost="0" sea_floor_height="-6">
 	<meshes>
-		<mesh id="mesh0" file_name="nso_mod/meshes/mainland/15_7_main.mesh">
-			<transform/>
+		<mesh id="mesh0" seasonal_flags="0" file_name="nso_mod/meshes/mainland/15_7_main.mesh">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="0" 31="0" 32="0" 33="1"/>
 		</mesh>
-		<mesh id="mesh1" file_name="nso_mod/meshes/mainland/15_7_port.mesh">
-			<transform/>
+		<mesh id="mesh1" seasonal_flags="0" file_name="nso_mod/meshes/mainland/15_7_port.mesh">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="0" 31="0" 32="0" 33="1"/>
 		</mesh>
-		<mesh id="mesh2" file_name="meshes/arid_mainland_assets/shipwreck_b.mesh">
-			<transform 00="0.645033" 01="0.764155" 10="-0.762091" 11="0.643291" 12="0.073448" 20="0.056125" 21="-0.047376" 22="0.997299" 30="39.809769" 31="-11.420784" 32="384.055389"/>
+		<mesh id="mesh2" seasonal_flags="0" file_name="meshes/arid_mainland_assets/shipwreck_b.mesh">
+			<transform 00="0.645033" 01="0.764155" 02="0" 03="0" 10="-0.762091" 11="0.643291" 12="0.073448" 13="0" 20="0.056125" 21="-0.047376" 22="0.997299" 23="0" 30="39.80977" 31="-11.420784" 32="384.0554" 33="1"/>
 		</mesh>
-		<mesh id="mesh4" file_name="meshes/workbench.mesh">
-			<transform 00="0.452332" 02="0.89185" 20="-0.89185" 22="0.452332" 30="184.047668" 31="4.046229" 32="230.905899"/>
+		<mesh id="mesh4" seasonal_flags="0" file_name="meshes/workbench.mesh">
+			<transform 00="0.452332" 01="0" 02="0.89185" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.89185" 21="0" 22="0.452332" 23="0" 30="184.047668" 31="4.046229" 32="230.9059" 33="1"/>
 		</mesh>
-		<mesh id="mesh7" file_name="nso_mod/meshes/structures/buildings/pump_station_diesel.mesh">
-			<transform 00="0.707107" 02="-0.707107" 20="0.707107" 22="0.707107" 30="-552.47113" 31="0.065773" 32="279.30838"/>
+		<mesh id="mesh7" seasonal_flags="0" file_name="nso_mod/meshes/structures/buildings/pump_station_diesel.mesh">
+			<transform 00="0.707107" 01="0" 02="-0.707107" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.707107" 21="0" 22="0.707107" 23="0" 30="-552.4711" 31="0.065773" 32="279.30838" 33="1"/>
 		</mesh>
-		<mesh id="mesh5" file_name="nso_mod/meshes/structures/buildings/liquid_silos_base.mesh">
-			<transform 00="0.707107" 02="0.707107" 20="-0.707107" 22="0.707107" 30="-682.045349" 31="2.662186" 32="251.283264"/>
+		<mesh id="mesh5" seasonal_flags="0" file_name="nso_mod/meshes/structures/buildings/liquid_silos_base.mesh">
+			<transform 00="0.707107" 01="0" 02="0.707107" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.707107" 21="0" 22="0.707107" 23="0" 30="-682.045349" 31="2.662186" 32="251.283264" 33="1"/>
 		</mesh>
-		<mesh id="mesh6" file_name="nso_mod/meshes/structures/buildings/liquid_silos.mesh">
-			<transform 30="-669.924255" 31="-13.959745" 32="145.74437"/>
+		<mesh id="mesh6" seasonal_flags="0" file_name="nso_mod/meshes/structures/buildings/liquid_silos.mesh">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-669.924255" 31="-13.9597454" 32="145.74437" 33="1"/>
 		</mesh>
-		<mesh id="mesh7" file_name="nso_mod/meshes/structures/buildings/pump_station_diesel.mesh">
-			<transform 00="0.707107" 02="-0.707107" 20="0.707107" 22="0.707107" 30="-603.122742" 31="0.065773" 32="329.985779"/>
+		<mesh id="mesh7_IdConflicted_0" seasonal_flags="0" file_name="nso_mod/meshes/structures/buildings/pump_station_diesel.mesh">
+			<transform 00="0.707107" 01="0" 02="-0.707107" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.707107" 21="0" 22="0.707107" 23="0" 30="-603.122742" 31="0.065773" 32="329.985779" 33="1"/>
 		</mesh>
-		<mesh id="mesh8" file_name="nso_mod/meshes/structures/buildings/pump_station_diesel.mesh">
-			<transform 00="-0" 02="-1" 11="1" 20="1" 22="-0" 30="-470.776733" 31="0.839473" 32="57.982964"/>
+		<mesh id="mesh8" seasonal_flags="0" file_name="nso_mod/meshes/structures/buildings/pump_station_diesel.mesh">
+			<transform 00="0" 01="0" 02="-1" 03="0" 10="0" 11="1" 12="0" 13="0" 20="1" 21="0" 22="0" 23="0" 30="-470.776733" 31="0.839473" 32="57.9829636" 33="1"/>
 		</mesh>
-		<mesh id="mesh9" file_name="nso_mod/meshes/structures/buildings/liquid_silos.mesh">
-			<transform 00="-0" 02="1" 11="1" 20="-1" 22="-0" 30="-519.563599" 31="-8.301354" 32="-26.968536"/>
+		<mesh id="mesh9" seasonal_flags="0" file_name="nso_mod/meshes/structures/buildings/liquid_silos.mesh">
+			<transform 00="0" 01="0" 02="1" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-1" 21="0" 22="0" 23="0" 30="-519.5636" 31="-8.301354" 32="-26.9685364" 33="1"/>
+		</mesh>
+		<mesh id="StaticObject_0" seasonal_flags="0" _CT_loadIgnore="true" file_name="nso_mod/meshes/structures/buildings/liquid_silos.mesh">
+			<transform 00="7.90753631E-07" 01="0" 02="-1" 03="0" 10="0" 11="1" 12="0" 13="0" 20="1" 21="0" 22="7.90753631E-07" 23="0" 30="-487.773438" 31="-16.8526344" 32="53.6210938" 33="1"/>
+		</mesh>
+		<mesh id="StaticObject_1" seasonal_flags="0" _CT_loadIgnore="true" file_name="nso_mod/meshes/decoration/light_pole.mesh">
+			<transform 00="0.965925932" 01="0" 02="-0.2588187" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.2588187" 21="0" 22="0.965925932" 23="0" 30="-474.5254" 31="3.32015944" 32="224.076172" 33="1"/>
 		</mesh>
 	</meshes>
 	<physics_objects/>
 	<physics_meshes>
-		<physics_mesh id="physics_mesh0" file_name="nso_mod/meshes/mainland/15_7_main.phys">
-			<transform/>
+		<physics_mesh id="physics_mesh0" seasonal_flags="0" file_name="nso_mod/meshes/mainland/15_7_main.phys">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="0" 31="0" 32="0" 33="1"/>
 		</physics_mesh>
-		<physics_mesh id="physics_mesh1" file_name="nso_mod/meshes/mainland/15_7_port.phys">
-			<transform/>
+		<physics_mesh id="physics_mesh1" seasonal_flags="0" file_name="nso_mod/meshes/mainland/15_7_port.phys">
+			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="0" 31="0" 32="0" 33="1"/>
+		</physics_mesh>
+		<physics_mesh id="StaticObject_0_phys" seasonal_flags="0" _CT_loadIgnore="true" file_name="nso_mod/meshes/structures/buildings/liquid_silos.phys">
+			<transform 00="7.90753631E-07" 01="0" 02="-1" 03="0" 10="0" 11="1" 12="0" 13="0" 20="1" 21="0" 22="7.90753631E-07" 23="0" 30="-487.773438" 31="-16.8526344" 32="53.6210938" 33="1"/>
+		</physics_mesh>
+		<physics_mesh id="StaticObject_1_phys" seasonal_flags="0" _CT_loadIgnore="true" file_name="meshes/generated_object_geom/tiles/mega_island_15_7/nso_mod/decoration/light_pole__StaticObject_1_phys.phys">
+			<transform 00="0.965925932" 01="0" 02="-0.2588187" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.2588187" 21="0" 22="0.965925932" 23="0" 30="-474.5254" 31="3.32015944" 32="224.076172" 33="1"/>
 		</physics_mesh>
 	</physics_meshes>
 	<physics_dynamics/>
@@ -47,14 +59,14 @@
 	<lights_tube/>
 	<screens/>
 	<edit_areas>
-		<edit_area id="edit0" grid_size="2">
-			<transform 00="0.49482" 02="0.868995" 20="-0.868995" 22="0.49482" 30="152.851273" 31="0.666107" 32="227.989883"/>
+		<edit_area id="edit0" seasonal_flags="0" grid_size="2" is_static="false" default_vehicle="" spawned_static_vehicle_id="0" is_invisible_vehicle="false">
+			<transform 00="0.4948202" 01="0" 02="0.868995368" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.868995368" 21="0" 22="0.4948202" 23="0" 30="152.851273" 31="0.666107" 32="227.989883" 33="1"/>
 			<size x="22.5" y="20.5" z="57.25"/>
 		</edit_area>
 	</edit_areas>
 	<interactables>
-		<interactable id="interact0" target_object_id="edit0" label="Edit Ship" interact_type="2">
-			<transform 00="0.477943" 02="0.878391" 20="-0.878391" 22="0.477943" 30="183.960876" 31="3.838028" 32="230.810547"/>
+		<interactable id="interact0" seasonal_flags="0" target_object_id="edit0" label="Edit Ship" use_case="0" interact_type="2" is_purchased="false" is_ignore_purchased="false">
+			<transform 00="0.477943" 01="0" 02="0.878391" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.878391" 21="0" 22="0.477943" 23="0" 30="183.960876" 31="3.838028" 32="230.810547" 33="1"/>
 			<size x="1.355982" y="1.54475" z="1.325107"/>
 		</interactable>
 	</interactables>
