@@ -4,11 +4,71 @@
 		<mesh id="mesh0" file_name="nso_mod/meshes/mainland/14_7_main.mesh">
 			<transform/>
 		</mesh>
+		<mesh id="StaticObject_0" _CT_loadIgnore="true" file_name="nso_mod/meshes/structures/buildings/liquid_silos.mesh">
+			<transform 30="329.760742" 31="-13.0677128" 32="145.777832"/>
+		</mesh>
+		<mesh id="StaticObject_1" _CT_loadIgnore="true" file_name="nso_mod/meshes/structures/buildings/liquid_silos_base.mesh">
+			<transform 00="0.7071071" 02="0.7071065" 20="-0.7071065" 22="0.7071071" 30="316.8711" 31="2.99488616" 32="251.139648"/>
+		</mesh>
+		<mesh id="StaticObject_2" _CT_loadIgnore="true" file_name="nso_mod/meshes/structures/buildings/pump_station_diesel.mesh">
+			<transform 00="0.7071071" 02="-0.7071065" 20="0.7071065" 22="0.7071071" 30="414.4082" 31="0.23770386" 32="314.944824"/>
+		</mesh>
+		<mesh id="StaticObject_3" _CT_loadIgnore="true" file_name="nso_mod/meshes/structures/buildings/pump_station_water.mesh">
+			<transform 00="-0.00542439753" 02="0.9999853" 20="-0.9999853" 22="-0.00542439753" 30="479.699219" 31="0.9783247" 32="106.336914"/>
+		</mesh>
+		<mesh id="StaticObject_4" _CT_loadIgnore="true" file_name="nso_mod/meshes/structures/buildings/pump_station_diesel.mesh">
+			<transform 00="7.90753631E-07" 02="1" 20="-1" 22="7.90753631E-07" 30="498.557617" 31="-1.317109" 32="106.250488"/>
+		</mesh>
+		<mesh id="StaticObject_5" _CT_loadIgnore="true" file_name="nso_mod/meshes/decoration/clutter/rusted_beam.mesh">
+			<transform 30="362.646484" 31="5.363879" 32="302.833984"/>
+		</mesh>
+		<mesh id="StaticObject_6" _CT_loadIgnore="true" file_name="nso_mod/meshes/decoration/clutter/rusted_beam.mesh">
+			<transform 30="490.99707" 31="4.836818" 32="194.811035"/>
+		</mesh>
+		<mesh id="StaticObject_7" _CT_loadIgnore="true" file_name="nso_mod/meshes/decoration/clutter/wood_stacked.mesh">
+			<transform 00="-0.499999225" 02="0.866025865" 20="-0.866025865" 22="-0.499999225" 30="489.634766" 31="5.01107931" 32="199.870117"/>
+		</mesh>
+		<mesh id="StaticObject_8" _CT_loadIgnore="true" file_name="nso_mod/meshes/decoration/clutter/wood_stacked.mesh">
+			<transform 00="0.5000004" 02="-0.8660252" 20="0.8660252" 22="0.5000004" 30="489.030273" 31="5.238876" 32="201.1206"/>
+		</mesh>
+		<mesh id="StaticObject_9" _CT_loadIgnore="true" file_name="nso_mod/meshes/decoration/light_pole.mesh">
+			<transform 00="0.968781233" 02="-0.24791716" 20="0.24791716" 22="0.968781233" 30="480.5791" 31="3.171257" 32="268.510254"/>
+		</mesh>
 	</meshes>
 	<physics_objects/>
 	<physics_meshes>
 		<physics_mesh id="physics_mesh0" file_name="nso_mod/meshes/mainland/14_7_main.phys">
 			<transform/>
+		</physics_mesh>
+		<physics_mesh id="StaticObject_0_phys" _CT_loadIgnore="true" file_name="nso_mod/meshes/structures/buildings/liquid_silos.phys">
+			<transform 30="329.760742" 31="-13.0677128" 32="145.777832"/>
+		</physics_mesh>
+		<physics_mesh id="StaticObject_1_phys" _CT_loadIgnore="true" file_name="nso_mod/meshes/structures/buildings/liquid_silos_base.phys">
+			<transform 00="0.7071071" 02="0.7071065" 20="-0.7071065" 22="0.7071071" 30="316.8711" 31="2.99488616" 32="251.139648"/>
+		</physics_mesh>
+		<physics_mesh id="StaticObject_2_phys" _CT_loadIgnore="true" file_name="nso_mod/meshes/structures/buildings/pump_station_diesel.phys">
+			<transform 00="0.7071071" 02="-0.7071065" 20="0.7071065" 22="0.7071071" 30="414.4082" 31="0.23770386" 32="314.944824"/>
+		</physics_mesh>
+		<physics_mesh id="StaticObject_3_phys" _CT_loadIgnore="true" file_name="nso_mod/meshes/structures/buildings/pump_station_water.phys">
+			<transform 00="-0.00542439753" 02="0.9999853" 20="-0.9999853" 22="-0.00542439753" 30="479.699219" 31="0.9783247" 32="106.336914"/>
+		</physics_mesh>
+		<physics_mesh id="StaticObject_4_phys" _CT_loadIgnore="true" file_name="nso_mod/meshes/structures/buildings/pump_station_diesel.phys">
+			<transform 00="7.90753631E-07" 02="1" 20="-1" 22="7.90753631E-07" 30="498.557617" 31="-1.317109" 32="106.250488"/>
+		</physics_mesh>
+		<physics_mesh id="StaticObject_5_phys" _CT_loadIgnore="true" file_name="meshes/generated_object_geom/tiles/mega_island_14_7/nso_mod/decoration/clutter/rusted_beam__StaticObject_5_phys.phys">
+			<transform 30="362.646484" 31="5.363879" 32="302.833984"/>
+		</physics_mesh>
+		<physics_mesh id="StaticObject_6_phys" _CT_loadIgnore="true" file_name="meshes/generated_object_geom/tiles/mega_island_14_7/nso_mod/decoration/clutter/rusted_beam__StaticObject_6_phys.phys">
+			<transform 30="490.99707" 31="4.836818" 32="194.811035"/>
+		</physics_mesh>
+		<physics_mesh id="StaticObject_7_phys" _CT_loadIgnore="true" file_name="meshes/generated_object_geom/tiles/mega_island_14_7/nso_mod/decoration/clutter/wood_stacked__StaticObject_7_phys.phys">
+			<transform 00="-0.499999225" 02="0.866025865" 20="-0.866025865" 22="-0.499999225" 30="489.634766" 31="5.01107931" 32="199.870117"/>
+		</physics_mesh>
+		<physics_mesh id="StaticObject_8_phys" _CT_loadIgnore="true" file_name="meshes/generated_object_geom/tiles/mega_island_14_7/nso_mod/decoration/clutter/wood_stacked__StaticObject_8_phys.phys">
+			<transform 00="0.5000004" 02="-0.8660252" 20="0.8660252" 22="0.5000004" 30="489.030273" 31="5.238876" 32="201.1206"/>
+		</physics_mesh>
+		<physics_mesh id="StaticObject_9_phys" _CT_loadIgnore="true" file_name="meshes/generated_object_geom/tiles/mega_island_14_7/nso_mod/decoration/light_pole__StaticObject_9_phys.phys">
+			<transform 00="0.968781233" 02="-0.24791716" 20="0.24791716" 22="0.968781233" 30="480.5791" 31="3.171257" 32="268.510254"/>
 		</physics_mesh>
 	</physics_meshes>
 	<physics_dynamics/>

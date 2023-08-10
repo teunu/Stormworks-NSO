@@ -25,9 +25,9 @@ lib.Presets =
 
 	Concrete =
 	{
-		Colour			= Color255(168, 168, 166),
-		TopWidth		= 4.5	* 0.5,
-		BottomWidth		= 5.2	* 0.5,
+		Colour			= Color255(199, 185, 170),
+		TopWidth		= 4	* 0.5,
+		BottomWidth		= 4.8	* 0.5,
 		Height			= 0.69,
 		CenterGroove	= -0.02,
 		YOffset			= -0.22
@@ -64,7 +64,16 @@ function lib.Railbed(Settings, ISet)
 	v.position = Vector3(-TopWidth, YOffset - AntiZGlitch, 0)
 	loop.Vertices:Add(v)
 
+	v.position = Vector3(-TopWidth, YOffset - AntiZGlitch, 0)
+	loop.Vertices:Add(v)
+
 	v.position = Vector3(0, YOffset + CenterGroove, 0)
+	loop.Vertices:Add(v)
+
+	v.position = Vector3(0, YOffset + CenterGroove, 0)
+	loop.Vertices:Add(v)
+
+	v.position = Vector3(TopWidth, YOffset, 0)
 	loop.Vertices:Add(v)
 
 	v.position = Vector3(TopWidth, YOffset, 0)
@@ -77,25 +86,16 @@ function lib.Railbed(Settings, ISet)
 	set.LineIndices:Add(0)
 	set.LineIndices:Add(1)
 
-	set.LineIndices:Add(1)
-	set.LineIndices:Add(2)
-
 	set.LineIndices:Add(2)
 	set.LineIndices:Add(3)
 
-	set.LineIndices:Add(3)
 	set.LineIndices:Add(4)
+	set.LineIndices:Add(5)
 
-	-- Slightly optimize physics by making the shape simpler.
-	set.PhysFromVisual = false
-	set.PhysLineIndices:Add(0)
-	set.PhysLineIndices:Add(1)
+	set.LineIndices:Add(6)
+	set.LineIndices:Add(7)
 
-	set.PhysLineIndices:Add(1)
-	set.PhysLineIndices:Add(3)
-
-	set.PhysLineIndices:Add(3)
-	set.PhysLineIndices:Add(4)
+	set.PhysFromVisual = true
 
 
 	set:ComputeNormals()

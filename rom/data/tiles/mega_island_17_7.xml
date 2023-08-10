@@ -5,13 +5,22 @@
 			<transform/>
 		</mesh>
 		<mesh id="mesh1" file_name="nso_mod/meshes/structures/buildings/hangar_cockerells.mesh">
-			<transform 00="0.694587" 02="0.719409" 20="-0.719409" 22="0.694587" 30="-291.38916" 31="16.4" 32="-315.438812"/>
+			<transform 00="0.694587" 02="0.719409" 20="-0.719409" 22="0.694587" 30="-291.38916" 31="16.4" 32="-315.4388"/>
 		</mesh>
 		<mesh id="mesh2" file_name="nso_mod/meshes/decoration/clutter/hangar_frame_destroyed.mesh">
 			<transform 00="0.687083" 02="0.726579" 20="-0.726579" 22="0.687083" 30="-290" 31="16.4" 32="-253"/>
 		</mesh>
 		<mesh id="mesh3" file_name="nso_mod/meshes/structures/blimp_tower.mesh">
-			<transform 00="0.707107" 02="0.707107" 20="-0.707107" 22="0.707107" 30="-314.046814" 31="16.479525" 32="-124.665222"/>
+			<transform 00="0.707107" 02="0.707107" 20="-0.707107" 22="0.707107" 30="-314.0468" 31="16.4795246" 32="-124.665222"/>
+		</mesh>
+		<mesh id="StaticObject_0" _CT_loadIgnore="true" file_name="nso_mod/meshes/structures/blimp_tower.mesh">
+			<transform 00="0.6146121" 02="0.7888295" 20="-0.7888295" 22="0.6146121" 30="-292.8418" 31="16.80767" 32="-134.1372"/>
+		</mesh>
+		<mesh id="StaticObject_1" _CT_loadIgnore="true" file_name="nso_mod/meshes/structures/buildings/hangar_cockerells.mesh">
+			<transform 00="0.6809473" 02="0.7323324" 20="-0.7323324" 22="0.6809473" 30="-289.111328" 31="16.7571545" 32="-311.931152"/>
+		</mesh>
+		<mesh id="StaticObject_2" _CT_loadIgnore="true" file_name="nso_mod/meshes/decoration/clutter/hangar_frame_destroyed.mesh">
+			<transform 00="0.687737644" 02="0.725959361" 20="-0.725959361" 22="0.687737644" 30="-287.2461" 31="16.9331532" 32="-252.1377"/>
 		</mesh>
 	</meshes>
 	<physics_objects/>
@@ -20,13 +29,22 @@
 			<transform/>
 		</physics_mesh>
 		<physics_mesh id="physics_mesh1" file_name="nso_mod/meshes/structures/buildings/hangar_cockerells.phys">
-			<transform 00="0.707107" 02="0.707107" 20="-0.707107" 22="0.707107" 30="-292.356232" 31="16.684729" 32="-315.981537"/>
+			<transform 00="0.707107" 02="0.707107" 20="-0.707107" 22="0.707107" 30="-292.356232" 31="16.6847286" 32="-315.981537"/>
 		</physics_mesh>
 		<physics_mesh id="physics_mesh2" file_name="nso_mod/meshes/decoration/clutter/hangar_frame_destroyed.phys">
-			<transform 00="0.707107" 02="0.707107" 20="-0.707107" 22="0.707107" 30="-289.206665" 31="16" 32="-252.628403"/>
+			<transform 00="0.707107" 02="0.707107" 20="-0.707107" 22="0.707107" 30="-289.206665" 31="16" 32="-252.6284"/>
 		</physics_mesh>
 		<physics_mesh id="physics_mesh3" file_name="nso_mod/meshes/structures/blimp_tower.phys">
-			<transform 00="0.718223" 02="0.695813" 20="-0.695813" 22="0.718223" 30="-314.167114" 31="16.538948" 32="-124.751579"/>
+			<transform 00="0.718223" 02="0.695813" 20="-0.695813" 22="0.718223" 30="-314.1671" 31="16.5389481" 32="-124.751579"/>
+		</physics_mesh>
+		<physics_mesh id="StaticObject_0_phys" _CT_loadIgnore="true" file_name="nso_mod/meshes/structures/blimp_tower.phys">
+			<transform 00="0.6146121" 02="0.7888295" 20="-0.7888295" 22="0.6146121" 30="-292.8418" 31="16.80767" 32="-134.1372"/>
+		</physics_mesh>
+		<physics_mesh id="StaticObject_1_phys" _CT_loadIgnore="true" file_name="nso_mod/meshes/structures/buildings/hangar_cockerells.phys">
+			<transform 00="0.6809473" 02="0.7323324" 20="-0.7323324" 22="0.6809473" 30="-289.111328" 31="16.7571545" 32="-311.931152"/>
+		</physics_mesh>
+		<physics_mesh id="StaticObject_2_phys" _CT_loadIgnore="true" file_name="nso_mod/meshes/decoration/clutter/hangar_frame_destroyed.phys">
+			<transform 00="0.687737644" 02="0.725959361" 20="-0.725959361" 22="0.687737644" 30="-287.2461" 31="16.9331532" 32="-252.1377"/>
 		</physics_mesh>
 	</physics_meshes>
 	<physics_dynamics/>

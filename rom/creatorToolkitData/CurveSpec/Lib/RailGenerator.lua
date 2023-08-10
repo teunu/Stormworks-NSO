@@ -62,8 +62,6 @@ Vertex order for Right (+x) Rail
     ╚══════════════════════════╝    
 ]]
 
-
-
 -- todo: move to it's own lib.
 ---Creates a full/deep copy of the provided data.
 ---Copies both keys and values, but ignores metaTables.
@@ -96,11 +94,17 @@ lib.version = "0.1.0"
 --- A tiny offset that prevents Z fighting that occurs when two surfaces are at exactly the same place.
 local antiZFight = 0.001
 
+--- Extend the physics of the rails down below the embankment. This should help physics stability.
+local ExtendPhysDownwards = 3
+local ExtendPhysDownwardsAdjust = (ExtendPhysDownwards or 1) * 0.6
+
 --- Presets of Rail Settings.
+--- All measurements are in millimeters or degrees.
 ---@type table<string, RailGeneratorSettings>
 lib.presets =
 {
 	--- UIC60 is a European specification for rails.
+	--- To get Stormworks gauge, set a scale factor of 1.115.
 	---@class RailGeneratorSettings
 	UIC60 =
 	{
@@ -142,7 +146,7 @@ end
 
 
 ---Generate an Extrusion for a set of rails based on settings.
----@param settings RailGeneratorSettings Defaults to Stormworks' standard gauge.
+---@param settings RailGeneratorSettings Defaults to real-life standard gauge.
 ---@param ISet? InterpolationSettings the interpolationSettings to apply.
 function lib.Generate(settings, ISet)
 	settings = deepCopy(settings, nil, lib.newSettings())
@@ -165,6 +169,8 @@ function lib.Generate(settings, ISet)
 
 	local bottomHeight  = settings.BottomHeight / 1000
 	local bottomWidth   = settings.BottomWidth / 1000
+
+	local PhysBottomWidth = 0.5
 
 	local surfaceColor      = settings.SurfaceColor
 	local outerSurfaceColor = settings.MediumRustColor
@@ -205,6 +211,18 @@ function lib.Generate(settings, ISet)
 
 	if ISet then -- Apply only when a value is provided, so we don't set it to nothing.
 		loop.InterpolationSettings = ISet
+	end
+
+	local function PhysOnly(x, y)
+		physVertexIndices:Add(vertexIndex)
+
+		local v = VertexRecord()
+		v.position = Vector3(x, y, 0)
+		v.normal = Vector3(0,0,0) -- Will be computed later.
+
+		loop.Vertices:Add(v)
+
+		vertexIndex = vertexIndex + 1
 	end
 
 	---Adds a point, multiple points will have blended normals
@@ -299,26 +317,39 @@ function lib.Generate(settings, ISet)
 		-- Outer Top of bottom
 		HardEdge(railCenter + bottomWidth / 2, height, restColor, restColor);
 
+		
 		height = height - bottomHeight;
 		-- Inner Base of bottom
-		HardEdge(railCenter + bottomWidth / 2, height, restColor, restColor, mkPhys);
+		HardEdge(railCenter + bottomWidth / 2, height, restColor, restColor);
 
 		-- Outer Base of bottom
-		HardEdge(railCenter - bottomWidth / 2, height, restColor, restColor, mkPhys);
+		HardEdge(railCenter - bottomWidth / 2, height, restColor, restColor);
 
 		-- Transition to Inner side
 		-- Now going up again
 
-		height = height + bottomHeight;
+		height = height + bottomHeight
 		-- Inner side of Top of bottom
 		HardEdge(railCenter - bottomWidth / 2, height, restColor, restColor);
 	else
 		-- Outer Top of bottom
-		HardEdge(railCenter + bottomWidth / 2, height, restColor, restColor, mkPhys);
+		HardEdge(railCenter + bottomWidth / 2, height, restColor, restColor);
 
 		-- Inner Top of bottom
-		HardEdge(railCenter - bottomWidth / 2, height, restColor, restColor, mkPhys);
+		HardEdge(railCenter - bottomWidth / 2, height, restColor, restColor);
 	end
+
+	-- Make physics bottom extend further down for physics stability reasons.
+	if ExtendPhysDownwards then
+		PhysOnly((railCenter + PhysBottomWidth / 2 * ExtendPhysDownwardsAdjust), (height + bottomHeight) * ExtendPhysDownwards)
+		PhysOnly((railCenter - PhysBottomWidth / 2 * ExtendPhysDownwardsAdjust), (height + bottomHeight) * ExtendPhysDownwards)
+	else
+		PhysOnly(railCenter + PhysBottomWidth / 2, height + bottomHeight)
+		PhysOnly(railCenter - PhysBottomWidth / 2, height + bottomHeight)
+	end
+
+
+
 
 	height = height + webToBottomTransitionHeight;
 	-- Inner web bottom

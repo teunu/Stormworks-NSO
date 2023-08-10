@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<definition tile_type="2" sea_floor_height="-24">
+<definition is_island="false" tile_type="2" sea_floor_height="-24">
 	<meshes>
 		<mesh id="mesh0" file_name="nso_mod/meshes/mainland/12_9_main.mesh">
 			<transform/>
 		</mesh>
-		<mesh id="StaticObject_1" file_name="nso_mod/meshes/decoration/workbenches/workbench_clean.mesh">
-			<transform 30="-107.69043" 31="-21.424896" 32="149.038086"/>
+		<mesh id="StaticObject_0_Transferred_0" _CT_loadIgnore="true" file_name="nso_mod/meshes/decoration/workbenches/blueprints_boat.mesh">
+			<transform 30="-107.62305" 31="-19.605371" 32="148.83984"/>
 		</mesh>
-		<mesh id="StaticObject_0" file_name="nso_mod/meshes/decoration/workbenches/blueprints_boat.mesh">
-			<transform 30="-107.623047" 31="-19.605372" 32="148.839844"/>
+		<mesh id="StaticObject_1_Transferred_0" _CT_loadIgnore="true" file_name="nso_mod/meshes/decoration/workbenches/workbench_clean.mesh">
+			<transform 30="-107.69043" 31="-21.424896" 32="149.03809"/>
 		</mesh>
 	</meshes>
 	<physics_objects/>
 	<physics_meshes>
-		<physics_mesh id="StaticObject_1_phys" file_name="nso_mod/meshes/decoration/workbenches/workbench_clean.phys">
-			<transform 30="-107.69043" 31="-21.424896" 32="149.038086"/>
-		</physics_mesh>
-		<physics_mesh id="StaticObject_0_phys" file_name="meshes/generated_object_geom/tiles/mega_island_12_9/nso_mod/decoration/workbenches/blueprints_boat__StaticObject_0_phys.phys">
-			<transform 30="-107.623047" 31="-19.605372" 32="148.839844"/>
-		</physics_mesh>
 		<physics_mesh id="physics_mesh0" file_name="nso_mod/meshes/mainland/12_9_main.phys">
 			<transform/>
+		</physics_mesh>
+		<physics_mesh id="StaticObject_0_phys_Transferred_0" _CT_loadIgnore="true" file_name="meshes/generated_object_geom/tiles/mega_island_12_9/nso_mod/decoration/workbenches/blueprints_boat__StaticObject_0_phys.phys">
+			<transform 30="-107.62305" 31="-19.605371" 32="148.83984"/>
+		</physics_mesh>
+		<physics_mesh id="StaticObject_1_phys_Transferred_0" _CT_loadIgnore="true" file_name="nso_mod/meshes/decoration/workbenches/workbench_clean.phys">
+			<transform 30="-107.69043" 31="-21.424896" 32="149.03809"/>
 		</physics_mesh>
 	</physics_meshes>
 	<physics_dynamics/>
@@ -30,13 +30,13 @@
 	<screens/>
 	<edit_areas>
 		<edit_area id="underwater_base">
-			<transform 00="0.000001" 01="0" 02="-1" 10="-0" 12="0" 20="1" 21="-0" 22="0.000001" 30="-76.43555" 31="-11.813138" 32="158.540039"/>
+			<transform 00="1.1483816E-06" 02="-1" 20="1" 22="1.1483816E-06" 30="-76.43555" 31="-11.813138" 32="158.54004"/>
 			<size x="48" y="16" z="48"/>
 		</edit_area>
 	</edit_areas>
 	<interactables>
 		<interactable id="underwater_base_interact" target_object_id="underwater_base" label="Underwater Structure" interact_type="2">
-			<transform 30="-107.604492" 31="-18.783058" 32="148.679688"/>
+			<transform 30="-107.60449" 31="-18.783058" 32="148.67969"/>
 			<size x="2.211229" y="1.861132" z="3.403433"/>
 		</interactable>
 	</interactables>

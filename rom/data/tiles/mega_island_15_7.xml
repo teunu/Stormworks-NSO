@@ -8,28 +8,34 @@
 			<transform/>
 		</mesh>
 		<mesh id="mesh2" file_name="meshes/arid_mainland_assets/shipwreck_b.mesh">
-			<transform 00="0.645033" 01="0.764155" 10="-0.762091" 11="0.643291" 12="0.073448" 20="0.056125" 21="-0.047376" 22="0.997299" 30="39.809769" 31="-11.420784" 32="384.055389"/>
+			<transform 00="0.645033" 01="0.764155" 10="-0.762091" 11="0.643291" 12="0.073448" 20="0.056125" 21="-0.047376" 22="0.997299" 30="39.80977" 31="-11.420784" 32="384.0554"/>
 		</mesh>
 		<mesh id="mesh4" file_name="meshes/workbench.mesh">
-			<transform 00="0.452332" 02="0.89185" 20="-0.89185" 22="0.452332" 30="184.047668" 31="4.046229" 32="230.905899"/>
+			<transform 00="0.452332" 02="0.89185" 20="-0.89185" 22="0.452332" 30="184.047668" 31="4.046229" 32="230.9059"/>
 		</mesh>
 		<mesh id="mesh7" file_name="nso_mod/meshes/structures/buildings/pump_station_diesel.mesh">
-			<transform 00="0.707107" 02="-0.707107" 20="0.707107" 22="0.707107" 30="-552.47113" 31="0.065773" 32="279.30838"/>
+			<transform 00="0.707107" 02="-0.707107" 20="0.707107" 22="0.707107" 30="-552.4711" 31="0.065773" 32="279.30838"/>
 		</mesh>
 		<mesh id="mesh5" file_name="nso_mod/meshes/structures/buildings/liquid_silos_base.mesh">
 			<transform 00="0.707107" 02="0.707107" 20="-0.707107" 22="0.707107" 30="-682.045349" 31="2.662186" 32="251.283264"/>
 		</mesh>
 		<mesh id="mesh6" file_name="nso_mod/meshes/structures/buildings/liquid_silos.mesh">
-			<transform 30="-669.924255" 31="-13.959745" 32="145.74437"/>
+			<transform 30="-669.924255" 31="-13.9597454" 32="145.74437"/>
 		</mesh>
-		<mesh id="mesh7" file_name="nso_mod/meshes/structures/buildings/pump_station_diesel.mesh">
+		<mesh id="mesh7_IdConflicted_0" file_name="nso_mod/meshes/structures/buildings/pump_station_diesel.mesh">
 			<transform 00="0.707107" 02="-0.707107" 20="0.707107" 22="0.707107" 30="-603.122742" 31="0.065773" 32="329.985779"/>
 		</mesh>
 		<mesh id="mesh8" file_name="nso_mod/meshes/structures/buildings/pump_station_diesel.mesh">
-			<transform 00="-0" 02="-1" 11="1" 20="1" 22="-0" 30="-470.776733" 31="0.839473" 32="57.982964"/>
+			<transform 00="0" 02="-1" 20="1" 22="0" 30="-470.776733" 31="0.839473" 32="57.9829636"/>
 		</mesh>
 		<mesh id="mesh9" file_name="nso_mod/meshes/structures/buildings/liquid_silos.mesh">
-			<transform 00="-0" 02="1" 11="1" 20="-1" 22="-0" 30="-519.563599" 31="-8.301354" 32="-26.968536"/>
+			<transform 00="0" 02="1" 20="-1" 22="0" 30="-519.5636" 31="-8.301354" 32="-26.9685364"/>
+		</mesh>
+		<mesh id="StaticObject_0" _CT_loadIgnore="true" file_name="nso_mod/meshes/structures/buildings/liquid_silos.mesh">
+			<transform 00="7.90753631E-07" 02="-1" 20="1" 22="7.90753631E-07" 30="-487.773438" 31="-16.8526344" 32="53.6210938"/>
+		</mesh>
+		<mesh id="StaticObject_1" _CT_loadIgnore="true" file_name="nso_mod/meshes/decoration/light_pole.mesh">
+			<transform 00="0.965925932" 02="-0.2588187" 20="0.2588187" 22="0.965925932" 30="-474.5254" 31="3.32015944" 32="224.076172"/>
 		</mesh>
 	</meshes>
 	<physics_objects/>
@@ -40,6 +46,12 @@
 		<physics_mesh id="physics_mesh1" file_name="nso_mod/meshes/mainland/15_7_port.phys">
 			<transform/>
 		</physics_mesh>
+		<physics_mesh id="StaticObject_0_phys" _CT_loadIgnore="true" file_name="nso_mod/meshes/structures/buildings/liquid_silos.phys">
+			<transform 00="7.90753631E-07" 02="-1" 20="1" 22="7.90753631E-07" 30="-487.773438" 31="-16.8526344" 32="53.6210938"/>
+		</physics_mesh>
+		<physics_mesh id="StaticObject_1_phys" _CT_loadIgnore="true" file_name="meshes/generated_object_geom/tiles/mega_island_15_7/nso_mod/decoration/light_pole__StaticObject_1_phys.phys">
+			<transform 00="0.965925932" 02="-0.2588187" 20="0.2588187" 22="0.965925932" 30="-474.5254" 31="3.32015944" 32="224.076172"/>
+		</physics_mesh>
 	</physics_meshes>
 	<physics_dynamics/>
 	<lights_omni/>
@@ -48,7 +60,7 @@
 	<screens/>
 	<edit_areas>
 		<edit_area id="edit0" grid_size="2">
-			<transform 00="0.49482" 02="0.868995" 20="-0.868995" 22="0.49482" 30="152.851273" 31="0.666107" 32="227.989883"/>
+			<transform 00="0.4948202" 02="0.868995368" 20="-0.868995368" 22="0.4948202" 30="152.851273" 31="0.666107" 32="227.989883"/>
 			<size x="22.5" y="20.5" z="57.25"/>
 		</edit_area>
 	</edit_areas>
