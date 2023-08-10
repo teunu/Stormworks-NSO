@@ -1,4 +1,5 @@
-local Interval    = 0.6
+local Settings = require('Lib.Settings')
+local Interval = 0.6
 
 local Spec = PeriodicItemSpec()
 Spec.Physics = false
@@ -14,4 +15,6 @@ Group.Entries:Add(Sleeper)
 
 Spec.Items:Add(Group)
 
-return Spec 
+Spec.Enabled = Settings.SleepersOn
+
+return Spec

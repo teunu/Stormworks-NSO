@@ -1,4 +1,5 @@
-local Interval    = 1
+local Settings = require('Lib.Settings')
+local Interval = 1
 local TrackHalfWidth  = 
 (1435 -- Inner distance
 + 250 -- adjustment
@@ -28,4 +29,6 @@ Sleeper.Transform.LocalRotationDegrees = Vector3(0, 0, 0)
 Group.Entries:Add(Sleeper)
 Spec.Items:Add(Group)
 
-return Spec 
+Spec.Enabled = Settings.SleepersOn
+
+return Spec

@@ -62,6 +62,8 @@ Vertex order for Right (+x) Rail
     ╚══════════════════════════╝    
 ]]
 
+local Settings = require('lib.Settings')
+
 -- todo: move to it's own lib.
 ---Creates a full/deep copy of the provided data.
 ---Copies both keys and values, but ignores metaTables.
@@ -438,6 +440,8 @@ function lib.Generate(settings, ISet)
 		set.PhysLineIndices:Add(set.PhysLineIndices[i + 1] + pointsPerRail)
 		set.PhysLineIndices:Add(set.PhysLineIndices[i    ] + pointsPerRail)
 	end
+
+	extrusion.Enabled = Settings.SleepersOn
 
 	return extrusion
 end
