@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <definition is_island="True" tile_type="2" is_purchasable="True" purchase_cost="50000" sea_floor_height="-6">
 	<meshes>
-		<mesh id="mesh0" seasonal_flags="0" file_name="meshes/mainland/mega_island_15_2.mesh">
+		<mesh id="mesh0" seasonal_flags="0" file_name="nso_mod/meshes/mainland/15_2_main.mesh">
 			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="0" 31="0" 32="0" 33="1"/>
 		</mesh>
 		<mesh id="fishing_cottages_mesh_01" seasonal_flags="0" file_name="meshes/island_26_cottages.mesh">
@@ -97,7 +97,7 @@
 	</meshes>
 	<physics_objects/>
 	<physics_meshes>
-		<physics_mesh id="physics_mesh0" seasonal_flags="0" file_name="meshes/mainland/mega_island_15_2.phys">
+		<physics_mesh id="physics_mesh0" seasonal_flags="0" file_name="nso_mod/meshes/mainland/15_2_main.phys">
 			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="0" 31="0" 32="0" 33="1"/>
 		</physics_mesh>
 		<physics_mesh id="village_centre_phys" seasonal_flags="0" file_name="meshes/mainland_assets/mainland_village_centre_phys.phys">
@@ -1192,4 +1192,3 @@
 	<volcano_markers/>
 	<mineral_rocks/>
 </definition>
-

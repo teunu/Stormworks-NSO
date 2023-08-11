@@ -9,8 +9,8 @@ local T, F = true, false
 --- @class CurveSpecSettings
 local Settings = {
 
-	SleepersOn = F,
-	RailsOn    = F,
+	SleepersOn = T,
+	RailsOn    = T,
 
 }
 
