@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <definition is_island="true" is_volcanic="true" tile_type="2">
 	<meshes>
-		<mesh id="mesh0" file_name="meshes/mainland/mega_island_8_4.mesh">
+		<mesh id="mesh0" file_name="nso_mod/meshes/mainland/8_4_main.mesh">
 			<transform/>
 		</mesh>
 		<mesh id="lava_flow" file_name="meshes/mainland_assets/goldblum_lava_flow.mesh" is_volcanic_additive="true">
@@ -13,7 +13,7 @@
 	</meshes>
 	<physics_objects/>
 	<physics_meshes>
-		<physics_mesh id="physics_mesh0" file_name="meshes/mainland/mega_island_8_4.phys">
+		<physics_mesh id="physics_mesh0" file_name="nso_mod/meshes/mainland/8_4_main.phys">
 			<transform/>
 		</physics_mesh>
 		<physics_mesh id="lava_flow_phys" file_name="meshes/mainland_assets/goldblum_underneath_rock_phys.phys" physics_material_type="1" is_volcanic="true">
@@ -64,4 +64,3 @@
 	</volcano_markers>
 	<mineral_rocks/>
 </definition>
-
