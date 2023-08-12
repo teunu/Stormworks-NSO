@@ -7,9 +7,6 @@
 		<mesh id="ExtrudedTrackMesh_Curve_228_0" _CT_loadIgnore="true" file_name="meshes/extruded_track_pieces/mega_island_10_5_ExtrudedTrackMesh_Curve_228_0.mesh">
 			<transform 30="366.5703" 31="20" 32="-343.771"/>
 		</mesh>
-		<mesh id="ExtrudedTrackMesh_Curve_228_1" _CT_loadIgnore="true" file_name="meshes/extruded_track_pieces/mega_island_10_5_ExtrudedTrackMesh_Curve_228_1.mesh">
-			<transform 30="366.5703" 31="20" 32="-343.771"/>
-		</mesh>
 		<mesh id="ExtrudedTrackMesh_Curve_229_0" _CT_loadIgnore="true" file_name="meshes/extruded_track_pieces/mega_island_10_5_ExtrudedTrackMesh_Curve_229_0.mesh">
 			<transform 30="246.884766" 31="20" 32="100.499512"/>
 		</mesh>
@@ -20,9 +17,6 @@
 			<transform 30="246.884766" 31="20" 32="100.499512"/>
 		</mesh>
 		<mesh id="ExtrudedTrackMesh_Curve_229_3" _CT_loadIgnore="true" file_name="meshes/extruded_track_pieces/mega_island_10_5_ExtrudedTrackMesh_Curve_229_3.mesh">
-			<transform 30="246.884766" 31="20" 32="100.499512"/>
-		</mesh>
-		<mesh id="ExtrudedTrackMesh_Curve_229_4" _CT_loadIgnore="true" file_name="meshes/extruded_track_pieces/mega_island_10_5_ExtrudedTrackMesh_Curve_229_4.mesh">
 			<transform 30="246.884766" 31="20" 32="100.499512"/>
 		</mesh>
 	</meshes>
@@ -66,9 +60,22 @@
 	<perches/>
 	<fires/>
 	<train_tracks>
+		<track id="Curve#227_Track#0_S#1_#39_TileBorderCrossing" _CT_loadIgnore="true">
+			<transform 30="373.7705" 31="20.04" 32="-377.427246"/>
+			<links>
+				<link id="Curve#228_Track#0_S#0_#1"/>
+			</links>
+		</track>
+		<track id="Curve#227_Track#1_S#1_#39_TileBorderCrossing" _CT_loadIgnore="true">
+			<transform 30="378.30957" 31="20.04" 32="-376.0288"/>
+			<links>
+				<link id="Curve#228_Track#1_S#0_#1"/>
+			</links>
+		</track>
 		<track id="Curve#228_Track#0_S#0_#1" _CT_loadIgnore="true">
 			<transform 30="372.5957" 31="20.04" 32="-373.597656"/>
 			<links>
+				<link id="Curve#227_Track#0_S#1_#39_TileBorderCrossing"/>
 				<link id="Curve#228_Track#0_S#0_#2"/>
 			</links>
 		</track>
@@ -187,6 +194,7 @@
 		<track id="Curve#228_Track#1_S#0_#1" _CT_loadIgnore="true">
 			<transform 30="377.138672" 31="20.04" 32="-372.209961"/>
 			<links>
+				<link id="Curve#227_Track#1_S#1_#39_TileBorderCrossing"/>
 				<link id="Curve#228_Track#1_S#0_#2"/>
 			</links>
 		</track>

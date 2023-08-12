@@ -58,9 +58,6 @@
 		<mesh id="ExtrudedTrackMesh_Curve_303_2" _CT_loadIgnore="true" file_name="meshes/extruded_track_pieces/mega_island_7_2_ExtrudedTrackMesh_Curve_303_2.mesh">
 			<transform 30="485.698242" 31="20" 32="-213.3164"/>
 		</mesh>
-		<mesh id="ExtrudedTrackMesh_Curve_303_3" _CT_loadIgnore="true" file_name="meshes/extruded_track_pieces/mega_island_7_2_ExtrudedTrackMesh_Curve_303_3.mesh">
-			<transform 30="485.698242" 31="20" 32="-213.3164"/>
-		</mesh>
 		<mesh id="ExtrudedTrackMesh_Curve_304_0" _CT_loadIgnore="true" file_name="meshes/extruded_track_pieces/mega_island_7_2_ExtrudedTrackMesh_Curve_304_0.mesh">
 			<transform 30="325.688477" 31="20" 32="1.09326172"/>
 		</mesh>
@@ -68,6 +65,12 @@
 			<transform 30="206.081055" 31="20" 32="147.664551"/>
 		</mesh>
 		<mesh id="ExtrudedTrackMesh_Curve_305_1" _CT_loadIgnore="true" file_name="meshes/extruded_track_pieces/mega_island_7_2_ExtrudedTrackMesh_Curve_305_1.mesh">
+			<transform 30="206.081055" 31="20" 32="147.664551"/>
+		</mesh>
+		<mesh id="ExtrudedTrackMesh_Curve_305_2" _CT_loadIgnore="true" file_name="meshes/extruded_track_pieces/mega_island_7_2_ExtrudedTrackMesh_Curve_305_2.mesh">
+			<transform 30="206.081055" 31="20" 32="147.664551"/>
+		</mesh>
+		<mesh id="ExtrudedTrackMesh_Curve_305_3" _CT_loadIgnore="true" file_name="meshes/extruded_track_pieces/mega_island_7_2_ExtrudedTrackMesh_Curve_305_3.mesh">
 			<transform 30="206.081055" 31="20" 32="147.664551"/>
 		</mesh>
 		<mesh id="ExtrudedTrackMesh_Curve_306_0" _CT_loadIgnore="true" file_name="meshes/extruded_track_pieces/mega_island_7_2_ExtrudedTrackMesh_Curve_306_0.mesh">
@@ -4375,9 +4378,16 @@
 				<link id="Curve#17_Track#1_S#7_#38"/>
 			</links>
 		</track>
+		<track id="Curve#296_Track#0_S#4_#4_TileBorderCrossing" _CT_loadIgnore="true">
+			<transform 30="-22.1728516" 31="20.04" 32="468.4641"/>
+			<links>
+				<link id="Curve#297_Track#0_S#0_#1"/>
+			</links>
+		</track>
 		<track id="Curve#297_Track#0_S#0_#1" _CT_loadIgnore="true">
 			<transform 30="-20.45752" 31="20.0400028" 32="463.767578"/>
 			<links>
+				<link id="Curve#296_Track#0_S#4_#4_TileBorderCrossing"/>
 				<link id="Curve#297_Track#0_S#0_#2"/>
 			</links>
 		</track>
@@ -7090,6 +7100,7 @@
 			<transform 30="-63.5" 31="20.04" 32="633.342041"/>
 			<links>
 				<link id="Curve#306_Track#0_S#2_#26"/>
+				<link id="Curve#307_Track#0_S#0_#1_TileBorderCrossing"/>
 			</links>
 		</track>
 		<track id="Curve#306_Track#0_S#2_#3" _CT_loadIgnore="true">
@@ -7141,7 +7152,14 @@
 				<link id="Curve#306_Track#0_S#2_#8"/>
 			</links>
 		</track>
+		<track id="Curve#307_Track#0_S#0_#1_TileBorderCrossing" _CT_loadIgnore="true">
+			<transform 30="-125.708496" 31="20.04" 32="804.144531"/>
+			<links>
+				<link id="Curve#306_Track#0_S#2_#27"/>
+			</links>
+		</track>
 	</train_tracks>
 	<volcano_markers/>
 	<mineral_rocks/>
 </definition>
+

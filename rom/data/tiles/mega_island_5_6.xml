@@ -78,9 +78,22 @@
 	<perches/>
 	<fires/>
 	<train_tracks>
+		<track id="Curve#40_Track#0_S#0_#24_TileBorderCrossing" _CT_loadIgnore="true">
+			<transform 30="-357.374023" 31="20.04" 32="-583.5078"/>
+			<links>
+				<link id="Curve#43_Track#1_S#0_#1"/>
+			</links>
+		</track>
+		<track id="Curve#42_Track#0_S#0_#48_TileBorderCrossing" _CT_loadIgnore="true">
+			<transform 30="-361.3628" 31="20.04" 32="-586.0928"/>
+			<links>
+				<link id="Curve#43_Track#0_S#0_#1"/>
+			</links>
+		</track>
 		<track id="Curve#43_Track#0_S#0_#1" _CT_loadIgnore="true">
 			<transform 30="-363.588379" 31="20.04" 32="-582.759766"/>
 			<links>
+				<link id="Curve#42_Track#0_S#0_#48_TileBorderCrossing"/>
 				<link id="Curve#43_Track#0_S#0_#2"/>
 			</links>
 		</track>
@@ -2824,6 +2837,7 @@
 		<track id="Curve#43_Track#1_S#0_#1" _CT_loadIgnore="true">
 			<transform 30="-359.644043" 31="20.04" 32="-580.1133"/>
 			<links>
+				<link id="Curve#40_Track#0_S#0_#24_TileBorderCrossing"/>
 				<link id="Curve#43_Track#1_S#0_#2"/>
 			</links>
 		</track>
@@ -5580,3 +5594,4 @@
 	<volcano_markers/>
 	<mineral_rocks/>
 </definition>
+
