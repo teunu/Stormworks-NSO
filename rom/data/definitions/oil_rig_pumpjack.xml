@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<definition name="Oil Rig Pumpjack" category="14" type="7" mass="200" value="1000" flags="2147500096" mesh_data_name="meshes/component_piston_pump.mesh" child_name="oil_rig_pumpjack_b" constraint_type="1" constraint_axis="1" constraint_range_of_motion="2.5" pump_pressure="10000">
+<definition name="Oil Rig Pumpjack"
+category="14"
+type="7"
+mass="200"
+value="1000"
+flags="2147500096"
+mesh_data_name="meshes/component_piston_pump.mesh"
+child_name="oil_rig_pumpjack_b"
+constraint_type="1"
+constraint_axis="1"
+constraint_range_of_motion="2.5"
+pump_pressure="10000">
 	<tooltip_properties description="Pulling the piston of the pumpjack with enough force will lift the piston, pulling fluid through the pump. A mechanical force capable of repeatedly cycling the piston is required to pump fluid effectively." short_description="A pumpjack for extracting crude oil from a drilled oil well."/>
 	<sfx_datas>
 		<sfx_data sfx_name="grab" sfx_range_inner="5" sfx_range_outer="30" sfx_priority="0.6">

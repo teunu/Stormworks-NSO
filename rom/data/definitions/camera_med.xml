@@ -1,5 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<definition name="Camera Medium" category="4" type="42" mass="10" value="3000" flags="2281971712" mesh_0_name="meshes/component_camera_night_vision.mesh" mesh_editor_only_name="meshes/arrow_camera_medium_gimbal.mesh" constraint_axis="1" max_motor_force="100" max_motor_speed="10" cable_radius="16" buoy_radius="1" buoy_factor="1" buoy_force="100" force_emitter_max_force="1000" force_emitter_max_vector="1" engine_max_force="1000" wheel_radius="0.25" button_type="1" light_intensity="1" light_range="1" light_ies_map="graphics/ies/ies_default.txtr" light_fov="1" door_lower_limit="-1" door_upper_limit="1" dynamic_max_rotation="3.141593" magnet_force="1" pump_pressure="0.01" camera_fov_min="2.2" camera_fov_max="0.025">
+<definition name="Camera Medium"
+category="4"
+type="42"
+mass="10"
+value="3000"
+flags="2281971712"
+mesh_0_name="meshes/component_camera_night_vision.mesh"
+mesh_editor_only_name="meshes/arrow_camera_medium_gimbal.mesh"
+constraint_axis="1"
+max_motor_force="100"
+max_motor_speed="10"
+cable_radius="16"
+buoy_radius="1"
+buoy_factor="1"
+buoy_force="100"
+force_emitter_max_force="1000"
+force_emitter_max_vector="1"
+engine_max_force="1000"
+wheel_radius="0.25"
+button_type="1"
+light_intensity="1"
+light_range="1"
+light_ies_map="graphics/ies/ies_default.txtr"
+light_fov="1"
+door_lower_limit="-1"
+door_upper_limit="1"
+dynamic_max_rotation="3.141593"
+magnet_force="1"
+pump_pressure="0.01"
+camera_fov_min="2.2"
+camera_fov_max="0.025">
 	<tooltip_properties description="Has infrared mode as well as variable field of view. Can be pivoted up to 0.125 turns using composite input." short_description="A camera with video output feed."/>
 	<sfx_datas/>
 	<surfaces>
