@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<definition name="Oil Rig Well Head" category="14" type="59" mass="1000" value="5000" flags="1" mesh_data_name="meshes/component_well_head.mesh" mesh_0_name="meshes/component_well_head_anchor.mesh" oil_component_type="5">
+<definition name="Oil Rig Well Head"
+category="14"
+type="59"
+mass="1000"
+value="5000"
+flags="1"
+mesh_data_name="meshes/component_well_head.mesh"
+mesh_0_name="meshes/component_well_head_anchor.mesh"
+oil_component_type="5">
 	<tooltip_properties description="Once anchored to the terrain, a drill rod can be inserted into a well head to begin drilling a well. In order to drill effectively a drill rod should be driven by a rotary table and forced downward toward the terrain. A continuous supply of drilling slurry must be provided through the drill rod via a swivel, and the saturated drilling slurry extracted from the well head fluid port." short_description="A well head for oil drilling."/>
 	<sfx_datas>
 		<sfx_data sfx_name="grab" sfx_range_inner="5" sfx_range_outer="30" sfx_priority="0.6">

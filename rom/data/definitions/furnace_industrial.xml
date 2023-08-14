@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<definition name="Industrial Diesel Furnace" category="14" type="53" mass="350" value="750" flags="16384" tags="firebox" mesh_data_name="meshes/component_diesel_burner.mesh" mesh_1_name="meshes/component_diesel_burner_addative.mesh" steam_component_type="12">
+<definition name="Industrial Diesel Furnace"
+category="14"
+type="53"
+mass="350"
+value="750"
+flags="16384"
+tags="firebox"
+mesh_data_name="meshes/component_diesel_burner.mesh"
+mesh_1_name="meshes/component_diesel_burner_addative.mesh"
+steam_component_type="12">
 	<tooltip_properties description="Produces large amounts of heat by burning supplied diesel. Consumes a portion of the diesel reserve to ignite the fire." short_description="A diesel powered furnace."/>
 	<sfx_datas>
 		<sfx_data sfx_name="steam" sfx_range_inner="3" sfx_range_outer="15" sfx_priority="0.6">

@@ -1,5 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<definition name="Siren" category="4" type="21" mass="5" value="200" tags="sound,audio" audio_filename_loop="audio/fx4/siren.ogg" audio_gain="1" mesh_data_name="meshes/component_air_raid_siren.mesh" constraint_axis="1" max_motor_force="100" max_motor_speed="10" buoy_radius="1" buoy_factor="1" buoy_force="100" force_emitter_max_force="1000" force_emitter_max_vector="1" engine_max_force="1000" wheel_radius="0.25" button_type="1" light_intensity="1" light_range="1" light_ies_map="graphics/ies/ies_default.txtr" light_fov="1" door_lower_limit="-1" door_upper_limit="1" dynamic_max_rotation="3.141593" indicator_type="11" magnet_force="1">
+<definition name="Siren"
+category="4"
+type="21"
+mass="5"
+value="200"
+tags="sound,audio"
+audio_filename_loop="audio/fx4/siren.ogg"
+audio_gain="1"
+mesh_data_name="meshes/component_air_raid_siren.mesh"
+constraint_axis="1"
+max_motor_force="100"
+max_motor_speed="10"
+buoy_radius="1"
+buoy_factor="1"
+buoy_force="100"
+force_emitter_max_force="1000"
+force_emitter_max_vector="1"
+engine_max_force="1000"
+wheel_radius="0.25"
+button_type="1"
+light_intensity="1"
+light_range="1"
+light_ies_map="graphics/ies/ies_default.txtr"
+light_fov="1"
+door_lower_limit="-1"
+door_upper_limit="1"
+dynamic_max_rotation="3.141593"
+indicator_type="11"
+magnet_force="1">
 	<sfx_datas>
 		<sfx_data sfx_name="horn" sfx_range_inner="100" sfx_range_outer="3000" sfx_priority="1">
 			<sfx_layers>

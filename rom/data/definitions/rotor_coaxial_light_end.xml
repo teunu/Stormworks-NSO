@@ -1,5 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<definition name="Rotor End (Light)" category="3" type="2" mass="4" value="150" flags="1073741825" tags="rotor,helicopter,basic" audio_filename_loop="audio/fx2/stormworks_propeller_medium_loop.ogg" audio_gain="1" mesh_0_name="meshes/component_coaxial_rotor_light_end.mesh" mesh_1_name="meshes/component_coaxial_rotor_light_blade.mesh" mesh_editor_only_name="meshes/arrow_large_rotor.mesh" cable_length="16" seat_health_per_sec="1" buoy_radius="1" buoy_factor="1" buoy_force="100" force_emitter_max_force="10000" force_emitter_default_pitch="1" force_emitter_blade_physics_length="1.25" force_emitter_efficiency="1.25" engine_max_force="1000" rudder_surface_area="0">
+<definition name="Rotor End (Light)"
+category="3"
+type="2"
+mass="4"
+value="150"
+flags="1073741825"
+tags="rotor,helicopter,basic"
+audio_filename_loop="audio/fx2/stormworks_propeller_medium_loop.ogg"
+audio_gain="1"
+mesh_0_name="meshes/component_coaxial_rotor_light_end.mesh"
+mesh_1_name="meshes/component_coaxial_rotor_light_blade.mesh"
+mesh_editor_only_name="meshes/arrow_large_rotor.mesh"
+cable_length="16"
+seat_health_per_sec="1"
+buoy_radius="1"
+buoy_factor="1"
+buoy_force="100"
+force_emitter_max_force="10000"
+force_emitter_default_pitch="1"
+force_emitter_blade_physics_length="1.25"
+force_emitter_efficiency="1.25"
+engine_max_force="1000"
+rudder_surface_area="0">
 	<sfx_datas>
 		<sfx_data sfx_name="force_emitter" sfx_range_inner="20" sfx_range_outer="80" sfx_priority="1">
 			<sfx_layers>

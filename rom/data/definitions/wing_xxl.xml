@@ -1,5 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<definition name="Wing Section (XXLarge)" category="1" type="18" mass="50" value="1500" flags="32768" tags="airplane,aeroplane" mesh_data_name="meshes/component_wing_xxl.mesh" mesh_editor_only_name="meshes/arrow_wing_xxl.mesh" constraint_axis="1" cable_radius="0" buoy_radius="1" buoy_factor="1" buoy_force="100" force_emitter_max_force="1000" force_emitter_max_vector="1" engine_max_force="1000" wheel_radius="0.25" button_type="1" light_range="1" light_ies_map="graphics/ies/ies_default.txtr" light_fov="1" dynamic_min_rotation="-0.785398" dynamic_max_rotation="0.785398" rudder_surface_area="120">
+<definition name="Wing Section (XXLarge)"
+category="1"
+type="18"
+mass="50"
+value="1500"
+flags="32768"
+tags="airplane,aeroplane"
+mesh_data_name="meshes/component_wing_xxl.mesh"
+mesh_editor_only_name="meshes/arrow_wing_xxl.mesh"
+constraint_axis="1"
+cable_radius="0"
+buoy_radius="1"
+buoy_factor="1"
+buoy_force="100"
+force_emitter_max_force="1000"
+force_emitter_max_vector="1"
+engine_max_force="1000"
+wheel_radius="0.25"
+button_type="1"
+light_range="1"
+light_ies_map="graphics/ies/ies_default.txtr"
+light_fov="1"
+dynamic_min_rotation="-0.785398"
+dynamic_max_rotation="0.785398"
+rudder_surface_area="120">
 	<tooltip_properties description="Wing surface to provide lift and cut through the air." short_description="The wing surface cuts through the air while resisting movement against the flat plane of its surface. The aerofoil section also provides lift."/>
 	<sfx_datas/>
 	<surfaces>
