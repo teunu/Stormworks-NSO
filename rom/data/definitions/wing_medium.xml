@@ -1,0 +1,746 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition name="Wing Section (Medium)"
+category="1"
+type="18"
+mass="15"
+value="350"
+flags="32768"
+tags="airplane,aeroplane,basic"
+mesh_data_name="meshes/component_wing_medium.mesh"
+mesh_editor_only_name="meshes/arrow_wing_medium.mesh"
+constraint_axis="1"
+cable_radius="0"
+buoy_radius="1"
+buoy_factor="1"
+buoy_force="100"
+force_emitter_max_force="1000"
+force_emitter_max_vector="1"
+engine_max_force="1000"
+wheel_radius="0.25"
+button_type="1"
+light_range="1"
+light_ies_map="graphics/ies/ies_default.txtr"
+light_fov="1"
+dynamic_min_rotation="-0.785398"
+dynamic_max_rotation="0.785398"
+rudder_surface_area="20">
+	<tooltip_properties description="Wing surface to provide lift and cut through the air." short_description="The wing surface cuts through the air while resisting movement against the flat plane of its surface. The aerofoil section also provides lift."/>
+	<sfx_datas/>
+	<surfaces>
+		<surface orientation="1" shape="1">
+			<position y="1"/>
+		</surface>
+		<surface orientation="1" shape="1">
+			<position y="1" z="-1"/>
+		</surface>
+		<surface orientation="1" shape="1">
+			<position z="-2"/>
+		</surface>
+		<surface orientation="1" shape="1">
+			<position y="1" z="-2"/>
+		</surface>
+		<surface orientation="1" shape="1">
+			<position z="-1"/>
+		</surface>
+		<surface orientation="1" shape="1">
+			<position/>
+		</surface>
+		<surface orientation="1" shape="1">
+			<position y="-1"/>
+		</surface>
+		<surface orientation="1" shape="1">
+			<position y="-1" z="-1"/>
+		</surface>
+		<surface orientation="1" shape="1">
+			<position y="-1" z="-2"/>
+		</surface>
+		<surface orientation="1" shape="1">
+			<position y="1" z="-3"/>
+		</surface>
+		<surface orientation="1" shape="1">
+			<position z="-3"/>
+		</surface>
+		<surface orientation="1" shape="1">
+			<position y="-1" z="-3"/>
+		</surface>
+		<surface orientation="1" shape="1">
+			<position y="-1" z="-4"/>
+		</surface>
+		<surface orientation="1" shape="1">
+			<position z="-4"/>
+		</surface>
+		<surface orientation="1" shape="1">
+			<position y="1" z="-4"/>
+		</surface>
+		<surface orientation="1" shape="1">
+			<position y="1" z="-5"/>
+		</surface>
+		<surface orientation="1" shape="1">
+			<position z="-5"/>
+		</surface>
+		<surface orientation="1" shape="1">
+			<position y="-1" z="-5"/>
+		</surface>
+		<surface orientation="2" shape="1">
+			<position y="1"/>
+		</surface>
+		<surface orientation="2" shape="1">
+			<position y="1" z="-1"/>
+		</surface>
+		<surface orientation="2" shape="1">
+			<position y="1" z="-2"/>
+		</surface>
+		<surface orientation="3" shape="1">
+			<position y="-1"/>
+		</surface>
+		<surface orientation="3" shape="1">
+			<position y="-1" z="-1"/>
+		</surface>
+		<surface orientation="3" shape="1">
+			<position y="-1" z="-2"/>
+		</surface>
+		<surface orientation="1" shape="1">
+			<position y="1" z="-6"/>
+		</surface>
+		<surface orientation="1" shape="1">
+			<position y="1" z="-7"/>
+		</surface>
+		<surface orientation="1" shape="1">
+			<position y="1" z="-8"/>
+		</surface>
+		<surface orientation="1" shape="1">
+			<position z="-8"/>
+		</surface>
+		<surface orientation="1" shape="1">
+			<position z="-7"/>
+		</surface>
+		<surface orientation="1" shape="1">
+			<position z="-6"/>
+		</surface>
+		<surface orientation="1" shape="1">
+			<position y="-1" z="-6"/>
+		</surface>
+		<surface orientation="1" shape="1">
+			<position y="-1" z="-7"/>
+		</surface>
+		<surface orientation="1" shape="1">
+			<position y="-1" z="-8"/>
+		</surface>
+		<surface orientation="5" shape="1">
+			<position y="1" z="-8"/>
+		</surface>
+		<surface orientation="5" shape="1">
+			<position z="-8"/>
+		</surface>
+		<surface orientation="5" shape="1">
+			<position y="-1" z="-8"/>
+		</surface>
+		<surface orientation="2" shape="1">
+			<position y="1" z="-3"/>
+		</surface>
+		<surface orientation="2" shape="1">
+			<position y="1" z="-4"/>
+		</surface>
+		<surface orientation="2" shape="1">
+			<position y="1" z="-5"/>
+		</surface>
+		<surface orientation="2" shape="1">
+			<position y="1" z="-6"/>
+		</surface>
+		<surface orientation="2" shape="1">
+			<position y="1" z="-7"/>
+		</surface>
+		<surface orientation="2" shape="1">
+			<position y="1" z="-8"/>
+		</surface>
+		<surface orientation="2" shape="1">
+			<position x="1" y="1"/>
+		</surface>
+		<surface orientation="2" shape="1">
+			<position x="1" y="1" z="-1"/>
+		</surface>
+		<surface orientation="2" shape="1">
+			<position x="1" y="1" z="-2"/>
+		</surface>
+		<surface orientation="2" shape="1">
+			<position x="1" y="1" z="-3"/>
+		</surface>
+		<surface shape="1">
+			<position x="1" y="1" z="-3"/>
+		</surface>
+		<surface shape="1">
+			<position x="1" y="1" z="-2"/>
+		</surface>
+		<surface shape="1">
+			<position x="1" y="1" z="-1"/>
+		</surface>
+		<surface shape="1">
+			<position x="1" y="1"/>
+		</surface>
+		<surface shape="1">
+			<position x="1"/>
+		</surface>
+		<surface shape="1">
+			<position x="1" z="-1"/>
+		</surface>
+		<surface shape="1">
+			<position x="1" z="-2"/>
+		</surface>
+		<surface shape="1">
+			<position x="1" z="-3"/>
+		</surface>
+		<surface shape="1">
+			<position x="1" y="-1" z="-3"/>
+		</surface>
+		<surface shape="1">
+			<position x="1" y="-1" z="-2"/>
+		</surface>
+		<surface shape="1">
+			<position x="1" y="-1" z="-1"/>
+		</surface>
+		<surface shape="1">
+			<position x="1" y="-1"/>
+		</surface>
+		<surface orientation="3" shape="1">
+			<position x="1" y="-1"/>
+		</surface>
+		<surface orientation="3" shape="1">
+			<position x="1" y="-1" z="-1"/>
+		</surface>
+		<surface orientation="3" shape="1">
+			<position x="1" y="-1" z="-2"/>
+		</surface>
+		<surface orientation="3" shape="1">
+			<position x="1" y="-1" z="-3"/>
+		</surface>
+		<surface orientation="3" shape="1">
+			<position y="-1" z="-3"/>
+		</surface>
+		<surface orientation="3" shape="1">
+			<position y="-1" z="-4"/>
+		</surface>
+		<surface orientation="3" shape="1">
+			<position y="-1" z="-5"/>
+		</surface>
+		<surface orientation="3" shape="1">
+			<position y="-1" z="-6"/>
+		</surface>
+		<surface orientation="3" shape="1">
+			<position y="-1" z="-7"/>
+		</surface>
+		<surface orientation="3" shape="1">
+			<position y="-1" z="-8"/>
+		</surface>
+	</surfaces>
+	<buoyancy_surfaces>
+		<surface orientation="4" shape="1">
+			<position x="1" y="1"/>
+		</surface>
+		<surface orientation="4" shape="1">
+			<position y="1"/>
+		</surface>
+		<surface orientation="4" shape="1">
+			<position/>
+		</surface>
+		<surface orientation="4" shape="1">
+			<position x="1"/>
+		</surface>
+		<surface orientation="4" shape="1">
+			<position x="1" y="-1"/>
+		</surface>
+		<surface orientation="4" shape="1">
+			<position y="-1"/>
+		</surface>
+		<surface orientation="5" shape="1">
+			<position x="1" y="1" z="-3"/>
+		</surface>
+		<surface orientation="5" shape="1">
+			<position x="1" z="-3"/>
+		</surface>
+		<surface orientation="5" shape="1">
+			<position x="1" y="-1" z="-3"/>
+		</surface>
+		<surface orientation="5" shape="1">
+			<position y="1" z="-8"/>
+		</surface>
+		<surface orientation="5" shape="1">
+			<position z="-8"/>
+		</surface>
+		<surface orientation="5" shape="1">
+			<position y="-1" z="-8"/>
+		</surface>
+		<surface orientation="2" shape="1">
+			<position x="1" y="1"/>
+		</surface>
+		<surface orientation="2" shape="1">
+			<position x="1" y="1" z="-1"/>
+		</surface>
+		<surface orientation="2" shape="1">
+			<position x="1" y="1" z="-2"/>
+		</surface>
+		<surface orientation="2" shape="1">
+			<position x="1" y="1" z="-3"/>
+		</surface>
+		<surface orientation="2" shape="1">
+			<position y="1"/>
+		</surface>
+		<surface orientation="2" shape="1">
+			<position y="1" z="-1"/>
+		</surface>
+		<surface orientation="2" shape="1">
+			<position y="1" z="-2"/>
+		</surface>
+		<surface orientation="2" shape="1">
+			<position y="1" z="-3"/>
+		</surface>
+		<surface orientation="2" shape="1">
+			<position y="1" z="-4"/>
+		</surface>
+		<surface orientation="2" shape="1">
+			<position y="1" z="-5"/>
+		</surface>
+		<surface orientation="2" shape="1">
+			<position y="1" z="-6"/>
+		</surface>
+		<surface orientation="2" shape="1">
+			<position y="1" z="-7"/>
+		</surface>
+		<surface orientation="2" shape="1">
+			<position y="1" z="-8"/>
+		</surface>
+		<surface orientation="3" shape="1">
+			<position y="-1" z="-8"/>
+		</surface>
+		<surface orientation="3" shape="1">
+			<position y="-1" z="-7"/>
+		</surface>
+		<surface orientation="3" shape="1">
+			<position y="-1" z="-6"/>
+		</surface>
+		<surface orientation="3" shape="1">
+			<position y="-1" z="-5"/>
+		</surface>
+		<surface orientation="3" shape="1">
+			<position y="-1" z="-4"/>
+		</surface>
+		<surface orientation="3" shape="1">
+			<position y="-1" z="-2"/>
+		</surface>
+		<surface orientation="3" shape="1">
+			<position y="-1" z="-3"/>
+		</surface>
+		<surface orientation="3" shape="1">
+			<position x="1" y="-1" z="-3"/>
+		</surface>
+		<surface orientation="3" shape="1">
+			<position x="1" y="-1" z="-2"/>
+		</surface>
+		<surface orientation="3" shape="1">
+			<position y="-1" z="-1"/>
+		</surface>
+		<surface orientation="3" shape="1">
+			<position x="1" y="-1" z="-1"/>
+		</surface>
+		<surface orientation="3" shape="1">
+			<position x="1" y="-1"/>
+		</surface>
+		<surface orientation="3" shape="1">
+			<position y="-1"/>
+		</surface>
+		<surface shape="1">
+			<position x="1" y="1" z="-3"/>
+		</surface>
+		<surface shape="1">
+			<position x="1" z="-3"/>
+		</surface>
+		<surface shape="1">
+			<position x="1" y="-1" z="-3"/>
+		</surface>
+		<surface shape="1">
+			<position x="1" y="-1" z="-2"/>
+		</surface>
+		<surface shape="1">
+			<position x="1" z="-2"/>
+		</surface>
+		<surface shape="1">
+			<position x="1" y="1" z="-2"/>
+		</surface>
+		<surface shape="1">
+			<position x="1" y="1" z="-1"/>
+		</surface>
+		<surface shape="1">
+			<position x="1" z="-1"/>
+		</surface>
+		<surface shape="1">
+			<position x="1" y="-1" z="-1"/>
+		</surface>
+		<surface shape="1">
+			<position x="1" y="-1"/>
+		</surface>
+		<surface shape="1">
+			<position x="1"/>
+		</surface>
+		<surface shape="1">
+			<position x="1" y="1"/>
+		</surface>
+		<surface orientation="1" shape="1">
+			<position y="1"/>
+		</surface>
+		<surface orientation="1" shape="1">
+			<position/>
+		</surface>
+		<surface orientation="1" shape="1">
+			<position y="-1"/>
+		</surface>
+		<surface orientation="1" shape="1">
+			<position y="-1" z="-1"/>
+		</surface>
+		<surface orientation="1" shape="1">
+			<position z="-1"/>
+		</surface>
+		<surface orientation="1" shape="1">
+			<position y="1" z="-1"/>
+		</surface>
+		<surface orientation="1" shape="1">
+			<position y="1" z="-2"/>
+		</surface>
+		<surface orientation="1" shape="1">
+			<position z="-2"/>
+		</surface>
+		<surface orientation="1" shape="1">
+			<position y="-1" z="-2"/>
+		</surface>
+		<surface orientation="1" shape="1">
+			<position y="-1" z="-3"/>
+		</surface>
+		<surface orientation="1" shape="1">
+			<position z="-3"/>
+		</surface>
+		<surface orientation="1" shape="1">
+			<position y="1" z="-3"/>
+		</surface>
+		<surface orientation="1" shape="1">
+			<position y="1" z="-4"/>
+		</surface>
+		<surface orientation="1" shape="1">
+			<position z="-4"/>
+		</surface>
+		<surface orientation="1" shape="1">
+			<position y="-1" z="-4"/>
+		</surface>
+		<surface orientation="1" shape="1">
+			<position y="-1" z="-5"/>
+		</surface>
+		<surface orientation="1" shape="1">
+			<position z="-5"/>
+		</surface>
+		<surface orientation="1" shape="1">
+			<position y="1" z="-5"/>
+		</surface>
+		<surface orientation="1" shape="1">
+			<position y="1" z="-6"/>
+		</surface>
+		<surface orientation="1" shape="1">
+			<position z="-6"/>
+		</surface>
+		<surface orientation="1" shape="1">
+			<position y="-1" z="-6"/>
+		</surface>
+		<surface orientation="1" shape="1">
+			<position y="-1" z="-7"/>
+		</surface>
+		<surface orientation="1" shape="1">
+			<position z="-7"/>
+		</surface>
+		<surface orientation="1" shape="1">
+			<position y="1" z="-7"/>
+		</surface>
+		<surface orientation="1" shape="1">
+			<position y="1" z="-8"/>
+		</surface>
+		<surface orientation="1" shape="1">
+			<position z="-8"/>
+		</surface>
+		<surface orientation="1" shape="1">
+			<position y="-1" z="-8"/>
+		</surface>
+		<surface shape="1">
+			<position y="1" z="-4"/>
+		</surface>
+		<surface shape="1">
+			<position z="-4"/>
+		</surface>
+		<surface shape="1">
+			<position y="-1" z="-4"/>
+		</surface>
+		<surface shape="1">
+			<position y="1" z="-5"/>
+		</surface>
+		<surface shape="1">
+			<position z="-5"/>
+		</surface>
+		<surface shape="1">
+			<position y="-1" z="-5"/>
+		</surface>
+		<surface shape="1">
+			<position y="-1" z="-6"/>
+		</surface>
+		<surface shape="1">
+			<position z="-6"/>
+		</surface>
+		<surface shape="1">
+			<position y="1" z="-6"/>
+		</surface>
+		<surface shape="1">
+			<position y="1" z="-7"/>
+		</surface>
+		<surface shape="1">
+			<position z="-7"/>
+		</surface>
+		<surface shape="1">
+			<position y="-1" z="-7"/>
+		</surface>
+		<surface shape="1">
+			<position y="-1" z="-8"/>
+		</surface>
+		<surface shape="1">
+			<position y="1" z="-8"/>
+		</surface>
+		<surface shape="1">
+			<position z="-8"/>
+		</surface>
+	</buoyancy_surfaces>
+	<logic_nodes/>
+	<couplings/>
+	<voxels>
+		<voxel flags="1">
+			<position/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position z="-1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position y="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position y="1" z="-1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position y="-1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position y="-1" z="-1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position y="-1" z="-2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position z="-2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position y="1" z="-2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position y="1" z="-3"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position z="-3"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position y="-1" z="-3"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position y="1" z="-4"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position z="-4"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position y="-1" z="-4"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position y="1" z="-5"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position y="-1" z="-5"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position z="-5"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position y="1" z="-6"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position z="-6"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position y="-1" z="-6"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position y="1" z="-7"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position z="-7"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position y="-1" z="-7"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position y="1" z="-8"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position z="-8"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position y="-1" z="-8"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position x="1" y="1" z="-3"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position x="1" y="1" z="-2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position x="1" y="1" z="-1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position x="1" y="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position x="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position x="1" z="-1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position x="1" z="-2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position x="1" z="-3"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position x="1" y="-1" z="-3"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position x="1" y="-1" z="-2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position x="1" y="-1" z="-1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position x="1" y="-1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position x="1" y="1" z="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position y="1" z="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position z="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position x="1" z="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position x="1" y="-1" z="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position y="-1" z="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1" physics_shape="1">
+			<position x="1" y="1" z="-4"/>
+			<physics_shape_rotation 00="0" 01="-1" 10="1" 11="0"/>
+		</voxel>
+		<voxel flags="1" physics_shape="1">
+			<position x="1" z="-4"/>
+			<physics_shape_rotation 00="0" 01="-1" 10="1" 11="0"/>
+		</voxel>
+		<voxel flags="1" physics_shape="1">
+			<position x="1" y="-1" z="-4"/>
+			<physics_shape_rotation 00="0" 01="-1" 10="1" 11="0"/>
+		</voxel>
+	</voxels>
+	<voxel_min y="-1" z="-8"/>
+	<voxel_max x="1" y="1" z="1"/>
+	<voxel_physics_min y="-1" z="-8"/>
+	<voxel_physics_max x="1" y="1" z="1"/>
+	<bb_physics_min/>
+	<bb_physics_max/>
+	<compartment_sample_pos/>
+	<constraint_pos_parent/>
+	<constraint_pos_child/>
+	<voxel_location_child/>
+	<seat_offset/>
+	<seat_front/>
+	<seat_up/>
+	<seat_camera/>
+	<seat_render/>
+	<force_dir/>
+	<light_position/>
+	<light_color x="1" y="1" z="1"/>
+	<light_forward/>
+	<door_size x="1" y="1" z="1"/>
+	<door_normal/>
+	<door_side/>
+	<door_up/>
+	<door_base_pos/>
+	<dynamic_body_position/>
+	<dynamic_rotation_axes z="-1"/>
+	<dynamic_side_axis x="-1"/>
+	<magnet_offset/>
+	<connector_axis/>
+	<connector_up/>
+	<jet_engine_connections_prev/>
+	<jet_engine_connections_next/>
+	<particle_direction/>
+	<particle_offset/>
+	<particle_bounds/>
+	<rope_hook_offset/>
+</definition>
+

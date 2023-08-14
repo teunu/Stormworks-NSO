@@ -1,0 +1,213 @@
+s32 buoyancy_step_target -1
+s32 buoyancy_timer_interval 1
+
+s32 use_accurate_buoyancy 1
+s32 render_buoyancy_normals 1
+
+s32 buoyancy_min_recursion_surface 7
+s32 buoyancy_max_recursion_surface 10
+f32 tree_subdivision_scale 8.0
+
+f32 buoyancy_min_radius 1.8
+f32 buoyancy_max_radius 30.0
+
+f32 air_drag_factor_linear_pressure 0.05
+f32 air_drag_factor_quadratic_pressure 0.1
+f32 air_drag_factor_linear_suction 0.025 
+f32 air_drag_factor_quadratic_suction 0.05
+f32 air_falloff_power_pressure 0.6
+f32 air_falloff_power_suction 0.4
+f32 air_drag_factor 0.2
+f32 lift_force 0.25
+s32 apply_lift 1
+f32 air_speed_threshold 15.0
+f32 air_high_speed_threshold 50.0
+f32 air_high_speed_factor_scale 8.0
+
+f32 buoyancy_damping_multiplier_linear 0.0
+f32 buoyancy_damping_multiplier_angular 0.1
+f32 drag_factor_linear_pressure 15.0
+f32 drag_factor_quadratic_pressure 17.0
+f32 drag_factor_linear_suction 12.0
+f32 drag_factor_quadratic_suction 5.0
+f32 falloff_power_pressure 2.5
+f32 falloff_power_suction 0.3
+f32 water_drag_factor 1.0
+
+f32 buoyancy_mass_multiplier 12
+f32 buoyancy_mass_modifier 10
+f32 buoyancy_mass_modifier_lower 2000
+f32 buoyancy_mass_modifier_upper 23000
+f32 buoyancy_mass_modifier_pow 1
+
+f32 reference_speed 1.0
+s32 use_speed_as_reference 0
+
+s32 apply_viscous_resistance 1
+s32 apply_drag 1
+s32 apply_slamming_force 1
+f32 slamming_force_multiplier 100.0
+s32 calculate_air_density 0
+s32 apply_viscous_air_resistance 1
+
+f32 character_water_drag_scalar 2.0
+
+f32 underwater_draw_distance 120.0
+
+s32 regular_particle_rate_denominator 200
+s32 suction_particle_rate_denominator 40	
+
+f32 regular_particle_speed_min 0.04
+f32 regular_particle_speed_max 0.2
+
+f32 suction_particle_speed_min 0.005
+f32 suction_particle_speed_max 0.02
+
+f32 slam_particle_speed_min 0.05
+f32 slam_particle_speed_max 0.3
+
+f32 slam_particle_count 2.0
+f32 slam_particle_normal_factor 0.1
+f32 splash_particle_count 20.0
+f32 splash_bubble_particle_count 2.0
+f32 particle_velocity_y_scale 0.2
+f32 particle_water_scale 2.0
+f32 bubble_scale 0.002
+f32 splash_bubble_velocity 0.004
+f32 stream_bubble_particle_count 5.0
+f32 stream_bubble_velocity 0.004
+f32 stream_particle_water_scale 0.04
+f32 particle_water_stream_spacing 3.0
+f32 particle_water_stream_scale 8.0
+
+f32 fire_particle_count 5.0
+f32 fire_velocity 0.01
+f32 fire_velocity_vertical 0.0005
+f32 fire_particle_scale 0.15
+s32 fire_life 80
+f32 fire_heat_rate 0.95
+f32 fire_color_r 20.0
+f32 fire_color_g 4.0
+f32 fire_color_b 0.0
+f32 fire_light_range 10.0
+
+f32 forest_fire_particle_count 0.5
+f32 forest_fire_velocity 0.05
+f32 forest_fire_velocity_vertical 0.0015
+f32 forest_fire_particle_scale 0.3
+s32 forest_fire_life 80
+f32 forest_fire_heat_rate 0.97
+
+f32 flare_particle_count 0.2
+f32 flare_velocity 0.03
+s32 flare_min_life 550
+s32 flare_max_life 570
+f32 flare_velocity_vertical 0.02
+f32 flare_max_velocity_vertical 0.2
+f32 flare_color_blend 0.5
+f32 flare_light_radius 70.0
+f32 flare_light_flicker_randomness 0.2
+f32 flare_light_flicker_effect_radius 0.0
+f32 flare_light_flicker_effect_color 10.0
+f32 flare_light_flicker_blend_color 0.05
+f32 flare_light_flicker_blend_radius 0.05
+f32 flare_min_scale 20.0
+f32 flare_max_scale 20.0
+f32 flare_size_increase_life 0.3
+f32 flare_light_intensity 100.0
+f32 flare_light_whiteness 0.05
+f32 flare_color_brightness 0.2
+f32 flare_color_whiteness 0.25
+
+f32 microprocessor_text_offset_x 0.175
+f32 microprocessor_text_offset_y -0.18
+f32 microprocessor_text_spacing -0.01
+f32 microprocessor_text_width 0.65
+f32 microprocessor_text_name_size 0.0007
+f32 microprocessor_text_prop_size 0.00065
+f32 microprocessor_icon_size 0.1
+f32 microprocessor_icon_offset_x 0.1
+f32 microprocessor_icon_offset_y -0.1
+
+color8 map_ocean_color 40, 100, 110, 255
+color8 map_color_contour_solid 32, 32, 32, 255
+color8 map_color_contour_dash 32, 32, 32, 255
+color8 map_color_shallow_0 83, 185, 209, 255
+color8 map_color_land 208, 208, 198, 255
+color8 map_color_sand 227, 208, 141, 255
+color8 map_color_grass 164, 184, 117, 255
+s32 map_dash_frequency 2
+
+f32 wheel_gain_max 25.0
+f32 wheel_gain_min 0.5
+f32 wheel_pitch_max 25.0
+f32 wheel_pitch_min 0.5
+f32 wheel_on_threshold 24.0
+
+f32 suspension_offset 0.5
+f32 suspension_stiffness_factor 0.2
+f32 suspension_damping_factor 1.0
+f32 suspension_radius_factor 1.0
+
+f32 tire_offset 0.5
+f32 tire_stiffness_factor 1.0
+f32 tire_damping_factor 4.0
+f32 tire_radius_factor 0.2
+
+f32 tire_max_friction 100.0
+f32 tire_grip_body_factor 0.5
+f32 tire_grip_multiplier 50.0
+f32 wheel_render_offset_factor 0.0
+f32 wheel_max_drag_distance 0.1
+f32 wheel_elastic_memory_force 2000.0
+f32 wheel_drag_velocity_factor 30.0
+f32 wheel_drive_torque_multiplier 0.0004
+f32 wheel_damping_factor 0.0
+
+f32 electric_consumption_scale 0.01
+
+f32 mp_physics_pos_threshold 0.01
+f32 mp_physics_ang_threshold 0.01
+f32 mp_physics_pos_vel_threshold 0.01
+f32 mp_physics_ang_vel_threshold 0.01
+s32 mp_physics_update_tick_limit 6
+
+s32 ocean_lod_size_bias -6
+f32 ocean_lod_tesellation_factor 0.4
+f32 ocean_lod_size_height_offset 1000.0
+f32 ocean_lod_size_height_step 50.0
+
+f32 fog_intensity_pow 2.0
+
+s32 tree_fire_tick_period 30
+f32 tree_fire_size 4.0f
+s32 tree_fire_spread_threshold 100
+s32 tree_fire_spread_threshold_rain 200
+s32 tree_fire_spread_chance 25
+s32 world_fire_spread_chance 50
+s32 tree_fire_collapse_chance 750
+f32 tree_fire_extinguish_range_sq 16.0
+s32 tree_fire_extinguish_value 5
+
+s32 random_noise_value_min 2048
+s32 random_noise_value_max 4096
+f32 rounding_value 128
+f32 repeat_value 2
+f32 quiet_factor 6
+f32 temp_interference_threshhold 0
+
+f32 binocular_vignette_strength 5.0
+f32 binocular_vignette_threshold 1.5
+
+f32 transponder_variance 0.1
+
+f32 friction_block_drag_stiffness 800.0
+f32 friction_block_damping -16.0
+f32 friction_block_velocity_damping -80.0
+
+f32 vehicle_ai_wing_roll_scale 1.0
+f32 vehicle_ai_wing_pitch_scale 1.5
+f32 vehicle_ai_wing_yaw_scale 5.0
+
+f32 radar_coord_delta_stiffness 10000.0
+f32 radar_coord_delta_damping 1000.0

@@ -1,0 +1,19 @@
+stormworks64.exe.i64
+
+*.mdmp
+
+log.txt
+
+rom/data/debris/*.png
+rom/data/preset_vehicles/*.png
+rom/data/preset_vehicles_advanced/*.png
+
+debug.log
+
+
+# Build system (or something) seems to be changing the files every deploy.
+# Instead of tracking those pointless changes we keep a list of files and sizes
+# In a special file.
+rom/audio/**/*.ogg
+rom/graphics/**/*.txtr
+

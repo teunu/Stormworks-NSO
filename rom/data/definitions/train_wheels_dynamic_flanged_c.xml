@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition name="Train Wheel Assembly Flanged C"
+category="3"
+type="36"
+mass="200"
+value="50"
+flags="1"
+mesh_data_name="meshes/component_train_wheel_base_flanged.mesh"
+mesh_0_name="meshes/component_train_wheel_dynamic_small_c.mesh"
+mesh_editor_only_name="meshes/arrow_train.mesh"
+force_emitter_max_force="10"
+wheel_radius="0.3"
+wheel_wishbone_length="0.186"
+wheel_suspension_height="0.45">
+	<sfx_datas/>
+	<surfaces>
+		<surface orientation="3" shape="1">
+			<position z="-4"/>
+		</surface>
+		<surface orientation="3" shape="1">
+			<position z="-3"/>
+		</surface>
+		<surface orientation="3" shape="1">
+			<position z="-2"/>
+		</surface>
+		<surface orientation="3" shape="1">
+			<position z="-1"/>
+		</surface>
+		<surface orientation="3" shape="1">
+			<position/>
+		</surface>
+		<surface orientation="3" shape="1">
+			<position z="1"/>
+		</surface>
+		<surface orientation="3" shape="1">
+			<position z="2"/>
+		</surface>
+		<surface orientation="3" shape="1">
+			<position z="3"/>
+		</surface>
+		<surface orientation="3" shape="1">
+			<position z="4"/>
+		</surface>
+	</surfaces>
+	<buoyancy_surfaces>
+		<surface orientation="3" shape="1">
+			<position z="-4"/>
+		</surface>
+		<surface orientation="3" shape="1">
+			<position z="-3"/>
+		</surface>
+		<surface orientation="3" shape="1">
+			<position z="-2"/>
+		</surface>
+		<surface orientation="3" shape="1">
+			<position z="-1"/>
+		</surface>
+		<surface orientation="3" shape="1">
+			<position/>
+		</surface>
+		<surface orientation="3" shape="1">
+			<position z="1"/>
+		</surface>
+		<surface orientation="3" shape="1">
+			<position z="2"/>
+		</surface>
+		<surface orientation="3" shape="1">
+			<position z="3"/>
+		</surface>
+		<surface orientation="3" shape="1">
+			<position z="4"/>
+		</surface>
+	</buoyancy_surfaces>
+	<logic_nodes>
+		<logic_node label="Brakes" mode="1" type="1" description="Number input to set the level of braking applied to the wheels.">
+			<position/>
+		</logic_node>
+		<logic_node label="Wheel Slip" description="Detects if wheels are slipping resulting in reduced torque.">
+			<position y="1"/>
+		</logic_node>
+	</logic_nodes>
+	<couplings/>
+	<voxels>
+		<voxel flags="1">
+			<position/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position x="-1" y="1" z="-4"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position x="-1" y="1" z="-3"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position x="-1" y="1" z="-2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position x="-1" y="1" z="-1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position x="-1" y="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position x="-1" y="1" z="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position x="-1" y="1" z="2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position x="-1" y="1" z="3"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position x="-1" y="1" z="4"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="-1" y="2" z="-4"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="-1" y="2" z="-3"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="-1" y="2" z="-2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="-1" y="2" z="-1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="-1" y="2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="-1" y="2" z="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="-1" y="2" z="2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="-1" y="2" z="3"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="-1" y="2" z="4"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="-1" y="3" z="-4"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="-1" y="3" z="-3"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="-1" y="3" z="-2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="-1" y="3" z="-1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="-1" y="3"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="-1" y="3" z="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="-1" y="3" z="2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="-1" y="3" z="3"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="-1" y="3" z="4"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position y="1" z="-4"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position y="1" z="-3"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position y="1" z="-2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position y="1" z="-1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position y="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position y="1" z="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position y="1" z="2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position y="1" z="3"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position y="1" z="4"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position y="2" z="-4"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position y="2" z="-3"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position y="2" z="-2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position y="2" z="-1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position y="2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position y="2" z="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position y="2" z="2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position y="2" z="3"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position y="2" z="4"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position y="3" z="-4"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position y="3" z="-3"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position y="3" z="-2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position y="3" z="-1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position y="3"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position y="3" z="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position y="3" z="2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position y="3" z="3"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position y="3" z="4"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position x="1" y="1" z="-4"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position x="1" y="1" z="-3"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position x="1" y="1" z="-2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position x="1" y="1" z="-1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position x="1" y="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position x="1" y="1" z="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position x="1" y="1" z="2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position x="1" y="1" z="3"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position x="1" y="1" z="4"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="1" y="2" z="-4"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="1" y="2" z="-3"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="1" y="2" z="-2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="1" y="2" z="-1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="1" y="2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="1" y="2" z="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="1" y="2" z="2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="1" y="2" z="3"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="1" y="2" z="4"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="1" y="3" z="-4"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="1" y="3" z="-3"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="1" y="3" z="-2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="1" y="3" z="-1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="1" y="3"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="1" y="3" z="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="1" y="3" z="2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="1" y="3" z="3"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel>
+			<position x="1" y="3" z="4"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position x="-1" z="-4"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position x="-1" z="-3"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position x="-1" z="-2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position x="-1" z="-1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position x="-1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position x="-1" z="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position x="-1" z="2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position x="-1" z="3"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position x="-1" z="4"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position z="-4"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position z="-3"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position z="-2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position z="-1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position z="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position z="2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position z="3"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position z="4"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position x="1" z="-4"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position x="1" z="-3"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position x="1" z="-2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position x="1" z="-1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position x="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position x="1" z="1"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position x="1" z="2"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position x="1" z="3"/>
+			<physics_shape_rotation/>
+		</voxel>
+		<voxel flags="1">
+			<position x="1" z="4"/>
+			<physics_shape_rotation/>
+		</voxel>
+	</voxels>
+	<voxel_min x="-1" z="-4"/>
+	<voxel_max x="1" y="3" z="4"/>
+	<voxel_physics_min x="-1" z="-4"/>
+	<voxel_physics_max x="1" y="2" z="4"/>
+	<bb_physics_min/>
+	<bb_physics_max/>
+	<compartment_sample_pos/>
+	<constraint_pos_parent/>
+	<constraint_pos_child/>
+	<voxel_location_child/>
+	<seat_offset/>
+	<seat_front/>
+	<seat_up/>
+	<seat_camera/>
+	<seat_render/>
+	<force_dir/>
+	<light_position/>
+	<light_color x="1" y="1" z="1"/>
+	<light_forward/>
+	<door_size x="1" y="1" z="1"/>
+	<door_normal/>
+	<door_side/>
+	<door_up/>
+	<door_base_pos/>
+	<dynamic_body_position/>
+	<dynamic_rotation_axes y="1"/>
+	<dynamic_side_axis x="1"/>
+	<magnet_offset/>
+	<connector_axis/>
+	<connector_up/>
+	<tooltip_properties description="Attaches to rail lines." short_description="Unpowered train wheel assembly."/>
+	<jet_engine_connections_prev/>
+	<jet_engine_connections_next/>
+	<particle_direction/>
+	<particle_offset/>
+	<particle_bounds/>
+	<rope_hook_offset/>
+</definition>
+

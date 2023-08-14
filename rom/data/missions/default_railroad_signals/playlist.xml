@@ -1,0 +1,3056 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<playlist path_id="app_data/data/missions/default_railroad_signals" folder_path="data/missions/default_railroad_signals" file_store="4" name="Default Railroad Signals">
+	<locations location_id_counter="107" component_id_counter="341">
+		<locations>
+			<l id="1" name="Default Signal" env_mod_spawn_num="1">
+				<components>
+					<c component_type="3" id="1" name="railroad_signal,railroad_signal_type=default" display_name="Signal, Default" vehicle_file_name="data/missions_working/vehicle_1.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
+						<spawn_transform 31="2.5"/>
+						<spawn_bounds>
+							<min x="-0.875" y="-0.375" z="-0.625"/>
+							<max x="0.875" y="5.375" z="0.375"/>
+						</spawn_bounds>
+						<spawn_local_offset y="-2.5" z="0.125"/>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="2" tile="data/tiles/arctic_island_oil_refinery.xml" name="arctic_island_oil_refinery" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="2" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=forward&amp;right" display_name="Signal #0">
+						<spawn_transform 00="0.710318" 02="-0.703881" 20="0.703881" 22="0.710318" 30="22.522705" 31="7.590332" 32="-67.761795"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="3" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=forward&amp;right" display_name="Signal #1">
+						<spawn_transform 00="-0.688649" 02="0.725095" 20="-0.725095" 22="-0.688649" 30="-48.790913" 31="10.168591" 32="-117.477982"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="3" tile="data/tiles/arctic_island_shipbreaking.xml" name="arctic_island_shipbreaking" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="4" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" display_name="Signal #0">
+						<spawn_transform 00="0.722865" 02="-0.690989" 20="0.690989" 22="0.722865" 30="60.252464" 31="8.785933" 32="-171.95755"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="5" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=forward&amp;right" display_name="Signal #1">
+						<spawn_transform 00="-0.926229" 02="0.376959" 20="-0.376959" 22="-0.926229" 30="16.400229" 31="9.668291" 32="-212.710007"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="4" tile="data/tiles/arctic_tile_13.xml" name="arctic_tile_13" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="6" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=forward&amp;right" display_name="Signal #0">
+						<spawn_transform 00="0.648796" 02="0.760962" 20="-0.760962" 22="0.648796" 30="-477.698761" 31="17.090952" 32="-447.517395"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="7" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=forward&amp;right" display_name="Signal #1">
+						<spawn_transform 00="-0.648796" 02="-0.760962" 20="0.760962" 22="-0.648796" 30="-489.562134" 31="17.089272" 32="-437.47821"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="8" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" display_name="Signal #2">
+						<spawn_transform 00="-0.648796" 02="-0.760962" 20="0.760962" 22="-0.648796" 30="-496.912689" 31="17.097279" 32="-446.546661"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="5" tile="data/tiles/arctic_tile_23.xml" name="arctic_tile_23" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="9" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" display_name="Signal #0">
+						<spawn_transform 00="-0.712987" 02="-0.701177" 20="0.701177" 22="-0.712987" 30="-423.623291" 31="17.113083" 32="488.159882"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="6" tile="data/tiles/arctic_tile_32.xml" name="arctic_tile_32" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="10" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=forward&amp;right" display_name="Signal #0">
+						<spawn_transform 00="-1" 22="-1" 30="6.626648" 31="14.984024" 32="448.358765"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="11" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" display_name="Signal #1">
+						<spawn_transform 00="-1" 22="-1" 30="-6.063141" 31="14.984024" 32="448.358765"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="12" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=forward&amp;right" display_name="Signal #2">
+						<spawn_transform 00="-1" 22="-1" 30="-5.593323" 31="17.162949" 32="319.662811"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="13" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=forward&amp;right" display_name="Signal #3">
+						<spawn_transform 30="5.916321" 31="17.130478" 32="402.808014"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="14" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=forward&amp;right" display_name="Signal #4">
+						<spawn_transform 00="-1" 22="-1" 30="-6.189966" 31="17.093868" 32="-303.107178"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="15" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=forward&amp;right" display_name="Signal #5">
+						<spawn_transform 00="-1" 22="-1" 30="6.16855" 31="17.094522" 32="-303.107178"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="7" tile="data/tiles/island_37_container_depot.xml" name="island_37_container_depot" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="30" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" display_name="Signal #0">
+						<spawn_transform 00="0.383038" 02="0.923732" 20="-0.923732" 22="0.383038" 30="71.712212" 31="5.358023" 32="2.323459"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="31" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" display_name="Signal #1">
+						<spawn_transform 00="-0.543868" 02="-0.83917" 20="0.83917" 22="-0.543868" 30="149.053452" 31="9.6807" 32="-21.428188"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="8" tile="data/tiles/island_41_underwater_mining.xml" name="island_41_underwater_mining" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="32" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" display_name="Signal #0">
+						<spawn_transform 00="-0" 02="-1" 20="1" 22="-0" 30="-48.557495" 31="7.574844" 32="35.921234"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="33" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" display_name="Signal #1">
+						<spawn_transform 00="-0.320664" 02="0.947193" 20="-0.947193" 22="-0.320664" 30="-157.778656" 31="8.976924" 32="10.761219"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="9" tile="data/tiles/track_diagonal_left_fork_straight_rot_0.xml" name="track_diagonal_left_fork_straight_rot_0" is_env_mod="true">
+				<components>
+					<c component_type="10" id="44" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" display_name="Signal #0">
+						<spawn_transform 00="-0.722203" 02="-0.691681" 20="0.691681" 22="-0.722203" 30="135.66687" 31="17.028324" 32="-127.062057"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="45" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" display_name="Signal #1">
+						<spawn_transform 00="-0.722203" 02="-0.691681" 20="0.691681" 22="-0.722203" 30="126.81736" 31="17.028324" 32="-135.537567"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="10" tile="data/tiles/track_diagonal_left_fork_straight_rot_1.xml" name="track_diagonal_left_fork_straight_rot_1" is_env_mod="true">
+				<components>
+					<c component_type="10" id="46" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" display_name="Signal #0">
+						<spawn_transform 00="-0.691681" 02="0.722203" 20="-0.722203" 22="-0.691681" 30="-127.062065" 31="17.028324" 32="-135.66687"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="47" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" display_name="Signal #1">
+						<spawn_transform 00="-0.691681" 02="0.722203" 20="-0.722203" 22="-0.691681" 30="-135.537567" 31="17.028324" 32="-126.817352"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="11" tile="data/tiles/track_diagonal_left_fork_straight_rot_2.xml" name="track_diagonal_left_fork_straight_rot_2" is_env_mod="true">
+				<components>
+					<c component_type="10" id="48" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" display_name="Signal #0">
+						<spawn_transform 00="0.722203" 02="0.691681" 20="-0.691681" 22="0.722203" 30="-135.666855" 31="17.028324" 32="127.062073"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="49" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" display_name="Signal #1">
+						<spawn_transform 00="0.722203" 02="0.691681" 20="-0.691681" 22="0.722203" 30="-126.817345" 31="17.028324" 32="135.537582"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="12" tile="data/tiles/track_diagonal_left_fork_straight_rot_3.xml" name="track_diagonal_left_fork_straight_rot_3" is_env_mod="true">
+				<components>
+					<c component_type="10" id="50" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" display_name="Signal #0">
+						<spawn_transform 00="0.691681" 02="-0.722203" 20="0.722203" 22="0.691681" 30="127.062057" 31="17.028324" 32="135.66687"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="51" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" display_name="Signal #1">
+						<spawn_transform 00="0.691681" 02="-0.722203" 20="0.722203" 22="0.691681" 30="135.537567" 31="17.028324" 32="126.81736"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="13" tile="data/tiles/track_diagonal_right_fork_straight_rot_0.xml" name="track_diagonal_right_fork_straight_rot_0" is_env_mod="true">
+				<components>
+					<c component_type="10" id="54" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=forward&amp;right" display_name="Signal #0">
+						<spawn_transform 00="-0.707951" 02="0.706262" 20="-0.706262" 22="-0.707951" 30="-126.577522" 31="17.075449" 32="-135.319321"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="55" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=forward&amp;right" display_name="Signal #1">
+						<spawn_transform 00="-0.707951" 02="0.706262" 20="-0.706262" 22="-0.707951" 30="-135.312714" 31="17.075449" 32="-126.604973"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="14" tile="data/tiles/track_diagonal_right_fork_straight_rot_1.xml" name="track_diagonal_right_fork_straight_rot_1" is_env_mod="true">
+				<components>
+					<c component_type="10" id="56" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=forward&amp;right" display_name="Signal #0">
+						<spawn_transform 00="0.706262" 02="0.707951" 20="-0.707951" 22="0.706262" 30="-135.319321" 31="17.075449" 32="126.57753"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="57" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=forward&amp;right" display_name="Signal #1">
+						<spawn_transform 00="0.706262" 02="0.707951" 20="-0.707951" 22="0.706262" 30="-126.604965" 31="17.075449" 32="135.312714"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="15" tile="data/tiles/track_diagonal_right_fork_straight_rot_2.xml" name="track_diagonal_right_fork_straight_rot_2" is_env_mod="true">
+				<components>
+					<c component_type="10" id="58" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=forward&amp;right" display_name="Signal #0">
+						<spawn_transform 00="0.707951" 02="-0.706262" 20="0.706262" 22="0.707951" 30="126.577538" 31="17.075449" 32="135.319305"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="59" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=forward&amp;right" display_name="Signal #1">
+						<spawn_transform 00="0.707951" 02="-0.706262" 20="0.706262" 22="0.707951" 30="135.312729" 31="17.075449" 32="126.604958"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="16" tile="data/tiles/track_diagonal_right_fork_straight_rot_3.xml" name="track_diagonal_right_fork_straight_rot_3" is_env_mod="true">
+				<components>
+					<c component_type="10" id="60" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=forward&amp;right" display_name="Signal #0">
+						<spawn_transform 00="-0.706262" 02="-0.707951" 20="0.707951" 22="-0.706262" 30="135.319321" 31="17.075449" 32="-126.577522"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="61" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=forward&amp;right" display_name="Signal #1">
+						<spawn_transform 00="-0.706262" 02="-0.707951" 20="0.707951" 22="-0.706262" 30="126.604973" 31="17.075449" 32="-135.312714"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="17" tile="data/tiles/track_straight_fork_left_rot_0.xml" name="track_straight_fork_left_rot_0" is_env_mod="true">
+				<components>
+					<c component_type="10" id="64" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" display_name="Signal #0">
+						<spawn_transform 00="-0.999947" 02="-0.010335" 20="0.010335" 22="-0.999947" 30="-6.217608" 31="17.101809" 32="-492.587952"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="65" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" display_name="Signal #1">
+						<spawn_transform 00="-0.999947" 02="-0.010335" 20="0.010335" 22="-0.999947" 30="5.927106" 31="17.101809" 32="-492.699829"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="18" tile="data/tiles/track_straight_fork_left_rot_1.xml" name="track_straight_fork_left_rot_1" is_env_mod="true">
+				<components>
+					<c component_type="10" id="66" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" display_name="Signal #0">
+						<spawn_transform 00="-0.010335" 02="0.999947" 20="-0.999947" 22="-0.010335" 30="-492.587952" 31="17.101809" 32="6.21763"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="67" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" display_name="Signal #1">
+						<spawn_transform 00="-0.010335" 02="0.999947" 20="-0.999947" 22="-0.010335" 30="-492.699829" 31="17.101809" 32="-5.927084"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="19" tile="data/tiles/track_straight_fork_left_rot_2.xml" name="track_straight_fork_left_rot_2" is_env_mod="true">
+				<components>
+					<c component_type="10" id="68" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" display_name="Signal #0">
+						<spawn_transform 00="0.999947" 02="0.010335" 20="-0.010335" 22="0.999947" 30="6.217651" 31="17.101809" 32="492.587952"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="69" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" display_name="Signal #1">
+						<spawn_transform 00="0.999947" 02="0.010335" 20="-0.010335" 22="0.999947" 30="-5.927063" 31="17.101809" 32="492.699829"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="20" tile="data/tiles/track_straight_fork_left_rot_3.xml" name="track_straight_fork_left_rot_3" is_env_mod="true">
+				<components>
+					<c component_type="10" id="70" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" display_name="Signal #0">
+						<spawn_transform 00="0.010335" 02="-0.999947" 20="0.999947" 22="0.010335" 30="492.587952" 31="17.101809" 32="-6.217614"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="71" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" display_name="Signal #1">
+						<spawn_transform 00="0.010335" 02="-0.999947" 20="0.999947" 22="0.010335" 30="492.699829" 31="17.101809" 32="5.9271"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="21" tile="data/tiles/track_straight_fork_right_rot_0.xml" name="track_straight_fork_right_rot_0" is_env_mod="true">
+				<components>
+					<c component_type="10" id="74" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=forward&amp;right" display_name="Signal #0">
+						<spawn_transform 00="-1" 22="-1" 30="-6.174547" 31="17.08732" 32="-492.297546"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="75" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=forward&amp;right" display_name="Signal #1">
+						<spawn_transform 00="-1" 22="-1" 30="6.194668" 31="17.08732" 32="-492.297546"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="22" tile="data/tiles/track_straight_fork_right_rot_1.xml" name="track_straight_fork_right_rot_1" is_env_mod="true">
+				<components>
+					<c component_type="10" id="76" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=forward&amp;right" display_name="Signal #0">
+						<spawn_transform 00="0" 02="1" 20="-1" 22="0" 30="-492.297546" 31="17.08732" 32="6.174569"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="77" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=forward&amp;right" display_name="Signal #1">
+						<spawn_transform 00="0" 02="1" 20="-1" 22="0" 30="-492.297546" 31="17.08732" 32="-6.194646"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="23" tile="data/tiles/track_straight_fork_right_rot_2.xml" name="track_straight_fork_right_rot_2" is_env_mod="true">
+				<components>
+					<c component_type="10" id="78" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=forward&amp;right" display_name="Signal #0">
+						<spawn_transform 30="6.17459" 31="17.08732" 32="492.297546"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="79" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=forward&amp;right" display_name="Signal #1">
+						<spawn_transform 30="-6.194625" 31="17.08732" 32="492.297546"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="24" tile="data/tiles/track_straight_fork_right_rot_3.xml" name="track_straight_fork_right_rot_3" is_env_mod="true">
+				<components>
+					<c component_type="10" id="80" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=forward&amp;right" display_name="Signal #0">
+						<spawn_transform 00="-0" 02="-1" 20="1" 22="-0" 30="492.297546" 31="17.08732" 32="-6.174553"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="81" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=forward&amp;right" display_name="Signal #1">
+						<spawn_transform 00="-0" 02="-1" 20="1" 22="-0" 30="492.297546" 31="17.08732" 32="6.194662"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="25" tile="data/tiles/island_33_tile_04.xml" name="island_33_tile_04" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="16" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" display_name="Signal #0">
+						<spawn_transform 00="-0.497148" 02="0.867666" 20="-0.867666" 22="-0.497148" 30="-433.901978" 31="16.797388" 32="-261.395935"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="17" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" display_name="Signal #1">
+						<spawn_transform 00="-0.460809" 02="0.8875" 20="-0.8875" 22="-0.460809" 30="-427.560394" 31="16.912842" 32="-272.172455"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="18" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" display_name="Signal #2">
+						<spawn_transform 00="0.999999" 02="-0.001354" 20="0.001354" 22="0.999999" 30="5.978352" 31="16.797388" 32="474.273651"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="19" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" display_name="Signal #3">
+						<spawn_transform 00="0.999999" 02="-0.001354" 20="0.001354" 22="0.999999" 30="-6.24315" 31="16.797388" 32="474.290192"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="26" tile="data/tiles/island_33_tile_05.xml" name="island_33_tile_05" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="20" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" display_name="Signal #0">
+						<spawn_transform 00="0.207869" 02="-0.978157" 20="0.978157" 22="0.207869" 30="-386.587585" 31="16.988564" 32="118.921021"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="21" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" display_name="Signal #1">
+						<spawn_transform 00="0.207869" 02="-0.978157" 20="0.978157" 22="0.207869" 30="-389.13266" 31="16.988564" 32="130.897217"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="27" tile="data/tiles/island_33_tile_32.xml" name="island_33_tile_32" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="22" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" display_name="Signal #0">
+						<spawn_transform 00="0.340052" 02="0.940407" 20="-0.940407" 22="0.340052" 30="-193.657608" 31="16.982035" 32="332.875824"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="23" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=forward&amp;right" display_name="Signal #1">
+						<spawn_transform 00="0.340052" 02="0.940407" 20="-0.940407" 22="0.340052" 30="-198.304611" 31="16.978535" 32="321.277649"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="24" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=forward&amp;right" display_name="Signal #2">
+						<spawn_transform 00="0.340052" 02="0.940407" 20="-0.940407" 22="0.340052" 30="-279.863159" 31="16.982899" 32="365.61499"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="25" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=forward&amp;right" display_name="Signal #3">
+						<spawn_transform 00="-0.3468" 02="-0.93794" 20="0.93794" 22="-0.3468" 30="-225.431702" 31="16.954996" 32="331.068054"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="28" tile="data/tiles/island_33_tile_end.xml" name="island_33_tile_end" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="26" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=forward&amp;right" display_name="Signal #0">
+						<spawn_transform 00="0.648501" 02="0.761214" 20="-0.761214" 22="0.648501" 30="-130.266022" 31="15.658844" 32="263.399658"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="27" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" display_name="Signal #1">
+						<spawn_transform 00="0.648501" 02="0.761214" 20="-0.761214" 22="0.648501" 30="-120.229919" 31="15.658844" 32="275.180145"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="28" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=forward&amp;right" display_name="Signal #2">
+						<spawn_transform 00="0.648501" 02="0.761214" 20="-0.761214" 22="0.648501" 30="-193.402252" 31="16.978729" 32="334.920837"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="29" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=forward&amp;right" display_name="Signal #3">
+						<spawn_transform 00="-0.645212" 02="-0.764004" 20="0.764004" 22="-0.645212" 30="-150.822906" 31="15.645508" 32="281.970062"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="29" tile="data/tiles/mega_island_1_3.xml" name="MEGA_ISLAND_1_3" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="315" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=forward&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.971959" 02="0.23515" 20="-0.23515" 22="0.971959" 30="-473.463043" 31="13.67808" 32="-249.21579"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="316" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=forward&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.973862" 02="-0.22714" 20="0.22714" 22="-0.973862" 30="-471.060822" 31="11.086079" 32="-330.303558"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="97" tile="data/tiles/mega_island_3_3.xml" name="MEGA_ISLAND_3_3" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="317" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=forward&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.535648" 02="0.844441" 20="-0.844441" 22="0.535648" 30="342.537842" 31="10.141362" 32="-263.929749"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="318" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=forward&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.546328" 02="-0.837571" 20="0.837571" 22="-0.546328" 30="403.212372" 31="10.272392" 32="-321.393127"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="98" tile="data/tiles/mega_island_5_3.xml" name="MEGA_ISLAND_5_3" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="319" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=forward&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.999232" 02="0.039196" 20="-0.039196" 22="-0.999232" 30="354.020416" 31="11.742077" 32="76.594276"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="320" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=forward&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.998883" 02="-0.047246" 20="0.047246" 22="0.998883" 30="370.75473" 31="12.575189" 32="153.138672"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="102" tile="data/tiles/mega_island_6_5.xml" name="MEGA_ISLAND_6_5" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="325" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=forward&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.775018" 02="-0.631939" 20="0.631939" 22="0.775018" 30="308.64212" 31="26.204594" 32="392.024536"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="326" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=forward&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.780626" 02="0.624999" 20="-0.624999" 22="-0.780626" 30="249.810211" 31="26.157812" 32="339.235718"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="30" tile="data/tiles/mega_island_6_4.xml" name="MEGA_ISLAND_6_4" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="82" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.174914" 02="0.984584" 20="-0.984584" 22="-0.174914" 30="-94.282951" 31="24.257401" 32="-36.193436"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="83" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.177514" 02="0.984118" 20="-0.984118" 22="-0.177514" 30="-92.234032" 31="24.146542" 32="-48.093655"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="84" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.99961" 02="0.027919" 20="-0.027919" 22="-0.99961" 30="272.8862" 31="24.540771" 32="-405.905701"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="85" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.999355" 02="0.03592" 20="-0.03592" 22="-0.999355" 30="285.123138" 31="24.533039" 32="-406.11087"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="86" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.845147" 02="0.534534" 20="-0.534534" 22="0.845147" 30="190.845306" 31="24.550198" 32="428.061279"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="87" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.848857" 02="0.528623" 20="-0.528623" 22="0.848857" 30="179.888443" 31="24.544703" 32="421.093536"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="99" tile="data/tiles/mega_island_7_3.xml" name="MEGA_ISLAND_7_3" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="321" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=forward&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.663392" 02="0.748272" 20="-0.748272" 22="0.663392" 30="-108.053032" 31="16.986637" 32="-102.963333"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="322" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=forward&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.67991" 02="-0.733296" 20="0.733296" 22="-0.67991" 30="-58.899414" 31="16.338428" 32="-167.278687"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="101" tile="data/tiles/mega_island_8_0.xml" name="MEGA_ISLAND_8_0" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="339" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.999588" 02="-0.028698" 20="0.028698" 22="-0.999588" 30="4.072906" 31="17.086983" 32="-394.112335"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="340" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.995785" 02="0.091721" 20="-0.091721" 22="0.995785" 30="-13.07454" 31="17.086769" 32="-312.616455"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="32" tile="data/tiles/mega_island_8_1.xml" name="MEGA_ISLAND_8_1" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="88" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.933891" 02="-0.357557" 20="0.357557" 22="-0.933891" 30="-218.539429" 31="15.951929" 32="-502.63858"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="89" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.937571" 02="-0.347795" 20="0.347795" 22="-0.937571" 30="-207.411026" 31="15.951641" 32="-498.320831"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="90" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.972448" 02="0.233119" 20="-0.233119" 22="0.972448" 30="-318.026489" 31="26.973997" 32="308.386566"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="91" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.96947" 02="0.24521" 20="-0.24521" 22="0.96947" 30="-329.776642" 31="26.987541" 32="305.706085"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="92" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.163508" 02="-0.986542" 20="0.986542" 22="-0.163508" 30="377.459839" 31="31.651417" 32="-128.765091"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="93" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.161919" 02="-0.986804" 20="0.986804" 22="-0.161919" 30="379.012756" 31="31.655212" 32="-116.962296"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="100" tile="data/tiles/mega_island_8_2.xml" name="MEGA_ISLAND_8_2" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="323" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=forward&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.996984" 02="-0.077604" 20="0.077604" 22="0.996984" 30="-348.556915" 31="26.863104" 32="-381.042603"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="324" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=forward&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.999421" 02="-0.034024" 20="0.034024" 22="-0.999421" 30="-367.086823" 31="28.923838" 32="-461.22998"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="33" tile="data/tiles/mega_island_9_8.xml" name="MEGA_ISLAND_9_8" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="40" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" display_name="Signal #0">
+						<spawn_transform 00="-0" 02="-1" 20="1" 22="-0" 30="478.813202" 31="6.4" 32="226.305176"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="41" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=forward&amp;right" display_name="Signal #1">
+						<spawn_transform 00="-0" 02="-1" 20="1" 22="-0" 30="478.813202" 31="6.4" 32="237.813278"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="107" tile="data/tiles/mega_island_10_1.xml" name="MEGA_ISLAND_10_1" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="337" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=forward&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.013955" 02="0.999903" 20="-0.999903" 22="0.013955" 30="-89.060844" 31="31.849241" 32="-281.926331"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="338" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=forward&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.009509" 02="-0.999955" 20="0.999955" 22="0.009509" 30="-18.009773" 31="31.562265" 32="-294.528717"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="34" tile="data/tiles/mega_island_10_8.xml" name="MEGA_ISLAND_10_8" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="34" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=forward&amp;right" display_name="Signal #0">
+						<spawn_transform 00="-0" 02="-1" 20="1" 22="-0" 30="-372.665955" 31="8.121194" 32="226.156586"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="35" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=forward&amp;right" display_name="Signal #1">
+						<spawn_transform 00="0" 02="1" 20="-1" 22="0" 30="-454.563965" 31="8.121194" 32="237.600739"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="94" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.149498" 02="0.988762" 20="-0.988762" 22="0.149498" 30="415.489624" 31="6.850407" 32="226.800018"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="95" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.134933" 02="0.990855" 20="-0.990855" 22="0.134933" 30="413.200958" 31="6.99797" 32="213.834335"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="35" tile="data/tiles/mega_island_11_7.xml" name="MEGA_ISLAND_11_7" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="96" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.848221" 02="0.529642" 20="-0.529642" 22="-0.848221" 30="-217.181976" 31="7.172337" 32="390.787384"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="97" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.84798" 02="0.530029" 20="-0.530029" 22="-0.84798" 30="-206.292557" 31="7.385522" 32="384.051483"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="327" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=forward&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.776213" 02="0.630471" 20="-0.630471" 22="-0.776213" 30="-388.151978" 31="7.003082" 32="166.253479"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="328" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=forward&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.767529" 02="-0.641014" 20="0.641014" 22="0.767529" 30="-328.638489" 31="7.003208" 32="219.449158"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="104" tile="data/tiles/mega_island_12_1.xml" name="MEGA_ISLAND_12_1" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="329" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=forward&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.222076" 02="0.975029" 20="-0.975029" 22="-0.222076" 30="242.400055" 31="31.743422" 32="-460.754669"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="330" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=forward&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.221812" 02="-0.975089" 20="0.975089" 22="0.221812" 30="319.68045" 31="31.794666" 32="-456.278534"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="105" tile="data/tiles/mega_island_12_2.xml" name="MEGA_ISLAND_12_2" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="331" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=forward&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.90102" 02="-0.433778" 20="0.433778" 22="-0.90102" 30="52.124187" 31="17.46137" 32="459.306183"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="332" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=forward&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.915106" 02="0.403214" 20="-0.403214" 22="0.915106" 30="31.204094" 31="20.288786" 32="535.491455"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="36" tile="data/tiles/mega_island_12_4.xml" name="MEGA_ISLAND_12_4" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="98" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.59895" 02="0.800787" 20="-0.800787" 22="-0.59895" 30="-219.521881" 31="13.126696" 32="-258.061584"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="99" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.606193" 02="0.795318" 20="-0.795318" 22="-0.606193" 30="-211.881943" 31="13.126694" 32="-267.859741"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="100" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.620881" 02="-0.783905" 20="0.783905" 22="-0.620881" 30="490.414154" 31="12.948005" 32="-372.424316"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="101" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.620605" 02="-0.784123" 20="0.784123" 22="-0.620605" 30="497.855255" 31="13.126703" 32="-362.812195"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="102" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.591785" 02="-0.806096" 20="0.806096" 22="0.591785" 30="466.622345" 31="13.068271" 32="291.158752"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="103" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.578449" 02="-0.815719" 20="0.815719" 22="0.578449" 30="459.20578" 31="13.116488" 32="301.259918"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="38" tile="data/tiles/mega_island_12_7.xml" name="MEGA_ISLAND_12_7" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="38" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=forward&amp;right" display_name="Signal #0">
+						<spawn_transform 30="-226.226929" 31="4.514125" 32="-217.166016"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="39" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=forward&amp;right" display_name="Signal #1">
+						<spawn_transform 00="-1" 22="-1" 30="-237.539383" 31="4.236427" 32="-300.190155"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="104" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.900459" 02="-0.434941" 20="0.434941" 22="-0.900459" 30="-381.015747" 31="5.654757" 32="458.058868"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="105" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.891524" 02="-0.452974" 20="0.452974" 22="-0.891524" 30="-369.5755" 31="5.654772" 32="463.77301"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="106" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.986486" 02="0.163843" 20="-0.163843" 22="0.986486" 30="-242.332016" 31="5.593102" 32="65.816414"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="107" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.984055" 02="0.177865" 20="-0.177865" 22="0.984055" 30="-254.15097" 31="5.593102" 32="63.600269"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="106" tile="data/tiles/mega_island_13_4.xml" name="MEGA_ISLAND_13_4" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="333" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=forward&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.481395" 02="0.876504" 20="-0.876504" 22="-0.481395" 30="-303.738129" 31="13.126696" 32="442.61554"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="334" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=forward&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.490561" 02="-0.871407" 20="0.871407" 22="0.490561" 30="-232.160614" 31="13.057785" 32="465.949646"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="335" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=forward&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.573157" 02="0.819445" 20="-0.819445" 22="0.573157" 30="-397.861389" 31="12.858347" 32="-440.898743"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="336" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=forward&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.520412" 02="-0.853915" 20="0.853915" 22="-0.520412" 30="-337.924255" 31="12.967209" 32="-495.945801"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="39" tile="data/tiles/mega_island_13_5.xml" name="MEGA_ISLAND_13_5" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="108" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.999966" 02="0.008191" 20="-0.008191" 22="0.999966" 30="401.691254" 31="13.126629" 32="266.562592"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="109" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.999723" 02="0.023544" 20="-0.023544" 22="0.999723" 30="389.058167" 31="13.126629" 32="266.408691"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="40" tile="data/tiles/mega_island_15_2.xml" name="MEGA_ISLAND_15_2" is_env_mod="true" env_mod_spawn_num="1">
+				<components/>
+			</l>
+			<l id="41" tile="data/tiles/mega_island_15_3.xml" name="MEGA_ISLAND_15_3" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="110" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.894955" 02="0.446156" 20="-0.446156" 22="-0.894955" 30="-56.599922" 31="13.063454" 32="-298.948212"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="111" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.914651" 02="-0.404245" 20="0.404245" 22="0.914651" 30="-36.944843" 31="13.127033" 32="-227.829147"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="112" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.891469" 02="-0.453081" 20="0.453081" 22="0.891469" 30="-6.780092" 31="13.126701" 32="-165.922302"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="113" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.895254" 02="0.445557" 20="-0.445557" 22="-0.895254" 30="2.446613" 31="13.126682" 32="-147.252121"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="114" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.898789" 02="0.438383" 20="-0.438383" 22="-0.898789" 30="-47.612953" 31="13.126719" 32="-241.755341"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="115" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.886347" 02="-0.463021" 20="0.463021" 22="0.886347" 30="36.893585" 31="13.12665" 32="-72.674812"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="116" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.889622" 02="0.456698" 20="-0.456698" 22="-0.889622" 30="-214.212158" 31="13.232525" 32="-218.307358"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="117" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.780788" 02="0.624796" 20="-0.624796" 22="-0.780788" 30="-182.946243" 31="13.093601" 32="-172.60321"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="118" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.781057" 02="0.62446" 20="-0.62446" 22="-0.781057" 30="-151.14093" 31="13.093596" 32="-133.006241"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="119" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.77041" 02="0.637549" 20="-0.637549" 22="-0.77041" 30="-119.3395" 31="13.09359" 32="-93.253738"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="120" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.778563" 02="0.627566" 20="-0.627566" 22="-0.778563" 30="-86.559959" 31="13.093653" 32="-52.303867"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="42" tile="data/tiles/arid_island_3_7.xml" name="ARID_ISLAND_3_7" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="121" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.623789" 02="-0.781593" 20="0.781593" 22="-0.623789" 30="431.453033" 31="23.401379" 32="-453.603546"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="122" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.638092" 02="0.76996" 20="-0.76996" 22="0.638092" 30="378.500671" 31="23.308521" 32="-395.145813"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="43" tile="data/tiles/arid_island_3_9.xml" name="ARID_ISLAND_3_9" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="123" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.999745" 02="-0.022577" 20="0.022577" 22="-0.999745" 30="97.450432" 31="29.400055" 32="130.128326"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="124" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.99964" 02="0.026822" 20="-0.026822" 22="0.99964" 30="106.816635" 31="29.470037" 32="206.40419"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="125" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.999175" 02="-0.040608" 20="0.040608" 22="-0.999175" 30="102.618553" 31="29.478951" 32="300.839905"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="126" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.990434" 02="0.137988" 20="-0.137988" 22="-0.990434" 30="99.140907" 31="29.749691" 32="353.356964"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="44" tile="data/tiles/arid_island_3_10.xml" name="ARID_ISLAND_3_10" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="127" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.968699" 02="0.24824" 20="-0.24824" 22="0.968699" 30="79.600273" 31="29.74968" 32="-325.933685"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="128" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.998639" 02="0.052162" 20="-0.052162" 22="0.998639" 30="77.152115" 31="29.427698" 32="-273.853699"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="129" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.997506" 02="-0.070583" 20="0.070583" 22="-0.997506" 30="66.314026" 31="29.490227" 32="-115.803741"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="130" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.997012" 02="0.077253" 20="-0.077253" 22="0.997012" 30="49.336143" 31="29.387415" 32="-43.38205"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="45" tile="data/tiles/arid_island_4_6.xml" name="ARID_ISLAND_4_6" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="131" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.564522" 02="0.825418" 20="-0.825418" 22="0.564522" 30="-338.566681" 31="23.147427" 32="387.35968"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="132" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.568085" 02="0.82297" 20="-0.82297" 22="0.568085" 30="-345.347229" 31="23.056166" 32="377.470581"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="46" tile="data/tiles/arid_island_5_5.xml" name="ARID_ISLAND_5_5" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="133" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.635842" 02="-0.771819" 20="0.771819" 22="-0.635842" 30="-176.919357" 31="36.634377" 32="230.834015"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="134" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.660401" 02="0.750914" 20="-0.750914" 22="0.660401" 30="-225.045273" 31="31.587097" 32="287.838806"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="135" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.769079" 02="-0.639154" 20="0.639154" 22="-0.769079" 30="-424.340332" 31="23.274332" 32="482.397217"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="136" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.771889" 02="-0.635758" 20="0.635758" 22="-0.771889" 30="-414.988464" 31="23.641708" 32="490.035248"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="47" tile="data/tiles/arid_island_5_6.xml" name="ARID_ISLAND_5_6" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="137" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.517018" 02="-0.855974" 20="0.855974" 22="0.517018" 30="-76.026604" 31="22.77409" 32="418.103241"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="138" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.538906" 02="0.842366" 20="-0.842366" 22="-0.538906" 30="-143.335556" 31="22.931858" 32="390.568939"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="139" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.492298" 02="-0.870427" 20="0.870427" 22="0.492298" 30="-169.798767" 31="23.397783" 32="361.018219"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="140" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.49258" 02="-0.870267" 20="0.870267" 22="0.49258" 30="-175.695786" 31="22.862768" 32="371.50531"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="48" tile="data/tiles/arid_island_5_7.xml" name="ARID_ISLAND_5_7" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="141" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.704984" 02="0.709223" 20="-0.709223" 22="-0.704984" 30="386.188293" 31="48.109623" 32="-206.661057"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="49" tile="data/tiles/arid_island_6_7.xml" name="ARID_ISLAND_6_7" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="142" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.953223" 02="0.302269" 20="-0.302269" 22="-0.953223" 30="-329.973724" 31="75.950241" 32="327.899445"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="143" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.951383" 02="-0.308009" 20="0.308009" 22="0.951383" 30="-319.089294" 31="76.731987" 32="401.002472"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="144" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.911173" 02="-0.412025" 20="0.412025" 22="0.911173" 30="-431.4534" 31="71.364433" 32="52.010757"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="145" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.601531" 02="-0.79885" 20="0.79885" 22="-0.601531" 30="-360.214813" 31="67.336525" 32="-201.988449"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="146" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.460404" 02="0.887709" 20="-0.887709" 22="0.460404" 30="-257.644043" 31="67.255775" 32="-263.459778"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="147" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.458649" 02="0.888618" 20="-0.888618" 22="0.458649" 30="-178.749237" 31="67.485176" 32="-313.683685"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="148" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.543735" 02="0.839257" 20="-0.839257" 22="0.543735" 30="-90.138794" 31="67.492813" 32="-377.496033"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="149" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.474029" 02="0.880509" 20="-0.880509" 22="0.474029" 30="-11.746568" 31="67.408089" 32="-389.248322"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="150" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.477069" 02="-0.878866" 20="0.878866" 22="-0.477069" 30="61.228146" 31="67.41423" 32="-431.602173"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="50" tile="data/tiles/arid_island_6_12.xml" name="ARID_ISLAND_6_12" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="151" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.699517" 02="0.714616" 20="-0.714616" 22="0.699517" 30="-152.739319" 31="22.939596" 32="510.230835"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="152" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.717466" 02="-0.696594" 20="0.696594" 22="-0.717466" 30="-117.848045" 31="23.066734" 32="457.067657"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="153" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.469969" 02="0.882683" 20="-0.882683" 22="0.469969" 30="4.522978" 31="23.251696" 32="381.476837"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="154" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.477064" 02="0.878869" 20="-0.878869" 22="0.477064" 30="-0.73768" 31="23.114603" 32="371.383728"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="51" tile="data/tiles/arid_island_7_10.xml" name="ARID_ISLAND_7_10" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="155" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.469517" 02="0.882924" 20="-0.882924" 22="-0.469517" 30="110.622543" 31="23.462027" 32="-137.068832"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="156" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.453502" 02="0.891255" 20="-0.891255" 22="-0.453502" 30="116.560097" 31="23.100477" 32="-148.437241"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="52" tile="data/tiles/arid_island_7_12.xml" name="ARID_ISLAND_7_12" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="157" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.461933" 02="-0.886915" 20="0.886915" 22="-0.461933" 30="245.80455" 31="23.070063" 32="-97.916138"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="158" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.431658" 02="0.902037" 20="-0.902037" 22="0.431658" 30="184.935852" 31="22.657742" 32="-54.809479"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="159" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.400333" 02="-0.91637" 20="0.91637" 22="-0.400333" 30="135.470673" 31="23.370661" 32="-45.942562"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="160" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.40021" 02="-0.916423" 20="0.916423" 22="-0.40021" 30="140.222351" 31="23.368317" 32="-34.866013"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="53" tile="data/tiles/arid_island_7_13.xml" name="ARID_ISLAND_7_13" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="161" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.993862" 02="-0.110628" 20="0.110628" 22="0.993862" 30="-177.617905" 31="23.372107" 32="-14.847383"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="162" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.989539" 02="0.144263" 20="-0.144263" 22="-0.989539" 30="-200.029022" 31="23.372158" 32="-87.563187"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="163" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.989495" 02="-0.144564" 20="0.144564" 22="0.989495" 30="-191.032791" 31="23.373846" 32="-110.393448"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="164" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.990014" 02="-0.140972" 20="0.140972" 22="0.990014" 30="-203.043533" 31="23.371214" 32="-108.741989"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="54" tile="data/tiles/arid_island_8_10.xml" name="ARID_ISLAND_8_10" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="165" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.443743" 02="-0.896154" 20="0.896154" 22="-0.443743" 30="171.954636" 31="23.377991" 32="4.934916"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="166" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.444535" 02="-0.895762" 20="0.895762" 22="-0.444535" 30="177.605515" 31="23.335087" 32="15.929529"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="55" tile="data/tiles/arid_island_8_11.xml" name="ARID_ISLAND_8_11" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="167" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.99994" 02="0.010924" 20="-0.010924" 22="0.99994" 30="-310.738892" 31="22.819626" 32="206.951492"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="168" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.999855" 02="-0.017035" 20="0.017035" 22="-0.999855" 30="-322.093658" 31="23.337925" 32="136.451523"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="169" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.887331" 02="-0.461134" 20="0.461134" 22="0.887331" 30="-384.412231" 31="23.256571" 32="-216.293716"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="170" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.885089" 02="-0.465422" 20="0.465422" 22="0.885089" 30="-395.341034" 31="23.335567" 32="-210.541229"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="56" tile="data/tiles/arid_island_8_14.xml" name="ARID_ISLAND_8_14" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="171" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.027304" 02="-0.999627" 20="0.999627" 22="0.027304" 30="-429.205078" 31="8.125924" 32="205.249329"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="172" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.006102" 02="0.999981" 20="-0.999981" 22="-0.006102" 30="-505.061859" 31="8.15528" 32="217.017731"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="57" tile="data/tiles/arid_island_9_6.xml" name="ARID_ISLAND_9_6" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="173" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.819618" 02="-0.57291" 20="0.57291" 22="-0.819618" 30="472.408661" 31="29.53772" 32="-191.680176"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="58" tile="data/tiles/arid_island_9_10.xml" name="ARID_ISLAND_9_10" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="174" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.901214" 02="0.433373" 20="-0.433373" 22="-0.901214" 30="-205.576569" 31="28.681244" 32="177.792068"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="175" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.903663" 02="0.428243" 20="-0.428243" 22="-0.903663" 30="-193.485123" 31="28.733868" 32="171.923691"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="59" tile="data/tiles/arid_island_9_11.xml" name="ARID_ISLAND_9_11" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="176" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.570311" 02="0.821429" 20="-0.821429" 22="-0.570311" 30="112.728333" 31="39.340618" 32="-414.828949"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="177" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.564055" 02="0.825737" 20="-0.825737" 22="-0.564055" 30="124.682213" 31="39.340523" 32="-433.275085"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="178" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.735191" 02="0.67786" 20="-0.67786" 22="-0.735191" 30="156.901993" 31="39.340611" 32="-384.415985"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="179" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.409302" 02="0.912399" 20="-0.912399" 22="-0.409302" 30="169.561951" 31="39.340546" 32="-401.689087"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="180" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.739493" 02="0.673164" 20="-0.673164" 22="-0.739493" 30="193.16066" 31="39.340595" 32="-345.484192"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="181" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.39285" 02="0.919603" 20="-0.919603" 22="-0.39285" 30="216.795502" 31="39.340591" 32="-381.792572"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="182" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.727059" 02="0.686575" 20="-0.686575" 22="-0.727059" 30="227.962524" 31="39.340584" 32="-307.828735"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="183" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.388567" 02="0.92142" 20="-0.92142" 22="-0.388567" 30="264.797699" 31="39.340645" 32="-361.756104"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="184" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.735229" 02="0.677819" 20="-0.677819" 22="-0.735229" 30="262.131958" 31="39.340691" 32="-271.163605"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="185" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.378428" 02="0.925631" 20="-0.925631" 22="-0.378428" 30="313.071289" 31="39.340824" 32="-341.196533"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="186" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.378486" 02="-0.925607" 20="0.925607" 22="0.378486" 30="442.166321" 31="39.340694" 32="-144.786179"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="187" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.711758" 02="-0.702425" 20="0.702425" 22="0.711758" 30="492.631348" 31="39.340801" 32="-215.31752"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="188" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.396828" 02="-0.917893" 20="0.917893" 22="0.396828" 30="491.552124" 31="39.340572" 32="-123.727028"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="60" tile="data/tiles/arid_island_10_6.xml" name="ARID_ISLAND_10_6" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="189" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.676241" 02="-0.736681" 20="0.736681" 22="-0.676241" 30="-372.010559" 31="29.570892" 32="-169.874344"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="190" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.671069" 02="0.741395" 20="-0.741395" 22="0.671069" 30="-355.79541" 31="29.570889" 32="-184.737213"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="191" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.684957" 02="0.728583" 20="-0.728583" 22="0.684957" 30="-433.879517" 31="29.570889" 32="-116.135216"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="192" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.666982" 02="-0.745074" 20="0.745074" 22="-0.666982" 30="-294.741486" 31="29.570896" 32="-244.806778"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="193" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.675044" 02="-0.737777" 20="0.737777" 22="-0.675044" 30="-397.431824" 31="29.537716" 32="-356.909332"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="194" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.8234" 02="-0.567461" 20="0.567461" 22="-0.8234" 30="-435.180267" 31="29.537716" 32="-322.87912"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="195" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.81652" 02="-0.577317" 20="0.577317" 22="-0.81652" 30="-469.004211" 31="29.53772" 32="-274.8974"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="196" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.824886" 02="-0.565299" 20="0.565299" 22="-0.824886" 30="-496.349335" 31="29.537716" 32="-235.884705"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="61" tile="data/tiles/arid_island_10_11.xml" name="ARID_ISLAND_10_11" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="197" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.302863" 02="-0.953034" 20="0.953034" 22="-0.302863" 30="146.58548" 31="28.428669" 32="32.458614"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="198" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.306972" 02="-0.951719" 20="0.951719" 22="-0.306972" 30="150.503342" 31="28.128988" 32="43.977261"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="199" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.578027" 02="-0.816018" 20="0.816018" 22="0.578027" 30="-358.105499" 31="39.114204" 32="-71.260208"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="200" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.563886" 02="-0.825853" 20="0.825853" 22="0.563886" 30="-370.479156" 31="39.234215" 32="-53.032387"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="201" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.740979" 02="-0.671528" 20="0.671528" 22="0.740979" 30="-402.129761" 31="39.34053" 32="-101.710045"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="202" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.380975" 02="-0.924585" 20="0.924585" 22="0.380975" 30="-414.719177" 31="39.340599" 32="-84.285011"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="203" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.741742" 02="-0.670685" 20="0.670685" 22="0.741742" 30="-437.514313" 31="39.34058" 32="-139.76268"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="204" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.37172" 02="-0.928345" 20="0.928345" 22="0.37172" 30="-461.351959" 31="39.340584" 32="-103.999573"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="205" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.731681" 02="-0.681647" 20="0.681647" 22="0.731681" 30="-473.603394" 31="39.340633" 32="-178.688736"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="62" tile="data/tiles/arid_island_11_6.xml" name="ARID_ISLAND_11_6" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="206" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.793747" 02="0.608248" 20="-0.608248" 22="-0.793747" 30="224.818634" 31="50.022934" 32="-130.735046"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="207" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.80121" 02="-0.598384" 20="0.598384" 22="0.80121" 30="278.902649" 31="50.050171" 32="-76.779335"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="208" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;amp;amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.815559" 02="0.578674" 20="-0.578674" 22="-0.815559" 30="304.313141" 31="49.760426" 32="-20.783905"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="209" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;amp;amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.815319" 02="0.579012" 20="-0.579012" 22="-0.815319" 30="314.31662" 31="49.760426" 32="-27.692093"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="63" tile="data/tiles/arid_island_11_14.xml" name="ARID_ISLAND_11_14" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="228" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.501363" 02="0.865237" 20="-0.865237" 22="0.501363" 30="-476.628448" 31="29.623272" 32="91.004425"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="229" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.999627" 02="-0.027306" 20="0.027306" 22="-0.999627" 30="-356.614014" 31="29.623291" 32="-151.697769"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="230" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.000126" 02="-1" 20="1" 22="0.000126" 30="-204.251434" 31="29.623299" 32="-9.198132"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="231" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.034509" 02="-0.999404" 20="0.999404" 22="0.034509" 30="123.326523" 31="29.623291" 32="2.613246"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="232" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.039279" 02="-0.999228" 20="0.999228" 22="0.039279" 30="275.040222" 31="29.623322" 32="8.399544"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="233" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.05205" 02="-0.998644" 20="0.998644" 22="0.05205" 30="326.789764" 31="29.623322" 32="10.466821"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="234" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.025754" 02="-0.999668" 20="0.999668" 22="0.025754" 30="335.426636" 31="29.623329" 32="-201.115524"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="235" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=front" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.477894" 02="-0.878418" 20="0.878418" 22="0.477894" 30="168.477478" 31="29.624245" 32="-25.153124"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="64" tile="data/tiles/arid_island_12_6.xml" name="ARID_ISLAND_12_6" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="210" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.45641" 02="-0.88977" 20="0.88977" 22="-0.45641" 30="224.980667" 31="41.395702" 32="104.207245"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="211" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.449453" 02="0.893304" 20="-0.893304" 22="0.449453" 30="164.446609" 31="44.134567" 32="147.299957"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="212" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;amp;amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.150733" 02="-0.988575" 20="0.988575" 22="-0.150733" 30="-106.02758" 31="49.551346" 32="206.038254"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="213" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;amp;amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.156109" 02="-0.98774" 20="0.98774" 22="-0.156109" 30="-103.966591" 31="49.760555" 32="217.879105"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="65" tile="data/tiles/arid_island_12_7.xml" name="ARID_ISLAND_12_7" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="214" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.996834" 02="0.079508" 20="-0.079508" 22="0.996834" 30="-443.749725" 31="48.980415" 32="-136.105942"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="215" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.997942" 02="-0.064121" 20="0.064121" 22="-0.997942" 30="-450.710602" 31="49.243618" 32="-212.329788"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="216" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.999449" 02="-0.033181" 20="0.033181" 22="0.999449" 30="-439.289612" 31="49.584846" 32="-328.633942"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="217" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.999375" 02="-0.03534" 20="0.03534" 22="0.999375" 30="-451.428192" 31="49.276077" 32="-328.426331"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="66" tile="data/tiles/arid_island_12_9.xml" name="ARID_ISLAND_12_9" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="218" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.996527" 02="-0.083267" 20="0.083267" 22="-0.996527" 30="-109.25042" 31="48.727154" 32="38.05143"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="219" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.994943" 02="0.10044" 20="-0.10044" 22="0.994943" 30="-103.554703" 31="48.663975" 32="110.441521"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="220" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.97271" 02="-0.232023" 20="0.232023" 22="-0.97271" 30="-167.164154" 31="47.45829" 32="365.741486"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="221" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.97392" 02="-0.226893" 20="0.226893" 22="-0.97392" 30="-155.260315" 31="47.027027" 32="368.647705"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="67" tile="data/tiles/arid_island_12_10.xml" name="ARID_ISLAND_12_10" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="222" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.999474" 02="0.032446" 20="-0.032446" 22="-0.999474" 30="-185.664291" 31="48.137531" 32="-27.900198"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="223" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.999138" 02="-0.041503" 20="0.041503" 22="0.999138" 30="-170.510696" 31="48.14677" 32="57.839348"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="224" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.9983" 02="0.058286" 20="-0.058286" 22="-0.9983" 30="-179.024872" 31="47.288631" 32="132.674316"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="225" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.997746" 02="0.067102" 20="-0.067102" 22="-0.997746" 30="-166.741257" 31="47.418774" 32="132.019562"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="68" tile="data/tiles/arid_island_14_5.xml" name="ARID_ISLAND_14_5" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="226" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.128088" 02="0.991763" 20="-0.991763" 22="0.128088" 30="408.621674" 31="29.683578" 32="-149.356781"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="227" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.132811" 02="-0.991141" 20="0.991141" 22="-0.132811" 30="477.72583" 31="30.038343" 32="-169.957703"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="69" tile="data/tiles/arid_island_15_5.xml" name="ARID_ISLAND_15_5" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="237" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.088934" 02="0.996038" 20="-0.996038" 22="0.088934" 30="-486.424469" 31="30.02169" 32="-174.079086"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="238" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.300471" 02="0.953791" 20="-0.953791" 22="0.300471" 30="-439.811462" 31="30.02169" 32="-186.767349"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="240" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.473067" 02="0.881027" 20="-0.881027" 22="0.473067" 30="-394.222565" 31="30.021687" 32="-208.529724"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="241" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.018729" 02="-0.999825" 20="0.999825" 22="0.018729" 30="-160.701813" 31="29.960943" 32="-190.799561"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="242" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.084114" 02="0.996456" 20="-0.996456" 22="-0.084114" 30="-28.658587" 31="29.738441" 32="-170.814789"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="243" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.089595" 02="0.995978" 20="-0.995978" 22="-0.089595" 30="-27.503632" 31="29.534311" 32="-184.238174"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="70" tile="data/tiles/arid_island_15_13.xml" name="ARID_ISLAND_15_13" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="244" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.000819" 02="1" 20="-1" 22="0.000819" 30="-301.512817" 31="19.001619" 32="74.511955"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="245" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.022569" 02="0.999745" 20="-0.999745" 22="-0.022569" 30="-64.877815" 31="19.080988" 32="79.750175"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="246" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.033578" 02="-0.999436" 20="0.999436" 22="0.033578" 30="1.650397" 31="18.936697" 32="69.482803"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="247" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.004456" 02="0.99999" 20="-0.99999" 22="-0.004456" 30="121.762367" 31="18.955444" 32="148.891342"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="248" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.021651" 02="0.999766" 20="-0.999766" 22="-0.021651" 30="218.215271" 31="18.897688" 32="162.587479"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="249" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.021645" 02="0.999766" 20="-0.999766" 22="-0.021645" 30="218.24147" 31="19.027493" 32="145.394516"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="71" tile="data/tiles/arid_island_16_12.xml" name="ARID_ISLAND_16_12" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="250" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.998854" 02="-0.047867" 20="0.047867" 22="-0.998854" 30="133.455719" 31="19.139215" 32="-374.67691"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="251" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.998879" 02="-0.047342" 20="0.047342" 22="-0.998879" 30="147.067047" 31="19.198242" 32="-373.992096"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="72" tile="data/tiles/arid_island_16_13.xml" name="ARID_ISLAND_16_13" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="252" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.683349" 02="0.730092" 20="-0.730092" 22="0.683349" 30="-263.990021" 31="18.936686" 32="-132.661682"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="253" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.688804" 02="0.724947" 20="-0.724947" 22="0.688804" 30="-273.335632" 31="18.884521" 32="-142.257324"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="73" tile="data/tiles/arid_island_17_5.xml" name="ARID_ISLAND_17_5" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="254" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.128463" 02="-0.991714" 20="0.991714" 22="-0.128463" 30="246.089874" 31="29.588507" 32="90.683456"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="255" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.110061" 02="-0.993925" 20="0.993925" 22="-0.110061" 30="247.993088" 31="29.892576" 32="103.351364"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="74" tile="data/tiles/arid_island_17_7.xml" name="ARID_ISLAND_17_7" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="256" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.817581" 02="-0.575814" 20="0.575814" 22="0.817581" 30="-345.158539" 31="19.070747" 32="-277.210693"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="257" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.81961" 02="-0.572923" 20="0.572923" 22="0.81961" 30="-354.971344" 31="19.080074" 32="-270.14267"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="75" tile="data/tiles/arid_island_17_9.xml" name="ARID_ISLAND_17_9" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="258" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.913014" 02="-0.407929" 20="0.407929" 22="-0.913014" 30="71.752182" 31="19.0459" 32="128.142075"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="259" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.915789" 02="-0.40166" 20="0.40166" 22="-0.915789" 30="83.412071" 31="19.198112" 32="133.488129"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="76" tile="data/tiles/arid_island_17_10.xml" name="ARID_ISLAND_17_10" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="260" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.637815" 02="0.770189" 20="-0.770189" 22="0.637815" 30="-392.553833" 31="18.996195" 32="-178.310654"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="261" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.635172" 02="0.77237" 20="-0.77237" 22="0.635172" 30="-401.270355" 31="18.999886" 32="-188.474533"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="266" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.270823" 02="-0.962629" 20="0.962629" 22="0.270823" 30="379.777374" 31="19.069681" 32="-312.20108"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="267" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.263009" 02="-0.964793" 20="0.964793" 22="0.263009" 30="376.140076" 31="19.005514" 32="-299.362"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="77" tile="data/tiles/arid_island_17_12.xml" name="ARID_ISLAND_17_12" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="262" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.196161" 02="-0.980572" 20="0.980572" 22="0.196161" 30="-168.739578" 31="19.129049" 32="372.258453"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="263" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.202383" 02="-0.979306" 20="0.979306" 22="0.202383" 30="-171.288116" 31="19.128977" 32="385.087219"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="78" tile="data/tiles/arid_island_18_5.xml" name="ARID_ISLAND_18_5" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="264" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.004801" 02="0.999988" 20="-0.999988" 22="-0.004801" 30="468.649597" 31="2.515055" 32="-95.729469"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="265" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.016332" 02="-0.999867" 20="0.999867" 22="0.016332" 30="533.668762" 31="2.515055" 32="-108.108513"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="79" tile="data/tiles/arid_island_18_12.xml" name="ARID_ISLAND_18_12" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="268" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.673295" 02="0.739374" 20="-0.739374" 22="0.673295" 30="449.645691" 31="19.12236" 32="221.766724"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="269" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.668132" 02="0.744043" 20="-0.744043" 22="0.668132" 30="441.492645" 31="19.122368" 32="212.793823"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="80" tile="data/tiles/arid_island_19_5.xml" name="ARID_ISLAND_19_5" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="270" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.009211" 02="0.999958" 20="-0.999958" 22="-0.009211" 30="-76.255409" 31="2.515063" 32="-95.72834"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="271" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.001197" 02="0.999999" 20="-0.999999" 22="-0.001197" 30="-23.486052" 31="2.515066" 32="-103.601463"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="81" tile="data/tiles/arid_island_19_11.xml" name="ARID_ISLAND_19_11" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="272" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.566582" 02="0.824005" 20="-0.824005" 22="-0.566582" 30="403.074249" 31="18.925617" 32="-460.80426"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="273" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.578206" 02="0.815891" 20="-0.815891" 22="-0.578206" 30="410.770172" 31="19.07107" 32="-472.10141"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="82" tile="data/tiles/arid_island_19_12.xml" name="ARID_ISLAND_19_12" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="274" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.707673" 02="-0.70654" 20="0.70654" 22="-0.707673" 30="-26.24567" 31="19.119219" 32="-319.478271"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="275" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.713502" 02="-0.700653" 20="0.700653" 22="-0.713502" 30="-17.59622" 31="19.119217" 32="-310.943207"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="83" tile="data/tiles/arid_island_20_5.xml" name="ARID_ISLAND_20_5" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="276" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.00146" 02="-0.999999" 20="0.999999" 22="-0.00146" 30="-384.322205" 31="2.514091" 32="-112.216461"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="277" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.007667" 02="0.999971" 20="-0.999971" 22="-0.007667" 30="-453.55365" 31="2.515055" 32="-100.267525"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="84" tile="data/tiles/arid_island_20_11.xml" name="ARID_ISLAND_20_11" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="278" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.711463" 02="0.702724" 20="-0.702724" 22="0.711463" 30="-503.979126" 31="19.121782" 32="178.834915"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="279" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.715561" 02="0.69855" 20="-0.69855" 22="0.715561" 30="-516.873596" 31="19.122091" 32="166.493286"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="280" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.315725" 02="-0.948851" 20="0.948851" 22="-0.315725" 30="183.522675" 31="18.765949" 32="-325.155243"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="281" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.304348" 02="-0.952561" 20="0.952561" 22="-0.304348" 30="187.862686" 31="19.123184" 32="-312.334167"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="85" tile="data/tiles/arid_island_22_11.xml" name="ARID_ISLAND_22_11" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="282" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.722636" 02="0.691229" 20="-0.691229" 22="-0.722636" 30="-245.775589" 31="19.144438" 32="-204.777634"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="283" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.716375" 02="0.697716" 20="-0.697716" 22="-0.716375" 30="-236.373184" 31="19.145069" 32="-213.829208"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="86" tile="data/tiles/arid_island_22_12.xml" name="ARID_ISLAND_22_12" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="284" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.999184" 02="-0.040388" 20="0.040388" 22="0.999184" 30="232.535904" 31="16.845812" 32="-18.477407"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="285" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.999556" 02="-0.02981" 20="0.02981" 22="0.999556" 30="220.431732" 31="16.838175" 32="-18.179926"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="87" tile="data/tiles/arid_island_22_13.xml" name="ARID_ISLAND_22_13" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="286" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.988287" 02="-0.152608" 20="0.152608" 22="-0.988287" 30="187.321548" 31="15.855925" 32="-444.819031"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="287" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.987399" 02="-0.158253" 20="0.158253" 22="-0.987399" 30="199.195999" 31="15.901381" 32="-442.944824"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="88" tile="data/tiles/arid_island_22_14.xml" name="ARID_ISLAND_22_14" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="288" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.989169" 02="-0.146785" 20="0.146785" 22="0.989169" 30="40.611488" 31="15.866042" 32="-78.148933"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="289" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.990959" 02="-0.134164" 20="0.134164" 22="0.990959" 30="28.788958" 31="15.836416" 32="-76.407684"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="89" tile="data/tiles/arid_island_23_11.xml" name="ARID_ISLAND_23_11" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="290" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.03463" 02="-0.9994" 20="0.9994" 22="0.03463" 30="-219.028702" 31="19.146416" 32="342.339813"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="291" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.033091" 02="-0.999452" 20="0.999452" 22="0.033091" 30="-219.380249" 31="19.146503" 32="354.317383"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="90" tile="data/tiles/arid_island_23_13.xml" name="ARID_ISLAND_23_13" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="292" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.141324" 02="-0.989963" 20="0.989963" 22="0.141324" 30="-236.199356" 31="15.943306" 32="308.283142"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="293" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.153124" 02="-0.988207" 20="0.988207" 22="0.153124" 30="-238.040955" 31="15.943304" 32="320.21759"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="91" tile="data/tiles/arid_island_24_11.xml" name="ARID_ISLAND_24_11" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="294" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.520646" 02="0.853773" 20="-0.853773" 22="0.520646" 30="30.6134" 31="19.122238" 32="-54.913647"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="295" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.515924" 02="0.856635" 20="-0.856635" 22="0.515924" 30="353.490143" 31="19.121962" 32="-344.47876"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="296" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.51512" 02="0.857118" 20="-0.857118" 22="0.51512" 30="441.863068" 31="19.122431" 32="-384.176819"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="297" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.526291" 02="0.850304" 20="-0.850304" 22="0.526291" 30="433.247314" 31="19.122164" 32="-398.574615"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="92" tile="data/tiles/arid_island_26_11.xml" name="ARID_ISLAND_26_11" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="298" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.199229" 02="0.979953" 20="-0.979953" 22="-0.199229" 30="-118.86132" 31="19.020798" 32="-444.726776"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="299" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.218075" 02="0.975932" 20="-0.975932" 22="-0.218075" 30="-116.440269" 31="18.912527" 32="-457.304871"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="300" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.911109" 02="-0.412165" 20="0.412165" 22="0.911109" 30="483.109741" 31="19.135904" 32="63.839127"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="301" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.90735" 02="-0.420376" 20="0.420376" 22="0.90735" 30="471.28064" 31="18.902067" 32="69.628929"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="93" tile="data/tiles/arid_island_26_13.xml" name="ARID_ISLAND_26_13" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="302" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.964024" 02="-0.265817" 20="0.265817" 22="-0.964024" 30="474.057922" 31="8.640283" 32="360.185638"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="303" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.964865" 02="0.262748" 20="-0.262748" 22="0.964865" 30="443.765533" 31="8.629464" 32="427.399139"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="94" tile="data/tiles/arid_island_26_14.xml" name="ARID_ISLAND_26_14" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="304" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.265825" 02="0.964021" 20="-0.964021" 22="-0.265825" 30="347.20929" 31="8.629491" 32="-406.342377"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="305" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.966454" 02="0.25684" 20="-0.25684" 22="0.966454" 30="368.296417" 31="8.629579" 32="-291.615601"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="306" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.966138" 02="-0.258024" 20="0.258024" 22="-0.966138" 30="80.114464" 31="8.634715" 32="-317.546021"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="307" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.99898" 02="-0.045151" 20="0.045151" 22="-0.99898" 30="66.083496" 31="8.634715" 32="-266.167755"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="308" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.998832" 02="-0.048313" 20="0.048313" 22="-0.998832" 30="63.62355" 31="8.634715" 32="-216.717407"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="309" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.999134" 02="-0.041617" 20="0.041617" 22="-0.999134" 30="61.029812" 31="8.634715" 32="-165.97818"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="310" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;forward" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.9991" 02="-0.042421" 20="0.042421" 22="-0.9991" 30="58.201736" 31="8.634715" 32="-108.34935"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="341" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.958535" 02="-0.284975" 20="0.284975" 22="-0.958535" 30="421.323456" 31="8.621123" 32="-492.728119"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="95" tile="data/tiles/arid_island_27_10.xml" name="ARID_ISLAND_27_10" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="311" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.25931" 02="-0.965794" 20="0.965794" 22="-0.25931" 30="-288.664917" 31="18.994934" 32="469.641968"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="312" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.269747" 02="-0.962931" 20="0.962931" 22="-0.269747" 30="-285.538208" 31="18.975731" 32="479.961487"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="96" tile="data/tiles/arid_island_27_13.xml" name="ARID_ISLAND_27_13" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="313" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.999959" 02="-0.00902" 20="0.00902" 22="-0.999959" 30="3.38438" 31="15.465047" 32="-452.864166"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="314" cargo_zone_import_cargo_type="railroad_signal,railroad_signal_type=left&amp;amp;right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.999959" 02="-0.009056" 20="0.009056" 22="-0.999959" 30="15.461176" 31="15.505112" 32="-452.888794"/>
+						<spawn_bounds>
+							<min x="-1" z="-1"/>
+							<max x="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+		</locations>
+	</locations>
+</playlist>
+

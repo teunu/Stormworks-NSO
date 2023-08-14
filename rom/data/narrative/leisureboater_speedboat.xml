@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<meta type="1" max_spawned="5" is_repeatable="true"/>
+<definition_data vehicle_filename="test_npc_boat.xml" vehicle_name="speedboat" map_travel_speed="0.5" character_outfit_category="4">
+
+	<delivery_mission 
+		desc_long="Collect fuel from a nearby oil rig and deliver to the stranded speedboat." 
+		desc_short="Stranded speedboat requires fuel." 
+		title="Deliver fuel barrel" 
+		obj_1_text="Deliver fuel barrel" 
+		obj_2_text="Deliver fuel barrel" 
+		obj_3_text="Deliver fuel barrel"/>
+	
+	<runaway_boat_mission 
+		desc_long="Shut the speedboat's engine down and deliver it back to its owner." 
+		desc_short="Stop the runaway speedboat." 
+		title="Runaway Speedboat" 
+		difficulty="3"/>
+	
+	<sinking_boat_mission 
+		desc_long="Rescue the stranded sailor and transport him to the nearby hospital for emergency medical care." 
+		desc_short="Rescue the sailor from his sinking speedboat." 
+		title="Sinking Speedboat" 
+		obj_1_text="Rescue sailor" 
+		obj_2_text="Rescue sailor" 
+		obj_3_text="Rescue sailor" 
+		difficulty="1"/>
+</definition_data>

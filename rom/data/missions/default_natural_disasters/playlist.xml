@@ -1,0 +1,669 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<playlist path_id="app_data/data/missions/default_natural_disasters" folder_path="data/missions/default_natural_disasters" file_store="4" name="Default Natural Disasters">
+	<locations location_id_counter="55" component_id_counter="55">
+		<locations>
+			<l id="1" name="siren" env_mod_spawn_num="1">
+				<components>
+					<c component_type="3" id="1" name="default_siren" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_1.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
+						<spawn_transform 31="4"/>
+						<spawn_bounds>
+							<min x="-0.625" y="-0.375" z="-0.625"/>
+							<max x="0.625" y="8.125" z="0.625"/>
+						</spawn_bounds>
+						<spawn_local_offset y="-3.875"/>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="2" tile="data/tiles/island12.xml" name="STARTER BASE" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="2" cargo_zone_import_cargo_type="siren_zone" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.153272" 02="-0.988184" 20="0.988184" 22="-0.153272" 30="-50.155365" 31="23.85339" 32="1.979445"/>
+						<spawn_bounds>
+							<min x="-0.5" z="-0.5"/>
+							<max x="0.5" y="8" z="0.5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="3" tile="data/tiles/test_tile.xml" name="HELICOPTER BASE" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="3" cargo_zone_import_cargo_type="siren_zone" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="24.097992" 31="6.883463" 32="1.14593"/>
+						<spawn_bounds>
+							<min x="-0.5" z="-0.5"/>
+							<max x="0.5" y="8" z="0.5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="4" tile="data/tiles/island_24.xml" name="AIRSTRIP BASE" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="4" cargo_zone_import_cargo_type="siren_zone" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.710288" 02="0.703912" 20="-0.703912" 22="0.710288" 30="-22.586609" 31="5.004733" 32="-13.082574"/>
+						<spawn_bounds>
+							<min x="-0.5" z="-0.5"/>
+							<max x="0.5" y="8" z="0.5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="5" tile="data/tiles/island_25.xml" name="HARBOUR BASE" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="5" cargo_zone_import_cargo_type="siren_zone" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.999999" 02="-0.001318" 20="0.001318" 22="0.999999" 30="80.968712" 31="5.247079" 32="-81.447838"/>
+						<spawn_bounds>
+							<min x="-0.5" z="-0.5"/>
+							<max x="0.5" y="8" z="0.5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="6" tile="data/tiles/island_15.xml" name="CREATIVE BASE" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="6" cargo_zone_import_cargo_type="siren_zone" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.004372" 02="-0.99999" 20="0.99999" 22="0.004372" 30="-234.705597" 31="4.653335" 32="20.376041"/>
+						<spawn_bounds>
+							<min x="-0.5" z="-0.5"/>
+							<max x="0.5" y="8" z="0.5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="7" tile="data/tiles/island_34_military.xml" name="MILITARY BASE" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="7" cargo_zone_import_cargo_type="siren_zone" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.518597" 02="0.855019" 20="-0.855019" 22="0.518597" 30="63.423191" 31="22.106482" 32="-26.454693"/>
+						<spawn_bounds>
+							<min x="-0.5" z="-0.5"/>
+							<max x="0.5" y="8" z="0.5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="8" tile="data/tiles/island_33_tile_22.xml" name="MAINLAND QUARRY" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="8" cargo_zone_import_cargo_type="siren_zone" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.434152" 02="-0.90084" 20="0.90084" 22="-0.434152" 30="62.122566" 31="66.96772" 32="-198.962143"/>
+						<spawn_bounds>
+							<min x="-0.5" z="-0.5"/>
+							<max x="0.5" y="8" z="0.5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="9" tile="data/tiles/island_33_tile_06.xml" name="KEY CHEMICAL PLANT" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="9" cargo_zone_import_cargo_type="siren_zone" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.999997" 02="-0.00249" 20="0.00249" 22="0.999997" 30="-208.428757" 31="7.670085" 32="173.749512"/>
+						<spawn_bounds>
+							<min x="-0.5" z="-0.5"/>
+							<max x="0.5" y="8" z="0.5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="10" tile="data/tiles/island_33_tile_end.xml" name="TERMINAL CAMODO" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="10" cargo_zone_import_cargo_type="siren_zone" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.05396" 02="-0.998543" 20="0.998543" 22="0.05396" 30="-145.382233" 31="5.348444" 32="39.276257"/>
+						<spawn_bounds>
+							<min x="-0.5" z="-0.5"/>
+							<max x="0.5" y="8" z="0.5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="11" tile="data/tiles/arctic_island_oil_refinery.xml" name="ARCTIC OIL REFINERY" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="11" cargo_zone_import_cargo_type="siren_zone" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.71838" 02="-0.695651" 20="0.695651" 22="0.71838" 30="24.442829" 31="7.659266" 32="-69.57428"/>
+						<spawn_bounds>
+							<min x="-0.5" z="-0.5"/>
+							<max x="0.5" y="8" z="0.5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="12" tile="data/tiles/island_37_container_depot.xml" name="ARCTIC CONTAINER DEPOT" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="12" cargo_zone_import_cargo_type="siren_zone" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.555577" 02="0.831465" 20="-0.831465" 22="0.555577" 30="-47.674774" 31="5.382355" 32="59.074348"/>
+						<spawn_bounds>
+							<min x="-0.5" z="-0.5"/>
+							<max x="0.5" y="8" z="0.5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="13" tile="data/tiles/island_41_underwater_mining.xml" name="ARCTIC UNDERWATER MINING" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="13" cargo_zone_import_cargo_type="siren_zone" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.003186" 02="0.999995" 20="-0.999995" 22="0.003186" 30="29.731627" 31="6.74931" 32="13.069905"/>
+						<spawn_bounds>
+							<min x="-0.5" z="-0.5"/>
+							<max x="0.5" y="8" z="0.5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="14" tile="data/tiles/arctic_island_playerbase.xml" name="ARCTIC ISLAND BASE" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="14" cargo_zone_import_cargo_type="siren_zone" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.653322" 02="0.75708" 20="-0.75708" 22="-0.653322" 30="-107.038101" 31="23.331711" 32="226.681213"/>
+						<spawn_bounds>
+							<min x="-0.5" z="-0.5"/>
+							<max x="0.5" y="8" z="0.5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="15" tile="data/tiles/arctic_tile_12_oilrig.xml" name="ARCTIC OIL PLATFORM" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="15" cargo_zone_import_cargo_type="siren_zone" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.999999" 02="-0.001377" 20="0.001377" 22="0.999999" 30="192.949814" 31="2.641225" 32="-21.542479"/>
+						<spawn_bounds>
+							<min x="-0.5" z="-0.5"/>
+							<max x="0.5" y="8" z="0.5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="16" tile="data/tiles/arctic_island_shipbreaking.xml" name="ARCTIC SHIP BREAKING YARD" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="16" cargo_zone_import_cargo_type="siren_zone" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.999456" 02="0.032968" 20="-0.032968" 22="0.999456" 30="179.495544" 31="8.832001" 32="-285.420776"/>
+						<spawn_bounds>
+							<min x="-0.5" z="-0.5"/>
+							<max x="0.5" y="8" z="0.5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="17" tile="data/tiles/island_43_multiplayer_base.xml" name="MULTIPLAYER ISLAND BASE" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="17" cargo_zone_import_cargo_type="siren_zone" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="422.141693" 31="7.339543" 32="-168.542984"/>
+						<spawn_bounds>
+							<min x="-0.5" z="-0.5"/>
+							<max x="0.5" y="8" z="0.5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="18" tile="data/tiles/mega_island_12_6.xml" name="O'NEILL AIRBASE" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="18" cargo_zone_import_cargo_type="siren_zone" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.711546" 02="0.70264" 20="-0.70264" 22="-0.711546" 30="107.348511" 31="8.655842" 32="59.351704"/>
+						<spawn_bounds>
+							<min x="-0.5" z="-0.5"/>
+							<max x="0.5" y="8" z="0.5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="19" tile="data/tiles/mega_island_2_6.xml" name="HARRISON AIRBASE" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="19" cargo_zone_import_cargo_type="siren_zone" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.702822" 02="0.711366" 20="-0.711366" 22="0.702822" 30="65.605682" 31="12.453133" 32="-100.882614"/>
+						<spawn_bounds>
+							<min x="-0.5" z="-0.5"/>
+							<max x="0.5" y="8" z="0.5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="20" tile="data/tiles/mega_island_15_2.xml" name="SAWYER ISLANDS' SOUTH-EAST FISHING VILLAGE" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="20" cargo_zone_import_cargo_type="siren_zone" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.880222" 02="-0.474562" 20="0.474562" 22="-0.880222" 30="199.876114" 31="6.615034" 32="-367.185608"/>
+						<spawn_bounds>
+							<min x="-0.5" z="-0.5"/>
+							<max x="0.5" y="8" z="0.5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="21" tile="data/tiles/mega_island_9_8.xml" name="SAWYER ISLANDS' NORTH HARBOUR" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="21" cargo_zone_import_cargo_type="siren_zone" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.73658" 02="-0.67635" 20="0.67635" 22="-0.73658" 30="254.319733" 31="3.595235" 32="417.847351"/>
+						<spawn_bounds>
+							<min x="-0.5" z="-0.5"/>
+							<max x="0.5" y="8" z="0.5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="22" tile="data/tiles/mega_island_2_9.xml" name="OLSEN BAY" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="22" cargo_zone_import_cargo_type="siren_zone" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.171711" 02="-0.985147" 20="0.985147" 22="-0.171711" 30="390.408844" 31="5.666473" 32="-479.585754"/>
+						<spawn_bounds>
+							<min x="-0.5" z="-0.5"/>
+							<max x="0.5" y="8" z="0.5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="23" tile="data/tiles/mega_island_8_7.xml" name="HOLT TOWN" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="23" cargo_zone_import_cargo_type="siren_zone" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.256736" 02="-0.966482" 20="0.966482" 22="-0.256736" 30="4.833608" 31="8.602823" 32="203.061234"/>
+						<spawn_bounds>
+							<min x="-0.5" z="-0.5"/>
+							<max x="0.5" y="8" z="0.5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="24" tile="data/tiles/mega_island_7_6.xml" name="DEAN HALL MINING COMPANY" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="24" cargo_zone_import_cargo_type="siren_zone" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.050433" 02="0.998728" 20="-0.998728" 22="0.050433" 30="148.524734" 31="30.952778" 32="-27.788321"/>
+						<spawn_bounds>
+							<min x="-0.5" z="-0.5"/>
+							<max x="0.5" y="8" z="0.5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="25" tile="data/tiles/mega_island_14_0.xml" name="LIGHTHOUSE FRANTIC" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="25" cargo_zone_import_cargo_type="siren_zone" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.010809" 02="0.999942" 20="-0.999942" 22="-0.010809" 30="190.044113" 31="32.415565" 32="-91.023079"/>
+						<spawn_bounds>
+							<min x="-0.5" z="-0.5"/>
+							<max x="0.5" y="8" z="0.5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="26" tile="data/tiles/island11.xml" name="HOSPITAL" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="26" cargo_zone_import_cargo_type="disabled_zone" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="105.04715" 31="13.650892" 32="64.858215"/>
+						<spawn_bounds>
+							<min x="-0.5" z="-0.5"/>
+							<max x="0.5" y="8" z="0.5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="27" tile="data/tiles/island_17.xml" name="SCIENCE" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="27" cargo_zone_import_cargo_type="siren_zone" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="51.803482" 31="18.768518" 32="-6.169876"/>
+						<spawn_bounds>
+							<min x="-0.5" z="-0.5"/>
+							<max x="0.5" y="8" z="0.5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="28" tile="data/tiles/island_13.xml" name="POLICE" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="28" cargo_zone_import_cargo_type="siren_zone" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.116214" 02="0.993224" 20="-0.993224" 22="-0.116214" 30="71.899406" 31="22.4317" 32="-19.11339"/>
+						<spawn_bounds>
+							<min x="-0.5" z="-0.5"/>
+							<max x="0.5" y="8" z="0.5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="29" tile="data/tiles/island_27_airbase.xml" name="AIRPORT" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="29" cargo_zone_import_cargo_type="siren_zone" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.999997" 02="-0.002457" 20="0.002457" 22="-0.999997" 30="-15.171003" 31="23.487936" 32="109.92421"/>
+						<spawn_bounds>
+							<min x="-0.5" z="-0.5"/>
+							<max x="0.5" y="8" z="0.5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="30" tile="data/tiles/island_18.xml" name="BRINKFIELD" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="30" cargo_zone_import_cargo_type="siren_zone" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="-32.368702" 31="4.930401" 32="45.610641"/>
+						<spawn_bounds>
+							<min x="-0.5" z="-0.5"/>
+							<max x="0.5" y="8" z="0.5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="31" tile="data/tiles/island_28_windfarm.xml" name="WIND FARM" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="31" cargo_zone_import_cargo_type="siren_zone" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.997279" 02="-0.073724" 20="0.073724" 22="0.997279" 30="114.53669" 31="13.383007" 32="-203.765488"/>
+						<spawn_bounds>
+							<min x="-0.5" z="-0.5"/>
+							<max x="0.5" y="8" z="0.5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="32" tile="data/tiles/island_36_oil_refinery.xml" name="OIL REFINERY" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="32" cargo_zone_import_cargo_type="siren_zone" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.650106" 02="-0.759844" 20="0.759844" 22="0.650106" 30="22.738024" 31="20.492584" 32="-47.145302"/>
+						<spawn_bounds>
+							<min x="-0.5" z="-0.5"/>
+							<max x="0.5" y="8" z="0.5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="33" tile="data/tiles/oil_rig.xml" name="SMALL OIL RIG" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="33" cargo_zone_import_cargo_type="siren_zone" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.000608" 02="1" 20="-1" 22="0.000608" 30="9.673733" 31="10.759042" 32="0.948859"/>
+						<spawn_bounds>
+							<min x="-0.5" z="-0.5"/>
+							<max x="0.5" y="8" z="0.5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="34" tile="data/tiles/oil_rig_medium.xml" name="MEDIUM OIL RIG" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="34" cargo_zone_import_cargo_type="siren_zone" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="21.257153" 31="18.571022" 32="2.397445"/>
+						<spawn_bounds>
+							<min x="-0.5" z="-0.5"/>
+							<max x="0.5" y="8" z="0.5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="35" tile="data/tiles/island_26_fishing.xml" name="FISHING VILLAGE" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="35" cargo_zone_import_cargo_type="siren_zone" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-1" 02="-0.000322" 20="0.000322" 22="-1" 30="57.983402" 31="4.01973" 32="-48.042076"/>
+						<spawn_bounds>
+							<min x="-0.5" z="-0.5"/>
+							<max x="0.5" y="8" z="0.5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="36" tile="data/tiles/island_39_observatory.xml" name="OBSERVATORY" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="36" cargo_zone_import_cargo_type="siren_zone" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.994889" 02="-0.100974" 20="0.100974" 22="0.994889" 30="14.970121" 31="20.040087" 32="35.246868"/>
+						<spawn_bounds>
+							<min x="-0.5" z="-0.5"/>
+							<max x="0.5" y="8" z="0.5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="37" tile="data/tiles/island_35_seafort.xml" name="SEA FORT" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="37" cargo_zone_import_cargo_type="siren_zone" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="-17.416965" 31="17.811905" 32="31.422979"/>
+						<spawn_bounds>
+							<min x="-0.5" z="-0.5"/>
+							<max x="0.5" y="8" z="0.5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="38" tile="data/tiles/arid_island_3_14.xml" name="ARID_ISLAND_3_14" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="38" cargo_zone_import_cargo_type="siren_zone" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.006285" 02="0.99998" 20="-0.99998" 22="-0.006285" 30="493.012146" 31="68.624664" 32="497.027832"/>
+						<spawn_bounds>
+							<min x="-0.5" z="-0.5"/>
+							<max x="0.5" y="8" z="0.5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="39" tile="data/tiles/arid_island_4_12.xml" name="ARID_ISLAND_4_12" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="39" cargo_zone_import_cargo_type="siren_zone" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.648251" 02="0.761426" 20="-0.761426" 22="0.648251" 30="176.167404" 31="15.819044" 32="306.200012"/>
+						<spawn_bounds>
+							<min x="-0.5" z="-0.5"/>
+							<max x="0.5" y="8" z="0.5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="40" tile="data/tiles/arid_island_4_13.xml" name="ARID_ISLAND_4_13" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="40" cargo_zone_import_cargo_type="siren_zone" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="47.953312" 31="10.870657" 32="389.818298"/>
+						<spawn_bounds>
+							<min x="-0.5" z="-0.5"/>
+							<max x="0.5" y="8" z="0.5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="41" tile="data/tiles/arid_island_5_14.xml" name="ARID_ISLAND_5_14" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="41" cargo_zone_import_cargo_type="siren_zone" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.576715" 02="0.816945" 20="-0.816945" 22="0.576715" 30="-307.813385" 31="15.085022" 32="-401.574921"/>
+						<spawn_bounds>
+							<min x="-0.5" z="-0.5"/>
+							<max x="0.5" y="8" z="0.5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="42" tile="data/tiles/arid_island_6_7.xml" name="ARID_ISLAND_6_7" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="42" cargo_zone_import_cargo_type="siren_zone" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.922238" 02="0.386622" 20="-0.386622" 22="-0.922238" 30="128.722488" 31="67.676369" 32="-437.519501"/>
+						<spawn_bounds>
+							<min x="-0.5" z="-0.5"/>
+							<max x="0.5" y="8" z="0.5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="43" tile="data/tiles/arid_island_7_5.xml" name="ARID_ISLAND_7_5" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="43" cargo_zone_import_cargo_type="siren_zone" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.716088" 02="0.698011" 20="-0.698011" 22="0.716088" 30="31.123941" 31="175.920563" 32="-102.427246"/>
+						<spawn_bounds>
+							<min x="-0.5" z="-0.5"/>
+							<max x="0.5" y="8" z="0.5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="44" tile="data/tiles/arid_island_8_10.xml" name="ARID_ISLAND_8_10" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="44" cargo_zone_import_cargo_type="siren_zone" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="-96.755173" 31="111.342651" 32="-401.41156"/>
+						<spawn_bounds>
+							<min x="-0.5" z="-0.5"/>
+							<max x="0.5" y="8" z="0.5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="45" tile="data/tiles/arid_island_8_15.xml" name="ARID_ISLAND_8_15" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="45" cargo_zone_import_cargo_type="siren_zone" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="-13.275968" 31="8.370796" 32="-235.524933"/>
+						<spawn_bounds>
+							<min x="-0.5" z="-0.5"/>
+							<max x="0.5" y="8" z="0.5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="46" tile="data/tiles/arid_island_11_6.xml" name="ARID_ISLAND_11_6" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="46" cargo_zone_import_cargo_type="siren_zone" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.874001" 02="0.485923" 20="-0.485923" 22="-0.874001" 30="251.665146" 31="50.035683" 32="-0.847881"/>
+						<spawn_bounds>
+							<min x="-0.5" z="-0.5"/>
+							<max x="0.5" y="8" z="0.5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="47" tile="data/tiles/arid_island_11_14.xml" name="ARID_ISLAND_11_14" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="47" cargo_zone_import_cargo_type="siren_zone" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.873413" 02="0.48698" 20="-0.48698" 22="0.873413" 30="72.196457" 31="29.624046" 32="-63.55304"/>
+						<spawn_bounds>
+							<min x="-0.5" z="-0.5"/>
+							<max x="0.5" y="8" z="0.5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="48" tile="data/tiles/arid_island_12_10.xml" name="ARID_ISLAND_12_10" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="48" cargo_zone_import_cargo_type="siren_zone" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.09462" 02="-0.995513" 20="0.995513" 22="-0.09462" 30="-204.051682" 31="47.704529" 32="256.497528"/>
+						<spawn_bounds>
+							<min x="-0.5" z="-0.5"/>
+							<max x="0.5" y="8" z="0.5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="49" tile="data/tiles/arid_island_18_7.xml" name="ARID_ISLAND_18_7" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="49" cargo_zone_import_cargo_type="siren_zone" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.078557" 02="0.99691" 20="-0.99691" 22="-0.078557" 30="-354.075653" 31="15.508242" 32="122.717552"/>
+						<spawn_bounds>
+							<min x="-0.5" z="-0.5"/>
+							<max x="0.5" y="8" z="0.5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="50" tile="data/tiles/arid_island_19_11.xml" name="ARID_ISLAND_19_11" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="50" cargo_zone_import_cargo_type="siren_zone" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.695346" 02="0.718675" 20="-0.718675" 22="-0.695346" 30="81.440262" 31="19.118782" 32="109.189735"/>
+						<spawn_bounds>
+							<min x="-0.5" z="-0.5"/>
+							<max x="0.5" y="8" z="0.5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="51" tile="data/tiles/arid_island_19_12.xml" name="ARID_ISLAND_19_12" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="51" cargo_zone_import_cargo_type="siren_zone" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.70644" 02="-0.707773" 20="0.707773" 22="0.70644" 30="-269.690887" 31="19.119207" 32="-94.851036"/>
+						<spawn_bounds>
+							<min x="-0.5" z="-0.5"/>
+							<max x="0.5" y="8" z="0.5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="52" tile="data/tiles/arid_island_24_3.xml" name="ARID_ISLAND_24_3" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="52" cargo_zone_import_cargo_type="siren_zone" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.999996" 02="0.002992" 20="-0.002992" 22="-0.999996" 30="354.562927" 31="5.911583" 32="244.3181"/>
+						<spawn_bounds>
+							<min x="-0.5" z="-0.5"/>
+							<max x="0.5" y="8" z="0.5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="53" tile="data/tiles/arid_island_26_14.xml" name="ARID_ISLAND_26_14" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="53" cargo_zone_import_cargo_type="siren_zone" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.962026" 02="0.272957" 20="-0.272957" 22="0.962026" 30="-112.596046" 31="8.634715" 32="52.338207"/>
+						<spawn_bounds>
+							<min x="-0.5" z="-0.5"/>
+							<max x="0.5" y="8" z="0.5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="54" tile="data/tiles/arid_island_27_10.xml" name="ARID_ISLAND_27_10" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="54" cargo_zone_import_cargo_type="siren_zone" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.733769" 02="-0.679399" 20="0.679399" 22="-0.733769" 30="-298.80658" 31="19.741137" 32="182.7509"/>
+						<spawn_bounds>
+							<min x="-0.5" z="-0.5"/>
+							<max x="0.5" y="8" z="0.5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="55" tile="data/tiles/arid_island_29_4.xml" name="ARID_ISLAND_29_4" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="55" cargo_zone_import_cargo_type="siren_zone" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.652636" 02="0.757672" 20="-0.757672" 22="-0.652636" 30="296.51297" 31="84.836098" 32="47.164997"/>
+						<spawn_bounds>
+							<min x="-0.5" z="-0.5"/>
+							<max x="0.5" y="8" z="0.5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+		</locations>
+	</locations>
+</playlist>
+

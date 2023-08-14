@@ -1,0 +1,1404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<playlist path_id="app_data/data/missions/default_mission_zones_delivery" folder_path="data/missions/default_mission_zones_delivery" file_store="4" name="Default Delivery Zones">
+	<locations location_id_counter="75" component_id_counter="140">
+		<locations>
+			<l id="1" tile="data/tiles/island_17.xml" name="research" is_env_mod="true">
+				<components>
+					<c component_type="10" id="1" cargo_zone_import_cargo_type="type=mission_zone,zone_type=destination_laboratory,evacuation" display_name="Scientists Base" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="53.235382" 31="20.012203" 32="10.053412"/>
+						<spawn_bounds>
+							<min x="-5.054866" y="-2" z="-16.783644"/>
+							<max x="5.054866" y="2" z="16.783644"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="2" cargo_zone_import_cargo_type="type=mission_zone,zone_type=research_outpost" display_name="Scientists Base Dock" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.930073" 02="-0.367374" 20="0.367374" 22="-0.930073" 30="34.08012" 31="4.999999" 32="-73.479507"/>
+						<spawn_bounds>
+							<min x="-35" y="-10" z="-25"/>
+							<max x="35" y="10" z="25"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="2" tile="data/tiles/island11.xml" name="hospital" is_env_mod="true">
+				<components>
+					<c component_type="10" id="3" cargo_zone_import_cargo_type="type=mission_zone,zone_type=destination_hospital,hospital" display_name="St. Sebastiaz Hospital" show_zone_on_map="true" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="100.329895" 31="15.121313" 32="55.239185"/>
+						<spawn_bounds>
+							<min x="-3.5" y="-1.5" z="-10"/>
+							<max x="3.5" y="1.5" z="10"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="2" id="4" name="id_8" display_name="Doctor" dynamic_object_type="2" character_outfit_category="9" character_type="2" vehicle_file_store="1">
+						<spawn_transform 00="0.94499" 02="0.327099" 20="-0.327099" 22="0.94499" 30="101.060081" 31="14.658722" 32="56.572678"/>
+						<spawn_bounds>
+							<min x="-0.11" y="-0.8" z="-0.11"/>
+							<max x="0.11" y="0.8" z="0.11"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="2" id="5" name="id_9" display_name="Doctor" dynamic_object_type="2" character_outfit_category="9" character_type="2" vehicle_file_store="1">
+						<spawn_transform 00="0.982924" 02="-0.184013" 20="0.184013" 22="0.982924" 30="99.078819" 31="14.658722" 32="63.154087"/>
+						<spawn_bounds>
+							<min x="-0.11" y="-0.8" z="-0.11"/>
+							<max x="0.11" y="0.8" z="0.11"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="2" id="6" name="id_10" display_name="Doctor" dynamic_object_type="2" character_outfit_category="9" character_type="2" vehicle_file_store="1">
+						<spawn_transform 00="0.889631" 02="0.45668" 20="-0.45668" 22="0.889631" 30="102.101646" 31="14.468451" 32="66.540703"/>
+						<spawn_bounds>
+							<min x="-0.11" y="-0.8" z="-0.11"/>
+							<max x="0.11" y="0.8" z="0.11"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="7" cargo_zone_import_cargo_type="type=mission_zone,zone_type=source_hospital,evacuation" display_name="Hospital" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="107.45195" 31="15.23642" 32="62.795887"/>
+						<spawn_bounds>
+							<min x="-12" y="-1.5" z="-5"/>
+							<max x="12" y="1.5" z="5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="3" tile="data/tiles/island_13.xml" name="police" is_env_mod="true">
+				<components>
+					<c component_type="10" id="8" cargo_zone_import_cargo_type="type=mission_zone,zone_type=destination_police,evacuation" display_name="Police Department" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="44.033733" 31="19.460682" 32="-19.0994"/>
+						<spawn_bounds>
+							<min x="-4.43594" y="-1.5" z="-9.750104"/>
+							<max x="4.43594" y="1.5" z="9.750104"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="4" tile="data/tiles/test_tile.xml" name="tt" is_env_mod="true">
+				<components>
+					<c component_type="10" id="9" cargo_zone_import_cargo_type="type=mission_zone,zone_type=destination_atc" display_name="TT Air Traffic Control" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.864662" 02="-0.502353" 20="0.502353" 22="0.864662" 30="-34.820763" 31="37.427029" 32="5.204892"/>
+						<spawn_bounds>
+							<min x="-3.047941" y="-9.948461" z="-3.069408"/>
+							<max x="3.047941" y="9.948461" z="3.069408"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="10" cargo_zone_import_cargo_type="type=mission_zone,zone_type=evacuation" display_name="TT Coastguard" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="9.456712" 31="8.40002" 32="2.288015"/>
+						<spawn_bounds>
+							<min x="-20.923373" y="-1.5" z="-3.140023"/>
+							<max x="20.923373" y="1.5" z="3.140023"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="5" tile="data/tiles/island_24.xml" name="airstrip" is_env_mod="true">
+				<components>
+					<c component_type="10" id="11" cargo_zone_import_cargo_type="type=mission_zone,zone_type=destination_atc" display_name="Kutyax ATC" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="5.169704" 31="24.650761" 32="-2.23634"/>
+						<spawn_bounds>
+							<min x="-5" y="-19.700801" z="-5.920958"/>
+							<max x="5" y="19.700801" z="5.920958"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="12" cargo_zone_import_cargo_type="type=mission_zone,zone_type=source_airport,evacuation" display_name="Kutyax Airstrip" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="-3.389195" 31="6.511811" 32="-1.098399"/>
+						<spawn_bounds>
+							<min x="-6.360082" y="-1.5" z="-6.744458"/>
+							<max x="6.360082" y="1.5" z="6.744458"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="6" tile="data/tiles/island_27_airbase.xml" name="airport" is_env_mod="true">
+				<components>
+					<c component_type="10" id="13" cargo_zone_import_cargo_type="type=mission_zone,zone_type=destination_airport" display_name="Airport Island Terminal" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="-22.914465" 31="26.403408" 32="109.026108"/>
+						<spawn_bounds>
+							<min x="-5" y="-2.926853" z="-3.039959"/>
+							<max x="5" y="2.926853" z="3.039959"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="14" cargo_zone_import_cargo_type="type=mission_zone,zone_type=source_airport,evacuation" display_name="Airport" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="-36.095482" 31="25.004456" 32="109.778259"/>
+						<spawn_bounds>
+							<min x="-8.940483" y="-1.5" z="-6.165518"/>
+							<max x="8.940483" y="1.5" z="6.165518"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="7" tile="data/tiles/island_15.xml" name="creative" is_env_mod="true">
+				<components>
+					<c component_type="10" id="15" cargo_zone_import_cargo_type="type=mission_zone,zone_type=destination_atc" display_name="Creative ATC" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="-226.184769" 31="9.659649" 32="97.588104"/>
+						<spawn_bounds>
+							<min x="-3.870535" y="-5" z="-7.118131"/>
+							<max x="3.870535" y="5" z="7.118131"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="16" cargo_zone_import_cargo_type="type=mission_zone,zone_type=destination_dock" display_name="Creative Dock" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="-246.738678" 32="-103.592102"/>
+						<spawn_bounds>
+							<min x="-35" y="-10" z="-75"/>
+							<max x="35" y="10" z="75"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="17" cargo_zone_import_cargo_type="type=mission_zone,zone_type=source_airport,evacuation" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="-219.519333" 31="6.159649" 32="97.485489"/>
+						<spawn_bounds>
+							<min x="-4.391765" y="-1.5" z="-7.221433"/>
+							<max x="4.391765" y="1.5" z="7.221433"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="8" tile="data/tiles/island_18.xml" name="brinkfield" is_env_mod="true">
+				<components>
+					<c component_type="10" id="18" cargo_zone_import_cargo_type="type=mission_zone,zone_type=source_brinkfield,evacuation" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="41.382008" 31="31.184004" 32="-24.60989"/>
+						<spawn_bounds>
+							<min x="-5" y="-5" z="-5"/>
+							<max x="5" y="5" z="5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="19" cargo_zone_import_cargo_type="type=mission_zone,zone_type=destination_brinkfield" display_name="Nuclear Power Plant" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="55.044064" 31="31.126778" 32="-36.038345"/>
+						<spawn_bounds>
+							<min x="-19.828035" y="-5" z="-17.573582"/>
+							<max x="19.828035" y="5" z="17.573582"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="9" tile="data/tiles/island_36_oil_refinery.xml" name="refinery" is_env_mod="true">
+				<components>
+					<c component_type="10" id="20" cargo_zone_import_cargo_type="type=mission_zone,zone_type=source_refinery,evacuation" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="21.321611" 31="25.505337" 32="-7.109127"/>
+						<spawn_bounds>
+							<min x="-5" y="-5" z="-5"/>
+							<max x="5" y="5" z="5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="10" tile="data/tiles/oil_rig.xml" name="or_small" is_env_mod="true">
+				<components>
+					<c component_type="10" id="21" cargo_zone_import_cargo_type="type=mission_zone,zone_type=source_rig_small,evacuation" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="-8.288292" 31="15.753227" 32="-2.180236"/>
+						<spawn_bounds>
+							<min x="-5" y="-5" z="-5"/>
+							<max x="5" y="5" z="5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="22" cargo_zone_import_cargo_type="type=mission_zone,zone_type=destination_rig_small" display_name="Oil Rig" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="-0.546348" 31="13.848752" 32="-3.459151"/>
+						<spawn_bounds>
+							<min x="-11.88983" y="-3" z="-15.684087"/>
+							<max x="11.88983" y="3" z="15.684087"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="11" tile="data/tiles/oil_rig_medium.xml" name="or_medium" is_env_mod="true">
+				<components>
+					<c component_type="10" id="23" cargo_zone_import_cargo_type="type=mission_zone,zone_type=source_rig_medium,evacuation" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="-9.135472" 31="23.58643" 32="5.533848"/>
+						<spawn_bounds>
+							<min x="-5" y="-5" z="-5"/>
+							<max x="5" y="5" z="5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="24" cargo_zone_import_cargo_type="type=mission_zone,zone_type=destination_rig_medium" display_name="Oil Rig" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="1.878567" 31="21.50503" 32="-10.445833"/>
+						<spawn_bounds>
+							<min x="-20.679062" y="-3" z="-25.535574"/>
+							<max x="20.679062" y="3" z="25.535574"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="12" tile="data/tiles/wind_turbine.xml" name="wt" is_env_mod="true">
+				<components>
+					<c component_type="10" id="25" cargo_zone_import_cargo_type="type=mission_zone,zone_type=destination_wind_turbine" display_name="Wind Turbine" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="0.70613" 31="23.438986" 32="-0.010391"/>
+						<spawn_bounds>
+							<min x="-8.567068" y="-3" z="-6.726854"/>
+							<max x="8.567068" y="3" z="6.726854"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="13" tile="data/tiles/island_26_fishing.xml" name="fishing_village" is_env_mod="true">
+				<components>
+					<c component_type="10" id="26" cargo_zone_import_cargo_type="type=mission_zone,zone_type=destination_village,evacuation" display_name="Fishing Village" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="18.852772" 31="5.31634" 32="-39.952061"/>
+						<spawn_bounds>
+							<min x="-23.568934" y="-2" z="-10.802057"/>
+							<max x="23.568934" y="2" z="10.802057"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="27" cargo_zone_import_cargo_type="type=mission_zone,zone_type=destination_dock" display_name="Fishing Village Dock" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="56.47995" 31="5.000002" 32="-74.202919"/>
+						<spawn_bounds>
+							<min x="-15" y="-10" z="-30"/>
+							<max x="15" y="10" z="30"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="14" tile="data/tiles/island_28_windfarm.xml" name="wf" is_env_mod="true">
+				<components>
+					<c component_type="10" id="28" cargo_zone_import_cargo_type="type=mission_zone,zone_type=source_windfarm" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="126.662399" 31="18.396618" 32="-196.665771"/>
+						<spawn_bounds>
+							<min x="-5" y="-1.5" z="-5"/>
+							<max x="5" y="1.5" z="5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="29" cargo_zone_import_cargo_type="type=mission_zone,zone_type=destination_wind_farm" display_name="Uran Wind Farm" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="126.684174" 31="18.396616" 32="-202.305099"/>
+						<spawn_bounds>
+							<min x="-16.196368" y="-5" z="-16.770913"/>
+							<max x="16.196368" y="5" z="16.770913"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="15" tile="data/tiles/island_34_military.xml" name="military" is_env_mod="true">
+				<components>
+					<c component_type="10" id="30" cargo_zone_import_cargo_type="type=mission_zone,zone_type=destination_hospital,hospital" display_name="Military Hospital" show_zone_on_map="true" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.857434" 02="-0.514593" 20="0.514593" 22="0.857434" 30="-34.213955" 31="23.672092" 32="47.846348"/>
+						<spawn_bounds>
+							<min x="-9.915246" y="-1.5" z="-4.270172"/>
+							<max x="9.915246" y="1.5" z="4.270172"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="2" id="31" name="id_11" display_name="Doctor" dynamic_object_type="2" character_outfit_category="9" character_type="2" vehicle_file_store="1">
+						<spawn_transform 00="-0.741549" 02="0.670899" 20="-0.670899" 22="-0.741549" 30="-42.865391" 31="22.911388" 32="55.730595"/>
+						<spawn_bounds>
+							<min x="-0.11" y="-0.8" z="-0.11"/>
+							<max x="0.11" y="0.8" z="0.11"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="2" id="32" name="id_12" display_name="Doctor" dynamic_object_type="2" character_outfit_category="9" character_type="2" vehicle_file_store="1">
+						<spawn_transform 00="0.252573" 02="0.967578" 20="-0.967578" 22="0.252573" 30="-42.394611" 31="22.911388" 32="54.760609"/>
+						<spawn_bounds>
+							<min x="-0.11" y="-0.8" z="-0.11"/>
+							<max x="0.11" y="0.8" z="0.11"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="2" id="33" name="id_13" display_name="Doctor" dynamic_object_type="2" character_outfit_category="9" character_type="2" vehicle_file_store="1">
+						<spawn_transform 00="0.423074" 02="0.906095" 20="-0.906095" 22="0.423074" 30="-32.852154" 31="22.911388" 32="46.98436"/>
+						<spawn_bounds>
+							<min x="-0.11" y="-0.8" z="-0.11"/>
+							<max x="0.11" y="0.8" z="0.11"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="34" cargo_zone_import_cargo_type="type=mission_zone,zone_type=evacuation" display_name="Military Base Camp" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.857175" 02="-0.515025" 20="0.515025" 22="0.857175" 30="-48.976074" 31="23.611389" 32="56.972443"/>
+						<spawn_bounds>
+							<min x="-7.784314" y="-1.5" z="-22.13693"/>
+							<max x="7.784314" y="1.5" z="22.13693"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="35" cargo_zone_import_cargo_type="type=mission_zone,zone_type=destination_dock" display_name="Military Base Dock" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.844344" 02="0.535802" 20="-0.535802" 22="0.844344" 30="-105.8741" 31="5.000003" 32="297.090607"/>
+						<spawn_bounds>
+							<min x="-120" y="-10" z="-60"/>
+							<max x="120" y="10" z="60"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="16" tile="data/tiles/island_35_seafort.xml" name="fort" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="36" cargo_zone_import_cargo_type="type=mission_zone,zone_type=evacuation" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.999965" 02="-0.008314" 20="0.008314" 22="-0.999965" 30="-43.822006" 31="14.362445" 32="-12.755711"/>
+						<spawn_bounds>
+							<min x="-5" y="-1.5" z="-5"/>
+							<max x="5" y="1.5" z="5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="17" tile="data/tiles/island_38_lighthouse.xml" name="lh" is_env_mod="true">
+				<components>
+					<c component_type="10" id="37" cargo_zone_import_cargo_type="type=mission_zone,zone_type=destination_lighthouse" display_name="Lighthouse" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="5.764686" 31="4.510393" 32="8.814517"/>
+						<spawn_bounds>
+							<min x="-3.25" y="-1.5" z="-4.25"/>
+							<max x="3.25" y="1.5" z="4.25"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="18" tile="data/tiles/island_39_observatory.xml" name="observatory" is_env_mod="true">
+				<components>
+					<c component_type="10" id="38" cargo_zone_import_cargo_type="type=mission_zone,zone_type=destination_laboratory" display_name="Observatory" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.833563" 02="0.552424" 20="-0.552424" 22="0.833563" 30="35.327374" 31="9.193195" 32="42.026501"/>
+						<spawn_bounds>
+							<min x="-5" y="-1.5" z="-9.272175"/>
+							<max x="5" y="1.5" z="9.272175"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="19" tile="data/tiles/island_43_multiplayer_base.xml" name="mp" is_env_mod="true">
+				<components>
+					<c component_type="10" id="39" cargo_zone_import_cargo_type="type=mission_zone,zone_type=destination_dock" display_name="Engineers Bay Dock" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="373.290649" 32="-149.94014"/>
+						<spawn_bounds>
+							<min x="-75" y="-10" z="-75"/>
+							<max x="75" y="10" z="75"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="40" cargo_zone_import_cargo_type="type=mission_zone,zone_type=source_airport" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="-77.990921" 31="18.856232" 32="79.42392"/>
+						<spawn_bounds>
+							<min x="-5" y="-5" z="-5"/>
+							<max x="5" y="5" z="5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="20" tile="data/tiles/island_33_tile_22.xml" name="donkk_quarry" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="41" cargo_zone_import_cargo_type="type=mission_zone,zone_type=destination_donkk_quarry" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="79.802338" 31="69.837189" 32="-205.291885"/>
+						<spawn_bounds>
+							<min x="-20" y="-3" z="-25"/>
+							<max x="20" y="3" z="25"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="21" tile="data/tiles/island_33_tile_12.xml" name="donkk_village" is_env_mod="true">
+				<components>
+					<c component_type="10" id="42" cargo_zone_import_cargo_type="type=mission_zone,zone_type=destination_village" display_name="Donkk Fishing Village" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.934844" 02="-0.355058" 20="0.355058" 22="0.934844" 30="-31.919121" 31="9.931395" 32="-92.907829"/>
+						<spawn_bounds>
+							<min x="-40" y="-3" z="-20"/>
+							<max x="40" y="3" z="20"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="43" cargo_zone_import_cargo_type="type=mission_zone,zone_type=destination_dock" display_name="Fishing Village Dock" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.927539" 02="0.373726" 20="-0.373726" 22="0.927539" 30="-77.984993" 31="5.000003" 32="-4.713133"/>
+						<spawn_bounds>
+							<min x="-35" y="-10" z="-35"/>
+							<max x="35" y="10" z="35"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="22" tile="data/tiles/island_33_tile_32.xml" name="donkk_spycakes" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="44" cargo_zone_import_cargo_type="type=mission_zone,zone_type=destination_dock" display_name="Spycakes Dock" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.600125" 02="-0.799906" 20="0.799906" 22="-0.600125" 30="142.912811" 31="5.000001" 32="171.456451"/>
+						<spawn_bounds>
+							<min x="-40" y="-10" z="-50"/>
+							<max x="40" y="10" z="50"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="23" tile="data/tiles/island_33_tile_33.xml" name="donkk_dreimor" is_env_mod="true">
+				<components>
+					<c component_type="10" id="45" cargo_zone_import_cargo_type="type=mission_zone,zone_type=destination_parking" display_name="Dreimor Scrapyard" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.784757" 02="-0.619803" 20="0.619803" 22="0.784757" 30="-206.85733" 31="8.777329" 32="266.671051"/>
+						<spawn_bounds>
+							<min x="-15" y="-2" z="-10"/>
+							<max x="15" y="2" z="10"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="46" cargo_zone_import_cargo_type="type=mission_zone,zone_type=source_airport" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="-182.684906" 31="9.013369" 32="255.242004"/>
+						<spawn_bounds>
+							<min x="-5" y="-1.5" z="-5"/>
+							<max x="5" y="1.5" z="5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="47" cargo_zone_import_cargo_type="type=mission_zone,zone_type=evacuation" display_name="Dreimor Village" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.982315" 02="-0.187236" 20="0.187236" 22="0.982315" 30="-407.778687" 31="12.848122" 32="356.27829"/>
+						<spawn_bounds>
+							<min x="-5" y="-1.5" z="-8.384419"/>
+							<max x="5" y="1.5" z="8.384419"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="24" tile="data/tiles/island_33_tile_05.xml" name="donkk_cottage" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="48" cargo_zone_import_cargo_type="type=mission_zone,zone_type=evacuation" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.612421" 02="-0.790532" 20="0.790532" 22="-0.612421" 30="-239.309464" 31="11.209416" 32="47.443985"/>
+						<spawn_bounds>
+							<min x="-5" y="-1.5" z="-5"/>
+							<max x="5" y="1.5" z="5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="25" tile="data/tiles/island_33_tile_06.xml" name="donkk_chemical" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="49" cargo_zone_import_cargo_type="type=mission_zone,zone_type=evacuation" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="-205.017349" 31="9.182768" 32="186.201752"/>
+						<spawn_bounds>
+							<min x="-5" y="-1.5" z="-5"/>
+							<max x="5" y="1.5" z="5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="26" tile="data/tiles/island_33_tile_07.xml" name="donkk_ob" is_env_mod="true">
+				<components>
+					<c component_type="10" id="50" cargo_zone_import_cargo_type="type=mission_zone,zone_type=destination_hospital,hospital" display_name="Lighthouse OB Hospital" show_zone_on_map="true" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.938796" 02="0.344475" 20="-0.344475" 22="0.938796" 30="219.752396" 31="15.140539" 32="79.280075"/>
+						<spawn_bounds>
+							<min x="-3.834202" y="-2" z="-2.475654"/>
+							<max x="3.834202" y="2" z="2.475654"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="2" id="51" name="id_14" display_name="Doctor" dynamic_object_type="2" character_outfit_category="9" character_type="2" vehicle_file_store="1">
+						<spawn_transform 00="-0.518574" 02="0.855033" 20="-0.855033" 22="-0.518574" 30="216.624054" 31="13.948442" 32="79.334198"/>
+						<spawn_bounds>
+							<min x="-0.11" y="-0.8" z="-0.11"/>
+							<max x="0.11" y="0.8" z="0.11"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="52" cargo_zone_import_cargo_type="type=mission_zone,zone_type=destination_lighthouse" display_name="Lighthouse OB" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.937041" 02="-0.349221" 20="0.349221" 22="0.937041" 30="218.966446" 31="25.081926" 32="27.436434"/>
+						<spawn_bounds>
+							<min x="-3.275724" y="-6.953028" z="-3.739777"/>
+							<max x="3.275724" y="6.953028" z="3.739777"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="53" cargo_zone_import_cargo_type="type=mission_zone,zone_type=evacuation" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.992322" 02="-0.123682" 20="0.123682" 22="0.992322" 30="211.641159" 31="14.651022" 32="80.910698"/>
+						<spawn_bounds>
+							<min x="-8.178771" y="-1.5" z="-5"/>
+							<max x="8.178771" y="1.5" z="5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="27" tile="data/tiles/island_33_tile_end.xml" name="donkk_camodo" is_env_mod="true">
+				<components>
+					<c component_type="10" id="54" cargo_zone_import_cargo_type="type=mission_zone,zone_type=destination_parking" display_name="Camodo Terminal Parking Lot" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.745752" 02="-0.666224" 20="0.666224" 22="0.745752" 30="-119.518547" 31="17.742399" 32="176.020584"/>
+						<spawn_bounds>
+							<min x="-43.594321" y="-2" z="-18.211197"/>
+							<max x="43.594321" y="2" z="18.211197"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="55" cargo_zone_import_cargo_type="type=mission_zone,zone_type=destination_dock" display_name="Camodo Terminal Dock" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.665685" 02="0.746232" 20="-0.746232" 22="0.665685" 30="-126.541878" 32="-13.610552"/>
+						<spawn_bounds>
+							<min x="-25" y="-10" z="-50"/>
+							<max x="25" y="10" z="50"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="56" cargo_zone_import_cargo_type="type=mission_zone,zone_type=evacuation" display_name="Camodo" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.661622" 02="0.749838" 20="-0.749838" 22="0.661622" 30="58.500912" 31="17.18082" 32="71.690979"/>
+						<spawn_bounds>
+							<min x="-9.435829" y="-1.5" z="-5.31535"/>
+							<max x="9.435829" y="1.5" z="5.31535"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="28" tile="data/tiles/arctic_island_playerbase.xml" name="arctic_tajin" is_env_mod="true">
+				<components>
+					<c component_type="10" id="57" cargo_zone_import_cargo_type="type=mission_zone,zone_type=destination_parking" display_name="Tajin Parking Lot" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.671528" 02="-0.740979" 20="0.740979" 22="0.671528" 30="-65.744995" 31="25.33482" 32="203.810501"/>
+						<spawn_bounds>
+							<min x="-31.537514" y="-2" z="-18.84556"/>
+							<max x="31.537514" y="2" z="18.84556"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="58" cargo_zone_import_cargo_type="type=mission_zone,zone_type=destination_atc,evacuation" display_name="Tajin Rescue Center" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.742283" 02="0.670086" 20="-0.670086" 22="0.742283" 30="-104.107529" 31="24.825993" 32="235.157196"/>
+						<spawn_bounds>
+							<min x="-9.676741" y="-1.5" z="-11.041448"/>
+							<max x="9.676741" y="1.5" z="11.041448"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="59" cargo_zone_import_cargo_type="type=mission_zone,zone_type=destination_dock" display_name="Tajin Dock" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.866218" 02="-0.499666" 20="0.499666" 22="0.866218" 30="203.9534" 32="305.061371"/>
+						<spawn_bounds>
+							<min x="-50" y="-10" z="-25"/>
+							<max x="50" y="10" z="25"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="60" cargo_zone_import_cargo_type="type=mission_zone,zone_type=source_airport" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="-124.806129" 31="28.338436" 32="242.177902"/>
+						<spawn_bounds>
+							<min x="-5" y="-5" z="-5"/>
+							<max x="5" y="5" z="5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="29" tile="data/tiles/arctic_tile_12_oilrig.xml" name="arctic_oil" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="61" cargo_zone_import_cargo_type="type=mission_zone,zone_type=destination_arctic_oil" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="134.515701" 31="5.582453" 32="-37.833553"/>
+						<spawn_bounds>
+							<min x="-27.476817" y="-3" z="-17.272401"/>
+							<max x="27.476817" y="3" z="17.272401"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="30" tile="data/tiles/arctic_island_survey.xml" name="arctic_research" is_env_mod="true">
+				<components>
+					<c component_type="10" id="62" cargo_zone_import_cargo_type="type=mission_zone,zone_type=destination_laboratory,evacuation" display_name="Arctic Research Facility" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="-42.962608" 31="25.037907" 32="-9.082425"/>
+						<spawn_bounds>
+							<min x="-62.235805" y="-3" z="-15.182474"/>
+							<max x="62.235805" y="3" z="15.182474"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="63" cargo_zone_import_cargo_type="type=mission_zone,zone_type=research_outpost" display_name="Arctic Research Dock" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.070777" 02="0.997492" 20="-0.997492" 22="0.070777" 30="-204.39595" 31="4.999998" 32="-184.858521"/>
+						<spawn_bounds>
+							<min x="-40" y="-10" z="-40"/>
+							<max x="40" y="10" z="40"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="31" tile="data/tiles/island_42_volcano_tile_32.xml" name="arctic_volcano" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="64" cargo_zone_import_cargo_type="type=mission_zone,zone_type=evacuation" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.999389" 01="0.034863" 02="-0.0023" 10="-0.034929" 11="0.995428" 12="-0.088895" 20="-0.000809" 21="0.088921" 22="0.996038" 30="489.26181" 31="25.432114" 32="481.198669"/>
+						<spawn_bounds>
+							<min x="-5" y="-1.5" z="-5"/>
+							<max x="5" y="1.5" z="5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="32" tile="data/tiles/arctic_tile_22.xml" name="arctic_base" is_env_mod="true">
+				<components>
+					<c component_type="10" id="65" cargo_zone_import_cargo_type="type=mission_zone,zone_type=destination_hospital,hospital" display_name="Arctic Hospital" show_zone_on_map="true" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="-366.550812" 31="33.649284" 32="-250.085129"/>
+						<spawn_bounds>
+							<min x="-13.484923" y="-1.715914" z="-7.493314"/>
+							<max x="13.484923" y="1.715914" z="7.493314"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="2" id="66" name="id_21" display_name="Doctor" dynamic_object_type="2" character_outfit_category="9" character_type="2" character_special_outfit="5" vehicle_file_store="1">
+						<spawn_transform 00="-0.81239" 02="-0.583115" 20="0.583115" 22="-0.81239" 30="-369.764801" 31="32.999264" 32="-256.420319"/>
+						<spawn_bounds>
+							<min x="-0.11" y="-0.8" z="-0.11"/>
+							<max x="0.11" y="0.8" z="0.11"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="2" id="67" name="id_22" display_name="Doctor" dynamic_object_type="2" character_outfit_category="9" character_type="2" character_special_outfit="5" vehicle_file_store="1">
+						<spawn_transform 00="-0.89791" 02="-0.440179" 20="0.440179" 22="-0.89791" 30="-369.985901" 31="32.999264" 32="-257.396271"/>
+						<spawn_bounds>
+							<min x="-0.11" y="-0.8" z="-0.11"/>
+							<max x="0.11" y="0.8" z="0.11"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="2" id="68" name="id_23" display_name="Doctor" dynamic_object_type="2" character_outfit_category="9" character_type="2" character_special_outfit="5" vehicle_file_store="1">
+						<spawn_transform 00="-0.932365" 02="-0.361519" 20="0.361519" 22="-0.932365" 30="-370.221771" 31="32.999264" 32="-248.570969"/>
+						<spawn_bounds>
+							<min x="-0.11" y="-0.8" z="-0.11"/>
+							<max x="0.11" y="0.8" z="0.11"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="69" cargo_zone_import_cargo_type="type=mission_zone,zone_type=evacuation" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="-374.668396" 31="34.588764" 32="-264.71759"/>
+						<spawn_bounds>
+							<min x="-9.680907" y="-5" z="-5.879497"/>
+							<max x="9.680907" y="5" z="5.879497"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="33" tile="data/tiles/arctic_tile_23.xml" name="arctic_village" is_env_mod="true">
+				<components>
+					<c component_type="10" id="70" cargo_zone_import_cargo_type="type=mission_zone,zone_type=destination_village,evacuation" display_name="Arctic Fishing Village" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="-197.25766" 31="7.479793" 32="-174.349091"/>
+						<spawn_bounds>
+							<min x="-28.052088" y="-3.019363" z="-10.892234"/>
+							<max x="28.052088" y="3.019363" z="10.892234"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="71" cargo_zone_import_cargo_type="type=mission_zone,zone_type=destination_lighthouse" display_name="Arctic Lighthouse" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="-134.031906" 31="30.302343" 32="-190.654221"/>
+						<spawn_bounds>
+							<min x="-1.846109" y="-5.95325" z="-2.132911"/>
+							<max x="1.846109" y="5.95325" z="2.132911"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="34" tile="data/tiles/arctic_island_oil_refinery.xml" name="arctic_refinery" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="72" cargo_zone_import_cargo_type="type=mission_zone,zone_type=evacuation" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.708559" 02="-0.705652" 20="0.705652" 22="0.708559" 30="46.171642" 31="9.192009" 32="-76.231514"/>
+						<spawn_bounds>
+							<min x="-5" y="-1.5" z="-5"/>
+							<max x="5" y="1.5" z="5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="35" tile="data/tiles/island_37_container_depot.xml" name="arctic_depot" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="73" cargo_zone_import_cargo_type="type=mission_zone,zone_type=evacuation" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.552313" 02="-0.833637" 20="0.833637" 22="-0.552313" 30="-70.282166" 31="6.890839" 32="22.867212"/>
+						<spawn_bounds>
+							<min x="-5" y="-1.5" z="-5"/>
+							<max x="5" y="1.5" z="5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="36" tile="data/tiles/island_41_underwater_mining.xml" name="arctic_mine" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="74" cargo_zone_import_cargo_type="type=mission_zone,zone_type=evacuation" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.030855" 02="0.999524" 20="-0.999524" 22="-0.030855" 30="25.810198" 31="8.30499" 32="-0.383238"/>
+						<spawn_bounds>
+							<min x="-5" y="-1.5" z="-5"/>
+							<max x="5" y="1.5" z="5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="37" tile="data/tiles/mega_island_14_0.xml" name="sawyer_frantic_lh" is_env_mod="true">
+				<components>
+					<c component_type="10" id="75" cargo_zone_import_cargo_type="type=mission_zone,zone_type=destination_lighthouse" display_name="Frantic Lighthouse" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="185.46312" 31="33.905144" 32="-101.555061"/>
+						<spawn_bounds>
+							<min x="-11.442399" y="-1.5" z="-9.420014"/>
+							<max x="11.442399" y="1.5" z="9.420014"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="38" tile="data/tiles/mega_island_2_6.xml" name="sawyer_harisson" is_env_mod="true">
+				<components>
+					<c component_type="10" id="76" cargo_zone_import_cargo_type="type=mission_zone,zone_type=source_airport" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="56.697365" 31="17.477757" 32="-105.270493"/>
+						<spawn_bounds>
+							<min x="-5" y="-5" z="-5"/>
+							<max x="5" y="5" z="5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="39" tile="data/tiles/mega_island_2_9.xml" name="sawyer_olsen" is_env_mod="true">
+				<components>
+					<c component_type="10" id="77" cargo_zone_import_cargo_type="type=mission_zone,zone_type=destination_parking" display_name="Olsen Parking Lot" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.900284" 02="-0.435304" 20="0.435304" 22="0.900284" 30="353.816528" 31="7.687491" 32="-356.1716"/>
+						<spawn_bounds>
+							<min x="-17.044977" y="-2" z="-23.732804"/>
+							<max x="17.044977" y="2" z="23.732804"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="78" cargo_zone_import_cargo_type="type=mission_zone,zone_type=evacuation" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.979465" 02="-0.201615" 20="0.201615" 22="0.979465" 30="391.224854" 31="10.434968" 32="-483.740845"/>
+						<spawn_bounds>
+							<min x="-8.17925" y="-5" z="-7.623874"/>
+							<max x="8.17925" y="5" z="7.623874"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="79" cargo_zone_import_cargo_type="type=mission_zone,zone_type=destination_dock" display_name="Olsen Village Dock" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.985807" 02="-0.167884" 20="0.167884" 22="0.985807" 30="431.448547" 31="5" 32="-489.087494"/>
+						<spawn_bounds>
+							<min x="-50" y="-10" z="-30"/>
+							<max x="50" y="10" z="30"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="40" tile="data/tiles/mega_island_8_7.xml" name="sawyer_holt" is_env_mod="true">
+				<components>
+					<c component_type="10" id="80" cargo_zone_import_cargo_type="type=mission_zone,zone_type=destination_hospital,hospital" display_name="Central Hospital" show_zone_on_map="true" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.967638" 02="-0.252342" 20="0.252342" 22="0.967638" 30="-4.02259" 31="10.098821" 32="238.437866"/>
+						<spawn_bounds>
+							<min x="-8.676882" y="-1.5" z="-5"/>
+							<max x="8.676882" y="1.5" z="5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="2" id="81" name="id_15" display_name="Doctor" dynamic_object_type="2" character_outfit_category="9" character_type="2" vehicle_file_store="1">
+						<spawn_transform 00="-0.422585" 02="0.906323" 20="-0.906323" 22="-0.422585" 30="1.535898" 31="9.413266" 32="232.370193"/>
+						<spawn_bounds>
+							<min x="-0.11" y="-0.8" z="-0.11"/>
+							<max x="0.11" y="0.8" z="0.11"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="2" id="82" name="id_16" display_name="Doctor" dynamic_object_type="2" character_outfit_category="9" character_type="2" vehicle_file_store="1">
+						<spawn_transform 00="-0.091313" 02="0.995822" 20="-0.995822" 22="-0.091313" 30="2.107087" 31="9.413266" 32="231.652924"/>
+						<spawn_bounds>
+							<min x="-0.11" y="-0.8" z="-0.11"/>
+							<max x="0.11" y="0.8" z="0.11"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="2" id="83" name="id_17" display_name="Doctor" dynamic_object_type="2" character_outfit_category="9" character_type="2" vehicle_file_store="1">
+						<spawn_transform 00="-0.988084" 02="-0.153914" 20="0.153914" 22="-0.988084" 30="-2.330619" 31="9.413266" 32="241.008423"/>
+						<spawn_bounds>
+							<min x="-0.11" y="-0.8" z="-0.11"/>
+							<max x="0.11" y="0.8" z="0.11"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="84" cargo_zone_import_cargo_type="type=mission_zone,zone_type=destination_parking" display_name="Holt Town Parking Lot" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.965196" 02="-0.261528" 20="0.261528" 22="0.965196" 30="7.310385" 31="10.581754" 32="191.879654"/>
+						<spawn_bounds>
+							<min x="-6.064616" y="-2" z="-11.05921"/>
+							<max x="6.064616" y="2" z="11.05921"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="85" cargo_zone_import_cargo_type="type=mission_zone,zone_type=destination_town" display_name="Holt Town" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.966222" 02="-0.257712" 20="0.257712" 22="0.966222" 30="-7.425151" 31="10.377042" 32="207.017685"/>
+						<spawn_bounds>
+							<min x="-16.884747" y="-1.976796" z="-28.393572"/>
+							<max x="16.884747" y="1.976796" z="28.393572"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="41" tile="data/tiles/mega_island_9_8.xml" name="sawyer_dock_north" is_env_mod="true">
+				<components>
+					<c component_type="10" id="86" cargo_zone_import_cargo_type="type=mission_zone,zone_type=destination_dock" display_name="Sawyer North Dock" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="303.358551" 32="442.069"/>
+						<spawn_bounds>
+							<min x="-50" y="-10" z="-25"/>
+							<max x="50" y="10" z="25"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="87" cargo_zone_import_cargo_type="type=mission_zone,zone_type=destination_parking" display_name="Sawyer North Parking Lot" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.999655" 02="-0.026277" 20="0.026277" 22="0.999655" 30="415.829285" 31="10.117827" 32="292.321869"/>
+						<spawn_bounds>
+							<min x="-43.423144" y="-3.362026" z="-26.162489"/>
+							<max x="43.423144" y="3.362026" z="26.162489"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="42" tile="data/tiles/mega_island_12_6.xml" name="sawyer_oneal" is_env_mod="true">
+				<components>
+					<c component_type="10" id="88" cargo_zone_import_cargo_type="type=mission_zone,zone_type=source_airport" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="59.959801" 31="13.671816" 32="110.571381"/>
+						<spawn_bounds>
+							<min x="-5" y="-5" z="-5"/>
+							<max x="5" y="5" z="5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="43" tile="data/tiles/mega_island_15_2.xml" name="sawyer_dock_south" is_env_mod="true">
+				<components>
+					<c component_type="10" id="89" cargo_zone_import_cargo_type="type=mission_zone,zone_type=destination_hospital,hospital" display_name="Village Hospital" show_zone_on_map="true" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.345592" 02="-0.938385" 20="0.938385" 22="-0.345592" 30="87.318932" 31="7.998019" 32="283.124573"/>
+						<spawn_bounds>
+							<min x="-8.676882" y="-1.5" z="-5"/>
+							<max x="8.676882" y="1.5" z="5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="2" id="90" name="id_18" display_name="Doctor" dynamic_object_type="2" character_outfit_category="9" character_type="2" vehicle_file_store="1">
+						<spawn_transform 00="-0.828264" 02="0.560338" 20="-0.560338" 22="-0.828264" 30="85.711029" 31="7.329566" 32="291.22226"/>
+						<spawn_bounds>
+							<min x="-0.11" y="-0.8" z="-0.11"/>
+							<max x="0.11" y="0.8" z="0.11"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="2" id="91" name="id_19" display_name="Doctor" dynamic_object_type="2" character_outfit_category="9" character_type="2" vehicle_file_store="1">
+						<spawn_transform 00="-0.404477" 02="0.914548" 20="-0.914548" 22="-0.404477" 30="86.56929" 31="7.329566" 32="278.200653"/>
+						<spawn_bounds>
+							<min x="-0.11" y="-0.8" z="-0.11"/>
+							<max x="0.11" y="0.8" z="0.11"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="2" id="92" name="id_20" display_name="Doctor" dynamic_object_type="2" character_outfit_category="9" character_type="2" vehicle_file_store="1">
+						<spawn_transform 00="-0.185927" 02="0.982563" 20="-0.982563" 22="-0.185927" 30="86.068695" 31="7.329566" 32="277.299194"/>
+						<spawn_bounds>
+							<min x="-0.11" y="-0.8" z="-0.11"/>
+							<max x="0.11" y="0.8" z="0.11"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="93" cargo_zone_import_cargo_type="type=mission_zone,zone_type=destination_parking" display_name="Sawyer South Parking Lot" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.322735" 02="0.946489" 20="-0.946489" 22="0.322735" 30="40.314072" 31="8.467656" 32="275.854797"/>
+						<spawn_bounds>
+							<min x="-6.064616" y="-2" z="-11.05921"/>
+							<max x="6.064616" y="2" z="11.05921"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="94" cargo_zone_import_cargo_type="type=mission_zone,zone_type=destination_dock" display_name="Sawyer South Dock" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.868569" 02="0.495569" 20="-0.495569" 22="0.868569" 30="168.646255" 32="-410.22702"/>
+						<spawn_bounds>
+							<min x="-50" y="-10" z="-100"/>
+							<max x="50" y="10" z="100"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="95" cargo_zone_import_cargo_type="type=mission_zone,zone_type=destination_village,evacuation" display_name="Sawyer South Village" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.992397" 02="0.123075" 20="-0.123075" 22="0.992397" 30="-131.634491" 31="9.925128" 32="179.857376"/>
+						<spawn_bounds>
+							<min x="-8" y="-2" z="-7"/>
+							<max x="8" y="2" z="7"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="44" tile="data/tiles/mega_island_11_4.xml" name="sawyer_wf" is_env_mod="true">
+				<components>
+					<c component_type="10" id="96" cargo_zone_import_cargo_type="type=mission_zone,zone_type=destination_wind_farm" display_name="Sawyer Wind Farm" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.693894" 02="0.720077" 20="-0.720077" 22="0.693894" 30="-390.348602" 31="22.728155" 32="23.960144"/>
+						<spawn_bounds>
+							<min x="-3.532974" y="-1.5" z="-3.871688"/>
+							<max x="3.532974" y="1.5" z="3.871688"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="45" tile="data/tiles/mega_island_5_9.xml" name="sawyer_lh_north" is_env_mod="true">
+				<components>
+					<c component_type="10" id="97" cargo_zone_import_cargo_type="type=mission_zone,zone_type=destination_lighthouse" display_name="Sawyer North Lighthouse" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.985078" 02="-0.172109" 20="0.172109" 22="0.985078" 30="-48.660503" 31="17.785688" 32="75.925758"/>
+						<spawn_bounds>
+							<min x="-2.194361" y="-1.5" z="-4.569607"/>
+							<max x="2.194361" y="1.5" z="4.569607"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="46" tile="data/tiles/arid_island_3_8.xml" name="arid_chickensaur" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="101" cargo_zone_import_cargo_type="type=mission_zone,zone_type=destination_parking,evacuation" display_name="Chickensaur Gas Station" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.104176" 02="-0.994559" 20="0.994559" 22="-0.104176" 30="-173.991165" 31="17.910593" 32="370.936401"/>
+						<spawn_bounds>
+							<min x="-22" y="-2" z="-12"/>
+							<max x="22" y="2" z="12"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="47" tile="data/tiles/arid_island_3_14.xml" name="arid_raptor_lh" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="102" cargo_zone_import_cargo_type="type=mission_zone,zone_type=destination_lighthouse" display_name="Raptor Lighthouse" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="479.888947" 31="73.924103" 32="485.977814"/>
+						<spawn_bounds>
+							<min x="-5" y="-5" z="-5"/>
+							<max x="5" y="5" z="5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="48" tile="data/tiles/arid_island_4_12.xml" name="arid_qwop" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="103" cargo_zone_import_cargo_type="type=mission_zone,zone_type=destination_village,evacuation" display_name="Qwop Village" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.65068" 02="0.759352" 20="-0.759352" 22="0.65068" 30="169.823486" 31="17.825989" 32="289.682556"/>
+						<spawn_bounds>
+							<min x="-20" y="-2" z="-10"/>
+							<max x="20" y="2" z="10"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="49" tile="data/tiles/arid_island_4_13.xml" name="arid_alexander" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="104" cargo_zone_import_cargo_type="type=mission_zone,zone_type=destination_hospital,hospital" display_name="St. Alexander Hospital" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="47.926594" 31="12.392431" 32="355.979218"/>
+						<spawn_bounds>
+							<min x="-3.5" y="-1.5" z="-10"/>
+							<max x="3.5" y="1.5" z="10"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="105" cargo_zone_import_cargo_type="type=mission_zone,zone_type=source_hospital,evacuation" display_name="Hospital" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="56.455158" 31="12.395936" 32="362.774994"/>
+						<spawn_bounds>
+							<min x="-12" y="-1.5" z="-5"/>
+							<max x="12" y="1.5" z="5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="2" id="106" name="id_107" display_name="Doctor" dynamic_object_type="2" character_outfit_category="9" character_type="2" vehicle_file_store="1">
+						<spawn_transform 30="50.120106" 31="11.695827" 32="367.20166"/>
+						<spawn_bounds>
+							<min x="-0.11" y="-0.8" z="-0.11"/>
+							<max x="0.11" y="0.8" z="0.11"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="2" id="107" name="id_108" display_name="Doctor" dynamic_object_type="2" character_outfit_category="9" character_type="2" vehicle_file_store="1">
+						<spawn_transform 30="48.860653" 31="11.813236" 32="357.77182"/>
+						<spawn_bounds>
+							<min x="-0.11" y="-0.8" z="-0.11"/>
+							<max x="0.11" y="0.8" z="0.11"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="2" id="108" name="id_109" display_name="Doctor" dynamic_object_type="2" character_outfit_category="9" character_type="2" vehicle_file_store="1">
+						<spawn_transform 30="46.101208" 31="11.813236" 32="355.550903"/>
+						<spawn_bounds>
+							<min x="-0.11" y="-0.8" z="-0.11"/>
+							<max x="0.11" y="0.8" z="0.11"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="50" tile="data/tiles/arid_island_5_4.xml" name="arid_noah" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="109" cargo_zone_import_cargo_type="type=mission_zone,zone_type=destination_village,evacuation" display_name="Noah Village" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="242.850464" 31="107.369728" 32="-291.087128"/>
+						<spawn_bounds>
+							<min x="-25" y="-2" z="-15"/>
+							<max x="25" y="2" z="15"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="51" tile="data/tiles/arid_island_7_5.xml" name="arid_endair" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="110" cargo_zone_import_cargo_type="type=mission_zone,zone_type=source_airport" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="78.758049" 31="180.920563" 32="-48.972477"/>
+						<spawn_bounds>
+							<min x="-5" y="-5" z="-5"/>
+							<max x="5" y="5" z="5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="52" tile="data/tiles/arid_island_8_10.xml" name="arid_gravedigger" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="111" cargo_zone_import_cargo_type="type=mission_zone,zone_type=destination_parking,evacuation" display_name="Gravedigger Parking Lot" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="-76.283028" 31="113.32412" 32="-368.027283"/>
+						<spawn_bounds>
+							<min x="-55" y="-2" z="-40"/>
+							<max x="55" y="2" z="40"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="53" tile="data/tiles/arid_island_8_15.xml" name="arid_uran" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="112" cargo_zone_import_cargo_type="type=mission_zone,zone_type=destination_dock" display_name="Uran Wind Dock" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="-98.089668" 31="4.999989" 32="-44.78513"/>
+						<spawn_bounds>
+							<min x="-356" y="-10" z="-256"/>
+							<max x="356" y="10" z="256"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="54" tile="data/tiles/arid_island_9_9.xml" name="arid_chaykovsky" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="113" cargo_zone_import_cargo_type="type=mission_zone,zone_type=destination_village,evacuation" display_name="Chaykovsky Town" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="-362.938843" 31="55.146439" 32="-0.704985"/>
+						<spawn_bounds>
+							<min x="-40.461196" y="-2" z="-40.570443"/>
+							<max x="40.461196" y="2" z="40.570443"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="55" tile="data/tiles/arid_island_10_6.xml" name="arid_karn" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="114" cargo_zone_import_cargo_type="type=mission_zone,zone_type=evacuation" display_name="Karn Industries" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="-346.14035" 31="31.004875" 32="-319.351166"/>
+						<spawn_bounds>
+							<min x="-5" y="-1.5" z="-5"/>
+							<max x="5" y="1.5" z="5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="56" tile="data/tiles/arid_island_11_5.xml" name="arid_chris" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="115" cargo_zone_import_cargo_type="type=mission_zone,zone_type=destination_village,evacuation" display_name="Chris Ranch" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.164534" 02="-0.986371" 20="0.986371" 22="0.164534" 30="-27.836172" 31="39.866016" 32="199.543655"/>
+						<spawn_bounds>
+							<min x="-18" y="-2" z="-15"/>
+							<max x="18" y="2" z="15"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="57" tile="data/tiles/arid_island_11_6.xml" name="arid_kahrstrom" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="116" cargo_zone_import_cargo_type="type=mission_zone,zone_type=destination_parking,evacuation" display_name="Kahrstrom Gas Station" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.868304" 02="0.496033" 20="-0.496033" 22="-0.868304" 30="258.177246" 31="51.92371" 32="-21.990438"/>
+						<spawn_bounds>
+							<min x="-18.905269" y="-2" z="-12"/>
+							<max x="18.905269" y="2" z="12"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="58" tile="data/tiles/arid_island_11_14.xml" name="arid_brainz" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="117" cargo_zone_import_cargo_type="type=mission_zone,zone_type=evacuation" display_name="Brainz Train Yard" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="299.309906" 31="31.623325" 32="-108.650887"/>
+						<spawn_bounds>
+							<min x="-5" y="-2" z="-5"/>
+							<max x="5" y="2" z="5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="59" tile="data/tiles/arid_island_12_10.xml" name="arid_lex" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="118" cargo_zone_import_cargo_type="type=mission_zone,zone_type=destination_parking,evacuation" display_name="Lex Truck Stop" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="-385.064117" 31="31.192926" 32="269.349365"/>
+						<spawn_bounds>
+							<min x="-48.569631" y="-2" z="-44.084412"/>
+							<max x="48.569631" y="2" z="44.084412"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="119" cargo_zone_import_cargo_type="type=mission_zone,zone_type=destination_parking,evacuation" display_name="Hyanen Garage" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.669187" 02="0.743095" 20="-0.743095" 22="-0.669187" 30="265.026642" 31="32.941338" 32="265.0177"/>
+						<spawn_bounds>
+							<min x="-14.775092" y="-2" z="-9.220534"/>
+							<max x="14.775092" y="2" z="9.220534"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="60" tile="data/tiles/arid_island_12_13.xml" name="arid_expo" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="120" cargo_zone_import_cargo_type="type=mission_zone,zone_type=destination_village,evacuation" display_name="Expo Village" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="157.052979" 31="30.454269" 32="99.575272"/>
+						<spawn_bounds>
+							<min x="-30.729954" y="-2" z="-17.73754"/>
+							<max x="30.729954" y="2" z="17.73754"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="61" tile="data/tiles/arid_island_13_6.xml" name="arid_scxeech" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="121" cargo_zone_import_cargo_type="type=mission_zone,zone_type=evacuation" display_name="Scxeech Trading Yard" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="-411.18631" 31="31.920399" 32="-194.785431"/>
+						<spawn_bounds>
+							<min x="-5" y="-2" z="-5"/>
+							<max x="5" y="2" z="5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="62" tile="data/tiles/arid_island_15_5.xml" name="arid_mallamar" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="122" cargo_zone_import_cargo_type="type=mission_zone,zone_type=evacuation" display_name="Mallamar Laboratory" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="-315.990417" 31="32.070999" 32="-161.38118"/>
+						<spawn_bounds>
+							<min x="-5" y="-2" z="-5"/>
+							<max x="5" y="2" z="5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="63" tile="data/tiles/arid_island_16_9.xml" name="arid_RENAME" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="123" cargo_zone_import_cargo_type="type=mission_zone,zone_type=destination_hospital,hospital" display_name="RENAME Hospital" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.003911" 02="-0.999992" 20="0.999992" 22="0.003911" 30="307.373993" 31="17.663774" 32="-101.73381"/>
+						<spawn_bounds>
+							<min x="-3.5" y="-1.5" z="-10"/>
+							<max x="3.5" y="1.5" z="10"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="124" cargo_zone_import_cargo_type="type=mission_zone,zone_type=source_hospital,evacuation" display_name="Hospital" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.037756" 02="-0.999287" 20="0.999287" 22="0.037756" 30="313.382172" 31="17.664614" 32="-94.166832"/>
+						<spawn_bounds>
+							<min x="-12" y="-1.5" z="-5"/>
+							<max x="12" y="1.5" z="5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="2" id="125" name="id_125" display_name="Doctor" dynamic_object_type="2" character_outfit_category="9" character_type="2" vehicle_file_store="1">
+						<spawn_transform 30="318.597412" 31="17.464876" 32="-99.724487"/>
+						<spawn_bounds>
+							<min x="-0.11" y="-0.8" z="-0.11"/>
+							<max x="0.11" y="0.8" z="0.11"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="2" id="126" name="id_126" display_name="Doctor" dynamic_object_type="2" character_outfit_category="9" character_type="2" vehicle_file_store="1">
+						<spawn_transform 30="312.931793" 31="17.729549" 32="-103.43293"/>
+						<spawn_bounds>
+							<min x="-0.11" y="-0.8" z="-0.11"/>
+							<max x="0.11" y="0.8" z="0.11"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="2" id="127" name="id_127" display_name="Doctor" dynamic_object_type="2" character_outfit_category="9" character_type="2" vehicle_file_store="1">
+						<spawn_transform 30="308.615906" 31="17.729549" 32="-103.185608"/>
+						<spawn_bounds>
+							<min x="-0.11" y="-0.8" z="-0.11"/>
+							<max x="0.11" y="0.8" z="0.11"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="64" tile="data/tiles/arid_island_16_10.xml" name="arid_ace" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="128" cargo_zone_import_cargo_type="type=mission_zone,zone_type=evacuation" display_name="Ace Master Separator" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="292.00885" 31="19.046669" 32="-217.72496"/>
+						<spawn_bounds>
+							<min x="-5" y="-2" z="-5"/>
+							<max x="5" y="2" z="5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="65" tile="data/tiles/arid_island_16_14.xml" name="arid_hen" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="129" cargo_zone_import_cargo_type="type=mission_zone,zone_type=evacuation" display_name="Hennenberg Old Mine" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="-308.360565" 31="140.683304" 32="-215.397507"/>
+						<spawn_bounds>
+							<min x="-5" y="-2" z="-5"/>
+							<max x="5" y="2" z="5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="66" tile="data/tiles/arid_island_17_4.xml" name="arid_brit" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="130" cargo_zone_import_cargo_type="type=mission_zone,zone_type=evacuation" display_name="Britzilla Uranium Shaft" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="-161.130371" 31="169.339523" 32="134.392456"/>
+						<spawn_bounds>
+							<min x="-5" y="-2" z="-5"/>
+							<max x="5" y="2" z="5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="67" tile="data/tiles/arid_island_17_9.xml" name="arid_pers" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="131" cargo_zone_import_cargo_type="type=mission_zone,zone_type=destination_village,evacuation" display_name="Personaggio Farm" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.840774" 02="-0.541386" 20="0.541386" 22="0.840774" 30="-71.823242" 31="18.492474" 32="86.296295"/>
+						<spawn_bounds>
+							<min x="-22" y="-2" z="-25"/>
+							<max x="22" y="2" z="25"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="68" tile="data/tiles/arid_island_18_7.xml" name="arid_lyam" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="132" cargo_zone_import_cargo_type="type=mission_zone,zone_type=destination_parking,evacuation" display_name="Lyam's Garage" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.9973" 02="-0.073432" 20="0.073432" 22="-0.9973" 30="-368.701813" 31="17.504326" 32="130.261078"/>
+						<spawn_bounds>
+							<min x="-39.086945" y="-2" z="-19.434379"/>
+							<max x="39.086945" y="2" z="19.434379"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="69" tile="data/tiles/arid_island_19_5.xml" name="arid_empire" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="133" cargo_zone_import_cargo_type="type=mission_zone,zone_type=evacuation" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="-118.432518" 31="4.549694" 32="-115.194679"/>
+						<spawn_bounds>
+							<min x="-5" y="-2" z="-5"/>
+							<max x="5" y="2" z="5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="70" tile="data/tiles/arid_island_19_11.xml" name="arid_clarke" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="134" cargo_zone_import_cargo_type="type=mission_zone,zone_type=source_airport" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="30.199533" 31="24.118782" 32="155.349991"/>
+						<spawn_bounds>
+							<min x="-5" y="-5" z="-5"/>
+							<max x="5" y="5" z="5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="71" tile="data/tiles/arid_island_23_11.xml" name="arid_enzo" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="135" cargo_zone_import_cargo_type="type=mission_zone,zone_type=destination_village,evacuation" display_name="Enzo Village" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="-102.256783" 31="21.994043" 32="290.902069"/>
+						<spawn_bounds>
+							<min x="-55.637949" y="-2" z="-43.771664"/>
+							<max x="55.637949" y="2" z="43.771664"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="72" tile="data/tiles/arid_island_24_3.xml" name="arid_jsi" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="136" cargo_zone_import_cargo_type="type=mission_zone,zone_type=destination_dock" display_name="JSI Dock" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="254.601669" 31="5" 32="235.792145"/>
+						<spawn_bounds>
+							<min x="-113.305515" y="-10" z="-45.373606"/>
+							<max x="113.305515" y="10" z="45.373606"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="73" tile="data/tiles/arid_island_26_14.xml" name="arid_fjw" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="137" cargo_zone_import_cargo_type="type=mission_zone,zone_type=destination_dock" display_name="Fj Warner Docks" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="0.966565" 02="0.256424" 20="-0.256424" 22="0.966565" 30="-94.927444" 31="4.999993" 32="236.288254"/>
+						<spawn_bounds>
+							<min x="-352.635453" y="-10" z="-166.456721"/>
+							<max x="352.635453" y="10" z="166.456721"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="138" cargo_zone_import_cargo_type="type=mission_zone,zone_type=source_airport" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="-287.403992" 31="13.6347" 32="-441.398987"/>
+						<spawn_bounds>
+							<min x="-5" y="-5" z="-5"/>
+							<max x="5" y="5" z="5"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="74" tile="data/tiles/arid_island_27_10.xml" name="arid_zizo" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="139" cargo_zone_import_cargo_type="type=mission_zone,zone_type=destination_parking,evacuation" display_name="Zizo's Garage" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 00="-0.731178" 02="-0.682186" 20="0.682186" 22="-0.731178" 30="-280.578918" 31="21.749004" 32="226.91835"/>
+						<spawn_bounds>
+							<min x="-44.030765" y="-2" z="-19.989565"/>
+							<max x="44.030765" y="2" z="19.989565"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="75" tile="data/tiles/arid_island_29_4.xml" name="arid_campbell" is_env_mod="true" env_mod_spawn_num="1">
+				<components>
+					<c component_type="10" id="140" cargo_zone_import_cargo_type="type=mission_zone,zone_type=destination_lighthouse" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_store="1">
+						<spawn_transform 30="279.364929" 31="90.929863" 32="37.831589"/>
+						<spawn_bounds>
+							<min x="-3.25" y="-1.5" z="-4.25"/>
+							<max x="3.25" y="1.5" z="4.25"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+		</locations>
+	</locations>
+</playlist>
+

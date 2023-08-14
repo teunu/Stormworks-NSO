@@ -1,0 +1,78 @@
+f32 fov_sprint 1.22
+f32 fov_zoom 0.4
+f32 fov_vehicle 1.22
+f32 fov_default 1.22
+
+s32 fov_duration_default 40
+s32 fov_duration_zoom_in 40
+s32 fov_duration_override 40
+s32 fov_duration_sprint 60
+s32 fov_blend_ease 2
+s32 fov_blend_function 1
+
+f32 camera_rotation_blend_strength_vehicle_new 0.06
+f32 camera_rotation_blend_strength_vehicle 1.0
+f32 camera_position_blend_strength_vehicle 1.0
+
+f32 camera_rotation_blend_strength_default_new 1.0	
+f32 camera_rotation_blend_strength_person 1.0	
+f32 camera_position_blend_strength_person 1.0
+
+f32 camera_rotation_blend_strength_default 1.0
+f32 camera_position_blend_strength_default 1.0
+
+vec3 third_person_offset 0.0, 0.0, -3.0
+
+f32 render_height_offset_factor 1.2
+
+f32 camera_rotation_blend_strength_cinematic 0.01
+f32 camera_position_blend_strength_cinematic 1.0
+
+f32 mouse_speed_mod 8.0
+
+f32 sleep_camera_min_y 30.0
+vec3 sleep_camera_view_dir -1.5, 0.0, 1.0
+
+f32 fpv_y 0.05
+f32 fpv_z -0.14
+f32 fpv_blend_linear_radius 0.1
+f32 fpv_blend_weight 0.15
+f32 fpv_crouch_scale 0.6
+f32 fpv_crouch_offset -0.3
+f32 fpv_body_orientation_blend_strength 0.5
+
+f32 fpv_ik_elbow_rotation -0.5
+f32 fpv_ik_anim_blend_target_rotation 0.25
+
+f32 wrist_x 0.0
+f32 wrist_y -1.571
+f32 wrist_z 0.0
+
+f32 hand_ik_rotate_x 1.5707
+f32 hand_ik_rotate_y 1.5707
+f32 hand_ik_rotate_z 0.0
+
+f32 water_height_fpv 0.30
+f32 water_height_threshold 1.0
+
+f32 ocean_surface_offset 0.05
+
+f32 camera_shake_decay 1.5
+f32 camera_shake_power 1.25
+f32 camera_shake_frequency 36.0
+s32 camera_shake_step_size 512
+f32 camera_trauma_penalty 0.2
+vec3 camera_shake_max_ypr 0.03, 0.03, 0.01
+
+f32 ik_shoulder_blend 1.0
+vec3 ik_target 0.0, 0.05, 0.3
+vec3 hand_rotation 0.0, 0.0, 0.0
+vec3 equipment_rotation 0.0, 0.0, 0.0
+vec3 equipment_offset 0.0, 0.0, 0.0
+vec3 equipment_offset_b 0.0, 0.0, 0.0
+vec3 left_hand_offset 0.0, 0.0, 0.0
+vec3 left_hand_rotation 0.0, 0.0, 0.0
+
+f32 equipment_rotate_chest 1.0
+
+
