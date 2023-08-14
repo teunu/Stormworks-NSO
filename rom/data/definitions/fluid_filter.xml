@@ -1,5 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<definition name="Fluid Filter (Deprecated)" category="9" type="24" mass="5" value="400" flags="536870912" tags="basic" mesh_data_name="meshes/component_fluid_filter.mesh" constraint_axis="1" max_motor_force="100" max_motor_speed="10" cable_radius="16" cable_length="-431602080" seat_health_per_sec="1" buoy_radius="1" buoy_factor="1" buoy_force="100" force_emitter_max_force="1000" force_emitter_max_vector="1" engine_max_force="1000" wheel_radius="0.25" button_type="1" light_intensity="1" light_range="1" light_ies_map="graphics/ies/ies_default.txtr" light_fov="1" door_lower_limit="-1" door_upper_limit="1" dynamic_max_rotation="3.141593" magnet_force="1" pump_pressure="0.01" water_component_type="10">
+<definition name="Fluid Filter (Deprecated)"
+category="9"
+type="24"
+mass="5"
+value="400"
+flags="536870912"
+tags="basic"
+mesh_data_name="meshes/component_fluid_filter.mesh"
+constraint_axis="1"
+max_motor_force="100"
+max_motor_speed="10"
+cable_radius="16"
+cable_length="-431602080"
+seat_health_per_sec="1"
+buoy_radius="1"
+buoy_factor="1"
+buoy_force="100"
+force_emitter_max_force="1000"
+force_emitter_max_vector="1"
+engine_max_force="1000"
+wheel_radius="0.25"
+button_type="1"
+light_intensity="1"
+light_range="1"
+light_ies_map="graphics/ies/ies_default.txtr"
+light_fov="1"
+door_lower_limit="-1"
+door_upper_limit="1"
+dynamic_max_rotation="3.141593"
+magnet_force="1"
+pump_pressure="0.01"
+water_component_type="10">
 	<tooltip_properties description="The valve can be configured to select which fluids may pass across the two directional valve." short_description="The fluid filter only allows certain types of fluid across the valve."/>
 	<sfx_datas/>
 	<surfaces>

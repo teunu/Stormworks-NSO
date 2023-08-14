@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<definition name="Oil Rig Rotary Table" category="14" type="59" mass="500" value="1000" flags="1" mesh_data_name="meshes/component_rotary_table.mesh" mesh_0_name="meshes/component_rotary_table_dynamic.mesh" mesh_editor_only_name="meshes/arrow_rotary_table.mesh" oil_component_type="3">
+<definition name="Oil Rig Rotary Table"
+category="14"
+type="59"
+mass="500"
+value="1000"
+flags="1"
+mesh_data_name="meshes/component_rotary_table.mesh"
+mesh_0_name="meshes/component_rotary_table_dynamic.mesh"
+mesh_editor_only_name="meshes/arrow_rotary_table.mesh"
+oil_component_type="3">
 	<tooltip_properties description="Torque provided by an external motor rotates the table, which can rotate a drill rod placed through the center of the table." short_description="A rotary table for drilling in an oil rig."/>
 	<sfx_datas>
 		<sfx_data sfx_name="grab" sfx_range_inner="5" sfx_range_outer="30" sfx_priority="0.6">
