@@ -554,6 +554,8 @@ local biomes = {
                 {c=2000, a={97}, min=3, max=6}, --buffalo plains
                 {c=2000, a={99}, min=1, max=1}, --roadrunner plains
 				{c=2000, a={102}, min=1, max=1}, --coyote plains
+                {c=2000, a={103}, min=1, max=1}, --gila plains
+				{c=2000, a={104}, min=2, max=6}, --tortoise plains
             },
             mid = {
                 {c=2000, a={-1}, min=1, max=1}, --none
@@ -565,6 +567,8 @@ local biomes = {
                 {c=2000, a={97}, min=3, max=6}, --buffalo plains
                 {c=2000, a={99}, min=1, max=1}, --roadrunner plains
 				{c=2000, a={102}, min=1, max=1}, --coyote plains
+				{c=2000, a={103}, min=1, max=1}, --gila plains
+				{c=2000, a={104}, min=2, max=6}, --tortoise plains
             },
             high = {
                 {c=2000, a={-1}, min=1, max=1}, --none
@@ -576,6 +580,8 @@ local biomes = {
                 {c=2000, a={97}, min=3, max=6}, --buffalo plains
                 {c=2000, a={99}, min=1, max=1}, --roadrunner plains
 				{c=2000, a={102}, min=1, max=1}, --coyote plains
+				{c=2000, a={103}, min=1, max=1}, --gila plains
+				{c=2000, a={104}, min=2, max=6}, --tortoise plains
             }
         },
     },

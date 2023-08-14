@@ -352,10 +352,10 @@
 		</interactable>
 	</interactables>
 	<door_logic_nodes>
-		<logic id="door_hangar_right_logic" target_a="hangar_door_right_closed" target_b="door_hangar_right_open" target_movable="door_hangar_right" anim_duration="300">
+		<logic id="door_hangar_right_logic" target_a="hangar_door_right_closed" target_b="door_hangar_right_open" target_movable="door_hangar_right" anim_duration="750">
 			<transform 00="0.022589" 02="0.999745" 20="-0.999745" 22="0.022589" 30="-8.929709" 31="7.581355" 32="10.629065"/>
 		</logic>
-		<logic id="hangar_door_left_logic" target_a="door_hangar_left_closed" target_b="door_hangar_left_open" target_movable="door_hangar_left" anim_duration="300">
+		<logic id="hangar_door_left_logic" target_a="door_hangar_left_closed" target_b="door_hangar_left_open" target_movable="door_hangar_left" anim_duration="750">
 			<transform 00="-0.032957" 02="0.999457" 20="-0.999457" 22="-0.032957" 30="-8.82302" 31="7.564692" 32="12.141701"/>
 		</logic>
 		<logic id="hangar_sidedoor_logic" target_a="hangar_sidedoor_closed" target_b="hangar_sidedoor_open" target_movable="hangar_sidedoor" anim_duration="50">
@@ -446,7 +446,7 @@
 		</logic>
 	</rotation_logic_nodes>
 	<hangar_door_logic_nodes>
-		<logic id="hangar_doors_logic" target_id_0="door_hangar_right_logic" target_id_1="hangar_door_left_logic">
+		<logic id="hangar_doors_logic" target_id_0="door_hangar_right_logic" target_id_1="hangar_door_left_logic" target_id_2="hangar_doors_audio">
 			<transform 00="0.026469" 02="0.99965" 20="-0.99965" 22="0.026469" 30="-8.973136" 31="7.780879" 32="11.390511"/>
 		</logic>
 		<logic id="floodlight_logic" target_id_0="flood_omnis" target_id_1="flood_spot_logic" cooldown_time="60">
@@ -468,7 +468,11 @@
 			<transform 00="-0.052881" 02="-0.998601" 20="0.998601" 22="-0.052881" 30="3.336934" 31="7.180779" 32="0.493375"/>
 		</logic>
 	</hangar_door_logic_nodes>
-	<audio_logic_nodes/>
+	<audio_logic_nodes>
+		<logic id="hangar_doors_audio" start_filename="audio/elevator/cn_elevator_start.ogg" loop_filename="audio/elevator/cn_elevator_lp.ogg" end_filename="audio/elevator/cn_elevator_end.ogg" range_inner="15" range_outer="75" audio_gain="1" audio_underwater_affected="true" play_duration="725">
+			<transform 30="-8.868465" 31="10" 32="22.162178"/>
+		</logic>
+	</audio_logic_nodes>
 	<tile_markers>
 		<markers id="hangar_door_right_closed" marker_type="8">
 			<transform 30="-8.926108" 31="4.982265" 32="13.285589"/>
@@ -523,11 +527,11 @@
 		</markers>
 	</tile_markers>
 	<mission_zones>
-		<zone id="mission_zone0">
-			<transform 30="3.388405" 31="7.744045" 32="22.331854"/>
-			<size x="20.125854" y="5" z="32.433228"/>
-			<outer_scale x="1.1" y="1" z="1"/>
-			<outer_offset x="-1"/>
+		<zone id="hangar_indoor" audio_reverb_gain="0.25" audio_reverb_amount="0.125">
+			<transform 30="4.173935" 31="7.744045" 32="22.331854"/>
+			<size x="20" y="5" z="32.433228"/>
+			<outer_scale x="1.15" y="1" z="1"/>
+			<outer_offset x="-1.5"/>
 		</zone>
 		<zone id="mission_zone1">
 			<transform 30="6.641151" 31="6.185329" 32="-1.554468"/>
@@ -666,4 +670,3 @@
 	<volcano_markers/>
 	<mineral_rocks/>
 </definition>
-

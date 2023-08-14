@@ -91,7 +91,7 @@ rx_length="1"
 rocket_type="1"
 radar_range="20000">
 	<sfx_datas>
-		<sfx_data sfx_name="engine" sfx_range_inner="7.0" sfx_range_outer="100.0" sfx_priority="1.0" sfx_is_underwater_affected="true">
+		<sfx_data sfx_name="engine" sfx_range_inner="3.0" sfx_range_outer="75.0" sfx_priority="1.0" sfx_is_underwater_affected="true">
 			<sfx_layers>
 				<sfx_layer sfx_filename_start="" sfx_filename_loop="audio/fx5/sfx_engine_02_lvl1.ogg" sfx_filename_end="" sfx_gain="1" sfx_loop_start_time="0.0" sfx_loop_blend_duration="10" sfx_volume_fade_speed="1" sfx_pitch_fade_speed="1"/>
 				<sfx_layer sfx_filename_start="" sfx_filename_loop="audio/fx5/sfx_engine_02_lvl2.ogg" sfx_filename_end="" sfx_gain="1" sfx_loop_start_time="0.0" sfx_loop_blend_duration="10" sfx_volume_fade_speed="1" sfx_pitch_fade_speed="1"/>
@@ -99,7 +99,7 @@ radar_range="20000">
 				<sfx_layer sfx_filename_start="" sfx_filename_loop="audio/fx5/sfx_engine_02_lvl4.ogg" sfx_filename_end="" sfx_gain="1" sfx_loop_start_time="0.0" sfx_loop_blend_duration="10" sfx_volume_fade_speed="1" sfx_pitch_fade_speed="1"/>
 			</sfx_layers>
 		</sfx_data>
-		<sfx_data sfx_name="starter" sfx_range_inner="7.0" sfx_range_outer="70.0" sfx_priority="1.0" sfx_is_underwater_affected="true">
+		<sfx_data sfx_name="starter" sfx_range_inner="3.0" sfx_range_outer="75.0" sfx_priority="1.0" sfx_is_underwater_affected="true">
 			<sfx_layers>
 				<sfx_layer sfx_filename_start="audio/fx2/stormworks_enginestart_medium_start.ogg" sfx_filename_loop="audio/fx2/stormworks_enginestart_medium_mid.ogg" sfx_filename_end="audio/fx2/stormworks_enginestart_medium_end.ogg" sfx_gain="0.3" sfx_loop_start_time="0.25" sfx_loop_blend_duration="10.0" sfx_volume_fade_speed="1.0" sfx_pitch_fade_speed="1.0"/>
 			</sfx_layers>
@@ -539,4 +539,3 @@ radar_range="20000">
 	<particle_bounds x="0.2" y="0.2" z="0.2"/>
 	<rope_hook_offset x="0" y="0" z="0"/>
 </definition>
-
