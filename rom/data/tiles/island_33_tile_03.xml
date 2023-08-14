@@ -81,7 +81,14 @@
 	<hangar_door_logic_nodes/>
 	<audio_logic_nodes/>
 	<tile_markers/>
-	<mission_zones/>
+	<mission_zones>
+		<zone id="tunnel_indoor_audio" audio_reverb_gain="0.5" audio_reverb_amount="0.25">
+			<transform 00="0.478498" 02="-0.878088" 20="0.878088" 22="0.478498" 30="287.849121" 31="19.029408" 32="-490.214172"/>
+			<size x="12" y="8" z="100"/>
+			<outer_scale x="1" y="1" z="1.2"/>
+			<outer_offset z="10"/>
+		</zone>
+	</mission_zones>
 	<dynamic_markers/>
 	<ladders/>
 	<perches>

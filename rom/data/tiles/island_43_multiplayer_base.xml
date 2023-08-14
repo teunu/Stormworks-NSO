@@ -197,7 +197,7 @@
 			<transform 30="-125.207069" 31="16.600368" 32="123.187607"/>
 			<color x="1" y="1" z="0.8"/>
 		</light>
-		<light id="main_01" radius="25" is_render_halo="true">
+		<light id="main_01" radius="50">
 			<transform 30="-133.093018" 31="26.171953" 32="84.355255"/>
 			<color x="46" y="48" z="50"/>
 		</light>
@@ -205,7 +205,7 @@
 			<transform 30="-115.961548" 31="15.16342" 32="131.30304"/>
 			<color x="1" y="1" z="0.6"/>
 		</light>
-		<light id="main_02" radius="25" is_render_halo="true">
+		<light id="main_02" radius="25">
 			<transform 30="-106.871971" 31="26.171953" 32="110.548561"/>
 			<color x="46" y="48" z="50"/>
 		</light>
@@ -249,7 +249,7 @@
 			<transform 30="-119.178123" 31="19.578842" 32="126.651932"/>
 			<color x="1" y="1" z="0.8"/>
 		</light>
-		<light id="main_03" radius="25" is_render_halo="true">
+		<light id="main_03" radius="50">
 			<transform 30="-80.645805" 31="26.171953" 32="136.784851"/>
 			<color x="46" y="48" z="50"/>
 		</light>
@@ -343,6 +343,70 @@
 		<light id="tube9" length="4" radius="4">
 			<transform 00="-1" 11="0.8814" 12="-0.472371" 21="-0.472371" 22="-0.8814" 30="346.849396" 31="11.192642" 32="-163.014008"/>
 			<color x="2" y="2" z="1.8"/>
+		</light>
+		<light id="runway_omni01" radius="5">
+			<transform 30="358.310059" 31="14.022221" 32="281.387299"/>
+			<color y="50"/>
+		</light>
+		<light id="runway_omni02" radius="5">
+			<transform 30="336.861237" 31="14.022221" 32="259.932129"/>
+			<color y="50"/>
+		</light>
+		<light id="runway_omni03" radius="5">
+			<transform 30="315.824188" 31="14.022221" 32="238.889999"/>
+			<color y="50"/>
+		</light>
+		<light id="runway_omni04" radius="5">
+			<transform 30="294.728088" 31="14.022221" 32="217.771667"/>
+			<color y="50"/>
+		</light>
+		<light id="runway_omni05" radius="5">
+			<transform 30="273.564758" 31="14.022221" 32="196.638641"/>
+			<color y="50"/>
+		</light>
+		<light id="runway_omni06" radius="5">
+			<transform 30="252.367065" 31="14.022221" 32="175.416031"/>
+			<color y="50"/>
+		</light>
+		<light id="runway_omni07" radius="5">
+			<transform 30="231.271149" 31="14.022221" 32="154.354294"/>
+			<color y="50"/>
+		</light>
+		<light id="runway_omni08" radius="5">
+			<transform 30="209.796524" 31="14.022221" 32="132.837265"/>
+			<color y="50"/>
+		</light>
+		<light id="runway_omni09" radius="5">
+			<transform 30="-130.298874" 31="14.022221" 32="-207.243195"/>
+			<color y="50"/>
+		</light>
+		<light id="runway_omni10" radius="5">
+			<transform 30="-151.771133" 31="14.022221" 32="-228.705368"/>
+			<color y="50"/>
+		</light>
+		<light id="runway_omni11" radius="5">
+			<transform 30="-172.812073" 31="14.022221" 32="-249.768539"/>
+			<color y="50"/>
+		</light>
+		<light id="runway_omni12" radius="5">
+			<transform 30="-193.915497" 31="14.022221" 32="-270.855927"/>
+			<color y="50"/>
+		</light>
+		<light id="runway_omni13" radius="5">
+			<transform 30="-215.059662" 31="14.022221" 32="-292.011444"/>
+			<color y="50"/>
+		</light>
+		<light id="runway_omni14" radius="5">
+			<transform 30="-236.263306" 31="14.022221" 32="-313.195618"/>
+			<color y="50"/>
+		</light>
+		<light id="runway_omni15" radius="5">
+			<transform 30="-257.335266" 31="14.022221" 32="-334.271515"/>
+			<color y="50"/>
+		</light>
+		<light id="runway_omni16" radius="5">
+			<transform 30="-278.850891" 31="14.022221" 32="-355.788879"/>
+			<color y="50"/>
 		</light>
 	</lights_tube>
 	<screens/>
@@ -470,7 +534,7 @@
 			<size x="0.271459" y="0.429815" z="0.134903"/>
 		</interactable>
 		<interactable id="sale_sign_interact" label="Buy Island" interact_type="3">
-			<transform 30="-77.833397" 31="15.041443" 32="86.478958"/>
+			<transform 30="-77.812981" 31="15.041443" 32="86.30909"/>
 			<size x="2.41009" y="1.972294" z="2.350486"/>
 		</interactable>
 		<interactable id="wardrobe_int" label="Wardrobe" interact_type="4">
@@ -488,40 +552,40 @@
 		<logic id="door_glass_03_logic" target_a="door_glass_03_closed" target_b="door_glass_03_open" target_movable="door_glass_03" anim_duration="60">
 			<transform 00="-0.71268" 02="0.701489" 20="-0.701489" 22="-0.71268" 30="-125.01709" 31="18.293919" 32="122.75676"/>
 		</logic>
-		<logic id="logic3" target_a="door_01_closed" target_b="door_01_open" target_movable="door_01" anim_duration="320">
+		<logic id="logic3" target_a="door_01_closed" target_b="door_01_open" target_movable="door_01" anim_duration="750">
 			<transform 00="-0.707107" 02="-0.707107" 20="0.707107" 22="-0.707107" 30="-128.700745" 31="19.296928" 32="43.227238"/>
 		</logic>
-		<logic id="logic4" target_a="door_02_closed" target_b="door_02_open" target_movable="door_02" anim_duration="320">
+		<logic id="logic4" target_a="door_02_closed" target_b="door_02_open" target_movable="door_02" anim_duration="750">
 			<transform 00="-0.707107" 02="-0.707107" 20="0.707107" 22="-0.707107" 30="-128.121109" 31="19.296928" 32="43.806862"/>
 		</logic>
-		<logic id="logic5" target_a="door_03_closed" target_b="door_03_open" target_movable="door_03" anim_duration="320">
+		<logic id="logic5" target_a="door_03_closed" target_b="door_03_open" target_movable="door_03" anim_duration="750">
 			<transform 00="-0.707107" 02="-0.707107" 20="0.707107" 22="-0.707107" 30="-127.526382" 31="19.296928" 32="44.401592"/>
 		</logic>
-		<logic id="logic6" target_a="door_04_closed" target_b="door_04_open" target_movable="door_04" anim_duration="320">
+		<logic id="logic6" target_a="door_04_closed" target_b="door_04_open" target_movable="door_04" anim_duration="750">
 			<transform 00="-0.707107" 02="-0.707107" 20="0.707107" 22="-0.707107" 30="-126.960518" 31="19.296928" 32="44.967457"/>
 		</logic>
-		<logic id="logic7" target_a="door_05_closed" target_b="door_05_open" target_movable="door_05" anim_duration="320">
+		<logic id="logic7" target_a="door_05_closed" target_b="door_05_open" target_movable="door_05" anim_duration="750">
 			<transform 00="-0.707107" 02="-0.707107" 20="0.707107" 22="-0.707107" 30="-126.385132" 31="19.296928" 32="45.542847"/>
 		</logic>
-		<logic id="logic8" target_a="door_06_closed" target_b="door_06_open" target_movable="door_06" anim_duration="320">
+		<logic id="logic8" target_a="door_06_closed" target_b="door_06_open" target_movable="door_06" anim_duration="750">
 			<transform 00="-0.707107" 02="-0.707107" 20="0.707107" 22="-0.707107" 30="-125.689499" 31="19.296928" 32="46.23848"/>
 		</logic>
-		<logic id="logic9" target_a="door_07_closed" target_b="door_07_open" target_movable="door_07" anim_duration="320">
+		<logic id="logic9" target_a="door_07_closed" target_b="door_07_open" target_movable="door_07" anim_duration="750">
 			<transform 00="-0.707107" 02="-0.707107" 20="0.707107" 22="-0.707107" 30="-77.316154" 31="19.296928" 32="94.611794"/>
 		</logic>
-		<logic id="logic10" target_a="door_08_closed" target_b="door_08_open" target_movable="door_08" anim_duration="320">
+		<logic id="logic10" target_a="door_08_closed" target_b="door_08_open" target_movable="door_08" anim_duration="750">
 			<transform 00="-0.707107" 02="-0.707107" 20="0.707107" 22="-0.707107" 30="-76.551483" 31="19.296928" 32="95.376465"/>
 		</logic>
-		<logic id="logic11" target_a="door_09_closed" target_b="door_09_open" target_movable="door_09" anim_duration="320">
+		<logic id="logic11" target_a="door_09_closed" target_b="door_09_open" target_movable="door_09" anim_duration="750">
 			<transform 00="-0.707107" 02="-0.707107" 20="0.707107" 22="-0.707107" 30="-75.798653" 31="19.296928" 32="96.129295"/>
 		</logic>
-		<logic id="logic12" target_a="door_10_closed" target_b="door_10_open" target_movable="door_10" anim_duration="320">
+		<logic id="logic12" target_a="door_10_closed" target_b="door_10_open" target_movable="door_10" anim_duration="750">
 			<transform 00="-0.707107" 02="-0.707107" 20="0.707107" 22="-0.707107" 30="-74.995041" 31="19.296928" 32="96.932907"/>
 		</logic>
-		<logic id="logic13" target_a="door_11_closed" target_b="door_11_open" target_movable="door_11" anim_duration="320">
+		<logic id="logic13" target_a="door_11_closed" target_b="door_11_open" target_movable="door_11" anim_duration="750">
 			<transform 00="-0.707107" 02="-0.707107" 20="0.707107" 22="-0.707107" 30="-74.206177" 31="19.296928" 32="97.721771"/>
 		</logic>
-		<logic id="logic14" target_a="door_12_closed" target_b="door_12_open" target_movable="door_12" anim_duration="320">
+		<logic id="logic14" target_a="door_12_closed" target_b="door_12_open" target_movable="door_12" anim_duration="750">
 			<transform 00="-0.707107" 02="-0.707107" 20="0.707107" 22="-0.707107" 30="-73.379929" 31="19.296928" 32="98.548019"/>
 		</logic>
 		<logic id="door_ext_front_logic" target_a="door_ext_front_closed" target_b="door_ext_front_open" target_movable="door_ext_front" anim_duration="50">
@@ -604,13 +668,13 @@
 	</light_logic_nodes>
 	<rotation_logic_nodes/>
 	<hangar_door_logic_nodes>
-		<logic id="doors_glass_logic" target_id_0="door_glass_01_logic" target_id_1="door_glass_02_logic">
+		<logic id="doors_glass_logic" target_id_0="door_glass_01_logic" target_id_1="door_glass_02_logic" cooldown_time="120">
 			<transform 00="-0.690805" 02="-0.723041" 20="0.723041" 22="-0.690805" 30="-121.622772" 31="15.587421" 32="121.722115"/>
 		</logic>
-		<logic id="hangar_left_doors_logic" target_id_0="logic3" target_id_1="logic4" target_id_2="logic5" target_id_3="logic6" target_id_4="logic7" target_id_5="logic8">
+		<logic id="hangar_left_doors_logic" target_id_0="logic3" target_id_1="logic4" target_id_2="logic5" target_id_3="logic6" target_id_4="logic7" target_id_5="logic8" target_id_6="hangar_doors_right">
 			<transform 00="-0.707107" 02="-0.707107" 20="0.707107" 22="-0.707107" 30="-127.239655" 31="20.105019" 32="44.609207"/>
 		</logic>
-		<logic id="hangar_right_doors_logic" target_id_0="logic9" target_id_1="logic10" target_id_2="logic11" target_id_3="logic12" target_id_4="logic13" target_id_5="logic14">
+		<logic id="hangar_right_doors_logic" target_id_0="logic9" target_id_1="logic10" target_id_2="logic11" target_id_3="logic12" target_id_4="logic13" target_id_5="logic14" target_id_6="hangar_doors_left">
 			<transform 00="-0.707107" 02="-0.707107" 20="0.707107" 22="-0.707107" 30="-75.459099" 31="20.105019" 32="96.577148"/>
 		</logic>
 		<logic id="lights_top_logic" target_id_0="light_switch0" target_id_1="light_switch1" target_id_2="light_switch2" target_id_3="light_switch3" target_id_4="light_switch4" target_id_5="light_switch5">
@@ -629,7 +693,14 @@
 			<transform 00="-0.707411" 02="-0.706802" 20="0.706802" 22="-0.707411" 30="-85.040581" 31="16.021683" 32="87.084755"/>
 		</logic>
 	</hangar_door_logic_nodes>
-	<audio_logic_nodes/>
+	<audio_logic_nodes>
+		<logic id="hangar_doors_right" start_filename="audio/elevator/cn_elevator_start.ogg" loop_filename="audio/elevator/cn_elevator_lp.ogg" end_filename="audio/elevator/cn_elevator_end.ogg" range_inner="15" range_outer="75" audio_gain="1" audio_underwater_affected="true" play_duration="725">
+			<transform 00="0.707107" 02="0.707107" 20="-0.707107" 22="0.707107" 30="-110.887787" 31="17" 32="62.190662"/>
+		</logic>
+		<logic id="hangar_doors_left" start_filename="audio/elevator/cn_elevator_start.ogg" loop_filename="audio/elevator/cn_elevator_lp.ogg" end_filename="audio/elevator/cn_elevator_end.ogg" range_inner="15" range_outer="75" audio_gain="1" audio_underwater_affected="true" play_duration="725">
+			<transform 00="0.707107" 02="0.707107" 20="-0.707107" 22="0.707107" 30="-58.405327" 31="17" 32="114.765388"/>
+		</logic>
+	</audio_logic_nodes>
 	<tile_markers>
 		<markers id="door_glass_01_closed" marker_type="8" icon="1">
 			<transform 00="0.707107" 02="-0.707107" 20="0.707107" 22="0.707107" 30="-121.317772" 31="13.90618" 32="122.120697"/>
@@ -756,11 +827,11 @@
 		</markers>
 	</tile_markers>
 	<mission_zones>
-		<zone id="audio_indoor">
-			<transform 00="0.707107" 02="-0.707107" 20="0.707107" 22="0.707107" 30="-103.920334" 31="23.347107" 32="107.35981"/>
-			<size x="55" y="20" z="130"/>
-			<outer_scale x="1" y="1" z="1"/>
-			<outer_offset/>
+		<zone id="audio_indoor" audio_reverb_gain="0.25" audio_reverb_amount="0.125">
+			<transform 00="0.707107" 02="-0.707107" 20="0.707107" 22="0.707107" 30="-107.828911" 31="23.347107" 32="111.495483"/>
+			<size x="46" y="20" z="132"/>
+			<outer_scale x="1.2" y="1" z="1"/>
+			<outer_offset x="4.6"/>
 		</zone>
 	</mission_zones>
 	<dynamic_markers>

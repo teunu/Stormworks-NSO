@@ -35,7 +35,7 @@ rudder_surface_area="0"
 electric_magnitude="1.2">
 	<tooltip_properties description="An on/off signal controls engine startup and throttle signal controls energy output." short_description="Large diesel engine that can be connected to powered components."/>
 	<sfx_datas>
-		<sfx_data sfx_name="engine" sfx_range_inner="20" sfx_range_outer="200" sfx_priority="1">
+		<sfx_data sfx_name="engine" sfx_range_inner="5.0" sfx_range_outer="100.0" sfx_priority="1">
 			<sfx_layers>
 				<sfx_layer sfx_filename_loop="audio/fx5/sfx_engine_03_lvl1.ogg" sfx_loop_start_time="0"/>
 				<sfx_layer sfx_filename_loop="audio/fx5/sfx_engine_03_lvl2.ogg" sfx_loop_start_time="0"/>
@@ -43,7 +43,7 @@ electric_magnitude="1.2">
 				<sfx_layer sfx_filename_loop="audio/fx5/sfx_engine_03_lvl4.ogg" sfx_loop_start_time="0"/>
 			</sfx_layers>
 		</sfx_data>
-		<sfx_data sfx_name="starter" sfx_range_inner="10" sfx_range_outer="100" sfx_priority="1">
+		<sfx_data sfx_name="starter" sfx_range_inner="5.0" sfx_range_outer="100.0" sfx_priority="1">
 			<sfx_layers>
 				<sfx_layer sfx_filename_start="audio/fx2/stormworks_enginestart_large_start.ogg" sfx_filename_loop="audio/fx2/stormworks_enginestart_large_mid.ogg" sfx_filename_end="audio/fx2/stormworks_enginestart_large_end.ogg" sfx_loop_start_time="0.25"/>
 			</sfx_layers>

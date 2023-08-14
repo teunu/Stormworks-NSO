@@ -1,6 +1,30 @@
 
-log.txt
+
+# Links / shortcuts
+/*.lnk
+
+
+# Debugging crap
+*.mdmp
 crash.dmp
 
-# Links
-/*.lnk
+# Logs
+debug.log
+log.txt
+
+
+rom/data/debris/*.png
+rom/data/preset_vehicles/*.png
+rom/data/preset_vehicles_advanced/*.png
+
+# Build system (or something) seems to be changing the files every deploy.
+# Instead of tracking those pointless changes we keep a list of files and sizes
+# In a special file.
+rom/audio/**/*.ogg
+
+# Ignoring textures broke Stormworks, so from now on we keep track of them. Oh well
+# rom/graphics/**/*.txtr
+
+
+# Decompliler stuff
+stormworks64.exe.i64

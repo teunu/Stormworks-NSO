@@ -44,7 +44,14 @@
 			<transform 00="0.610504" 02="-0.792013" 20="0.792013" 22="0.610504" 30="-74.295807" 31="5.815212" 32="407.649048"/>
 		</markers>
 	</tile_markers>
-	<mission_zones/>
+	<mission_zones>
+		<zone id="tunnel_indoor_audio" audio_reverb_gain="0.5" audio_reverb_amount="0.25">
+			<transform 00="-0.483723" 02="0.87522" 20="-0.87522" 22="-0.483723" 30="298.746246" 31="19.029408" 32="515.638184"/>
+			<size x="12" y="8" z="100"/>
+			<outer_scale x="1" y="1" z="1.2"/>
+			<outer_offset z="10"/>
+		</zone>
+	</mission_zones>
 	<dynamic_markers/>
 	<ladders/>
 	<perches>
