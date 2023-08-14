@@ -37,7 +37,32 @@
 	<lights_spot/>
 	<lights_tube/>
 	<screens/>
-	<edit_areas/>
+	<edit_areas>
+		<edit_area id="edit0" grid_size="3" is_static="true" default_vehicle="signal">
+			<transform 00="-1" 22="-1" 30="6.626648" 31="14.984024" 32="448.358765"/>
+			<size x="16.5" y="6" z="18.5"/>
+		</edit_area>
+		<edit_area id="edit1" grid_size="3" is_static="true" default_vehicle="signal">
+			<transform 00="-1" 22="-1" 30="-6.063141" 31="14.984024" 32="448.358765"/>
+			<size x="16.5" y="6" z="18.5"/>
+		</edit_area>
+		<edit_area id="edit2" grid_size="3" is_static="true" default_vehicle="signal">
+			<transform 00="-1" 22="-1" 30="-5.593323" 31="17.162949" 32="319.662811"/>
+			<size x="16.5" y="6" z="18.5"/>
+		</edit_area>
+		<edit_area id="edit3" grid_size="3" is_static="true" default_vehicle="signal">
+			<transform 30="5.916321" 31="17.130478" 32="402.808014"/>
+			<size x="16.5" y="6" z="18.5"/>
+		</edit_area>
+		<edit_area id="edit4" grid_size="3" is_static="true" default_vehicle="signal">
+			<transform 00="-1" 22="-1" 30="-6.189966" 31="17.093868" 32="-303.107178"/>
+			<size x="16.5" y="6" z="18.5"/>
+		</edit_area>
+		<edit_area id="edit5" grid_size="3" is_static="true" default_vehicle="signal">
+			<transform 00="-1" 22="-1" 30="6.16855" 31="17.094522" 32="-303.107178"/>
+			<size x="16.5" y="6" z="18.5"/>
+		</edit_area>
+	</edit_areas>
 	<interactables/>
 	<door_logic_nodes/>
 	<light_logic_nodes/>
