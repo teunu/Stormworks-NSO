@@ -17,6 +17,10 @@ rom/data/debris/*.png
 rom/data/preset_vehicles/*.png
 rom/data/preset_vehicles_advanced/*.png
 
+# Generated files that should not be saved in git, since they can just be generated again with the Editor.
+rom/meshes/extruded_track_pieces
+rom/meshes/generated_object_geom
+
 # Build system (or something) seems to be changing the files every deploy.
 # Instead of tracking those pointless changes we keep a list of files and sizes
 # In a special file.
