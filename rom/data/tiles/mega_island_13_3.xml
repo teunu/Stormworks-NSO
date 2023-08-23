@@ -10,6 +10,9 @@
 		<mesh id="ExtrudedTrackMesh_Curve_202_1" _CT_loadIgnore="true" file_name="meshes/extruded_track_pieces/mega_island_13_3_ExtrudedTrackMesh_Curve_202_1.mesh">
 			<transform 30="-48.36035" 31="11.75" 32="490.997559"/>
 		</mesh>
+		<mesh id="ExtrudedTrackMesh_Curve_202_2" _CT_loadIgnore="true" file_name="meshes/extruded_track_pieces/mega_island_13_3_ExtrudedTrackMesh_Curve_202_2.mesh">
+			<transform 30="-48.36035" 31="11.75" 32="490.997559"/>
+		</mesh>
 		<mesh id="ExtrudedTrackMesh_Curve_203_0" _CT_loadIgnore="true" file_name="meshes/extruded_track_pieces/mega_island_13_3_ExtrudedTrackMesh_Curve_203_0.mesh">
 			<transform 30="-13.5703125" 31="8" 32="342.95166"/>
 		</mesh>
@@ -23,9 +26,6 @@
 			<transform 30="235.209961" 31="8" 32="252.336914"/>
 		</mesh>
 		<mesh id="ExtrudedTrackMesh_Curve_204_3" _CT_loadIgnore="true" file_name="meshes/extruded_track_pieces/mega_island_13_3_ExtrudedTrackMesh_Curve_204_3.mesh">
-			<transform 30="235.209961" 31="8" 32="252.336914"/>
-		</mesh>
-		<mesh id="ExtrudedTrackMesh_Curve_204_4" _CT_loadIgnore="true" file_name="meshes/extruded_track_pieces/mega_island_13_3_ExtrudedTrackMesh_Curve_204_4.mesh">
 			<transform 30="235.209961" 31="8" 32="252.336914"/>
 		</mesh>
 		<mesh id="ExtrudedTrackMesh_Curve_205_0" _CT_loadIgnore="true" file_name="meshes/extruded_track_pieces/mega_island_13_3_ExtrudedTrackMesh_Curve_205_0.mesh">
@@ -118,9 +118,6 @@
 		<physics_mesh id="ExtrudedTrackMesh_Curve_204_2_Transferred_0" _CT_loadIgnore="true" file_name="meshes/extruded_track_pieces/mega_island_13_3_ExtrudedTrackMesh_Curve_204_2.phys">
 			<transform 30="235.209961" 31="8" 32="252.336914"/>
 		</physics_mesh>
-		<physics_mesh id="ExtrudedTrackMesh_Curve_204_3_Transferred_0" _CT_loadIgnore="true" file_name="meshes/extruded_track_pieces/mega_island_13_3_ExtrudedTrackMesh_Curve_204_3.phys">
-			<transform 30="235.209961" 31="8" 32="252.336914"/>
-		</physics_mesh>
 		<physics_mesh id="ExtrudedTrackMesh_Curve_205_0_Transferred_0" _CT_loadIgnore="true" file_name="meshes/extruded_track_pieces/mega_island_13_3_ExtrudedTrackMesh_Curve_205_0.phys">
 			<transform 30="-2.5546875" 31="8" 32="329.5913"/>
 		</physics_mesh>
@@ -207,16 +204,9 @@
 	<perches/>
 	<fires/>
 	<train_tracks>
-		<track id="Curve#201_Track#0_S#0_#9_TileBorderCrossing" _CT_loadIgnore="true">
-			<transform 30="-48.36035" 31="15.54" 32="617.958"/>
-			<links>
-				<link id="Curve#202_Track#0_S#0_#1"/>
-			</links>
-		</track>
 		<track id="Curve#202_Track#0_S#0_#1" _CT_loadIgnore="true">
 			<transform 30="-51.1582031" 31="15.5358515" 32="615.1001"/>
 			<links>
-				<link id="Curve#201_Track#0_S#0_#9_TileBorderCrossing"/>
 				<link id="Curve#202_Track#0_S#0_#2"/>
 			</links>
 		</track>
