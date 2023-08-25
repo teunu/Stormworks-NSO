@@ -17,9 +17,11 @@ end
 do
 	local extrusion = Bank(
 		{
-			Colour = Color255(77, 77, 62, 255),
-			BottomWidth = 24,
-			YOffset = -0.25
+			Colour = Color255(63, 61, 53, 255),
+			BottomWidth = 9.25,
+			TopWidth = 7.25,
+			Height = 0.75,
+			YOffset = -0.6
 		},
 		BISet
 	)

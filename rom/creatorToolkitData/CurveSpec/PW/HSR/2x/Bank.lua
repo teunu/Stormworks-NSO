@@ -17,7 +17,16 @@ BISet.MinInterpolationDistance = 20
 
 do -- Create Embankment
 	-- Pass nil to settings argument to use defaults.
-	local extrusion = Embankment({Colour = Color255(77, 77, 62, 255), TopWidth = 10.5,BottomWidth = 28.5, YOffset = -0.25 }, BISet)
+	local extrusion = Embankment(
+		{
+			Colour = Color255(63, 61, 53, 255),
+			TopWidth = 12,
+			BottomWidth = 14,
+			Height = 0.75,
+			YOffset = -0.6
+		},
+		BISet
+	)
 	rootSpec.Extrusions:Add(extrusion)
 end
 
