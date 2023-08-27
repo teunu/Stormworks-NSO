@@ -1,3 +1,4 @@
+local Colours = require('Lib.Colours')
 local lib = {}
 
 lib.version = "0.1.0"
@@ -8,7 +9,7 @@ function lib.Embankment(Settings, ISet)
 
 	Settings = Settings or {}
 
-	local Colour		= Settings.Colour		or Color255(54, 64, 7, 255)
+	local Colour		= Settings.Colour		or Colours.Grass
 	local TopColour		= Settings.TopColour	or Colour
 	local TopWidth		= (Settings.TopWidth	or 6)	* 0.5
 	local BottomWidth	= (Settings.BottomWidth	or 20)	* 0.5

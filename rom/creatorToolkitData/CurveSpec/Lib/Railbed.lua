@@ -1,23 +1,21 @@
+local Colours = require('Lib.Colours')
+
 local lib = {}
 
 lib.version = "0.1.0"
 
 local AntiZGlitch = 0.0001
 
-local function Color255(R, G, B, A)
-	return Color(R / 255, G / 255, B / 255, (A or 255) / 255)
-end
-
 lib.Presets =
 {
 	Gravel =
 	{
-		Colour			= Color255(84, 77, 75),
-		TopWidth		= 3		* 0.5,
-		BottomWidth		= 4.8	* 0.5,
+		Colour			= Colours.Gravel,
+		TopWidth		= 3.5 * 0.5,
+		BottomWidth		= 6   * 0.5,
 		Height			= 0.69,
-		CenterGroove	= -0.11,
-		YOffset			= -0.20
+		CenterGroove	= -0.08,
+		YOffset			= -0.22
 	},
 
 	-- CONCRETE NEEDS TO LIVE SOMEWHERE ELSE CAUSE ITS NOT ROUND!!
@@ -25,9 +23,9 @@ lib.Presets =
 
 	Concrete =
 	{
-		Colour			= Color255(199, 185, 170),
-		TopWidth		= 4	* 0.5,
-		BottomWidth		= 4.8	* 0.5,
+		Colour			= Colours.Concrete,
+		TopWidth		= 4	  * 0.5,
+		BottomWidth		= 4.8 * 0.5,
 		Height			= 0.69,
 		CenterGroove	= -0.02,
 		YOffset			= -0.22
