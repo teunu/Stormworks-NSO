@@ -16,6 +16,12 @@
 		<mesh id="ExtrudedTrackMesh_Curve_108_3" _CT_loadIgnore="true" file_name="meshes/extruded_track_pieces/mega_island_8_7_ExtrudedTrackMesh_Curve_108_3.mesh">
 			<transform 30="-15.9375" 31="10" 32="143.53125"/>
 		</mesh>
+		<mesh id="ExtrudedTrackMesh_Curve_108_4" _CT_loadIgnore="true" file_name="meshes/extruded_track_pieces/mega_island_8_7_ExtrudedTrackMesh_Curve_108_4.mesh">
+			<transform 30="-15.9375" 31="10" 32="143.53125"/>
+		</mesh>
+		<mesh id="ExtrudedTrackMesh_Curve_108_5" _CT_loadIgnore="true" file_name="meshes/extruded_track_pieces/mega_island_8_7_ExtrudedTrackMesh_Curve_108_5.mesh">
+			<transform 30="-15.9375" 31="10" 32="143.53125"/>
+		</mesh>
 		<mesh id="ExtrudedTrackMesh_Curve_86_0" _CT_loadIgnore="true" file_name="meshes/extruded_track_pieces/mega_island_8_7_ExtrudedTrackMesh_Curve_86_0.mesh">
 			<transform 30="432.19043" 31="15" 32="299.0005"/>
 		</mesh>
@@ -167,6 +173,9 @@
 			<transform 30="-15.9375" 31="10" 32="143.53125"/>
 		</physics_mesh>
 		<physics_mesh id="ExtrudedTrackMesh_Curve_108_3_Transferred_0" _CT_loadIgnore="true" file_name="meshes/extruded_track_pieces/mega_island_8_7_ExtrudedTrackMesh_Curve_108_3.phys">
+			<transform 30="-15.9375" 31="10" 32="143.53125"/>
+		</physics_mesh>
+		<physics_mesh id="ExtrudedTrackMesh_Curve_108_4_Transferred_0" _CT_loadIgnore="true" file_name="meshes/extruded_track_pieces/mega_island_8_7_ExtrudedTrackMesh_Curve_108_4.phys">
 			<transform 30="-15.9375" 31="10" 32="143.53125"/>
 		</physics_mesh>
 		<physics_mesh id="ExtrudedTrackMesh_Curve_86_0_Transferred_0" _CT_loadIgnore="true" file_name="meshes/extruded_track_pieces/mega_island_8_7_ExtrudedTrackMesh_Curve_86_0.phys">
@@ -536,13 +545,13 @@
 		<track id="Curve#85_Track#0_S#1_#1_TileBorderCrossing" _CT_loadIgnore="true">
 			<transform 30="436.94043" 31="15.04" 32="326.9839"/>
 			<links>
-				<link id="Curve#90_Track#0_S#0_#1"/>
+				<link id="Curve#90_Track#0_S#0_#2"/>
 			</links>
 		</track>
 		<track id="Curve#85_Track#0_S#1_#1_TileBorderCrossing_Transferred_0" _CT_loadIgnore="true">
 			<transform 30="436.94043" 31="15.04" 32="326.9839"/>
 			<links>
-				<link id="Curve#89_Track#0_S#0_#5"/>
+				<link id="Curve#89_Track#0_S#0_#6"/>
 			</links>
 		</track>
 		<track id="Curve#85_Track#1_S#1_#1_TileBorderCrossing" _CT_loadIgnore="true">
@@ -605,7 +614,7 @@
 			<transform 30="434.56543" 31="15.04" 32="299.000977"/>
 			<links>
 				<link id="Curve#87_Track#0_S#0_#6"/>
-				<link id="Curve#89_Track#0_S#0_#1"/>
+				<link id="Curve#89_Track#0_S#0_#2"/>
 			</links>
 		</track>
 		<track id="Curve#88_Track#0_S#0_#1" _CT_loadIgnore="true">
@@ -685,32 +694,25 @@
 				<link id="Curve#88_Track#0_S#0_#8"/>
 			</links>
 		</track>
-		<track id="Curve#89_Track#0_S#0_#1" _CT_loadIgnore="true">
-			<transform 30="435.2129" 31="15.04" 32="302.948242"/>
+		<track id="Curve#89_Track#0_S#0_#2" _CT_loadIgnore="true">
+			<transform 30="435.7588" 31="15.039999" 32="306.910645"/>
 			<links>
 				<link id="Curve#87_Track#0_S#0_#7"/>
-				<link id="Curve#89_Track#0_S#0_#3"/>
+				<link id="Curve#89_Track#0_S#0_#4"/>
 			</links>
 		</track>
-		<track id="Curve#89_Track#0_S#0_#3" _CT_loadIgnore="true">
-			<transform 30="436.199219" 31="15.039999" 32="310.88623"/>
+		<track id="Curve#89_Track#0_S#0_#4" _CT_loadIgnore="true">
+			<transform 30="436.53418" 31="15.04" 32="314.87207"/>
 			<links>
-				<link id="Curve#89_Track#0_S#0_#1"/>
-				<link id="Curve#89_Track#0_S#0_#5"/>
+				<link id="Curve#89_Track#0_S#0_#2"/>
+				<link id="Curve#89_Track#0_S#0_#6"/>
 			</links>
 		</track>
-		<track id="Curve#89_Track#0_S#0_#5" _CT_loadIgnore="true">
-			<transform 30="436.763672" 31="15.04" 32="318.865234"/>
+		<track id="Curve#89_Track#0_S#0_#6" _CT_loadIgnore="true">
+			<transform 30="436.897461" 31="15.04" 32="322.8628"/>
 			<links>
 				<link id="Curve#85_Track#0_S#1_#1_TileBorderCrossing_Transferred_0"/>
-				<link id="Curve#89_Track#0_S#0_#3"/>
-			</links>
-		</track>
-		<track id="Curve#90_Track#0_S#0_#1" _CT_loadIgnore="true">
-			<transform 30="436.951172" 31="15.04" 32="322.9839"/>
-			<links>
-				<link id="Curve#85_Track#0_S#1_#1_TileBorderCrossing"/>
-				<link id="Curve#90_Track#0_S#0_#3"/>
+				<link id="Curve#89_Track#0_S#0_#4"/>
 			</links>
 		</track>
 		<track id="Curve#90_Track#0_S#0_#10" _CT_loadIgnore="true">
@@ -783,6 +785,13 @@
 				<link id="Curve#90_Track#0_S#0_#20"/>
 			</links>
 		</track>
+		<track id="Curve#90_Track#0_S#0_#2" _CT_loadIgnore="true">
+			<transform 30="436.981445" 31="15.0400009" 32="318.9839"/>
+			<links>
+				<link id="Curve#85_Track#0_S#1_#1_TileBorderCrossing"/>
+				<link id="Curve#90_Track#0_S#0_#4"/>
+			</links>
+		</track>
 		<track id="Curve#90_Track#0_S#0_#20" _CT_loadIgnore="true">
 			<transform 30="441.4873" 31="15.04" 32="247.162109"/>
 			<links>
@@ -853,13 +862,6 @@
 				<link id="Curve#90_Track#0_S#0_#30"/>
 			</links>
 		</track>
-		<track id="Curve#90_Track#0_S#0_#3" _CT_loadIgnore="true">
-			<transform 30="437.0332" 31="15.04" 32="314.984375"/>
-			<links>
-				<link id="Curve#90_Track#0_S#0_#1"/>
-				<link id="Curve#90_Track#0_S#0_#5"/>
-			</links>
-		</track>
 		<track id="Curve#90_Track#0_S#0_#30" _CT_loadIgnore="true">
 			<transform 30="447.931641" 31="15.04" 32="207.696777"/>
 			<links>
@@ -923,17 +925,24 @@
 				<link id="Curve#91_Track#0_S#0_#1"/>
 			</links>
 		</track>
-		<track id="Curve#90_Track#0_S#0_#5" _CT_loadIgnore="true">
-			<transform 30="437.2002" 31="15.0400009" 32="306.986328"/>
+		<track id="Curve#90_Track#0_S#0_#4" _CT_loadIgnore="true">
+			<transform 30="437.106445" 31="15.0400009" 32="310.984863"/>
 			<links>
-				<link id="Curve#90_Track#0_S#0_#3"/>
+				<link id="Curve#90_Track#0_S#0_#2"/>
+				<link id="Curve#90_Track#0_S#0_#6"/>
+			</links>
+		</track>
+		<track id="Curve#90_Track#0_S#0_#6" _CT_loadIgnore="true">
+			<transform 30="437.31543" 31="15.0400009" 32="302.9878"/>
+			<links>
+				<link id="Curve#90_Track#0_S#0_#4"/>
 				<link id="Curve#90_Track#0_S#0_#7"/>
 			</links>
 		</track>
 		<track id="Curve#90_Track#0_S#0_#7" _CT_loadIgnore="true">
 			<transform 30="437.453125" 31="15.04" 32="298.990234"/>
 			<links>
-				<link id="Curve#90_Track#0_S#0_#5"/>
+				<link id="Curve#90_Track#0_S#0_#6"/>
 				<link id="Curve#90_Track#0_S#0_#8"/>
 			</links>
 		</track>
