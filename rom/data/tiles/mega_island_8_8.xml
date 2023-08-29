@@ -85,6 +85,9 @@
 		<mesh id="ExtrudedTrackMesh_Curve_85_1" _CT_loadIgnore="true" file_name="meshes/extruded_track_pieces/mega_island_8_8_ExtrudedTrackMesh_Curve_85_1.mesh">
 			<transform 30="434.56543" 31="15" 32="-495.421875"/>
 		</mesh>
+		<mesh id="ExtrudedTrackMesh_Curve_85_2" _CT_loadIgnore="true" file_name="meshes/extruded_track_pieces/mega_island_8_8_ExtrudedTrackMesh_Curve_85_2.mesh">
+			<transform 30="434.56543" 31="15" 32="-495.421875"/>
+		</mesh>
 		<mesh id="StaticObject_0" _CT_loadIgnore="true" file_name="nso_mod/meshes/rocks/rock_big_4.mesh">
 			<transform 00="0.7695163" 02="-0.6386272" 20="0.6386272" 22="0.7695163" 30="446.8789" 31="33.30981" 32="377.348633"/>
 		</mesh>
@@ -2096,6 +2099,8 @@
 			<transform 30="436.94043" 31="15.04" 32="-673.0161"/>
 			<links>
 				<link id="Curve#85_Track#0_S#0_#1"/>
+				<link id="Curve#89_Track#0_S#0_#6_TileBorderCrossing"/>
+				<link id="Curve#90_Track#0_S#0_#2_TileBorderCrossing"/>
 			</links>
 		</track>
 		<track id="Curve#85_Track#1_S#0_#1" _CT_loadIgnore="true">
@@ -2109,6 +2114,25 @@
 			<transform 30="432.19043" 31="15.04" 32="-673.0161"/>
 			<links>
 				<link id="Curve#85_Track#1_S#0_#1"/>
+				<link id="Curve#86_Track#0_S#0_#1_TileBorderCrossing"/>
+			</links>
+		</track>
+		<track id="Curve#86_Track#0_S#0_#1_TileBorderCrossing" _CT_loadIgnore="true">
+			<transform 30="432.19043" 31="15.04" 32="-728.9829"/>
+			<links>
+				<link id="Curve#85_Track#1_S#1_#1"/>
+			</links>
+		</track>
+		<track id="Curve#89_Track#0_S#0_#6_TileBorderCrossing" _CT_loadIgnore="true">
+			<transform 30="436.897461" 31="15.04" 32="-677.1372"/>
+			<links>
+				<link id="Curve#85_Track#0_S#1_#1"/>
+			</links>
+		</track>
+		<track id="Curve#90_Track#0_S#0_#2_TileBorderCrossing" _CT_loadIgnore="true">
+			<transform 30="436.981445" 31="15.0400009" 32="-681.0161"/>
+			<links>
+				<link id="Curve#85_Track#0_S#1_#1"/>
 			</links>
 		</track>
 	</train_tracks>

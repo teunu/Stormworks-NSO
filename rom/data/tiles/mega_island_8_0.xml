@@ -22,6 +22,9 @@
 		<mesh id="ExtrudedTrackMesh_Curve_27_5" _CT_loadIgnore="true" file_name="meshes/extruded_track_pieces/mega_island_8_0_ExtrudedTrackMesh_Curve_27_5.mesh">
 			<transform 30="-51.6669922" 31="20" 32="472.628357"/>
 		</mesh>
+		<mesh id="ExtrudedTrackMesh_Curve_27_6" _CT_loadIgnore="true" file_name="meshes/extruded_track_pieces/mega_island_8_0_ExtrudedTrackMesh_Curve_27_6.mesh">
+			<transform 30="-51.6669922" 31="20" 32="472.628357"/>
+		</mesh>
 		<mesh id="ExtrudedTrackMesh_Curve_28_0" _CT_loadIgnore="true" file_name="meshes/extruded_track_pieces/mega_island_8_0_ExtrudedTrackMesh_Curve_28_0.mesh">
 			<transform 31="17.97385" 32="-279.265137"/>
 		</mesh>
@@ -84,9 +87,22 @@
 	<perches/>
 	<fires/>
 	<train_tracks>
+		<track id="Curve#26_Track#0_S#0_#28_TileBorderCrossing" _CT_loadIgnore="true">
+			<transform 30="-101.058594" 31="20.04" 32="1004.46667"/>
+			<links>
+				<link id="Curve#27_Track#0_S#0_#1"/>
+			</links>
+		</track>
+		<track id="Curve#26_Track#1_S#0_#28_TileBorderCrossing" _CT_loadIgnore="true">
+			<transform 30="-105.609375" 31="20.04" 32="1003.1073"/>
+			<links>
+				<link id="Curve#27_Track#1_S#0_#1"/>
+			</links>
+		</track>
 		<track id="Curve#27_Track#0_S#0_#1" _CT_loadIgnore="true">
 			<transform 30="-99.62891" 31="20.0547714" 32="999.67395"/>
 			<links>
+				<link id="Curve#26_Track#0_S#0_#28_TileBorderCrossing"/>
 				<link id="Curve#27_Track#0_S#0_#2"/>
 			</links>
 		</track>
@@ -1556,6 +1572,7 @@
 		<track id="Curve#27_Track#1_S#0_#1" _CT_loadIgnore="true">
 			<transform 30="-104.181641" 31="20.0547714" 32="998.317261"/>
 			<links>
+				<link id="Curve#26_Track#1_S#0_#28_TileBorderCrossing"/>
 				<link id="Curve#27_Track#1_S#0_#2"/>
 			</links>
 		</track>
