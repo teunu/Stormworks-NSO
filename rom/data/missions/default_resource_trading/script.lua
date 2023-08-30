@@ -30,7 +30,12 @@ g_resources = {
                 if vehicle.is_buy then
                     delta = vehicle.capacity - data.value
                 else
-                    delta = 0 - data.value
+                    delta = 0 - data.values[RESOURCE_DIESEL]
+
+                    -- reset tank if there is other fluid inside
+                    if data.value > data.values[RESOURCE_DIESEL] then
+                        server.setVehicleTank(vehicle_id, "Tank", data.values[RESOURCE_DIESEL], RESOURCE_DIESEL)
+                    end
                 end
             end
 
@@ -121,7 +126,12 @@ g_resources = {
                 if vehicle.is_buy then
                     delta = vehicle.capacity - data.value
                 else
-                    delta = 0 - data.value
+                    delta = 0 - data.values[RESOURCE_JET]
+
+                    -- reset tank if there is other fluid inside
+                    if data.value > data.values[RESOURCE_JET] then
+                        server.setVehicleTank(vehicle_id, "Tank", data.values[RESOURCE_JET], RESOURCE_JET)
+                    end
                 end
             end
 
@@ -212,7 +222,12 @@ g_resources = {
                 if vehicle.is_buy then
                     delta = vehicle.capacity - data.value
                 else
-                    delta = 0 - data.value
+                    delta = 0 - data.values[RESOURCE_OIL]
+
+                    -- reset tank if there is other fluid inside
+                    if data.value > data.values[RESOURCE_OIL] then
+                        server.setVehicleTank(vehicle_id, "Tank", data.values[RESOURCE_OIL], RESOURCE_OIL)
+                    end
                 end
             end
 
