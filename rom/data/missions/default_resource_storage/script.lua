@@ -50,7 +50,7 @@ function onTick(game_ticks)
 			local tank_data, success = server.getVehicleTank(port.id, "diesel_in")
 			if success then
 				if tank_data.value > 0 then
-					d = d + tank_data.value
+					d = d + tank_data.values[1]
 					server.setVehicleTank(port.id, "diesel_in", 0, 0)
 					is_update = true
 				end
@@ -58,7 +58,7 @@ function onTick(game_ticks)
 			local tank_data2, success2 = server.getVehicleTank(port.id, "jet_in")
 			if success2 then
 				if tank_data2.value > 0 then
-					j = j + tank_data2.value
+					j = j + tank_data2.values[2]
 					server.setVehicleTank(port.id, "jet_in", 0, 0)
 					is_update = true
 				end
@@ -66,7 +66,7 @@ function onTick(game_ticks)
 
 			local tank_data, success = server.getVehicleTank(port.id, "diesel_out")
 			if success then
-				if tank_data.value < tank_data.capacity then
+				if tank_data.values[1] < tank_data.capacity then
 					local delta = tank_data.capacity - tank_data.value
 					delta = math.min(delta, d)
 					if delta > 0 then
@@ -78,7 +78,7 @@ function onTick(game_ticks)
 			end
 			local tank_data2, success2 = server.getVehicleTank(port.id, "jet_out")
 			if success2 then
-				if tank_data2.value < tank_data2.capacity then
+				if tank_data2.values[2] < tank_data2.capacity then
 					local delta = tank_data2.capacity - tank_data2.value
 					delta = math.min(delta, j)
 					if delta > 0 then
