@@ -83,7 +83,7 @@
 			<transform 30="427.1787" 31="24.904129" 32="441.969482"/>
 		</mesh>
 		<mesh id="StaticObject_0" _CT_loadIgnore="true" file_name="meshes/generated_object_geom/tiles/mega_island_4_3/nso_mod/railway/TunnelPortalRound__StaticObject_0.mesh">
-			<transform 00="-0.117006749" 01="-0.0111270612" 02="0.9930688" 10="-0.00128293037" 11="0.99993825" 12="0.0110528711" 20="-0.9931303" 21="1.92229636E-05" 22="-0.117013775" 30="448.7959" 31="25.2830257" 32="359.5056"/>
+			<transform 00="-0.117006749" 01="-0.0111270612" 02="0.9930688" 10="-0.00128292944" 11="0.99993825" 12="0.0110528711" 20="-0.9931303" 21="1.92238949E-05" 22="-0.117013775" 30="448.7959" 31="25.2830257" 32="359.5056"/>
 		</mesh>
 	</meshes>
 	<physics_objects/>
@@ -170,7 +170,7 @@
 			<transform 30="427.1787" 31="24.904129" 32="441.969482"/>
 		</physics_mesh>
 		<physics_mesh id="StaticObject_0_phys" _CT_loadIgnore="true" file_name="meshes/generated_object_geom/tiles/mega_island_4_3/nso_mod/railway/TunnelPortalRound__StaticObject_0_phys.phys">
-			<transform 00="-0.117006749" 01="-0.0111270612" 02="0.9930688" 10="-0.00128293037" 11="0.99993825" 12="0.0110528711" 20="-0.9931303" 21="1.92229636E-05" 22="-0.117013775" 30="448.7959" 31="25.2830257" 32="359.5056"/>
+			<transform 00="-0.117006749" 01="-0.0111270612" 02="0.9930688" 10="-0.00128292944" 11="0.99993825" 12="0.0110528711" 20="-0.9931303" 21="1.92238949E-05" 22="-0.117013775" 30="448.7959" 31="25.2830257" 32="359.5056"/>
 		</physics_mesh>
 	</physics_meshes>
 	<physics_dynamics/>
@@ -3960,6 +3960,13 @@
 				<link id="Curve#267_Track#0_S#0_#2"/>
 			</links>
 		</track>
+		<track id="Curve#267_Track#0_S#0_#10" _CT_loadIgnore="true">
+			<transform 30="-63.09131" 31="32.04" 32="-113.598877"/>
+			<links>
+				<link id="Curve#267_Track#0_S#0_#8"/>
+				<link id="Curve#29_Track#0_S#0_#0"/>
+			</links>
+		</track>
 		<track id="Curve#267_Track#0_S#0_#2" _CT_loadIgnore="true">
 			<transform 30="-103.054688" 31="32.04" 32="-115.186523"/>
 			<links>
@@ -3984,21 +3991,14 @@
 		<track id="Curve#267_Track#0_S#0_#8" _CT_loadIgnore="true">
 			<transform 30="-73.0893555" 31="32.04" 32="-113.794434"/>
 			<links>
+				<link id="Curve#267_Track#0_S#0_#10"/>
 				<link id="Curve#267_Track#0_S#0_#6"/>
-				<link id="Curve#267_Track#0_S#0_#9"/>
-			</links>
-		</track>
-		<track id="Curve#267_Track#0_S#0_#9" _CT_loadIgnore="true">
-			<transform 30="-68.09033" 31="32.04" 32="-113.680176"/>
-			<links>
-				<link id="Curve#267_Track#0_S#0_#8"/>
-				<link id="Curve#29_Track#0_S#0_#0"/>
 			</links>
 		</track>
 		<track id="Curve#268_Track#0_S#0_#1" _CT_loadIgnore="true">
 			<transform 30="-58.2880859" 31="32.0400047" 32="-113.531738"/>
 			<links>
-				<link id="Curve#268_Track#0_S#0_#2"/>
+				<link id="Curve#268_Track#0_S#0_#3"/>
 				<link id="Curve#29_Track#0_S#0_#0"/>
 			</links>
 		</track>
@@ -4065,13 +4065,6 @@
 				<link id="Curve#268_Track#0_S#0_#20"/>
 			</links>
 		</track>
-		<track id="Curve#268_Track#0_S#0_#2" _CT_loadIgnore="true">
-			<transform 30="-63.2880859" 31="32.04" 32="-113.519043"/>
-			<links>
-				<link id="Curve#268_Track#0_S#0_#1"/>
-				<link id="Curve#268_Track#0_S#0_#5"/>
-			</links>
-		</track>
 		<track id="Curve#268_Track#0_S#0_#20" _CT_loadIgnore="true">
 			<transform 30="-153.268555" 31="32.04" 32="-111.832031"/>
 			<links>
@@ -4107,10 +4100,17 @@
 				<link id="Curve#353_Track#0_S#0_#1"/>
 			</links>
 		</track>
+		<track id="Curve#268_Track#0_S#0_#3" _CT_loadIgnore="true">
+			<transform 30="-68.2880859" 31="32.04" 32="-113.498291"/>
+			<links>
+				<link id="Curve#268_Track#0_S#0_#1"/>
+				<link id="Curve#268_Track#0_S#0_#5"/>
+			</links>
+		</track>
 		<track id="Curve#268_Track#0_S#0_#5" _CT_loadIgnore="true">
 			<transform 30="-78.2876" 31="32.0400047" 32="-113.4314"/>
 			<links>
-				<link id="Curve#268_Track#0_S#0_#2"/>
+				<link id="Curve#268_Track#0_S#0_#3"/>
 				<link id="Curve#268_Track#0_S#0_#7"/>
 			</links>
 		</track>
@@ -4131,7 +4131,7 @@
 		<track id="Curve#29_Track#0_S#0_#0" _CT_loadIgnore="true">
 			<transform 30="-53.2959" 31="32.04" 32="-113.537109"/>
 			<links>
-				<link id="Curve#267_Track#0_S#0_#9"/>
+				<link id="Curve#267_Track#0_S#0_#10"/>
 				<link id="Curve#268_Track#0_S#0_#1"/>
 				<link id="Curve#29_Track#0_S#0_#1"/>
 			</links>
