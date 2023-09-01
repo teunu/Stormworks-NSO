@@ -4,6 +4,15 @@
 		<mesh id="mesh0" file_name="nso_mod/meshes/mainland/6_7_main.mesh">
 			<transform/>
 		</mesh>
+		<mesh id="mesh" file_name="nso_mod/meshes/railway/ArchGreen.mesh">
+			<transform 00="0.592458" 02="-1.04354858" 11="2.5" 20="3.47849512" 22="1.97486" 30="153.5332" 31="25" 32="430.349121"/>
+		</mesh>
+		<mesh id="mesh_Transferred_0" file_name="nso_mod/meshes/railway/ArchGreen.mesh">
+			<transform 00="0.5306511" 02="-1.0762943" 11="2.5" 20="3.58764768" 22="1.768837" 30="240.894043" 31="25" 32="476.435059"/>
+		</mesh>
+		<mesh id="mesh_Transferred_1" file_name="nso_mod/meshes/railway/ArchGreen.mesh">
+			<transform 00="0.607503" 01="-0.000202712981" 02="-1.0348624" 10="-0.0151778758" 11="2.49993658" 12="-0.009399678" 20="3.449456" 21="0.0285564587" 22="2.024954" 30="68.21045" 31="24.7815762" 32="380.4629"/>
+		</mesh>
 		<mesh id="ExtrudedTrackMesh_Curve_56_0" _CT_loadIgnore="true" file_name="meshes/extruded_track_pieces/mega_island_6_7_ExtrudedTrackMesh_Curve_56_0.mesh">
 			<transform 30="-418.473633" 31="16" 32="214.7207"/>
 		</mesh>
@@ -22,11 +31,26 @@
 		<mesh id="ExtrudedTrackMesh_Curve_58_1" _CT_loadIgnore="true" file_name="meshes/extruded_track_pieces/mega_island_6_7_ExtrudedTrackMesh_Curve_58_1.mesh">
 			<transform 30="202.185059" 31="25.665" 32="451.9204"/>
 		</mesh>
+		<mesh id="StaticObject_0" _CT_loadIgnore="true" file_name="meshes/generated_object_geom/tiles/mega_island_6_7/nso_mod/railway/BridgePillar__StaticObject_0.mesh">
+			<transform 00="0.8744422" 02="0.4851297" 20="-0.4851297" 22="0.8744422" 30="196.648438" 31="24.2038631" 32="454.736328"/>
+		</mesh>
+		<mesh id="StaticObject_1" _CT_loadIgnore="true" file_name="meshes/generated_object_geom/tiles/mega_island_6_7/nso_mod/railway/BridgePillar__StaticObject_1.mesh">
+			<transform 00="-0.850168467" 02="-0.5265108" 20="0.5265108" 22="-0.850168467" 30="110.122559" 31="23.9998226" 32="405.525879"/>
+		</mesh>
 	</meshes>
 	<physics_objects/>
 	<physics_meshes>
 		<physics_mesh id="physics_mesh0" file_name="nso_mod/meshes/mainland/6_7_main.phys">
 			<transform/>
+		</physics_mesh>
+		<physics_mesh id="mesh_Transferred_0_phys" file_name="nso_mod/meshes/railway/Phys.phys">
+			<transform 00="0.5306511" 02="-1.0762943" 11="2.5" 20="3.58764768" 22="1.768837" 30="240.894043" 31="25" 32="476.435059"/>
+		</physics_mesh>
+		<physics_mesh id="mesh_Transferred_1_phys" file_name="meshes/unit_sphere_phys.pnso_mod/meshes/railway/Phys.phys">
+			<transform 00="0.607503" 01="-0.000202712981" 02="-1.0348624" 10="-0.0151778758" 11="2.49993658" 12="-0.009399678" 20="3.449456" 21="0.0285564587" 22="2.024954" 30="68.21045" 31="24.7815762" 32="380.4629"/>
+		</physics_mesh>
+		<physics_mesh id="mesh_phys" file_name="nso_mod/meshes/railway/Phys.phys">
+			<transform 00="0.592458" 02="-1.04354858" 11="2.5" 20="3.47849512" 22="1.97486" 30="153.5332" 31="25" 32="430.349121"/>
 		</physics_mesh>
 		<physics_mesh id="ExtrudedTrackMesh_Curve_56_0_Transferred_0" _CT_loadIgnore="true" file_name="meshes/extruded_track_pieces/mega_island_6_7_ExtrudedTrackMesh_Curve_56_0.phys">
 			<transform 30="-418.473633" 31="16" 32="214.7207"/>
@@ -45,6 +69,12 @@
 		</physics_mesh>
 		<physics_mesh id="ExtrudedTrackMesh_Curve_58_1_Transferred_0" _CT_loadIgnore="true" file_name="meshes/extruded_track_pieces/mega_island_6_7_ExtrudedTrackMesh_Curve_58_1.phys">
 			<transform 30="202.185059" 31="25.665" 32="451.9204"/>
+		</physics_mesh>
+		<physics_mesh id="StaticObject_0_phys" _CT_loadIgnore="true" file_name="meshes/generated_object_geom/tiles/mega_island_6_7/nso_mod/railway/BridgePillar__StaticObject_0_phys.phys">
+			<transform 00="0.8744422" 02="0.4851297" 20="-0.4851297" 22="0.8744422" 30="196.648438" 31="24.2038631" 32="454.736328"/>
+		</physics_mesh>
+		<physics_mesh id="StaticObject_1_phys" _CT_loadIgnore="true" file_name="meshes/generated_object_geom/tiles/mega_island_6_7/nso_mod/railway/BridgePillar__StaticObject_1_phys.phys">
+			<transform 00="-0.850168467" 02="-0.5265108" 20="0.5265108" 22="-0.850168467" 30="110.122559" 31="23.9998226" 32="405.525879"/>
 		</physics_mesh>
 	</physics_meshes>
 	<physics_dynamics/>
@@ -3352,7 +3382,7 @@
 			<links>
 				<link id="Curve#58_Track#1_S#1_#30"/>
 				<link id="Curve#59_Track#1_S#0_#1_TileBorderCrossing"/>
-				<link id="Curve#65_Track#0_S#0_#15_TileBorderCrossing"/>
+				<link id="Curve#66_Track#0_S#0_#15_TileBorderCrossing"/>
 			</links>
 		</track>
 		<track id="Curve#58_Track#1_S#1_#4" _CT_loadIgnore="true">
@@ -3409,8 +3439,8 @@
 				<link id="Curve#58_Track#1_S#1_#31"/>
 			</links>
 		</track>
-		<track id="Curve#65_Track#0_S#0_#15_TileBorderCrossing" _CT_loadIgnore="true">
-			<transform 30="321.094238" 31="25.70176" 32="510.472656"/>
+		<track id="Curve#66_Track#0_S#0_#15_TileBorderCrossing" _CT_loadIgnore="true">
+			<transform 30="321.094238" 31="25.7017574" 32="510.472656"/>
 			<links>
 				<link id="Curve#58_Track#1_S#1_#31"/>
 			</links>
