@@ -54,9 +54,22 @@
 	<perches/>
 	<fires/>
 	<train_tracks>
+		<track id="Curve#51_Track#0_S#6_#56_TileBorderCrossing" _CT_loadIgnore="true">
+			<transform 30="-299.19873" 31="15.04" 32="-102.3208"/>
+			<links>
+				<link id="Curve#54_Track#0_S#0_#1"/>
+			</links>
+		</track>
+		<track id="Curve#51_Track#1_S#6_#56_TileBorderCrossing" _CT_loadIgnore="true">
+			<transform 30="-295.4995" 31="15.04" 32="-105.30127"/>
+			<links>
+				<link id="Curve#54_Track#1_S#0_#1"/>
+			</links>
+		</track>
 		<track id="Curve#54_Track#0_S#0_#1" _CT_loadIgnore="true">
 			<transform 30="-296.67334" 31="15.040247" 32="-99.203125"/>
 			<links>
+				<link id="Curve#51_Track#0_S#6_#56_TileBorderCrossing"/>
 				<link id="Curve#54_Track#0_S#0_#2"/>
 			</links>
 		</track>
@@ -840,6 +853,7 @@
 		<track id="Curve#54_Track#1_S#0_#1" _CT_loadIgnore="true">
 			<transform 30="-292.989746" 31="15.040247" 32="-102.202148"/>
 			<links>
+				<link id="Curve#51_Track#1_S#6_#56_TileBorderCrossing"/>
 				<link id="Curve#54_Track#1_S#0_#2"/>
 			</links>
 		</track>
