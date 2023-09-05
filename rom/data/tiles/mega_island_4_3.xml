@@ -83,7 +83,7 @@
 			<transform 30="-305.884766" 31="32.4995" 32="-101.498535"/>
 		</mesh>
 		<mesh id="StaticObject_0" _CT_loadIgnore="true" file_name="meshes/generated_object_geom/tiles/mega_island_4_3/nso_mod/railway/TunnelPortalRound__StaticObject_0.mesh">
-			<transform 00="-0.117006749" 01="-0.0111270566" 02="0.9930688" 10="-0.00128292153" 11="0.99993825" 12="0.0110528665" 20="-0.9931303" 21="1.923088E-05" 22="-0.117013775" 30="448.7959" 31="25.2830257" 32="359.5056"/>
+			<transform 00="-0.117006749" 01="-0.0111270566" 02="0.9930688" 10="-0.0012829206" 11="0.99993825" 12="0.0110528665" 20="-0.9931303" 21="1.92318112E-05" 22="-0.117013775" 30="448.7959" 31="25.2830257" 32="359.5056"/>
 		</mesh>
 	</meshes>
 	<physics_objects/>
@@ -170,7 +170,7 @@
 			<transform 30="-305.884766" 31="32.4995" 32="-101.498535"/>
 		</physics_mesh>
 		<physics_mesh id="StaticObject_0_phys" _CT_loadIgnore="true" file_name="meshes/generated_object_geom/tiles/mega_island_4_3/nso_mod/railway/TunnelPortalRound__StaticObject_0_phys.phys">
-			<transform 00="-0.117006749" 01="-0.0111270566" 02="0.9930688" 10="-0.00128292153" 11="0.99993825" 12="0.0110528665" 20="-0.9931303" 21="1.923088E-05" 22="-0.117013775" 30="448.7959" 31="25.2830257" 32="359.5056"/>
+			<transform 00="-0.117006749" 01="-0.0111270566" 02="0.9930688" 10="-0.0012829206" 11="0.99993825" 12="0.0110528665" 20="-0.9931303" 21="1.92318112E-05" 22="-0.117013775" 30="448.7959" 31="25.2830257" 32="359.5056"/>
 		</physics_mesh>
 	</physics_meshes>
 	<physics_dynamics/>
@@ -5749,6 +5749,7 @@
 			<transform 30="406.9419" 31="24.19" 32="514.77"/>
 			<links>
 				<link id="Curve#35_Track#0_S#0_#36"/>
+				<link id="Curve#36_Track#0_S#0_#1_TileBorderCrossing"/>
 			</links>
 		</track>
 		<track id="Curve#35_Track#0_S#0_#4" _CT_loadIgnore="true">
@@ -6029,6 +6030,12 @@
 			<links>
 				<link id="Curve#369_Track#0_S#0_#10"/>
 				<link id="Curve#369_Track#0_S#0_#8"/>
+			</links>
+		</track>
+		<track id="Curve#36_Track#0_S#0_#1_TileBorderCrossing" _CT_loadIgnore="true">
+			<transform 30="405.577148" 31="24.14995" 32="518.5298"/>
+			<links>
+				<link id="Curve#35_Track#0_S#0_#37"/>
 			</links>
 		</track>
 	</train_tracks>

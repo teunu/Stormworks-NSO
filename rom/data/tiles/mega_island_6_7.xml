@@ -4,15 +4,6 @@
 		<mesh id="mesh0" file_name="nso_mod/meshes/mainland/6_7_main.mesh">
 			<transform/>
 		</mesh>
-		<mesh id="mesh" file_name="nso_mod/meshes/railway/ArchGreen.mesh">
-			<transform 00="0.592458" 02="-1.04354858" 11="2.5" 20="3.47849512" 22="1.97486" 30="153.5332" 31="25" 32="430.349121"/>
-		</mesh>
-		<mesh id="mesh_Transferred_0" file_name="nso_mod/meshes/railway/ArchGreen.mesh">
-			<transform 00="0.5306511" 02="-1.0762943" 11="2.5" 20="3.58764768" 22="1.768837" 30="240.894043" 31="25" 32="476.435059"/>
-		</mesh>
-		<mesh id="mesh_Transferred_1" file_name="nso_mod/meshes/railway/ArchGreen.mesh">
-			<transform 00="0.607503" 01="-0.000202712981" 02="-1.0348624" 10="-0.0151778758" 11="2.49993658" 12="-0.009399678" 20="3.449456" 21="0.0285564587" 22="2.024954" 30="68.21045" 31="24.7815762" 32="380.4629"/>
-		</mesh>
 		<mesh id="ExtrudedTrackMesh_Curve_56_0" _CT_loadIgnore="true" file_name="meshes/extruded_track_pieces/mega_island_6_7_ExtrudedTrackMesh_Curve_56_0.mesh">
 			<transform 30="-418.473633" 31="16" 32="214.7207"/>
 		</mesh>
@@ -37,20 +28,20 @@
 		<mesh id="StaticObject_1" _CT_loadIgnore="true" file_name="meshes/generated_object_geom/tiles/mega_island_6_7/nso_mod/railway/BridgePillar__StaticObject_1.mesh">
 			<transform 00="-0.850168467" 02="-0.5265108" 20="0.5265108" 22="-0.850168467" 30="110.122559" 31="23.9998226" 32="405.525879"/>
 		</mesh>
+		<mesh id="StaticObject_2" _CT_loadIgnore="true" file_name="meshes/generated_object_geom/tiles/mega_island_6_7/nso_mod/railway/ArchGreen__StaticObject_2.mesh">
+			<transform 00="0.4422088" 02="-0.896912158" 20="0.896912158" 22="0.4422088" 30="240.894043" 31="25" 32="476.435059"/>
+		</mesh>
+		<mesh id="StaticObject_3" _CT_loadIgnore="true" file_name="meshes/generated_object_geom/tiles/mega_island_6_7/nso_mod/railway/ArchGreen__StaticObject_3.mesh">
+			<transform 00="0.493714154" 02="-0.869624257" 20="0.869624257" 22="0.493714154" 30="153.5332" 31="25" 32="430.349121"/>
+		</mesh>
+		<mesh id="StaticObject_4" _CT_loadIgnore="true" file_name="meshes/generated_object_geom/tiles/mega_island_6_7/nso_mod/railway/ArchGreen__StaticObject_4.mesh">
+			<transform 00="0.5062521" 01="-2.32830644E-10" 02="-0.8623855" 10="-0.00615736656" 11="0.9999745" 12="-0.00361460121" 20="0.8623636" 21="0.00713992352" 22="0.506239235" 30="68.20996" 31="24.7816" 32="380.4629"/>
+		</mesh>
 	</meshes>
 	<physics_objects/>
 	<physics_meshes>
 		<physics_mesh id="physics_mesh0" file_name="nso_mod/meshes/mainland/6_7_main.phys">
 			<transform/>
-		</physics_mesh>
-		<physics_mesh id="mesh_Transferred_0_phys" file_name="nso_mod/meshes/railway/Phys.phys">
-			<transform 00="0.5306511" 02="-1.0762943" 11="2.5" 20="3.58764768" 22="1.768837" 30="240.894043" 31="25" 32="476.435059"/>
-		</physics_mesh>
-		<physics_mesh id="mesh_Transferred_1_phys" file_name="nso_mod/meshes/railway/Phys.phys">
-			<transform 00="0.607503" 01="-0.000202712981" 02="-1.0348624" 10="-0.0151778758" 11="2.49993658" 12="-0.009399678" 20="3.449456" 21="0.0285564587" 22="2.024954" 30="68.21045" 31="24.7815762" 32="380.4629"/>
-		</physics_mesh>
-		<physics_mesh id="mesh_phys" file_name="nso_mod/meshes/railway/Phys.phys">
-			<transform 00="0.592458" 02="-1.04354858" 11="2.5" 20="3.47849512" 22="1.97486" 30="153.5332" 31="25" 32="430.349121"/>
 		</physics_mesh>
 		<physics_mesh id="ExtrudedTrackMesh_Curve_56_0_Transferred_0" _CT_loadIgnore="true" file_name="meshes/extruded_track_pieces/mega_island_6_7_ExtrudedTrackMesh_Curve_56_0.phys">
 			<transform 30="-418.473633" 31="16" 32="214.7207"/>
@@ -75,6 +66,15 @@
 		</physics_mesh>
 		<physics_mesh id="StaticObject_1_phys" _CT_loadIgnore="true" file_name="meshes/generated_object_geom/tiles/mega_island_6_7/nso_mod/railway/BridgePillar__StaticObject_1_phys.phys">
 			<transform 00="-0.850168467" 02="-0.5265108" 20="0.5265108" 22="-0.850168467" 30="110.122559" 31="23.9998226" 32="405.525879"/>
+		</physics_mesh>
+		<physics_mesh id="StaticObject_2_phys" _CT_loadIgnore="true" file_name="meshes/generated_object_geom/tiles/mega_island_6_7/nso_mod/railway/ArchGreen__StaticObject_2_phys.phys">
+			<transform 00="0.4422088" 02="-0.896912158" 20="0.896912158" 22="0.4422088" 30="240.894043" 31="25" 32="476.435059"/>
+		</physics_mesh>
+		<physics_mesh id="StaticObject_3_phys" _CT_loadIgnore="true" file_name="meshes/generated_object_geom/tiles/mega_island_6_7/nso_mod/railway/ArchGreen__StaticObject_3_phys.phys">
+			<transform 00="0.493714154" 02="-0.869624257" 20="0.869624257" 22="0.493714154" 30="153.5332" 31="25" 32="430.349121"/>
+		</physics_mesh>
+		<physics_mesh id="StaticObject_4_phys" _CT_loadIgnore="true" file_name="meshes/generated_object_geom/tiles/mega_island_6_7/nso_mod/railway/ArchGreen__StaticObject_4_phys.phys">
+			<transform 00="0.5062521" 01="-2.32830644E-10" 02="-0.8623855" 10="-0.00615736656" 11="0.9999745" 12="-0.00361460121" 20="0.8623636" 21="0.00713992352" 22="0.506239235" 30="68.20996" 31="24.7816" 32="380.4629"/>
 		</physics_mesh>
 	</physics_meshes>
 	<physics_dynamics/>
