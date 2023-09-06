@@ -1164,7 +1164,7 @@ function commands.spawn(cdata)
 		return "error", "no addon data for addon_index: "..addon_index
 	end
 
-	local filter = cdata.args[1] or "PW_StuCat"
+	local filter = cdata.args[1] or "NSO_objects"
 	if cdata.args[1] then
 		LogBoth('Cat Spawn', string.format("Spawning components that match filter: '%s'...", filter), cdata.user_peer_id)
 	else
