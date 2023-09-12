@@ -7,7 +7,7 @@
 
 
 local script_name = "NSO_Objects"
-local script_version = "0.0.0"
+local script_version = "0.0.2"
 
 
 local http_port = 8080
@@ -18,7 +18,7 @@ local file_version = 1
 
 local addon_index
 
-
+---@class NOS_Objects.Spawned
 local spawned = {
 	vehicle_id__to__component = {},
 
@@ -853,7 +853,7 @@ end
 ---@param default_type string
 ---@return table<string, VehicleSpawnPrefab>
 local function generateObjectByTypeMapping(tag, default_type)
-	local type_tag = "spawn_".. tag .. "_type" -- Use spawn prefix so we don't get unintended matches with vehicles that are spawned directly instead of going through the zone abstraction.
+	local type_tag = "spawn_".. tag-- Use spawn prefix so we don't get unintended matches with vehicles that are spawned directly instead of going through the zone abstraction.
 
 	LogFormat("generateObjectByTypeMapping", "(tag: '%s', default_type: '%s')", tag, default_type)
 
@@ -915,7 +915,8 @@ local type_to_default_variant = {
 	train_station = "default",
 	junction = "symm",
 	signalling_equipment_type = "Asig",
-	train_buffer = "default"
+	train_buffer = "default",
+	sign = "default"
 }
 
 
@@ -954,6 +955,13 @@ local function getTypeAndVariant(meta)
 		local variant = meta.train_station_vehicle
 		if variant then
 			type_str = "train_station"
+			return type_str, variant
+		end
+	end
+	do
+		local variant = meta.sign
+		if variant then
+			type_str = "sign"
 			return type_str, variant
 		end
 	end
@@ -1026,7 +1034,7 @@ local function spawn_component_zone_vehicle(cdata, addon_index, location_index, 
 	local prefab = getPrefab(component.meta)
 
 	if not prefab then
-		LogHttp("do_component_zone_vehicle", "Did not get a prefab: location_index: "..location_index.." / component_index: "..component_index, cdata.user_peer_id)
+		LogHttp("do_component_zone_vehicle", "Did not get a prefab: location_index: "..location_index.." / component_index: "..component_index, cdata.user_peer_id.." tags: "..component.tags_full)
 		return
 	end
 
@@ -1043,7 +1051,7 @@ local function spawn_component_zone_vehicle(cdata, addon_index, location_index, 
 		LogHttp("do_component_zone_vehicle", "Failed to spawn vehicle: location_index: "..location_index.." / component_index: "..component_index, cdata.user_peer_id)
 		return
 	end
-	LogHttp('do_component_zone_vehicle', string.format('Spawned vehicle: \'%s\' with id %i', component.display_name, spawned_id), cdata.user_peer_id)
+	LogHttp('do_component_zone_vehicle', string.format('Spawned vehicle: \'%s\' with id %i from component # %i with tags: %s', component.display_name, spawned_id, component.id, component.tags_full), cdata.user_peer_id)
 	component.vehicle_id = spawned_id
 	spawned.vehicle_id__to__component[spawned_id] = component
 
@@ -1084,7 +1092,7 @@ local function spawn_at_component_index(cdata, addon_index, location_index, loca
 		not hasTag(component.tags, filter)
 		and not component.meta[filter]
 	) then
-		LogFormat("do_component_index", "No match with filter.")
+		LogFormat("do_component_index", "No match with filter. (%s)", component.tags_full)
 		return
 	end
 
@@ -1164,11 +1172,11 @@ function commands.spawn(cdata)
 		return "error", "no addon data for addon_index: "..addon_index
 	end
 
-	local filter = cdata.args[1] or "PW_StuCat"
+	local filter = cdata.args[1] or "NSO_objects"
 	if cdata.args[1] then
-		LogBoth('Cat Spawn', string.format("Spawning components that match filter: '%s'...", filter), cdata.user_peer_id)
+		LogBoth('NSO Spawn', string.format("Spawning components that match filter: '%s'...", filter), cdata.user_peer_id)
 	else
-		LogBoth('Cat Spawn', string.format("Spawning all components using the everything filter: '%s'...", filter), cdata.user_peer_id)
+		LogBoth('NSO Spawn', string.format("Spawning all components using the everything filter: '%s'...", filter), cdata.user_peer_id)
 	end
 
 	local counter = 0
@@ -1178,7 +1186,7 @@ function commands.spawn(cdata)
 
 	LogHttp("spawn", "Done spawning, %i items spawned. Total counts of currently spawned vehicles %i", counter, tableCount(spawned.vehicle_id__to__component))
 
-	return 'Cat Spawn', string.format('Spawning Catenary completed!\nSpawned %i total things. There are currently %i vehicles and %i objects total.', counter, tableCount(spawned.vehicle_id__to__component), tableCount(spawned.objects))
+	return 'NSO Spawn', string.format('Spawning Catenary completed!\nSpawned %i total things. There are currently %i vehicles and %i objects total.', counter, tableCount(spawned.vehicle_id__to__component), tableCount(spawned.objects))
 end
 
 ---@param cdata CommandEventArgs
@@ -1187,7 +1195,7 @@ function commands.despawn(cdata)
 
 	local filter = cdata.args[1]
 	if filter then
-		server.announce('Cat Despawn', string.format("Despawning components that match filter '%s'...", filter), cdata.user_peer_id)
+		server.announce('NSO Despawn', string.format("Despawning components that match filter '%s'...", filter), cdata.user_peer_id)
 	end
 
 	local vc, oc = 0, 0
@@ -1209,7 +1217,7 @@ function commands.despawn(cdata)
 		end
 	end
 
-	return 'Cat Despawn', 'Despanwing completed!\nRemoved '..vc..' vehicles and '..oc..' objects.'
+	return 'NSO Despawn', 'Despanwing completed!\nRemoved '..vc..' vehicles and '..oc..' objects.'
 end
 
 ---@param cdata CommandEventArgs
@@ -1219,14 +1227,14 @@ function commands.respawn(cdata)
 	commands.despawn(cdata)
 	commands.spawn(cdata)
 
-	return 'Cat Respawn', 'Respawning Catenary completed!'
+	return 'NSO Respawn', 'Respawning objects completed!'
 end
 
 ---@param cdata CommandEventArgs
 function commands.deleteAll(cdata)
 	if complain_if_not_admin(cdata) then return end
 
-	server.notify(cdata.user_peer_id, 'Cat deleteAll start', 'Despawning all vehicles!', 7)
+	server.notify(cdata.user_peer_id, 'NSO deleteAll start', 'Despawning all vehicles!', 7)
 	local cnt = 0
 	for i = 0, 10000 do
 		local succ = server.despawnVehicle(i, true)
@@ -1237,14 +1245,14 @@ function commands.deleteAll(cdata)
 	spawned.objects  = {}
 	spawned.no_duplicates_component_id_set = {}
 
-	return 'Cat deleteAll end', 'Despawning all vehicles completed!\nRemoved '..cnt..' vehicles.'
+	return 'NSO deleteAll end', 'Despawning all vehicles completed!\nRemoved '..cnt..' vehicles.'
 end
 
 ---@param cdata CommandEventArgs
 function commands.help(cdata)
 	-- todo: after refactor there should be a framework for this.
 
-	return "Info", string.format("Addon: %s, Version: %s", script_name, script_version)
+	return "NSO Info", string.format("Addon: %s, Version: %s", script_name, script_version)
 end
 
 
@@ -1394,6 +1402,7 @@ function onCreate()
 	spawned.vehicles = spawned.vehicles or {}
 	spawned.objects  = spawned.objects or {}
 	spawned.no_duplicates_component_id_set = spawned.no_duplicates_component_id_set or {}
+	spawned.vehicle_id__to__component = spawned.vehicle_id__to__component or {}
 	g_savedata = spawned
 
 	LogBoth(script_name, string.format('version: %s', script_version), -1)
