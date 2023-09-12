@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <playlist folder_path="data/missions/nso_objects" file_store="4" name="[NSO] Objects">
-	<locations location_id_counter="28" component_id_counter="177">
+	<locations location_id_counter="30" component_id_counter="272">
 		<locations>
 			<l id="1" tile="data/tiles/mega_island_3_3.xml" name="MEGA_ISLAND_3_3" is_env_mod="true">
 				<components>
-					<c component_type="10" id="99" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=symmetric">
+					<c component_type="10" id="99" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_right,junction_initial_state=left">
 						<spawn_transform 00="0.367629" 02="0.929973" 20="-0.929973" 22="0.367629" 30="-199.4697" 31="34.54086" 32="158.9312"/>
 						<spawn_bounds>
 							<min x="-0.5" y="-0.5" z="-0.5"/>
@@ -13,7 +13,7 @@
 						<vehicle_parent_transform/>
 						<graph_links/>
 					</c>
-					<c component_type="10" id="1" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=symmetric">
+					<c component_type="10" id="1" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_left">
 						<spawn_transform 00="0.37467" 02="0.927158" 20="-0.927158" 22="0.37467" 30="77.03613" 31="37.066" 32="58.42212"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
@@ -26,7 +26,7 @@
 			</l>
 			<l id="2" tile="data/tiles/mega_island_4_3.xml" name="MEGA_ISLAND_4_3" is_env_mod="true">
 				<components>
-					<c component_type="10" id="2" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=symmetric">
+					<c component_type="10" id="2" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_symmetric">
 						<spawn_transform 00="0.000894" 02="1" 20="-1" 22="0.000894" 30="-172.7588" 31="31.82841" 32="-120.4626"/>
 						<spawn_bounds>
 							<min x="-0.5" y="-0.5" z="-0.5"/>
@@ -35,7 +35,7 @@
 						<vehicle_parent_transform/>
 						<graph_links/>
 					</c>
-					<c component_type="10" id="3" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=symmetric">
+					<c component_type="10" id="3" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_symmetric">
 						<spawn_transform 00="0.009183" 02="-0.999958" 20="0.999958" 22="0.009183" 30="-53.88428" 31="31.70896" 32="-110.5417"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
@@ -44,7 +44,7 @@
 						<vehicle_parent_transform/>
 						<graph_links/>
 					</c>
-					<c component_type="10" id="4" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=symmetric">
+					<c component_type="10" id="4" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_symmetric">
 						<spawn_transform 00="0.005367" 02="0.999986" 20="-0.999986" 22="0.005367" 30="-32.92041" 31="31.51194" 32="-110.4321"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
@@ -57,7 +57,7 @@
 			</l>
 			<l id="3" tile="data/tiles/mega_island_8_1.xml" name="MEGA_ISLAND_8_1" is_env_mod="true">
 				<components>
-					<c component_type="10" id="5" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=symmetric">
+					<c component_type="10" id="5" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_symmetric,junction_initial_state=left">
 						<spawn_transform 00="-0.866025" 02="-0.5" 20="0.5" 22="-0.866025" 30="-286.5078" 31="19.92541" 32="441.0991"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
@@ -66,7 +66,7 @@
 						<vehicle_parent_transform/>
 						<graph_links/>
 					</c>
-					<c component_type="10" id="6" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=symmetric">
+					<c component_type="10" id="6" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_left">
 						<spawn_transform 00="-0.866025" 02="-0.5" 20="0.5" 22="-0.866025" 30="-295.5605" 31="19.70558" 32="435.4025"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
@@ -79,7 +79,7 @@
 			</l>
 			<l id="4" tile="data/tiles/mega_island_6_4.xml" name="MEGA_ISLAND_6_4" is_env_mod="true">
 				<components>
-					<c component_type="10" id="7" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=symmetric">
+					<c component_type="10" id="7" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_left">
 						<spawn_transform 00="-0.667573" 02="-0.744545" 20="0.744545" 22="-0.667573" 30="171.9526" 31="19.58479" 32="102.4028"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
@@ -88,7 +88,7 @@
 						<vehicle_parent_transform/>
 						<graph_links/>
 					</c>
-					<c component_type="10" id="8" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=symmetric">
+					<c component_type="10" id="8" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_symmetric,junction_initial_state=left">
 						<spawn_transform 00="-0.667573" 02="-0.744545" 20="0.744545" 22="-0.667573" 30="155.0767" 31="19.7503" 32="82.91455"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
@@ -97,7 +97,7 @@
 						<vehicle_parent_transform/>
 						<graph_links/>
 					</c>
-					<c component_type="10" id="9" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=symmetric">
+					<c component_type="10" id="9" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_left,junction_initial_state=left">
 						<spawn_transform 00="-0.644924" 02="-0.764246" 20="0.764246" 22="-0.644924" 30="118.8086" 31="20.01621" 32="106.666"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
@@ -106,7 +106,7 @@
 						<vehicle_parent_transform/>
 						<graph_links/>
 					</c>
-					<c component_type="10" id="10" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=symmetric">
+					<c component_type="10" id="10" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_symmetric,junction_initial_state=left">
 						<spawn_transform 00="-0.639305" 02="-0.768953" 20="0.768953" 22="-0.639305" 30="111.2656" 31="19.65207" 32="154.9819"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
@@ -115,7 +115,7 @@
 						<vehicle_parent_transform/>
 						<graph_links/>
 					</c>
-					<c component_type="10" id="11" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=symmetric">
+					<c component_type="10" id="11" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_left">
 						<spawn_transform 00="-0.62932" 02="-0.777146" 20="0.777146" 22="-0.62932" 30="-230.3555" 31="19.77542" 32="431.9639"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
@@ -128,7 +128,7 @@
 			</l>
 			<l id="5" tile="data/tiles/mega_island_6_5.xml" name="MEGA_ISLAND_6_5" is_env_mod="true">
 				<components>
-					<c component_type="10" id="12" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=symmetric">
+					<c component_type="10" id="12" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_symmetric">
 						<spawn_transform 00="0.542892" 02="0.839803" 20="-0.839803" 22="0.542892" 30="-327.1025" 31="19.74974" 32="-498.7695"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
@@ -137,7 +137,7 @@
 						<vehicle_parent_transform/>
 						<graph_links/>
 					</c>
-					<c component_type="10" id="13" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=symmetric">
+					<c component_type="10" id="13" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_right,junction_initial_state=left">
 						<spawn_transform 00="0.642004" 02="0.766702" 20="-0.766702" 22="0.642004" 30="-388.7129" 31="19.72526" 32="-481.1938"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
@@ -146,7 +146,7 @@
 						<vehicle_parent_transform/>
 						<graph_links/>
 					</c>
-					<c component_type="10" id="14" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=symmetric">
+					<c component_type="10" id="14" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_symmetric">
 						<spawn_transform 00="0.586804" 02="0.809729" 20="-0.809729" 22="0.586804" 30="-348.5938" 31="19.85571" 32="-474.5337"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
@@ -155,7 +155,7 @@
 						<vehicle_parent_transform/>
 						<graph_links/>
 					</c>
-					<c component_type="10" id="15" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=symmetric">
+					<c component_type="10" id="15" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_left">
 						<spawn_transform 00="0.610058" 02="0.792357" 20="-0.792357" 22="0.610058" 30="-465.5894" 31="19.77574" 32="-405.749"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
@@ -168,8 +168,8 @@
 			</l>
 			<l id="6" tile="data/tiles/mega_island_5_5.xml" name="MEGA_ISLAND_5_5" is_env_mod="true">
 				<components>
-					<c component_type="10" id="16" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=symmetric">
-						<spawn_transform 00="0.623559" 02="0.781777" 20="-0.781777" 22="0.623559" 30="370.918" 31="19.89753" 32="-273.3794"/>
+					<c component_type="10" id="16" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_left,junction_initial_state=left">
+						<spawn_transform 00="0.623559" 02="0.781776" 20="-0.781776" 22="0.623559" 30="370.918" 31="19.89753" 32="-273.3794"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
 							<max x="1" y="1" z="1"/>
@@ -177,7 +177,7 @@
 						<vehicle_parent_transform/>
 						<graph_links/>
 					</c>
-					<c component_type="10" id="17" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=symmetric">
+					<c component_type="10" id="17" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_symmetric,junction_initial_state=left">
 						<spawn_transform 00="0.750573" 02="0.660787" 20="-0.660787" 22="0.750573" 30="-217.5396" 31="19.82528" 32="227.6274"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
@@ -186,7 +186,7 @@
 						<vehicle_parent_transform/>
 						<graph_links/>
 					</c>
-					<c component_type="10" id="18" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=symmetric">
+					<c component_type="10" id="18" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_right,junction_initial_state=left">
 						<spawn_transform 00="-0.756539" 02="-0.653949" 20="0.653949" 22="-0.756539" 30="-245.4321" 31="19.82358" 32="259.1572"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
@@ -195,7 +195,7 @@
 						<vehicle_parent_transform/>
 						<graph_links/>
 					</c>
-					<c component_type="10" id="19" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=symmetric">
+					<c component_type="10" id="19" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_symmetric,junction_initial_state=left">
 						<spawn_transform 00="0.83438" 02="0.551189" 20="-0.551189" 22="0.83438" 30="-355.1382" 31="19.91701" 32="418.1226"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
@@ -208,7 +208,7 @@
 			</l>
 			<l id="7" tile="data/tiles/mega_island_7_8.xml" name="MEGA_ISLAND_7_8" is_env_mod="true">
 				<components>
-					<c component_type="10" id="20" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=symmetric">
+					<c component_type="10" id="20" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_symmetric">
 						<spawn_transform 00="-0.156435" 02="0.987688" 20="-0.987688" 22="-0.156435" 30="-486.2" 31="23.5" 32="-425.8"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
@@ -221,8 +221,8 @@
 			</l>
 			<l id="8" tile="data/tiles/mega_island_8_8.xml" name="MEGA_ISLAND_8_8" is_env_mod="true">
 				<components>
-					<c component_type="10" id="21" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=symmetric">
-						<spawn_transform 00="-0.58803" 02="0.808839" 20="-0.808839" 22="-0.58803" 30="421.9883" 31="14.70916" 32="-173.4199"/>
+					<c component_type="10" id="21" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_symmetric">
+						<spawn_transform 00="-0.58803" 02="0.808839" 20="-0.808839" 22="-0.58803" 30="421.9883" 31="14.56138" 32="-173.4199"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
 							<max x="1" y="1" z="1"/>
@@ -230,7 +230,7 @@
 						<vehicle_parent_transform/>
 						<graph_links/>
 					</c>
-					<c component_type="10" id="72" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=symmetric">
+					<c component_type="10" id="72" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_symmetric,junction_initial_state=left">
 						<spawn_transform 00="0.984808" 02="-0.173648" 20="0.173648" 22="0.984808" 30="438.3" 31="13.8" 32="-252.6"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
@@ -239,11 +239,91 @@
 						<vehicle_parent_transform/>
 						<graph_links/>
 					</c>
+					<c component_type="10" id="257" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,sign=LF6K4_L">
+						<spawn_transform 00="0.802496" 02="-0.596658" 20="0.596658" 22="0.802496" 30="491.5713" 31="13.72212" 32="-128.8877"/>
+						<spawn_bounds>
+							<min x="-1" y="-1" z="-1"/>
+							<max x="1" y="1" z="1"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="258" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,sign=LF7K4">
+						<spawn_transform 00="0.979221" 02="-0.202795" 20="0.202795" 22="0.979221" 30="439.1953" 31="13.64515" 32="-248.6445"/>
+						<spawn_bounds>
+							<min x="-1" y="-1" z="-1"/>
+							<max x="1" y="1" z="1"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="259" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,signal=HV_Vsig">
+						<spawn_transform 00="0.978882" 02="-0.204426" 20="0.204426" 22="0.978882" 30="439.2051" 31="13.70219" 32="-248.5811"/>
+						<spawn_bounds>
+							<min x="-1" y="-1" z="-1"/>
+							<max x="1" y="1" z="1"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="260" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,signal=HV_Asig_LF7K8">
+						<spawn_transform 00="-1" 22="-1" 30="439.7441" 31="13.83479" 32="-326.75"/>
+						<spawn_bounds>
+							<min x="-1" y="-1" z="-1"/>
+							<max x="1" y="1" z="1"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="261" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,signal=HV_Asig">
+						<spawn_transform 00="-1" 22="-1" 30="434.5723" 31="13.83636" 32="-326.3916"/>
+						<spawn_bounds>
+							<min x="-1" y="-1" z="-1"/>
+							<max x="1" y="1" z="1"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="264" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,sign=LF7K8">
+						<spawn_transform 00="-0.963744" 02="0.266829" 20="-0.266829" 22="-0.963744" 30="449.1045" 31="13.54141" 32="-229.8389"/>
+						<spawn_bounds>
+							<min x="-1" y="-1" z="-1"/>
+							<max x="1" y="1" z="1"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="265" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,sign=LF7K12">
+						<spawn_transform 00="0.577479" 02="-0.816406" 20="0.816406" 22="0.577479" 30="418.0088" 31="14.39982" 32="-176.2939"/>
+						<spawn_bounds>
+							<min x="-1" y="-1" z="-1"/>
+							<max x="1" y="1" z="1"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="266" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,signal=HV_Bksig_ZS3K10_Vsig_ZS3VK8">
+						<spawn_transform 00="-0.5706161" 02="0.8212169" 11="0.9999999" 20="-0.8212169" 22="-0.5706161" 30="426.5361" 31="14.20895" 32="-177.1504"/>
+						<spawn_bounds>
+							<min x="-1" y="-1" z="-1"/>
+							<max x="1" y="1" z="1"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="271" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,signal=HV_Vsig_ZS3VK10">
+						<spawn_transform 00="-0.06748959" 02="0.99772" 20="-0.99772" 22="-0.06748959" 30="-244.1328" 31="9.599193" 32="-312.4946"/>
+						<spawn_bounds>
+							<min x="-1" y="-1" z="-1"/>
+							<max x="1" y="1" z="1"/>
+						</spawn_bounds>
+						<graph_links/>
+					</c>
 				</components>
 			</l>
 			<l id="9" tile="data/tiles/mega_island_9_8.xml" name="MEGA_ISLAND_9_8" is_env_mod="true">
 				<components>
-					<c component_type="10" id="22" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=symmetric">
+					<c component_type="10" id="22" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_symmetric">
 						<spawn_transform 00="0.707107" 02="-0.707107" 20="0.707107" 22="0.707107" 30="-473.6" 31="12.8" 32="-96.5"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
@@ -252,8 +332,8 @@
 						<vehicle_parent_transform/>
 						<graph_links/>
 					</c>
-					<c component_type="10" id="73" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=symmetric">
-						<spawn_transform 00="0.615662" 02="-0.788011" 20="0.788011" 22="0.615662" 30="-325.4" 31="10.8" 32="58.8"/>
+					<c component_type="10" id="73" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_right">
+						<spawn_transform 00="0.615662" 02="-0.78801" 20="0.78801" 22="0.615662" 30="-325.4" 31="10.8" 32="58.8"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
 							<max x="1" y="1" z="1"/>
@@ -261,8 +341,242 @@
 						<vehicle_parent_transform/>
 						<graph_links/>
 					</c>
-					<c component_type="10" id="74" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=symmetric">
+					<c component_type="10" id="74" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_symmetric">
 						<spawn_transform 00="-0.694658" 02="-0.71934" 20="0.71934" 22="-0.694658" 30="-401.6" 31="12" 32="-24.4"/>
+						<spawn_bounds>
+							<min x="-1" y="-1" z="-1"/>
+							<max x="1" y="1" z="1"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="188" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_right">
+						<spawn_transform 00="0" 02="-1" 20="1" 22="0" 30="430.9316" 31="9" 32="217.0723"/>
+						<spawn_bounds>
+							<min x="-1" y="-1" z="-1"/>
+							<max x="1" y="1" z="1"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="189" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_left">
+						<spawn_transform 00="0" 02="-1" 20="1" 22="0" 30="354.1475" 31="9" 32="211.5957"/>
+						<spawn_bounds>
+							<min x="-1" y="-1" z="-1"/>
+							<max x="1" y="1" z="1"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="190" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_left">
+						<spawn_transform 00="0" 02="1" 20="-1" 22="0" 30="374.8193" 31="9" 32="211.5225"/>
+						<spawn_bounds>
+							<min x="-1" y="-1" z="-1"/>
+							<max x="1" y="1" z="1"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="191" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_left">
+						<spawn_transform 00="0" 02="1" 20="-1" 22="0" 30="262.2725" 31="9" 32="211.0518"/>
+						<spawn_bounds>
+							<min x="-1" y="-1" z="-1"/>
+							<max x="1" y="1" z="1"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="193" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_symmetric">
+						<spawn_transform 00="-0.173648" 02="0.984808" 20="-0.984808" 22="-0.173648" 30="-35.4736" 31="9" 32="197.0742"/>
+						<spawn_bounds>
+							<min x="-1" y="-1" z="-1"/>
+							<max x="1" y="1" z="1"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="194" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_right">
+						<spawn_transform 00="-0.173648" 02="0.984808" 20="-0.984808" 22="-0.173648" 30="63.7217" 31="9" 32="209.2266"/>
+						<spawn_bounds>
+							<min x="-1" y="-1" z="-1"/>
+							<max x="1" y="1" z="1"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="195" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_right">
+						<spawn_transform 00="-0.173648" 02="0.984808" 20="-0.984808" 22="-0.173648" 30="56.52734" 31="9" 32="214.0371"/>
+						<spawn_bounds>
+							<min x="-1" y="-1" z="-1"/>
+							<max x="1" y="1" z="1"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="196" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_left">
+						<spawn_transform 00="0" 02="-1" 20="1" 22="0" 30="110.7109" 31="9" 32="226.584"/>
+						<spawn_bounds>
+							<min x="-1" y="-1" z="-1"/>
+							<max x="1" y="1" z="1"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="197" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_left">
+						<spawn_transform 00="0" 02="-1" 20="1" 22="0" 30="145.3242" 31="9" 32="226.5518"/>
+						<spawn_bounds>
+							<min x="-1" y="-1" z="-1"/>
+							<max x="1" y="1" z="1"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="198" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_left">
+						<spawn_transform 00="0" 02="-1" 20="1" 22="0" 30="118.8428" 31="9" 32="216.7197"/>
+						<spawn_bounds>
+							<min x="-1" y="-1" z="-1"/>
+							<max x="1" y="1" z="1"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="199" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_right">
+						<spawn_transform 00="-0.173648" 02="0.984808" 20="-0.984808" 22="-0.173648" 30="90.7578" 31="9" 32="211.833"/>
+						<spawn_bounds>
+							<min x="-1" y="-1" z="-1"/>
+							<max x="1" y="1" z="1"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="200" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_right">
+						<spawn_transform 00="0" 02="1" 20="-1" 22="0" 30="373.7783" 31="9" 32="221.4834"/>
+						<spawn_bounds>
+							<min x="-1" y="-1" z="-1"/>
+							<max x="1" y="1" z="1"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="201" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_symmetric">
+						<spawn_transform 00="0.173648" 02="-0.984808" 20="0.984808" 22="0.173648" 30="429.6016" 31="9" 32="224.0107"/>
+						<spawn_bounds>
+							<min x="-1" y="-1" z="-1"/>
+							<max x="1" y="1" z="1"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="202" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_right">
+						<spawn_transform 00="-0.173648" 02="0.984808" 20="-0.984808" 22="-0.173648" 30="473.8125" 31="9" 32="226.6191"/>
+						<spawn_bounds>
+							<min x="-1" y="-1" z="-1"/>
+							<max x="1" y="1" z="1"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="241" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,signal=HV_Bksig_LF7K12">
+						<spawn_transform 00="0" 02="-1" 20="1" 22="0" 30="445.4414" 31="8.841443" 32="211.0781"/>
+						<spawn_bounds>
+							<min x="-1" y="-1" z="-1"/>
+							<max x="1" y="1" z="1"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="243" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,signal=HV_Asig_LF7K12_Vsig_ZS3VK8">
+						<spawn_transform 00="0.173648" 02="-0.984808" 20="0.984808" 22="0.173648" 30="55.74219" 31="8.876964" 32="213.3613"/>
+						<spawn_bounds>
+							<min x="-1" y="-1" z="-1"/>
+							<max x="1" y="1" z="1"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="244" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,signal=HV_Esig_ZS3K8_VsigNK_ZS3VK8">
+						<spawn_transform 00="-0.214627" 02="0.976696" 20="-0.976696" 22="-0.214627" 30="-60.54688" 31="8.912798" 32="192.2568"/>
+						<spawn_bounds>
+							<min x="-1" y="-1" z="-1"/>
+							<max x="1" y="1" z="1"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="248" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,sign=LF7K16_R">
+						<spawn_transform 00="0" 02="1" 20="-1" 22="0" 30="349.4473" 31="8.959682" 32="211.1426"/>
+						<spawn_bounds>
+							<min x="-1" y="-1" z="-1"/>
+							<max x="1" y="1" z="1"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="249" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,signal=HV_Vsig_ZS3VK8">
+						<spawn_transform 00="0" 02="-1" 20="1" 22="0" 30="260.0986" 31="8.92064" 32="211.0547"/>
+						<spawn_bounds>
+							<min x="-1" y="-1" z="-1"/>
+							<max x="1" y="1" z="1"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="250" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,sign=LF7K12">
+						<spawn_transform 00="0" 02="-1" 20="1" 22="0" 30="260.2793" 31="9.033439" 32="211.0674"/>
+						<spawn_bounds>
+							<min x="-1" y="-1" z="-1"/>
+							<max x="1" y="1" z="1"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="251" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,signal=HV_Bksig_LF7K16_VsigNK_ZS3VK8">
+						<spawn_transform 00="-0.214626" 02="0.976696" 20="-0.976696" 22="-0.214626" 30="-58.05371" 31="8.896955" 32="182.2754"/>
+						<spawn_bounds>
+							<min x="-1" y="-1" z="-1"/>
+							<max x="1" y="1" z="1"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="252" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,sign=LF6K8">
+						<spawn_transform 00="0.173648" 02="-0.984808" 20="0.984808" 22="0.173648" 30="-32.41992" 31="8.807527" 32="187.1553"/>
+						<spawn_bounds>
+							<min x="-1" y="-1" z="-1"/>
+							<max x="1" y="1" z="1"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="253" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,sign=LF7K12">
+						<spawn_transform 00="-0.632573" 02="0.7745" 20="-0.7745" 22="-0.632573" 30="-332.9658" 31="10.79953" 32="39.08887"/>
+						<spawn_bounds>
+							<min x="-1" y="-1" z="-1"/>
+							<max x="1" y="1" z="1"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="254" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,signal=HV_Bksig_ZS3K8">
+						<spawn_transform 00="0.633709" 02="-0.773571" 20="0.773571" 22="0.633709" 30="-321.9492" 31="10.72635" 32="48.27734"/>
+						<spawn_bounds>
+							<min x="-1" y="-1" z="-1"/>
+							<max x="1" y="1" z="1"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="255" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,signal=HV_Vsig_ZS3VK8">
+						<spawn_transform 00="-0.685068" 02="0.728479" 20="-0.728479" 22="-0.685068" 30="-439.1455" 31="12.41755" 32="-62.04199"/>
+						<spawn_bounds>
+							<min x="-1" y="-1" z="-1"/>
+							<max x="1" y="1" z="1"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="256" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,signal=HV_Bksig_ZS3K8">
+						<spawn_transform 00="0.626421" 02="-0.779485" 20="0.779485" 22="0.626421" 30="-328.0674" 31="10.72631" 32="56.51953"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
 							<max x="1" y="1" z="1"/>
@@ -274,7 +588,7 @@
 			</l>
 			<l id="10" tile="data/tiles/mega_island_13_8.xml" name="MEGA_ISLAND_13_8" is_env_mod="true">
 				<components>
-					<c component_type="10" id="23" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=symmetric">
+					<c component_type="10" id="23" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_symmetric">
 						<spawn_transform 00="0.748652" 02="0.662963" 20="-0.662963" 22="0.748652" 30="-159.1318" 31="6.8" 32="120.5273"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
@@ -283,7 +597,7 @@
 						<vehicle_parent_transform/>
 						<graph_links/>
 					</c>
-					<c component_type="10" id="24" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=symmetric">
+					<c component_type="10" id="24" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_left">
 						<spawn_transform 00="-0.789513" 02="-0.613734" 20="0.613734" 22="-0.789513" 30="-111.4785" 31="6.8" 32="78.6465"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
@@ -292,7 +606,7 @@
 						<vehicle_parent_transform/>
 						<graph_links/>
 					</c>
-					<c component_type="10" id="25" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=symmetric">
+					<c component_type="10" id="25" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_symmetric">
 						<spawn_transform 00="0.806554" 02="0.591161" 20="-0.591161" 22="0.806554" 30="-83.9932" 31="6.8" 32="41.8135"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
@@ -301,7 +615,7 @@
 						<vehicle_parent_transform/>
 						<graph_links/>
 					</c>
-					<c component_type="10" id="26" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=symmetric">
+					<c component_type="10" id="26" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_left">
 						<spawn_transform 00="0.736393" 02="0.676554" 20="-0.676554" 22="0.736393" 30="-38.625" 31="6.8" 32="-15.8984"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
@@ -310,7 +624,7 @@
 						<vehicle_parent_transform/>
 						<graph_links/>
 					</c>
-					<c component_type="10" id="27" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=symmetric">
+					<c component_type="10" id="27" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_right,junction_initial_state=left">
 						<spawn_transform 00="0.846808" 02="0.531898" 20="-0.531898" 22="0.846808" 30="-30.4453" 31="6.8" 32="-37.0557"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
@@ -319,7 +633,7 @@
 						<vehicle_parent_transform/>
 						<graph_links/>
 					</c>
-					<c component_type="10" id="28" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=symmetric">
+					<c component_type="10" id="28" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_right,junction_initial_state=left">
 						<spawn_transform 00="-0.860475" 02="-0.509492" 20="0.509492" 22="-0.860475" 30="-8.7109" 31="6.8" 32="-91.8565"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
@@ -328,7 +642,7 @@
 						<vehicle_parent_transform/>
 						<graph_links/>
 					</c>
-					<c component_type="10" id="29" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=symmetric">
+					<c component_type="10" id="29" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_right,junction_initial_state=left">
 						<spawn_transform 00="-0.866025" 02="-0.5" 20="0.5" 22="-0.866025" 30="92.6397" 31="6.8" 32="-202.5869"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
@@ -337,7 +651,7 @@
 						<vehicle_parent_transform/>
 						<graph_links/>
 					</c>
-					<c component_type="10" id="30" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=symmetric">
+					<c component_type="10" id="30" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_left">
 						<spawn_transform 00="-0.939693" 02="-0.34202" 20="0.34202" 22="-0.939693" 30="187.7891" 31="6.8" 32="-382.0073"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
@@ -346,7 +660,7 @@
 						<vehicle_parent_transform/>
 						<graph_links/>
 					</c>
-					<c component_type="10" id="31" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=symmetric">
+					<c component_type="10" id="31" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_right,junction_initial_state=left">
 						<spawn_transform 00="0.87232" 02="0.488936" 20="-0.488936" 22="0.87232" 30="171.2002" 31="6.8" 32="-383.0073"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
@@ -355,7 +669,7 @@
 						<vehicle_parent_transform/>
 						<graph_links/>
 					</c>
-					<c component_type="10" id="32" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=symmetric">
+					<c component_type="10" id="32" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_right,junction_initial_state=left">
 						<spawn_transform 00="-0.866025" 02="-0.5" 20="0.5" 22="-0.866025" 30="190.5586" 31="6.8" 32="-436.9478"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
@@ -364,7 +678,7 @@
 						<vehicle_parent_transform/>
 						<graph_links/>
 					</c>
-					<c component_type="10" id="33" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=symmetric">
+					<c component_type="10" id="33" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_left">
 						<spawn_transform 00="0.93863" 02="0.344925" 20="-0.344925" 22="0.93863" 30="200.8027" 31="6.8" 32="-417.2832"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
@@ -373,7 +687,7 @@
 						<vehicle_parent_transform/>
 						<graph_links/>
 					</c>
-					<c component_type="10" id="34" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=symmetric">
+					<c component_type="10" id="34" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_symmetric">
 						<spawn_transform 00="0.938379" 02="0.345608" 20="-0.345608" 22="0.938379" 30="214.3857" 31="6.8" 32="-456.106"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
@@ -382,7 +696,7 @@
 						<vehicle_parent_transform/>
 						<graph_links/>
 					</c>
-					<c component_type="10" id="35" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=symmetric">
+					<c component_type="10" id="35" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_right,junction_initial_state=left">
 						<spawn_transform 00="-0.866025" 02="-0.5" 20="0.5" 22="-0.866025" 30="224.334" 31="6.8" 32="-475.0127"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
@@ -409,8 +723,8 @@
 						<vehicle_parent_transform/>
 						<graph_links/>
 					</c>
-					<c component_type="10" id="142" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,signal=HV_Esig_VsigNK_ZS3VK12">
-						<spawn_transform 00="0.756653" 02="0.653817" 20="-0.653817" 22="0.756653" 30="-173.9824" 31="7.8" 32="137.4033"/>
+					<c component_type="10" id="142" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,signal=HV_Esig_Vsig_ZS3VK12">
+						<spawn_transform 00="0.756653" 02="0.653817" 20="-0.653817" 22="0.756653" 30="-173.9824" 31="7.645277" 32="137.4033"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
 							<max x="1" y="1" z="1"/>
@@ -418,8 +732,8 @@
 						<vehicle_parent_transform/>
 						<graph_links/>
 					</c>
-					<c component_type="10" id="143" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,signal=HV_Esig_VsigNK">
-						<spawn_transform 00="0.720586" 02="0.693365" 20="-0.693365" 22="0.720586" 30="-166.7588" 31="7.8" 32="144.7598"/>
+					<c component_type="10" id="143" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,signal=HV_Esig_Vsig">
+						<spawn_transform 00="0.720586" 02="0.693365" 20="-0.693365" 22="0.720586" 30="-166.7588" 31="7.715201" 32="144.7598"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
 							<max x="1" y="1" z="1"/>
@@ -437,7 +751,7 @@
 						<graph_links/>
 					</c>
 					<c component_type="10" id="149" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,signal=HV_Asig">
-						<spawn_transform 00="0.872353" 02="0.488876" 20="-0.488876" 22="0.872353" 30="162.1504" 31="7" 32="-343.7515"/>
+						<spawn_transform 00="0.872353" 02="0.488876" 20="-0.488876" 22="0.872353" 30="162.1504" 31="6.820954" 32="-343.7515"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
 							<max x="1" y="1" z="1"/>
@@ -455,7 +769,7 @@
 						<graph_links/>
 					</c>
 					<c component_type="10" id="151" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,signal=HV_Asig">
-						<spawn_transform 00="-0.895383" 02="-0.445298" 20="0.445298" 22="-0.895383" 30="31.9043" 31="7" 32="-97.87207"/>
+						<spawn_transform 00="-0.895383" 02="-0.445298" 20="0.445298" 22="-0.895383" 30="31.9043" 31="6.794089" 32="-97.87207"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
 							<max x="1" y="1" z="1"/>
@@ -473,7 +787,7 @@
 						<graph_links/>
 					</c>
 					<c component_type="10" id="153" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,signal=HV_Asig">
-						<spawn_transform 00="-0.86635" 02="-0.499438" 20="0.499438" 22="-0.86635" 30="12.68164" 31="7" 32="-108.2998"/>
+						<spawn_transform 00="-0.86635" 02="-0.499438" 20="0.499438" 22="-0.86635" 30="12.68164" 31="6.83115" 32="-108.2998"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
 							<max x="1" y="1" z="1"/>
@@ -491,7 +805,7 @@
 						<graph_links/>
 					</c>
 					<c component_type="10" id="174" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,signal=HV_Asig_ZS3K12">
-						<spawn_transform 00="0.8699715" 02="0.4931021" 20="-0.4931021" 22="0.8699715" 30="165.9307" 31="7" 32="-394.3125"/>
+						<spawn_transform 00="0.869972" 02="0.493101" 20="-0.493101" 22="0.869972" 30="165.9307" 31="6.471893" 32="-394.3125"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
 							<max x="1" y="1" z="1"/>
@@ -503,7 +817,7 @@
 			</l>
 			<l id="11" tile="data/tiles/mega_island_13_7.xml" name="MEGA_ISLAND_13_7" is_env_mod="true">
 				<components>
-					<c component_type="10" id="36" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=symmetric">
+					<c component_type="10" id="36" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_left,junction_initial_state=left">
 						<spawn_transform 00="-0.866025" 02="-0.5" 20="0.5" 22="-0.866025" 30="228.9785" 31="6.8" 32="496.5137"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
@@ -512,7 +826,7 @@
 						<vehicle_parent_transform/>
 						<graph_links/>
 					</c>
-					<c component_type="10" id="37" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=symmetric">
+					<c component_type="10" id="37" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_right,junction_initial_state=left">
 						<spawn_transform 00="0.874913" 02="0.484281" 20="-0.484281" 22="0.874913" 30="233.4375" 31="6.8" 32="488.8804"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
@@ -521,7 +835,7 @@
 						<vehicle_parent_transform/>
 						<graph_links/>
 					</c>
-					<c component_type="10" id="38" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=left">
+					<c component_type="10" id="38" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_left">
 						<spawn_transform 00="-0.34202" 02="-0.939693" 20="0.939693" 22="-0.34202" 30="-453.6611" 31="8.700528" 32="-421.811"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
@@ -530,8 +844,8 @@
 						<vehicle_parent_transform/>
 						<graph_links/>
 					</c>
-					<c component_type="10" id="77" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,signal=HV_VsigK_LF6K6">
-						<spawn_transform 00="0.643119" 02="-0.765766" 20="0.765766" 22="0.643119" 30="-43.64453" 31="8.98" 32="-417.2021"/>
+					<c component_type="10" id="77" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,signal=HV_Vsig_LF6K6">
+						<spawn_transform 00="0.643119" 02="-0.765766" 20="0.765766" 22="0.643119" 30="-43.64453" 31="8.453229" 32="-417.2021"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
 							<max x="1" y="1" z="1"/>
@@ -539,8 +853,8 @@
 						<vehicle_parent_transform/>
 						<graph_links/>
 					</c>
-					<c component_type="10" id="78" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,signal=HV_VsigK_LF6K6">
-						<spawn_transform 00="0.650698" 02="-0.759337" 20="0.759337" 22="0.650698" 30="-40.5859" 31="9" 32="-421.3403"/>
+					<c component_type="10" id="78" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,signal=HV_Vsig_LF6K6">
+						<spawn_transform 00="0.650698" 02="-0.759337" 20="0.759337" 22="0.650698" 30="-40.58594" 31="8.806" 32="-421.3403"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
 							<max x="1" y="1" z="1"/>
@@ -549,7 +863,7 @@
 						<graph_links/>
 					</c>
 					<c component_type="10" id="122" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,signal=HV_Esig_LF7K6">
-						<spawn_transform 00="-0.334453" 02="-0.942413" 20="0.942413" 22="-0.334453" 30="-442.7412" 31="9" 32="-425.7554"/>
+						<spawn_transform 00="-0.334453" 02="-0.942412" 20="0.942412" 22="-0.334453" 30="-442.7412" 31="8.890571" 32="-425.7554"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
 							<max x="1" y="1" z="1"/>
@@ -612,7 +926,7 @@
 						<graph_links/>
 					</c>
 					<c component_type="10" id="156" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,signal=HV_Esig_Vsig">
-						<spawn_transform 00="-0.874169" 02="-0.485622" 20="0.485622" 22="-0.874169" 30="493.9326" 31="7" 32="37.50098"/>
+						<spawn_transform 00="-0.874169" 02="-0.485622" 20="0.485622" 22="-0.874169" 30="493.9326" 31="6.815087" 32="37.50098"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
 							<max x="1" y="1" z="1"/>
@@ -620,8 +934,8 @@
 						<vehicle_parent_transform/>
 						<graph_links/>
 					</c>
-					<c component_type="10" id="157" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,signal=HV_Esig_VsigNK">
-						<spawn_transform 00="-0.978807" 02="-0.204787" 20="0.204787" 22="-0.978807" 30="314.9424" 31="7" 32="313.0518"/>
+					<c component_type="10" id="157" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,signal=HV_Esig_Vsig">
+						<spawn_transform 00="-0.978807" 02="-0.204786" 20="0.204786" 22="-0.978807" 30="314.9424" 31="6.718417" 32="313.0518"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
 							<max x="1" y="1" z="1"/>
@@ -629,7 +943,7 @@
 						<vehicle_parent_transform/>
 						<graph_links/>
 					</c>
-					<c component_type="10" id="158" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,signal=HV_VsigK">
+					<c component_type="10" id="158" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,signal=HV_Vsig">
 						<spawn_transform 00="-0.797739" 02="0.603003" 20="-0.603003" 22="-0.797739" 30="60.1992" 31="9" 32="-311.1406"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
@@ -639,7 +953,7 @@
 						<graph_links/>
 					</c>
 					<c component_type="10" id="159" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,sign=LF7K12">
-						<spawn_transform 00="-0.794232" 02="0.607614" 20="-0.607614" 22="-0.794232" 30="60.0791" 31="9" 32="-311.2964"/>
+						<spawn_transform 00="-0.794232" 02="0.607614" 20="-0.607614" 22="-0.794232" 30="60.0791" 31="8.98436" 32="-311.2964"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
 							<max x="1" y="1" z="1"/>
@@ -678,7 +992,7 @@
 			</l>
 			<l id="12" tile="data/tiles/mega_island_12_7.xml" name="MEGA_ISLAND_12_7" is_env_mod="true">
 				<components>
-					<c component_type="10" id="39" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=left">
+					<c component_type="10" id="39" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_left">
 						<spawn_transform 00="0.363313" 02="0.931667" 20="-0.931667" 22="0.363313" 30="413.6436" 31="8.629137" 32="-384.4331"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
@@ -687,7 +1001,7 @@
 						<vehicle_parent_transform/>
 						<graph_links/>
 					</c>
-					<c component_type="10" id="40" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=right">
+					<c component_type="10" id="40" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_right,junction_initial_state=left">
 						<spawn_transform 00="-0.34202" 02="-0.939693" 20="0.939693" 22="-0.34202" 30="391.4531" 31="8.876871" 32="-376.3345"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
@@ -696,7 +1010,7 @@
 						<vehicle_parent_transform/>
 						<graph_links/>
 					</c>
-					<c component_type="10" id="41" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=right">
+					<c component_type="10" id="41" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_right,junction_initial_state=left">
 						<spawn_transform 00="0.33817" 02="0.941085" 20="-0.941085" 22="0.33817" 30="264.6396" 31="8.720945" 32="-319.2642"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
@@ -705,8 +1019,8 @@
 						<vehicle_parent_transform/>
 						<graph_links/>
 					</c>
-					<c component_type="10" id="120" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,signal=HV_VsigK">
-						<spawn_transform 00="-0.81736" 02="0.576128" 20="-0.576128" 22="-0.81736" 30="-46.9121" 31="11" 32="-434.5117"/>
+					<c component_type="10" id="120" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,signal=HV_Vsig">
+						<spawn_transform 00="-0.81736" 02="0.576128" 20="-0.576128" 22="-0.81736" 30="-46.91211" 31="11.21928" 32="-434.5117"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
 							<max x="1" y="1" z="1"/>
@@ -724,7 +1038,7 @@
 						<graph_links/>
 					</c>
 					<c component_type="10" id="97" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,signal=HV_Asig_LF7K6">
-						<spawn_transform 00="-0.879246" 02="0.476368" 20="-0.476368" 22="-0.879246" 30="-38.5957" 31="12" 32="-438.082"/>
+						<spawn_transform 00="-0.879246" 02="0.476368" 20="-0.476368" 22="-0.879246" 30="-38.5957" 31="11.44485" 32="-438.082"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
 							<max x="1" y="1" z="1"/>
@@ -736,8 +1050,8 @@
 			</l>
 			<l id="13" tile="data/tiles/mega_island_12_6.xml" name="MEGA_ISLAND_12_6" is_env_mod="true">
 				<components>
-					<c component_type="10" id="42" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=symmetric">
-						<spawn_transform 00="0.830449" 02="0.557095" 20="-0.557095" 22="0.830449" 30="-23.45215" 31="15.45574" 32="297.5186"/>
+					<c component_type="10" id="42" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_left">
+						<spawn_transform 00="0.830449" 02="0.557095" 20="-0.557095" 22="0.830449" 30="-23.4522" 31="15.686" 32="297.5186"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
 							<max x="1" y="1" z="1"/>
@@ -781,8 +1095,8 @@
 						<vehicle_parent_transform/>
 						<graph_links/>
 					</c>
-					<c component_type="10" id="119" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,signal=HV_VsigK">
-						<spawn_transform 00="0.980979" 02="-0.194113" 20="0.194113" 22="0.980979" 30="-92.77441" 31="10.62526" 32="469.7354"/>
+					<c component_type="10" id="119" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,signal=HV_Vsig">
+						<spawn_transform 00="0.980979" 02="-0.194112" 20="0.194112" 22="0.980979" 30="-92.77441" 31="10.43849" 32="469.7354"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
 							<max x="1" y="1" z="1"/>
@@ -803,7 +1117,7 @@
 			</l>
 			<l id="14" tile="data/tiles/mega_island_13_3.xml" name="MEGA_ISLAND_12_3" is_env_mod="true">
 				<components>
-					<c component_type="10" id="43" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=symmetric">
+					<c component_type="10" id="43" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_right,junction_initial_state=left">
 						<spawn_transform 00="-0.309017" 02="-0.951057" 20="0.951057" 22="-0.309017" 30="22.13" 31="7.8" 32="324.58"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
@@ -812,7 +1126,7 @@
 						<vehicle_parent_transform/>
 						<graph_links/>
 					</c>
-					<c component_type="10" id="44" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=symmetric">
+					<c component_type="10" id="44" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_left">
 						<spawn_transform 00="-0.309017" 02="-0.951057" 20="0.951057" 22="-0.309017" 30="-25.76" 31="7.8" 32="340.05"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
@@ -821,7 +1135,7 @@
 						<vehicle_parent_transform/>
 						<graph_links/>
 					</c>
-					<c component_type="10" id="45" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=symmetric">
+					<c component_type="10" id="45" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_right,junction_initial_state=left">
 						<spawn_transform 00="-0.292372" 02="-0.956305" 20="0.956305" 22="-0.292372" 30="-162.88" 31="7.8" 32="367.5"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
@@ -830,7 +1144,7 @@
 						<vehicle_parent_transform/>
 						<graph_links/>
 					</c>
-					<c component_type="10" id="46" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=symmetric">
+					<c component_type="10" id="46" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_right,junction_initial_state=left">
 						<spawn_transform 00="0.292372" 02="0.956305" 20="-0.956305" 22="0.292372" 30="-143.75" 31="7.8" 32="361.28"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
@@ -839,7 +1153,7 @@
 						<vehicle_parent_transform/>
 						<graph_links/>
 					</c>
-					<c component_type="10" id="47" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=symmetric">
+					<c component_type="10" id="47" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_left">
 						<spawn_transform 00="0.325568" 02="0.945519" 20="-0.945519" 22="0.325568" 30="-140.5" 31="7.8" 32="371.09"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
@@ -848,7 +1162,7 @@
 						<vehicle_parent_transform/>
 						<graph_links/>
 					</c>
-					<c component_type="10" id="48" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=symmetric">
+					<c component_type="10" id="48" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_right,junction_initial_state=left">
 						<spawn_transform 00="0.303504" 02="0.95283" 20="-0.95283" 22="0.303504" 30="-273.3271" 31="7.8" 32="414.1"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
@@ -857,7 +1171,7 @@
 						<vehicle_parent_transform/>
 						<graph_links/>
 					</c>
-					<c component_type="10" id="49" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=symmetric">
+					<c component_type="10" id="49" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_right,junction_initial_state=left">
 						<spawn_transform 00="-0.309017" 02="-0.951057" 20="0.951057" 22="-0.309017" 30="-292.21" 31="7.8" 32="420.2"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
@@ -866,8 +1180,8 @@
 						<vehicle_parent_transform/>
 						<graph_links/>
 					</c>
-					<c component_type="10" id="50" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=symmetric">
-						<spawn_transform 00="0.292013" 02="0.956415" 20="-0.956415" 22="0.292013" 30="-403.84" 31="7.8" 32="462.97"/>
+					<c component_type="10" id="50" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_right,junction_initial_state=left">
+						<spawn_transform 00="0.292013" 02="0.956414" 20="-0.956414" 22="0.292013" 30="-403.84" 31="7.8" 32="462.97"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
 							<max x="1" y="1" z="1"/>
@@ -875,7 +1189,7 @@
 						<vehicle_parent_transform/>
 						<graph_links/>
 					</c>
-					<c component_type="10" id="51" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=symmetric">
+					<c component_type="10" id="51" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_left">
 						<spawn_transform 00="-0.309017" 02="-0.951057" 20="0.951057" 22="-0.309017" 30="-387.2" 31="7.8" 32="451.14"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
@@ -884,8 +1198,8 @@
 						<vehicle_parent_transform/>
 						<graph_links/>
 					</c>
-					<c component_type="10" id="173" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,signal=HV_Esig_ZS3K12">
-						<spawn_transform 00="0.860883" 02="0.508803" 20="-0.508803" 22="0.860883" 30="-73.92578" 31="8.10837" 32="390.5986"/>
+					<c component_type="10" id="173" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,signal=HV_Esig_ZS3K8_Vsig_ZS3VK12">
+						<spawn_transform 00="0.8462446" 02="0.5327946" 20="-0.5327946" 22="0.8462446" 30="-73.92578" 31="7.82874" 32="390.5986"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
 							<max x="1" y="1" z="1"/>
@@ -897,7 +1211,7 @@
 			</l>
 			<l id="15" tile="data/tiles/mega_island_12_3.xml" name="MEGA_ISLAND_12_3" is_env_mod="true">
 				<components>
-					<c component_type="10" id="52" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=symmetric">
+					<c component_type="10" id="52" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_left">
 						<spawn_transform 00="0.309017" 02="0.951056" 20="-0.951056" 22="0.309017" 30="496.23" 31="7.8" 32="478.27"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
@@ -910,7 +1224,7 @@
 			</l>
 			<l id="16" tile="data/tiles/mega_island_12_4.xml" name="MEGA_ISLAND_12_4" is_env_mod="true">
 				<components>
-					<c component_type="10" id="53" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=symmetric">
+					<c component_type="10" id="53" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_symmetric">
 						<spawn_transform 00="-0.309017" 02="-0.951057" 20="0.951057" 22="-0.309017" 30="-332.34" 31="15.5" 32="-235.48"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
@@ -919,7 +1233,7 @@
 						<vehicle_parent_transform/>
 						<graph_links/>
 					</c>
-					<c component_type="10" id="54" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=symmetric">
+					<c component_type="10" id="54" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_left">
 						<spawn_transform 00="-0.309017" 02="-0.951057" 20="0.951057" 22="-0.309017" 30="-337.54" 31="15.5" 32="-250.7"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
@@ -928,7 +1242,7 @@
 						<vehicle_parent_transform/>
 						<graph_links/>
 					</c>
-					<c component_type="10" id="55" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=symmetric">
+					<c component_type="10" id="55" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_right,junction_initial_state=left">
 						<spawn_transform 00="-0.309017" 02="-0.951057" 20="0.951057" 22="-0.309017" 30="-334.6" 31="15.5" 32="-240.98"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
@@ -941,7 +1255,7 @@
 			</l>
 			<l id="17" tile="data/tiles/mega_island_11_4.xml" name="MEGA_ISLAND_11_4" is_env_mod="true">
 				<components>
-					<c component_type="10" id="56" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=symmetric">
+					<c component_type="10" id="56" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_left">
 						<spawn_transform 00="0.439939" 02="0.898027" 20="-0.898027" 22="0.439939" 30="475.43" 31="17.6" 32="-174.3301"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
@@ -954,7 +1268,7 @@
 			</l>
 			<l id="18" tile="data/tiles/mega_island_10_5.xml" name="MEGA_ISLAND_10_5" is_env_mod="true">
 				<components>
-					<c component_type="10" id="57" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=symmetric">
+					<c component_type="10" id="57" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_left">
 						<spawn_transform 00="0.956305" 02="0.292371" 20="-0.292371" 22="0.956305" 30="380.9" 31="14.9" 32="-374.96"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
@@ -967,7 +1281,7 @@
 			</l>
 			<l id="19" tile="data/tiles/mega_island_9_7.xml" name="MEGA_ISLAND_9_7" is_env_mod="true">
 				<components>
-					<c component_type="10" id="58" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=symmetric">
+					<c component_type="10" id="58" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_right,junction_initial_state=left">
 						<spawn_transform 00="-0.615661" 02="-0.788011" 20="0.788011" 22="-0.615661" 30="93" 31="8.8" 32="-340"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
@@ -976,7 +1290,7 @@
 						<vehicle_parent_transform/>
 						<graph_links/>
 					</c>
-					<c component_type="10" id="59" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=symmetric">
+					<c component_type="10" id="59" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_right,junction_initial_state=left">
 						<spawn_transform 00="0.617437" 02="0.78662" 20="-0.78662" 22="0.617437" 30="4.3" 31="8.8" 32="-254.8"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
@@ -985,7 +1299,7 @@
 						<vehicle_parent_transform/>
 						<graph_links/>
 					</c>
-					<c component_type="10" id="60" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=symmetric">
+					<c component_type="10" id="60" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_symmetric">
 						<spawn_transform 00="-0.580987" 02="-0.813913" 20="0.813913" 22="-0.580987" 30="-83.3" 31="8.8" 32="-187.9"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
@@ -994,7 +1308,7 @@
 						<vehicle_parent_transform/>
 						<graph_links/>
 					</c>
-					<c component_type="10" id="61" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=symmetric">
+					<c component_type="10" id="61" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_symmetric">
 						<spawn_transform 00="-0.43743" 02="-0.899253" 20="0.899253" 22="-0.43743" 30="-266.7" 31="8.8" 32="-70.8"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
@@ -1003,7 +1317,7 @@
 						<vehicle_parent_transform/>
 						<graph_links/>
 					</c>
-					<c component_type="10" id="62" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=symmetric">
+					<c component_type="10" id="62" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_left">
 						<spawn_transform 00="-0.435231" 02="-0.900319" 20="0.900319" 22="-0.435231" 30="-268.3" 31="8.8" 32="-76.7"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
@@ -1016,7 +1330,7 @@
 			</l>
 			<l id="20" tile="data/tiles/mega_island_8_7.xml" name="MEGA_ISLAND_8_7" is_env_mod="true">
 				<components>
-					<c component_type="10" id="63" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=symmetric">
+					<c component_type="10" id="63" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_symmetric">
 						<spawn_transform 00="0.248225" 02="0.968702" 20="-0.968702" 22="0.248225" 30="461.9" 31="8.8" 32="10.2"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
@@ -1025,7 +1339,7 @@
 						<vehicle_parent_transform/>
 						<graph_links/>
 					</c>
-					<c component_type="10" id="64" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=symmetric">
+					<c component_type="10" id="64" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_left">
 						<spawn_transform 00="0.242433" 02="0.970168" 20="-0.970168" 22="0.242433" 30="212.8" 31="8.8" 32="93.8"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
@@ -1034,7 +1348,7 @@
 						<vehicle_parent_transform/>
 						<graph_links/>
 					</c>
-					<c component_type="10" id="70" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=symmetric">
+					<c component_type="10" id="70" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_symmetric">
 						<spawn_transform 00="-1" 22="-1" 30="429.4" 31="13.6" 32="270.7"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
@@ -1043,8 +1357,26 @@
 						<vehicle_parent_transform/>
 						<graph_links/>
 					</c>
-					<c component_type="10" id="71" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=symmetric">
+					<c component_type="10" id="71" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_symmetric,junction_initial_state=left">
 						<spawn_transform 30="439.7" 31="13.8" 32="327"/>
+						<spawn_bounds>
+							<min x="-1" y="-1" z="-1"/>
+							<max x="1" y="1" z="1"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="262" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,signal=HV_Asig_ZS3K10">
+						<spawn_transform 30="434.5576" 31="13.85007" 32="335.2739"/>
+						<spawn_bounds>
+							<min x="-1" y="-1" z="-1"/>
+							<max x="1" y="1" z="1"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="263" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,signal=HV_Asig">
+						<spawn_transform 30="429.5234" 31="13.80395" 32="333.6382"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
 							<max x="1" y="1" z="1"/>
@@ -1056,7 +1388,7 @@
 			</l>
 			<l id="21" tile="data/tiles/mega_island_7_7.xml" name="MEGA_ISLAND_7_7" is_env_mod="true">
 				<components>
-					<c component_type="10" id="65" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=symmetric">
+					<c component_type="10" id="65" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_left">
 						<spawn_transform 00="0.374606" 02="0.927184" 20="-0.927184" 22="0.374606" 30="300" 31="10.8" 32="346.5"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
@@ -1065,7 +1397,7 @@
 						<vehicle_parent_transform/>
 						<graph_links/>
 					</c>
-					<c component_type="10" id="66" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=symmetric">
+					<c component_type="10" id="66" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_right,junction_initial_state=left">
 						<spawn_transform 00="-0.374606" 02="-0.927184" 20="0.927184" 22="-0.374606" 30="296.5" 31="10.8" 32="337"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
@@ -1074,7 +1406,7 @@
 						<vehicle_parent_transform/>
 						<graph_links/>
 					</c>
-					<c component_type="10" id="67" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=symmetric">
+					<c component_type="10" id="67" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_symmetric,junction_initial_state=left">
 						<spawn_transform 00="0.48481" 02="0.87462" 20="-0.87462" 22="0.48481" 30="159.3" 31="13.3" 32="414.7"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
@@ -1087,7 +1419,7 @@
 			</l>
 			<l id="22" tile="data/tiles/mega_island_6_8.xml" name="MEGA_ISLAND_6_8" is_env_mod="true">
 				<components>
-					<c component_type="10" id="68" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=symmetric">
+					<c component_type="10" id="68" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_left">
 						<spawn_transform 00="0.241922" 02="-0.970296" 20="0.970296" 22="0.241922" 30="439.6" 31="24.5" 32="-441.4"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
@@ -1096,7 +1428,7 @@
 						<vehicle_parent_transform/>
 						<graph_links/>
 					</c>
-					<c component_type="10" id="69" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=symmetric">
+					<c component_type="10" id="69" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_symmetric">
 						<spawn_transform 00="-0.406737" 02="0.913545" 20="-0.913545" 22="-0.406737" 30="314.3" 31="25.4" 32="-495.3"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
@@ -1113,7 +1445,7 @@
 			<l id="24" name="OCEAN" env_mod_spawn_num="1">
 				<components>
 					<c component_type="3" id="80" name="addon=NSO_objects,signalling_equipment,spawn_sign=LF7K4" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_80.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
-						<spawn_transform 00="-1" 22="-1" 31="0.21"/>
+						<spawn_transform 00="-1" 22="-1" 31="0.71"/>
 						<spawn_bounds>
 							<min x="-0.375" y="-1.625" z="-0.125"/>
 							<max x="0.375" y="0.625" z="0.125"/>
@@ -1123,7 +1455,7 @@
 						<graph_links/>
 					</c>
 					<c component_type="3" id="81" name="addon=NSO_objects,signalling_equipment,spawn_sign=LF7K6" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_81.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
-						<spawn_transform 00="-1" 22="-1" 31="0.21"/>
+						<spawn_transform 00="-1" 22="-1" 31="0.71"/>
 						<spawn_bounds>
 							<min x="-0.375" y="-1.625" z="-0.125"/>
 							<max x="0.375" y="0.625" z="0.125"/>
@@ -1133,7 +1465,7 @@
 						<graph_links/>
 					</c>
 					<c component_type="3" id="82" name="addon=NSO_objects,signalling_equipment,spawn_sign=LF7K8" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_82.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
-						<spawn_transform 00="-1" 22="-1" 31="0.21"/>
+						<spawn_transform 00="-1" 22="-1" 31="0.71"/>
 						<spawn_bounds>
 							<min x="-0.375" y="-1.625" z="-0.125"/>
 							<max x="0.375" y="0.625" z="0.125"/>
@@ -1143,7 +1475,7 @@
 						<graph_links/>
 					</c>
 					<c component_type="3" id="83" name="addon=NSO_objects,signalling_equipment,spawn_sign=LF7K10" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_83.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
-						<spawn_transform 00="-1" 22="-1" 31="0.21"/>
+						<spawn_transform 00="-1" 22="-1" 31="0.71"/>
 						<spawn_bounds>
 							<min x="-0.375" y="-1.625" z="-0.125"/>
 							<max x="0.375" y="0.625" z="0.125"/>
@@ -1153,7 +1485,7 @@
 						<graph_links/>
 					</c>
 					<c component_type="3" id="84" name="addon=NSO_objects,signalling_equipment,spawn_sign=LF7K12" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_84.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
-						<spawn_transform 00="-1" 22="-1" 31="0.21"/>
+						<spawn_transform 00="-1" 22="-1" 31="0.71"/>
 						<spawn_bounds>
 							<min x="-0.375" y="-1.625" z="-0.125"/>
 							<max x="0.375" y="0.625" z="0.125"/>
@@ -1163,7 +1495,7 @@
 						<graph_links/>
 					</c>
 					<c component_type="3" id="85" name="addon=NSO_objects,signalling_equipment,spawn_sign=LF7K14" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_85.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
-						<spawn_transform 00="-1" 22="-1" 31="0.21"/>
+						<spawn_transform 00="-1" 22="-1" 31="0.71"/>
 						<spawn_bounds>
 							<min x="-0.375" y="-1.625" z="-0.125"/>
 							<max x="0.375" y="0.625" z="0.125"/>
@@ -1173,7 +1505,7 @@
 						<graph_links/>
 					</c>
 					<c component_type="3" id="86" name="addon=NSO_objects,signalling_equipment,spawn_sign=LF7K16" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_86.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
-						<spawn_transform 00="-1" 22="-1" 31="0.21"/>
+						<spawn_transform 00="-1" 22="-1" 31="0.71"/>
 						<spawn_bounds>
 							<min x="-0.375" y="-1.625" z="-0.125"/>
 							<max x="0.375" y="0.625" z="0.125"/>
@@ -1183,7 +1515,7 @@
 						<graph_links/>
 					</c>
 					<c component_type="3" id="87" name="addon=NSO_objects,signalling_equipment,spawn_sign=LF6K4" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_87.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
-						<spawn_transform 00="-1" 22="-1" 31="0.21"/>
+						<spawn_transform 00="-1" 22="-1" 31="0.71"/>
 						<spawn_bounds>
 							<min x="-0.375" y="-1.625" z="-0.125"/>
 							<max x="0.375" y="0.625" z="0.125"/>
@@ -1193,7 +1525,7 @@
 						<graph_links/>
 					</c>
 					<c component_type="3" id="88" name="addon=NSO_objects,signalling_equipment,spawn_sign=LF6K6" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_88.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
-						<spawn_transform 00="-1" 22="-1" 31="0.21"/>
+						<spawn_transform 00="-1" 22="-1" 31="0.71"/>
 						<spawn_bounds>
 							<min x="-0.375" y="-1.625" z="-0.125"/>
 							<max x="0.375" y="0.625" z="0.125"/>
@@ -1203,7 +1535,7 @@
 						<graph_links/>
 					</c>
 					<c component_type="3" id="89" name="addon=NSO_objects,signalling_equipment,spawn_sign=LF6K8" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_89.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
-						<spawn_transform 00="-1" 22="-1" 31="0.21"/>
+						<spawn_transform 00="-1" 22="-1" 31="0.71"/>
 						<spawn_bounds>
 							<min x="-0.375" y="-1.625" z="-0.125"/>
 							<max x="0.375" y="0.625" z="0.125"/>
@@ -1213,7 +1545,7 @@
 						<graph_links/>
 					</c>
 					<c component_type="3" id="90" name="addon=NSO_objects,signalling_equipment,spawn_sign=LF6K10" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_90.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
-						<spawn_transform 00="-1" 22="-1" 31="0.21"/>
+						<spawn_transform 00="-1" 22="-1" 31="0.71"/>
 						<spawn_bounds>
 							<min x="-0.375" y="-1.625" z="-0.125"/>
 							<max x="0.375" y="0.625" z="0.125"/>
@@ -1223,7 +1555,7 @@
 						<graph_links/>
 					</c>
 					<c component_type="3" id="91" name="addon=NSO_objects,signalling_equipment,spawn_sign=LF6K12" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_91.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
-						<spawn_transform 00="-1" 22="-1" 31="0.21"/>
+						<spawn_transform 00="-1" 22="-1" 31="0.71"/>
 						<spawn_bounds>
 							<min x="-0.375" y="-1.625" z="-0.125"/>
 							<max x="0.375" y="0.625" z="0.125"/>
@@ -1233,7 +1565,7 @@
 						<graph_links/>
 					</c>
 					<c component_type="3" id="93" name="addon=NSO_objects,signalling_equipment,spawn_sign=LF6K14" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_93.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
-						<spawn_transform 00="-1" 22="-1" 31="0.21"/>
+						<spawn_transform 00="-1" 22="-1" 31="0.71"/>
 						<spawn_bounds>
 							<min x="-0.375" y="-1.625" z="-0.125"/>
 							<max x="0.375" y="0.625" z="0.125"/>
@@ -1243,7 +1575,7 @@
 						<graph_links/>
 					</c>
 					<c component_type="3" id="100" name="addon=NSO_objects,signalling_equipment,spawn_signal=HV_Bksig_VsigN" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_100.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
-						<spawn_transform 00="-1" 22="-1" 31="1.415277"/>
+						<spawn_transform 00="-1" 22="-1" 31="1.503028"/>
 						<spawn_bounds>
 							<min x="-1.125" y="-1.375" z="-0.125"/>
 							<max x="1.125" y="5.125" z="1.375"/>
@@ -1253,7 +1585,7 @@
 						<graph_links/>
 					</c>
 					<c component_type="3" id="101" name="addon=NSO_objects,signalling_equipment,spawn_signal=HV_Bksig" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_101.xml" vehicle_file_store="4">
-						<spawn_transform 00="-1" 22="-1" 31="1.038716"/>
+						<spawn_transform 00="-1" 22="-1" 31="1.127899"/>
 						<spawn_bounds>
 							<min x="-0.875" y="-1.375" z="-0.125"/>
 							<max x="1.125" y="4.375" z="1.125"/>
@@ -1263,7 +1595,7 @@
 						<graph_links/>
 					</c>
 					<c component_type="3" id="102" name="addon=NSO_objects,signalling_equipment,spawn_signal=HV_Esig" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_102.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
-						<spawn_transform 00="-1" 22="-1" 31="1.049927"/>
+						<spawn_transform 00="-1" 22="-1" 31="1.13295"/>
 						<spawn_bounds>
 							<min x="-0.875" y="-1.375" z="-0.125"/>
 							<max x="1.125" y="4.375" z="1.125"/>
@@ -1273,7 +1605,7 @@
 						<graph_links/>
 					</c>
 					<c component_type="3" id="103" name="addon=NSO_objects,signalling_equipment,spawn_signal=HV_Asig" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_103.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
-						<spawn_transform 00="-1" 22="-1" 31="1.037972"/>
+						<spawn_transform 00="-1" 22="-1" 31="1.113822"/>
 						<spawn_bounds>
 							<min x="-0.875" y="-1.375" z="-0.125"/>
 							<max x="1.125" y="4.375" z="1.125"/>
@@ -1283,7 +1615,7 @@
 						<graph_links/>
 					</c>
 					<c component_type="3" id="104" name="addon=NSO_objects,signalling_equipment,spawn_signal=HV_Esig_VsigN" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_104.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
-						<spawn_transform 00="-1" 22="-1" 31="1.395674"/>
+						<spawn_transform 00="-1" 22="-1" 31="1.481423"/>
 						<spawn_bounds>
 							<min x="-1.125" y="-1.375" z="-0.125"/>
 							<max x="1.125" y="5.125" z="1.375"/>
@@ -1293,7 +1625,7 @@
 						<graph_links/>
 					</c>
 					<c component_type="3" id="105" name="addon=NSO_objects,signalling_equipment,spawn_signal=HV_Asig_VsigN" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_105.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
-						<spawn_transform 00="-1" 22="-1" 31="1.417954"/>
+						<spawn_transform 00="-1" 22="-1" 31="1.487218"/>
 						<spawn_bounds>
 							<min x="-1.125" y="-1.375" z="-0.125"/>
 							<max x="1.125" y="5.125" z="1.375"/>
@@ -1303,7 +1635,7 @@
 						<graph_links/>
 					</c>
 					<c component_type="3" id="106" name="addon=NSO_objects,signalling_equipment,spawn_signal=HV_VsigN" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_106.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
-						<spawn_transform 00="-1" 22="-1" 31="1.064162"/>
+						<spawn_transform 00="-1" 22="-1" 31="1.11059"/>
 						<spawn_bounds>
 							<min x="-0.625" y="-1.375" z="-0.125"/>
 							<max x="1.375" y="4.375" z="1.375"/>
@@ -1313,7 +1645,7 @@
 						<graph_links/>
 					</c>
 					<c component_type="3" id="107" name="addon=NSO_objects,signalling_equipment,spawn_signal=HV_Vsig" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_107.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
-						<spawn_transform 00="-1" 22="-1" 31="1.06656"/>
+						<spawn_transform 00="-1" 22="-1" 31="1.11264"/>
 						<spawn_bounds>
 							<min x="-0.625" y="-1.375" z="-0.125"/>
 							<max x="1.375" y="4.375" z="1.375"/>
@@ -1323,37 +1655,37 @@
 						<graph_links/>
 					</c>
 					<c component_type="3" id="108" name="addon=NSO_objects,signalling_equipment,spawn_signal=HV_Vsig_ZS3VK12" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_108.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
-						<spawn_transform 00="-1" 22="-1" 31="0.899722"/>
+						<spawn_transform 00="-1" 22="-1" 31="1.111438"/>
 						<spawn_bounds>
-							<min x="-0.625" y="-1.625" z="-0.125"/>
+							<min x="-0.625" y="-1.375" z="-0.125"/>
 							<max x="1.375" y="4.375" z="1.375"/>
 						</spawn_bounds>
 						<vehicle_parent_transform/>
-						<spawn_local_offset x="-0.375" y="-1.375" z="-0.625"/>
+						<spawn_local_offset x="-0.375" y="-1.5" z="-0.625"/>
 						<graph_links/>
 					</c>
 					<c component_type="3" id="109" name="addon=NSO_objects,signalling_equipment,spawn_signal=HV_Asig_LF7K6" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_109.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
-						<spawn_transform 00="-1" 22="-1" 31="1.169203"/>
+						<spawn_transform 00="-1" 22="-1" 31="1.400047"/>
 						<spawn_bounds>
-							<min x="-0.875" y="-1.625" z="-0.125"/>
-							<max x="1.125" y="4.875" z="1.125"/>
+							<min x="-0.875" y="-1.375" z="-0.125"/>
+							<max x="1.125" y="4.875" z="1.375"/>
 						</spawn_bounds>
 						<vehicle_parent_transform/>
-						<spawn_local_offset x="-0.125" y="-1.625" z="-0.5"/>
+						<spawn_local_offset x="-0.125" y="-1.75" z="-0.625"/>
 						<graph_links/>
 					</c>
-					<c component_type="3" id="110" name="addon=NSO_objects,signalling_equipment,spawn_signal=HV_Asig_ZS3K16" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_110.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
-						<spawn_transform 00="-1" 22="-1" 31="1.158145"/>
+					<c component_type="3" id="110" name="addon=NSO_objects,signalling_equipment,spawn_signal=HV_Esig_ZS3K16" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_110.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
+						<spawn_transform 00="-1" 22="-1" 31="1.400554"/>
 						<spawn_bounds>
-							<min x="-0.875" y="-1.625" z="-0.125"/>
-							<max x="1.125" y="4.875" z="1.125"/>
+							<min x="-0.875" y="-1.375" z="-0.125"/>
+							<max x="1.125" y="4.875" z="1.375"/>
 						</spawn_bounds>
 						<vehicle_parent_transform/>
-						<spawn_local_offset x="-0.125" y="-1.625" z="-0.5"/>
+						<spawn_local_offset x="-0.125" y="-1.75" z="-0.625"/>
 						<graph_links/>
 					</c>
 					<c component_type="3" id="111" name="Ground" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_111.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true" vehicle_is_editable="true">
-						<spawn_transform 00="-1" 22="-1" 31="-1.035"/>
+						<spawn_transform 00="-1" 22="-1" 31="-0.41"/>
 						<spawn_bounds>
 							<min x="-9.625" y="-0.125" z="-63.625"/>
 							<max x="9.625" y="0.125" z="63.625"/>
@@ -1372,7 +1704,7 @@
 						<graph_links/>
 					</c>
 					<c component_type="3" id="113" name="addon=NSO_objects,signalling_equipment,spawn_signal=HV_VsigNK" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_113.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
-						<spawn_transform 00="-1" 22="-1" 31="1.04105"/>
+						<spawn_transform 00="-1" 22="-1" 31="1.125271"/>
 						<spawn_bounds>
 							<min x="-0.625" y="-1.375" z="-0.125"/>
 							<max x="1.375" y="4.375" z="1.375"/>
@@ -1382,7 +1714,7 @@
 						<graph_links/>
 					</c>
 					<c component_type="3" id="114" name="addon=NSO_objects,signalling_equipment,spawn_signal=HV_VsigK" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_114.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
-						<spawn_transform 00="-1" 22="-1" 31="1.044465"/>
+						<spawn_transform 00="-1" 22="-1" 31="1.131849"/>
 						<spawn_bounds>
 							<min x="-0.625" y="-1.375" z="-0.125"/>
 							<max x="1.375" y="4.375" z="1.375"/>
@@ -1391,28 +1723,18 @@
 						<spawn_local_offset x="-0.375" y="-1.5" z="-0.625"/>
 						<graph_links/>
 					</c>
-					<c component_type="3" id="115" name="addon=NSO_objects,signalling_equipment,spawn_signal=HV_VsigK_LF6K6" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_115.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
-						<spawn_transform 00="-1" 22="-1" 31="0.912223"/>
-						<spawn_bounds>
-							<min x="-0.625" y="-1.625" z="-0.125"/>
-							<max x="1.375" y="4.375" z="1.375"/>
-						</spawn_bounds>
-						<vehicle_parent_transform/>
-						<spawn_local_offset x="-0.375" y="-1.375" z="-0.625"/>
-						<graph_links/>
-					</c>
 					<c component_type="3" id="116" name="addon=NSO_objects,signalling_equipment,spawn_signal=HV_Esig_LF7K6" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_116.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
-						<spawn_transform 00="-1" 22="-1" 31="1.140294"/>
+						<spawn_transform 00="-1" 22="-1" 31="1.390601"/>
 						<spawn_bounds>
-							<min x="-0.875" y="-1.625" z="-0.125"/>
-							<max x="1.125" y="4.875" z="1.125"/>
+							<min x="-0.875" y="-1.375" z="-0.125"/>
+							<max x="1.125" y="4.875" z="1.375"/>
 						</spawn_bounds>
 						<vehicle_parent_transform/>
-						<spawn_local_offset x="-0.125" y="-1.625" z="-0.5"/>
+						<spawn_local_offset x="-0.125" y="-1.75" z="-0.625"/>
 						<graph_links/>
 					</c>
 					<c component_type="3" id="117" name="addon=NSO_objects,signalling_equipment,spawn_signal=HV_Asig_LF7K12" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_117.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
-						<spawn_transform 00="-1" 22="-1" 31="1.149754"/>
+						<spawn_transform 00="-1" 22="-1" 31="1.24338"/>
 						<spawn_bounds>
 							<min x="-0.875" y="-1.625" z="-0.125"/>
 							<max x="1.125" y="4.875" z="1.125"/>
@@ -1422,17 +1744,17 @@
 						<graph_links/>
 					</c>
 					<c component_type="3" id="135" name="addon=NSO_objects,signalling_equipment,spawn_signal=HV_Esig_VsigNK_ZS3VK12" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_135.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
-						<spawn_transform 00="-1" 22="-1" 31="1.326724"/>
+						<spawn_transform 00="-1" 22="-1" 31="1.494904"/>
 						<spawn_bounds>
-							<min x="-1.125" y="-1.625" z="-0.125"/>
-							<max x="1.125" y="5.125" z="1.375"/>
+							<min x="-1.125" y="-1.375" z="-0.125"/>
+							<max x="1.375" y="5.125" z="1.375"/>
 						</spawn_bounds>
 						<vehicle_parent_transform/>
-						<spawn_local_offset y="-1.75" z="-0.625"/>
+						<spawn_local_offset x="-0.125" y="-1.875" z="-0.625"/>
 						<graph_links/>
 					</c>
 					<c component_type="3" id="136" name="addon=NSO_objects,signalling_equipment,spawn_signal=HV_Asig_VsigNK" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_136.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
-						<spawn_transform 00="-1" 22="-1" 31="1.530325"/>
+						<spawn_transform 00="-1" 22="-1" 31="1.515391"/>
 						<spawn_bounds>
 							<min x="-1.125" y="-1.375" z="-0.125"/>
 							<max x="1.125" y="5.125" z="1.375"/>
@@ -1442,7 +1764,7 @@
 						<graph_links/>
 					</c>
 					<c component_type="3" id="137" name="addon=NSO_objects,signalling_equipment,spawn_signal=HV_Bksig_VsigNK" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_137.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
-						<spawn_transform 00="-1" 22="-1" 31="1.554228"/>
+						<spawn_transform 00="-1" 22="-1" 31="1.531323"/>
 						<spawn_bounds>
 							<min x="-1.125" y="-1.375" z="-0.125"/>
 							<max x="1.125" y="5.125" z="1.375"/>
@@ -1452,7 +1774,7 @@
 						<graph_links/>
 					</c>
 					<c component_type="3" id="138" name="addon=NSO_objects,signalling_equipment,spawn_signal=HV_Esig_VsigNK" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_138.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
-						<spawn_transform 00="-1" 22="-1" 31="1.550718"/>
+						<spawn_transform 00="-1" 22="-1" 31="1.50523"/>
 						<spawn_bounds>
 							<min x="-1.125" y="-1.375" z="-0.125"/>
 							<max x="1.125" y="5.125" z="1.375"/>
@@ -1462,7 +1784,7 @@
 						<graph_links/>
 					</c>
 					<c component_type="3" id="139" name="addon=NSO_objects,signalling_equipment,spawn_signal=HV_Bksig_Vsig" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_139.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
-						<spawn_transform 00="-1" 22="-1" 31="1.524199"/>
+						<spawn_transform 00="-1" 22="-1" 31="1.517594"/>
 						<spawn_bounds>
 							<min x="-1.125" y="-1.375" z="-0.125"/>
 							<max x="1.125" y="5.125" z="1.375"/>
@@ -1472,7 +1794,7 @@
 						<graph_links/>
 					</c>
 					<c component_type="3" id="140" name="addon=NSO_objects,signalling_equipment,spawn_signal=HV_Asig_Vsig" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_140.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
-						<spawn_transform 00="-1" 22="-1" 31="1.533631"/>
+						<spawn_transform 00="-1" 22="-1" 31="1.504953"/>
 						<spawn_bounds>
 							<min x="-1.125" y="-1.375" z="-0.125"/>
 							<max x="1.125" y="5.125" z="1.375"/>
@@ -1492,23 +1814,303 @@
 						<graph_links/>
 					</c>
 					<c component_type="3" id="176" name="addon=NSO_objects,signalling_equipment,spawn_signal=HV_Asig_ZS3K12" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_176.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
-						<spawn_transform 00="-1" 22="-1" 31="1.494895"/>
+						<spawn_transform 00="-1" 22="-1" 31="1.384235"/>
 						<spawn_bounds>
-							<min x="-0.875" y="-1.625" z="-0.125"/>
-							<max x="1.125" y="4.875" z="1.125"/>
+							<min x="-0.875" y="-1.375" z="-0.125"/>
+							<max x="1.125" y="4.875" z="1.375"/>
 						</spawn_bounds>
 						<vehicle_parent_transform/>
-						<spawn_local_offset x="-0.125" y="-1.625" z="-0.5"/>
+						<spawn_local_offset x="-0.125" y="-1.75" z="-0.625"/>
 						<graph_links/>
 					</c>
 					<c component_type="3" id="177" name="addon=NSO_objects,signalling_equipment,spawn_signal=HV_Esig_ZS3K12" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_177.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
-						<spawn_transform 00="-1" 22="-1" 31="1.509573"/>
+						<spawn_transform 00="-1" 22="-1" 31="1.392658"/>
 						<spawn_bounds>
-							<min x="-0.875" y="-1.625" z="-0.125"/>
-							<max x="1.125" y="4.875" z="1.125"/>
+							<min x="-0.875" y="-1.375" z="-0.125"/>
+							<max x="1.125" y="4.875" z="1.375"/>
 						</spawn_bounds>
 						<vehicle_parent_transform/>
-						<spawn_local_offset x="-0.125" y="-1.625" z="-0.5"/>
+						<spawn_local_offset x="-0.125" y="-1.75" z="-0.625"/>
+						<graph_links/>
+					</c>
+					<c component_type="3" id="178" name="addon=NSO_objects,signalling_equipment,spawn_signal=HV_Esig_Vsig_ZS3VK12" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_178.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
+						<spawn_transform 00="-1" 22="-1" 31="1.514703"/>
+						<spawn_bounds>
+							<min x="-1.125" y="-1.375" z="-0.125"/>
+							<max x="1.375" y="5.125" z="1.375"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<spawn_local_offset x="-0.125" y="-1.875" z="-0.625"/>
+						<graph_links/>
+					</c>
+					<c component_type="3" id="179" name="addon=NSO_objects,signalling_equipment,spawn_signal=HV_Vsig_LF6K6" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_179.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
+						<spawn_transform 00="-1" 22="-1" 31="1.108549"/>
+						<spawn_bounds>
+							<min x="-0.625" y="-1.375" z="-0.125"/>
+							<max x="1.375" y="4.375" z="1.375"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<spawn_local_offset x="-0.375" y="-1.5" z="-0.625"/>
+						<graph_links/>
+					</c>
+					<c component_type="3" id="183" name="addon=NSO_objects,signalling_equipment,spawn_junction=EL_right" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_183.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
+						<spawn_transform 00="-1" 22="-1" 31="-0.770272"/>
+						<spawn_bounds>
+							<min x="-1.125" y="-1.375" z="-0.125"/>
+							<max x="1.125" y="0.625" z="1.125"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<spawn_local_offset y="0.375" z="-0.5"/>
+						<graph_links/>
+					</c>
+					<c component_type="3" id="184" name="addon=NSO_objects,signalling_equipment,spawn_junction=EL_left" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_184.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
+						<spawn_transform 00="-1" 22="-1" 31="-0.771019"/>
+						<spawn_bounds>
+							<min x="-1.125" y="-1.375" z="-0.125"/>
+							<max x="1.125" y="0.625" z="1.125"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<spawn_local_offset y="0.375" z="-0.5"/>
+						<graph_links/>
+					</c>
+					<c component_type="3" id="185" name="addon=NSO_objects,signalling_equipment,spawn_junction=EL_symmetric" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_185.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
+						<spawn_transform 00="-1" 22="-1" 31="-0.747955"/>
+						<spawn_bounds>
+							<min x="-1.125" y="-1.375" z="-0.125"/>
+							<max x="1.125" y="0.625" z="1.125"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<spawn_local_offset y="0.375" z="-0.5"/>
+						<graph_links/>
+					</c>
+					<c component_type="3" id="213" name="addon=NSO_objects,signalling_equipment,spawn_signal=HV_Esig_Vsig_LF6K12" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_213.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
+						<spawn_transform 00="-1" 22="-1" 31="1.511812"/>
+						<spawn_bounds>
+							<min x="-1.125" y="-1.375" z="-0.125"/>
+							<max x="1.375" y="5.125" z="1.375"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<spawn_local_offset x="-0.125" y="-1.875" z="-0.625"/>
+						<graph_links/>
+					</c>
+					<c component_type="3" id="214" name="addon=NSO_objects,signalling_equipment,spawn_signal=HV_Esig_ZS3K8_Vsig_ZS3VK12" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_214.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
+						<spawn_transform 00="-1" 22="-1" 31="1.747341"/>
+						<spawn_bounds>
+							<min x="-1.125" y="-1.375" z="-0.125"/>
+							<max x="1.375" y="5.625" z="1.375"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<spawn_local_offset x="-0.125" y="-2.125" z="-0.625"/>
+						<graph_links/>
+					</c>
+					<c component_type="3" id="215" name="addon=NSO_objects,signalling_equipment,spawn_signal=HV_Asig_ZS3K8" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_215.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
+						<spawn_transform 00="-1" 22="-1" 31="1.381717"/>
+						<spawn_bounds>
+							<min x="-0.875" y="-1.375" z="-0.125"/>
+							<max x="1.125" y="4.875" z="1.375"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<spawn_local_offset x="-0.125" y="-1.75" z="-0.625"/>
+						<graph_links/>
+					</c>
+					<c component_type="3" id="216" name="addon=NSO_objects,signalling_equipment,spawn_signal=HV_Asig_LF7K8" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_216.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
+						<spawn_transform 00="-1" 22="-1" 31="1.363447"/>
+						<spawn_bounds>
+							<min x="-0.875" y="-1.375" z="-0.125"/>
+							<max x="1.125" y="4.875" z="1.375"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<spawn_local_offset x="-0.125" y="-1.75" z="-0.625"/>
+						<graph_links/>
+					</c>
+					<c component_type="3" id="218" name="addon=NSO_objects,signalling_equipment,spawn_signal=HV_Vsig_ZS3VK8" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_218.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
+						<spawn_transform 00="-1" 22="-1" 31="1.116317"/>
+						<spawn_bounds>
+							<min x="-0.625" y="-1.375" z="-0.125"/>
+							<max x="1.375" y="4.375" z="1.375"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<spawn_local_offset x="-0.375" y="-1.5" z="-0.625"/>
+						<graph_links/>
+					</c>
+					<c component_type="3" id="219" name="addon=NSO_objects,signalling_equipment,spawn_signal=HV_Asig_LF7K12_Vsig" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_219.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
+						<spawn_transform 00="-1" 22="-1" 31="1.75288"/>
+						<spawn_bounds>
+							<min x="-1.125" y="-1.375" z="-0.125"/>
+							<max x="1.375" y="5.625" z="1.375"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<spawn_local_offset x="-0.125" y="-2.125" z="-0.625"/>
+						<graph_links/>
+					</c>
+					<c component_type="3" id="220" name="addon=NSO_objects,signalling_equipment,spawn_signal=HV_Asig_LF7K12" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_220.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
+						<spawn_transform 00="-1" 22="-1" 31="1.391601"/>
+						<spawn_bounds>
+							<min x="-0.875" y="-1.375" z="-0.125"/>
+							<max x="1.125" y="4.875" z="1.375"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<spawn_local_offset x="-0.125" y="-1.75" z="-0.625"/>
+						<graph_links/>
+					</c>
+					<c component_type="3" id="222" name="ddon=NSO_objects,signalling_equipment,spawn_signal=Bksig_LF7K12_Vsig_ZS3VK8" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_222.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
+						<spawn_transform 00="-1" 22="-1" 31="1.746491"/>
+						<spawn_bounds>
+							<min x="-1.125" y="-1.375" z="-0.125"/>
+							<max x="1.375" y="5.625" z="1.375"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<spawn_local_offset x="-0.125" y="-2.125" z="-0.625"/>
+						<graph_links/>
+					</c>
+					<c component_type="3" id="223" name="addon=NSO_objects,signalling_equipment,spawn_sign=LF7K16_R" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_223.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
+						<spawn_transform 00="-1" 22="-1" 31="0.71"/>
+						<spawn_bounds>
+							<min x="-0.375" y="-1.625" z="-0.125"/>
+							<max x="0.375" y="0.875" z="0.125"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<spawn_local_offset y="0.375"/>
+						<graph_links/>
+					</c>
+					<c component_type="3" id="224" name="addon=NSO_objects,signalling_equipment,spawn_sign=LF7K12_R" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_224.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
+						<spawn_transform 00="-1" 22="-1" 31="0.71"/>
+						<spawn_bounds>
+							<min x="-0.375" y="-1.625" z="-0.125"/>
+							<max x="0.375" y="0.875" z="0.125"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<spawn_local_offset y="0.375"/>
+						<graph_links/>
+					</c>
+					<c component_type="3" id="225" name="addon=NSO_objects,signalling_equipment,spawn_signal=HV_Bksig_LF7K16_Vsig_ZS3VK8" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_225.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
+						<spawn_transform 00="-1" 22="-1" 31="1.764688"/>
+						<spawn_bounds>
+							<min x="-1.125" y="-1.375" z="-0.125"/>
+							<max x="1.375" y="5.625" z="1.375"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<spawn_local_offset x="-0.125" y="-2.125" z="-0.625"/>
+						<graph_links/>
+					</c>
+					<c component_type="3" id="226" name="addon=NSO_objects,signalling_equipment,spawn_signal=HV_Bksig_LF7K12" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_226.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
+						<spawn_transform 00="-1" 22="-1" 31="1.411533"/>
+						<spawn_bounds>
+							<min x="-0.875" y="-1.375" z="-0.125"/>
+							<max x="1.125" y="4.875" z="1.375"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<spawn_local_offset x="-0.125" y="-1.75" z="-0.625"/>
+						<graph_links/>
+					</c>
+					<c component_type="3" id="227" name="addon=NSO_objects,signalling_equipment,spawn_signal=HV_Bksig_ZS3K8" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_227.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
+						<spawn_transform 00="-1" 22="-1" 31="1.375358"/>
+						<spawn_bounds>
+							<min x="-0.875" y="-1.375" z="-0.125"/>
+							<max x="1.125" y="4.875" z="1.375"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<spawn_local_offset x="-0.125" y="-1.75" z="-0.625"/>
+						<graph_links/>
+					</c>
+					<c component_type="3" id="228" name="addon=NSO_objects,signalling_equipment,spawn_sign=LF6K4_L" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_228.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
+						<spawn_transform 00="-1" 22="-1" 31="0.71"/>
+						<spawn_bounds>
+							<min x="-0.375" y="-1.625" z="-0.125"/>
+							<max x="0.375" y="0.875" z="0.125"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<spawn_local_offset y="0.375"/>
+						<graph_links/>
+					</c>
+					<c component_type="3" id="229" name="addon=NSO_objects,signalling_equipment,spawn_signal=HV_Asig_ZS3K10" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_229.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
+						<spawn_transform 00="-1" 22="-1" 31="1.378704"/>
+						<spawn_bounds>
+							<min x="-0.875" y="-1.375" z="-0.125"/>
+							<max x="1.125" y="4.875" z="1.375"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<spawn_local_offset x="-0.125" y="-1.75" z="-0.625"/>
+						<graph_links/>
+					</c>
+					<c component_type="3" id="239" name="addon=NSO_objects,signalling_equipment,spawn_signal=HV_Esig_ZS3K8_VsigNK_ZS3VK8" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_239.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
+						<spawn_transform 00="-1" 22="-1" 31="1.744819"/>
+						<spawn_bounds>
+							<min x="-1.125" y="-1.375" z="-0.125"/>
+							<max x="1.375" y="5.625" z="1.375"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<spawn_local_offset x="-0.125" y="-2.125" z="-0.625"/>
+						<graph_links/>
+					</c>
+					<c component_type="3" id="240" name="addon=NSO_objects,signalling_equipment,spawn_signal=HV_Asig_LF7K12_Vsig_ZS3VK8" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_240.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
+						<spawn_transform 00="-1" 22="-1" 31="1.757673"/>
+						<spawn_bounds>
+							<min x="-1.125" y="-1.375" z="-0.125"/>
+							<max x="1.375" y="5.625" z="1.375"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<spawn_local_offset x="-0.125" y="-2.125" z="-0.625"/>
+						<graph_links/>
+					</c>
+					<c component_type="3" id="246" name="addon=NSO_objects,signalling_equipment,spawn_sign=ZS6" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_246.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
+						<spawn_transform 00="-1" 22="-1" 31="0.71"/>
+						<spawn_bounds>
+							<min x="-0.375" y="-1.625" z="-0.125"/>
+							<max x="0.375" y="0.625" z="0.125"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<spawn_local_offset y="0.5"/>
+						<graph_links/>
+					</c>
+					<c component_type="3" id="247" name="addon=NSO_objects,signalling_equipment,spawn_signal=HV_Bksig_LF7K16_VsigNK_ZS3VK8" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_247.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
+						<spawn_transform 00="-1" 22="-1" 31="1.752461"/>
+						<spawn_bounds>
+							<min x="-1.125" y="-1.375" z="-0.125"/>
+							<max x="1.375" y="5.625" z="1.375"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<spawn_local_offset x="-0.125" y="-2.125" z="-0.625"/>
+						<graph_links/>
+					</c>
+					<c component_type="3" id="268" name="addon=NSO_objects,signalling_equipment,spawn_signal=HV_Bksig_Vsig_ZS3VK8" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_268.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
+						<spawn_transform 00="-1" 22="-1" 31="1.512333"/>
+						<spawn_bounds>
+							<min x="-1.125" y="-1.375" z="-0.125"/>
+							<max x="1.375" y="5.125" z="1.375"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<spawn_local_offset x="-0.125" y="-1.875" z="-0.625"/>
+						<graph_links/>
+					</c>
+					<c component_type="3" id="269" name="addon=NSO_objects,signalling_equipment,spawn_signal=HV_Bksig_ZS3K8_Vsig_ZS3VK8" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_269.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
+						<spawn_transform 00="-1" 22="-1" 31="1.808131"/>
+						<spawn_bounds>
+							<min x="-1.125" y="-1.375" z="-0.125"/>
+							<max x="1.375" y="5.625" z="1.375"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<spawn_local_offset x="-0.125" y="-2.125" z="-0.625"/>
+						<graph_links/>
+					</c>
+					<c component_type="3" id="270" name="addon=NSO_objects,signalling_equipment,spawn_signal=HV_Bksig_ZS3K10_Vsig_ZS3VK8" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_270.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
+						<spawn_transform 00="-1" 22="-1" 31="1.774148"/>
+						<spawn_bounds>
+							<min x="-1.125" y="-1.375" z="-0.125"/>
+							<max x="1.375" y="5.625" z="1.375"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<spawn_local_offset x="-0.125" y="-2.125" z="-0.625"/>
+						<graph_links/>
+					</c>
+					<c component_type="3" id="271" name="addon=NSO_objects,signalling_equipment,spawn_signal=HV_Vsig_ZS3VK10" dynamic_object_type="2" character_outfit_category="11" character_type="1" vehicle_file_name="data/missions_working/vehicle_271.xml" vehicle_file_store="4" vehicle_is_static="true" vehicle_is_invulnerable="true">
+						<spawn_transform 00="-1" 22="-1" 31="1.153305"/>
+						<spawn_bounds>
+							<min x="-0.625" y="-1.375" z="-0.125"/>
+							<max x="1.375" y="4.375" z="1.375"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<spawn_local_offset x="-0.375" y="-1.5" z="-0.625"/>
 						<graph_links/>
 					</c>
 				</components>
@@ -1516,7 +2118,7 @@
 			<l id="25" tile="data\tiles\mega_island_12_8.xml" is_env_mod="true">
 				<components>
 					<c component_type="10" id="129" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,signal=HV_Vsig">
-						<spawn_transform 00="-0.313993" 02="0.949425" 20="-0.949425" 22="-0.313993" 30="-132.4805" 31="15" 32="318.5146"/>
+						<spawn_transform 00="-0.313993" 02="0.949425" 20="-0.949425" 22="-0.313993" 30="-132.4805" 31="14.93844" 32="318.5146"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
 							<max x="1" y="1" z="1"/>
@@ -1525,7 +2127,7 @@
 						<graph_links/>
 					</c>
 					<c component_type="10" id="130" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,signal=HV_Vsig">
-						<spawn_transform 00="-0.313993" 02="0.949425" 20="-0.949425" 22="-0.313993" 30="-135.9922" 31="15" 32="328.1455"/>
+						<spawn_transform 00="-0.313993" 02="0.949425" 20="-0.949425" 22="-0.313993" 30="-135.9922" 31="14.98999" 32="328.1455"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
 							<max x="1" y="1" z="1"/>
@@ -1538,7 +2140,7 @@
 			<l id="26" tile="data\tiles\mega_island_14_7.xml" is_env_mod="true">
 				<components>
 					<c component_type="10" id="155" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,signal=HV_Esig_Vsig">
-						<spawn_transform 00="-0.878824" 02="-0.477147" 20="0.477147" 22="-0.878824" 30="-496.4238" 31="7" 32="41.2261"/>
+						<spawn_transform 00="-0.878824" 02="-0.477147" 20="0.477147" 22="-0.878824" 30="-496.4238" 31="6.749016" 32="41.22607"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
 							<max x="1" y="1" z="1"/>
@@ -1581,7 +2183,7 @@
 			</l>
 			<l id="28" tile="data\tiles\mega_island_13_4.xml" is_env_mod="true">
 				<components>
-					<c component_type="10" id="168" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,signal=HV_VsigK">
+					<c component_type="10" id="168" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,signal=HV_Vsig">
 						<spawn_transform 00="0.81681" 02="0.576907" 20="-0.576907" 22="0.81681" 30="-269.9941" 31="25.7" 32="217.7197"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
@@ -1608,8 +2210,214 @@
 						<vehicle_parent_transform/>
 						<graph_links/>
 					</c>
-					<c component_type="10" id="172" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,signal=HV_VsigK">
+					<c component_type="10" id="172" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,signal=HV_Vsig">
 						<spawn_transform 00="0.747992" 02="-0.663707" 20="0.663707" 22="0.747992" 30="-62.42188" 31="13.4" 32="-393.252"/>
+						<spawn_bounds>
+							<min x="-1" y="-1" z="-1"/>
+							<max x="1" y="1" z="1"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="29" tile="data\tiles\mega_island_10_8.xml" is_env_mod="true">
+				<components>
+					<c component_type="10" id="185" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_right">
+						<spawn_transform 00="0" 02="-1" 20="1" 22="0" 30="-59.7871" 31="11.5" 32="210.6748"/>
+						<spawn_bounds>
+							<min x="-1" y="-1" z="-1"/>
+							<max x="1" y="1" z="1"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="186" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_right">
+						<spawn_transform 00="0" 02="-1" 20="1" 22="0" 30="-156.459" 31="10.5" 32="228.9854"/>
+						<spawn_bounds>
+							<min x="-1" y="-1" z="-1"/>
+							<max x="1" y="1" z="1"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="187" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_right">
+						<spawn_transform 00="0" 02="1" 20="-1" 22="0" 30="-213.0107" 31="9.9" 32="238.8721"/>
+						<spawn_bounds>
+							<min x="-1" y="-1" z="-1"/>
+							<max x="1" y="1" z="1"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="203" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_left">
+						<spawn_transform 00="0" 02="1" 20="-1" 22="0" 30="-479.0791" 31="9" 32="228.9844"/>
+						<spawn_bounds>
+							<min x="-1" y="-1" z="-1"/>
+							<max x="1" y="1" z="1"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="204" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_left">
+						<spawn_transform 00="0" 02="-1" 20="1" 22="0" 30="-422.7266" 31="9" 32="238.9277"/>
+						<spawn_bounds>
+							<min x="-1" y="-1" z="-1"/>
+							<max x="1" y="1" z="1"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="205" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_left">
+						<spawn_transform 00="0" 02="-1" 20="1" 22="0" 30="-444.3018" 31="9" 32="244.0049"/>
+						<spawn_bounds>
+							<min x="-1" y="-1" z="-1"/>
+							<max x="1" y="1" z="1"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="206" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_symmetric">
+						<spawn_transform 00="0" 02="-1" 20="1" 22="0" 30="-498.4141" 31="9" 32="238.8896"/>
+						<spawn_bounds>
+							<min x="-1" y="-1" z="-1"/>
+							<max x="1" y="1" z="1"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="207" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_left">
+						<spawn_transform 00="0" 02="1" 20="-1" 22="0" 30="-352.4365" 31="9" 32="243.9873"/>
+						<spawn_bounds>
+							<min x="-1" y="-1" z="-1"/>
+							<max x="1" y="1" z="1"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="209" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_symmetric">
+						<spawn_transform 00="-0.573576" 02="0.819152" 20="-0.819152" 22="-0.573576" 30="-249.4805" 31="7.64" 32="271.7939"/>
+						<spawn_bounds>
+							<min x="-1" y="-1" z="-1"/>
+							<max x="1" y="1" z="1"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="210" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_left">
+						<spawn_transform 00="0" 02="1" 20="-1" 22="0" 30="-59.8174" 31="11.4951" 32="201.041"/>
+						<spawn_bounds>
+							<min x="-1" y="-1" z="-1"/>
+							<max x="1" y="1" z="1"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="211" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,junction=EL_left">
+						<spawn_transform 00="0" 02="-1" 20="1" 22="0" 30="31.1875" 31="12.4021" 32="210.7129"/>
+						<spawn_bounds>
+							<min x="-1" y="-1" z="-1"/>
+							<max x="1" y="1" z="1"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="232" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,sign=LF7K16">
+						<spawn_transform 00="0" 02="1" 20="-1" 22="0" 30="112.5508" 31="13.39638" 32="211.0469"/>
+						<spawn_bounds>
+							<min x="-1" y="-1" z="-1"/>
+							<max x="1" y="1" z="1"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="233" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,signal=HV_Esig_ZS3K8_Vsig_ZS3VK12">
+						<spawn_transform 00="0" 02="-1" 20="1" 22="0" 30="50.53223" 31="12.48626" 32="210.8955"/>
+						<spawn_bounds>
+							<min x="-1" y="-1" z="-1"/>
+							<max x="1" y="1" z="1"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="234" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,signal=HV_Esig_Vsig_LF6K12">
+						<spawn_transform 00="0" 02="-1" 20="1" 22="0" 30="50.33301" 31="12.56585" 32="200.9639"/>
+						<spawn_bounds>
+							<min x="-1" y="-1" z="-1"/>
+							<max x="1" y="1" z="1"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="235" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,signal=HV_Asig_LF7K8">
+						<spawn_transform 00="0" 02="1" 20="-1" 22="0" 30="-150.8916" 31="10.39355" 32="217.085"/>
+						<spawn_bounds>
+							<min x="-1" y="-1" z="-1"/>
+							<max x="1" y="1" z="1"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="236" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,signal=HV_Asig_ZS3K8">
+						<spawn_transform 00="0" 02="1" 20="-1" 22="0" 30="-151.8066" 31="10.30751" 32="200.8125"/>
+						<spawn_bounds>
+							<min x="-1" y="-1" z="-1"/>
+							<max x="1" y="1" z="1"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="237" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,signal=HV_Bksig">
+						<spawn_transform 00="0" 02="1" 20="-1" 22="0" 30="-139.5674" 31="10.49344" 32="211.0801"/>
+						<spawn_bounds>
+							<min x="-1" y="-1" z="-1"/>
+							<max x="1" y="1" z="1"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="240" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,signal=HV_Asig_LF7K12_Vsig">
+						<spawn_transform 00="0" 02="-1" 20="1" 22="0" 30="-474.7363" 31="9.001355" 32="200.7998"/>
+						<spawn_bounds>
+							<min x="-1" y="-1" z="-1"/>
+							<max x="1" y="1" z="1"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="242" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,signal=HV_Asig_ZS3K8">
+						<spawn_transform 00="0" 02="-1" 20="1" 22="0" 30="-473.875" 31="8.861351" 32="217.0527"/>
+						<spawn_bounds>
+							<min x="-1" y="-1" z="-1"/>
+							<max x="1" y="1" z="1"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="247" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,sign=ZS6">
+						<spawn_transform 00="0.098871" 02="0.9951" 20="-0.9951" 22="0.098871" 30="-86.5752" 31="11.09844" 32="212.3525"/>
+						<spawn_bounds>
+							<min x="-1" y="-1" z="-1"/>
+							<max x="1" y="1" z="1"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<graph_links/>
+					</c>
+				</components>
+			</l>
+			<l id="30" tile="data\tiles\mega_island_11_8.xml" is_env_mod="true">
+				<components>
+					<c component_type="10" id="230" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,signal=HV_Vsig">
+						<spawn_transform 00="0" 02="-1" 20="1" 22="0" 30="85.1123" 31="14.92913" 32="200.8027"/>
+						<spawn_bounds>
+							<min x="-1" y="-1" z="-1"/>
+							<max x="1" y="1" z="1"/>
+						</spawn_bounds>
+						<vehicle_parent_transform/>
+						<graph_links/>
+					</c>
+					<c component_type="10" id="231" cargo_zone_import_cargo_type="addon=NSO_objects,signalling_equipment,signal=HV_Vsig_ZS3VK8">
+						<spawn_transform 00="0" 02="-1" 20="1" 22="0" 30="85.23438" 31="14.88736" 32="211.083"/>
 						<spawn_bounds>
 							<min x="-1" y="-1" z="-1"/>
 							<max x="1" y="1" z="1"/>
