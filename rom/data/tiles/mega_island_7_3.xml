@@ -96,16 +96,9 @@
 	<perches/>
 	<fires/>
 	<train_tracks>
-		<track id="Curve#345_Track#0_S#2_#35_TileBorderCrossing" _CT_loadIgnore="true">
-			<transform 30="-328.541016" 31="20.04" 32="310.64502"/>
-			<links>
-				<link id="Curve#346_Track#0_S#0_#1"/>
-			</links>
-		</track>
 		<track id="Curve#346_Track#0_S#0_#1" _CT_loadIgnore="true">
 			<transform 30="-326.831543" 31="20.0400028" 32="305.9463"/>
 			<links>
-				<link id="Curve#345_Track#0_S#2_#35_TileBorderCrossing"/>
 				<link id="Curve#346_Track#0_S#0_#2"/>
 			</links>
 		</track>
@@ -169,11 +162,25 @@
 			<transform 30="-22.1728516" 31="20.04" 32="-531.5359"/>
 			<links>
 				<link id="Curve#346_Track#0_S#4_#3"/>
+				<link id="Curve#347_Track#0_S#0_#1_TileBorderCrossing"/>
+			</links>
+		</track>
+		<track id="Curve#347_Track#0_S#0_#1_TileBorderCrossing" _CT_loadIgnore="true">
+			<transform 30="-20.45752" 31="20.0410938" 32="-536.2324"/>
+			<links>
+				<link id="Curve#346_Track#0_S#4_#4"/>
+			</links>
+		</track>
+		<track id="Curve#356_Track#0_S#2_#27_TileBorderCrossing" _CT_loadIgnore="true">
+			<transform 30="-63.5" 31="20.04" 32="-366.657959"/>
+			<links>
+				<link id="Curve#357_Track#0_S#0_#1"/>
 			</links>
 		</track>
 		<track id="Curve#357_Track#0_S#0_#1" _CT_loadIgnore="true">
 			<transform 30="-125.708496" 31="20.04" 32="-195.855469"/>
 			<links>
+				<link id="Curve#356_Track#0_S#2_#27_TileBorderCrossing"/>
 				<link id="Curve#357_Track#0_S#1_#1"/>
 			</links>
 		</track>
@@ -195,13 +202,6 @@
 			<transform 30="-312.333984" 31="20.04" 32="316.552"/>
 			<links>
 				<link id="Curve#357_Track#0_S#2_#1"/>
-				<link id="Curve#358_Track#0_S#0_#1_TileBorderCrossing"/>
-			</links>
-		</track>
-		<track id="Curve#358_Track#0_S#0_#1_TileBorderCrossing" _CT_loadIgnore="true">
-			<transform 30="-314.04834" 31="20.0400028" 32="321.249023"/>
-			<links>
-				<link id="Curve#357_Track#0_S#3_#1"/>
 			</links>
 		</track>
 	</train_tracks>

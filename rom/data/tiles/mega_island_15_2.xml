@@ -1,191 +1,227 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<definition is_island="True" tile_type="2" is_purchasable="True" purchase_cost="50000" sea_floor_height="-6">
+<definition is_island="true" tile_type="2" is_purchasable="true" purchase_cost="50000">
 	<meshes>
-		<mesh id="mesh0" seasonal_flags="0" file_name="nso_mod/meshes/mainland/15_2_main.mesh">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="0" 31="0" 32="0" 33="1"/>
+		<mesh id="mesh0" file_name="nso_mod/meshes/mainland/15_2_main.mesh">
+			<transform/>
 		</mesh>
-		<mesh id="fishing_cottages_mesh_01" seasonal_flags="0" file_name="meshes/island_26_cottages.mesh">
-			<transform 00="0" 01="0" 02="1" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-1" 21="0" 22="0" 23="0" 30="-110.407433" 31="7.911799" 32="158.518692" 33="1"/>
+		<mesh id="fishing_cottages_mesh_01" file_name="meshes/island_26_cottages.mesh">
+			<transform 00="0" 02="1" 20="-1" 22="0" 30="-110.407433" 31="7.911799" 32="158.518692"/>
 		</mesh>
-		<mesh id="fishing_cottage_single_mesh" seasonal_flags="0" file_name="meshes/island_26_cottages_02.mesh">
-			<transform 00="-0.258819" 01="0" 02="-0.965926" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.965926" 21="0" 22="-0.258819" 23="0" 30="-108.313416" 31="8.013662" 32="148.838715" 33="1"/>
+		<mesh id="fishing_cottage_single_mesh" file_name="meshes/island_26_cottages_02.mesh">
+			<transform 00="-0.258819" 02="-0.965926" 20="0.965926" 22="-0.258819" 30="-108.313416" 31="8.013662" 32="148.838715"/>
 		</mesh>
-		<mesh id="village_mesh" seasonal_flags="0" file_name="meshes/mainland_assets/mainland_village_centre.mesh">
-			<transform 00="0.34202" 01="0" 02="0.939693" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.939693" 21="0" 22="0.34202" 23="0" 30="68.6337662" 31="6.529566" 32="289.9383" 33="1"/>
+		<mesh id="village_mesh" file_name="meshes/mainland_assets/mainland_village_centre.mesh">
+			<transform 00="0.34202" 02="0.939693" 20="-0.939693" 22="0.34202" 30="68.6337662" 31="6.529566" 32="289.9383"/>
 		</mesh>
-		<mesh id="village_hall_mesh" seasonal_flags="0" file_name="meshes/mainland_assets/mainland_village_hall.mesh">
-			<transform 00="0.34202" 01="0" 02="0.939693" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.939693" 21="0" 22="0.34202" 23="0" 30="68.6337662" 31="6.529566" 32="289.9383" 33="1"/>
+		<mesh id="village_hall_mesh" file_name="meshes/mainland_assets/mainland_village_hall.mesh">
+			<transform 00="0.34202" 02="0.939693" 20="-0.939693" 22="0.34202" 30="68.6337662" 31="6.529566" 32="289.9383"/>
 		</mesh>
-		<mesh id="cottages_01_a" seasonal_flags="0" file_name="meshes/mainland_assets/mainland_village_cottages.mesh">
-			<transform 00="-0.342021" 01="0" 02="-0.939693" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.939693" 21="0" 22="-0.342021" 23="0" 30="43.9012146" 31="6.427524" 32="221.938248" 33="1"/>
+		<mesh id="cottages_01_a" file_name="meshes/mainland_assets/mainland_village_cottages.mesh">
+			<transform 00="-0.342021" 02="-0.939693" 20="0.939693" 22="-0.342021" 30="43.9012146" 31="6.427524" 32="221.938248"/>
 		</mesh>
-		<mesh id="cottages_02" seasonal_flags="0" file_name="meshes/mainland_assets/mainland_village_cottages_02.mesh">
-			<transform 00="-0.34202" 01="0" 02="-0.939693" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.939693" 21="0" 22="-0.34202" 23="0" 30="31.1293449" 31="6.438908" 32="225.96048" 33="1"/>
+		<mesh id="cottages_02" file_name="meshes/mainland_assets/mainland_village_cottages_02.mesh">
+			<transform 00="-0.34202" 02="-0.939693" 20="0.939693" 22="-0.34202" 30="31.1293449" 31="6.438908" 32="225.96048"/>
 		</mesh>
-		<mesh id="cottages_01_b" seasonal_flags="0" file_name="meshes/mainland_assets/mainland_village_cottages.mesh">
-			<transform 00="-0.422619" 01="0" 02="-0.906308" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.906308" 21="0" 22="-0.422619" 23="0" 30="130.928543" 31="6.462214" 32="185.144241" 33="1"/>
+		<mesh id="cottages_01_b" file_name="meshes/mainland_assets/mainland_village_cottages.mesh">
+			<transform 00="-0.422619" 02="-0.906308" 20="0.906308" 22="-0.422619" 30="130.928543" 31="6.462214" 32="185.144241"/>
 		</mesh>
-		<mesh id="dock_mesh" seasonal_flags="0" file_name="meshes/island_34_dock.mesh">
-			<transform 00="0.573576" 01="0" 02="0.819152" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.819152" 21="0" 22="0.573576" 23="0" 30="573.955444" 31="6.637036" 32="-437.280731" 33="1"/>
+		<mesh id="dock_mesh" file_name="meshes/island_34_dock.mesh">
+			<transform 00="0.573576" 02="0.819152" 20="-0.819152" 22="0.573576" 30="573.955444" 31="6.637036" 32="-437.280731"/>
 		</mesh>
-		<mesh id="hall_door_01" seasonal_flags="0" file_name="meshes/door_cottage_boathouse.mesh">
-			<transform 00="-0.34202" 01="0" 02="-0.939693" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.939693" 21="0" 22="-0.34202" 23="0" 30="86.36132" 31="6.529566" 32="290.592072" 33="1"/>
+		<mesh id="hall_door_01" file_name="meshes/door_cottage_boathouse.mesh">
+			<transform 00="-0.34202" 02="-0.939693" 20="0.939693" 22="-0.34202" 30="86.36132" 31="6.529566" 32="290.592072"/>
 		</mesh>
-		<mesh id="hall_door_02" seasonal_flags="0" file_name="meshes/door_cottage_boathouse.mesh">
-			<transform 00="-0.34202" 01="0" 02="-0.939693" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.939693" 21="0" 22="-0.34202" 23="0" 30="82.08603" 31="6.529566" 32="278.8458" 33="1"/>
+		<mesh id="hall_door_02" file_name="meshes/door_cottage_boathouse.mesh">
+			<transform 00="-0.34202" 02="-0.939693" 20="0.939693" 22="-0.34202" 30="82.08603" 31="6.529566" 32="278.8458"/>
 		</mesh>
-		<mesh id="hall_door_04" seasonal_flags="0" file_name="meshes/door_research_base.mesh">
-			<transform 00="0.939693" 01="0" 02="-0.34202" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.34202" 21="0" 22="0.939693" 23="0" 30="88.73357" 31="6.529566" 32="288.179962" 33="1"/>
+		<mesh id="hall_door_04" file_name="meshes/door_research_base.mesh">
+			<transform 00="0.939693" 02="-0.34202" 20="0.34202" 22="0.939693" 30="88.73357" 31="6.529566" 32="288.179962"/>
 		</mesh>
-		<mesh id="hall_door_03" seasonal_flags="0" file_name="meshes/door_research_base_mirrored.mesh">
-			<transform 00="0.939693" 01="0" 02="-0.34202" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.34202" 21="0" 22="0.939693" 23="0" 30="90.49216" 31="6.529566" 32="287.540375" 33="1"/>
+		<mesh id="hall_door_03" file_name="meshes/door_research_base_mirrored.mesh">
+			<transform 00="0.939693" 02="-0.34202" 20="0.34202" 22="0.939693" 30="90.49216" 31="6.529566" 32="287.540375"/>
 		</mesh>
-		<mesh id="hall_door_05" seasonal_flags="0" file_name="meshes/door_plain_handle.mesh">
-			<transform 00="-0.34202" 01="0" 02="-0.939693" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.939693" 21="0" 22="-0.34202" 23="0" 30="87.92764" 31="6.529566" 32="276.544342" 33="1"/>
+		<mesh id="hall_door_05" file_name="meshes/door_plain_handle.mesh">
+			<transform 00="-0.34202" 02="-0.939693" 20="0.939693" 22="-0.34202" 30="87.92764" 31="6.529566" 32="276.544342"/>
 		</mesh>
-		<mesh id="door_shore_02" seasonal_flags="0" file_name="meshes/door_cottages.mesh">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-110.894104" 31="8.112785" 32="156.1379" 33="1"/>
+		<mesh id="door_shore_02" file_name="meshes/door_cottages.mesh">
+			<transform 30="-110.894104" 31="8.112785" 32="156.1379"/>
 		</mesh>
-		<mesh id="door_shore_01" seasonal_flags="0" file_name="meshes/door_cottages.mesh">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-128.2735" 31="8.112785" 32="156.1379" 33="1"/>
+		<mesh id="door_shore_01" file_name="meshes/door_cottages.mesh">
+			<transform 30="-128.2735" 31="8.112785" 32="156.1379"/>
 		</mesh>
-		<mesh id="door_shore_03" seasonal_flags="0" file_name="meshes/door_cottages.mesh">
-			<transform 00="0.965926" 01="0" 02="-0.258819" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.258819" 21="0" 22="0.965926" 23="0" 30="-89.4553146" 31="8.213964" 32="153.81926" 33="1"/>
+		<mesh id="door_shore_03" file_name="meshes/door_cottages.mesh">
+			<transform 00="0.965926" 02="-0.258819" 20="0.258819" 22="0.965926" 30="-89.4553146" 31="8.213964" 32="153.81926"/>
 		</mesh>
-		<mesh id="door_01" seasonal_flags="0" file_name="meshes/door_cottage_boathouse.mesh">
-			<transform 00="0.939693" 01="0" 02="-0.34202" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.34202" 21="0" 22="0.939693" 23="0" 30="-8.237001" 31="6.677744" 32="249.849625" 33="1"/>
+		<mesh id="door_01" file_name="meshes/door_cottage_boathouse.mesh">
+			<transform 00="0.939693" 02="-0.34202" 20="0.34202" 22="0.939693" 30="-8.237001" 31="6.677744" 32="249.849625"/>
 		</mesh>
-		<mesh id="door_03" seasonal_flags="0" file_name="meshes/door_cottage_boathouse.mesh">
-			<transform 00="0.939693" 01="0" 02="-0.34202" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.34202" 21="0" 22="0.939693" 23="0" 30="26.9858551" 31="6.677744" 32="237.5313" 33="1"/>
+		<mesh id="door_03" file_name="meshes/door_cottage_boathouse.mesh">
+			<transform 00="0.939693" 02="-0.34202" 20="0.34202" 22="0.939693" 30="26.9858551" 31="6.677744" 32="237.5313"/>
 		</mesh>
-		<mesh id="door_02" seasonal_flags="0" file_name="meshes/door_cottage_boathouse.mesh">
-			<transform 00="-0.939693" 01="0" 02="0.34202" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.34202" 21="0" 22="-0.939693" 23="0" 30="7.325737" 31="6.677744" 32="221.83107" 33="1"/>
+		<mesh id="door_02" file_name="meshes/door_cottage_boathouse.mesh">
+			<transform 00="-0.939693" 02="0.34202" 20="-0.34202" 22="-0.939693" 30="7.325737" 31="6.677744" 32="221.83107"/>
 		</mesh>
-		<mesh id="door_04" seasonal_flags="0" file_name="meshes/door_cottage_boathouse.mesh">
-			<transform 00="-0.939693" 01="0" 02="0.34202" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.34202" 21="0" 22="-0.939693" 23="0" 30="27.14842" 31="6.689486" 32="213.506927" 33="1"/>
+		<mesh id="door_04" file_name="meshes/door_cottage_boathouse.mesh">
+			<transform 00="-0.939693" 02="0.34202" 20="-0.34202" 22="-0.939693" 30="27.14842" 31="6.689486" 32="213.506927"/>
 		</mesh>
-		<mesh id="door_05" seasonal_flags="0" file_name="meshes/door_cottage_boathouse.mesh">
-			<transform 00="0.939693" 01="0" 02="-0.34202" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.34202" 21="0" 22="0.939693" 23="0" 30="56.53847" 31="6.688413" 32="226.988419" 33="1"/>
+		<mesh id="door_05" file_name="meshes/door_cottage_boathouse.mesh">
+			<transform 00="0.939693" 02="-0.34202" 20="0.34202" 22="0.939693" 30="56.53847" 31="6.688413" 32="226.988419"/>
 		</mesh>
-		<mesh id="door_06" seasonal_flags="0" file_name="meshes/door_cottage_boathouse.mesh">
-			<transform 00="-0.939693" 01="0" 02="0.34202" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.34202" 21="0" 22="-0.939693" 23="0" 30="58.0407143" 31="6.689069" 32="203.101486" 33="1"/>
+		<mesh id="door_06" file_name="meshes/door_cottage_boathouse.mesh">
+			<transform 00="-0.939693" 02="0.34202" 20="-0.34202" 22="-0.939693" 30="58.0407143" 31="6.689069" 32="203.101486"/>
 		</mesh>
-		<mesh id="door_07" seasonal_flags="0" file_name="meshes/door_cottage_boathouse.mesh">
-			<transform 00="0.906308" 01="0" 02="-0.422618" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.422618" 21="0" 22="0.906308" 23="0" 30="81.42244" 31="6.712493" 32="217.495438" 33="1"/>
+		<mesh id="door_07" file_name="meshes/door_cottage_boathouse.mesh">
+			<transform 00="0.906308" 02="-0.422618" 20="0.422618" 22="0.906308" 30="81.42244" 31="6.712493" 32="217.495438"/>
 		</mesh>
-		<mesh id="door_08" seasonal_flags="0" file_name="meshes/door_cottage_boathouse.mesh">
-			<transform 00="-0.906308" 01="0" 02="0.422618" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.422618" 21="0" 22="-0.906308" 23="0" 30="94.48104" 31="6.713268" 32="188.2207" 33="1"/>
+		<mesh id="door_08" file_name="meshes/door_cottage_boathouse.mesh">
+			<transform 00="-0.906308" 02="0.422618" 20="-0.422618" 22="-0.906308" 30="94.48104" 31="6.713268" 32="188.2207"/>
 		</mesh>
-		<mesh id="door_09" seasonal_flags="0" file_name="meshes/door_cottage_boathouse.mesh">
-			<transform 00="0.906308" 01="0" 02="-0.422618" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.422618" 21="0" 22="0.906308" 23="0" 30="115.434814" 31="6.712493" 32="202.14859" 33="1"/>
+		<mesh id="door_09" file_name="meshes/door_cottage_boathouse.mesh">
+			<transform 00="0.906308" 02="-0.422618" 20="0.422618" 22="0.906308" 30="115.434814" 31="6.712493" 32="202.14859"/>
 		</mesh>
-		<mesh id="sale_sign_mesh" parent_id="sale_sign_interact" seasonal_flags="0" file_name="meshes/for_sale_sign.mesh">
-			<transform 00="0.344554" 01="0" 02="0.938767" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.938767" 21="0" 22="0.344554" 23="0" 30="207.205887" 31="6.629765" 32="-354.060822" 33="1"/>
+		<mesh id="sale_sign_mesh" parent_id="sale_sign_interact" file_name="meshes/for_sale_sign.mesh">
+			<transform 00="0.344554" 02="0.938767" 20="-0.938767" 22="0.344554" 30="207.205887" 31="6.629765" 32="-354.060822"/>
 		</mesh>
-		<mesh id="workbench_mesh" seasonal_flags="0" file_name="meshes/workbench.mesh">
-			<transform 00="-0.490819" 01="0" 02="0.871261" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.871261" 21="0" 22="-0.490819" 23="0" 30="171.803513" 31="7.557392" 32="-401.527344" 33="1"/>
+		<mesh id="workbench_mesh" file_name="meshes/workbench.mesh">
+			<transform 00="-0.490819" 02="0.871261" 20="-0.871261" 22="-0.490819" 30="171.803513" 31="7.557392" 32="-401.527344"/>
 		</mesh>
-		<mesh id="door_shore_04" seasonal_flags="0" file_name="meshes/door_cottages.mesh">
-			<transform 00="0" 01="0" 02="-1" 03="0" 10="0" 11="1" 12="0" 13="0" 20="1" 21="0" 22="0" 23="0" 30="-126.015228" 31="8.111832" 32="160.155777" 33="1"/>
+		<mesh id="door_shore_04" file_name="meshes/door_cottages.mesh">
+			<transform 00="0" 02="-1" 20="1" 22="0" 30="-126.015228" 31="8.111832" 32="160.155777"/>
 		</mesh>
-		<mesh id="door_shore_05" seasonal_flags="0" file_name="meshes/door_cottages.mesh">
-			<transform 00="0" 01="0" 02="-1" 03="0" 10="0" 11="1" 12="0" 13="0" 20="1" 21="0" 22="0" 23="0" 30="-108.631714" 31="8.111832" 32="160.155777" 33="1"/>
+		<mesh id="door_shore_05" file_name="meshes/door_cottages.mesh">
+			<transform 00="0" 02="-1" 20="1" 22="0" 30="-108.631714" 31="8.111832" 32="160.155777"/>
 		</mesh>
-		<mesh id="door_shore_06" seasonal_flags="0" file_name="meshes/door_cottages.mesh">
-			<transform 00="-0.258819" 01="0" 02="-0.965926" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.965926" 21="0" 22="-0.258819" 23="0" 30="-86.82636" 31="8.213934" 32="154.871063" 33="1"/>
+		<mesh id="door_shore_06" file_name="meshes/door_cottages.mesh">
+			<transform 00="-0.258819" 02="-0.965926" 20="0.965926" 22="-0.258819" 30="-86.82636" 31="8.213934" 32="154.871063"/>
+		</mesh>
+		<mesh id="ExtrudedTrackMesh_Curve_506_0" _CT_loadIgnore="true" file_name="meshes/extruded_track_pieces/mega_island_15_2_ExtrudedTrackMesh_Curve_506_0.mesh">
+			<transform 30="57.6542969" 31="6.99755" 32="231.106934"/>
+		</mesh>
+		<mesh id="ExtrudedTrackMesh_Curve_506_1" _CT_loadIgnore="true" file_name="meshes/extruded_track_pieces/mega_island_15_2_ExtrudedTrackMesh_Curve_506_1.mesh">
+			<transform 30="57.6542969" 31="6.99755" 32="231.106934"/>
+		</mesh>
+		<mesh id="ExtrudedTrackMesh_Curve_506_2" _CT_loadIgnore="true" file_name="meshes/extruded_track_pieces/mega_island_15_2_ExtrudedTrackMesh_Curve_506_2.mesh">
+			<transform 30="57.6542969" 31="6.99755" 32="231.106934"/>
+		</mesh>
+		<mesh id="ExtrudedTrackMesh_Curve_506_3" _CT_loadIgnore="true" file_name="meshes/extruded_track_pieces/mega_island_15_2_ExtrudedTrackMesh_Curve_506_3.mesh">
+			<transform 30="57.6542969" 31="6.99755" 32="231.106934"/>
+		</mesh>
+		<mesh id="ExtrudedTrackMesh_Curve_507_0" _CT_loadIgnore="true" file_name="meshes/extruded_track_pieces/mega_island_15_2_ExtrudedTrackMesh_Curve_507_0.mesh">
+			<transform 30="-459.380859" 31="7.0094" 32="435.064941"/>
+		</mesh>
+		<mesh id="ExtrudedTrackMesh_Curve_507_1" _CT_loadIgnore="true" file_name="meshes/extruded_track_pieces/mega_island_15_2_ExtrudedTrackMesh_Curve_507_1.mesh">
+			<transform 30="-459.380859" 31="7.0094" 32="435.064941"/>
 		</mesh>
 	</meshes>
 	<physics_objects/>
 	<physics_meshes>
-		<physics_mesh id="physics_mesh0" seasonal_flags="0" file_name="nso_mod/meshes/mainland/15_2_main.phys">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="0" 31="0" 32="0" 33="1"/>
+		<physics_mesh id="physics_mesh0" file_name="nso_mod/meshes/mainland/15_2_main.phys">
+			<transform/>
 		</physics_mesh>
-		<physics_mesh id="village_centre_phys" seasonal_flags="0" file_name="meshes/mainland_assets/mainland_village_centre_phys.phys">
-			<transform 00="0.34202" 01="0" 02="0.939693" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.939693" 21="0" 22="0.34202" 23="0" 30="68.6337662" 31="6.529566" 32="289.9383" 33="1"/>
+		<physics_mesh id="village_centre_phys" file_name="meshes/mainland_assets/mainland_village_centre_phys.phys">
+			<transform 00="0.34202" 02="0.939693" 20="-0.939693" 22="0.34202" 30="68.6337662" 31="6.529566" 32="289.9383"/>
 		</physics_mesh>
-		<physics_mesh id="fishing_cottages_phys" seasonal_flags="0" file_name="meshes/island_26_cottages_phys.phys">
-			<transform 00="0" 01="0" 02="1" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-1" 21="0" 22="0" 23="0" 30="-110.407433" 31="7.911799" 32="158.518692" 33="1"/>
+		<physics_mesh id="fishing_cottages_phys" file_name="meshes/island_26_cottages_phys.phys">
+			<transform 00="0" 02="1" 20="-1" 22="0" 30="-110.407433" 31="7.911799" 32="158.518692"/>
 		</physics_mesh>
-		<physics_mesh id="fishing_cottage_single_phys" seasonal_flags="0" file_name="meshes/island_26_cottages_02_phys.phys">
-			<transform 00="-0.258819" 01="0" 02="-0.965926" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.965926" 21="0" 22="-0.258819" 23="0" 30="-108.313416" 31="8.013662" 32="148.838715" 33="1"/>
+		<physics_mesh id="fishing_cottage_single_phys" file_name="meshes/island_26_cottages_02_phys.phys">
+			<transform 00="-0.258819" 02="-0.965926" 20="0.965926" 22="-0.258819" 30="-108.313416" 31="8.013662" 32="148.838715"/>
 		</physics_mesh>
-		<physics_mesh id="hall_door_01_phys" parent_id="hall_door_01" seasonal_flags="0" file_name="meshes/door_cottage_boathouse_phys.phys">
-			<transform 00="-0.34202" 01="0" 02="-0.939692" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.939692" 21="0" 22="-0.34202" 23="0" 30="86.36132" 31="6.529566" 32="290.592072" 33="1"/>
+		<physics_mesh id="hall_door_01_phys" parent_id="hall_door_01" file_name="meshes/door_cottage_boathouse_phys.phys">
+			<transform 00="-0.34202" 02="-0.939692" 20="0.939692" 22="-0.34202" 30="86.36132" 31="6.529566" 32="290.592072"/>
 		</physics_mesh>
-		<physics_mesh id="hall_door_02_phys" parent_id="hall_door_02" seasonal_flags="0" file_name="meshes/door_cottage_boathouse_phys.phys">
-			<transform 00="-0.34202" 01="0" 02="-0.939693" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.939693" 21="0" 22="-0.34202" 23="0" 30="82.08603" 31="6.529566" 32="278.8458" 33="1"/>
+		<physics_mesh id="hall_door_02_phys" parent_id="hall_door_02" file_name="meshes/door_cottage_boathouse_phys.phys">
+			<transform 00="-0.34202" 02="-0.939693" 20="0.939693" 22="-0.34202" 30="82.08603" 31="6.529566" 32="278.8458"/>
 		</physics_mesh>
-		<physics_mesh id="hall_door_05_phys" parent_id="hall_door_05" seasonal_flags="0" file_name="meshes/door_hospital_phys.phys">
-			<transform 00="-0.34202" 01="0" 02="-0.939693" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.939693" 21="0" 22="-0.34202" 23="0" 30="87.92764" 31="6.529566" 32="276.544342" 33="1"/>
+		<physics_mesh id="hall_door_05_phys" parent_id="hall_door_05" file_name="meshes/door_hospital_phys.phys">
+			<transform 00="-0.34202" 02="-0.939693" 20="0.939693" 22="-0.34202" 30="87.92764" 31="6.529566" 32="276.544342"/>
 		</physics_mesh>
-		<physics_mesh id="hall_door_03_phys" parent_id="hall_door_03" seasonal_flags="0" file_name="meshes/door_research_base_mirrored_phys.phys">
-			<transform 00="0.939693" 01="0" 02="-0.34202" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.34202" 21="0" 22="0.939693" 23="0" 30="90.49216" 31="6.529566" 32="287.540375" 33="1"/>
+		<physics_mesh id="hall_door_03_phys" parent_id="hall_door_03" file_name="meshes/door_research_base_mirrored_phys.phys">
+			<transform 00="0.939693" 02="-0.34202" 20="0.34202" 22="0.939693" 30="90.49216" 31="6.529566" 32="287.540375"/>
 		</physics_mesh>
-		<physics_mesh id="hall_door_04_phys" parent_id="hall_door_04" seasonal_flags="0" file_name="meshes/door_hospital_phys.phys">
-			<transform 00="0.939693" 01="0" 02="-0.34202" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.34202" 21="0" 22="0.939693" 23="0" 30="88.73357" 31="6.529566" 32="288.179962" 33="1"/>
+		<physics_mesh id="hall_door_04_phys" parent_id="hall_door_04" file_name="meshes/door_hospital_phys.phys">
+			<transform 00="0.939693" 02="-0.34202" 20="0.34202" 22="0.939693" 30="88.73357" 31="6.529566" 32="288.179962"/>
 		</physics_mesh>
-		<physics_mesh id="cottages_01_a_phys" seasonal_flags="0" file_name="meshes/mainland_assets/mainland_village_cottages_phys.phys">
-			<transform 00="-0.34202" 01="0" 02="-0.939693" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.939693" 21="0" 22="-0.34202" 23="0" 30="43.9012146" 31="6.427524" 32="221.938248" 33="1"/>
+		<physics_mesh id="cottages_01_a_phys" file_name="meshes/mainland_assets/mainland_village_cottages_phys.phys">
+			<transform 00="-0.34202" 02="-0.939693" 20="0.939693" 22="-0.34202" 30="43.9012146" 31="6.427524" 32="221.938248"/>
 		</physics_mesh>
-		<physics_mesh id="cottages_01_b_phys" seasonal_flags="0" file_name="meshes/mainland_assets/mainland_village_cottages_phys.phys">
-			<transform 00="-0.422618" 01="0" 02="-0.906308" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.906308" 21="0" 22="-0.422618" 23="0" 30="130.928543" 31="6.462214" 32="185.144241" 33="1"/>
+		<physics_mesh id="cottages_01_b_phys" file_name="meshes/mainland_assets/mainland_village_cottages_phys.phys">
+			<transform 00="-0.422618" 02="-0.906308" 20="0.906308" 22="-0.422618" 30="130.928543" 31="6.462214" 32="185.144241"/>
 		</physics_mesh>
-		<physics_mesh id="cottages_02_phys" seasonal_flags="0" file_name="meshes/mainland_assets/mainland_village_cottages_02_phys.phys">
-			<transform 00="-0.34202" 01="0" 02="-0.939693" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.939693" 21="0" 22="-0.34202" 23="0" 30="31.1293449" 31="6.438908" 32="225.96048" 33="1"/>
+		<physics_mesh id="cottages_02_phys" file_name="meshes/mainland_assets/mainland_village_cottages_02_phys.phys">
+			<transform 00="-0.34202" 02="-0.939693" 20="0.939693" 22="-0.34202" 30="31.1293449" 31="6.438908" 32="225.96048"/>
 		</physics_mesh>
-		<physics_mesh id="door_shore_01_phys" parent_id="door_shore_01" seasonal_flags="0" file_name="meshes/door_hospital_phys.phys">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-128.2735" 31="8.112785" 32="156.1379" 33="1"/>
+		<physics_mesh id="door_shore_01_phys" parent_id="door_shore_01" file_name="meshes/door_hospital_phys.phys">
+			<transform 30="-128.2735" 31="8.112785" 32="156.1379"/>
 		</physics_mesh>
-		<physics_mesh id="door_shore_02_phys" parent_id="door_shore_02" seasonal_flags="0" file_name="meshes/door_hospital_phys.phys">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-110.894104" 31="8.112785" 32="156.1379" 33="1"/>
+		<physics_mesh id="door_shore_02_phys" parent_id="door_shore_02" file_name="meshes/door_hospital_phys.phys">
+			<transform 30="-110.894104" 31="8.112785" 32="156.1379"/>
 		</physics_mesh>
-		<physics_mesh id="door_shore_03_phys" parent_id="door_shore_03" seasonal_flags="0" file_name="meshes/door_hospital_phys.phys">
-			<transform 00="0.965926" 01="0" 02="-0.258819" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.258819" 21="0" 22="0.965926" 23="0" 30="-89.4553146" 31="8.213964" 32="153.81926" 33="1"/>
+		<physics_mesh id="door_shore_03_phys" parent_id="door_shore_03" file_name="meshes/door_hospital_phys.phys">
+			<transform 00="0.965926" 02="-0.258819" 20="0.258819" 22="0.965926" 30="-89.4553146" 31="8.213964" 32="153.81926"/>
 		</physics_mesh>
-		<physics_mesh id="door_01_phys" parent_id="door_01" seasonal_flags="0" file_name="meshes/door_cottage_boathouse_phys.phys">
-			<transform 00="0.939693" 01="0" 02="-0.34202" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.34202" 21="0" 22="0.939693" 23="0" 30="-8.237001" 31="6.677744" 32="249.849625" 33="1"/>
+		<physics_mesh id="door_01_phys" parent_id="door_01" file_name="meshes/door_cottage_boathouse_phys.phys">
+			<transform 00="0.939693" 02="-0.34202" 20="0.34202" 22="0.939693" 30="-8.237001" 31="6.677744" 32="249.849625"/>
 		</physics_mesh>
-		<physics_mesh id="door_03_phys" parent_id="door_03" seasonal_flags="0" file_name="meshes/door_cottage_boathouse_phys.phys">
-			<transform 00="0.939693" 01="0" 02="-0.34202" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.34202" 21="0" 22="0.939693" 23="0" 30="26.9858551" 31="6.677744" 32="237.5313" 33="1"/>
+		<physics_mesh id="door_03_phys" parent_id="door_03" file_name="meshes/door_cottage_boathouse_phys.phys">
+			<transform 00="0.939693" 02="-0.34202" 20="0.34202" 22="0.939693" 30="26.9858551" 31="6.677744" 32="237.5313"/>
 		</physics_mesh>
-		<physics_mesh id="door_05_phys" parent_id="door_05" seasonal_flags="0" file_name="meshes/door_cottage_boathouse_phys.phys">
-			<transform 00="0.939693" 01="0" 02="-0.34202" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.34202" 21="0" 22="0.939693" 23="0" 30="56.53847" 31="6.688413" 32="226.988419" 33="1"/>
+		<physics_mesh id="door_05_phys" parent_id="door_05" file_name="meshes/door_cottage_boathouse_phys.phys">
+			<transform 00="0.939693" 02="-0.34202" 20="0.34202" 22="0.939693" 30="56.53847" 31="6.688413" 32="226.988419"/>
 		</physics_mesh>
-		<physics_mesh id="door_07_phys" parent_id="door_07" seasonal_flags="0" file_name="meshes/door_cottage_boathouse_phys.phys">
-			<transform 00="0.906308" 01="0" 02="-0.422618" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.422618" 21="0" 22="0.906308" 23="0" 30="81.42244" 31="6.712493" 32="217.495438" 33="1"/>
+		<physics_mesh id="door_07_phys" parent_id="door_07" file_name="meshes/door_cottage_boathouse_phys.phys">
+			<transform 00="0.906308" 02="-0.422618" 20="0.422618" 22="0.906308" 30="81.42244" 31="6.712493" 32="217.495438"/>
 		</physics_mesh>
-		<physics_mesh id="door_09_phys" parent_id="door_09" seasonal_flags="0" file_name="meshes/door_cottage_boathouse_phys.phys">
-			<transform 00="0.906308" 01="0" 02="-0.422618" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.422618" 21="0" 22="0.906308" 23="0" 30="115.434814" 31="6.712493" 32="202.14859" 33="1"/>
+		<physics_mesh id="door_09_phys" parent_id="door_09" file_name="meshes/door_cottage_boathouse_phys.phys">
+			<transform 00="0.906308" 02="-0.422618" 20="0.422618" 22="0.906308" 30="115.434814" 31="6.712493" 32="202.14859"/>
 		</physics_mesh>
-		<physics_mesh id="door_02_phys" parent_id="door_02" seasonal_flags="0" file_name="meshes/door_cottage_boathouse_phys.phys">
-			<transform 00="-0.939693" 01="0" 02="0.34202" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.34202" 21="0" 22="-0.939693" 23="0" 30="7.325737" 31="6.677744" 32="221.83107" 33="1"/>
+		<physics_mesh id="door_02_phys" parent_id="door_02" file_name="meshes/door_cottage_boathouse_phys.phys">
+			<transform 00="-0.939693" 02="0.34202" 20="-0.34202" 22="-0.939693" 30="7.325737" 31="6.677744" 32="221.83107"/>
 		</physics_mesh>
-		<physics_mesh id="door_04_phys" parent_id="door_04" seasonal_flags="0" file_name="meshes/door_cottage_boathouse_phys.phys">
-			<transform 00="-0.939693" 01="0" 02="0.34202" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.34202" 21="0" 22="-0.939693" 23="0" 30="27.14842" 31="6.689486" 32="213.506927" 33="1"/>
+		<physics_mesh id="door_04_phys" parent_id="door_04" file_name="meshes/door_cottage_boathouse_phys.phys">
+			<transform 00="-0.939693" 02="0.34202" 20="-0.34202" 22="-0.939693" 30="27.14842" 31="6.689486" 32="213.506927"/>
 		</physics_mesh>
-		<physics_mesh id="door_06_phys" parent_id="door_06" seasonal_flags="0" file_name="meshes/door_cottage_boathouse_phys.phys">
-			<transform 00="-0.939693" 01="0" 02="0.34202" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.34202" 21="0" 22="-0.939693" 23="0" 30="58.0407143" 31="6.689069" 32="203.101486" 33="1"/>
+		<physics_mesh id="door_06_phys" parent_id="door_06" file_name="meshes/door_cottage_boathouse_phys.phys">
+			<transform 00="-0.939693" 02="0.34202" 20="-0.34202" 22="-0.939693" 30="58.0407143" 31="6.689069" 32="203.101486"/>
 		</physics_mesh>
-		<physics_mesh id="door_08_phys" parent_id="door_08" seasonal_flags="0" file_name="meshes/door_cottage_boathouse_phys.phys">
-			<transform 00="-0.906308" 01="0" 02="0.422618" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.422618" 21="0" 22="-0.906308" 23="0" 30="94.48104" 31="6.713268" 32="188.2207" 33="1"/>
+		<physics_mesh id="door_08_phys" parent_id="door_08" file_name="meshes/door_cottage_boathouse_phys.phys">
+			<transform 00="-0.906308" 02="0.422618" 20="-0.422618" 22="-0.906308" 30="94.48104" 31="6.713268" 32="188.2207"/>
 		</physics_mesh>
-		<physics_mesh id="dock_phys" seasonal_flags="0" file_name="meshes/island_34_dock_phys.phys">
-			<transform 00="0.573576" 01="0" 02="0.819152" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.819152" 21="0" 22="0.573576" 23="0" 30="573.955444" 31="6.637036" 32="-437.280731" 33="1"/>
+		<physics_mesh id="dock_phys" file_name="meshes/island_34_dock_phys.phys">
+			<transform 00="0.573576" 02="0.819152" 20="-0.819152" 22="0.573576" 30="573.955444" 31="6.637036" 32="-437.280731"/>
 		</physics_mesh>
-		<physics_mesh id="sale_sign_phys" parent_id="sale_sign_interact" seasonal_flags="0" file_name="meshes/for_sale_sign_phys.phys">
-			<transform 00="0.338133" 01="0" 02="0.941098" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.941098" 21="0" 22="0.338133" 23="0" 30="207.205887" 31="6.629765" 32="-354.060822" 33="1"/>
+		<physics_mesh id="sale_sign_phys" parent_id="sale_sign_interact" file_name="meshes/for_sale_sign_phys.phys">
+			<transform 00="0.338133" 02="0.941098" 20="-0.941098" 22="0.338133" 30="207.205887" 31="6.629765" 32="-354.060822"/>
 		</physics_mesh>
-		<physics_mesh id="workbench_phys" seasonal_flags="0" file_name="meshes/workbench_phys.phys">
-			<transform 00="-0.486021" 01="0" 02="0.873947" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.873947" 21="0" 22="-0.486021" 23="0" 30="171.803513" 31="7.557392" 32="-401.527344" 33="1"/>
+		<physics_mesh id="workbench_phys" file_name="meshes/workbench_phys.phys">
+			<transform 00="-0.486021" 02="0.873947" 20="-0.873947" 22="-0.486021" 30="171.803513" 31="7.557392" 32="-401.527344"/>
 		</physics_mesh>
-		<physics_mesh id="door_shore_04_phys" parent_id="door_shore_04" seasonal_flags="0" file_name="meshes/door_hospital_phys.phys">
-			<transform 00="0" 01="0" 02="-1" 03="0" 10="0" 11="1" 12="0" 13="0" 20="1" 21="0" 22="0" 23="0" 30="-126.015228" 31="8.111832" 32="160.155777" 33="1"/>
+		<physics_mesh id="door_shore_04_phys" parent_id="door_shore_04" file_name="meshes/door_hospital_phys.phys">
+			<transform 00="0" 02="-1" 20="1" 22="0" 30="-126.015228" 31="8.111832" 32="160.155777"/>
 		</physics_mesh>
-		<physics_mesh id="door_shore_05_phys" parent_id="door_shore_05" seasonal_flags="0" file_name="meshes/door_hospital_phys.phys">
-			<transform 00="0" 01="0" 02="-1" 03="0" 10="0" 11="1" 12="0" 13="0" 20="1" 21="0" 22="0" 23="0" 30="-108.631714" 31="8.111832" 32="160.155777" 33="1"/>
+		<physics_mesh id="door_shore_05_phys" parent_id="door_shore_05" file_name="meshes/door_hospital_phys.phys">
+			<transform 00="0" 02="-1" 20="1" 22="0" 30="-108.631714" 31="8.111832" 32="160.155777"/>
 		</physics_mesh>
-		<physics_mesh id="door_shore_06_phys" parent_id="door_shore_06" seasonal_flags="0" file_name="meshes/door_hospital_phys.phys">
-			<transform 00="-0.258819" 01="0" 02="-0.965926" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.965926" 21="0" 22="-0.258819" 23="0" 30="-86.82636" 31="8.213934" 32="154.871063" 33="1"/>
+		<physics_mesh id="door_shore_06_phys" parent_id="door_shore_06" file_name="meshes/door_hospital_phys.phys">
+			<transform 00="-0.258819" 02="-0.965926" 20="0.965926" 22="-0.258819" 30="-86.82636" 31="8.213934" 32="154.871063"/>
+		</physics_mesh>
+		<physics_mesh id="ExtrudedTrackMesh_Curve_506_0_Transferred_0" _CT_loadIgnore="true" file_name="meshes/extruded_track_pieces/mega_island_15_2_ExtrudedTrackMesh_Curve_506_0.phys">
+			<transform 30="57.6542969" 31="6.99755" 32="231.106934"/>
+		</physics_mesh>
+		<physics_mesh id="ExtrudedTrackMesh_Curve_506_1_Transferred_0" _CT_loadIgnore="true" file_name="meshes/extruded_track_pieces/mega_island_15_2_ExtrudedTrackMesh_Curve_506_1.phys">
+			<transform 30="57.6542969" 31="6.99755" 32="231.106934"/>
+		</physics_mesh>
+		<physics_mesh id="ExtrudedTrackMesh_Curve_506_2_Transferred_0" _CT_loadIgnore="true" file_name="meshes/extruded_track_pieces/mega_island_15_2_ExtrudedTrackMesh_Curve_506_2.phys">
+			<transform 30="57.6542969" 31="6.99755" 32="231.106934"/>
+		</physics_mesh>
+		<physics_mesh id="ExtrudedTrackMesh_Curve_506_3_Transferred_0" _CT_loadIgnore="true" file_name="meshes/extruded_track_pieces/mega_island_15_2_ExtrudedTrackMesh_Curve_506_3.phys">
+			<transform 30="57.6542969" 31="6.99755" 32="231.106934"/>
+		</physics_mesh>
+		<physics_mesh id="ExtrudedTrackMesh_Curve_507_0_Transferred_0" _CT_loadIgnore="true" file_name="meshes/extruded_track_pieces/mega_island_15_2_ExtrudedTrackMesh_Curve_507_0.phys">
+			<transform 30="-459.380859" 31="7.0094" 32="435.064941"/>
+		</physics_mesh>
+		<physics_mesh id="ExtrudedTrackMesh_Curve_507_1_Transferred_0" _CT_loadIgnore="true" file_name="meshes/extruded_track_pieces/mega_island_15_2_ExtrudedTrackMesh_Curve_507_1.phys">
+			<transform 30="-459.380859" 31="7.0094" 32="435.064941"/>
 		</physics_mesh>
 	</physics_meshes>
 	<physics_dynamics/>
@@ -424,214 +460,214 @@
 	</lights_tube>
 	<screens/>
 	<edit_areas>
-		<edit_area id="dock_edit" seasonal_flags="0" grid_size="2" is_static="false" default_vehicle="" spawned_static_vehicle_id="0" is_invisible_vehicle="false">
-			<transform 00="-0.486331254" 01="0" 02="0.8737745" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.8737745" 21="0" 22="-0.486331254" 23="0" 30="168.406937" 31="2.159357" 32="-423.5948" 33="1"/>
+		<edit_area id="dock_edit" grid_size="2">
+			<transform 00="-0.486331254" 02="0.8737745" 20="-0.8737745" 22="-0.486331254" 30="168.406937" 31="2.159357" 32="-423.5948"/>
 			<size x="22.5" y="20.5" z="57.25"/>
 		</edit_area>
-		<edit_area id="edit15" seasonal_flags="0" grid_size="5" is_static="true" default_vehicle="bed" spawned_static_vehicle_id="0" is_invisible_vehicle="true">
-			<transform 00="0.907391965" 01="0" 02="-0.420285463" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.420285463" 21="0" 22="0.907391965" 23="0" 30="113.69899" 31="7.056055" 32="204.418655" 33="1"/>
+		<edit_area id="edit15" grid_size="5" is_static="true" default_vehicle="bed" is_invisible_vehicle="true">
+			<transform 00="0.907391965" 02="-0.420285463" 20="0.420285463" 22="0.907391965" 30="113.69899" 31="7.056055" 32="204.418655"/>
 			<size x="0.75" y="0.25" z="1.75"/>
 		</edit_area>
-		<edit_area id="edit2" seasonal_flags="0" grid_size="5" is_static="true" default_vehicle="bed" spawned_static_vehicle_id="0" is_invisible_vehicle="true">
-			<transform 00="7.54979E-08" 01="0" 02="1" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-1" 21="0" 22="7.54979E-08" 23="0" 30="-123.5774" 31="8.462992" 32="157.675156" 33="1"/>
+		<edit_area id="edit2" grid_size="5" is_static="true" default_vehicle="bed" is_invisible_vehicle="true">
+			<transform 00="7.54979E-08" 02="1" 20="-1" 22="7.54979E-08" 30="-123.5774" 31="8.462992" 32="157.675156"/>
 			<size x="0.75" y="0.25" z="1.75"/>
 		</edit_area>
-		<edit_area id="edit3" seasonal_flags="0" grid_size="5" is_static="true" default_vehicle="bed" spawned_static_vehicle_id="0" is_invisible_vehicle="true">
-			<transform 00="7.54979E-08" 01="0" 02="1" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-1" 21="0" 22="7.54979E-08" 23="0" 30="-123.5774" 31="8.462992" 32="158.806458" 33="1"/>
+		<edit_area id="edit3" grid_size="5" is_static="true" default_vehicle="bed" is_invisible_vehicle="true">
+			<transform 00="7.54979E-08" 02="1" 20="-1" 22="7.54979E-08" 30="-123.5774" 31="8.462992" 32="158.806458"/>
 			<size x="0.75" y="0.25" z="1.75"/>
 		</edit_area>
-		<edit_area id="edit4" seasonal_flags="0" grid_size="5" is_static="true" default_vehicle="bed" spawned_static_vehicle_id="0" is_invisible_vehicle="true">
-			<transform 00="-1" 01="0" 02="8.742278E-08" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-8.742278E-08" 21="0" 22="-1" 23="0" 30="-105.778229" 31="8.642103" 32="159.616608" 33="1"/>
+		<edit_area id="edit4" grid_size="5" is_static="true" default_vehicle="bed" is_invisible_vehicle="true">
+			<transform 00="-1" 02="8.742278E-08" 20="-8.742278E-08" 22="-1" 30="-105.778229" 31="8.642103" 32="159.616608"/>
 			<size x="0.75" y="0.25" z="1.75"/>
 		</edit_area>
-		<edit_area id="edit5" seasonal_flags="0" grid_size="5" is_static="true" default_vehicle="bed" spawned_static_vehicle_id="0" is_invisible_vehicle="true">
-			<transform 00="-0.9663236" 01="0" 02="0.257329971" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.257329971" 21="0" 22="-0.9663236" 23="0" 30="-85.25675" 31="8.562233" 32="156.269272" 33="1"/>
+		<edit_area id="edit5" grid_size="5" is_static="true" default_vehicle="bed" is_invisible_vehicle="true">
+			<transform 00="-0.9663237" 02="0.257329762" 11="0.99999994" 20="-0.257329762" 22="-0.9663237" 30="-85.25675" 31="8.562233" 32="156.269272"/>
 			<size x="0.75" y="0.25" z="1.75"/>
 		</edit_area>
-		<edit_area id="edit6" seasonal_flags="0" grid_size="5" is_static="true" default_vehicle="bed" spawned_static_vehicle_id="0" is_invisible_vehicle="true">
-			<transform 00="-0.9663236" 01="0" 02="0.257329971" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.257329971" 21="0" 22="-0.9663236" 23="0" 30="-83.7453156" 31="8.562233" 32="155.868744" 33="1"/>
+		<edit_area id="edit6" grid_size="5" is_static="true" default_vehicle="bed" is_invisible_vehicle="true">
+			<transform 00="-0.9663237" 02="0.257329762" 11="0.99999994" 20="-0.257329762" 22="-0.9663237" 30="-83.7453156" 31="8.562233" 32="155.868744"/>
 			<size x="0.75" y="0.25" z="1.75"/>
 		</edit_area>
-		<edit_area id="edit7" seasonal_flags="0" grid_size="5" is_static="true" default_vehicle="bed" spawned_static_vehicle_id="0" is_invisible_vehicle="true">
-			<transform 00="-0.934124649" 01="0" 02="0.356947" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.356947" 21="0" 22="-0.934124649" 23="0" 30="-4.004702" 31="7.174668" 32="251.669937" 33="1"/>
+		<edit_area id="edit7" grid_size="5" is_static="true" default_vehicle="bed" is_invisible_vehicle="true">
+			<transform 00="-0.934124649" 02="0.356947" 20="-0.356947" 22="-0.934124649" 30="-4.004702" 31="7.174668" 32="251.669937"/>
 			<size x="0.75" y="0.25" z="1.75"/>
 		</edit_area>
-		<edit_area id="edit8" seasonal_flags="0" grid_size="5" is_static="true" default_vehicle="bed" spawned_static_vehicle_id="0" is_invisible_vehicle="true">
-			<transform 00="-0.326369166" 01="0" 02="-0.9452424" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.9452424" 21="0" 22="-0.326369166" 23="0" 30="3.287354" 31="7.047114" 32="219.257248" 33="1"/>
+		<edit_area id="edit8" grid_size="5" is_static="true" default_vehicle="bed" is_invisible_vehicle="true">
+			<transform 00="-0.326369166" 02="-0.9452424" 20="0.9452424" 22="-0.326369166" 30="3.287354" 31="7.047114" 32="219.257248"/>
 			<size x="0.75" y="0.25" z="1.75"/>
 		</edit_area>
-		<edit_area id="edit9" seasonal_flags="0" grid_size="5" is_static="true" default_vehicle="bed" spawned_static_vehicle_id="0" is_invisible_vehicle="true">
-			<transform 00="0.9452424" 01="0" 02="-0.326369166" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.326369166" 21="0" 22="0.9452424" 23="0" 30="25.0375385" 31="7.02655" 32="239.637985" 33="1"/>
+		<edit_area id="edit9" grid_size="5" is_static="true" default_vehicle="bed" is_invisible_vehicle="true">
+			<transform 00="0.9452424" 02="-0.326369166" 20="0.326369166" 22="0.9452424" 30="25.0375385" 31="7.02655" 32="239.637985"/>
 			<size x="0.75" y="0.25" z="1.75"/>
 		</edit_area>
-		<edit_area id="edit10" seasonal_flags="0" grid_size="5" is_static="true" default_vehicle="bed" spawned_static_vehicle_id="0" is_invisible_vehicle="true">
-			<transform 00="0.9371806" 01="0" 02="-0.348844677" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.348844677" 21="0" 22="0.9371806" 23="0" 30="22.8956833" 31="7.195351" 32="211.6778" 33="1"/>
+		<edit_area id="edit10" grid_size="5" is_static="true" default_vehicle="bed" is_invisible_vehicle="true">
+			<transform 00="0.9371806" 02="-0.348844677" 20="0.348844677" 22="0.9371806" 30="22.8956833" 31="7.195351" 32="211.6778"/>
 			<size x="0.75" y="0.25" z="1.75"/>
 		</edit_area>
-		<edit_area id="edit11" seasonal_flags="0" grid_size="5" is_static="true" default_vehicle="bed" spawned_static_vehicle_id="0" is_invisible_vehicle="true">
-			<transform 00="-0.9371804" 01="0" 02="0.348845" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.348845" 21="0" 22="-0.9371804" 23="0" 30="60.743515" 31="7.189092" 32="228.804123" 33="1"/>
+		<edit_area id="edit11" grid_size="5" is_static="true" default_vehicle="bed" is_invisible_vehicle="true">
+			<transform 00="-0.9371806" 02="0.348844558" 11="0.99999994" 20="-0.348844558" 22="-0.9371806" 30="60.743515" 31="7.189092" 32="228.804123"/>
 			<size x="0.75" y="0.25" z="1.75"/>
 		</edit_area>
-		<edit_area id="edit12" seasonal_flags="0" grid_size="5" is_static="true" default_vehicle="bed" spawned_static_vehicle_id="0" is_invisible_vehicle="true">
-			<transform 00="-0.348845243" 01="0" 02="-0.93718034" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.93718034" 21="0" 22="-0.348845243" 23="0" 30="53.9948845" 31="7.050452" 32="200.565" 33="1"/>
+		<edit_area id="edit12" grid_size="5" is_static="true" default_vehicle="bed" is_invisible_vehicle="true">
+			<transform 00="-0.348845243" 02="-0.93718034" 20="0.93718034" 22="-0.348845243" 30="53.9948845" 31="7.050452" 32="200.565"/>
 			<size x="0.75" y="0.25" z="1.75"/>
 		</edit_area>
-		<edit_area id="edit13" seasonal_flags="0" grid_size="5" is_static="true" default_vehicle="bed" spawned_static_vehicle_id="0" is_invisible_vehicle="true">
-			<transform 00="-0.907391667" 01="0" 02="0.420286059" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.420286059" 21="0" 22="-0.907391667" 23="0" 30="85.81277" 31="7.204709" 32="218.9753" 33="1"/>
+		<edit_area id="edit13" grid_size="5" is_static="true" default_vehicle="bed" is_invisible_vehicle="true">
+			<transform 00="-0.907391667" 02="0.420286059" 20="-0.420286059" 22="-0.907391667" 30="85.81277" 31="7.204709" 32="218.9753"/>
 			<size x="0.75" y="0.25" z="1.75"/>
 		</edit_area>
-		<edit_area id="edit14" seasonal_flags="0" grid_size="5" is_static="true" default_vehicle="bed" spawned_static_vehicle_id="0" is_invisible_vehicle="true">
-			<transform 00="-0.420285851" 01="0" 02="-0.9073917" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.9073917" 21="0" 22="-0.420285851" 23="0" 30="90.2337" 31="7.061002" 32="186.015213" 33="1"/>
+		<edit_area id="edit14" grid_size="5" is_static="true" default_vehicle="bed" is_invisible_vehicle="true">
+			<transform 00="-0.420285851" 02="-0.9073917" 20="0.9073917" 22="-0.420285851" 30="90.2337" 31="7.061002" 32="186.015213"/>
 			<size x="0.75" y="0.25" z="1.75"/>
 		</edit_area>
 	</edit_areas>
 	<interactables>
-		<interactable id="dock_workbench_interact" seasonal_flags="0" target_object_id="dock_edit" label="Workbench" use_case="0" interact_type="2" is_purchased="false" is_ignore_purchased="false">
-			<transform 00="0.873456" 01="0" 02="0.486902" 03="0" 10="0" 11="1" 12="0" 13="0" 20="-0.486902" 21="0" 22="0.873456" 23="0" 30="171.690033" 31="7.801592" 32="-401.3238" 33="1"/>
+		<interactable id="dock_workbench_interact" target_object_id="dock_edit" label="Workbench" interact_type="2">
+			<transform 00="0.873456" 02="0.486902" 20="-0.486902" 22="0.873456" 30="171.690033" 31="7.801592" 32="-401.3238"/>
 			<size x="1.993472" y="1.781679" z="1.579798"/>
 		</interactable>
-		<interactable id="hall_lights_interact_01" seasonal_flags="0" target_object_id="hall_lights_logic" label="Lights" use_case="0" interact_type="0" is_purchased="false" is_ignore_purchased="false">
-			<transform 00="0.939693" 01="0" 02="-0.34202" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.34202" 21="0" 22="0.939693" 23="0" 30="88.54174" 31="7.718112" 32="288.606445" 33="1"/>
+		<interactable id="hall_lights_interact_01" target_object_id="hall_lights_logic" label="Lights">
+			<transform 00="0.939693" 02="-0.34202" 20="0.34202" 22="0.939693" 30="88.54174" 31="7.718112" 32="288.606445"/>
 			<size x="0.264702" y="0.248796" z="0.12322"/>
 		</interactable>
-		<interactable id="hall_lights_interact_02" seasonal_flags="0" target_object_id="hall_lights_logic" label="Lights" use_case="0" interact_type="0" is_purchased="false" is_ignore_purchased="false">
-			<transform 00="-0.34202" 01="0" 02="-0.939693" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.939693" 21="0" 22="-0.34202" 23="0" 30="82.55372" 31="7.718112" 32="279.2916" 33="1"/>
+		<interactable id="hall_lights_interact_02" target_object_id="hall_lights_logic" label="Lights">
+			<transform 00="-0.34202" 02="-0.939693" 20="0.939693" 22="-0.34202" 30="82.55372" 31="7.718112" 32="279.2916"/>
 			<size x="0.264702" y="0.248796" z="0.12322"/>
 		</interactable>
-		<interactable id="interact2" seasonal_flags="0" target_object_id="light_switch5" label="Light" use_case="0" interact_type="0" is_purchased="false" is_ignore_purchased="false">
-			<transform 00="-0.34202" 01="0" 02="-0.939693" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.939693" 21="0" 22="-0.34202" 23="0" 30="87.41181" 31="7.718112" 32="275.384735" 33="1"/>
+		<interactable id="interact2" target_object_id="light_switch5" label="Light">
+			<transform 00="-0.34202" 02="-0.939693" 20="0.939693" 22="-0.34202" 30="87.41181" 31="7.718112" 32="275.384735"/>
 			<size x="0.264702" y="0.248796" z="0.12322"/>
 		</interactable>
-		<interactable id="hall_door_05_interact" parent_id="hall_door_05" seasonal_flags="0" target_object_id="hall_door_05_logic" label="Door" use_case="0" interact_type="0" is_purchased="false" is_ignore_purchased="false">
-			<transform 00="0.939693" 01="0" 02="-0.34202" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.34202" 21="0" 22="0.939693" 23="0" 30="87.79868" 31="7.713165" 32="276.078339" 33="1"/>
+		<interactable id="hall_door_05_interact" parent_id="hall_door_05" target_object_id="hall_door_05_logic" label="Door">
+			<transform 00="0.939693" 02="-0.34202" 20="0.34202" 22="0.939693" 30="87.79868" 31="7.713165" 32="276.078339"/>
 			<size x="0.392517" y="1.789368" z="0.857848"/>
 		</interactable>
-		<interactable id="hall_door_02_interact" parent_id="hall_door_02" seasonal_flags="0" target_object_id="hall_door_02_logic" label="Door" use_case="0" interact_type="0" is_purchased="false" is_ignore_purchased="false">
-			<transform 00="0.939693" 01="0" 02="-0.34202" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.34202" 21="0" 22="0.939693" 23="0" 30="81.9793549" 31="7.587608" 32="278.41156" 33="1"/>
+		<interactable id="hall_door_02_interact" parent_id="hall_door_02" target_object_id="hall_door_02_logic" label="Door">
+			<transform 00="0.939693" 02="-0.34202" 20="0.34202" 22="0.939693" 30="81.9793549" 31="7.587608" 32="278.41156"/>
 			<size x="0.425059" y="1.568771" z="0.787332"/>
 		</interactable>
-		<interactable id="hall_door_01_interact" parent_id="hall_door_01" seasonal_flags="0" target_object_id="hall_door_01_logic" label="Door" use_case="0" interact_type="0" is_purchased="false" is_ignore_purchased="false">
-			<transform 00="0.939693" 01="0" 02="-0.34202" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.34202" 21="0" 22="0.939693" 23="0" 30="86.20845" 31="7.590171" 32="290.172058" 33="1"/>
+		<interactable id="hall_door_01_interact" parent_id="hall_door_01" target_object_id="hall_door_01_logic" label="Door">
+			<transform 00="0.939693" 02="-0.34202" 20="0.34202" 22="0.939693" 30="86.20845" 31="7.590171" 32="290.172058"/>
 			<size x="0.5" y="1.563943" z="0.77092"/>
 		</interactable>
-		<interactable id="hall_door_03_interact" parent_id="hall_door_03" seasonal_flags="0" target_object_id="hall_door_03_logic" label="Door" use_case="0" interact_type="0" is_purchased="false" is_ignore_purchased="false">
-			<transform 00="0.939693" 01="0" 02="-0.34202" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.34202" 21="0" 22="0.939693" 23="0" 30="90.0301361" 31="7.676032" 32="287.749146" 33="1"/>
+		<interactable id="hall_door_03_interact" parent_id="hall_door_03" target_object_id="hall_door_03_logic" label="Door">
+			<transform 00="0.939693" 02="-0.34202" 20="0.34202" 22="0.939693" 30="90.0301361" 31="7.676032" 32="287.749146"/>
 			<size x="0.79198" y="1.811719" z="0.399406"/>
 		</interactable>
-		<interactable id="hall_door_04_interact" parent_id="hall_door_04" seasonal_flags="0" target_object_id="hall_door_04_logic" label="Door" use_case="0" interact_type="0" is_purchased="false" is_ignore_purchased="false">
-			<transform 00="0.939693" 01="0" 02="-0.34202" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.34202" 21="0" 22="0.939693" 23="0" 30="89.21076" 31="7.676032" 32="288.047333" 33="1"/>
+		<interactable id="hall_door_04_interact" parent_id="hall_door_04" target_object_id="hall_door_04_logic" label="Door">
+			<transform 00="0.939693" 02="-0.34202" 20="0.34202" 22="0.939693" 30="89.21076" 31="7.676032" 32="288.047333"/>
 			<size x="0.79198" y="1.811719" z="0.399406"/>
 		</interactable>
-		<interactable id="lamp_interact" seasonal_flags="0" target_object_id="lamp_logic" label="Lamp" use_case="0" interact_type="0" is_purchased="false" is_ignore_purchased="false">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-128.9709" 31="9.930458" 32="160.346512" 33="1"/>
+		<interactable id="lamp_interact" target_object_id="lamp_logic" label="Lamp">
+			<transform 30="-128.9709" 31="9.930458" 32="160.346512"/>
 			<size x="0.5" y="0.5" z="0.5"/>
 		</interactable>
-		<interactable id="door_shore_01_interact" parent_id="door_shore_01" seasonal_flags="0" target_object_id="door_shore_01_logic" label="Door" use_case="0" interact_type="0" is_purchased="false" is_ignore_purchased="false">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-127.796425" 31="9.242113" 32="156.151123" 33="1"/>
+		<interactable id="door_shore_01_interact" parent_id="door_shore_01" target_object_id="door_shore_01_logic" label="Door">
+			<transform 30="-127.796425" 31="9.242113" 32="156.151123"/>
 			<size x="0.821031" y="1.70753" z="0.5"/>
 		</interactable>
-		<interactable id="door_shore_02_interact" parent_id="door_shore_02" seasonal_flags="0" target_object_id="door_shore_02_logic" label="Door" use_case="0" interact_type="0" is_purchased="false" is_ignore_purchased="false">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-110.418671" 31="9.242113" 32="156.161072" 33="1"/>
+		<interactable id="door_shore_02_interact" parent_id="door_shore_02" target_object_id="door_shore_02_logic" label="Door">
+			<transform 30="-110.418671" 31="9.242113" 32="156.161072"/>
 			<size x="0.863827" y="1.70753" z="0.5"/>
 		</interactable>
-		<interactable id="door_shore_03_interact" parent_id="door_shore_03" seasonal_flags="0" target_object_id="door_shore_03_logic" label="Door" use_case="0" interact_type="0" is_purchased="false" is_ignore_purchased="false">
-			<transform 00="0.965926" 01="0" 02="-0.258819" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.258819" 21="0" 22="0.965926" 23="0" 30="-88.9817657" 31="9.348567" 32="153.704758" 33="1"/>
+		<interactable id="door_shore_03_interact" parent_id="door_shore_03" target_object_id="door_shore_03_logic" label="Door">
+			<transform 00="0.965926" 02="-0.258819" 20="0.258819" 22="0.965926" 30="-88.9817657" 31="9.348567" 32="153.704758"/>
 			<size x="0.863827" y="1.70753" z="0.5"/>
 		</interactable>
-		<interactable id="door_01_interact" parent_id="door_01" seasonal_flags="0" target_object_id="logic8" label="Door" use_case="0" interact_type="0" is_purchased="false" is_ignore_purchased="false">
-			<transform 00="0.939693" 01="0" 02="-0.34202" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.34202" 21="0" 22="0.939693" 23="0" 30="-7.800145" 31="7.759181" 32="249.759521" 33="1"/>
+		<interactable id="door_01_interact" parent_id="door_01" target_object_id="logic8" label="Door">
+			<transform 00="0.939693" 02="-0.34202" 20="0.34202" 22="0.939693" 30="-7.800145" 31="7.759181" 32="249.759521"/>
 			<size x="0.796237" y="1.564777" z="0.556962"/>
 		</interactable>
-		<interactable id="door_03_interact" parent_id="door_03" seasonal_flags="0" target_object_id="logic9" label="Door" use_case="0" interact_type="0" is_purchased="false" is_ignore_purchased="false">
-			<transform 00="0.939693" 01="0" 02="-0.34202" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.34202" 21="0" 22="0.939693" 23="0" 30="27.4049282" 31="7.759181" 32="237.431931" 33="1"/>
+		<interactable id="door_03_interact" parent_id="door_03" target_object_id="logic9" label="Door">
+			<transform 00="0.939693" 02="-0.34202" 20="0.34202" 22="0.939693" 30="27.4049282" 31="7.759181" 32="237.431931"/>
 			<size x="0.796237" y="1.564777" z="0.556962"/>
 		</interactable>
-		<interactable id="door_05_interact" parent_id="door_05" seasonal_flags="0" target_object_id="logic10" label="Door" use_case="0" interact_type="0" is_purchased="false" is_ignore_purchased="false">
-			<transform 00="0.939693" 01="0" 02="-0.34202" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.34202" 21="0" 22="0.939693" 23="0" 30="56.9839" 31="7.759181" 32="226.908234" 33="1"/>
+		<interactable id="door_05_interact" parent_id="door_05" target_object_id="logic10" label="Door">
+			<transform 00="0.939693" 02="-0.34202" 20="0.34202" 22="0.939693" 30="56.9839" 31="7.759181" 32="226.908234"/>
 			<size x="0.796237" y="1.564777" z="0.556962"/>
 		</interactable>
-		<interactable id="door_07_interact" parent_id="door_07" seasonal_flags="0" target_object_id="logic11" label="Door" use_case="0" interact_type="0" is_purchased="false" is_ignore_purchased="false">
-			<transform 00="0.906308" 01="0" 02="-0.422618" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.422618" 21="0" 22="0.906308" 23="0" 30="81.83904" 31="7.786539" 32="217.345383" 33="1"/>
+		<interactable id="door_07_interact" parent_id="door_07" target_object_id="logic11" label="Door">
+			<transform 00="0.906308" 02="-0.422618" 20="0.422618" 22="0.906308" 30="81.83904" 31="7.786539" 32="217.345383"/>
 			<size x="0.796237" y="1.564777" z="0.556962"/>
 		</interactable>
-		<interactable id="door_09_interact" parent_id="door_09" seasonal_flags="0" target_object_id="logic12" label="Door" use_case="0" interact_type="0" is_purchased="false" is_ignore_purchased="false">
-			<transform 00="0.906308" 01="0" 02="-0.422618" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.422618" 21="0" 22="0.906308" 23="0" 30="115.849686" 31="7.786539" 32="202.020248" 33="1"/>
+		<interactable id="door_09_interact" parent_id="door_09" target_object_id="logic12" label="Door">
+			<transform 00="0.906308" 02="-0.422618" 20="0.422618" 22="0.906308" 30="115.849686" 31="7.786539" 32="202.020248"/>
 			<size x="0.796237" y="1.564777" z="0.556962"/>
 		</interactable>
-		<interactable id="door_02_interact" parent_id="door_02" seasonal_flags="0" target_object_id="logic16" label="Door" use_case="0" interact_type="0" is_purchased="false" is_ignore_purchased="false">
-			<transform 00="0.939693" 01="0" 02="-0.34202" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.34202" 21="0" 22="0.939693" 23="0" 30="6.895985" 31="7.759181" 32="221.954819" 33="1"/>
+		<interactable id="door_02_interact" parent_id="door_02" target_object_id="logic16" label="Door">
+			<transform 00="0.939693" 02="-0.34202" 20="0.34202" 22="0.939693" 30="6.895985" 31="7.759181" 32="221.954819"/>
 			<size x="0.796237" y="1.564777" z="0.556962"/>
 		</interactable>
-		<interactable id="door_04_interact" parent_id="door_04" seasonal_flags="0" target_object_id="logic15" label="Door" use_case="0" interact_type="0" is_purchased="false" is_ignore_purchased="false">
-			<transform 00="0.939693" 01="0" 02="-0.34202" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.34202" 21="0" 22="0.939693" 23="0" 30="26.7097149" 31="7.759181" 32="213.595917" 33="1"/>
+		<interactable id="door_04_interact" parent_id="door_04" target_object_id="logic15" label="Door">
+			<transform 00="0.939693" 02="-0.34202" 20="0.34202" 22="0.939693" 30="26.7097149" 31="7.759181" 32="213.595917"/>
 			<size x="0.796237" y="1.564777" z="0.556962"/>
 		</interactable>
-		<interactable id="door_06_interact" parent_id="door_06" seasonal_flags="0" target_object_id="logic14" label="Door" use_case="0" interact_type="0" is_purchased="false" is_ignore_purchased="false">
-			<transform 00="0.939693" 01="0" 02="-0.34202" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.34202" 21="0" 22="0.939693" 23="0" 30="57.60404" 31="7.759181" 32="203.208755" 33="1"/>
+		<interactable id="door_06_interact" parent_id="door_06" target_object_id="logic14" label="Door">
+			<transform 00="0.939693" 02="-0.34202" 20="0.34202" 22="0.939693" 30="57.60404" 31="7.759181" 32="203.208755"/>
 			<size x="0.796237" y="1.564777" z="0.556962"/>
 		</interactable>
-		<interactable id="door_08_interact" parent_id="door_08" seasonal_flags="0" target_object_id="logic13" label="Door" use_case="0" interact_type="0" is_purchased="false" is_ignore_purchased="false">
-			<transform 00="0.906308" 01="0" 02="-0.422618" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.422618" 21="0" 22="0.906308" 23="0" 30="94.0687" 31="7.759181" 32="188.3997" 33="1"/>
+		<interactable id="door_08_interact" parent_id="door_08" target_object_id="logic13" label="Door">
+			<transform 00="0.906308" 02="-0.422618" 20="0.422618" 22="0.906308" 30="94.0687" 31="7.759181" 32="188.3997"/>
 			<size x="0.796237" y="1.564777" z="0.556962"/>
 		</interactable>
-		<interactable id="cottage_01_light_interact" seasonal_flags="0" target_object_id="cottage_01_light" label="Light" use_case="0" interact_type="0" is_purchased="false" is_ignore_purchased="false">
-			<transform 00="0.939901" 01="0" 02="-0.341448" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.341448" 21="0" 22="0.939901" 23="0" 30="-7.004904" 31="7.881609" 32="249.791931" 33="1"/>
+		<interactable id="cottage_01_light_interact" target_object_id="cottage_01_light" label="Light">
+			<transform 00="0.939901" 02="-0.341448" 20="0.341448" 22="0.939901" 30="-7.004904" 31="7.881609" 32="249.791931"/>
 			<size x="0.317635" y="0.290132" z="0.133636"/>
 		</interactable>
-		<interactable id="cottage_02_light_interact" seasonal_flags="0" target_object_id="cottage_02_light_logic" label="Light" use_case="0" interact_type="0" is_purchased="false" is_ignore_purchased="false">
-			<transform 00="0.939673" 01="0" 02="-0.342075" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.342075" 21="0" 22="0.939673" 23="0" 30="6.100059" 31="7.882563" 32="221.892944" 33="1"/>
+		<interactable id="cottage_02_light_interact" target_object_id="cottage_02_light_logic" label="Light">
+			<transform 00="0.939673" 02="-0.342075" 20="0.342075" 22="0.939673" 30="6.100059" 31="7.882563" 32="221.892944"/>
 			<size x="0.294587" y="0.28888" z="0.134094"/>
 		</interactable>
-		<interactable id="cottage_03_interact" seasonal_flags="0" target_object_id="cottage_03_light_logic" label="Light" use_case="0" interact_type="0" is_purchased="false" is_ignore_purchased="false">
-			<transform 00="0.941816" 01="0" 02="-0.336129" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.336129" 21="0" 22="0.941816" 23="0" 30="28.2232819" 31="7.883785" 32="237.480652" 33="1"/>
+		<interactable id="cottage_03_interact" target_object_id="cottage_03_light_logic" label="Light">
+			<transform 00="0.941816" 02="-0.336129" 20="0.336129" 22="0.941816" 30="28.2232819" 31="7.883785" 32="237.480652"/>
 			<size x="0.355673" y="0.34777" z="0.158605"/>
 		</interactable>
-		<interactable id="cottage_04_interact" seasonal_flags="0" target_object_id="cottage_04_light_logic" label="Light" use_case="0" interact_type="0" is_purchased="false" is_ignore_purchased="false">
-			<transform 00="0.939276" 01="0" 02="-0.343162" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.343162" 21="0" 22="0.939276" 23="0" 30="25.9107685" 31="7.894782" 32="213.56427" 33="1"/>
+		<interactable id="cottage_04_interact" target_object_id="cottage_04_light_logic" label="Light">
+			<transform 00="0.939276" 02="-0.343162" 20="0.343162" 22="0.939276" 30="25.9107685" 31="7.894782" 32="213.56427"/>
 			<size x="0.30352" y="0.297732" z="0.14553"/>
 		</interactable>
-		<interactable id="cottage_05_light_interact" seasonal_flags="0" target_object_id="cottage_05_light_logic" label="Light" use_case="0" interact_type="0" is_purchased="false" is_ignore_purchased="false">
-			<transform 00="0.939288" 01="0" 02="-0.34313" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.34313" 21="0" 22="0.939288" 23="0" 30="57.77553" 31="7.892368" 32="226.946869" 33="1"/>
+		<interactable id="cottage_05_light_interact" target_object_id="cottage_05_light_logic" label="Light">
+			<transform 00="0.939288" 02="-0.34313" 20="0.34313" 22="0.939288" 30="57.77553" 31="7.892368" 32="226.946869"/>
 			<size x="0.291676" y="0.272489" z="0.167135"/>
 		</interactable>
-		<interactable id="interact26" seasonal_flags="0" target_object_id="cottage_06_light_logic" label="Light" use_case="0" interact_type="0" is_purchased="false" is_ignore_purchased="false">
-			<transform 00="0.93986" 01="0" 02="-0.34156" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.34156" 21="0" 22="0.93986" 23="0" 30="56.79903" 31="7.897106" 32="203.1494" 33="1"/>
+		<interactable id="interact26" target_object_id="cottage_06_light_logic" label="Light">
+			<transform 00="0.93986" 02="-0.34156" 20="0.34156" 22="0.93986" 30="56.79903" 31="7.897106" 32="203.1494"/>
 			<size x="0.302933" y="0.291205" z="0.147454"/>
 		</interactable>
-		<interactable id="cottage_07_light_interact" seasonal_flags="0" target_object_id="cottage_07_light_logic" label="Light" use_case="0" interact_type="0" is_purchased="false" is_ignore_purchased="false">
-			<transform 00="0.907252" 01="0" 02="-0.420586" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.420586" 21="0" 22="0.907252" 23="0" 30="82.64494" 31="7.909325" 32="217.323029" 33="1"/>
+		<interactable id="cottage_07_light_interact" target_object_id="cottage_07_light_logic" label="Light">
+			<transform 00="0.907252" 02="-0.420586" 20="0.420586" 22="0.907252" 30="82.64494" 31="7.909325" 32="217.323029"/>
 			<size x="0.322143" y="0.315524" z="0.121897"/>
 		</interactable>
-		<interactable id="cottage_08_light_interact" seasonal_flags="0" target_object_id="cottage_08_light_logic" label="Light" use_case="0" interact_type="0" is_purchased="false" is_ignore_purchased="false">
-			<transform 00="0.908008" 01="0" 02="-0.418953" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.418953" 21="0" 22="0.908008" 23="0" 30="93.25992" 31="7.917103" 32="188.3909" 33="1"/>
+		<interactable id="cottage_08_light_interact" target_object_id="cottage_08_light_logic" label="Light">
+			<transform 00="0.908008" 02="-0.418953" 20="0.418953" 22="0.908008" 30="93.25992" 31="7.917103" 32="188.3909"/>
 			<size x="0.293039" y="0.294394" z="0.131325"/>
 		</interactable>
-		<interactable id="cottage_09_light_interact" seasonal_flags="0" target_object_id="cottage_09_light_logic" label="Light" use_case="0" interact_type="0" is_purchased="false" is_ignore_purchased="false">
-			<transform 00="0.904614" 01="0" 02="-0.426232" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.426232" 21="0" 22="0.904614" 23="0" 30="116.661" 31="7.91603" 32="201.996735" 33="1"/>
+		<interactable id="cottage_09_light_interact" target_object_id="cottage_09_light_logic" label="Light">
+			<transform 00="0.904614" 02="-0.426232" 20="0.426232" 22="0.904614" 30="116.661" 31="7.91603" 32="201.996735"/>
 			<size x="0.306053" y="0.282503" z="0.152356"/>
 		</interactable>
-		<interactable id="sale_sign_interact" seasonal_flags="0" label="Buy Island" use_case="0" interact_type="3" is_purchased="false" is_ignore_purchased="false">
-			<transform 00="0.924307" 01="0" 02="-0.381649" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.381649" 21="0" 22="0.924307" 23="0" 30="206.758545" 31="7.811277" 32="-352.9496" 33="1"/>
+		<interactable id="sale_sign_interact" label="Buy Island" interact_type="3">
+			<transform 00="0.924307" 02="-0.381649" 20="0.381649" 22="0.924307" 30="206.758545" 31="7.811277" 32="-352.9496"/>
 			<size x="2.109683" y="1.836396" z="2.182937"/>
 		</interactable>
-		<interactable id="interact32" seasonal_flags="0" target_object_id="light_switch16" label="Light" use_case="0" interact_type="0" is_purchased="false" is_ignore_purchased="false">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-111.604767" 31="9.145286" 32="159.79335" 33="1"/>
+		<interactable id="interact32" target_object_id="light_switch16" label="Light">
+			<transform 30="-111.604767" 31="9.145286" 32="159.79335"/>
 			<size x="0.5" y="0.5" z="0.5"/>
 		</interactable>
-		<interactable id="door_shore_04_interact" parent_id="door_shore_04" seasonal_flags="0" target_object_id="door_shore_04_logic" label="Door" use_case="0" interact_type="0" is_purchased="false" is_ignore_purchased="false">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-125.987633" 31="9.296116" 32="159.679962" 33="1"/>
+		<interactable id="door_shore_04_interact" parent_id="door_shore_04" target_object_id="door_shore_04_logic" label="Door">
+			<transform 30="-125.987633" 31="9.296116" 32="159.679962"/>
 			<size x="0.5" y="1.707411" z="0.829494"/>
 		</interactable>
-		<interactable id="door_shore_05_interact" parent_id="door_shore_05" seasonal_flags="0" target_object_id="door_shore_05_logic" label="Door" use_case="0" interact_type="0" is_purchased="false" is_ignore_purchased="false">
-			<transform 00="1" 01="0" 02="0" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0" 21="0" 22="1" 23="0" 30="-108.614548" 31="9.221849" 32="159.663361" 33="1"/>
+		<interactable id="door_shore_05_interact" parent_id="door_shore_05" target_object_id="door_shore_05_logic" label="Door">
+			<transform 30="-108.614548" 31="9.221849" 32="159.663361"/>
 			<size x="0.5" y="1.683808" z="0.812448"/>
 		</interactable>
-		<interactable id="door_shore_06_interact" parent_id="door_shore_06" seasonal_flags="0" target_object_id="door_shore_06_logic" label="Door" use_case="0" interact_type="0" is_purchased="false" is_ignore_purchased="false">
-			<transform 00="0.965926" 01="0" 02="-0.258819" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.258819" 21="0" 22="0.965926" 23="0" 30="-86.9355545" 31="9.29698" 32="154.3979" 33="1"/>
+		<interactable id="door_shore_06_interact" parent_id="door_shore_06" target_object_id="door_shore_06_logic" label="Door">
+			<transform 00="0.965926" 02="-0.258819" 20="0.258819" 22="0.965926" 30="-86.9355545" 31="9.29698" 32="154.3979"/>
 			<size x="0.5" y="1.745677" z="0.833927"/>
 		</interactable>
-		<interactable id="interact36" seasonal_flags="0" target_object_id="light_switch17" label="Light" use_case="0" interact_type="0" is_purchased="false" is_ignore_purchased="false">
-			<transform 00="0.966965" 01="0" 02="-0.254907" 03="0" 10="0" 11="1" 12="0" 13="0" 20="0.254907" 21="0" 22="0.966965" 23="0" 30="-88.5354156" 31="9.18087" 32="157.177155" 33="1"/>
+		<interactable id="interact36" target_object_id="light_switch17" label="Light">
+			<transform 00="0.966965" 02="-0.254907" 20="0.254907" 22="0.966965" 30="-88.5354156" 31="9.18087" 32="157.177155"/>
 			<size x="0.5" y="0.5" z="0.5"/>
 		</interactable>
 	</interactables>
@@ -918,7 +954,1139 @@
 	</ladders>
 	<perches/>
 	<fires/>
-	<train_tracks/>
+	<train_tracks>
+		<track id="Curve#505_Track#0_S#1_#48_TileBorderCrossing" _CT_loadIgnore="true">
+			<transform 30="434.217773" 31="7.0372" 32="91.52124"/>
+			<links>
+				<link id="Curve#506_Track#0_S#0_#1"/>
+			</links>
+		</track>
+		<track id="Curve#505_Track#1_S#1_#48_TileBorderCrossing" _CT_loadIgnore="true">
+			<transform 30="435.842773" 31="7.0372" 32="95.98462"/>
+			<links>
+				<link id="Curve#506_Track#1_S#0_#1"/>
+			</links>
+		</track>
+		<track id="Curve#506_Track#0_S#0_#1" _CT_loadIgnore="true">
+			<transform 30="246.2793" 31="7.03737259" 32="159.9253"/>
+			<links>
+				<link id="Curve#505_Track#0_S#1_#48_TileBorderCrossing"/>
+				<link id="Curve#506_Track#0_S#1_#1"/>
+			</links>
+		</track>
+		<track id="Curve#506_Track#0_S#1_#1" _CT_loadIgnore="true">
+			<transform 30="57.59082" 31="7.0375495" 32="228.6023"/>
+			<links>
+				<link id="Curve#506_Track#0_S#0_#1"/>
+				<link id="Curve#506_Track#0_S#2_#1"/>
+			</links>
+		</track>
+		<track id="Curve#506_Track#0_S#2_#1" _CT_loadIgnore="true">
+			<transform 30="-131.097656" 31="7.0377264" 32="297.279541"/>
+			<links>
+				<link id="Curve#506_Track#0_S#1_#1"/>
+				<link id="Curve#506_Track#0_S#3_#1"/>
+			</links>
+		</track>
+		<track id="Curve#506_Track#0_S#3_#1" _CT_loadIgnore="true">
+			<transform 30="-319.785156" 31="7.03789949" 32="365.956543"/>
+			<links>
+				<link id="Curve#506_Track#0_S#2_#1"/>
+				<link id="Curve#507_Track#0_S#0_#1"/>
+			</links>
+		</track>
+		<track id="Curve#506_Track#1_S#0_#1" _CT_loadIgnore="true">
+			<transform 30="247.9043" 31="7.03737259" 32="164.388672"/>
+			<links>
+				<link id="Curve#505_Track#1_S#1_#48_TileBorderCrossing"/>
+				<link id="Curve#506_Track#1_S#1_#1"/>
+			</links>
+		</track>
+		<track id="Curve#506_Track#1_S#1_#1" _CT_loadIgnore="true">
+			<transform 30="59.21582" 31="7.0375495" 32="233.065674"/>
+			<links>
+				<link id="Curve#506_Track#1_S#0_#1"/>
+				<link id="Curve#506_Track#1_S#2_#1"/>
+			</links>
+		</track>
+		<track id="Curve#506_Track#1_S#2_#1" _CT_loadIgnore="true">
+			<transform 30="-129.472656" 31="7.0377264" 32="301.74292"/>
+			<links>
+				<link id="Curve#506_Track#1_S#1_#1"/>
+				<link id="Curve#506_Track#1_S#3_#1"/>
+			</links>
+		</track>
+		<track id="Curve#506_Track#1_S#3_#1" _CT_loadIgnore="true">
+			<transform 30="-318.160156" 31="7.03789949" 32="370.419922"/>
+			<links>
+				<link id="Curve#506_Track#1_S#2_#1"/>
+				<link id="Curve#507_Track#1_S#0_#1"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#0_#1" _CT_loadIgnore="true">
+			<transform 30="-324.294922" 31="7.03791761" 32="367.599365"/>
+			<links>
+				<link id="Curve#506_Track#0_S#3_#1"/>
+				<link id="Curve#507_Track#0_S#0_#2"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#0_#10" _CT_loadIgnore="true">
+			<transform 30="-358.064453" 31="7.03938961" 32="380.168457"/>
+			<links>
+				<link id="Curve#507_Track#0_S#0_#11"/>
+				<link id="Curve#507_Track#0_S#0_#9"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#0_#11" _CT_loadIgnore="true">
+			<transform 30="-361.805664" 31="7.03966951" 32="381.5962"/>
+			<links>
+				<link id="Curve#507_Track#0_S#0_#10"/>
+				<link id="Curve#507_Track#0_S#0_#12"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#0_#12" _CT_loadIgnore="true">
+			<transform 30="-365.543945" 31="7.03996849" 32="383.031982"/>
+			<links>
+				<link id="Curve#507_Track#0_S#0_#11"/>
+				<link id="Curve#507_Track#0_S#0_#13"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#0_#13" _CT_loadIgnore="true">
+			<transform 30="-369.280273" 31="7.040285" 32="384.47583"/>
+			<links>
+				<link id="Curve#507_Track#0_S#0_#12"/>
+				<link id="Curve#507_Track#0_S#0_#14"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#0_#14" _CT_loadIgnore="true">
+			<transform 30="-373.0127" 31="7.040617" 32="385.927"/>
+			<links>
+				<link id="Curve#507_Track#0_S#0_#13"/>
+				<link id="Curve#507_Track#0_S#0_#15"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#0_#15" _CT_loadIgnore="true">
+			<transform 30="-376.743164" 31="7.040962" 32="387.3855"/>
+			<links>
+				<link id="Curve#507_Track#0_S#0_#14"/>
+				<link id="Curve#507_Track#0_S#0_#16"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#0_#16" _CT_loadIgnore="true">
+			<transform 30="-380.469727" 31="7.041322" 32="388.853027"/>
+			<links>
+				<link id="Curve#507_Track#0_S#0_#15"/>
+				<link id="Curve#507_Track#0_S#0_#17"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#0_#17" _CT_loadIgnore="true">
+			<transform 30="-384.193359" 31="7.04169559" 32="390.330078"/>
+			<links>
+				<link id="Curve#507_Track#0_S#0_#16"/>
+				<link id="Curve#507_Track#0_S#0_#18"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#0_#18" _CT_loadIgnore="true">
+			<transform 30="-387.9121" 31="7.0420804" 32="391.816162"/>
+			<links>
+				<link id="Curve#507_Track#0_S#0_#17"/>
+				<link id="Curve#507_Track#0_S#0_#19"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#0_#19" _CT_loadIgnore="true">
+			<transform 30="-391.629883" 31="7.04247427" 32="393.3098"/>
+			<links>
+				<link id="Curve#507_Track#0_S#0_#18"/>
+				<link id="Curve#507_Track#0_S#0_#20"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#0_#2" _CT_loadIgnore="true">
+			<transform 30="-328.0547" 31="7.03796959" 32="368.975342"/>
+			<links>
+				<link id="Curve#507_Track#0_S#0_#1"/>
+				<link id="Curve#507_Track#0_S#0_#3"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#0_#20" _CT_loadIgnore="true">
+			<transform 30="-395.342773" 31="7.042879" 32="394.813477"/>
+			<links>
+				<link id="Curve#507_Track#0_S#0_#19"/>
+				<link id="Curve#507_Track#0_S#0_#21"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#0_#21" _CT_loadIgnore="true">
+			<transform 30="-399.051758" 31="7.04329062" 32="396.326172"/>
+			<links>
+				<link id="Curve#507_Track#0_S#0_#20"/>
+				<link id="Curve#507_Track#0_S#0_#22"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#0_#22" _CT_loadIgnore="true">
+			<transform 30="-402.7578" 31="7.04371" 32="397.847168"/>
+			<links>
+				<link id="Curve#507_Track#0_S#0_#21"/>
+				<link id="Curve#507_Track#0_S#0_#23"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#0_#23" _CT_loadIgnore="true">
+			<transform 30="-406.459961" 31="7.044138" 32="399.380127"/>
+			<links>
+				<link id="Curve#507_Track#0_S#0_#22"/>
+				<link id="Curve#507_Track#0_S#0_#24"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#0_#24" _CT_loadIgnore="true">
+			<transform 30="-410.157227" 31="7.0445714" 32="400.922363"/>
+			<links>
+				<link id="Curve#507_Track#0_S#0_#23"/>
+				<link id="Curve#507_Track#0_S#0_#25"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#0_#25" _CT_loadIgnore="true">
+			<transform 30="-413.8506" 31="7.04500961" 32="402.474365"/>
+			<links>
+				<link id="Curve#507_Track#0_S#0_#24"/>
+				<link id="Curve#507_Track#0_S#0_#26"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#0_#26" _CT_loadIgnore="true">
+			<transform 30="-417.540039" 31="7.04545069" 32="404.036133"/>
+			<links>
+				<link id="Curve#507_Track#0_S#0_#25"/>
+				<link id="Curve#507_Track#0_S#0_#27"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#0_#27" _CT_loadIgnore="true">
+			<transform 30="-421.2256" 31="7.04589462" 32="405.6067"/>
+			<links>
+				<link id="Curve#507_Track#0_S#0_#26"/>
+				<link id="Curve#507_Track#0_S#0_#28"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#0_#28" _CT_loadIgnore="true">
+			<transform 30="-424.907227" 31="7.04634428" 32="407.189453"/>
+			<links>
+				<link id="Curve#507_Track#0_S#0_#27"/>
+				<link id="Curve#507_Track#0_S#0_#29"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#0_#29" _CT_loadIgnore="true">
+			<transform 30="-428.583984" 31="7.046794" 32="408.7827"/>
+			<links>
+				<link id="Curve#507_Track#0_S#0_#28"/>
+				<link id="Curve#507_Track#0_S#0_#30"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#0_#3" _CT_loadIgnore="true">
+			<transform 30="-331.8125" 31="7.03805256" 32="370.354736"/>
+			<links>
+				<link id="Curve#507_Track#0_S#0_#2"/>
+				<link id="Curve#507_Track#0_S#0_#4"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#0_#30" _CT_loadIgnore="true">
+			<transform 30="-432.255859" 31="7.0472455" 32="410.385742"/>
+			<links>
+				<link id="Curve#507_Track#0_S#0_#29"/>
+				<link id="Curve#507_Track#0_S#0_#31"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#0_#31" _CT_loadIgnore="true">
+			<transform 30="-435.923828" 31="7.04769754" 32="411.999756"/>
+			<links>
+				<link id="Curve#507_Track#0_S#0_#30"/>
+				<link id="Curve#507_Track#0_S#0_#32"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#0_#32" _CT_loadIgnore="true">
+			<transform 30="-439.585938" 31="7.04814959" 32="413.6245"/>
+			<links>
+				<link id="Curve#507_Track#0_S#0_#31"/>
+				<link id="Curve#507_Track#0_S#0_#33"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#0_#33" _CT_loadIgnore="true">
+			<transform 30="-443.244141" 31="7.04860067" 32="415.2605"/>
+			<links>
+				<link id="Curve#507_Track#0_S#0_#32"/>
+				<link id="Curve#507_Track#0_S#0_#34"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#0_#34" _CT_loadIgnore="true">
+			<transform 30="-446.897461" 31="7.04905" 32="416.90625"/>
+			<links>
+				<link id="Curve#507_Track#0_S#0_#33"/>
+				<link id="Curve#507_Track#0_S#0_#35"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#0_#35" _CT_loadIgnore="true">
+			<transform 30="-450.5459" 31="7.04949856" 32="418.563477"/>
+			<links>
+				<link id="Curve#507_Track#0_S#0_#34"/>
+				<link id="Curve#507_Track#0_S#0_#36"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#0_#36" _CT_loadIgnore="true">
+			<transform 30="-454.189453" 31="7.049944" 32="420.231934"/>
+			<links>
+				<link id="Curve#507_Track#0_S#0_#35"/>
+				<link id="Curve#507_Track#0_S#0_#37"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#0_#37" _CT_loadIgnore="true">
+			<transform 30="-457.828125" 31="7.05038643" 32="421.911377"/>
+			<links>
+				<link id="Curve#507_Track#0_S#0_#36"/>
+				<link id="Curve#507_Track#0_S#0_#38"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#0_#38" _CT_loadIgnore="true">
+			<transform 30="-464.239258" 31="7.05115843" 32="424.904541"/>
+			<links>
+				<link id="Curve#507_Track#0_S#0_#37"/>
+				<link id="Curve#507_Track#0_S#1_#1"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#0_#4" _CT_loadIgnore="true">
+			<transform 30="-335.568359" 31="7.038166" 32="371.739"/>
+			<links>
+				<link id="Curve#507_Track#0_S#0_#3"/>
+				<link id="Curve#507_Track#0_S#0_#5"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#0_#5" _CT_loadIgnore="true">
+			<transform 30="-339.322266" 31="7.038308" 32="373.1289"/>
+			<links>
+				<link id="Curve#507_Track#0_S#0_#4"/>
+				<link id="Curve#507_Track#0_S#0_#6"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#0_#6" _CT_loadIgnore="true">
+			<transform 30="-343.0752" 31="7.038476" 32="374.523926"/>
+			<links>
+				<link id="Curve#507_Track#0_S#0_#5"/>
+				<link id="Curve#507_Track#0_S#0_#7"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#0_#7" _CT_loadIgnore="true">
+			<transform 30="-346.826172" 31="7.03867" 32="375.925049"/>
+			<links>
+				<link id="Curve#507_Track#0_S#0_#6"/>
+				<link id="Curve#507_Track#0_S#0_#8"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#0_#8" _CT_loadIgnore="true">
+			<transform 30="-350.574219" 31="7.038888" 32="377.3335"/>
+			<links>
+				<link id="Curve#507_Track#0_S#0_#7"/>
+				<link id="Curve#507_Track#0_S#0_#9"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#0_#9" _CT_loadIgnore="true">
+			<transform 30="-354.3203" 31="7.0391283" 32="378.7473"/>
+			<links>
+				<link id="Curve#507_Track#0_S#0_#10"/>
+				<link id="Curve#507_Track#0_S#0_#8"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#1_#1" _CT_loadIgnore="true">
+			<transform 30="-467.863281" 31="7.05158949" 32="426.614746"/>
+			<links>
+				<link id="Curve#507_Track#0_S#0_#38"/>
+				<link id="Curve#507_Track#0_S#1_#2"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#1_#10" _CT_loadIgnore="true">
+			<transform 30="-500.230469" 31="7.05519" 32="442.525879"/>
+			<links>
+				<link id="Curve#507_Track#0_S#1_#11"/>
+				<link id="Curve#507_Track#0_S#1_#9"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#1_#11" _CT_loadIgnore="true">
+			<transform 30="-503.797852" 31="7.055551" 32="444.351318"/>
+			<links>
+				<link id="Curve#507_Track#0_S#1_#10"/>
+				<link id="Curve#507_Track#0_S#1_#12"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#1_#12" _CT_loadIgnore="true">
+			<transform 30="-507.360352" 31="7.055903" 32="446.188477"/>
+			<links>
+				<link id="Curve#507_Track#0_S#1_#11"/>
+				<link id="Curve#507_Track#0_S#1_#13"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#1_#13" _CT_loadIgnore="true">
+			<transform 30="-510.916016" 31="7.05624533" 32="448.036865"/>
+			<links>
+				<link id="Curve#507_Track#0_S#1_#12"/>
+				<link id="Curve#507_Track#0_S#1_#14"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#1_#14" _CT_loadIgnore="true">
+			<transform 30="-514.4668" 31="7.05657768" 32="449.896973"/>
+			<links>
+				<link id="Curve#507_Track#0_S#1_#13"/>
+				<link id="Curve#507_Track#0_S#1_#15"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#1_#15" _CT_loadIgnore="true">
+			<transform 30="-518.009766" 31="7.056901" 32="451.77002"/>
+			<links>
+				<link id="Curve#507_Track#0_S#1_#14"/>
+				<link id="Curve#507_Track#0_S#1_#16"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#1_#16" _CT_loadIgnore="true">
+			<transform 30="-521.547852" 31="7.057212" 32="453.65332"/>
+			<links>
+				<link id="Curve#507_Track#0_S#1_#15"/>
+				<link id="Curve#507_Track#0_S#1_#17"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#1_#17" _CT_loadIgnore="true">
+			<transform 30="-525.0791" 31="7.057513" 32="455.549072"/>
+			<links>
+				<link id="Curve#507_Track#0_S#1_#16"/>
+				<link id="Curve#507_Track#0_S#1_#18"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#1_#18" _CT_loadIgnore="true">
+			<transform 30="-528.6035" 31="7.05780268" 32="457.4563"/>
+			<links>
+				<link id="Curve#507_Track#0_S#1_#17"/>
+				<link id="Curve#507_Track#0_S#1_#19"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#1_#19" _CT_loadIgnore="true">
+			<transform 30="-532.1221" 31="7.05808258" 32="459.374756"/>
+			<links>
+				<link id="Curve#507_Track#0_S#1_#18"/>
+				<link id="Curve#507_Track#0_S#1_#20"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#1_#2" _CT_loadIgnore="true">
+			<transform 30="-471.481445" 31="7.052016" 32="428.337158"/>
+			<links>
+				<link id="Curve#507_Track#0_S#1_#1"/>
+				<link id="Curve#507_Track#0_S#1_#3"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#1_#20" _CT_loadIgnore="true">
+			<transform 30="-535.634766" 31="7.058348" 32="461.30542"/>
+			<links>
+				<link id="Curve#507_Track#0_S#1_#19"/>
+				<link id="Curve#507_Track#0_S#1_#21"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#1_#21" _CT_loadIgnore="true">
+			<transform 30="-539.1406" 31="7.05860329" 32="463.2473"/>
+			<links>
+				<link id="Curve#507_Track#0_S#1_#20"/>
+				<link id="Curve#507_Track#0_S#1_#22"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#1_#22" _CT_loadIgnore="true">
+			<transform 30="-542.6406" 31="7.05884647" 32="465.200928"/>
+			<links>
+				<link id="Curve#507_Track#0_S#1_#21"/>
+				<link id="Curve#507_Track#0_S#1_#23"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#1_#23" _CT_loadIgnore="true">
+			<transform 30="-546.1328" 31="7.059076" 32="467.166748"/>
+			<links>
+				<link id="Curve#507_Track#0_S#1_#22"/>
+				<link id="Curve#507_Track#0_S#1_#24"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#1_#24" _CT_loadIgnore="true">
+			<transform 30="-549.619141" 31="7.059294" 32="469.1438"/>
+			<links>
+				<link id="Curve#507_Track#0_S#1_#23"/>
+				<link id="Curve#507_Track#0_S#1_#25"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#1_#25" _CT_loadIgnore="true">
+			<transform 30="-553.0996" 31="7.05949831" 32="471.131348"/>
+			<links>
+				<link id="Curve#507_Track#0_S#1_#24"/>
+				<link id="Curve#507_Track#0_S#1_#26"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#1_#26" _CT_loadIgnore="true">
+			<transform 30="-556.572266" 31="7.05969" 32="473.132324"/>
+			<links>
+				<link id="Curve#507_Track#0_S#1_#25"/>
+				<link id="Curve#507_Track#0_S#1_#27"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#1_#27" _CT_loadIgnore="true">
+			<transform 30="-560.039063" 31="7.05986834" 32="475.143066"/>
+			<links>
+				<link id="Curve#507_Track#0_S#1_#26"/>
+				<link id="Curve#507_Track#0_S#1_#28"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#1_#28" _CT_loadIgnore="true">
+			<transform 30="-563.499" 31="7.060033" 32="477.165527"/>
+			<links>
+				<link id="Curve#507_Track#0_S#1_#27"/>
+				<link id="Curve#507_Track#0_S#1_#29"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#1_#29" _CT_loadIgnore="true">
+			<transform 30="-566.952148" 31="7.060183" 32="479.200439"/>
+			<links>
+				<link id="Curve#507_Track#0_S#1_#28"/>
+				<link id="Curve#507_Track#0_S#1_#30"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#1_#3" _CT_loadIgnore="true">
+			<transform 30="-475.094727" 31="7.05243731" 32="430.070557"/>
+			<links>
+				<link id="Curve#507_Track#0_S#1_#2"/>
+				<link id="Curve#507_Track#0_S#1_#4"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#1_#30" _CT_loadIgnore="true">
+			<transform 30="-570.398438" 31="7.06032038" 32="481.2456"/>
+			<links>
+				<link id="Curve#507_Track#0_S#1_#29"/>
+				<link id="Curve#507_Track#0_S#1_#31"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#1_#31" _CT_loadIgnore="true">
+			<transform 30="-573.8379" 31="7.06044436" 32="483.303467"/>
+			<links>
+				<link id="Curve#507_Track#0_S#1_#30"/>
+				<link id="Curve#507_Track#0_S#1_#32"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#1_#32" _CT_loadIgnore="true">
+			<transform 30="-577.2705" 31="7.060552" 32="485.372559"/>
+			<links>
+				<link id="Curve#507_Track#0_S#1_#31"/>
+				<link id="Curve#507_Track#0_S#1_#33"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#1_#33" _CT_loadIgnore="true">
+			<transform 30="-580.6963" 31="7.06064653" 32="487.452637"/>
+			<links>
+				<link id="Curve#507_Track#0_S#1_#32"/>
+				<link id="Curve#507_Track#0_S#1_#34"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#1_#34" _CT_loadIgnore="true">
+			<transform 30="-584.1162" 31="7.06072664" 32="489.5432"/>
+			<links>
+				<link id="Curve#507_Track#0_S#1_#33"/>
+				<link id="Curve#507_Track#0_S#1_#35"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#1_#35" _CT_loadIgnore="true">
+			<transform 30="-587.527344" 31="7.06079054" 32="491.646729"/>
+			<links>
+				<link id="Curve#507_Track#0_S#1_#34"/>
+				<link id="Curve#507_Track#0_S#1_#36"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#1_#36" _CT_loadIgnore="true">
+			<transform 30="-590.931641" 31="7.06084" 32="493.76123"/>
+			<links>
+				<link id="Curve#507_Track#0_S#1_#35"/>
+				<link id="Curve#507_Track#0_S#1_#37"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#1_#37" _CT_loadIgnore="true">
+			<transform 30="-594.3301" 31="7.060875" 32="495.886"/>
+			<links>
+				<link id="Curve#507_Track#0_S#1_#36"/>
+				<link id="Curve#507_Track#0_S#1_#38"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#1_#38" _CT_loadIgnore="true">
+			<transform 30="-600.3135" 31="7.06089973" 32="499.6648"/>
+			<links>
+				<link id="Curve#507_Track#0_S#1_#37"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#1_#4" _CT_loadIgnore="true">
+			<transform 30="-478.702148" 31="7.052851" 32="431.815674"/>
+			<links>
+				<link id="Curve#507_Track#0_S#1_#3"/>
+				<link id="Curve#507_Track#0_S#1_#5"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#1_#5" _CT_loadIgnore="true">
+			<transform 30="-482.3047" 31="7.05326" 32="433.5713"/>
+			<links>
+				<link id="Curve#507_Track#0_S#1_#4"/>
+				<link id="Curve#507_Track#0_S#1_#6"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#1_#6" _CT_loadIgnore="true">
+			<transform 30="-485.901367" 31="7.05366039" 32="435.3391"/>
+			<links>
+				<link id="Curve#507_Track#0_S#1_#5"/>
+				<link id="Curve#507_Track#0_S#1_#7"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#1_#7" _CT_loadIgnore="true">
+			<transform 30="-489.4922" 31="7.054055" 32="437.117676"/>
+			<links>
+				<link id="Curve#507_Track#0_S#1_#6"/>
+				<link id="Curve#507_Track#0_S#1_#8"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#1_#8" _CT_loadIgnore="true">
+			<transform 30="-493.077148" 31="7.05444145" 32="438.90918"/>
+			<links>
+				<link id="Curve#507_Track#0_S#1_#7"/>
+				<link id="Curve#507_Track#0_S#1_#9"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#0_S#1_#9" _CT_loadIgnore="true">
+			<transform 30="-496.657227" 31="7.05482" 32="440.711426"/>
+			<links>
+				<link id="Curve#507_Track#0_S#1_#10"/>
+				<link id="Curve#507_Track#0_S#1_#8"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#0_#1" _CT_loadIgnore="true">
+			<transform 30="-322.666016" 31="7.03791761" 32="372.061279"/>
+			<links>
+				<link id="Curve#506_Track#1_S#3_#1"/>
+				<link id="Curve#507_Track#1_S#0_#2"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#0_#10" _CT_loadIgnore="true">
+			<transform 30="-356.375" 31="7.03938961" 32="384.6079"/>
+			<links>
+				<link id="Curve#507_Track#1_S#0_#11"/>
+				<link id="Curve#507_Track#1_S#0_#9"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#0_#11" _CT_loadIgnore="true">
+			<transform 30="-360.106445" 31="7.03966951" 32="386.032227"/>
+			<links>
+				<link id="Curve#507_Track#1_S#0_#10"/>
+				<link id="Curve#507_Track#1_S#0_#12"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#0_#12" _CT_loadIgnore="true">
+			<transform 30="-363.8369" 31="7.03996849" 32="387.4646"/>
+			<links>
+				<link id="Curve#507_Track#1_S#0_#11"/>
+				<link id="Curve#507_Track#1_S#0_#13"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#0_#13" _CT_loadIgnore="true">
+			<transform 30="-367.563477" 31="7.040285" 32="388.905029"/>
+			<links>
+				<link id="Curve#507_Track#1_S#0_#12"/>
+				<link id="Curve#507_Track#1_S#0_#14"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#0_#14" _CT_loadIgnore="true">
+			<transform 30="-371.286133" 31="7.040617" 32="390.3523"/>
+			<links>
+				<link id="Curve#507_Track#1_S#0_#13"/>
+				<link id="Curve#507_Track#1_S#0_#15"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#0_#15" _CT_loadIgnore="true">
+			<transform 30="-375.006836" 31="7.040962" 32="391.8069"/>
+			<links>
+				<link id="Curve#507_Track#1_S#0_#14"/>
+				<link id="Curve#507_Track#1_S#0_#16"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#0_#16" _CT_loadIgnore="true">
+			<transform 30="-378.723633" 31="7.041322" 32="393.2705"/>
+			<links>
+				<link id="Curve#507_Track#1_S#0_#15"/>
+				<link id="Curve#507_Track#1_S#0_#17"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#0_#17" _CT_loadIgnore="true">
+			<transform 30="-382.4375" 31="7.04169559" 32="394.743652"/>
+			<links>
+				<link id="Curve#507_Track#1_S#0_#16"/>
+				<link id="Curve#507_Track#1_S#0_#18"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#0_#18" _CT_loadIgnore="true">
+			<transform 30="-386.146484" 31="7.0420804" 32="396.225342"/>
+			<links>
+				<link id="Curve#507_Track#1_S#0_#17"/>
+				<link id="Curve#507_Track#1_S#0_#19"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#0_#19" _CT_loadIgnore="true">
+			<transform 30="-389.852539" 31="7.04247427" 32="397.7146"/>
+			<links>
+				<link id="Curve#507_Track#1_S#0_#18"/>
+				<link id="Curve#507_Track#1_S#0_#20"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#0_#2" _CT_loadIgnore="true">
+			<transform 30="-326.419922" 31="7.03796959" 32="373.4353"/>
+			<links>
+				<link id="Curve#507_Track#1_S#0_#1"/>
+				<link id="Curve#507_Track#1_S#0_#3"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#0_#20" _CT_loadIgnore="true">
+			<transform 30="-393.5537" 31="7.042879" 32="399.213867"/>
+			<links>
+				<link id="Curve#507_Track#1_S#0_#19"/>
+				<link id="Curve#507_Track#1_S#0_#21"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#0_#21" _CT_loadIgnore="true">
+			<transform 30="-397.25293" 31="7.04329062" 32="400.722168"/>
+			<links>
+				<link id="Curve#507_Track#1_S#0_#20"/>
+				<link id="Curve#507_Track#1_S#0_#22"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#0_#22" _CT_loadIgnore="true">
+			<transform 30="-400.947266" 31="7.04371" 32="402.23877"/>
+			<links>
+				<link id="Curve#507_Track#1_S#0_#21"/>
+				<link id="Curve#507_Track#1_S#0_#23"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#0_#23" _CT_loadIgnore="true">
+			<transform 30="-404.6377" 31="7.044138" 32="403.766846"/>
+			<links>
+				<link id="Curve#507_Track#1_S#0_#22"/>
+				<link id="Curve#507_Track#1_S#0_#24"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#0_#24" _CT_loadIgnore="true">
+			<transform 30="-408.323242" 31="7.0445714" 32="405.3042"/>
+			<links>
+				<link id="Curve#507_Track#1_S#0_#23"/>
+				<link id="Curve#507_Track#1_S#0_#25"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#0_#25" _CT_loadIgnore="true">
+			<transform 30="-412.004883" 31="7.04500961" 32="406.851318"/>
+			<links>
+				<link id="Curve#507_Track#1_S#0_#24"/>
+				<link id="Curve#507_Track#1_S#0_#26"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#0_#26" _CT_loadIgnore="true">
+			<transform 30="-415.682617" 31="7.04545069" 32="408.4077"/>
+			<links>
+				<link id="Curve#507_Track#1_S#0_#25"/>
+				<link id="Curve#507_Track#1_S#0_#27"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#0_#27" _CT_loadIgnore="true">
+			<transform 30="-419.356445" 31="7.04589462" 32="409.9734"/>
+			<links>
+				<link id="Curve#507_Track#1_S#0_#26"/>
+				<link id="Curve#507_Track#1_S#0_#28"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#0_#28" _CT_loadIgnore="true">
+			<transform 30="-423.0244" 31="7.04634428" 32="411.550781"/>
+			<links>
+				<link id="Curve#507_Track#1_S#0_#27"/>
+				<link id="Curve#507_Track#1_S#0_#29"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#0_#29" _CT_loadIgnore="true">
+			<transform 30="-426.689453" 31="7.046794" 32="413.138672"/>
+			<links>
+				<link id="Curve#507_Track#1_S#0_#28"/>
+				<link id="Curve#507_Track#1_S#0_#30"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#0_#3" _CT_loadIgnore="true">
+			<transform 30="-330.171875" 31="7.03805256" 32="374.812744"/>
+			<links>
+				<link id="Curve#507_Track#1_S#0_#2"/>
+				<link id="Curve#507_Track#1_S#0_#4"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#0_#30" _CT_loadIgnore="true">
+			<transform 30="-430.3496" 31="7.0472455" 32="414.736328"/>
+			<links>
+				<link id="Curve#507_Track#1_S#0_#29"/>
+				<link id="Curve#507_Track#1_S#0_#31"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#0_#31" _CT_loadIgnore="true">
+			<transform 30="-434.0039" 31="7.04769754" 32="416.344482"/>
+			<links>
+				<link id="Curve#507_Track#1_S#0_#30"/>
+				<link id="Curve#507_Track#1_S#0_#32"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#0_#32" _CT_loadIgnore="true">
+			<transform 30="-437.6543" 31="7.04814959" 32="417.963867"/>
+			<links>
+				<link id="Curve#507_Track#1_S#0_#31"/>
+				<link id="Curve#507_Track#1_S#0_#33"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#0_#33" _CT_loadIgnore="true">
+			<transform 30="-441.298828" 31="7.04860067" 32="419.594"/>
+			<links>
+				<link id="Curve#507_Track#1_S#0_#32"/>
+				<link id="Curve#507_Track#1_S#0_#34"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#0_#34" _CT_loadIgnore="true">
+			<transform 30="-444.938477" 31="7.04905" 32="421.2339"/>
+			<links>
+				<link id="Curve#507_Track#1_S#0_#33"/>
+				<link id="Curve#507_Track#1_S#0_#35"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#0_#35" _CT_loadIgnore="true">
+			<transform 30="-448.5752" 31="7.04949856" 32="422.885254"/>
+			<links>
+				<link id="Curve#507_Track#1_S#0_#34"/>
+				<link id="Curve#507_Track#1_S#0_#36"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#0_#36" _CT_loadIgnore="true">
+			<transform 30="-452.205078" 31="7.049944" 32="424.547852"/>
+			<links>
+				<link id="Curve#507_Track#1_S#0_#35"/>
+				<link id="Curve#507_Track#1_S#0_#37"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#0_#37" _CT_loadIgnore="true">
+			<transform 30="-455.830078" 31="7.05038643" 32="426.220947"/>
+			<links>
+				<link id="Curve#507_Track#1_S#0_#36"/>
+				<link id="Curve#507_Track#1_S#0_#38"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#0_#38" _CT_loadIgnore="true">
+			<transform 30="-462.217773" 31="7.05115843" 32="429.203369"/>
+			<links>
+				<link id="Curve#507_Track#1_S#0_#37"/>
+				<link id="Curve#507_Track#1_S#1_#1"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#0_#4" _CT_loadIgnore="true">
+			<transform 30="-333.921875" 31="7.038166" 32="376.19458"/>
+			<links>
+				<link id="Curve#507_Track#1_S#0_#3"/>
+				<link id="Curve#507_Track#1_S#0_#5"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#0_#5" _CT_loadIgnore="true">
+			<transform 30="-337.669922" 31="7.038308" 32="377.58252"/>
+			<links>
+				<link id="Curve#507_Track#1_S#0_#4"/>
+				<link id="Curve#507_Track#1_S#0_#6"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#0_#6" _CT_loadIgnore="true">
+			<transform 30="-341.417" 31="7.038476" 32="378.9746"/>
+			<links>
+				<link id="Curve#507_Track#1_S#0_#5"/>
+				<link id="Curve#507_Track#1_S#0_#7"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#0_#7" _CT_loadIgnore="true">
+			<transform 30="-345.160156" 31="7.03867" 32="380.3733"/>
+			<links>
+				<link id="Curve#507_Track#1_S#0_#6"/>
+				<link id="Curve#507_Track#1_S#0_#8"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#0_#8" _CT_loadIgnore="true">
+			<transform 30="-348.9004" 31="7.038888" 32="381.7788"/>
+			<links>
+				<link id="Curve#507_Track#1_S#0_#7"/>
+				<link id="Curve#507_Track#1_S#0_#9"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#0_#9" _CT_loadIgnore="true">
+			<transform 30="-352.638672" 31="7.0391283" 32="383.1897"/>
+			<links>
+				<link id="Curve#507_Track#1_S#0_#10"/>
+				<link id="Curve#507_Track#1_S#0_#8"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#1_#1" _CT_loadIgnore="true">
+			<transform 30="-465.828125" 31="7.05158949" 32="430.907227"/>
+			<links>
+				<link id="Curve#507_Track#1_S#0_#38"/>
+				<link id="Curve#507_Track#1_S#1_#2"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#1_#10" _CT_loadIgnore="true">
+			<transform 30="-498.074219" 31="7.05519" 32="446.7578"/>
+			<links>
+				<link id="Curve#507_Track#1_S#1_#11"/>
+				<link id="Curve#507_Track#1_S#1_#9"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#1_#11" _CT_loadIgnore="true">
+			<transform 30="-501.62793" 31="7.055551" 32="448.576416"/>
+			<links>
+				<link id="Curve#507_Track#1_S#1_#10"/>
+				<link id="Curve#507_Track#1_S#1_#12"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#1_#12" _CT_loadIgnore="true">
+			<transform 30="-505.176758" 31="7.055903" 32="450.40625"/>
+			<links>
+				<link id="Curve#507_Track#1_S#1_#11"/>
+				<link id="Curve#507_Track#1_S#1_#13"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#1_#13" _CT_loadIgnore="true">
+			<transform 30="-508.71875" 31="7.05624533" 32="452.2478"/>
+			<links>
+				<link id="Curve#507_Track#1_S#1_#12"/>
+				<link id="Curve#507_Track#1_S#1_#14"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#1_#14" _CT_loadIgnore="true">
+			<transform 30="-512.2539" 31="7.05657768" 32="454.1006"/>
+			<links>
+				<link id="Curve#507_Track#1_S#1_#13"/>
+				<link id="Curve#507_Track#1_S#1_#15"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#1_#15" _CT_loadIgnore="true">
+			<transform 30="-515.7832" 31="7.056901" 32="455.9663"/>
+			<links>
+				<link id="Curve#507_Track#1_S#1_#14"/>
+				<link id="Curve#507_Track#1_S#1_#16"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#1_#16" _CT_loadIgnore="true">
+			<transform 30="-519.3076" 31="7.057212" 32="457.8423"/>
+			<links>
+				<link id="Curve#507_Track#1_S#1_#15"/>
+				<link id="Curve#507_Track#1_S#1_#17"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#1_#17" _CT_loadIgnore="true">
+			<transform 30="-522.8252" 31="7.057513" 32="459.7307"/>
+			<links>
+				<link id="Curve#507_Track#1_S#1_#16"/>
+				<link id="Curve#507_Track#1_S#1_#18"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#1_#18" _CT_loadIgnore="true">
+			<transform 30="-526.335938" 31="7.05780268" 32="461.630127"/>
+			<links>
+				<link id="Curve#507_Track#1_S#1_#17"/>
+				<link id="Curve#507_Track#1_S#1_#19"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#1_#19" _CT_loadIgnore="true">
+			<transform 30="-529.8408" 31="7.05808258" 32="463.54126"/>
+			<links>
+				<link id="Curve#507_Track#1_S#1_#18"/>
+				<link id="Curve#507_Track#1_S#1_#20"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#1_#2" _CT_loadIgnore="true">
+			<transform 30="-469.43457" 31="7.052016" 32="432.6233"/>
+			<links>
+				<link id="Curve#507_Track#1_S#1_#1"/>
+				<link id="Curve#507_Track#1_S#1_#3"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#1_#20" _CT_loadIgnore="true">
+			<transform 30="-533.339844" 31="7.058348" 32="465.4641"/>
+			<links>
+				<link id="Curve#507_Track#1_S#1_#19"/>
+				<link id="Curve#507_Track#1_S#1_#21"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#1_#21" _CT_loadIgnore="true">
+			<transform 30="-536.832031" 31="7.05860329" 32="467.398682"/>
+			<links>
+				<link id="Curve#507_Track#1_S#1_#20"/>
+				<link id="Curve#507_Track#1_S#1_#22"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#1_#22" _CT_loadIgnore="true">
+			<transform 30="-540.318359" 31="7.05884647" 32="469.344482"/>
+			<links>
+				<link id="Curve#507_Track#1_S#1_#21"/>
+				<link id="Curve#507_Track#1_S#1_#23"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#1_#23" _CT_loadIgnore="true">
+			<transform 30="-543.7969" 31="7.059076" 32="471.3025"/>
+			<links>
+				<link id="Curve#507_Track#1_S#1_#22"/>
+				<link id="Curve#507_Track#1_S#1_#24"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#1_#24" _CT_loadIgnore="true">
+			<transform 30="-547.269531" 31="7.059294" 32="473.271729"/>
+			<links>
+				<link id="Curve#507_Track#1_S#1_#23"/>
+				<link id="Curve#507_Track#1_S#1_#25"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#1_#25" _CT_loadIgnore="true">
+			<transform 30="-550.7363" 31="7.05949831" 32="475.251465"/>
+			<links>
+				<link id="Curve#507_Track#1_S#1_#24"/>
+				<link id="Curve#507_Track#1_S#1_#26"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#1_#26" _CT_loadIgnore="true">
+			<transform 30="-554.1953" 31="7.05969" 32="477.244629"/>
+			<links>
+				<link id="Curve#507_Track#1_S#1_#25"/>
+				<link id="Curve#507_Track#1_S#1_#27"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#1_#27" _CT_loadIgnore="true">
+			<transform 30="-557.648438" 31="7.05986834" 32="479.247559"/>
+			<links>
+				<link id="Curve#507_Track#1_S#1_#26"/>
+				<link id="Curve#507_Track#1_S#1_#28"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#1_#28" _CT_loadIgnore="true">
+			<transform 30="-561.0947" 31="7.060033" 32="481.2622"/>
+			<links>
+				<link id="Curve#507_Track#1_S#1_#27"/>
+				<link id="Curve#507_Track#1_S#1_#29"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#1_#29" _CT_loadIgnore="true">
+			<transform 30="-564.5342" 31="7.060183" 32="483.288818"/>
+			<links>
+				<link id="Curve#507_Track#1_S#1_#28"/>
+				<link id="Curve#507_Track#1_S#1_#30"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#1_#3" _CT_loadIgnore="true">
+			<transform 30="-473.03418" 31="7.05243731" 32="434.349854"/>
+			<links>
+				<link id="Curve#507_Track#1_S#1_#2"/>
+				<link id="Curve#507_Track#1_S#1_#4"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#1_#30" _CT_loadIgnore="true">
+			<transform 30="-567.9668" 31="7.06032038" 32="485.326172"/>
+			<links>
+				<link id="Curve#507_Track#1_S#1_#29"/>
+				<link id="Curve#507_Track#1_S#1_#31"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#1_#31" _CT_loadIgnore="true">
+			<transform 30="-571.3926" 31="7.06044436" 32="487.375732"/>
+			<links>
+				<link id="Curve#507_Track#1_S#1_#30"/>
+				<link id="Curve#507_Track#1_S#1_#32"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#1_#32" _CT_loadIgnore="true">
+			<transform 30="-574.8115" 31="7.060552" 32="489.437"/>
+			<links>
+				<link id="Curve#507_Track#1_S#1_#31"/>
+				<link id="Curve#507_Track#1_S#1_#33"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#1_#33" _CT_loadIgnore="true">
+			<transform 30="-578.223633" 31="7.06064653" 32="491.5088"/>
+			<links>
+				<link id="Curve#507_Track#1_S#1_#32"/>
+				<link id="Curve#507_Track#1_S#1_#34"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#1_#34" _CT_loadIgnore="true">
+			<transform 30="-581.6299" 31="7.06072664" 32="493.591064"/>
+			<links>
+				<link id="Curve#507_Track#1_S#1_#33"/>
+				<link id="Curve#507_Track#1_S#1_#35"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#1_#35" _CT_loadIgnore="true">
+			<transform 30="-585.0293" 31="7.06079054" 32="495.686279"/>
+			<links>
+				<link id="Curve#507_Track#1_S#1_#34"/>
+				<link id="Curve#507_Track#1_S#1_#36"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#1_#36" _CT_loadIgnore="true">
+			<transform 30="-588.4199" 31="7.06084" 32="497.79248"/>
+			<links>
+				<link id="Curve#507_Track#1_S#1_#35"/>
+				<link id="Curve#507_Track#1_S#1_#37"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#1_#37" _CT_loadIgnore="true">
+			<transform 30="-591.8047" 31="7.060875" 32="499.908936"/>
+			<links>
+				<link id="Curve#507_Track#1_S#1_#36"/>
+				<link id="Curve#507_Track#1_S#1_#38"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#1_#38" _CT_loadIgnore="true">
+			<transform 30="-597.764648" 31="7.06089973" 32="503.6731"/>
+			<links>
+				<link id="Curve#507_Track#1_S#1_#37"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#1_#4" _CT_loadIgnore="true">
+			<transform 30="-476.62793" 31="7.052851" 32="436.088623"/>
+			<links>
+				<link id="Curve#507_Track#1_S#1_#3"/>
+				<link id="Curve#507_Track#1_S#1_#5"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#1_#5" _CT_loadIgnore="true">
+			<transform 30="-480.2168" 31="7.05326" 32="437.8374"/>
+			<links>
+				<link id="Curve#507_Track#1_S#1_#4"/>
+				<link id="Curve#507_Track#1_S#1_#6"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#1_#6" _CT_loadIgnore="true">
+			<transform 30="-483.7998" 31="7.05366039" 32="439.598877"/>
+			<links>
+				<link id="Curve#507_Track#1_S#1_#5"/>
+				<link id="Curve#507_Track#1_S#1_#7"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#1_#7" _CT_loadIgnore="true">
+			<transform 30="-487.376953" 31="7.054055" 32="441.3706"/>
+			<links>
+				<link id="Curve#507_Track#1_S#1_#6"/>
+				<link id="Curve#507_Track#1_S#1_#8"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#1_#8" _CT_loadIgnore="true">
+			<transform 30="-490.948242" 31="7.05444145" 32="443.155273"/>
+			<links>
+				<link id="Curve#507_Track#1_S#1_#7"/>
+				<link id="Curve#507_Track#1_S#1_#9"/>
+			</links>
+		</track>
+		<track id="Curve#507_Track#1_S#1_#9" _CT_loadIgnore="true">
+			<transform 30="-494.514648" 31="7.05482" 32="444.950684"/>
+			<links>
+				<link id="Curve#507_Track#1_S#1_#10"/>
+				<link id="Curve#507_Track#1_S#1_#8"/>
+			</links>
+		</track>
+	</train_tracks>
 	<volcano_markers/>
 	<mineral_rocks/>
 </definition>
+
